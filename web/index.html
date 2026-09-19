@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#fbfaf8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Farsi Vault">
+<title>Farsi Vault</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<main id="screens">
+
+  <!-- Today -->
+  <section class="screen is-active" id="screen-today">
+    <header class="screen-head"><h1>Today</h1></header>
+
+    <div class="today-body">
+      <div class="ledger" id="counts">
+        <div class="ledger-row lead"><span>Due</span><b id="count-due">0</b></div>
+        <div class="ledger-row lead"><span>New</span><b id="count-new">0</b></div>
+        <div class="ledger-row"><span>Reviewed today</span><b id="count-done">0</b></div>
+        <div class="ledger-row"><span>Sentences held</span><b id="count-held">0</b></div>
+        <div class="ledger-row"><span>Last synced</span><b id="last-sync">never</b></div>
+      </div>
+
+      <p class="empty" id="today-empty" hidden>
+        No sentences yet. Sync to fetch a batch, or check that the seed bank loaded.
+      </p>
+
+      <button id="btn-start">Start &rarr;</button>
+
+      <div class="register" id="register" hidden>
+        <div class="ledger-row is-head">
+          <span>Session</span><b class="col-n">Cards</b><b class="col-pct">Right</b>
+        </div>
+        <div id="register-rows"></div>
+      </div>
+    </div>
+
+    <div class="sync-bar">
+      <p class="sync-status" id="sync-status"></p>
+      <button id="btn-sync">Sync</button>
+    </div>
+  </section>
+
+  <!-- Weak spots -->
+  <section class="screen" id="screen-weak">
+    <header class="screen-head"><h1>Weak spots</h1></header>
+    <div class="list" id="weak-list"></div>
+  </section>
+
+  <!-- Results -->
+  <section class="screen" id="screen-results">
+    <header class="screen-head"><h1>Results</h1></header>
+    <div class="list" id="results-list"></div>
+  </section>
+
+  <!-- Settings -->
+  <section class="screen" id="screen-settings">
+    <header class="screen-head"><h1>Settings</h1></header>
+    <div class="list settings">
+
+      <div class="group">
+        <h2>Backend</h2>
+        <label>Service URL
+          <input type="url" id="set-url" placeholder="https://….run.app"
+                 autocomplete="off" autocapitalize="off" spellcheck="false">
+        </label>
+        <label>Bearer token
+          <input type="password" id="set-token" autocomplete="off">
+        </label>
+        <button id="btn-health">Test connection</button>
+        <p class="hint" id="health-result"></p>
+        <p class="hint">From <code>terraform output service_url</code>. Practising offline needs neither — only syncing does.</p>
+      </div>
+
+      <div class="group">
+        <h2>Practice</h2>
+        <label>Daily batch size <b id="batch-value">100</b>
+          <input type="range" id="set-batch" min="10" max="200" step="10">
+        </label>
+        <label>English → Farsi <b id="ratio-value">70%</b>
+          <input type="range" id="set-ratio" min="30" max="100" step="5">
+        </label>
+        <p class="hint">Producing Farsi is the skill that freezes; recognising it is easier. Weighted to production.</p>
+      </div>
+
+      <div class="group">
+        <h2>Audio</h2>
+        <label class="row">
+          <span>Read answers aloud</span>
+          <input type="checkbox" id="set-speak">
+        </label>
+        <p class="hint" id="voice-report">Checking for a Persian voice…</p>
+      </div>
+
+      <div class="group">
+        <h2>Storage</h2>
+        <div class="kv" id="storage-info"></div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<nav class="tabs">
+  <button data-screen="today" class="is-active">Today</button>
+  <button data-screen="weak">Weak</button>
+  <button data-screen="results">Results</button>
+  <button data-screen="settings">Settings</button>
+</nav>
+
+<!-- Practice overlay -->
+<div class="practice" id="practice" hidden>
+  <header class="practice-head">
+    <button id="btn-quit">&larr; Exit</button>
+    <span class="progress" id="practice-progress">0 / 0</span>
+    <span class="spacer"></span>
+  </header>
+
+  <div class="card-scroll">
+    <p class="badge" id="card-badge"></p>
+    <p class="prompt" id="card-prompt"></p>
+
+    <textarea id="card-typed" class="typed" rows="2" hidden
+              autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
+
+    <div id="card-answer" class="answer" hidden>
+      <div class="answer-row">
+        <p class="answer-text" id="answer-text"></p>
+        <button id="btn-speak" hidden aria-label="Play aloud" title="Play aloud">Listen</button>
+      </div>
+      <p class="finglish" id="answer-finglish"></p>
+      <p class="gloss" id="answer-gloss"></p>
+      <p class="tags" id="answer-tags"></p>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div id="input-row" class="input-row">
+      <button id="btn-type">Type</button>
+      <button id="btn-record">Record</button>
+    </div>
+    <button id="btn-reveal">Reveal &rarr;</button>
+    <div id="rating-row" class="rating-row" hidden></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
