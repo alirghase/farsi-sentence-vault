@@ -1,12 +1,12 @@
 # Farsi Sentence Vault
 
 Translation drilling for people who know the words but freeze when they have to
-speak. Prompt → produce the sentence → check → rate. Hundreds of reps a week,
-offline, on a commute.
+speak. Prompt → produce the sentence out loud → reveal → rate. Hundreds of reps
+a week, offline, on a commute.
 
-The problem this targets is retrieval under pressure, not vocabulary. So the
-default path costs **zero taps until Reveal**: read the prompt, say the Farsi
-out loud, tap to check, tap to rate.
+The problem is retrieval under pressure, not vocabulary. So the default path
+costs **zero taps until Reveal**: read the prompt, say the Farsi aloud, tap to
+check, tap to rate. Typing and recording are opt-in per card.
 
 ## How it fits together
 
@@ -15,8 +15,8 @@ BUILD TIME (once, on the Mac)
   tools/generate_seed.py ──> Gemini ──> seed_sentences.json ──┐
                                                               │ bundled
 RUN TIME                                                      ▼
-  ┌──────────────────────── iPhone (offline) ────────────────────┐
-  │  SwiftData · SM-2 scheduler · Farsi TTS · audio recording    │
+  ┌────────────── PWA on the phone (offline) ────────────────────┐
+  │  IndexedDB · SM-2 scheduler · service worker · MediaRecorder │
   └────────────────────────────┬─────────────────────────────────┘
                                │ HTTPS, only when you tap Sync
                                ▼
@@ -31,89 +31,76 @@ RUN TIME                                                      ▼
 Everything in the practice loop is local. Sync is the only network boundary and
 it is a pull — nothing is pushed to the phone.
 
-`core/` is shared by the seed generator and the Cloud Run service, so the
-prompts, error taxonomy, and validation cannot drift between them.
-`tools/check_mirror.py` additionally guards the Swift copy of the taxonomy.
+`core/` is shared by the seed generator and the Cloud Run service, so prompts,
+taxonomy, and validation cannot drift between them. `tools/check_mirror.py`
+guards the JavaScript copy of the taxonomy on top of that.
 
 ## Repository layout
 
 | Path | What it is |
 |---|---|
 | `core/` | Shared Python: Gemini client, prompts, taxonomy, validation |
-| `tools/` | One-off CLIs: seed generation, prompt iteration, drift check |
+| `tools/` | One-off CLIs: seed generation, prompt iteration, drift checks |
 | `backend/` | FastAPI service deployed to Cloud Run |
 | `infra/` | Terraform for the whole GCP footprint |
-| `FarsiVault/` | The iOS app (SwiftUI + SwiftData) |
-| `FarsiVaultTests/` | Unit tests for the scheduler, taxonomy, and models |
+| `web/` | The app: static PWA, no build step, ES modules |
+
+There is no bundler and no `node_modules`. `web/` is served as-is.
 
 ## Getting it running
 
-### 1. Seed bank
+Step-by-step, in order, is in [SETUP.md](SETUP.md). Short version:
 
 ```bash
-export GEMINI_API_KEY=...            # aistudio.google.com/apikey
-python3 tools/generate_seed.py --count 400
-python3 tools/generate_seed.py --review
+export GEMINI_API_KEY=...                       # aistudio.google.com/apikey
+python3 tools/generate_seed.py --count 400      # ~15 min
+python3 tools/generate_seed.py --review         # READ THIS
+cp tools/seed_sentences.json web/data/
+
+python3 -m http.server 8000 --directory web     # open http://localhost:8000
 ```
 
-**Read the review output before shipping it.** Bad reference sentences teach bad
-Farsi, and it is the one failure the app cannot detect on its own. If the Persian
-reads like a newsreader rather than a friend, fix the register rules in
-`core/prompts.py` and regenerate.
+The backend is optional — the app practises offline without it. Only grading
+and new batches need it. See [`infra/README.md`](infra/README.md).
 
-Then move the output into the app bundle:
-
-```bash
-cp tools/seed_sentences.json FarsiVault/Resources/
-```
-
-### 2. Backend
-
-See [`infra/README.md`](infra/README.md). Short version:
-
-```bash
-cp infra/example.tfvars infra/terraform.tfvars   # fill in
-cd infra && terraform init && terraform apply
-cd .. && bash infra/deploy.sh YOUR_PROJECT_ID
-```
-
-The backend is optional. With no URL configured the app calls Gemini directly
-from the phone — useful before deploying, but the key then lives on the device
-and there is no server-side usage cap.
-
-### 3. App
-
-```bash
-brew install xcodegen
-xcodegen generate
-open FarsiVault.xcodeproj
-```
-
-Set your Apple ID under Signing & Capabilities, then run on a device.
-
-## Things worth knowing before you build on this
+## Things worth knowing before building on this
 
 - **Apple does not support Persian dictation.** Farsi is absent from the iOS
   Dictation language list, so there is no free on-device Persian speech
-  recognition. Recordings are transcribed by Gemini at sync time. Farsi *speech
-  synthesis* does work, which is why playback is on-device and free.
-- **Free Apple accounts cannot use iCloud, Push, or App Groups.** That rules out
-  iCloud sync and any server-initiated notification, which is why the design is
-  plain HTTPS and pull-only.
-- **A free provisioning profile expires after 7 days** and the app then stops
-  launching — not a warning, it simply dies until you rebuild from Xcode. Free
-  accounts also cap at 3 apps per device. The $99/yr programme removes this;
-  worth paying only once daily use is proven.
+  recognition anywhere on the platform. Recordings are transcribed by Gemini at
+  sync time instead.
+- **Persian text-to-speech depends on an installed system voice.** iOS Safari
+  exposes only voices present on the device. The app detects this and hides
+  playback rather than failing; Settings explains how to add one.
+- **Gemini retires models aggressively.** `gemini-2.5-flash` now 404s for new
+  API keys while still appearing in the model listing. The client defaults to
+  `gemini-3.6-flash` and falls back through `gemini-3.5-flash` and
+  `gemini-flash-latest`, so a retirement degrades rather than breaks.
 - **GCP's free tier needs a billing account.** Three guardrails exist because of
   that: instance caps, per-day model-call limits enforced in Firestore, and a
   budget alert. See `infra/README.md`.
-- **The error tag vocabulary is closed and duplicated** across Python and Swift
-  by necessity. Run `python3 tools/check_mirror.py` after touching either — if
+- **The error tag vocabulary is closed and duplicated** across Python and
+  JavaScript. Run `python3 tools/check_mirror.py` after touching either — if
   they drift, adaptation degrades silently, with no crash.
+- **iOS can evict web-app storage.** The app requests persistent storage and the
+  backend holds a copy of everything that matters, but install it to the Home
+  Screen rather than leaving it a browser tab.
 
-## Tests
+## Checks
 
 ```bash
-python3 tools/check_mirror.py        # Swift ↔ Python vocabulary
-xcodebuild test -scheme FarsiVault -destination 'platform=iOS Simulator,name=iPhone 17'
+python3 tools/check_mirror.py     # JS ↔ Python vocabulary
+node tools/check_js.mjs           # web modules import cleanly
+python3 -m py_compile backend/*.py core/*.py
+cd infra && terraform validate
+```
+
+## History
+
+A native SwiftUI client was built first and removed in favour of the PWA,
+because building for iOS requires Xcode and the download was blocking all
+progress. It is preserved in git history:
+
+```bash
+git checkout f7f9bb7 -- FarsiVault FarsiVaultTests
 ```
