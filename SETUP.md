@@ -99,20 +99,28 @@ blocks the microphone on plain HTTP and will not install it properly.
 
 ### Option B — GitHub Pages, the real one
 
-Free, HTTPS, and permanent.
+Free, HTTPS, permanent, and already set up for this repo. Two things are worth
+knowing because they are easy to get wrong:
+
+- **GitHub Pages does not work on private repos on the free plan.** The API
+  refuses with *"Your current plan does not support GitHub Pages for this
+  repository."* The repo is public for this reason.
+- **Branch-based Pages can only serve `/` or `/docs`**, never an arbitrary
+  folder. The app lives in `web/`, so deployment goes through
+  `.github/workflows/pages.yml` instead. That workflow also gates every deploy
+  on the module check, the JS/Python vocabulary check, and a non-empty seed bank.
+
+Deploying is therefore just:
 
 ```bash
-cd ~/projects/farsi-sentence-vault
-git add -A && git commit -m "Farsi Vault PWA"
-gh repo create farsi-sentence-vault --private --source=. --push
+git add -A && git commit -m "..." && git push
 ```
 
-Then in the repo's **Settings → Pages**, set source to `main` / `/web`. A minute
-later it is live at `https://YOUR-USERNAME.github.io/farsi-sentence-vault/`.
+Live at <https://alirghase.github.io/farsi-sentence-vault/>.
 
 **On the phone:** open that URL in Safari → Share → **Add to Home Screen**.
-Launch it from the Home Screen icon, not from Safari — that is what gives you
-the standalone window and durable storage.
+Launch it from the Home Screen icon, not from the Safari tab — that is what
+gives you the standalone window and durable storage.
 
 **Checkpoint:** put the phone in airplane mode and complete a full session. No
 network, no backend, no API key. That is the whole point of the design.
@@ -155,7 +163,7 @@ gcloud billing accounts list   # billing_account
 ```
 
 Fill in `infra/terraform.tfvars` — including `allowed_origins`, which must be
-your GitHub Pages origin (e.g. `https://YOUR-USERNAME.github.io`) or the browser
+your Pages origin, exactly `https://alirghase.github.io` (scheme and host only, no path) or the browser
 will block every request.
 
 ```bash
@@ -176,6 +184,6 @@ Put the printed URL and your token into the app's **Settings**, then tap
 | Microphone does nothing | page is on plain HTTP | needs HTTPS — Step 4 Option B |
 | No play button | no Persian voice installed | Step 5 |
 | Sync: "rejected the token" | token mismatch | compare Settings against `terraform.tfvars` |
-| Sync fails in browser only | CORS | `allowed_origins` must match your Pages origin exactly |
+| Sync fails in browser only | CORS | `allowed_origins` must be `https://alirghase.github.io` — host only, no trailing slash, no path |
 | `429` during seed generation | free-tier rate limit | it retries and falls back automatically; wait |
 | Today shows 0 new | seed JSON missing | re-run the `cp` at the end of Step 2 |

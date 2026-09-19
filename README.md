@@ -1,5 +1,8 @@
 # Farsi Sentence Vault
 
+**Live: <https://alirghase.github.io/farsi-sentence-vault/>** — open it on a
+phone and Add to Home Screen.
+
 Translation drilling for people who know the words but freeze when they have to
 speak. Prompt → produce the sentence out loud → reveal → rate. Hundreds of reps
 a week, offline, on a commute.
@@ -85,6 +88,16 @@ and new batches need it. See [`infra/README.md`](infra/README.md).
 - **iOS can evict web-app storage.** The app requests persistent storage and the
   backend holds a copy of everything that matters, but install it to the Home
   Screen rather than leaving it a browser tab.
+
+## Deployment
+
+`web/` is published to GitHub Pages by `.github/workflows/pages.yml` on every
+push that touches it. Deploys are gated on the checks below, so a broken module
+or a missing seed bank fails the build instead of shipping an empty app.
+
+Two constraints that shaped this: GitHub Pages is unavailable on private repos
+on the free plan, and branch-based Pages can only serve `/` or `/docs` — never
+an arbitrary folder like `web/`. Hence public, and hence Actions.
 
 ## Checks
 
