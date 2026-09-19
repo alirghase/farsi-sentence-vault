@@ -136,10 +136,26 @@ class AttemptIn(BaseModel):
     selfRating: str | None = None
 
 
+class ReviewIn(BaseModel):
+    """One SM-2 schedule row, backed up so a storage wipe is survivable."""
+
+    key: str
+    sentenceId: str
+    direction: str
+    easeFactor: float
+    intervalDays: int
+    repetitions: int
+    lapses: int
+    dueDate: int
+    lastReviewed: int | None = None
+
+
 class SyncRequest(BaseModel):
     attempts: list[AttemptIn] = Field(default_factory=list)
+    reviews: list[ReviewIn] = Field(default_factory=list)
     wantSentences: int = 0
     since: dt.datetime | None = None
+    restore: bool = False
 
 
 class GradeOut(BaseModel):
@@ -155,6 +171,7 @@ class GradeOut(BaseModel):
 class SyncResponse(BaseModel):
     grades: list[GradeOut] = Field(default_factory=list)
     sentences: list[dict] = Field(default_factory=list)
+    reviews: list[dict] = Field(default_factory=list)
     focusTags: list[str] = Field(default_factory=list)
     usage: dict = Field(default_factory=dict)
     warnings: list[str] = Field(default_factory=list)
@@ -333,6 +350,15 @@ def sync(req: SyncRequest, uid: str = Depends(require_token)) -> SyncResponse:
     if deltas:
         store().merge_tag_stats(uid, deltas)
 
+    # Back up the schedule. Attempt history alone cannot rebuild due dates,
+    # ease factors or lapse counts — the part that takes weeks to accumulate.
+    if req.reviews:
+        store().save_reviews(uid, [r.model_dump() for r in req.reviews])
+
+    restored: list[dict] = []
+    if req.restore:
+        restored = store().all_reviews(uid)
+
     sentences: list[dict] = []
     if req.wantSentences > 0:
         sentences = store().sentences_since(uid, req.since, req.wantSentences)
@@ -348,6 +374,7 @@ def sync(req: SyncRequest, uid: str = Depends(require_token)) -> SyncResponse:
     return SyncResponse(
         grades=grades,
         sentences=[serialisable(s) for s in sentences],
+        reviews=[serialisable(r) for r in restored],
         focusTags=store().top_error_tags(uid),
         usage=store().usage_today(uid),
         warnings=warnings,
