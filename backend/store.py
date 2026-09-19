@@ -17,6 +17,7 @@ from typing import Any, Iterable
 from google.cloud import firestore
 
 SENTENCES = "sentences"
+REVIEWS = "reviews"
 ATTEMPTS = "attempts"
 TAG_STATS = "tag_stats"
 BATCHES = "batches"
@@ -62,6 +63,27 @@ class Store:
         col = self._user(uid).collection(SENTENCES)
         query = col.order_by("createdAt", direction=firestore.Query.DESCENDING).limit(limit)
         return [d.to_dict().get("englishText", "") for d in query.stream()]
+
+    # --- review schedules ---------------------------------------------------
+
+    def save_reviews(self, uid: str, reviews: list[dict]) -> int:
+        """Upsert SM-2 rows. Keyed by the client's composite key so repeated
+        syncs overwrite rather than duplicate."""
+        written = 0
+        batch = self._db.batch()
+        col = self._user(uid).collection(REVIEWS)
+        for i, r in enumerate(reviews, 1):
+            batch.set(col.document(r["key"]), r)
+            written += 1
+            if i % 400 == 0:
+                batch.commit()
+                batch = self._db.batch()
+        batch.commit()
+        return written
+
+    def all_reviews(self, uid: str) -> list[dict]:
+        """Every schedule row, for restoring onto a wiped device."""
+        return [d.to_dict() for d in self._user(uid).collection(REVIEWS).stream()]
 
     # --- attempts ----------------------------------------------------------
 

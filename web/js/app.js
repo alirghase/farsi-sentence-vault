@@ -171,7 +171,7 @@ function relativeTime(ms) {
   return `${Math.round(hours / 24)} d ago`;
 }
 
-async function doSync() {
+async function doSync(restore = false) {
   const status = $('sync-status');
   const button = $('btn-sync');
   status.dataset.busy = '1';
@@ -186,19 +186,24 @@ async function doSync() {
     const pending = await api.pendingAttempts();
     setStatus(pending.length ? `Grading ${pending.length}…` : 'Fetching sentences…');
 
+    const reviews = await api.changedReviews(state.settings.lastSyncAt);
     const result = await api.sync({
       attempts: pending,
+      reviews,
       wantSentences: state.settings.dailyBatchSize,
       since: state.settings.lastSyncAt,
       settings: state.settings,
+      restore,
     });
 
-    const { graded, added } = await api.applyResult(result, pending);
+    const { graded, added, restored } = await api.applyResult(result, pending);
     state.settings = await db.getSettings();
 
     const parts = [];
     if (graded) parts.push(`${graded} graded`);
     if (added) parts.push(`${added} new`);
+    if (restored) parts.push(`${restored} schedules restored`);
+    if (reviews.length) parts.push(`${reviews.length} backed up`);
     setStatus(parts.join(' · ') || 'Nothing to sync.');
 
     for (const warning of result.warnings ?? []) toast(warning, 5000);
@@ -497,6 +502,17 @@ function bindSettings() {
   $('set-speak').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
   });
+  $('btn-restore').addEventListener('click', async () => {
+    const out = $('restore-result');
+    out.textContent = 'Restoring…';
+    await doSync(true);
+    const settings = await db.getSettings();
+    out.textContent = settings.lastSyncAt
+      ? 'Done — see the Sync line on Today for what came back.'
+      : 'Could not reach the backend.';
+    await renderSettings();
+  });
+
   $('btn-health').addEventListener('click', async () => {
     const result = $('health-result');
     result.textContent = 'Checking…';

@@ -39,7 +39,7 @@ export async function health(baseURL) {
  * Best-effort and resumable: attempts are only marked synced after the call
  * succeeds, so a failure just means the next sync retries them.
  */
-export async function sync({ attempts, wantSentences, since, settings }) {
+export async function sync({ attempts, reviews = [], wantSentences, since, settings, restore = false }) {
   const base = normaliseBase(settings.backendURL);
   if (!base || !settings.apiToken) {
     throw new ApiError('Backend not configured. Add the URL and token in Settings.');
@@ -73,8 +73,10 @@ export async function sync({ attempts, wantSentences, since, settings }) {
       },
       body: JSON.stringify({
         attempts: payload,
+        reviews,
         wantSentences,
         since: since ? new Date(since).toISOString() : null,
+        restore,
       }),
     });
   } catch (error) {
@@ -97,6 +99,19 @@ export async function sync({ attempts, wantSentences, since, settings }) {
     grade.errorTags = (grade.errorTags ?? []).filter((t) => ERROR_TAG_KEYS.includes(t));
   }
   return result;
+}
+
+/**
+ * Schedule rows touched since the last sync.
+ *
+ * Attempt history alone cannot rebuild due dates, ease factors or lapse counts,
+ * so the schedule is backed up too. Only what changed goes up — sending all 800
+ * rows every time would be pure waste.
+ */
+export async function changedReviews(since) {
+  const reviews = await db.getAll(db.STORE.reviews);
+  const cutoff = since ?? 0;
+  return reviews.filter((r) => (r.lastReviewed ?? 0) >= cutoff);
 }
 
 /** Attempts that still need reporting, joined to their sentences. */
@@ -148,8 +163,9 @@ export async function applyResult(result, sent) {
   }
 
   const added = await insertSentences(result.sentences ?? []);
+  const restored = await restoreReviews(result.reviews ?? []);
   await db.saveSettings({ lastSyncAt: now });
-  return { graded, added };
+  return { graded, added, restored };
 }
 
 /**
@@ -196,4 +212,24 @@ async function insertSentences(incoming) {
 
   await db.putMany(db.STORE.sentences, fresh);
   return fresh.length;
+}
+
+/**
+ * Put backed-up schedules back on a wiped device.
+ *
+ * Local rows win: anything practised since the backup is newer than what the
+ * server holds, so restoring must not undo it.
+ */
+async function restoreReviews(incoming) {
+  if (!incoming.length) return 0;
+  const existing = await db.getAll(db.STORE.reviews);
+  const byKey = new Map(existing.map((r) => [r.key, r]));
+
+  const toWrite = incoming.filter((r) => {
+    const local = byKey.get(r.key);
+    return !local || (local.lastReviewed ?? 0) < (r.lastReviewed ?? 0);
+  });
+
+  await db.putMany(db.STORE.reviews, toWrite);
+  return toWrite.length;
 }
