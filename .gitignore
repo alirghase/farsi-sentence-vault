@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Generated content — regenerate with tools/generate_seed.py
+tools/seed_sentences.json
+
+# Secrets. Never commit these.
+.env
+*.tfvars
+!example.tfvars
+
+# Terraform
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.*
+infra/.terraform.lock.hcl
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+build/
+.DS_Store
