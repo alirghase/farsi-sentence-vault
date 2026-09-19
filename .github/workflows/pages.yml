@@ -1,0 +1,63 @@
+# Publishes web/ to GitHub Pages.
+#
+# Deploying via Actions rather than "branch + folder" because the branch option
+# only ever offers / or /docs — it cannot serve an arbitrary directory, and the
+# app lives in web/ alongside the Python backend and Terraform.
+name: Deploy PWA to Pages
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'web/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it mid-publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check web modules import cleanly
+        run: node tools/check_js.mjs
+      - name: Check JS and Python tag vocabularies match
+        run: python3 tools/check_mirror.py
+      - name: Check the seed bank is present and parses
+        run: |
+          python3 -c "
+          import json, pathlib, sys
+          p = pathlib.Path('web/data/seed_sentences.json')
+          if not p.exists():
+              sys.exit('seed_sentences.json missing — the app would ship with an empty deck')
+          d = json.loads(p.read_text())
+          print(f\"{d['count']} sentences\")
+          sys.exit(0 if d['count'] > 0 else 'seed bank is empty')
+          "
+
+  deploy:
+    needs: verify
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deployment
+        uses: actions/deploy-pages@v4
