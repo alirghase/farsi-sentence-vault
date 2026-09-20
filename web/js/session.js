@@ -119,7 +119,7 @@ export async function history(days = 14) {
     const key = day.getTime();
     const row = byDay.get(key) ?? { date: key, reviewed: 0, again: 0 };
     row.reviewed += 1;
-    if (attempt.selfRating === 'again') row.again += 1;
+    if (attempt.selfRating === 'fail') row.again += 1;
     byDay.set(key, row);
   }
 
@@ -285,7 +285,22 @@ function shuffle(array) {
 }
 
 /** Record one review: persist the attempt and advance the schedule. */
-export async function recordAttempt({ card, rating, typedAnswer, audioBlob }) {
+/**
+ * How long an answer should take, in ms.
+ *
+ * Scales with length and level: "fast" for a nine-word B1 sentence is not fast
+ * for a three-word A1 one, and a fixed target would punish the harder material
+ * for being harder.
+ */
+export function targetMs(sentence, direction) {
+  const words = (sentence.farsiText ?? '').trim().split(/\s+/).length;
+  const base = 4000 + words * 500;
+  // Producing Farsi is slower than reading it; hearing needs the audio to play.
+  const multiplier = direction === 'enToFa' ? 1.15 : direction === 'listenToEn' ? 1.3 : 1;
+  return Math.round(base * multiplier);
+}
+
+export async function recordAttempt({ card, rating, typedAnswer, audioBlob, msToReveal = null }) {
   const now = Date.now();
   const quality = SM2.RATING_QUALITY[rating];
   const advanced = SM2.next(card.review, quality);
@@ -306,6 +321,9 @@ export async function recordAttempt({ card, rating, typedAnswer, audioBlob }) {
     selfRating: rating,
     typedAnswer: typedAnswer || null,
     audioBlob: audioBlob || null,
+    // Speed is the gap the app previously could not see at all.
+    msToReveal,
+    targetMs: targetMs(card.sentence, card.direction),
     // Graded fields are filled in at sync time.
     transcript: null,
     aiScore: null,
@@ -323,10 +341,10 @@ export async function recordAttempt({ card, rating, typedAnswer, audioBlob }) {
     db.put(db.STORE.attempts, attempt),
   ]);
 
-  // Self-rated attempts carry no per-tag signal, so an "again" counts against
-  // every tag the sentence exercises. Coarse, but speak-aloud is the default
-  // mode and excluding it would leave the weak-spot view blind to most practice.
-  await bumpTagStats(card.sentence.grammarTags ?? [], rating === 'again');
+  // Self-rated attempts carry no per-tag signal, so a fail counts against every
+  // tag the sentence exercises. Coarse, but speak-aloud is the default mode and
+  // excluding it would leave the weak-spot view blind to most practice.
+  await bumpTagStats(card.sentence.grammarTags ?? [], rating === 'fail');
 
   return { attempt, review };
 }
