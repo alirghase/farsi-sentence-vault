@@ -395,18 +395,31 @@ code { font-family: inherit; font-style: italic; }
 .listen-prompt:active { background: var(--ink); color: var(--paper); }
 #listen-hint { text-align: center; margin-top: 12px; }
 
-/* --- word-by-word breakdown --- */
-.breakdown { margin-top: 16px; border-top: 1px solid var(--rule); }
-.unit { padding: 9px 0; border-bottom: 1px solid var(--rule); }
-.unit-top, .unit-bot { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
-.unit-fa { font-size: 19px; }
-.unit-translit { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
-.unit-bot { margin-top: 3px; }
-.unit-en { font-size: 14px; color: var(--ink-soft); }
-.unit-pos {
-  font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--ink-faint); white-space: nowrap;
+/* --- word map --- */
+.breakdown { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.map-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+.map-row.rtl { flex-direction: row-reverse; justify-content: flex-start; }
+
+.chip {
+  border: 1px solid var(--rule); padding: 5px 9px;
+  font-size: 15px; line-height: 1.2; color: var(--ink);
+  transition: background .12s, border-color .12s, color .12s;
 }
+.chip-en { font-size: 13px; color: var(--ink-soft); }
+.chip.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+.map-detail {
+  margin: 10px 0 0; min-height: 34px;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+  font-size: 13px; color: var(--ink-faint);
+}
+.map-translit { font-family: var(--mono); font-size: 12px; color: var(--ink-soft); }
+.map-means { color: var(--ink); font-size: 14px; }
+.map-pos {
+  font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.map-note { font-size: 11px; font-style: italic; color: var(--ink-faint); width: 100%; }
 
 /* --- other acceptable answers --- */
 .alts { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--rule); }

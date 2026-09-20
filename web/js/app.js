@@ -6,6 +6,7 @@ import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as speech from './speech.js';
 import * as levels from './levels.js';
+import * as sound from './sound.js';
 import { ERROR_TAGS, tagTitle } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
@@ -34,6 +35,7 @@ async function boot() {
 
   await loadSeedIfNeeded();
   state.speechOK = await speech.isSpeechAvailable();
+  sound.setEnabled(state.settings.soundEnabled !== false);
 
   bindTabs();
   bindToday();
@@ -419,39 +421,68 @@ async function reveal() {
 }
 
 /**
- * Word-by-word breakdown, plus other acceptable renderings.
+ * An interactive map between the Persian and the English.
  *
- * The breakdown supersedes the flat literal gloss, which actively misleads on
- * compound verbs: "بلند می‌شه" word-by-word reads "tall becomes" rather than
- * "gets up". Units arrive already grouped, so a compound verb is one row.
+ * Every word is its own chip, so you can see which Persian word carries which
+ * English. Tapping either side highlights its counterpart — the mapping works
+ * in both directions because word order differs between the two languages and
+ * position alone tells you nothing.
  *
- * Alternatives matter because self-rating cannot otherwise distinguish "wrong"
- * from "said it a different valid way".
+ * Words that belong to one unit highlight together, which is the honest
+ * treatment of compound verbs: "بلند می‌شه" is literally "tall becomes" but
+ * means "gets up", so the two words map jointly to one English idea rather than
+ * one-to-one. The detail line names what the group actually means.
  */
 function renderBreakdown(sentence) {
   const units = sentence.breakdown ?? [];
   const alts = sentence.alternatives ?? [];
 
-  // Fall back to the old gloss for sentences not yet annotated.
+  // Sentences not yet annotated fall back to the old flat gloss.
   $('answer-gloss').textContent = units.length ? '' : (sentence.literalGloss ?? '');
   $('answer-gloss').hidden = units.length > 0;
 
-  $('answer-breakdown').hidden = units.length === 0;
-  $('answer-breakdown').innerHTML = units.map((u) => `
-    <div class="unit">
-      <div class="unit-top">
-        <span class="unit-fa rtl">${escapeHtml(u.fa)}</span>
-        <span class="unit-translit">${escapeHtml(u.translit)}</span>
-      </div>
-      <div class="unit-bot">
-        <span class="unit-en">${escapeHtml(u.en)}</span>
-        <span class="unit-pos">${escapeHtml(u.pos)}</span>
-      </div>
-    </div>`).join('');
+  const host = $('answer-breakdown');
+  host.hidden = units.length === 0;
+
+  if (units.length) {
+    const chips = (text, unitIndex, extra = '') => text
+      .split(/\s+/)
+      .filter(Boolean)
+      .map((w) => `<button class="chip ${extra}" data-u="${unitIndex}">${escapeHtml(w)}</button>`)
+      .join('');
+
+    const farsi = units.map((u, i) => chips(u.fa, i, 'chip-fa')).join('');
+    const english = units.map((u, i) => chips(u.en, i, 'chip-en')).join('');
+
+    host.innerHTML = `
+      <div class="map-row rtl" id="map-fa">${farsi}</div>
+      <div class="map-row" id="map-en">${english}</div>
+      <p class="map-detail" id="map-detail">Tap any word to see what it maps to.</p>`;
+
+    const detail = host.querySelector('#map-detail');
+    const all = [...host.querySelectorAll('.chip')];
+
+    const select = (index) => {
+      for (const chip of all) chip.classList.toggle('on', chip.dataset.u === String(index));
+      const u = units[index];
+      const multi = u.fa.trim().split(/\s+/).length > 1;
+      detail.innerHTML =
+        `<span class="map-translit">${escapeHtml(u.translit)}</span>` +
+        `<span class="map-means">${escapeHtml(u.en)}</span>` +
+        `<span class="map-pos">${escapeHtml(u.pos)}</span>` +
+        (multi ? '<span class="map-note">these words work as one unit</span>' : '');
+    };
+
+    for (const chip of all) {
+      chip.addEventListener('click', () => select(Number(chip.dataset.u)));
+    }
+  } else {
+    host.innerHTML = '';
+  }
 
   $('answer-alts').hidden = alts.length === 0;
   $('answer-alts').innerHTML = alts.length
-    ? `<p class="alts-head">Also correct</p>` +
+    ? '<p class="alts-head">Also correct</p>' +
       alts.map((a) => `<p class="alt rtl">${escapeHtml(a)}</p>`).join('')
     : '';
 }
@@ -490,6 +521,11 @@ async function rate(rating) {
   // "Again" means it comes back this session, not tomorrow — the point is
   // repetition under pressure, and a day's gap wastes the miss.
   if (rating === 'again') state.queue.push(card);
+
+  // A distinct tone for a miss, so you register it without reading anything.
+  if (state.index + 1 >= state.queue.length) sound.complete();
+  else if (rating === 'again') sound.again();
+  else sound.next();
 
   speech.stopSpeaking();
   state.index += 1;
@@ -679,6 +715,12 @@ function bindSettings() {
   $('set-speak').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
   });
+  $('set-sound').addEventListener('change', async (e) => {
+    state.settings = await db.saveSettings({ soundEnabled: e.target.checked });
+    sound.setEnabled(e.target.checked);
+    if (e.target.checked) sound.next();   // so you hear what you just enabled
+  });
+
   $('set-level').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ currentLevel: e.target.value });
     toast(`New cards now come from ${e.target.value}.`);
@@ -730,6 +772,7 @@ async function renderSettings() {
     ? 'Producing Farsi is the skill that freezes; recognising it is easier.'
     : 'Hearing is unavailable: no Persian voice is installed on this device.';
   $('set-speak').checked = s.speakEnabled;
+  $('set-sound').checked = s.soundEnabled !== false;
 
   $('set-level').innerHTML = levels.LEVELS
     .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
