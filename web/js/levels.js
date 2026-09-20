@@ -36,10 +36,6 @@ export function levelForDifficulty(difficulty) {
   return LEVELS[Math.min(Math.max(difficulty, 1), LEVELS.length) - 1];
 }
 
-export function difficultyForLevel(level) {
-  return LEVEL_META[level]?.difficulty ?? 1;
-}
-
 export function nextLevel(level) {
   const i = LEVELS.indexOf(level);
   return i >= 0 && i < LEVELS.length - 1 ? LEVELS[i + 1] : null;

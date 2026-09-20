@@ -149,7 +149,6 @@ async function refreshToday() {
   const level = state.settings.currentLevel;
   const counts = await session.counts(Date.now(), state.settings.dailyBatchSize, level);
   const gate = await levels.progress(level);
-  state.gate = gate;
 
   $('level-now').textContent = level;
   renderPassPanel(gate);
