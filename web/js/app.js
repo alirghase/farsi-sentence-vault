@@ -148,6 +148,19 @@ function bindToday() {
   $('btn-sync').addEventListener('click', doSync);
 }
 
+/**
+ * Sync is only real when a backend is configured, and by default none is.
+ * Same principle as the listening slider: a control that cannot succeed is
+ * worse than no control, because tapping it teaches you the app is broken.
+ */
+function applyBackendVisibility() {
+  const configured = Boolean(state.settings.backendURL);
+  $('sync-bar').hidden = !configured;
+  $('backup-group').hidden = !configured;
+  $('tab-results').hidden = !configured;
+  $('sync-row').hidden = !configured;
+}
+
 async function refreshToday() {
   const level = state.settings.currentLevel;
   const counts = await session.counts(Date.now(), state.settings.dailyBatchSize, level);
@@ -156,20 +169,8 @@ async function refreshToday() {
   $('level-now').textContent = level;
   renderPassPanel(gate);
 
-  const streak = await session.streak();
-  $('streak').textContent = `${faDigits(streak.days)} ${text('today.day')}`;
-  $('streak').classList.toggle('is-zero', streak.days === 0);
-
-  const target = state.settings.dailyTarget;
-  $('target-progress').textContent = `${faDigits(counts.reviewedToday)} / ${faDigits(target)}`;
-  $('target-progress').classList.toggle('is-hit', counts.reviewedToday >= target);
-
   $('count-due').textContent = faDigits(counts.due);
   $('count-new').textContent = faDigits(counts.new);
-  $('count-held').textContent = faDigits(counts.sentenceCount);
-  $('last-sync').textContent = state.settings.lastSyncAt
-    ? relativeTime(state.settings.lastSyncAt)
-    : text('today.never');
 
   for (const [id, value] of [['count-due', counts.due], ['count-new', counts.new]]) {
     $(id).classList.toggle('is-zero', value === 0);
@@ -185,7 +186,8 @@ async function refreshToday() {
     ? `${text('today.start')} &rarr;`
     : text('today.nothing');
 
-  await renderRegister();
+  applyBackendVisibility();
+  if (!state.settings.backendURL) return;
 
   const pending = (await api.pendingAttempts(1000)).length;
   const status = $('sync-status');
@@ -193,6 +195,31 @@ async function refreshToday() {
     status.className = 'sync-status';
     status.textContent = pending ? `${faDigits(pending)} ${text('today.waiting')}` : '';
   }
+}
+
+/**
+ * The figures Today used to carry. None of them changes what you do next, so
+ * none of them belongs on the screen whose only job is to start a session.
+ */
+async function renderProgressStats() {
+  const counts = await session.counts(
+    Date.now(), state.settings.dailyBatchSize, state.settings.currentLevel,
+  );
+
+  const streak = await session.streak();
+  $('streak').textContent = `${faDigits(streak.days)} ${text('today.day')}`;
+  $('streak').classList.toggle('is-zero', streak.days === 0);
+
+  const target = state.settings.dailyTarget;
+  $('target-progress').textContent = `${faDigits(counts.reviewedToday)} / ${faDigits(target)}`;
+  $('target-progress').classList.toggle('is-hit', counts.reviewedToday >= target);
+
+  $('count-held').textContent = faDigits(counts.sentenceCount);
+  $('last-sync').textContent = state.settings.lastSyncAt
+    ? relativeTime(state.settings.lastSyncAt)
+    : text('today.never');
+
+  await renderRegister();
 }
 
 /** The accumulating half of the ledger: one row per day of practice. */
@@ -668,6 +695,7 @@ async function renderGates() {
 }
 
 async function renderWeakSpots() {
+  await renderProgressStats();
   await renderGates();
   const stats = await db.getAll(db.STORE.tagStats);
   const list = $('weak-list');
@@ -825,6 +853,7 @@ function bindSettings() {
 
 async function renderSettings() {
   const s = state.settings;
+  applyBackendVisibility();
   $('set-url').value = s.backendURL;
   $('set-token').value = s.apiToken;
   $('set-batch').value = s.dailyBatchSize;

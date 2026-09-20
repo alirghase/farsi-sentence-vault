@@ -22,17 +22,13 @@
 
     <div class="today-body">
       <div class="ledger" id="counts">
+        <div class="ledger-row lead"><span data-t="today.level">Level</span><b id="level-now">A1</b></div>
         <div class="ledger-row lead"><span data-t="today.due">Due</span><b id="count-due">0</b></div>
         <div class="ledger-row lead"><span data-t="today.new">New</span><b id="count-new">0</b></div>
-        <div class="ledger-row"><span data-t="today.target">Target</span><b id="target-progress">0 / 40</b></div>
-        <div class="ledger-row"><span data-t="today.held">Sentences</span><b id="count-held">0</b></div>
-        <div class="ledger-row"><span data-t="today.synced">Synced</span><b id="last-sync">never</b></div>
-        <div class="ledger-row lead"><span data-t="today.level">Level</span><b id="level-now">A1</b></div>
-        <div class="ledger-row"><span data-t="today.streak">Streak</span><b id="streak">0 days</b></div>
       </div>
 
-      <p class="empty" id="today-empty" hidden>
-        No sentences yet. Sync to fetch a batch, or check that the seed bank loaded.
+      <p class="empty" id="today-empty" data-t="today.empty" hidden>
+        No sentences yet.
       </p>
 
       <div class="passed-panel" id="passed-panel" hidden>
@@ -43,15 +39,9 @@
 
       <button id="btn-start">Start &rarr;</button>
 
-      <div class="register" id="register" hidden>
-        <div class="ledger-row is-head">
-          <span data-t="today.session">Session</span><b class="col-n" data-t="today.cards">Cards</b><b class="col-pct" data-t="today.right">Right</b>
-        </div>
-        <div id="register-rows"></div>
-      </div>
     </div>
 
-    <div class="sync-bar">
+    <div class="sync-bar" id="sync-bar" hidden>
       <p class="sync-status" id="sync-status"></p>
       <button id="btn-sync" data-t="today.sync">Sync</button>
     </div>
@@ -61,7 +51,19 @@
   <section class="screen" id="screen-weak">
     <header class="screen-head"><h1 data-t="tab.progress">Progress</h1></header>
     <div class="list">
+      <div class="ledger" id="today-stats">
+        <div class="ledger-row" id="sync-row"><span data-t="today.synced">Synced</span><b id="last-sync">never</b></div>
+        <div class="ledger-row"><span data-t="today.target">Target</span><b id="target-progress">0 / 40</b></div>
+        <div class="ledger-row"><span data-t="today.streak">Streak</span><b id="streak">0 days</b></div>
+        <div class="ledger-row"><span data-t="today.held">Sentences</span><b id="count-held">0</b></div>
+      </div>
       <div id="gate-block"></div>
+      <div class="register" id="register" hidden>
+        <div class="ledger-row is-head">
+          <span data-t="today.session">Session</span><b class="col-n" data-t="today.cards">Cards</b><b class="col-pct" data-t="today.right">Right</b>
+        </div>
+        <div id="register-rows"></div>
+      </div>
       <h2 class="list-head" data-t="progress.weakSpots">Weak spots</h2>
       <div id="weak-list"></div>
     </div>
@@ -141,7 +143,7 @@
         <div class="kv" id="storage-info"></div>
       </div>
 
-      <div class="group">
+      <div class="group" id="backup-group" hidden>
         <h2 data-t="settings.backup">Backup</h2>
         <button id="btn-restore">Restore from backend</button>
         <p class="hint" id="restore-result"></p>
@@ -166,7 +168,7 @@
 <nav class="tabs">
   <button data-screen="today" class="is-active" data-t="tab.today">Today</button>
   <button data-screen="weak" data-t="tab.progress">Progress</button>
-  <button data-screen="results" data-t="tab.results">Results</button>
+  <button data-screen="results" id="tab-results" data-t="tab.results" hidden>Results</button>
   <button data-screen="settings" data-t="tab.settings">Settings</button>
 </nav>
 
