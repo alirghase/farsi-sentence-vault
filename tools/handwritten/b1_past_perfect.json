@@ -1,0 +1,924 @@
+{
+  "note": "Past perfect — رفته بودم. The deck had four of these; it is how you say what had already happened.",
+  "difficulty": 3,
+  "sentences": [
+    {
+      "en": "I had already eaten.",
+      "fa": "من قبلا غذا خورده بودم.",
+      "tr": "man ghablan ghazâ khorde budam",
+      "sit": "declining an offer",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "من",
+          "man",
+          "I",
+          "pronoun"
+        ],
+        [
+          "قبلا",
+          "ghablan",
+          "already",
+          "adverb"
+        ],
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "خورده بودم",
+          "khorde budam",
+          "had eaten",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She had left before we arrived.",
+      "fa": "قبل اینکه برسیم رفته بود.",
+      "tr": "ghable inke beresim rafte bud",
+      "sit": "a missed meeting",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "قبل",
+          "ghable",
+          "before",
+          "preposition"
+        ],
+        [
+          "اینکه",
+          "inke",
+          "that",
+          "conjunction"
+        ],
+        [
+          "برسیم",
+          "beresim",
+          "we arrive",
+          "verb"
+        ],
+        [
+          "رفته بود",
+          "rafte bud",
+          "had left",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We had never been there.",
+      "fa": "ما هیچ‌وقت اونجا نرفته بودیم.",
+      "tr": "mâ hichvaght unjâ narafte budim",
+      "sit": "describing a first visit",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "ما",
+          "mâ",
+          "we",
+          "pronoun"
+        ],
+        [
+          "هیچ‌وقت",
+          "hichvaght",
+          "never",
+          "adverb"
+        ],
+        [
+          "اونجا",
+          "unjâ",
+          "there",
+          "adverb"
+        ],
+        [
+          "نرفته بودیم",
+          "narafte budim",
+          "had not been",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I had seen that film before.",
+      "fa": "اون فیلمو قبلا دیده بودم.",
+      "tr": "un filmo ghablan dide budam",
+      "sit": "at the cinema",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "فیلمو",
+          "filmo",
+          "the film",
+          "noun"
+        ],
+        [
+          "قبلا",
+          "ghablan",
+          "before",
+          "adverb"
+        ],
+        [
+          "دیده بودم",
+          "dide budam",
+          "had seen",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They had already gone home.",
+      "fa": "اونا قبلا رفته بودن خونه.",
+      "tr": "unâ ghablan rafte budan khune",
+      "sit": "arriving late",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "قبلا",
+          "ghablan",
+          "already",
+          "adverb"
+        ],
+        [
+          "رفته بودن",
+          "rafte budan",
+          "had gone",
+          "verb"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He had told me about it.",
+      "fa": "درباره‌ش بهم گفته بود.",
+      "tr": "darbâresh beham gofte bud",
+      "sit": "recalling a conversation",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "درباره‌ش",
+          "darbâresh",
+          "about it",
+          "attached pronoun"
+        ],
+        [
+          "بهم",
+          "beham",
+          "to me",
+          "attached pronoun"
+        ],
+        [
+          "گفته بود",
+          "gofte bud",
+          "had told",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We had bought the tickets already.",
+      "fa": "بلیتا رو قبلا خریده بودیم.",
+      "tr": "belitâ ro ghablan kharide budim",
+      "sit": "at the station",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "بلیتا",
+          "belitâ",
+          "the tickets",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "قبلا",
+          "ghablan",
+          "already",
+          "adverb"
+        ],
+        [
+          "خریده بودیم",
+          "kharide budim",
+          "had bought",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I hadn't finished my work.",
+      "fa": "کارمو تموم نکرده بودم.",
+      "tr": "kâramo tamum nakarde budam",
+      "sit": "explaining a late night",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "کارمو",
+          "kâramo",
+          "my work",
+          "attached pronoun"
+        ],
+        [
+          "تموم نکرده بودم",
+          "tamum nakarde budam",
+          "had not finished",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She had forgotten her phone.",
+      "fa": "گوشیشو فراموش کرده بود.",
+      "tr": "gushisho farâmush karde bud",
+      "sit": "explaining a problem",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "گوشیشو",
+          "gushisho",
+          "her phone",
+          "attached pronoun"
+        ],
+        [
+          "فراموش کرده بود",
+          "farâmush karde bud",
+          "had forgotten",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They had closed the door.",
+      "fa": "در رو بسته بودن.",
+      "tr": "dar ro baste budan",
+      "sit": "arriving at a shop",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "در",
+          "dar",
+          "door",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "بسته بودن",
+          "baste budan",
+          "had closed",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I had asked him twice.",
+      "fa": "دو بار ازش پرسیده بودم.",
+      "tr": "do bâr azesh porside budam",
+      "sit": "frustrated",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "دو",
+          "do",
+          "two",
+          "number"
+        ],
+        [
+          "بار",
+          "bâr",
+          "times",
+          "noun"
+        ],
+        [
+          "ازش",
+          "azesh",
+          "from him",
+          "attached pronoun"
+        ],
+        [
+          "پرسیده بودم",
+          "porside budam",
+          "had asked",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We had waited an hour.",
+      "fa": "یه ساعت منتظر مونده بودیم.",
+      "tr": "ye sâat montazer munde budim",
+      "sit": "complaining",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "one",
+          "number"
+        ],
+        [
+          "ساعت",
+          "sâat",
+          "hour",
+          "noun"
+        ],
+        [
+          "منتظر مونده بودیم",
+          "montazer munde budim",
+          "had waited",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He had never worked there.",
+      "fa": "هیچ‌وقت اونجا کار نکرده بود.",
+      "tr": "hichvaght unjâ kâr nakarde bud",
+      "sit": "correcting someone",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "هیچ‌وقت",
+          "hichvaght",
+          "never",
+          "adverb"
+        ],
+        [
+          "اونجا",
+          "unjâ",
+          "there",
+          "adverb"
+        ],
+        [
+          "کار نکرده بود",
+          "kâr nakarde bud",
+          "had not worked",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I had put it on the table.",
+      "fa": "گذاشته بودمش روی میز.",
+      "tr": "gozâshte budamesh ruye miz",
+      "sit": "looking for something",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "گذاشته بودمش",
+          "gozâshte budamesh",
+          "I had put it",
+          "verb"
+        ],
+        [
+          "روی",
+          "ruye",
+          "on",
+          "preposition"
+        ],
+        [
+          "میز",
+          "miz",
+          "table",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They had already started.",
+      "fa": "قبلا شروع کرده بودن.",
+      "tr": "ghablan shoru karde budan",
+      "sit": "arriving late to a meeting",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "قبلا",
+          "ghablan",
+          "already",
+          "adverb"
+        ],
+        [
+          "شروع کرده بودن",
+          "shoru karde budan",
+          "had started",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We had met before.",
+      "fa": "قبلا همدیگه رو دیده بودیم.",
+      "tr": "ghablan hamdige ro dide budim",
+      "sit": "recognising someone",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "قبلا",
+          "ghablan",
+          "before",
+          "adverb"
+        ],
+        [
+          "همدیگه",
+          "hamdige",
+          "each other",
+          "pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "دیده بودیم",
+          "dide budim",
+          "had met",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She had written it down.",
+      "fa": "نوشته بودش.",
+      "tr": "neveshte budesh",
+      "sit": "looking for a note",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "نوشته بودش",
+          "neveshte budesh",
+          "she had written it",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I had left my keys at home.",
+      "fa": "کلیدامو خونه جا گذاشته بودم.",
+      "tr": "kelidâmo khune jâ gozâshte budam",
+      "sit": "locked out",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "کلیدامو",
+          "kelidâmo",
+          "my keys",
+          "attached pronoun"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ],
+        [
+          "جا گذاشته بودم",
+          "jâ gozâshte budam",
+          "had left",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They hadn't told us anything.",
+      "fa": "هیچی بهمون نگفته بودن.",
+      "tr": "hichi behemun nagofte budan",
+      "sit": "after a surprise",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "هیچی",
+          "hichi",
+          "anything",
+          "pronoun"
+        ],
+        [
+          "بهمون",
+          "behemun",
+          "to us",
+          "attached pronoun"
+        ],
+        [
+          "نگفته بودن",
+          "nagofte budan",
+          "had not told",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We had ordered the food already.",
+      "fa": "غذا رو قبلا سفارش داده بودیم.",
+      "tr": "ghazâ ro ghablan sefâresh dâde budim",
+      "sit": "at a restaurant",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "قبلا",
+          "ghablan",
+          "already",
+          "adverb"
+        ],
+        [
+          "سفارش داده بودیم",
+          "sefâresh dâde budim",
+          "had ordered",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I had read that book.",
+      "fa": "اون کتابو خونده بودم.",
+      "tr": "un ketâbo khunde budam",
+      "sit": "in a bookshop",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "کتابو",
+          "ketâbo",
+          "the book",
+          "noun"
+        ],
+        [
+          "خونده بودم",
+          "khunde budam",
+          "had read",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He had come back from the north.",
+      "fa": "از شمال برگشته بود.",
+      "tr": "az shomâl bargashte bud",
+      "sit": "family news",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "شمال",
+          "shomâl",
+          "north",
+          "noun"
+        ],
+        [
+          "برگشته بود",
+          "bargashte bud",
+          "had come back",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We had paid the bill.",
+      "fa": "پول رو داده بودیم.",
+      "tr": "pul ro dâde budim",
+      "sit": "settling an argument",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "پول",
+          "pul",
+          "money",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "داده بودیم",
+          "dâde budim",
+          "had paid",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They had sold the car.",
+      "fa": "ماشینو فروخته بودن.",
+      "tr": "mâshino forukhte budan",
+      "sit": "family news",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "ماشینو",
+          "mâshino",
+          "the car",
+          "noun"
+        ],
+        [
+          "فروخته بودن",
+          "forukhte budan",
+          "had sold",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I had woken up early that day.",
+      "fa": "اون روز زود بیدار شده بودم.",
+      "tr": "un ruz zud bidâr shode budam",
+      "sit": "recounting a day",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "روز",
+          "ruz",
+          "day",
+          "noun"
+        ],
+        [
+          "زود",
+          "zud",
+          "early",
+          "adverb"
+        ],
+        [
+          "بیدار شده بودم",
+          "bidâr shode budam",
+          "had woken up",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She hadn't seen the message.",
+      "fa": "پیامو ندیده بود.",
+      "tr": "payâmo nadide bud",
+      "sit": "explaining silence",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "پیامو",
+          "payâmo",
+          "the message",
+          "noun"
+        ],
+        [
+          "ندیده بود",
+          "nadide bud",
+          "had not seen",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We had lived there for two years.",
+      "fa": "دو سال اونجا زندگی کرده بودیم.",
+      "tr": "do sâl unjâ zendegi karde budim",
+      "sit": "talking about the past",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "دو",
+          "do",
+          "two",
+          "number"
+        ],
+        [
+          "سال",
+          "sâl",
+          "years",
+          "noun"
+        ],
+        [
+          "اونجا",
+          "unjâ",
+          "there",
+          "adverb"
+        ],
+        [
+          "زندگی کرده بودیم",
+          "zendegi karde budim",
+          "had lived",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I had brought it for you.",
+      "fa": "واسه‌ت آورده بودمش.",
+      "tr": "vâset âvorde budamesh",
+      "sit": "giving a gift",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "واسه‌ت",
+          "vâset",
+          "for you",
+          "attached pronoun"
+        ],
+        [
+          "آورده بودمش",
+          "âvorde budamesh",
+          "I had brought it",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They had already left the party.",
+      "fa": "قبلا از مهمونی رفته بودن.",
+      "tr": "ghablan az mehmuni rafte budan",
+      "sit": "recounting an evening",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "قبلا",
+          "ghablan",
+          "already",
+          "adverb"
+        ],
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "مهمونی",
+          "mehmuni",
+          "party",
+          "noun"
+        ],
+        [
+          "رفته بودن",
+          "rafte budan",
+          "had left",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He had promised to come.",
+      "fa": "قول داده بود بیاد.",
+      "tr": "ghol dâde bud biyâd",
+      "sit": "a broken promise",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "قول داده بود",
+          "ghol dâde bud",
+          "had promised",
+          "compound verb"
+        ],
+        [
+          "بیاد",
+          "biyâd",
+          "to come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

@@ -1,0 +1,1563 @@
+{
+  "note": "Formal register: شما and second-person-plural endings. The deck had 8 of these in 778 sentences, and every verb ending changes with شما.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "Are you coming tomorrow?",
+      "fa": "شما فردا میاید؟",
+      "tr": "shomâ fardâ miâyid?",
+      "sit": "arranging with an older relative",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "میاید",
+          "miâyid",
+          "you come",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "شما فردا میاین؟"
+      ]
+    },
+    {
+      "en": "Can you help me?",
+      "fa": "می‌تونید بهم کمک کنید؟",
+      "tr": "mitunid beham komak konid?",
+      "sit": "asking a stranger",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "می‌تونید",
+          "mitunid",
+          "you can",
+          "verb"
+        ],
+        [
+          "بهم",
+          "beham",
+          "to me",
+          "attached pronoun"
+        ],
+        [
+          "کمک کنید",
+          "komak konid",
+          "help",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "می‌تونین بهم کمک کنین؟"
+      ]
+    },
+    {
+      "en": "Please bring a glass of water.",
+      "fa": "لطفا یه لیوان آب بیارید.",
+      "tr": "lotfan ye livân âb biyârid.",
+      "sit": "ordering in a restaurant",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "لیوان",
+          "livân",
+          "glass",
+          "noun"
+        ],
+        [
+          "آب",
+          "âb",
+          "water",
+          "noun"
+        ],
+        [
+          "بیارید",
+          "biyârid",
+          "bring",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Where do you work?",
+      "fa": "شما کجا کار می‌کنید؟",
+      "tr": "shomâ kojâ kâr mikonid?",
+      "sit": "meeting someone new",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "کار می‌کنید",
+          "kâr mikonid",
+          "you work",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you drink tea or coffee?",
+      "fa": "شما چای می‌خورید یا قهوه؟",
+      "tr": "shomâ chây mikhorid yâ ghahve?",
+      "sit": "hosting a guest",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "چای",
+          "chây",
+          "tea",
+          "noun"
+        ],
+        [
+          "می‌خورید",
+          "mikhorid",
+          "you drink",
+          "verb"
+        ],
+        [
+          "یا",
+          "yâ",
+          "or",
+          "conjunction"
+        ],
+        [
+          "قهوه",
+          "ghahve",
+          "coffee",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please sit here.",
+      "fa": "لطفا اینجا بشینید.",
+      "tr": "lotfan injâ beshinid.",
+      "sit": "hosting a guest",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "بشینید",
+          "beshinid",
+          "sit",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Have you read this book?",
+      "fa": "شما این کتاب رو خوندید؟",
+      "tr": "shomâ in ketâb ro khundid?",
+      "sit": "talking with a teacher",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "کتاب",
+          "ketâb",
+          "book",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "خوندید",
+          "khundid",
+          "you read",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Can you wait a bit?",
+      "fa": "می‌تونید یکم صبر کنید؟",
+      "tr": "mitunid yekam sabr konid?",
+      "sit": "at a shop counter",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "می‌تونید",
+          "mitunid",
+          "you can",
+          "verb"
+        ],
+        [
+          "یکم",
+          "yekam",
+          "a bit",
+          "adverb"
+        ],
+        [
+          "صبر کنید",
+          "sabr konid",
+          "wait",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you coming to the park too?",
+      "fa": "شما هم میاید پارک؟",
+      "tr": "shomâ ham miâyid pârk?",
+      "sit": "inviting a neighbour",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "هم",
+          "ham",
+          "too",
+          "particle"
+        ],
+        [
+          "میاید",
+          "miâyid",
+          "you come",
+          "verb"
+        ],
+        [
+          "پارک",
+          "pârk",
+          "park",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please open the door.",
+      "fa": "لطفا در رو باز کنید.",
+      "tr": "lotfan dar ro bâz konid.",
+      "sit": "at someone's home",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "در",
+          "dar",
+          "door",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "باز کنید",
+          "bâz konid",
+          "open",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you call yesterday?",
+      "fa": "شما دیروز زنگ زدید؟",
+      "tr": "shomâ diruz zang zadid?",
+      "sit": "following up a missed call",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "زنگ زدید",
+          "zang zadid",
+          "you called",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Excuse me, where is the metro station?",
+      "fa": "ببخشید، ایستگاه مترو کجاست؟",
+      "tr": "bebakhshid, istgâhe metro kojâst?",
+      "sit": "asking directions",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "ببخشید",
+          "bebakhshid",
+          "excuse me",
+          "expression"
+        ],
+        [
+          "ایستگاه",
+          "istgâh",
+          "station",
+          "noun"
+        ],
+        [
+          "مترو",
+          "metro",
+          "metro",
+          "noun"
+        ],
+        [
+          "کجاست",
+          "kojâst",
+          "where is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you order food?",
+      "fa": "شما غذا سفارش دادید؟",
+      "tr": "shomâ ghazâ sefâresh dâdid?",
+      "sit": "at the office",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "سفارش دادید",
+          "sefâresh dâdid",
+          "you ordered",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please speak a bit slower.",
+      "fa": "لطفا یکم آروم‌تر صحبت کنید.",
+      "tr": "lotfan yekam ârumtar sohbat konid.",
+      "sit": "struggling to follow someone",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "یکم",
+          "yekam",
+          "a bit",
+          "adverb"
+        ],
+        [
+          "آروم‌تر",
+          "ârumtar",
+          "slower",
+          "adjective"
+        ],
+        [
+          "صحبت کنید",
+          "sohbat konid",
+          "speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you have time tomorrow?",
+      "fa": "شما فردا وقت دارید؟",
+      "tr": "shomâ fardâ vaght dârid?",
+      "sit": "arranging a meeting",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "وقت",
+          "vaght",
+          "time",
+          "noun"
+        ],
+        [
+          "دارید",
+          "dârid",
+          "you have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Where are you coming from?",
+      "fa": "شما از کجا میاید؟",
+      "tr": "shomâ az kojâ miâyid?",
+      "sit": "small talk with a driver",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "میاید",
+          "miâyid",
+          "you come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please hold this for me.",
+      "fa": "لطفا اینو واسه من نگه دارید.",
+      "tr": "lotfan ino vâse man negah dârid.",
+      "sit": "with hands full",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "اینو",
+          "ino",
+          "this",
+          "pronoun"
+        ],
+        [
+          "واسه",
+          "vâse",
+          "for",
+          "preposition"
+        ],
+        [
+          "من",
+          "man",
+          "me",
+          "pronoun"
+        ],
+        [
+          "نگه دارید",
+          "negah dârid",
+          "hold",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you eating dinner tonight?",
+      "fa": "شما امشب شام می‌خورید؟",
+      "tr": "shomâ emshab shâm mikhorid?",
+      "sit": "inviting a guest",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "امشب",
+          "emshab",
+          "tonight",
+          "adverb"
+        ],
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "می‌خورید",
+          "mikhorid",
+          "you eat",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Excuse me, can I ask a question?",
+      "fa": "ببخشید، می‌تونم یه سوال بپرسم؟",
+      "tr": "bebakhshid, mitunam ye soâl beporsam?",
+      "sit": "approaching a stranger",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "ببخشید",
+          "bebakhshid",
+          "excuse me",
+          "expression"
+        ],
+        [
+          "می‌تونم",
+          "mitunam",
+          "can I",
+          "verb"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "سوال",
+          "soâl",
+          "question",
+          "noun"
+        ],
+        [
+          "بپرسم",
+          "beporsam",
+          "ask",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "When are you coming back?",
+      "fa": "شما کی برمی‌گردید؟",
+      "tr": "shomâ key barmigardid?",
+      "sit": "seeing someone off",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "کی",
+          "key",
+          "when",
+          "question word"
+        ],
+        [
+          "برمی‌گردید",
+          "barmigardid",
+          "you come back",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please come early.",
+      "fa": "لطفا زود بیاید.",
+      "tr": "lotfan zud biyâyid.",
+      "sit": "arranging a meeting",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "زود",
+          "zud",
+          "early",
+          "adverb"
+        ],
+        [
+          "بیاید",
+          "biyâyid",
+          "come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you have a car?",
+      "fa": "شما ماشین دارید؟",
+      "tr": "shomâ mâshin dârid?",
+      "sit": "arranging a lift",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "ماشین",
+          "mâshin",
+          "car",
+          "noun"
+        ],
+        [
+          "دارید",
+          "dârid",
+          "you have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Can you say it louder?",
+      "fa": "می‌تونید بلندتر بگید؟",
+      "tr": "mitunid bolandtar begid?",
+      "sit": "on a bad phone line",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "می‌تونید",
+          "mitunid",
+          "you can",
+          "verb"
+        ],
+        [
+          "بلندتر",
+          "bolandtar",
+          "louder",
+          "adjective"
+        ],
+        [
+          "بگید",
+          "begid",
+          "say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you know this street?",
+      "fa": "شما این خیابون رو بلدید؟",
+      "tr": "shomâ in khiyâbun ro baladid?",
+      "sit": "asking directions",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "خیابون",
+          "khiyâbun",
+          "street",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "بلدید",
+          "baladid",
+          "you know",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please explain a bit more.",
+      "fa": "لطفا یکم بیشتر توضیح بدید.",
+      "tr": "lotfan yekam bishtar tozih bedid.",
+      "sit": "in a lesson",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "یکم",
+          "yekam",
+          "a bit",
+          "adverb"
+        ],
+        [
+          "بیشتر",
+          "bishtar",
+          "more",
+          "adverb"
+        ],
+        [
+          "توضیح بدید",
+          "tozih bedid",
+          "explain",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you go to the doctor?",
+      "fa": "شما دکتر رفتید؟",
+      "tr": "shomâ doktor raftid?",
+      "sit": "asking after someone's health",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "دکتر",
+          "doktor",
+          "doctor",
+          "noun"
+        ],
+        [
+          "رفتید",
+          "raftid",
+          "you went",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please wait here.",
+      "fa": "لطفا اینجا منتظر بمونید.",
+      "tr": "lotfan injâ montazer bemunid.",
+      "sit": "at a reception desk",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "منتظر بمونید",
+          "montazer bemunid",
+          "wait",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What do you think?",
+      "fa": "شما چی فکر می‌کنید؟",
+      "tr": "shomâ chi fekr mikonid?",
+      "sit": "asking an opinion",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "فکر می‌کنید",
+          "fekr mikonid",
+          "you think",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Can you come tomorrow morning?",
+      "fa": "می‌تونید فردا صبح بیاید؟",
+      "tr": "mitunid fardâ sobh biyâyid?",
+      "sit": "booking an appointment",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "می‌تونید",
+          "mitunid",
+          "you can",
+          "verb"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "صبح",
+          "sobh",
+          "morning",
+          "noun"
+        ],
+        [
+          "بیاید",
+          "biyâyid",
+          "come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please tell me your name.",
+      "fa": "لطفا اسمتون رو بگید.",
+      "tr": "lotfan esmetun ro begid.",
+      "sit": "at a reception desk",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "اسمتون",
+          "esmetun",
+          "your name",
+          "attached pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "بگید",
+          "begid",
+          "say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Where do you live?",
+      "fa": "شما کجا زندگی می‌کنید؟",
+      "tr": "shomâ kojâ zendegi mikonid?",
+      "sit": "meeting someone new",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "زندگی می‌کنید",
+          "zendegi mikonid",
+          "you live",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you have work today?",
+      "fa": "شما امروز کار دارید؟",
+      "tr": "shomâ emruz kâr dârid?",
+      "sit": "planning the day",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "کار",
+          "kâr",
+          "work",
+          "noun"
+        ],
+        [
+          "دارید",
+          "dârid",
+          "you have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Have you been here before?",
+      "fa": "شما قبلا اینجا اومدید؟",
+      "tr": "shomâ ghablan injâ umadid?",
+      "sit": "at a new place",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "قبلا",
+          "ghablan",
+          "before",
+          "adverb"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "اومدید",
+          "umadid",
+          "you came",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Can you tell me the price?",
+      "fa": "می‌تونید قیمتش رو بگید؟",
+      "tr": "mitunid ghymatesh ro begid?",
+      "sit": "in a shop",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "می‌تونید",
+          "mitunid",
+          "you can",
+          "verb"
+        ],
+        [
+          "قیمتش",
+          "ghymatesh",
+          "its price",
+          "attached pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "بگید",
+          "begid",
+          "say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you coming with us?",
+      "fa": "شما با ما میاید؟",
+      "tr": "shomâ bâ mâ miâyid?",
+      "sit": "leaving together",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "با",
+          "bâ",
+          "with",
+          "preposition"
+        ],
+        [
+          "ما",
+          "mâ",
+          "us",
+          "pronoun"
+        ],
+        [
+          "میاید",
+          "miâyid",
+          "you come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please turn your phone off.",
+      "fa": "لطفا گوشیتون رو خاموش کنید.",
+      "tr": "lotfan gushitun ro khâmush konid.",
+      "sit": "in a waiting room",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "گوشیتون",
+          "gushitun",
+          "your phone",
+          "attached pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "خاموش کنید",
+          "khâmush konid",
+          "turn off",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you waiting too?",
+      "fa": "شما هم منتظرید؟",
+      "tr": "shomâ ham montazerid?",
+      "sit": "in a queue",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "هم",
+          "ham",
+          "too",
+          "particle"
+        ],
+        [
+          "منتظرید",
+          "montazerid",
+          "you are waiting",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please wait a moment.",
+      "fa": "لطفا یه لحظه صبر کنید.",
+      "tr": "lotfan ye lahze sabr konid.",
+      "sit": "on the phone",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "لحظه",
+          "lahze",
+          "moment",
+          "noun"
+        ],
+        [
+          "صبر کنید",
+          "sabr konid",
+          "wait",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you need help?",
+      "fa": "شما کمک لازم دارید؟",
+      "tr": "shomâ komak lâzem dârid?",
+      "sit": "offering help",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "کمک",
+          "komak",
+          "help",
+          "noun"
+        ],
+        [
+          "لازم دارید",
+          "lâzem dârid",
+          "you need",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Excuse me, is this seat free?",
+      "fa": "ببخشید، اینجا خالیه؟",
+      "tr": "bebakhshid, injâ khâliye?",
+      "sit": "on a bus",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "ببخشید",
+          "bebakhshid",
+          "excuse me",
+          "expression"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "خالیه",
+          "khâliye",
+          "is free",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please come in.",
+      "fa": "لطفا بفرمایید تو.",
+      "tr": "lotfan befarmâyid tu.",
+      "sit": "welcoming a guest",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "بفرمایید",
+          "befarmâyid",
+          "please go ahead",
+          "expression"
+        ],
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you sleep well?",
+      "fa": "شما خوب خوابیدید؟",
+      "tr": "shomâ khub khâbidid?",
+      "sit": "morning greeting to a guest",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "خوب",
+          "khub",
+          "well",
+          "adverb"
+        ],
+        [
+          "خوابیدید",
+          "khâbidid",
+          "you slept",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Can you write it down for me?",
+      "fa": "می‌تونید واسم بنویسید؟",
+      "tr": "mitunid vâsam benevisid?",
+      "sit": "taking an address",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "می‌تونید",
+          "mitunid",
+          "you can",
+          "verb"
+        ],
+        [
+          "واسم",
+          "vâsam",
+          "for me",
+          "attached pronoun"
+        ],
+        [
+          "بنویسید",
+          "benevisid",
+          "write",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What time do you start?",
+      "fa": "شما ساعت چند شروع می‌کنید؟",
+      "tr": "shomâ sâat chand shoru mikonid?",
+      "sit": "asking about opening hours",
+      "tags": [
+        "formality",
+        "verb-agreement"
+      ],
+      "bd": [
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ],
+        [
+          "ساعت",
+          "sâat",
+          "hour",
+          "noun"
+        ],
+        [
+          "چند",
+          "chand",
+          "how many",
+          "question word"
+        ],
+        [
+          "شروع می‌کنید",
+          "shoru mikonid",
+          "you start",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please don't worry.",
+      "fa": "لطفا نگران نباشید.",
+      "tr": "lotfan negarân nabâshid.",
+      "sit": "reassuring someone older",
+      "tags": [
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "نگران",
+          "negarân",
+          "worried",
+          "adjective"
+        ],
+        [
+          "نباشید",
+          "nabâshid",
+          "don't be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

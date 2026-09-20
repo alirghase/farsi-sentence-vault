@@ -1,0 +1,1181 @@
+{
+  "note": "باید and نباید with the subjunctive. Obligation is everywhere in speech and the deck had 23 of these.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "I have to go now.",
+      "fa": "الان باید برم.",
+      "tr": "alân bâyad beram",
+      "sit": "leaving a gathering",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "الان",
+          "alân",
+          "now",
+          "adverb"
+        ],
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "برم",
+          "beram",
+          "I go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You have to call him.",
+      "fa": "باید بهش زنگ بزنی.",
+      "tr": "bâyad behesh zang bezani",
+      "sit": "reminding a friend",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "بهش",
+          "behesh",
+          "to him",
+          "attached pronoun"
+        ],
+        [
+          "زنگ بزنی",
+          "zang bezani",
+          "you call",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We have to leave early.",
+      "fa": "باید زود بریم.",
+      "tr": "bâyad zud berim",
+      "sit": "planning a trip",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "زود",
+          "zud",
+          "early",
+          "adverb"
+        ],
+        [
+          "بریم",
+          "berim",
+          "we go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She has to work tomorrow.",
+      "fa": "فردا باید کار کنه.",
+      "tr": "fardâ bâyad kâr kone",
+      "sit": "explaining an absence",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "کار کنه",
+          "kâr kone",
+          "she works",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I must finish this today.",
+      "fa": "امروز باید اینو تموم کنم.",
+      "tr": "emruz bâyad ino tamum konam",
+      "sit": "a work deadline",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "اینو",
+          "ino",
+          "this",
+          "pronoun"
+        ],
+        [
+          "تموم کنم",
+          "tamum konam",
+          "I finish",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You shouldn't go there.",
+      "fa": "نباید بری اونجا.",
+      "tr": "nabâyad beri unjâ",
+      "sit": "warning a friend",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "نباید",
+          "nabâyad",
+          "must not",
+          "particle"
+        ],
+        [
+          "بری",
+          "beri",
+          "you go",
+          "verb"
+        ],
+        [
+          "اونجا",
+          "unjâ",
+          "there",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They have to wait.",
+      "fa": "اونا باید صبر کنن.",
+      "tr": "unâ bâyad sabr konan",
+      "sit": "at a queue",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "صبر کنن",
+          "sabr konan",
+          "they wait",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to buy bread.",
+      "fa": "باید نون بخرم.",
+      "tr": "bâyad nun bekharam",
+      "sit": "shopping errand",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "نون",
+          "nun",
+          "bread",
+          "noun"
+        ],
+        [
+          "بخرم",
+          "bekharam",
+          "I buy",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We have to be there at eight.",
+      "fa": "باید ساعت هشت اونجا باشیم.",
+      "tr": "bâyad sâate hasht unjâ bâshim",
+      "sit": "arranging a meeting",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "ساعت",
+          "sâat",
+          "hour",
+          "noun"
+        ],
+        [
+          "هشت",
+          "hasht",
+          "eight",
+          "number"
+        ],
+        [
+          "اونجا",
+          "unjâ",
+          "there",
+          "adverb"
+        ],
+        [
+          "باشیم",
+          "bâshim",
+          "we be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You have to eat something.",
+      "fa": "باید یه چیزی بخوری.",
+      "tr": "bâyad ye chizi bokhori",
+      "sit": "worried about a friend",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "چیزی",
+          "chizi",
+          "something",
+          "pronoun"
+        ],
+        [
+          "بخوری",
+          "bokhori",
+          "you eat",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to see the doctor.",
+      "fa": "باید برم دکتر.",
+      "tr": "bâyad beram doktor",
+      "sit": "feeling unwell",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "برم",
+          "beram",
+          "I go",
+          "verb"
+        ],
+        [
+          "دکتر",
+          "doktor",
+          "doctor",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He has to study tonight.",
+      "fa": "امشب باید درس بخونه.",
+      "tr": "emshab bâyad dars bekhune",
+      "sit": "about a sibling",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "امشب",
+          "emshab",
+          "tonight",
+          "adverb"
+        ],
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "درس بخونه",
+          "dars bekhune",
+          "he studies",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You mustn't be late.",
+      "fa": "نباید دیر کنی.",
+      "tr": "nabâyad dir koni",
+      "sit": "before an exam",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "نباید",
+          "nabâyad",
+          "must not",
+          "particle"
+        ],
+        [
+          "دیر کنی",
+          "dir koni",
+          "you be late",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We have to talk.",
+      "fa": "باید حرف بزنیم.",
+      "tr": "bâyad harf bezanim",
+      "sit": "a serious conversation",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "حرف بزنیم",
+          "harf bezanim",
+          "we talk",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to wake up early.",
+      "fa": "باید صبح زود بیدار شم.",
+      "tr": "bâyad sobh zud bidâr sham",
+      "sit": "before a trip",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "صبح",
+          "sobh",
+          "morning",
+          "noun"
+        ],
+        [
+          "زود",
+          "zud",
+          "early",
+          "adverb"
+        ],
+        [
+          "بیدار شم",
+          "bidâr sham",
+          "I wake up",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You have to take a taxi.",
+      "fa": "باید تاکسی بگیری.",
+      "tr": "bâyad tâksi begiri",
+      "sit": "giving directions",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "تاکسی",
+          "tâksi",
+          "taxi",
+          "noun"
+        ],
+        [
+          "بگیری",
+          "begiri",
+          "you take",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They have to pay today.",
+      "fa": "اونا امروز باید پول بدن.",
+      "tr": "unâ emruz bâyad pul bedan",
+      "sit": "about a bill",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "پول بدن",
+          "pul bedan",
+          "they pay",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to think about it.",
+      "fa": "باید بهش فکر کنم.",
+      "tr": "bâyad behesh fekr konam",
+      "sit": "given an offer",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "بهش",
+          "behesh",
+          "about it",
+          "attached pronoun"
+        ],
+        [
+          "فکر کنم",
+          "fekr konam",
+          "I think",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We shouldn't wait any longer.",
+      "fa": "نباید بیشتر منتظر بمونیم.",
+      "tr": "nabâyad bishtar montazer bemunim",
+      "sit": "a late friend",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "نباید",
+          "nabâyad",
+          "must not",
+          "particle"
+        ],
+        [
+          "بیشتر",
+          "bishtar",
+          "more",
+          "adverb"
+        ],
+        [
+          "منتظر بمونیم",
+          "montazer bemunim",
+          "we wait",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You have to try this.",
+      "fa": "باید اینو امتحان کنی.",
+      "tr": "bâyad ino emtehân koni",
+      "sit": "offering food",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "اینو",
+          "ino",
+          "this",
+          "pronoun"
+        ],
+        [
+          "امتحان کنی",
+          "emtehân koni",
+          "you try",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to go home.",
+      "fa": "باید برم خونه.",
+      "tr": "bâyad beram khune",
+      "sit": "leaving a party",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "برم",
+          "beram",
+          "I go",
+          "verb"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She has to help her mother.",
+      "fa": "باید به مامانش کمک کنه.",
+      "tr": "bâyad be mâmânesh komak kone",
+      "sit": "family duty",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "مامانش",
+          "mâmânesh",
+          "her mother",
+          "attached pronoun"
+        ],
+        [
+          "کمک کنه",
+          "komak kone",
+          "she helps",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We have to find another way.",
+      "fa": "باید یه راه دیگه پیدا کنیم.",
+      "tr": "bâyad ye râhe dige peydâ konim",
+      "sit": "a plan failing",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "راه",
+          "râh",
+          "way",
+          "noun"
+        ],
+        [
+          "دیگه",
+          "dige",
+          "other",
+          "adjective"
+        ],
+        [
+          "پیدا کنیم",
+          "peydâ konim",
+          "we find",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You have to be careful.",
+      "fa": "باید مواظب باشی.",
+      "tr": "bâyad movâzeb bâshi",
+      "sit": "warning a friend",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "مواظب",
+          "movâzeb",
+          "careful",
+          "adjective"
+        ],
+        [
+          "باشی",
+          "bâshi",
+          "you be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to work late tonight.",
+      "fa": "امشب باید تا دیروقت کار کنم.",
+      "tr": "emshab bâyad tâ dirvaght kâr konam",
+      "sit": "a deadline",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "امشب",
+          "emshab",
+          "tonight",
+          "adverb"
+        ],
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "تا",
+          "tâ",
+          "until",
+          "preposition"
+        ],
+        [
+          "دیروقت",
+          "dirvaght",
+          "late",
+          "adverb"
+        ],
+        [
+          "کار کنم",
+          "kâr konam",
+          "I work",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They mustn't know.",
+      "fa": "اونا نباید بفهمن.",
+      "tr": "unâ nabâyad befahman",
+      "sit": "keeping a secret",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "نباید",
+          "nabâyad",
+          "must not",
+          "particle"
+        ],
+        [
+          "بفهمن",
+          "befahman",
+          "they find out",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You have to ask him.",
+      "fa": "باید ازش بپرسی.",
+      "tr": "bâyad azesh beporsi",
+      "sit": "settling a question",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "ازش",
+          "azesh",
+          "from him",
+          "attached pronoun"
+        ],
+        [
+          "بپرسی",
+          "beporsi",
+          "you ask",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to change my clothes.",
+      "fa": "باید لباسمو عوض کنم.",
+      "tr": "bâyad lebâsamo avaz konam",
+      "sit": "after getting wet",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "لباسمو",
+          "lebâsamo",
+          "my clothes",
+          "attached pronoun"
+        ],
+        [
+          "عوض کنم",
+          "avaz konam",
+          "I change",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We have to start now.",
+      "fa": "باید الان شروع کنیم.",
+      "tr": "bâyad alân shoru konim",
+      "sit": "a group project",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "الان",
+          "alân",
+          "now",
+          "adverb"
+        ],
+        [
+          "شروع کنیم",
+          "shoru konim",
+          "we start",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You have to rest.",
+      "fa": "باید استراحت کنی.",
+      "tr": "bâyad esterâhat koni",
+      "sit": "to someone ill",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "استراحت کنی",
+          "esterâhat koni",
+          "you rest",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to answer this message.",
+      "fa": "باید جواب این پیام رو بدم.",
+      "tr": "bâyad javâbe in payâm ro bedam",
+      "sit": "at work",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "جواب",
+          "javâb",
+          "answer",
+          "noun"
+        ],
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "پیام",
+          "payâm",
+          "message",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "بدم",
+          "bedam",
+          "I give",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She has to come with us.",
+      "fa": "باید با ما بیاد.",
+      "tr": "bâyad bâ mâ biyâd",
+      "sit": "organising a trip",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "با",
+          "bâ",
+          "with",
+          "preposition"
+        ],
+        [
+          "ما",
+          "mâ",
+          "us",
+          "pronoun"
+        ],
+        [
+          "بیاد",
+          "biyâd",
+          "she comes",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We mustn't forget the keys.",
+      "fa": "نباید کلیدا رو یادمون بره.",
+      "tr": "nabâyad kelidâ ro yâdemun bere",
+      "sit": "leaving the house",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "نباید",
+          "nabâyad",
+          "must not",
+          "particle"
+        ],
+        [
+          "کلیدا",
+          "kelidâ",
+          "the keys",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "یادمون بره",
+          "yâdemun bere",
+          "we forget",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You have to turn right here.",
+      "fa": "اینجا باید بپیچی راست.",
+      "tr": "injâ bâyad bepichi râst",
+      "sit": "giving directions",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "بپیچی",
+          "bepichi",
+          "you turn",
+          "verb"
+        ],
+        [
+          "راست",
+          "râst",
+          "right",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to drink more water.",
+      "fa": "باید بیشتر آب بخورم.",
+      "tr": "bâyad bishtar âb bokhoram",
+      "sit": "a doctor's advice",
+      "tags": [
+        "verb-tense",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "بیشتر",
+          "bishtar",
+          "more",
+          "adverb"
+        ],
+        [
+          "آب",
+          "âb",
+          "water",
+          "noun"
+        ],
+        [
+          "بخورم",
+          "bokhoram",
+          "I drink",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

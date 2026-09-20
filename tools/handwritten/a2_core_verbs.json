@@ -1,101 +1,1637 @@
 {
   "note": "Hand-written A2 sentences covering core verbs absent from the generated deck. Spoken Tehrani register. difficulty 2 = one clause, past or future, or a simple compound verb.",
   "sentences": [
-    {"v":"گفتن","en":"I told him yesterday.","fa":"دیروز بهش گفتم.","tr":"diruz behesh goftam","sit":"phone call with family","tags":["verb-tense","pronoun-clitic"],
-     "bd":[["دیروز","diruz","yesterday","adverb"],["بهش","behesh","to him","attached pronoun"],["گفتم","goftam","I said","verb"]],"alt":["دیروز به‌ش گفتم."]},
-    {"v":"گفتن","en":"What did you say to her?","fa":"بهش چی گفتی؟","tr":"behesh chi gofti?","sit":"asking someone to repeat or clarify","tags":["question-word","pronoun-clitic","verb-tense"],
-     "bd":[["بهش","behesh","to her","attached pronoun"],["چی","chi","what","question word"],["گفتی","gofti","you said","verb"]],"alt":["چی بهش گفتی؟"]},
-    {"v":"خواستن","en":"I wanted to come but I couldn't.","fa":"می‌خواستم بیام ولی نتونستم.","tr":"mikhâstam biyâm vali natunestam","sit":"apologising or explaining lateness","tags":["subjunctive","verb-tense","colloquial"],
-     "bd":[["می‌خواستم","mikhâstam","I wanted","verb"],["بیام","biyâm","to come","verb"],["ولی","vali","but","conjunction"],["نتونستم","natunestam","I couldn't","verb"]],"alt":["می‌خواستم بیام اما نشد."]},
-    {"v":"خواستن","en":"What do you want for dinner?","fa":"شام چی می‌خوای؟","tr":"shâm chi mikhây?","sit":"food, drink and eating out","tags":["question-word","colloquial"],
-     "bd":[["شام","shâm","dinner","noun"],["چی","chi","what","question word"],["می‌خوای","mikhây","you want","verb"]],"alt":["واسه شام چی می‌خوای؟"]},
-    {"v":"تونستن","en":"I couldn't find your house.","fa":"نتونستم خونه‌تون رو پیدا کنم.","tr":"natunestam khunetun ro peydâ konam","sit":"giving or following directions","tags":["subjunctive","compound-verb","ra-marker","colloquial"],
-     "bd":[["نتونستم","natunestam","I couldn't","verb"],["خونه‌تون","khunetun","your house","attached pronoun"],["رو","ro","[object]","particle"],["پیدا کنم","peydâ konam","find","compound verb"]],"alt":["خونه‌تونو پیدا نکردم."]},
-    {"v":"تونستن","en":"Can you help me tomorrow?","fa":"فردا می‌تونی کمکم کنی؟","tr":"fardâ mituni komakam koni?","sit":"negotiating or asking for a favour","tags":["subjunctive","compound-verb","pronoun-clitic"],
-     "bd":[["فردا","fardâ","tomorrow","adverb"],["می‌تونی","mituni","you can","verb"],["کمکم کنی","komakam koni","help me","compound verb"]],"alt":["فردا می‌تونی بهم کمک کنی؟"]},
-    {"v":"دونستن","en":"I didn't know you were here.","fa":"نمی‌دونستم اینجایی.","tr":"nemidunestam injâyi","sit":"greetings, politeness and taarof","tags":["verb-tense","colloquial"],
-     "bd":[["نمی‌دونستم","nemidunestam","I didn't know","verb"],["اینجایی","injâyi","you are here","expression"]],"alt":["خبر نداشتم اینجایی."]},
-    {"v":"دونستن","en":"Do you know where the station is?","fa":"می‌دونی ایستگاه کجاست؟","tr":"miduni istgâh kojâst?","sit":"taxi, metro, and travel","tags":["question-word","colloquial"],
-     "bd":[["می‌دونی","miduni","do you know","verb"],["ایستگاه","istgâh","the station","noun"],["کجاست","kojâst","where is","question word"]],"alt":["ایستگاه کجاست، می‌دونی؟"]},
-    {"v":"شناختن","en":"Do you know that girl?","fa":"اون دخترو می‌شناسی؟","tr":"un dokhtaro mishnâsi?","sit":"describing people and things","tags":["ra-marker","colloquial"],
-     "bd":[["اون","un","that","pronoun"],["دخترو","dokhtaro","girl [object]","noun"],["می‌شناسی","mishnâsi","do you know","verb"]],"alt":["اون دختر رو می‌شناسی؟"]},
-    {"v":"شناختن","en":"I didn't know her before.","fa":"قبلاً نمی‌شناختمش.","tr":"ghablan nemishnâkhtamesh","sit":"describing people and things","tags":["verb-tense","pronoun-clitic"],
-     "bd":[["قبلاً","ghablan","before","adverb"],["نمی‌شناختمش","nemishnâkhtamesh","I didn't know her","verb"]],"alt":["قبلاً باهاش آشنا نبودم."]},
-    {"v":"آوردن","en":"I brought you a present.","fa":"برات یه کادو آوردم.","tr":"barât ye kâdo âvordam","sit":"hosting or visiting someone's home","tags":["pronoun-clitic","verb-tense","colloquial"],
-     "bd":[["برات","barât","for you","attached pronoun"],["یه","ye","a","number"],["کادو","kâdo","present","noun"],["آوردم","âvordam","I brought","verb"]],"alt":["یه کادو برات گرفتم."]},
-    {"v":"آوردن","en":"Bring me a glass of water.","fa":"یه لیوان آب برام بیار.","tr":"ye livân âb barâm biyâr","sit":"food, drink and eating out","tags":["ezafe","pronoun-clitic"],
-     "bd":[["یه لیوان آب","ye livân âb","a glass of water","noun"],["برام","barâm","for me","attached pronoun"],["بیار","biyâr","bring","verb"]],"alt":["برام یه آب بیار."]},
-    {"v":"بردن","en":"I took the kids to the park.","fa":"بچه‌ها رو بردم پارک.","tr":"bachehâ ro bordam pârk","sit":"the home and household objects","tags":["ra-marker","plural","verb-tense"],
-     "bd":[["بچه‌ها","bachehâ","the kids","noun"],["رو","ro","[object]","particle"],["بردم","bordam","I took","verb"],["پارک","pârk","to the park","noun"]],"alt":["بچه‌هارو بردم پارک."]},
-    {"v":"بردن","en":"Who took my pen?","fa":"کی خودکارمو برد؟","tr":"ki khodkâramo bord?","sit":"work, study and daily routine","tags":["question-word","pronoun-clitic","ra-marker"],
-     "bd":[["کی","ki","who","question word"],["خودکارمو","khodkâramo","my pen [object]","attached pronoun"],["برد","bord","took","verb"]],"alt":["خودکار منو کی برد؟"]},
-    {"v":"برداشتن","en":"I picked up the phone.","fa":"گوشی رو برداشتم.","tr":"gushi ro bardâshtam","sit":"phone, messages and making plans","tags":["ra-marker","verb-tense"],
-     "bd":[["گوشی","gushi","the phone","noun"],["رو","ro","[object]","particle"],["برداشتم","bardâshtam","I picked up","verb"]],"alt":["گوشیو برداشتم."]},
-    {"v":"برداشتن","en":"She picked up her bag and left.","fa":"کیفشو برداشت و رفت.","tr":"kifesho bardâsht o raft","sit":"describing people and things","tags":["pronoun-clitic","ra-marker","verb-tense"],
-     "bd":[["کیفشو","kifesho","her bag [object]","attached pronoun"],["برداشت","bardâsht","picked up","verb"],["و","o","and","conjunction"],["رفت","raft","left","verb"]],"alt":["کیفش رو برداشت و رفت."]},
-    {"v":"فروختن","en":"They sold their car last year.","fa":"پارسال ماشینشون رو فروختن.","tr":"pârsâl mâshineshun ro forukhtan","sit":"numbers, prices and money","tags":["ra-marker","pronoun-clitic","verb-tense"],
-     "bd":[["پارسال","pârsâl","last year","adverb"],["ماشینشون","mâshineshun","their car","attached pronoun"],["رو","ro","[object]","particle"],["فروختن","forukhtan","they sold","verb"]],"alt":["پارسال ماشینشونو فروختن."]},
-    {"v":"فروختن","en":"How much did you sell it for?","fa":"چند فروختیش؟","tr":"chand forukhtish?","sit":"numbers, prices and money","tags":["question-word","pronoun-clitic"],
-     "bd":[["چند","chand","how much","question word"],["فروختیش","forukhtish","did you sell it","verb"]],"alt":["چقدر فروختیش؟"]},
-    {"v":"نوشتن","en":"I wrote him a letter.","fa":"براش یه نامه نوشتم.","tr":"barâsh ye nâme neveshtam","sit":"work, study and daily routine","tags":["pronoun-clitic","verb-tense"],
-     "bd":[["براش","barâsh","for him","attached pronoun"],["یه نامه","ye nâme","a letter","noun"],["نوشتم","neveshtam","I wrote","verb"]],"alt":["یه نامه بهش نوشتم."]},
-    {"v":"نوشتن","en":"Write your name here.","fa":"اسمتو اینجا بنویس.","tr":"esmeto injâ benevis","sit":"work, study and daily routine","tags":["pronoun-clitic","ra-marker"],
-     "bd":[["اسمتو","esmeto","your name [object]","attached pronoun"],["اینجا","injâ","here","adverb"],["بنویس","benevis","write","verb"]],"alt":["اسمت رو اینجا بنویس."]},
-    {"v":"خوندن","en":"Did you read my message?","fa":"پیاممو خوندی؟","tr":"payâmamo khundi?","sit":"phone, messages and making plans","tags":["pronoun-clitic","ra-marker","colloquial"],
-     "bd":[["پیاممو","payâmamo","my message [object]","attached pronoun"],["خوندی","khundi","did you read","verb"]],"alt":["پیام منو خوندی؟"]},
-    {"v":"خوندن","en":"She sings really well.","fa":"خیلی قشنگ می‌خونه.","tr":"kheyli ghashang mikhune","sit":"describing people and things","tags":["adverb","colloquial"],
-     "bd":[["خیلی","kheyli","very","adverb"],["قشنگ","ghashang","beautifully","adjective"],["می‌خونه","mikhune","she sings","verb"]],"alt":["صداش خیلی قشنگه."]},
-    {"v":"رسیدن","en":"We arrived late.","fa":"دیر رسیدیم.","tr":"dir residim","sit":"apologising or explaining lateness","tags":["verb-tense","adverb"],
-     "bd":[["دیر","dir","late","adverb"],["رسیدیم","residim","we arrived","verb"]],"alt":["با تأخیر رسیدیم."]},
-    {"v":"رسیدن","en":"When did you get home?","fa":"کی رسیدی خونه؟","tr":"key residi khune?","sit":"phone call with family","tags":["question-word","colloquial"],
-     "bd":[["کی","key","when","question word"],["رسیدی","residi","did you arrive","verb"],["خونه","khune","home","noun"]],"alt":["کی رسیدی؟"]},
-    {"v":"فهمیدن","en":"I didn't understand what he said.","fa":"نفهمیدم چی گفت.","tr":"nafahmidam chi goft","sit":"asking someone to repeat or clarify","tags":["verb-tense","question-word"],
-     "bd":[["نفهمیدم","nafahmidam","I didn't understand","verb"],["چی","chi","what","question word"],["گفت","goft","he said","verb"]],"alt":["متوجه نشدم چی گفت."]},
-    {"v":"فهمیدن","en":"Now I understand.","fa":"حالا فهمیدم.","tr":"hâlâ fahmidam","sit":"asking someone to repeat or clarify","tags":["verb-tense","adverb"],
-     "bd":[["حالا","hâlâ","now","adverb"],["فهمیدم","fahmidam","I understood","verb"]],"alt":["آهان، فهمیدم."]},
-    {"v":"پرسیدن","en":"I asked him but he didn't answer.","fa":"ازش پرسیدم ولی جواب نداد.","tr":"azash porsidam vali javâb nadâd","sit":"disagreeing politely","tags":["pronoun-clitic","compound-verb","verb-tense"],
-     "bd":[["ازش","azash","from him","attached pronoun"],["پرسیدم","porsidam","I asked","verb"],["ولی","vali","but","conjunction"],["جواب نداد","javâb nadâd","didn't answer","compound verb"]],"alt":["ازش پرسیدم اما جوابی نداد."]},
-    {"v":"پرسیدن","en":"Can I ask you something?","fa":"می‌تونم یه چیزی ازت بپرسم؟","tr":"mitunam ye chizi azat beporsam?","sit":"negotiating or asking for a favour","tags":["subjunctive","pronoun-clitic","colloquial"],
-     "bd":[["می‌تونم","mitunam","can I","verb"],["یه چیزی","ye chizi","something","noun"],["ازت","azat","from you","attached pronoun"],["بپرسم","beporsam","ask","verb"]],"alt":["یه سؤال ازت بپرسم؟"]},
-    {"v":"نشستن","en":"Sit here next to me.","fa":"بشین اینجا کنار من.","tr":"beshin injâ kenâr-e man","sit":"hosting or visiting someone's home","tags":["ezafe","preposition"],
-     "bd":[["بشین","beshin","sit","verb"],["اینجا","injâ","here","adverb"],["کنار من","kenâr-e man","next to me","preposition"]],"alt":["بیا اینجا بشین."]},
-    {"v":"نشستن","en":"We sat in the garden.","fa":"تو باغ نشستیم.","tr":"tu bâgh neshastim","sit":"the home and household objects","tags":["preposition","verb-tense","colloquial"],
-     "bd":[["تو","tu","in","preposition"],["باغ","bâgh","the garden","noun"],["نشستیم","neshastim","we sat","verb"]],"alt":["توی باغ نشستیم."]},
-    {"v":"خوابیدن","en":"I slept really well last night.","fa":"دیشب خیلی خوب خوابیدم.","tr":"dishab kheyli khub khâbidam","sit":"body, health and feeling unwell","tags":["adverb","verb-tense"],
-     "bd":[["دیشب","dishab","last night","adverb"],["خیلی خوب","kheyli khub","really well","adverb"],["خوابیدم","khâbidam","I slept","verb"]],"alt":["دیشب خوابم خیلی خوب بود."]},
-    {"v":"خوابیدن","en":"I couldn't sleep at all.","fa":"اصلاً نتونستم بخوابم.","tr":"aslan natunestam bekhâbam","sit":"body, health and feeling unwell","tags":["subjunctive","adverb","colloquial"],
-     "bd":[["اصلاً","aslan","at all","adverb"],["نتونستم","natunestam","I couldn't","verb"],["بخوابم","bekhâbam","sleep","verb"]],"alt":["اصلاً خوابم نبرد."]},
-    {"v":"قدم زدن","en":"We walked by the river.","fa":"کنار رودخونه قدم زدیم.","tr":"kenâr-e rudkhune ghadam zadim","sit":"places, directions and the city","tags":["compound-verb","ezafe","colloquial"],
-     "bd":[["کنار رودخونه","kenâr-e rudkhune","by the river","preposition"],["قدم زدیم","ghadam zadim","we walked","compound verb"]],"alt":["کنار رودخونه راه رفتیم."]},
-    {"v":"قدم زدن","en":"Let's go for a walk.","fa":"بریم یه کم قدم بزنیم.","tr":"berim ye kam ghadam bezanim","sit":"making plans with a friend","tags":["subjunctive","compound-verb","colloquial"],
-     "bd":[["بریم","berim","let's go","verb"],["یه کم","ye kam","a bit","adverb"],["قدم بزنیم","ghadam bezanim","walk","compound verb"]],"alt":["بریم یه دوری بزنیم."]},
-    {"v":"دوست داشتن","en":"I really liked that film.","fa":"اون فیلمو خیلی دوست داشتم.","tr":"un filmo kheyli dust dâshtam","sit":"feelings, opinions and reactions","tags":["compound-verb","ra-marker","verb-tense"],
-     "bd":[["اون","un","that","pronoun"],["فیلمو","filmo","film [object]","noun"],["خیلی","kheyli","really","adverb"],["دوست داشتم","dust dâshtam","I liked","compound verb"]],"alt":["از اون فیلم خیلی خوشم اومد."]},
-    {"v":"دوست داشتن","en":"Do you like Persian food?","fa":"غذای ایرانی دوست داری؟","tr":"ghazâ-ye irâni dust dâri?","sit":"food, drink and eating out","tags":["compound-verb","ezafe"],
-     "bd":[["غذای ایرانی","ghazâ-ye irâni","Persian food","noun"],["دوست داری","dust dâri","do you like","compound verb"]],"alt":["از غذای ایرانی خوشت میاد؟"]},
-    {"v":"منتظر موندن","en":"I waited for an hour.","fa":"یه ساعت منتظر موندم.","tr":"ye sâ'at montazer mundam","sit":"apologising or explaining lateness","tags":["compound-verb","verb-tense","colloquial"],
-     "bd":[["یه ساعت","ye sâ'at","an hour","noun"],["منتظر موندم","montazer mundam","I waited","compound verb"]],"alt":["یه ساعت معطل شدم."]},
-    {"v":"منتظر موندن","en":"Wait for me outside.","fa":"بیرون منتظرم بمون.","tr":"birun montazeram bemun","sit":"making plans with a friend","tags":["compound-verb","pronoun-clitic","colloquial"],
-     "bd":[["بیرون","birun","outside","adverb"],["منتظرم بمون","montazeram bemun","wait for me","compound verb"]],"alt":["بیرون وایسا تا بیام."]},
-    {"v":"پیدا کردن","en":"I found my keys.","fa":"کلیدهامو پیدا کردم.","tr":"kelidhâmo peydâ kardam","sit":"the home and household objects","tags":["compound-verb","pronoun-clitic","ra-marker","plural"],
-     "bd":[["کلیدهامو","kelidhâmo","my keys [object]","attached pronoun"],["پیدا کردم","peydâ kardam","I found","compound verb"]],"alt":["کلیدام رو پیدا کردم."]},
-    {"v":"پیدا کردن","en":"Did you find what you wanted?","fa":"چیزی که می‌خواستی پیدا کردی؟","tr":"chizi ke mikhâsti peydâ kardi?","sit":"clothes, sizes and shopping","tags":["compound-verb","verb-tense"],
-     "bd":[["چیزی که","chizi ke","the thing that","conjunction"],["می‌خواستی","mikhâsti","you wanted","verb"],["پیدا کردی","peydâ kardi","did you find","compound verb"]],"alt":["اونی که می‌خواستی رو پیدا کردی؟"]},
-    {"v":"باز کردن","en":"Open the window please.","fa":"لطفاً پنجره رو باز کن.","tr":"lotfan panjere ro bâz kon","sit":"the home and household objects","tags":["compound-verb","ra-marker","formality"],
-     "bd":[["لطفاً","lotfan","please","adverb"],["پنجره","panjere","the window","noun"],["رو","ro","[object]","particle"],["باز کن","bâz kon","open","compound verb"]],"alt":["میشه پنجره رو باز کنی؟"]},
-    {"v":"باز کردن","en":"He opened the box.","fa":"جعبه رو باز کرد.","tr":"ja'be ro bâz kard","sit":"the home and household objects","tags":["compound-verb","ra-marker","verb-tense"],
-     "bd":[["جعبه","ja'be","the box","noun"],["رو","ro","[object]","particle"],["باز کرد","bâz kard","opened","compound verb"]],"alt":["درِ جعبه رو باز کرد."]},
-    {"v":"بستن","en":"I closed my eyes.","fa":"چشمامو بستم.","tr":"cheshmâmo bastam","sit":"body, health and feeling unwell","tags":["pronoun-clitic","ra-marker","plural"],
-     "bd":[["چشمامو","cheshmâmo","my eyes [object]","attached pronoun"],["بستم","bastam","I closed","verb"]],"alt":["چشمام رو بستم."]},
-    {"v":"بستن","en":"They closed the shop early.","fa":"مغازه رو زود بستن.","tr":"maghâze ro zud bastan","sit":"clothes, sizes and shopping","tags":["ra-marker","adverb","verb-tense"],
-     "bd":[["مغازه","maghâze","the shop","noun"],["رو","ro","[object]","particle"],["زود","zud","early","adverb"],["بستن","bastan","they closed","verb"]],"alt":["مغازه رو زودتر تعطیل کردن."]},
-    {"v":"شروع کردن","en":"When did you start?","fa":"کی شروع کردی؟","tr":"key shoru' kardi?","sit":"work, study and daily routine","tags":["compound-verb","question-word"],
-     "bd":[["کی","key","when","question word"],["شروع کردی","shoru' kardi","did you start","compound verb"]],"alt":["از کی شروع کردی؟"]},
-    {"v":"شروع کردن","en":"Let's start.","fa":"بیا شروع کنیم.","tr":"biyâ shoru' konim","sit":"work, study and daily routine","tags":["compound-verb","subjunctive"],
-     "bd":[["بیا","biyâ","come","verb"],["شروع کنیم","shoru' konim","let's start","compound verb"]],"alt":["شروع کنیم؟"]},
-    {"v":"تموم کردن","en":"I finished my homework.","fa":"مشقمو تموم کردم.","tr":"mashgamo tamum kardam","sit":"work, study and daily routine","tags":["compound-verb","pronoun-clitic","ra-marker","colloquial"],
-     "bd":[["مشقمو","mashgamo","my homework [object]","attached pronoun"],["تموم کردم","tamum kardam","I finished","compound verb"]],"alt":["تکالیفمو تموم کردم."]},
-    {"v":"تموم کردن","en":"Finish your food.","fa":"غذاتو تموم کن.","tr":"ghazâto tamum kon","sit":"food, drink and eating out","tags":["compound-verb","pronoun-clitic","ra-marker","colloquial"],
-     "bd":[["غذاتو","ghazâto","your food [object]","attached pronoun"],["تموم کن","tamum kon","finish","compound verb"]],"alt":["غذات رو تموم کن."]}
+    {
+      "v": "گفتن",
+      "en": "I told him yesterday.",
+      "fa": "دیروز بهش گفتم.",
+      "tr": "diruz behesh goftam",
+      "sit": "phone call with family",
+      "tags": [
+        "verb-tense",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "بهش",
+          "behesh",
+          "to him",
+          "attached pronoun"
+        ],
+        [
+          "گفتم",
+          "goftam",
+          "I said",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "دیروز به‌ش گفتم."
+      ]
+    },
+    {
+      "v": "گفتن",
+      "en": "What did you say to her?",
+      "fa": "بهش چی گفتی؟",
+      "tr": "behesh chi gofti?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "word-order",
+        "pronoun-clitic",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "بهش",
+          "behesh",
+          "to her",
+          "attached pronoun"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "گفتی",
+          "gofti",
+          "you said",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "چی بهش گفتی؟"
+      ]
+    },
+    {
+      "v": "خواستن",
+      "en": "I wanted to come but I couldn't.",
+      "fa": "می‌خواستم بیام ولی نتونستم.",
+      "tr": "mikhâstam biyâm vali natunestam",
+      "sit": "apologising or explaining lateness",
+      "tags": [
+        "subjunctive",
+        "verb-tense",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خواستم",
+          "mikhâstam",
+          "I wanted",
+          "verb"
+        ],
+        [
+          "بیام",
+          "biyâm",
+          "to come",
+          "verb"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "نتونستم",
+          "natunestam",
+          "I couldn't",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "می‌خواستم بیام اما نشد."
+      ]
+    },
+    {
+      "v": "خواستن",
+      "en": "What do you want for dinner?",
+      "fa": "شام چی می‌خوای؟",
+      "tr": "shâm chi mikhây?",
+      "sit": "food, drink and eating out",
+      "tags": [
+        "word-order",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "می‌خوای",
+          "mikhây",
+          "you want",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "واسه شام چی می‌خوای؟"
+      ]
+    },
+    {
+      "v": "تونستن",
+      "en": "I couldn't find your house.",
+      "fa": "نتونستم خونه‌تون رو پیدا کنم.",
+      "tr": "natunestam khunetun ro peydâ konam",
+      "sit": "giving or following directions",
+      "tags": [
+        "subjunctive",
+        "compound-verb",
+        "ra-marker",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نتونستم",
+          "natunestam",
+          "I couldn't",
+          "verb"
+        ],
+        [
+          "خونه‌تون",
+          "khunetun",
+          "your house",
+          "attached pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "پیدا کنم",
+          "peydâ konam",
+          "find",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "خونه‌تونو پیدا نکردم."
+      ]
+    },
+    {
+      "v": "تونستن",
+      "en": "Can you help me tomorrow?",
+      "fa": "فردا می‌تونی کمکم کنی؟",
+      "tr": "fardâ mituni komakam koni?",
+      "sit": "negotiating or asking for a favour",
+      "tags": [
+        "subjunctive",
+        "compound-verb",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "می‌تونی",
+          "mituni",
+          "you can",
+          "verb"
+        ],
+        [
+          "کمکم کنی",
+          "komakam koni",
+          "help me",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "فردا می‌تونی بهم کمک کنی؟"
+      ]
+    },
+    {
+      "v": "دونستن",
+      "en": "I didn't know you were here.",
+      "fa": "نمی‌دونستم اینجایی.",
+      "tr": "nemidunestam injâyi",
+      "sit": "greetings, politeness and taarof",
+      "tags": [
+        "verb-tense",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نمی‌دونستم",
+          "nemidunestam",
+          "I didn't know",
+          "verb"
+        ],
+        [
+          "اینجایی",
+          "injâyi",
+          "you are here",
+          "expression"
+        ]
+      ],
+      "alt": [
+        "خبر نداشتم اینجایی."
+      ]
+    },
+    {
+      "v": "دونستن",
+      "en": "Do you know where the station is?",
+      "fa": "می‌دونی ایستگاه کجاست؟",
+      "tr": "miduni istgâh kojâst?",
+      "sit": "taxi, metro, and travel",
+      "tags": [
+        "word-order",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌دونی",
+          "miduni",
+          "do you know",
+          "verb"
+        ],
+        [
+          "ایستگاه",
+          "istgâh",
+          "the station",
+          "noun"
+        ],
+        [
+          "کجاست",
+          "kojâst",
+          "where is",
+          "question word"
+        ]
+      ],
+      "alt": [
+        "ایستگاه کجاست، می‌دونی؟"
+      ]
+    },
+    {
+      "v": "شناختن",
+      "en": "Do you know that girl?",
+      "fa": "اون دخترو می‌شناسی؟",
+      "tr": "un dokhtaro mishnâsi?",
+      "sit": "describing people and things",
+      "tags": [
+        "ra-marker",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "دخترو",
+          "dokhtaro",
+          "girl [object]",
+          "noun"
+        ],
+        [
+          "می‌شناسی",
+          "mishnâsi",
+          "do you know",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "اون دختر رو می‌شناسی؟"
+      ]
+    },
+    {
+      "v": "شناختن",
+      "en": "I didn't know her before.",
+      "fa": "قبلاً نمی‌شناختمش.",
+      "tr": "ghablan nemishnâkhtamesh",
+      "sit": "describing people and things",
+      "tags": [
+        "verb-tense",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "قبلاً",
+          "ghablan",
+          "before",
+          "adverb"
+        ],
+        [
+          "نمی‌شناختمش",
+          "nemishnâkhtamesh",
+          "I didn't know her",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "قبلاً باهاش آشنا نبودم."
+      ]
+    },
+    {
+      "v": "آوردن",
+      "en": "I brought you a present.",
+      "fa": "برات یه کادو آوردم.",
+      "tr": "barât ye kâdo âvordam",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "pronoun-clitic",
+        "verb-tense",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "برات",
+          "barât",
+          "for you",
+          "attached pronoun"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "کادو",
+          "kâdo",
+          "present",
+          "noun"
+        ],
+        [
+          "آوردم",
+          "âvordam",
+          "I brought",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "یه کادو برات گرفتم."
+      ]
+    },
+    {
+      "v": "آوردن",
+      "en": "Bring me a glass of water.",
+      "fa": "یه لیوان آب برام بیار.",
+      "tr": "ye livân âb barâm biyâr",
+      "sit": "food, drink and eating out",
+      "tags": [
+        "ezafe",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "یه لیوان آب",
+          "ye livân âb",
+          "a glass of water",
+          "noun"
+        ],
+        [
+          "برام",
+          "barâm",
+          "for me",
+          "attached pronoun"
+        ],
+        [
+          "بیار",
+          "biyâr",
+          "bring",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "برام یه آب بیار."
+      ]
+    },
+    {
+      "v": "بردن",
+      "en": "I took the kids to the park.",
+      "fa": "بچه‌ها رو بردم پارک.",
+      "tr": "bachehâ ro bordam pârk",
+      "sit": "the home and household objects",
+      "tags": [
+        "ra-marker",
+        "plural",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "بچه‌ها",
+          "bachehâ",
+          "the kids",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "بردم",
+          "bordam",
+          "I took",
+          "verb"
+        ],
+        [
+          "پارک",
+          "pârk",
+          "to the park",
+          "noun"
+        ]
+      ],
+      "alt": [
+        "بچه‌هارو بردم پارک."
+      ]
+    },
+    {
+      "v": "بردن",
+      "en": "Who took my pen?",
+      "fa": "کی خودکارمو برد؟",
+      "tr": "ki khodkâramo bord?",
+      "sit": "work, study and daily routine",
+      "tags": [
+        "word-order",
+        "pronoun-clitic",
+        "ra-marker"
+      ],
+      "bd": [
+        [
+          "کی",
+          "ki",
+          "who",
+          "question word"
+        ],
+        [
+          "خودکارمو",
+          "khodkâramo",
+          "my pen [object]",
+          "attached pronoun"
+        ],
+        [
+          "برد",
+          "bord",
+          "took",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "خودکار منو کی برد؟"
+      ]
+    },
+    {
+      "v": "برداشتن",
+      "en": "I picked up the phone.",
+      "fa": "گوشی رو برداشتم.",
+      "tr": "gushi ro bardâshtam",
+      "sit": "phone, messages and making plans",
+      "tags": [
+        "ra-marker",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "گوشی",
+          "gushi",
+          "the phone",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "برداشتم",
+          "bardâshtam",
+          "I picked up",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "گوشیو برداشتم."
+      ]
+    },
+    {
+      "v": "برداشتن",
+      "en": "She picked up her bag and left.",
+      "fa": "کیفشو برداشت و رفت.",
+      "tr": "kifesho bardâsht o raft",
+      "sit": "describing people and things",
+      "tags": [
+        "pronoun-clitic",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "کیفشو",
+          "kifesho",
+          "her bag [object]",
+          "attached pronoun"
+        ],
+        [
+          "برداشت",
+          "bardâsht",
+          "picked up",
+          "verb"
+        ],
+        [
+          "و",
+          "o",
+          "and",
+          "conjunction"
+        ],
+        [
+          "رفت",
+          "raft",
+          "left",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "کیفش رو برداشت و رفت."
+      ]
+    },
+    {
+      "v": "فروختن",
+      "en": "They sold their car last year.",
+      "fa": "پارسال ماشینشون رو فروختن.",
+      "tr": "pârsâl mâshineshun ro forukhtan",
+      "sit": "numbers, prices and money",
+      "tags": [
+        "ra-marker",
+        "pronoun-clitic",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "پارسال",
+          "pârsâl",
+          "last year",
+          "adverb"
+        ],
+        [
+          "ماشینشون",
+          "mâshineshun",
+          "their car",
+          "attached pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "فروختن",
+          "forukhtan",
+          "they sold",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "پارسال ماشینشونو فروختن."
+      ]
+    },
+    {
+      "v": "فروختن",
+      "en": "How much did you sell it for?",
+      "fa": "چند فروختیش؟",
+      "tr": "chand forukhtish?",
+      "sit": "numbers, prices and money",
+      "tags": [
+        "word-order",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "چند",
+          "chand",
+          "how much",
+          "question word"
+        ],
+        [
+          "فروختیش",
+          "forukhtish",
+          "did you sell it",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "چقدر فروختیش؟"
+      ]
+    },
+    {
+      "v": "نوشتن",
+      "en": "I wrote him a letter.",
+      "fa": "براش یه نامه نوشتم.",
+      "tr": "barâsh ye nâme neveshtam",
+      "sit": "work, study and daily routine",
+      "tags": [
+        "pronoun-clitic",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "براش",
+          "barâsh",
+          "for him",
+          "attached pronoun"
+        ],
+        [
+          "یه نامه",
+          "ye nâme",
+          "a letter",
+          "noun"
+        ],
+        [
+          "نوشتم",
+          "neveshtam",
+          "I wrote",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "یه نامه بهش نوشتم."
+      ]
+    },
+    {
+      "v": "نوشتن",
+      "en": "Write your name here.",
+      "fa": "اسمتو اینجا بنویس.",
+      "tr": "esmeto injâ benevis",
+      "sit": "work, study and daily routine",
+      "tags": [
+        "pronoun-clitic",
+        "ra-marker"
+      ],
+      "bd": [
+        [
+          "اسمتو",
+          "esmeto",
+          "your name [object]",
+          "attached pronoun"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "بنویس",
+          "benevis",
+          "write",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "اسمت رو اینجا بنویس."
+      ]
+    },
+    {
+      "v": "خوندن",
+      "en": "Did you read my message?",
+      "fa": "پیاممو خوندی؟",
+      "tr": "payâmamo khundi?",
+      "sit": "phone, messages and making plans",
+      "tags": [
+        "pronoun-clitic",
+        "ra-marker",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پیاممو",
+          "payâmamo",
+          "my message [object]",
+          "attached pronoun"
+        ],
+        [
+          "خوندی",
+          "khundi",
+          "did you read",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "پیام منو خوندی؟"
+      ]
+    },
+    {
+      "v": "خوندن",
+      "en": "She sings really well.",
+      "fa": "خیلی قشنگ می‌خونه.",
+      "tr": "kheyli ghashang mikhune",
+      "sit": "describing people and things",
+      "tags": [
+        "word-order",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "قشنگ",
+          "ghashang",
+          "beautifully",
+          "adjective"
+        ],
+        [
+          "می‌خونه",
+          "mikhune",
+          "she sings",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "صداش خیلی قشنگه."
+      ]
+    },
+    {
+      "v": "رسیدن",
+      "en": "We arrived late.",
+      "fa": "دیر رسیدیم.",
+      "tr": "dir residim",
+      "sit": "apologising or explaining lateness",
+      "tags": [
+        "verb-tense",
+        "word-order"
+      ],
+      "bd": [
+        [
+          "دیر",
+          "dir",
+          "late",
+          "adverb"
+        ],
+        [
+          "رسیدیم",
+          "residim",
+          "we arrived",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "با تأخیر رسیدیم."
+      ]
+    },
+    {
+      "v": "رسیدن",
+      "en": "When did you get home?",
+      "fa": "کی رسیدی خونه؟",
+      "tr": "key residi khune?",
+      "sit": "phone call with family",
+      "tags": [
+        "word-order",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کی",
+          "key",
+          "when",
+          "question word"
+        ],
+        [
+          "رسیدی",
+          "residi",
+          "did you arrive",
+          "verb"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ]
+      ],
+      "alt": [
+        "کی رسیدی؟"
+      ]
+    },
+    {
+      "v": "فهمیدن",
+      "en": "I didn't understand what he said.",
+      "fa": "نفهمیدم چی گفت.",
+      "tr": "nafahmidam chi goft",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "verb-tense",
+        "word-order"
+      ],
+      "bd": [
+        [
+          "نفهمیدم",
+          "nafahmidam",
+          "I didn't understand",
+          "verb"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "گفت",
+          "goft",
+          "he said",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "متوجه نشدم چی گفت."
+      ]
+    },
+    {
+      "v": "فهمیدن",
+      "en": "Now I understand.",
+      "fa": "حالا فهمیدم.",
+      "tr": "hâlâ fahmidam",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "verb-tense",
+        "word-order"
+      ],
+      "bd": [
+        [
+          "حالا",
+          "hâlâ",
+          "now",
+          "adverb"
+        ],
+        [
+          "فهمیدم",
+          "fahmidam",
+          "I understood",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "آهان، فهمیدم."
+      ]
+    },
+    {
+      "v": "پرسیدن",
+      "en": "I asked him but he didn't answer.",
+      "fa": "ازش پرسیدم ولی جواب نداد.",
+      "tr": "azash porsidam vali javâb nadâd",
+      "sit": "disagreeing politely",
+      "tags": [
+        "pronoun-clitic",
+        "compound-verb",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "ازش",
+          "azash",
+          "from him",
+          "attached pronoun"
+        ],
+        [
+          "پرسیدم",
+          "porsidam",
+          "I asked",
+          "verb"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "جواب نداد",
+          "javâb nadâd",
+          "didn't answer",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "ازش پرسیدم اما جوابی نداد."
+      ]
+    },
+    {
+      "v": "پرسیدن",
+      "en": "Can I ask you something?",
+      "fa": "می‌تونم یه چیزی ازت بپرسم؟",
+      "tr": "mitunam ye chizi azat beporsam?",
+      "sit": "negotiating or asking for a favour",
+      "tags": [
+        "subjunctive",
+        "pronoun-clitic",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌تونم",
+          "mitunam",
+          "can I",
+          "verb"
+        ],
+        [
+          "یه چیزی",
+          "ye chizi",
+          "something",
+          "noun"
+        ],
+        [
+          "ازت",
+          "azat",
+          "from you",
+          "attached pronoun"
+        ],
+        [
+          "بپرسم",
+          "beporsam",
+          "ask",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "یه سؤال ازت بپرسم؟"
+      ]
+    },
+    {
+      "v": "نشستن",
+      "en": "Sit here next to me.",
+      "fa": "بشین اینجا کنار من.",
+      "tr": "beshin injâ kenâr-e man",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "ezafe",
+        "preposition"
+      ],
+      "bd": [
+        [
+          "بشین",
+          "beshin",
+          "sit",
+          "verb"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "کنار من",
+          "kenâr-e man",
+          "next to me",
+          "preposition"
+        ]
+      ],
+      "alt": [
+        "بیا اینجا بشین."
+      ]
+    },
+    {
+      "v": "نشستن",
+      "en": "We sat in the garden.",
+      "fa": "تو باغ نشستیم.",
+      "tr": "tu bâgh neshastim",
+      "sit": "the home and household objects",
+      "tags": [
+        "preposition",
+        "verb-tense",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "باغ",
+          "bâgh",
+          "the garden",
+          "noun"
+        ],
+        [
+          "نشستیم",
+          "neshastim",
+          "we sat",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "توی باغ نشستیم."
+      ]
+    },
+    {
+      "v": "خوابیدن",
+      "en": "I slept really well last night.",
+      "fa": "دیشب خیلی خوب خوابیدم.",
+      "tr": "dishab kheyli khub khâbidam",
+      "sit": "body, health and feeling unwell",
+      "tags": [
+        "word-order",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "دیشب",
+          "dishab",
+          "last night",
+          "adverb"
+        ],
+        [
+          "خیلی خوب",
+          "kheyli khub",
+          "really well",
+          "adverb"
+        ],
+        [
+          "خوابیدم",
+          "khâbidam",
+          "I slept",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "دیشب خوابم خیلی خوب بود."
+      ]
+    },
+    {
+      "v": "خوابیدن",
+      "en": "I couldn't sleep at all.",
+      "fa": "اصلاً نتونستم بخوابم.",
+      "tr": "aslan natunestam bekhâbam",
+      "sit": "body, health and feeling unwell",
+      "tags": [
+        "subjunctive",
+        "word-order",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اصلاً",
+          "aslan",
+          "at all",
+          "adverb"
+        ],
+        [
+          "نتونستم",
+          "natunestam",
+          "I couldn't",
+          "verb"
+        ],
+        [
+          "بخوابم",
+          "bekhâbam",
+          "sleep",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "اصلاً خوابم نبرد."
+      ]
+    },
+    {
+      "v": "قدم زدن",
+      "en": "We walked by the river.",
+      "fa": "کنار رودخونه قدم زدیم.",
+      "tr": "kenâr-e rudkhune ghadam zadim",
+      "sit": "places, directions and the city",
+      "tags": [
+        "compound-verb",
+        "ezafe",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کنار رودخونه",
+          "kenâr-e rudkhune",
+          "by the river",
+          "preposition"
+        ],
+        [
+          "قدم زدیم",
+          "ghadam zadim",
+          "we walked",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "کنار رودخونه راه رفتیم."
+      ]
+    },
+    {
+      "v": "قدم زدن",
+      "en": "Let's go for a walk.",
+      "fa": "بریم یه کم قدم بزنیم.",
+      "tr": "berim ye kam ghadam bezanim",
+      "sit": "making plans with a friend",
+      "tags": [
+        "subjunctive",
+        "compound-verb",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ],
+        [
+          "یه کم",
+          "ye kam",
+          "a bit",
+          "adverb"
+        ],
+        [
+          "قدم بزنیم",
+          "ghadam bezanim",
+          "walk",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "بریم یه دوری بزنیم."
+      ]
+    },
+    {
+      "v": "دوست داشتن",
+      "en": "I really liked that film.",
+      "fa": "اون فیلمو خیلی دوست داشتم.",
+      "tr": "un filmo kheyli dust dâshtam",
+      "sit": "feelings, opinions and reactions",
+      "tags": [
+        "compound-verb",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "فیلمو",
+          "filmo",
+          "film [object]",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "really",
+          "adverb"
+        ],
+        [
+          "دوست داشتم",
+          "dust dâshtam",
+          "I liked",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "از اون فیلم خیلی خوشم اومد."
+      ]
+    },
+    {
+      "v": "دوست داشتن",
+      "en": "Do you like Persian food?",
+      "fa": "غذای ایرانی دوست داری؟",
+      "tr": "ghazâ-ye irâni dust dâri?",
+      "sit": "food, drink and eating out",
+      "tags": [
+        "compound-verb",
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "غذای ایرانی",
+          "ghazâ-ye irâni",
+          "Persian food",
+          "noun"
+        ],
+        [
+          "دوست داری",
+          "dust dâri",
+          "do you like",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "از غذای ایرانی خوشت میاد؟"
+      ]
+    },
+    {
+      "v": "منتظر موندن",
+      "en": "I waited for an hour.",
+      "fa": "یه ساعت منتظر موندم.",
+      "tr": "ye sâ'at montazer mundam",
+      "sit": "apologising or explaining lateness",
+      "tags": [
+        "compound-verb",
+        "verb-tense",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه ساعت",
+          "ye sâ'at",
+          "an hour",
+          "noun"
+        ],
+        [
+          "منتظر موندم",
+          "montazer mundam",
+          "I waited",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "یه ساعت معطل شدم."
+      ]
+    },
+    {
+      "v": "منتظر موندن",
+      "en": "Wait for me outside.",
+      "fa": "بیرون منتظرم بمون.",
+      "tr": "birun montazeram bemun",
+      "sit": "making plans with a friend",
+      "tags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بیرون",
+          "birun",
+          "outside",
+          "adverb"
+        ],
+        [
+          "منتظرم بمون",
+          "montazeram bemun",
+          "wait for me",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "بیرون وایسا تا بیام."
+      ]
+    },
+    {
+      "v": "پیدا کردن",
+      "en": "I found my keys.",
+      "fa": "کلیدهامو پیدا کردم.",
+      "tr": "kelidhâmo peydâ kardam",
+      "sit": "the home and household objects",
+      "tags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "ra-marker",
+        "plural"
+      ],
+      "bd": [
+        [
+          "کلیدهامو",
+          "kelidhâmo",
+          "my keys [object]",
+          "attached pronoun"
+        ],
+        [
+          "پیدا کردم",
+          "peydâ kardam",
+          "I found",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "کلیدام رو پیدا کردم."
+      ]
+    },
+    {
+      "v": "پیدا کردن",
+      "en": "Did you find what you wanted?",
+      "fa": "چیزی که می‌خواستی پیدا کردی؟",
+      "tr": "chizi ke mikhâsti peydâ kardi?",
+      "sit": "clothes, sizes and shopping",
+      "tags": [
+        "compound-verb",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "چیزی که",
+          "chizi ke",
+          "the thing that",
+          "conjunction"
+        ],
+        [
+          "می‌خواستی",
+          "mikhâsti",
+          "you wanted",
+          "verb"
+        ],
+        [
+          "پیدا کردی",
+          "peydâ kardi",
+          "did you find",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "اونی که می‌خواستی رو پیدا کردی؟"
+      ]
+    },
+    {
+      "v": "باز کردن",
+      "en": "Open the window please.",
+      "fa": "لطفاً پنجره رو باز کن.",
+      "tr": "lotfan panjere ro bâz kon",
+      "sit": "the home and household objects",
+      "tags": [
+        "compound-verb",
+        "ra-marker",
+        "formality"
+      ],
+      "bd": [
+        [
+          "لطفاً",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "پنجره",
+          "panjere",
+          "the window",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "باز کن",
+          "bâz kon",
+          "open",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "میشه پنجره رو باز کنی؟"
+      ]
+    },
+    {
+      "v": "باز کردن",
+      "en": "He opened the box.",
+      "fa": "جعبه رو باز کرد.",
+      "tr": "ja'be ro bâz kard",
+      "sit": "the home and household objects",
+      "tags": [
+        "compound-verb",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "جعبه",
+          "ja'be",
+          "the box",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "باز کرد",
+          "bâz kard",
+          "opened",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "درِ جعبه رو باز کرد."
+      ]
+    },
+    {
+      "v": "بستن",
+      "en": "I closed my eyes.",
+      "fa": "چشمامو بستم.",
+      "tr": "cheshmâmo bastam",
+      "sit": "body, health and feeling unwell",
+      "tags": [
+        "pronoun-clitic",
+        "ra-marker",
+        "plural"
+      ],
+      "bd": [
+        [
+          "چشمامو",
+          "cheshmâmo",
+          "my eyes [object]",
+          "attached pronoun"
+        ],
+        [
+          "بستم",
+          "bastam",
+          "I closed",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "چشمام رو بستم."
+      ]
+    },
+    {
+      "v": "بستن",
+      "en": "They closed the shop early.",
+      "fa": "مغازه رو زود بستن.",
+      "tr": "maghâze ro zud bastan",
+      "sit": "clothes, sizes and shopping",
+      "tags": [
+        "ra-marker",
+        "word-order",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "مغازه",
+          "maghâze",
+          "the shop",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "زود",
+          "zud",
+          "early",
+          "adverb"
+        ],
+        [
+          "بستن",
+          "bastan",
+          "they closed",
+          "verb"
+        ]
+      ],
+      "alt": [
+        "مغازه رو زودتر تعطیل کردن."
+      ]
+    },
+    {
+      "v": "شروع کردن",
+      "en": "When did you start?",
+      "fa": "کی شروع کردی؟",
+      "tr": "key shoru' kardi?",
+      "sit": "work, study and daily routine",
+      "tags": [
+        "compound-verb",
+        "word-order"
+      ],
+      "bd": [
+        [
+          "کی",
+          "key",
+          "when",
+          "question word"
+        ],
+        [
+          "شروع کردی",
+          "shoru' kardi",
+          "did you start",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "از کی شروع کردی؟"
+      ]
+    },
+    {
+      "v": "شروع کردن",
+      "en": "Let's start.",
+      "fa": "بیا شروع کنیم.",
+      "tr": "biyâ shoru' konim",
+      "sit": "work, study and daily routine",
+      "tags": [
+        "compound-verb",
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "بیا",
+          "biyâ",
+          "come",
+          "verb"
+        ],
+        [
+          "شروع کنیم",
+          "shoru' konim",
+          "let's start",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "شروع کنیم؟"
+      ]
+    },
+    {
+      "v": "تموم کردن",
+      "en": "I finished my homework.",
+      "fa": "مشقمو تموم کردم.",
+      "tr": "mashgamo tamum kardam",
+      "sit": "work, study and daily routine",
+      "tags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "ra-marker",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مشقمو",
+          "mashgamo",
+          "my homework [object]",
+          "attached pronoun"
+        ],
+        [
+          "تموم کردم",
+          "tamum kardam",
+          "I finished",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "تکالیفمو تموم کردم."
+      ]
+    },
+    {
+      "v": "تموم کردن",
+      "en": "Finish your food.",
+      "fa": "غذاتو تموم کن.",
+      "tr": "ghazâto tamum kon",
+      "sit": "food, drink and eating out",
+      "tags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "ra-marker",
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "غذاتو",
+          "ghazâto",
+          "your food [object]",
+          "attached pronoun"
+        ],
+        [
+          "تموم کن",
+          "tamum kon",
+          "finish",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "غذات رو تموم کن."
+      ]
+    }
   ]
 }

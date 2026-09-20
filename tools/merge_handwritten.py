@@ -20,13 +20,43 @@ from core.prompts import PARTS_OF_SPEECH
 from core.taxonomy import ERROR_TAG_KEYS
 
 BANK = pathlib.Path(__file__).parent / "seed_sentences.json"
-SOURCE = pathlib.Path(__file__).parent / "handwritten" / "a2_core_verbs.json"
+HANDWRITTEN = pathlib.Path(__file__).parent / "handwritten"
 
 
 def main() -> int:
+    import argparse
+
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument(
+        "files", nargs="*",
+        help="batch files in tools/handwritten/ (default: all of them)",
+    )
+    args = ap.parse_args()
+
+    paths = (
+        [HANDWRITTEN / f for f in args.files] if args.files
+        else sorted(HANDWRITTEN.glob("*.json"))
+    )
+
     deck = json.loads(BANK.read_text(encoding="utf-8"))
-    source = json.loads(SOURCE.read_text(encoding="utf-8"))
     existing = {s["farsiText"] for s in deck["sentences"]}
+    total_added = 0
+
+    for path in paths:
+        source = json.loads(path.read_text(encoding="utf-8"))
+        # Difficulty is a property of the batch, not of the merge tool. A file
+        # that does not state one is A2, which is what the first batch assumed.
+        difficulty = int(source.get("difficulty", 2))
+        print(f"\n{path.name} (difficulty {difficulty})")
+        total_added += merge_one(source, difficulty, deck, existing)
+
+    deck["count"] = len(deck["sentences"])
+    BANK.write_text(json.dumps(deck, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"\n  added {total_added} in total; deck now {deck['count']} sentences")
+    return 0
+
+
+def merge_one(source: dict, difficulty: int, deck: dict, existing: set[str]) -> int:
 
     added, skipped, problems = [], 0, []
 
@@ -60,7 +90,7 @@ def main() -> int:
             "farsiText": farsi,
             "finglish": item["tr"],
             "literalGloss": " ".join(u["en"] for u in breakdown),
-            "difficulty": 2,
+            "difficulty": difficulty,
             "situation": item["sit"],
             "grammarTags": tags,
             "breakdown": breakdown,
@@ -85,12 +115,8 @@ def main() -> int:
         print(f"  {line}")
 
     deck["sentences"].extend(added)
-    deck["count"] = len(deck["sentences"])
-    BANK.write_text(json.dumps(deck, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    print(f"\n  added {len(added)}, skipped {skipped} duplicates")
-    print(f"  deck now {deck['count']} sentences")
-    return 0
+    print(f"  added {len(added)}, skipped {skipped} duplicates")
+    return len(added)
 
 
 if __name__ == "__main__":
