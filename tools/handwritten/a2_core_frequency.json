@@ -1,0 +1,2148 @@
+{
+  "note": "Core vocabulary that frequency lists put in the first 500 words but the deck had absent or used once or twice: آسون تشنه دلیل فرصت تفاوت معمولی سعی تعریف تعجب وایستادن ترسیدن and the rest.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "This one is easier.",
+      "fa": "این یکی آسون‌تره.",
+      "tr": "in yeki âsuntare",
+      "sit": "comparing options",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "یکی",
+          "yeki",
+          "one",
+          "pronoun"
+        ],
+        [
+          "آسون‌تره",
+          "âsuntare",
+          "is easier",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Persian isn't easy, but it isn't hard either.",
+      "fa": "فارسی آسون نیست، ولی سخت هم نیست.",
+      "tr": "fârsi âsun nist, vali sakht ham nist",
+      "sit": "talking about learning",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "آسون",
+          "âsun",
+          "easy",
+          "adjective"
+        ],
+        [
+          "نیست",
+          "nist",
+          "is not",
+          "verb"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "سخت",
+          "sakht",
+          "hard",
+          "adjective"
+        ],
+        [
+          "هم",
+          "ham",
+          "either",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The exam was very hard.",
+      "fa": "امتحان خیلی سخت بود.",
+      "tr": "emtehân kheyli sakht bud",
+      "sit": "after a test",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "امتحان",
+          "emtehân",
+          "exam",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "سخت",
+          "sakht",
+          "hard",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm thirsty.",
+      "fa": "تشنمه.",
+      "tr": "teshname",
+      "sit": "on a hot day",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تشنمه",
+          "teshname",
+          "I am thirsty",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you hungry or thirsty?",
+      "fa": "گشنته یا تشنته؟",
+      "tr": "goshnate yâ teshnate?",
+      "sit": "offering food",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "گشنته",
+          "goshnate",
+          "are you hungry",
+          "adjective"
+        ],
+        [
+          "یا",
+          "yâ",
+          "or",
+          "conjunction"
+        ],
+        [
+          "تشنته",
+          "teshnate",
+          "are you thirsty",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The children are thirsty.",
+      "fa": "بچه‌ها تشنشونه.",
+      "tr": "bachehâ teshneshune",
+      "sit": "on a trip",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "بچه‌ها",
+          "bachehâ",
+          "the children",
+          "noun"
+        ],
+        [
+          "تشنشونه",
+          "teshneshune",
+          "are thirsty",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What's the reason?",
+      "fa": "دلیلش چیه؟",
+      "tr": "dalilesh chiye?",
+      "sit": "asking for an explanation",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دلیلش",
+          "dalilesh",
+          "its reason",
+          "attached pronoun"
+        ],
+        [
+          "چیه",
+          "chiye",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have a good reason.",
+      "fa": "یه دلیل خوب دارم.",
+      "tr": "ye dalile khub dâram",
+      "sit": "defending a decision",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "دلیل",
+          "dalil",
+          "reason",
+          "noun"
+        ],
+        [
+          "خوب",
+          "khub",
+          "good",
+          "adjective"
+        ],
+        [
+          "دارم",
+          "dâram",
+          "I have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "There's no reason to worry.",
+      "fa": "دلیلی واسه نگرانی نیست.",
+      "tr": "dalili vâse negarâni nist",
+      "sit": "reassuring someone",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دلیلی",
+          "dalili",
+          "a reason",
+          "noun"
+        ],
+        [
+          "واسه",
+          "vâse",
+          "for",
+          "preposition"
+        ],
+        [
+          "نگرانی",
+          "negarâni",
+          "worry",
+          "noun"
+        ],
+        [
+          "نیست",
+          "nist",
+          "there is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's a good opportunity.",
+      "fa": "فرصت خوبیه.",
+      "tr": "forsate khubiye",
+      "sit": "about a job",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "فرصت",
+          "forsat",
+          "opportunity",
+          "noun"
+        ],
+        [
+          "خوبیه",
+          "khubiye",
+          "is a good one",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I didn't get the opportunity.",
+      "fa": "فرصتش رو پیدا نکردم.",
+      "tr": "forsatesh ro peydâ nakardam",
+      "sit": "explaining a failure",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "فرصتش",
+          "forsatesh",
+          "its opportunity",
+          "attached pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "پیدا نکردم",
+          "peydâ nakardam",
+          "I didn't find",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What's the difference?",
+      "fa": "تفاوتش چیه؟",
+      "tr": "tafâvotesh chiye?",
+      "sit": "comparing two things",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "تفاوتش",
+          "tafâvotesh",
+          "its difference",
+          "attached pronoun"
+        ],
+        [
+          "چیه",
+          "chiye",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "There's no difference between them.",
+      "fa": "بینشون تفاوتی نیست.",
+      "tr": "beyneshun tafâvoti nist",
+      "sit": "comparing options",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "بینشون",
+          "beyneshun",
+          "between them",
+          "attached pronoun"
+        ],
+        [
+          "تفاوتی",
+          "tafâvoti",
+          "a difference",
+          "noun"
+        ],
+        [
+          "نیست",
+          "nist",
+          "there is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It was a normal day.",
+      "fa": "یه روز معمولی بود.",
+      "tr": "ye ruze mamuli bud",
+      "sit": "recounting a day",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "روز",
+          "ruz",
+          "day",
+          "noun"
+        ],
+        [
+          "معمولی",
+          "mamuli",
+          "normal",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "This is normal here.",
+      "fa": "اینجا این معمولیه.",
+      "tr": "injâ in mamuliye",
+      "sit": "explaining a custom",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "معمولیه",
+          "mamuliye",
+          "is normal",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll try.",
+      "fa": "سعی می‌کنم.",
+      "tr": "sai mikonam",
+      "sit": "agreeing to help",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "سعی می‌کنم",
+          "sai mikonam",
+          "I try",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Try again.",
+      "fa": "دوباره سعی کن.",
+      "tr": "dobâre sai kon",
+      "sit": "encouraging someone",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "دوباره",
+          "dobâre",
+          "again",
+          "adverb"
+        ],
+        [
+          "سعی کن",
+          "sai kon",
+          "try",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We tried but it didn't work.",
+      "fa": "سعی کردیم ولی نشد.",
+      "tr": "sai kardim vali nashod",
+      "sit": "after a failure",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "سعی کردیم",
+          "sai kardim",
+          "we tried",
+          "compound verb"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "نشد",
+          "nashod",
+          "it didn't work",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He described the place for me.",
+      "fa": "اونجا رو واسم تعریف کرد.",
+      "tr": "unjâ ro vâsam tarif kard",
+      "sit": "hearing about a trip",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اونجا",
+          "unjâ",
+          "there",
+          "adverb"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "واسم",
+          "vâsam",
+          "for me",
+          "attached pronoun"
+        ],
+        [
+          "تعریف کرد",
+          "tarif kard",
+          "described",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Tell me about your day.",
+      "fa": "از روزت واسم تعریف کن.",
+      "tr": "az ruzet vâsam tarif kon",
+      "sit": "catching up at home",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "از",
+          "az",
+          "about",
+          "preposition"
+        ],
+        [
+          "روزت",
+          "ruzet",
+          "your day",
+          "attached pronoun"
+        ],
+        [
+          "واسم",
+          "vâsam",
+          "for me",
+          "attached pronoun"
+        ],
+        [
+          "تعریف کن",
+          "tarif kon",
+          "tell",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was surprised.",
+      "fa": "تعجب کردم.",
+      "tr": "tajob kardam",
+      "sit": "hearing news",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "تعجب کردم",
+          "tajob kardam",
+          "I was surprised",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't be surprised.",
+      "fa": "تعجب نکن.",
+      "tr": "tajob nakon",
+      "sit": "before a reveal",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "تعجب نکن",
+          "tajob nakon",
+          "don't be surprised",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Everyone was surprised.",
+      "fa": "همه تعجب کردن.",
+      "tr": "hame tajob kardan",
+      "sit": "after an announcement",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "همه",
+          "hame",
+          "everyone",
+          "pronoun"
+        ],
+        [
+          "تعجب کردن",
+          "tajob kardan",
+          "were surprised",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Stand here for a moment.",
+      "fa": "یه لحظه اینجا وایسا.",
+      "tr": "ye lahze injâ vâysâ",
+      "sit": "in a queue",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "لحظه",
+          "lahze",
+          "moment",
+          "noun"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "وایسا",
+          "vâysâ",
+          "stand",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We stood in the rain.",
+      "fa": "زیر بارون وایستادیم.",
+      "tr": "zire bârun vâystâdim",
+      "sit": "recounting a wait",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "زیر",
+          "zire",
+          "under",
+          "preposition"
+        ],
+        [
+          "بارون",
+          "bârun",
+          "rain",
+          "noun"
+        ],
+        [
+          "وایستادیم",
+          "vâystâdim",
+          "we stood",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Stop, don't go.",
+      "fa": "وایسا، نرو.",
+      "tr": "vâysâ, naro",
+      "sit": "stopping someone",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "وایسا",
+          "vâysâ",
+          "stop",
+          "verb"
+        ],
+        [
+          "نرو",
+          "naro",
+          "don't go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was scared.",
+      "fa": "ترسیدم.",
+      "tr": "tarsidam",
+      "sit": "after a near miss",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "ترسیدم",
+          "tarsidam",
+          "I was scared",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't be scared, it's nothing.",
+      "fa": "نترس، چیزی نیست.",
+      "tr": "natars, chizi nist",
+      "sit": "reassuring a child",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نترس",
+          "natars",
+          "don't be scared",
+          "verb"
+        ],
+        [
+          "چیزی",
+          "chizi",
+          "anything",
+          "pronoun"
+        ],
+        [
+          "نیست",
+          "nist",
+          "is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The child was scared of the dog.",
+      "fa": "بچه از سگ ترسید.",
+      "tr": "bache az sag tarsid",
+      "sit": "at a park",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "بچه",
+          "bache",
+          "child",
+          "noun"
+        ],
+        [
+          "از",
+          "az",
+          "of",
+          "preposition"
+        ],
+        [
+          "سگ",
+          "sag",
+          "dog",
+          "noun"
+        ],
+        [
+          "ترسید",
+          "tarsid",
+          "was scared",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The children are at school.",
+      "fa": "بچه‌ها مدرسه‌ان.",
+      "tr": "bachehâ madresean",
+      "sit": "about family",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "بچه‌ها",
+          "bachehâ",
+          "the children",
+          "noun"
+        ],
+        [
+          "مدرسه‌ان",
+          "madresean",
+          "are at school",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My son goes to school at seven.",
+      "fa": "پسرم ساعت هفت می‌ره مدرسه.",
+      "tr": "pesaram sâate haft mire madrese",
+      "sit": "morning routine",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "پسرم",
+          "pesaram",
+          "my son",
+          "attached pronoun"
+        ],
+        [
+          "ساعت",
+          "sâat",
+          "hour",
+          "noun"
+        ],
+        [
+          "هفت",
+          "haft",
+          "seven",
+          "number"
+        ],
+        [
+          "می‌ره",
+          "mire",
+          "goes",
+          "verb"
+        ],
+        [
+          "مدرسه",
+          "madrese",
+          "school",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That girl is my sister.",
+      "fa": "اون دختر خواهرمه.",
+      "tr": "un dokhtar khâharame",
+      "sit": "introducing family",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "دختر",
+          "dokhtar",
+          "girl",
+          "noun"
+        ],
+        [
+          "خواهرمه",
+          "khâharame",
+          "is my sister",
+          "attached pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "A man asked me for directions.",
+      "fa": "یه مرد ازم آدرس پرسید.",
+      "tr": "ye mard azam âdres porsid",
+      "sit": "on the street",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "مرد",
+          "mard",
+          "man",
+          "noun"
+        ],
+        [
+          "ازم",
+          "azam",
+          "from me",
+          "attached pronoun"
+        ],
+        [
+          "آدرس",
+          "âdres",
+          "address",
+          "noun"
+        ],
+        [
+          "پرسید",
+          "porsid",
+          "asked",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have a question.",
+      "fa": "یه سوال دارم.",
+      "tr": "ye soâl dâram",
+      "sit": "in a class",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "سوال",
+          "soâl",
+          "question",
+          "noun"
+        ],
+        [
+          "دارم",
+          "dâram",
+          "I have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Your question is difficult.",
+      "fa": "سوالت سخته.",
+      "tr": "soâlet sakhte",
+      "sit": "in a conversation",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "سوالت",
+          "soâlet",
+          "your question",
+          "attached pronoun"
+        ],
+        [
+          "سخته",
+          "sakhte",
+          "is hard",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "There's a problem with the car.",
+      "fa": "ماشین یه مشکلی داره.",
+      "tr": "mâshin ye moshkeli dâre",
+      "sit": "at a garage",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ماشین",
+          "mâshin",
+          "car",
+          "noun"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "مشکلی",
+          "moshkeli",
+          "problem",
+          "noun"
+        ],
+        [
+          "داره",
+          "dâre",
+          "has",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "No problem.",
+      "fa": "مشکلی نیست.",
+      "tr": "moshkeli nist",
+      "sit": "accepting an apology",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مشکلی",
+          "moshkeli",
+          "problem",
+          "noun"
+        ],
+        [
+          "نیست",
+          "nist",
+          "there is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We solved the problem.",
+      "fa": "مشکل رو حل کردیم.",
+      "tr": "moshkel ro hal kardim",
+      "sit": "at work",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "مشکل",
+          "moshkel",
+          "problem",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "حل کردیم",
+          "hal kardim",
+          "we solved",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The room is dirty.",
+      "fa": "اتاق کثیفه.",
+      "tr": "otâgh kasife",
+      "sit": "at a hotel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اتاق",
+          "otâgh",
+          "room",
+          "noun"
+        ],
+        [
+          "کثیفه",
+          "kasife",
+          "is dirty",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My shoes got dirty.",
+      "fa": "کفشام کثیف شد.",
+      "tr": "kafshâm kasif shod",
+      "sit": "after the rain",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "کفشام",
+          "kafshâm",
+          "my shoes",
+          "attached pronoun"
+        ],
+        [
+          "کثیف شد",
+          "kasif shod",
+          "got dirty",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm hungry, let's eat.",
+      "fa": "گشنمه، بریم غذا بخوریم.",
+      "tr": "goshname, berim ghazâ bokhorim",
+      "sit": "at lunchtime",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "گشنمه",
+          "goshname",
+          "I am hungry",
+          "adjective"
+        ],
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ],
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "بخوریم",
+          "bokhorim",
+          "eat",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's wrong.",
+      "fa": "اون اشتباهه.",
+      "tr": "un eshtebâhe",
+      "sit": "correcting someone",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "اشتباهه",
+          "eshtebâhe",
+          "is wrong",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I made a mistake.",
+      "fa": "اشتباه کردم.",
+      "tr": "eshtebâh kardam",
+      "sit": "apologising",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اشتباه کردم",
+          "eshtebâh kardam",
+          "I made a mistake",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is it possible to come tomorrow?",
+      "fa": "ممکنه فردا بیای؟",
+      "tr": "momkene fardâ biyây?",
+      "sit": "arranging a meeting",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "ممکنه",
+          "momkene",
+          "is it possible",
+          "adjective"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "بیای",
+          "biyây",
+          "you come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's not possible.",
+      "fa": "این ممکن نیست.",
+      "tr": "in momken nist",
+      "sit": "refusing a request",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "ممکن",
+          "momken",
+          "possible",
+          "adjective"
+        ],
+        [
+          "نیست",
+          "nist",
+          "is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It was a good experience.",
+      "fa": "تجربه خوبی بود.",
+      "tr": "tajrobeye khubi bud",
+      "sit": "after a trip",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "تجربه",
+          "tajrobeye",
+          "experience",
+          "noun"
+        ],
+        [
+          "خوبی",
+          "khubi",
+          "good",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have no experience of this work.",
+      "fa": "تجربه این کار رو ندارم.",
+      "tr": "tajrobeye in kâr ro nadâram",
+      "sit": "in an interview",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "تجربه",
+          "tajrobeye",
+          "experience",
+          "noun"
+        ],
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "کار",
+          "kâr",
+          "work",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "ندارم",
+          "nadâram",
+          "I don't have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's change the subject.",
+      "fa": "موضوع رو عوض کنیم.",
+      "tr": "mozu ro avaz konim",
+      "sit": "avoiding a topic",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "موضوع",
+          "mozu",
+          "subject",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "عوض کنیم",
+          "avaz konim",
+          "let's change",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What was the result?",
+      "fa": "نتیجه چی شد؟",
+      "tr": "natije chi shod?",
+      "sit": "after a match",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نتیجه",
+          "natije",
+          "result",
+          "noun"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "شد",
+          "shod",
+          "became",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The result was good.",
+      "fa": "نتیجه خوب بود.",
+      "tr": "natije khub bud",
+      "sit": "after an exam",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "نتیجه",
+          "natije",
+          "result",
+          "noun"
+        ],
+        [
+          "خوب",
+          "khub",
+          "good",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Why are you upset?",
+      "fa": "چرا ناراحتی؟",
+      "tr": "cherâ nârâhati?",
+      "sit": "noticing a mood",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چرا",
+          "cherâ",
+          "why",
+          "question word"
+        ],
+        [
+          "ناراحتی",
+          "nârâhati",
+          "are you upset",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't be upset, it's fine.",
+      "fa": "ناراحت نباش، چیزی نیست.",
+      "tr": "nârâhat nabâsh, chizi nist",
+      "sit": "comforting a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ناراحت",
+          "nârâhat",
+          "upset",
+          "adjective"
+        ],
+        [
+          "نباش",
+          "nabâsh",
+          "don't be",
+          "verb"
+        ],
+        [
+          "چیزی",
+          "chizi",
+          "anything",
+          "pronoun"
+        ],
+        [
+          "نیست",
+          "nist",
+          "is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He got angry.",
+      "fa": "عصبانی شد.",
+      "tr": "asabâni shod",
+      "sit": "recounting an argument",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "عصبانی شد",
+          "asabâni shod",
+          "got angry",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't get angry with me.",
+      "fa": "از دستم عصبانی نشو.",
+      "tr": "az dastam asabâni nasho",
+      "sit": "in an argument",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "دستم",
+          "dastam",
+          "my hand",
+          "attached pronoun"
+        ],
+        [
+          "عصبانی نشو",
+          "asabâni nasho",
+          "don't get angry",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was alone at home.",
+      "fa": "تنها خونه بودم.",
+      "tr": "tanhâ khune budam",
+      "sit": "recounting an evening",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "تنها",
+          "tanhâ",
+          "alone",
+          "adjective"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ],
+        [
+          "بودم",
+          "budam",
+          "I was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't go alone.",
+      "fa": "تنها نرو.",
+      "tr": "tanhâ naro",
+      "sit": "warning a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تنها",
+          "tanhâ",
+          "alone",
+          "adjective"
+        ],
+        [
+          "نرو",
+          "naro",
+          "don't go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you sure?",
+      "fa": "مطمئنی؟",
+      "tr": "motmaeni?",
+      "sit": "checking a claim",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مطمئنی",
+          "motmaeni",
+          "are you sure",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm not sure.",
+      "fa": "مطمئن نیستم.",
+      "tr": "motmaen nistam",
+      "sit": "hedging",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مطمئن",
+          "motmaen",
+          "sure",
+          "adjective"
+        ],
+        [
+          "نیستم",
+          "nistam",
+          "I am not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's strange.",
+      "fa": "عجیبه.",
+      "tr": "ajibe",
+      "sit": "hearing odd news",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عجیبه",
+          "ajibe",
+          "is strange",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "A strange thing happened today.",
+      "fa": "امروز یه چیز عجیب شد.",
+      "tr": "emruz ye chize ajib shod",
+      "sit": "telling a story",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "چیز",
+          "chiz",
+          "thing",
+          "noun"
+        ],
+        [
+          "عجیب",
+          "ajib",
+          "strange",
+          "adjective"
+        ],
+        [
+          "شد",
+          "shod",
+          "happened",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you have permission?",
+      "fa": "اجازه داری؟",
+      "tr": "ejâze dâri?",
+      "sit": "before doing something",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اجازه داری",
+          "ejâze dâri",
+          "do you have permission",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I agree with you.",
+      "fa": "باهات موافقم.",
+      "tr": "bâhât movâfeqam",
+      "sit": "in a discussion",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "باهات",
+          "bâhât",
+          "with you",
+          "attached pronoun"
+        ],
+        [
+          "موافقم",
+          "movâfeqam",
+          "I agree",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They didn't agree.",
+      "fa": "موافق نبودن.",
+      "tr": "movâfeq nabudan",
+      "sit": "after a meeting",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "موافق",
+          "movâfeq",
+          "in agreement",
+          "adjective"
+        ],
+        [
+          "نبودن",
+          "nabudan",
+          "they were not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I sent you a message.",
+      "fa": "واست یه پیام فرستادم.",
+      "tr": "vâset ye payâm ferestâdam",
+      "sit": "on the phone",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "واست",
+          "vâset",
+          "to you",
+          "attached pronoun"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "پیام",
+          "payâm",
+          "message",
+          "noun"
+        ],
+        [
+          "فرستادم",
+          "ferestâdam",
+          "I sent",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Send it to me tomorrow.",
+      "fa": "فردا واسم بفرست.",
+      "tr": "fardâ vâsam befrest",
+      "sit": "at work",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "واسم",
+          "vâsam",
+          "to me",
+          "attached pronoun"
+        ],
+        [
+          "بفرست",
+          "befrest",
+          "send",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Wear a warm coat.",
+      "fa": "یه کاپشن گرم بپوش.",
+      "tr": "ye kâpshane garm bepush",
+      "sit": "before going out",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "کاپشن",
+          "kâpshan",
+          "coat",
+          "noun"
+        ],
+        [
+          "گرم",
+          "garm",
+          "warm",
+          "adjective"
+        ],
+        [
+          "بپوش",
+          "bepush",
+          "wear",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What did you wear yesterday?",
+      "fa": "دیروز چی پوشیدی؟",
+      "tr": "diruz chi pushidi?",
+      "sit": "chatting",
+      "tags": [
+        "word-order"
+      ],
+      "bd": [
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "پوشیدی",
+          "pushidi",
+          "did you wear",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My phone fell.",
+      "fa": "گوشیم افتاد.",
+      "tr": "gushim oftâd",
+      "sit": "an accident",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "گوشیم",
+          "gushim",
+          "my phone",
+          "attached pronoun"
+        ],
+        [
+          "افتاد",
+          "oftâd",
+          "fell",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Be careful, don't fall.",
+      "fa": "مواظب باش، نیفتی.",
+      "tr": "movâzeb bâsh, nayofti",
+      "sit": "on wet steps",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "مواظب باش",
+          "movâzeb bâsh",
+          "be careful",
+          "compound verb"
+        ],
+        [
+          "نیفتی",
+          "nayofti",
+          "you don't fall",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They didn't accept it.",
+      "fa": "قبول نکردن.",
+      "tr": "ghabul nakardan",
+      "sit": "after an application",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "قبول نکردن",
+          "ghabul nakardan",
+          "they didn't accept",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I accept.",
+      "fa": "قبول دارم.",
+      "tr": "ghabul dâram",
+      "sit": "agreeing",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "قبول دارم",
+          "ghabul dâram",
+          "I accept",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "When did you come back?",
+      "fa": "کی برگشتی؟",
+      "tr": "key bargashti?",
+      "sit": "welcoming someone back",
+      "tags": [
+        "word-order"
+      ],
+      "bd": [
+        [
+          "کی",
+          "key",
+          "when",
+          "question word"
+        ],
+        [
+          "برگشتی",
+          "bargashti",
+          "did you come back",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We came back late last night.",
+      "fa": "دیشب دیر برگشتیم.",
+      "tr": "dishab dir bargashtim",
+      "sit": "recounting a trip",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "دیشب",
+          "dishab",
+          "last night",
+          "adverb"
+        ],
+        [
+          "دیر",
+          "dir",
+          "late",
+          "adverb"
+        ],
+        [
+          "برگشتیم",
+          "bargashtim",
+          "we came back",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let me explain.",
+      "fa": "بذار توضیح بدم.",
+      "tr": "bezâr tozih bedam",
+      "sit": "clearing up confusion",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "بذار",
+          "bezâr",
+          "let",
+          "verb"
+        ],
+        [
+          "توضیح بدم",
+          "tozih bedam",
+          "I explain",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to make a decision.",
+      "fa": "باید تصمیم بگیرم.",
+      "tr": "bâyad tasmim begiram",
+      "sit": "weighing options",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "تصمیم بگیرم",
+          "tasmim begiram",
+          "I decide",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm learning Persian.",
+      "fa": "دارم فارسی یاد می‌گیرم.",
+      "tr": "dâram fârsi yâd migiram",
+      "sit": "introducing yourself",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "دارم",
+          "dâram",
+          "I am",
+          "verb"
+        ],
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "یاد می‌گیرم",
+          "yâd migiram",
+          "learning",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}
