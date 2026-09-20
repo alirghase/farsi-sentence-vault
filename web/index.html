@@ -108,9 +108,6 @@
         <label>Read Farsi <b id="w-read-value">20%</b>
           <input type="range" id="w-read" min="0" max="60" step="5">
         </label>
-        <label id="listen-weight-row">Hear Farsi <b id="w-listen-value">20%</b>
-          <input type="range" id="w-listen" min="0" max="60" step="5">
-        </label>
         <p class="hint" id="weights-hint">Producing Farsi is the skill that freezes; recognising it is easier. Weighted to production.</p>
       </div>
 
@@ -185,8 +182,6 @@
   <div class="card-scroll">
     <p class="badge" id="card-badge"></p>
     <p class="prompt" id="card-prompt"></p>
-    <button id="btn-listen" class="listen-prompt" hidden>Play &#9654;</button>
-    <p class="hint" id="listen-hint" hidden>Listen, then say the English.</p>
 
     <textarea id="card-typed" class="typed" rows="2" hidden
               autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
@@ -209,7 +204,6 @@
   <div class="controls">
     <div id="input-row" class="input-row">
       <button id="btn-type" data-t="card.type">Type</button>
-      <button id="btn-record" data-t="card.record">Record</button>
     </div>
     <button id="btn-reveal"><span data-t="card.reveal">Reveal</span> &rarr;</button>
     <div id="rating-row" class="rating-row" hidden></div>

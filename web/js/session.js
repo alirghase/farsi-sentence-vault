@@ -4,32 +4,19 @@ import * as db from './db.js';
 import * as SM2 from './sm2.js';
 import { idsForLevel } from './levels.js';
 
-// enToFa is production (what freezes), faToEn is reading, listenToEn is hearing.
-// Listening is a separate direction rather than a mode because a listening card
-// and a reading card of the same sentence are different skills and must
-// schedule independently — which ReviewState's sentenceId::direction key
-// already supports.
-export const DIRECTIONS = ['enToFa', 'faToEn', 'listenToEn'];
+// enToFa is production — the skill that freezes. faToEn is reading.
+// A sentence schedules independently per direction, which ReviewState's
+// sentenceId::direction key already supports.
+export const DIRECTIONS = ['enToFa', 'faToEn'];
 
 /**
  * Share of new cards per direction. Weighted to production because producing
- * Farsi is the skill that freezes; reading and hearing are easier.
+ * Farsi is the skill that freezes; reading is easier.
  */
-export const DEFAULT_WEIGHTS = { enToFa: 0.6, faToEn: 0.2, listenToEn: 0.2 };
-
-/** Directions usable right now. Listening needs a Persian voice on the device. */
-export function availableDirections(speechAvailable) {
-  return speechAvailable ? DIRECTIONS : DIRECTIONS.filter((d) => d !== 'listenToEn');
-}
+export const DEFAULT_WEIGHTS = { enToFa: 0.7, faToEn: 0.3 };
 
 export function directionLabel(direction) {
-  return { enToFa: 'EN → FA', faToEn: 'FA → EN', listenToEn: 'LISTEN → EN' }[direction]
-    ?? direction;
-}
-
-/** True when the prompt is audio rather than text. */
-export function isListening(direction) {
-  return direction === 'listenToEn';
+  return { enToFa: 'EN → FA', faToEn: 'FA → EN' }[direction] ?? direction;
 }
 
 export function reviewKey(sentenceId, direction) {
@@ -37,19 +24,11 @@ export function reviewKey(sentenceId, direction) {
 }
 
 export function promptFor(sentence, direction) {
-  // Listening shows no text at all — revealing the Persian would turn it back
-  // into a reading exercise.
-  if (direction === 'listenToEn') return '';
   return direction === 'enToFa' ? sentence.englishText : sentence.farsiText;
 }
 
 export function answerFor(sentence, direction) {
   return direction === 'enToFa' ? sentence.farsiText : sentence.englishText;
-}
-
-/** The text spoken aloud for a listening prompt. */
-export function audioFor(sentence) {
-  return sentence.farsiText;
 }
 
 /**
@@ -170,7 +149,6 @@ export async function build({
   limit,
   weights = DEFAULT_WEIGHTS,
   level = null,
-  speechAvailable = false,
   kinds = null,
   now = Date.now(),
 }) {
@@ -184,7 +162,7 @@ export async function build({
   // New cards are restricted to the current level; due reviews are not, so
   // earlier levels keep resurfacing on their own schedule.
   const levelIds = level ? idsForLevel(sentences, level) : null;
-  const directions = availableDirections(speechAvailable);
+  const directions = DIRECTIONS;
 
   const due = [];
   const fresh = [];
@@ -226,9 +204,8 @@ export async function build({
 /**
  * Fill the session honouring the direction weights, preferring due cards.
  *
- * Weights are normalised over the directions actually available, so removing
- * listening (no voice installed) redistributes its share rather than leaving
- * the session short.
+ * Weights are normalised over the directions given, so a zeroed direction
+ * redistributes its share rather than leaving the session short.
  */
 function select(due, fresh, limit, weights, directions) {
   const total = directions.reduce((sum, d) => sum + (weights[d] ?? 0), 0) || 1;
@@ -296,11 +273,11 @@ export function targetMs(sentence, direction) {
   const words = (sentence.farsiText ?? '').trim().split(/\s+/).length;
   const base = 4000 + words * 500;
   // Producing Farsi is slower than reading it; hearing needs the audio to play.
-  const multiplier = direction === 'enToFa' ? 1.15 : direction === 'listenToEn' ? 1.3 : 1;
+  const multiplier = direction === 'enToFa' ? 1.15 : 1;
   return Math.round(base * multiplier);
 }
 
-export async function recordAttempt({ card, rating, typedAnswer, audioBlob, msToReveal = null }) {
+export async function recordAttempt({ card, rating, typedAnswer, msToReveal = null }) {
   const now = Date.now();
   const quality = SM2.RATING_QUALITY[rating];
   const advanced = SM2.next(card.review, quality);
@@ -312,7 +289,7 @@ export async function recordAttempt({ card, rating, typedAnswer, audioBlob, msTo
     dueDate: SM2.dueDate(advanced, now),
   };
 
-  const mode = audioBlob ? 'recorded' : (typedAnswer ? 'typed' : 'speakSelfRate');
+  const mode = typedAnswer ? 'typed' : 'speakSelfRate';
   const attempt = {
     id: crypto.randomUUID(),
     sentenceId: card.sentence.id,
@@ -320,7 +297,6 @@ export async function recordAttempt({ card, rating, typedAnswer, audioBlob, msTo
     mode,
     selfRating: rating,
     typedAnswer: typedAnswer || null,
-    audioBlob: audioBlob || null,
     // Speed is the gap the app previously could not see at all.
     msToReveal,
     targetMs: targetMs(card.sentence, card.direction),
