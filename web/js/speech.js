@@ -1,12 +1,9 @@
-// Text-to-speech and recording.
+// Text-to-speech, used only to play a revealed answer aloud.
 //
 // TTS is a genuine unknown on iOS: Safari exposes only the voices installed on
 // the device, and Persian is not there by default. Everything here detects and
 // degrades rather than assuming — a missing voice hides the play button, it
 // does not break the card.
-//
-// Recording is more dependable: MediaRecorder works in iOS Safari 14.3+.
-// Transcription happens server-side because Apple has no Persian dictation.
 
 // --- text to speech --------------------------------------------------------
 
@@ -92,83 +89,4 @@ export async function voiceReport() {
       .filter((v) => v.lang?.toLowerCase().startsWith('fa'))
       .map((v) => `${v.name} (${v.lang})`),
   };
-}
-
-// --- recording -------------------------------------------------------------
-
-export class Recorder {
-  constructor() {
-    this.mediaRecorder = null;
-    this.chunks = [];
-    this.stream = null;
-  }
-
-  static isSupported() {
-    return typeof MediaRecorder !== 'undefined' && !!navigator.mediaDevices?.getUserMedia;
-  }
-
-  /**
-   * Pick a container the browser will actually produce. Safari records
-   * audio/mp4 and ignores the webm types Chrome prefers, so asking for the
-   * wrong one yields an empty blob rather than an error.
-   */
-  static preferredMimeType() {
-    const candidates = [
-      'audio/mp4',
-      'audio/mpeg',
-      'audio/webm;codecs=opus',
-      'audio/webm',
-    ];
-    if (typeof MediaRecorder === 'undefined') return '';
-    return candidates.find((type) => MediaRecorder.isTypeSupported?.(type)) ?? '';
-  }
-
-  get isRecording() {
-    return this.mediaRecorder?.state === 'recording';
-  }
-
-  async start() {
-    if (!Recorder.isSupported()) throw new Error('Recording is not supported in this browser.');
-    await this.stop();
-
-    this.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    const mimeType = Recorder.preferredMimeType();
-    this.mediaRecorder = new MediaRecorder(this.stream, mimeType ? { mimeType } : undefined);
-    this.chunks = [];
-
-    this.mediaRecorder.addEventListener('dataavailable', (event) => {
-      if (event.data.size > 0) this.chunks.push(event.data);
-    });
-    this.mediaRecorder.start();
-  }
-
-  /** Stop and return the recorded blob, or null if nothing was captured. */
-  async stop() {
-    const recorder = this.mediaRecorder;
-    if (!recorder || recorder.state === 'inactive') {
-      this.releaseStream();
-      return null;
-    }
-
-    const blob = await new Promise((resolve) => {
-      recorder.addEventListener(
-        'stop',
-        () => {
-          const type = recorder.mimeType || 'audio/mp4';
-          resolve(this.chunks.length ? new Blob(this.chunks, { type }) : null);
-        },
-        { once: true },
-      );
-      recorder.stop();
-    });
-
-    this.releaseStream();
-    this.mediaRecorder = null;
-    return blob;
-  }
-
-  releaseStream() {
-    this.stream?.getTracks().forEach((track) => track.stop());
-    this.stream = null;
-  }
 }

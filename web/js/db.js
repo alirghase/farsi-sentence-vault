@@ -131,7 +131,7 @@ const SETTING_DEFAULTS = {
   // a target you clear most days builds the habit; one you miss erodes it.
   dailyTarget: 40,
   soundEnabled: true,
-  directionWeights: { enToFa: 0.6, faToEn: 0.2, listenToEn: 0.2 },
+  directionWeights: { enToFa: 0.7, faToEn: 0.3 },
 };
 
 export async function getSettings() {

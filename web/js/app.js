@@ -20,8 +20,6 @@ const state = {
   total: 0,
   revealed: false,
   typedOpen: false,
-  audioBlob: null,
-  recorder: new speech.Recorder(),
   speechOK: false,
 };
 
@@ -150,7 +148,7 @@ function bindToday() {
 
 /**
  * Sync is only real when a backend is configured, and by default none is.
- * Same principle as the listening slider: a control that cannot succeed is
+ * Same principle applied throughout: a control that cannot succeed is
  * worse than no control, because tapping it teaches you the app is broken.
  */
 function applyBackendVisibility() {
@@ -316,12 +314,8 @@ function bindPractice() {
   $('btn-quit').addEventListener('click', endSession);
   $('btn-reveal').addEventListener('click', reveal);
   $('btn-type').addEventListener('click', toggleTyping);
-  $('btn-record').addEventListener('click', toggleRecording);
   $('btn-speak').addEventListener('click', () => {
     speech.speak(currentCard().sentence.farsiText);
-  });
-  $('btn-listen').addEventListener('click', () => {
-    speech.speak(session.audioFor(currentCard().sentence));
   });
 }
 
@@ -334,7 +328,6 @@ async function startSession() {
     limit,
     weights: state.settings.directionWeights,
     level: state.settings.currentLevel,
-    speechAvailable: state.speechOK,
   });
   if (!state.queue.length) return;
 
@@ -353,7 +346,6 @@ function renderCard() {
 
   state.revealed = false;
   state.typedOpen = false;
-  state.audioBlob = null;
   state.shownAt = performance.now();
   startPace(card);
 
@@ -362,17 +354,9 @@ function renderCard() {
     `${session.directionLabel(card.direction)} · L${card.sentence.difficulty}` +
     (card.review.lapses > 0 ? ` · ${card.review.lapses} lapse${card.review.lapses === 1 ? '' : 's'}` : '');
 
-  const listening = session.isListening(card.direction);
   const prompt = $('card-prompt');
   prompt.textContent = session.promptFor(card.sentence, card.direction);
   prompt.classList.toggle('rtl', card.direction === 'faToEn');
-  prompt.hidden = listening;
-
-  // A listening card must show no Persian text — revealing it would turn the
-  // exercise back into reading.
-  $('btn-listen').hidden = !listening;
-  $('listen-hint').hidden = !listening;
-  if (listening) speech.speak(session.audioFor(card.sentence));
 
   const typed = $('card-typed');
   typed.value = '';
@@ -385,9 +369,6 @@ function renderCard() {
   $('input-row').hidden = false;
   $('rating-row').hidden = true;
   $('btn-type').classList.remove('on');
-  $('btn-record').classList.remove('rec', 'on');
-  $('btn-record').textContent = text('card.record');
-  $('btn-record').hidden = !speech.Recorder.isSupported();
 }
 
 /**
@@ -431,29 +412,8 @@ function toggleTyping() {
   if (state.typedOpen) typed.focus();
 }
 
-async function toggleRecording() {
-  const button = $('btn-record');
-  try {
-    if (state.recorder.isRecording) {
-      state.audioBlob = await state.recorder.stop();
-      button.classList.remove('rec');
-      button.classList.toggle('on', !!state.audioBlob);
-      button.textContent = text(state.audioBlob ? 'card.rerecord' : 'card.record');
-    } else {
-      await state.recorder.start();
-      button.classList.add('rec');
-      button.textContent = text('card.stop');
-    }
-  } catch (error) {
-    toast(`Microphone unavailable: ${error.message}`);
-    button.classList.remove('rec');
-    button.textContent = text('card.record');
-  }
-}
-
 async function reveal() {
   const card = currentCard();
-  if (state.recorder.isRecording) await toggleRecording();
   $('card-typed').blur();
   state.revealed = true;
   state.msToReveal = Math.round(performance.now() - state.shownAt);
@@ -462,15 +422,6 @@ async function reveal() {
   const answer = $('answer-text');
   answer.textContent = session.answerFor(card.sentence, card.direction);
   answer.classList.toggle('rtl', card.direction === 'enToFa');
-
-  // After a listening card is answered, show the Persian that was spoken —
-  // hearing it without ever seeing it leaves the spelling unlearned.
-  const heard = $('card-prompt');
-  if (session.isListening(card.direction)) {
-    heard.textContent = card.sentence.farsiText;
-    heard.classList.add('rtl');
-    heard.hidden = false;
-  }
 
   $('answer-finglish').textContent = card.sentence.finglish ?? '';
   renderBreakdown(card.sentence);
@@ -599,7 +550,6 @@ async function rate(rating) {
     card,
     rating,
     typedAnswer: typed || null,
-    audioBlob: state.audioBlob,
     msToReveal: state.msToReveal,
   });
 
@@ -632,7 +582,6 @@ function renderDone() {
 
 async function endSession() {
   stopPace();
-  if (state.recorder.isRecording) await state.recorder.stop();
   speech.stopSpeaking();
   $('practice').hidden = true;
   // The done screen replaced the card markup; a reload restores it cleanly.
@@ -801,9 +750,9 @@ function bindSettings() {
     state.settings = await db.saveSettings({ dailyTarget: Number(e.target.value) });
   });
 
-  // The three weights are normalised at selection time, so they need not sum to
-  // 100 — the labels show raw values and the builder handles the proportions.
-  for (const [id, key] of [['w-prod', 'enToFa'], ['w-read', 'faToEn'], ['w-listen', 'listenToEn']]) {
+  // The weights are normalised at selection time, so they need not sum to 100 —
+  // the labels show raw values and the builder handles the proportions.
+  for (const [id, key] of [['w-prod', 'enToFa'], ['w-read', 'faToEn']]) {
     $(id).addEventListener('input', async (e) => {
       $(`${id}-value`).textContent = `${e.target.value}%`;
       state.settings = await db.saveSettings({
@@ -861,16 +810,10 @@ async function renderSettings() {
   $('set-target').value = s.dailyTarget;
   $('target-value').textContent = s.dailyTarget;
   const w = s.directionWeights;
-  for (const [id, key] of [['w-prod', 'enToFa'], ['w-read', 'faToEn'], ['w-listen', 'listenToEn']]) {
+  for (const [id, key] of [['w-prod', 'enToFa'], ['w-read', 'faToEn']]) {
     $(id).value = Math.round((w[key] ?? 0) * 100);
     $(`${id}-value`).textContent = `${Math.round((w[key] ?? 0) * 100)}%`;
   }
-  // Hide the listening weight entirely when the device has no Persian voice —
-  // a slider that changes nothing is worse than no slider.
-  $('listen-weight-row').hidden = !state.speechOK;
-  $('weights-hint').textContent = state.speechOK
-    ? 'Producing Farsi is the skill that freezes; recognising it is easier.'
-    : 'Hearing is unavailable: no Persian voice is installed on this device.';
   $('set-speak').checked = s.speakEnabled;
   $('set-sound').checked = s.soundEnabled !== false;
 
