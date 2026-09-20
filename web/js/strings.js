@@ -84,6 +84,18 @@ export const STRINGS = {
   'results.typed': 'تایپی',
 };
 
+/**
+ * Western digits to Persian ones (۰۱۲۳۴۵۶۷۸۹).
+ *
+ * Applied to every figure in the app. Scanning ۷۷۸ is slower than 778 until the
+ * numerals become automatic — which is the point: reading Persian digits is a
+ * skill most heritage speakers never pick up, and the ledger is a low-stakes
+ * place to acquire it.
+ */
+export function faDigits(value) {
+  return String(value).replace(/\d/g, (d) => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]);
+}
+
 export function t(key) {
   return STRINGS[key] ?? key;
 }
