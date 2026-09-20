@@ -347,3 +347,38 @@ code { font-family: inherit; font-style: italic; }
 .register .ledger-row > span { font-size: 13px; }
 .register .ledger-row > b { font-size: 13px; font-weight: 400; color: var(--ink-soft); }
 .register .ledger-row:first-child { border-top: 0; }
+
+/* --- level progression --- */
+
+/* The moment a level is cleared. Inverted so it reads as an event, not a row. */
+.passed-panel {
+  background: var(--ink); color: var(--paper);
+  padding: 16px var(--gutter) 14px;
+  border-bottom: 1px solid var(--rule);
+}
+.passed-head { margin: 0 0 4px; font-size: 17px; font-weight: 600; }
+.passed-panel .hint { color: rgba(251, 250, 248, .66); margin: 0 0 12px; }
+#btn-advance {
+  display: block; width: 100%; text-align: right;
+  font-size: 17px; font-weight: 600; color: var(--paper); padding: 4px 0;
+}
+
+.gate-row { padding: 12px var(--gutter); border-top: 1px solid var(--rule); }
+.gate-row .entry-top b { font-size: 14px; font-weight: 500; }
+.gate-row .entry-figure { font-size: 13px; color: var(--ink-soft); }
+.gate-bar { height: 2px; background: var(--rule); margin-top: 10px; }
+.gate-bar > i { display: block; height: 100%; background: var(--ink); }
+
+.list-head {
+  margin: 26px 0 0; padding: 0 var(--gutter) 10px;
+  font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 600;
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.settings select {
+  background: transparent; border: 0; border-bottom: 1px solid var(--rule);
+  padding: 6px 0; font-size: 14px; color: var(--ink); max-width: 58%;
+  text-align: right; text-align-last: right;
+}
+.settings select:focus { outline: 0; border-bottom-color: var(--ink); }

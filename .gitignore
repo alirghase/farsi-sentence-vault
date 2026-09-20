@@ -23,3 +23,6 @@ infra/.terraform.lock.hcl
 DerivedData/
 build/
 .DS_Store
+
+# Serena's local index
+.serena/

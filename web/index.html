@@ -27,11 +27,18 @@
         <div class="ledger-row"><span>Reviewed today</span><b id="count-done">0</b></div>
         <div class="ledger-row"><span>Sentences held</span><b id="count-held">0</b></div>
         <div class="ledger-row"><span>Last synced</span><b id="last-sync">never</b></div>
+        <div class="ledger-row lead"><span>Level</span><b id="level-now">A1</b></div>
       </div>
 
       <p class="empty" id="today-empty" hidden>
         No sentences yet. Sync to fetch a batch, or check that the seed bank loaded.
       </p>
+
+      <div class="passed-panel" id="passed-panel" hidden>
+        <p class="passed-head" id="passed-head"></p>
+        <p class="hint" id="passed-note"></p>
+        <button id="btn-advance">Unlock &rarr;</button>
+      </div>
 
       <button id="btn-start">Start &rarr;</button>
 
@@ -51,8 +58,12 @@
 
   <!-- Weak spots -->
   <section class="screen" id="screen-weak">
-    <header class="screen-head"><h1>Weak spots</h1></header>
-    <div class="list" id="weak-list"></div>
+    <header class="screen-head"><h1>Progress</h1></header>
+    <div class="list">
+      <div id="gate-block"></div>
+      <h2 class="list-head">Weak spots</h2>
+      <div id="weak-list"></div>
+    </div>
   </section>
 
   <!-- Results -->
@@ -89,6 +100,17 @@
           <input type="range" id="set-ratio" min="30" max="100" step="5">
         </label>
         <p class="hint">Producing Farsi is the skill that freezes; recognising it is easier. Weighted to production.</p>
+      </div>
+
+      <div class="group">
+        <h2>Level</h2>
+        <label class="row">
+          <span>Current level</span>
+          <select id="set-level"></select>
+        </label>
+        <p class="hint">New cards come only from this level; reviews come from
+        everywhere. Normally it advances when you pass the gate on Progress —
+        set it by hand if you would rather not wait, or want to drop back.</p>
       </div>
 
       <div class="group">
@@ -129,7 +151,7 @@
 
 <nav class="tabs">
   <button data-screen="today" class="is-active">Today</button>
-  <button data-screen="weak">Weak</button>
+  <button data-screen="weak">Progress</button>
   <button data-screen="results">Results</button>
   <button data-screen="settings">Settings</button>
 </nav>

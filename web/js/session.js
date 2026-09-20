@@ -2,6 +2,7 @@
 
 import * as db from './db.js';
 import * as SM2 from './sm2.js';
+import { idsForLevel } from './levels.js';
 
 export const DIRECTIONS = ['enToFa', 'faToEn'];
 
@@ -29,19 +30,30 @@ export function answerFor(sentence, direction) {
  * pinned at the batch size and never moves as you work — a number that cannot
  * change is useless on a screen whose job is accounting.
  */
-export async function counts(now = Date.now(), dailyBatchSize = 100) {
-  const [sentenceCount, reviews, attempts] = await Promise.all([
-    db.count(db.STORE.sentences),
+export async function counts(now = Date.now(), dailyBatchSize = 100, level = null) {
+  const [sentences, reviews, attempts] = await Promise.all([
+    db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
     db.getAll(db.STORE.attempts),
   ]);
+  const sentenceCount = sentences.length;
+  const levelIds = level ? idsForLevel(sentences, level) : null;
 
   const startOfDay = new Date(now);
   startOfDay.setHours(0, 0, 0, 0);
   const dayStart = startOfDay.getTime();
 
   const due = reviews.filter((r) => r.dueDate <= now).length;
-  const unseen = Math.max(0, sentenceCount * DIRECTIONS.length - reviews.length);
+
+  // Unseen counts only what is actually reachable at the current level.
+  const scheduled = new Set(reviews.map((r) => r.key));
+  let unseen = 0;
+  for (const s of sentences) {
+    if (levelIds && !levelIds.has(s.id)) continue;
+    for (const d of DIRECTIONS) {
+      if (!scheduled.has(reviewKey(s.id, d))) unseen += 1;
+    }
+  }
 
   // A card that reached its first repetition today started today.
   const newToday = reviews.filter(
@@ -97,7 +109,7 @@ export async function history(days = 14) {
  * up front would mean 800 rows for a 400-sentence bank the learner has not
  * touched yet.
  */
-export async function build({ limit, productionRatio = 0.7, now = Date.now() }) {
+export async function build({ limit, productionRatio = 0.7, level = null, now = Date.now() }) {
   const [sentences, reviews] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
@@ -105,6 +117,10 @@ export async function build({ limit, productionRatio = 0.7, now = Date.now() }) 
   if (!sentences.length) return [];
 
   const byKey = new Map(reviews.map((r) => [r.key, r]));
+  // New cards are restricted to the current level; due reviews are not, so
+  // earlier levels keep resurfacing on their own schedule.
+  const levelIds = level ? idsForLevel(sentences, level) : null;
+
   const due = [];
   const fresh = [];
 
@@ -116,7 +132,9 @@ export async function build({ limit, productionRatio = 0.7, now = Date.now() }) 
         if (existing.dueDate <= now) {
           due.push({ sentence, direction, review: existing, isNew: false });
         }
-      } else {
+      } else if (!levelIds || levelIds.has(sentence.id)) {
+        // New cards are gated to the current level. Due reviews above are not,
+        // so levels already passed keep resurfacing on their own schedule.
         fresh.push({
           sentence,
           direction,
@@ -159,6 +177,8 @@ function select(due, fresh, limit, productionRatio) {
   }
 
   // If one direction ran dry, backfill rather than returning a short session.
+  // Backfill draws from the same two pools, which are already gated, so it
+  // cannot reintroduce off-level material.
   if (chosen.length < limit) {
     for (const pool of [due, fresh]) {
       for (const card of pool) {

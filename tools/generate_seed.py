@@ -25,6 +25,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
 from core import gemini
 from core import prompts
 from core import validate
+from core.syllabus import CORE_VERBS, DOMAINS, TENSES, coverage
 from core.taxonomy import SITUATIONS
 
 OUT = pathlib.Path(__file__).parent / "seed_sentences.json"
@@ -151,6 +152,18 @@ def main() -> int:
     ap.add_argument("--review", action="store_true", help="print a sample and exit")
     ap.add_argument("--review-limit", type=int, default=20)
     ap.add_argument("--seed", type=int, default=None)
+    ap.add_argument(
+        "--syllabus",
+        action="store_true",
+        help="generate against the core verb x tense matrix, targeting gaps first",
+    )
+    ap.add_argument(
+        "--difficulty",
+        type=int,
+        choices=[1, 2, 3, 4, 5],
+        default=None,
+        help="generate only at this level (1=A1 .. 5=C1) instead of the weighted mix",
+    )
     args = ap.parse_args()
 
     if args.review:
@@ -165,13 +178,41 @@ def main() -> int:
     rejected_total = 0
     started = time.monotonic()
 
-    while len(sentences) < args.count:
-        need = min(args.batch, args.count - len(sentences))
-        mix, situations = plan_batch(need, rng)
+    target = len(sentences) + args.count if args.difficulty else args.count
+    while len(sentences) < target:
+        need = min(args.batch, target - len(sentences))
+        verb_targets = None
+        tense_targets = None
+        if args.syllabus:
+            # Target the verbs the deck is actually missing, worst first. Six
+            # per batch keeps each sentence's instruction specific enough to
+            # follow without the prompt becoming a wall of requirements.
+            counts = coverage([s for s in sentences if s["difficulty"] <= 2])
+            gaps = sorted(counts.items(), key=lambda kv: kv[1])
+            verb_targets = [
+                (v, gloss)
+                for v, n in gaps[:6]
+                for vv, gloss in CORE_VERBS
+                if vv == v
+            ]
+            tense_targets = rng.sample(TENSES, k=min(5, len(TENSES)))
+
+        if args.difficulty:
+            # Topping up one CEFR tier: the weighted mix would scatter the
+            # output across levels the learner cannot reach yet.
+            mix = {args.difficulty: need}
+            situations = rng.sample(SITUATIONS, k=min(4, len(SITUATIONS)))
+        else:
+            mix, situations = plan_batch(need, rng)
         avoid = [s["englishText"] for s in sentences[-40:]]
 
         user = prompts.generation_user(
-            count=need, situations=situations, difficulty_mix=mix, avoid=avoid
+            count=need,
+            situations=situations if not args.syllabus else rng.sample(DOMAINS, k=3),
+            difficulty_mix=mix,
+            avoid=avoid,
+            verb_targets=verb_targets,
+            tense_targets=tense_targets,
         )
 
         try:
@@ -200,7 +241,7 @@ def main() -> int:
 
         elapsed = time.monotonic() - started
         print(
-            f"  {len(sentences):>4}/{args.count}  "
+            f"  {len(sentences):>4}/{target}  "
             f"(+{len(clean)} kept, -{len(bad)} invalid, -{dropped} dupes, {elapsed:.0f}s)"
         )
 
