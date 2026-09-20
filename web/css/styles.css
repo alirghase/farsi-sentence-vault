@@ -399,6 +399,10 @@ code { font-family: inherit; font-style: italic; }
 }
 .settings select:focus { outline: 0; border-bottom-color: var(--ink); }
 
+/* Values that mix a Latin number with a Persian word need explicit direction:
+   in an LTR box the bidi algorithm puts "1 روز" on screen as "روز 1". */
+#streak { direction: rtl; }
+
 .ledger-row > b.is-hit { color: var(--ink); }
 .ledger-row > b.is-hit::after { content: ' ✓'; color: var(--ink-faint); }
 

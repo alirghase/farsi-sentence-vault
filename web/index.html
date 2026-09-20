@@ -18,17 +18,17 @@
 
   <!-- Today -->
   <section class="screen is-active" id="screen-today">
-    <header class="screen-head"><h1>Today</h1></header>
+    <header class="screen-head"><h1 data-t="tab.today">Today</h1></header>
 
     <div class="today-body">
       <div class="ledger" id="counts">
-        <div class="ledger-row lead"><span>Due</span><b id="count-due">0</b></div>
-        <div class="ledger-row lead"><span>New</span><b id="count-new">0</b></div>
-        <div class="ledger-row"><span>Today&rsquo;s target</span><b id="target-progress">0 / 40</b></div>
-        <div class="ledger-row"><span>Sentences held</span><b id="count-held">0</b></div>
-        <div class="ledger-row"><span>Last synced</span><b id="last-sync">never</b></div>
-        <div class="ledger-row lead"><span>Level</span><b id="level-now">A1</b></div>
-        <div class="ledger-row"><span>Streak</span><b id="streak">0 days</b></div>
+        <div class="ledger-row lead"><span data-t="today.due">Due</span><b id="count-due">0</b></div>
+        <div class="ledger-row lead"><span data-t="today.new">New</span><b id="count-new">0</b></div>
+        <div class="ledger-row"><span data-t="today.target">Target</span><b id="target-progress">0 / 40</b></div>
+        <div class="ledger-row"><span data-t="today.held">Sentences</span><b id="count-held">0</b></div>
+        <div class="ledger-row"><span data-t="today.synced">Synced</span><b id="last-sync">never</b></div>
+        <div class="ledger-row lead"><span data-t="today.level">Level</span><b id="level-now">A1</b></div>
+        <div class="ledger-row"><span data-t="today.streak">Streak</span><b id="streak">0 days</b></div>
       </div>
 
       <p class="empty" id="today-empty" hidden>
@@ -45,7 +45,7 @@
 
       <div class="register" id="register" hidden>
         <div class="ledger-row is-head">
-          <span>Session</span><b class="col-n">Cards</b><b class="col-pct">Right</b>
+          <span data-t="today.session">Session</span><b class="col-n" data-t="today.cards">Cards</b><b class="col-pct" data-t="today.right">Right</b>
         </div>
         <div id="register-rows"></div>
       </div>
@@ -53,33 +53,33 @@
 
     <div class="sync-bar">
       <p class="sync-status" id="sync-status"></p>
-      <button id="btn-sync">Sync</button>
+      <button id="btn-sync" data-t="today.sync">Sync</button>
     </div>
   </section>
 
   <!-- Weak spots -->
   <section class="screen" id="screen-weak">
-    <header class="screen-head"><h1>Progress</h1></header>
+    <header class="screen-head"><h1 data-t="tab.progress">Progress</h1></header>
     <div class="list">
       <div id="gate-block"></div>
-      <h2 class="list-head">Weak spots</h2>
+      <h2 class="list-head" data-t="progress.weakSpots">Weak spots</h2>
       <div id="weak-list"></div>
     </div>
   </section>
 
   <!-- Results -->
   <section class="screen" id="screen-results">
-    <header class="screen-head"><h1>Results</h1></header>
+    <header class="screen-head"><h1 data-t="tab.results">Results</h1></header>
     <div class="list" id="results-list"></div>
   </section>
 
   <!-- Settings -->
   <section class="screen" id="screen-settings">
-    <header class="screen-head"><h1>Settings</h1></header>
+    <header class="screen-head"><h1 data-t="tab.settings">Settings</h1></header>
     <div class="list settings">
 
       <div class="group">
-        <h2>Backend</h2>
+        <h2 data-t="settings.backend">Backend</h2>
         <label>Service URL
           <input type="url" id="set-url" placeholder="https://….run.app"
                  autocomplete="off" autocapitalize="off" spellcheck="false">
@@ -93,7 +93,7 @@
       </div>
 
       <div class="group">
-        <h2>Practice</h2>
+        <h2 data-t="settings.practice">Practice</h2>
         <label>Daily batch size <b id="batch-value">100</b>
           <input type="range" id="set-batch" min="10" max="200" step="10">
         </label>
@@ -113,7 +113,7 @@
       </div>
 
       <div class="group">
-        <h2>Level</h2>
+        <h2 data-t="settings.level">Level</h2>
         <label class="row">
           <span>Current level</span>
           <select id="set-level"></select>
@@ -124,7 +124,7 @@
       </div>
 
       <div class="group">
-        <h2>Audio</h2>
+        <h2 data-t="settings.audio">Audio</h2>
         <label class="row">
           <span>Read answers aloud</span>
           <input type="checkbox" id="set-speak">
@@ -137,12 +137,12 @@
       </div>
 
       <div class="group">
-        <h2>Storage</h2>
+        <h2 data-t="settings.storage">Storage</h2>
         <div class="kv" id="storage-info"></div>
       </div>
 
       <div class="group">
-        <h2>Backup</h2>
+        <h2 data-t="settings.backup">Backup</h2>
         <button id="btn-restore">Restore from backend</button>
         <p class="hint" id="restore-result"></p>
         <p class="hint">Every sync backs up your review schedule. Restore pulls it
@@ -164,16 +164,16 @@
 </main>
 
 <nav class="tabs">
-  <button data-screen="today" class="is-active">Today</button>
-  <button data-screen="weak">Progress</button>
-  <button data-screen="results">Results</button>
-  <button data-screen="settings">Settings</button>
+  <button data-screen="today" class="is-active" data-t="tab.today">Today</button>
+  <button data-screen="weak" data-t="tab.progress">Progress</button>
+  <button data-screen="results" data-t="tab.results">Results</button>
+  <button data-screen="settings" data-t="tab.settings">Settings</button>
 </nav>
 
 <!-- Practice overlay -->
 <div class="practice" id="practice" hidden>
   <header class="practice-head">
-    <button id="btn-quit">&larr; Exit</button>
+    <button id="btn-quit">&larr; <span data-t="card.exit">Exit</span></button>
     <span class="progress" id="practice-progress">0 / 0</span>
     <span class="spacer"></span>
   </header>
@@ -194,7 +194,7 @@
     <div id="card-answer" class="answer" hidden>
       <div class="answer-row">
         <p class="answer-text" id="answer-text"></p>
-        <button id="btn-speak" hidden aria-label="Play aloud" title="Play aloud">Listen</button>
+        <button id="btn-speak" hidden aria-label="Play aloud" data-t="card.play">Play</button>
       </div>
       <p class="finglish" id="answer-finglish"></p>
       <p class="gloss" id="answer-gloss"></p>
@@ -206,10 +206,10 @@
 
   <div class="controls">
     <div id="input-row" class="input-row">
-      <button id="btn-type">Type</button>
-      <button id="btn-record">Record</button>
+      <button id="btn-type" data-t="card.type">Type</button>
+      <button id="btn-record" data-t="card.record">Record</button>
     </div>
-    <button id="btn-reveal">Reveal &rarr;</button>
+    <button id="btn-reveal"><span data-t="card.reveal">Reveal</span> &rarr;</button>
     <div id="rating-row" class="rating-row" hidden></div>
   </div>
 </div>

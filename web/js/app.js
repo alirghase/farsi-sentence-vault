@@ -7,6 +7,7 @@ import * as SM2 from './sm2.js';
 import * as speech from './speech.js';
 import * as levels from './levels.js';
 import * as sound from './sound.js';
+import { t as text, applyStrings } from './strings.js';
 import { ERROR_TAGS, tagTitle } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
@@ -36,6 +37,8 @@ async function boot() {
   await loadSeedIfNeeded();
   state.speechOK = await speech.isSpeechAvailable();
   sound.setEnabled(state.settings.soundEnabled !== false);
+
+  applyStrings();
 
   bindTabs();
   bindToday();
@@ -154,7 +157,7 @@ async function refreshToday() {
   renderPassPanel(gate);
 
   const streak = await session.streak();
-  $('streak').textContent = streak.days === 1 ? '1 day' : `${streak.days} days`;
+  $('streak').textContent = `${streak.days} ${text('today.day')}`;
   $('streak').classList.toggle('is-zero', streak.days === 0);
 
   const target = state.settings.dailyTarget;
@@ -166,7 +169,7 @@ async function refreshToday() {
   $('count-held').textContent = counts.sentenceCount;
   $('last-sync').textContent = state.settings.lastSyncAt
     ? relativeTime(state.settings.lastSyncAt)
-    : 'never';
+    : text('today.never');
 
   for (const [id, value] of [['count-due', counts.due], ['count-new', counts.new]]) {
     $(id).classList.toggle('is-zero', value === 0);
@@ -178,7 +181,9 @@ async function refreshToday() {
 
   const startable = counts.total > 0;
   $('btn-start').disabled = !startable;
-  $('btn-start').innerHTML = startable ? 'Start &rarr;' : 'Nothing due';
+  $('btn-start').innerHTML = startable
+    ? `${text('today.start')} &rarr;`
+    : text('today.nothing');
 
   await renderRegister();
 
@@ -186,9 +191,7 @@ async function refreshToday() {
   const status = $('sync-status');
   if (!status.dataset.busy) {
     status.className = 'sync-status';
-    status.textContent = pending
-      ? `${pending} attempt${pending === 1 ? '' : 's'} waiting to be graded`
-      : '';
+    status.textContent = pending ? `${pending} ${text('today.waiting')}` : '';
   }
 }
 
@@ -203,7 +206,7 @@ async function renderRegister() {
 
   $('register-rows').innerHTML = rows.map((row) => {
     const when = row.date === today.getTime()
-      ? 'Today'
+      ? text('tab.today')
       : new Date(row.date).toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
     return `<div class="ledger-row">
       <span>${when}</span>
@@ -356,7 +359,7 @@ function renderCard() {
   $('rating-row').hidden = true;
   $('btn-type').classList.remove('on');
   $('btn-record').classList.remove('rec', 'on');
-  $('btn-record').textContent = 'Record';
+  $('btn-record').textContent = text('card.record');
   $('btn-record').hidden = !speech.Recorder.isSupported();
 }
 
@@ -408,16 +411,16 @@ async function toggleRecording() {
       state.audioBlob = await state.recorder.stop();
       button.classList.remove('rec');
       button.classList.toggle('on', !!state.audioBlob);
-      button.textContent = state.audioBlob ? 'Re-record' : 'Record';
+      button.textContent = text(state.audioBlob ? 'card.rerecord' : 'card.record');
     } else {
       await state.recorder.start();
       button.classList.add('rec');
-      button.textContent = 'Stop';
+      button.textContent = text('card.stop');
     }
   } catch (error) {
     toast(`Microphone unavailable: ${error.message}`);
     button.classList.remove('rec');
-    button.textContent = 'Record';
+    button.textContent = text('card.record');
   }
 }
 
@@ -493,7 +496,7 @@ function renderBreakdown(sentence) {
     host.innerHTML = `
       <div class="map-row rtl" id="map-fa">${farsi}</div>
       <div class="map-row" id="map-en">${english}</div>
-      <p class="map-detail" id="map-detail">Tap any word to see what it maps to.</p>`;
+      <p class="map-detail" id="map-detail">${escapeHtml(text('card.tapWord'))}</p>`;
 
     const detail = host.querySelector('#map-detail');
     const all = [...host.querySelectorAll('.chip')];
@@ -506,7 +509,7 @@ function renderBreakdown(sentence) {
         `<span class="map-translit">${escapeHtml(u.translit)}</span>` +
         `<span class="map-means">${escapeHtml(u.en)}</span>` +
         `<span class="map-pos">${escapeHtml(u.pos)}</span>` +
-        (multi ? '<span class="map-note">these words work as one unit</span>' : '');
+        (multi ? `<span class="map-note">${escapeHtml(text('card.unit'))}</span>` : '');
     };
 
     for (const chip of all) {
@@ -518,7 +521,7 @@ function renderBreakdown(sentence) {
 
   $('answer-alts').hidden = alts.length === 0;
   $('answer-alts').innerHTML = alts.length
-    ? '<p class="alts-head">Also correct</p>' +
+    ? `<p class="alts-head">${escapeHtml(text('card.alsoCorrect'))}</p>` +
       alts.map((a) => `<p class="alt rtl">${escapeHtml(a)}</p>`).join('')
     : '';
 }
@@ -596,11 +599,11 @@ async function rate(rating) {
 function renderDone() {
   $('card-scroll');
   document.querySelector('.card-scroll').innerHTML =
-    `<div class="done-panel"><h2>Session complete</h2>
-     <p class="note">${state.completed} card${state.completed === 1 ? '' : 's'} practised</p></div>`;
+    `<div class="done-panel"><h2>${escapeHtml(text('card.done'))}</h2>
+     <p class="note">${state.completed} ${escapeHtml(text('card.practised'))}</p></div>`;
   $('controls');
   document.querySelector('.controls').innerHTML =
-    '<button id="btn-finish" style="text-align:right;font-size:19px;font-weight:600;padding:8px 0">Done &rarr;</button>';
+    `<button id="btn-finish" style="text-align:right;font-size:19px;font-weight:600;padding:8px 0">${escapeHtml(text('card.exit'))} &rarr;</button>`;
   $('btn-finish').addEventListener('click', endSession);
 }
 
@@ -637,15 +640,15 @@ async function renderGates() {
     : [gate.pace.samples, levels.GATE.accuracyWindow];
 
   const rows = [
-    ['Cards seen', gate.coverage.value, gate.coverage.need,
+    [text('progress.seen'), gate.coverage.value, gate.coverage.need,
      `${gate.coverage.value} of ${gate.coverage.need}`],
-    ['Accuracy', accuracyBar[0], accuracyBar[1],
+    [text('progress.accuracy'), accuracyBar[0], accuracyBar[1],
      enoughSamples
        ? `${Math.round(gate.accuracy.value * 100)}% of ${Math.round(gate.accuracy.need * 100)}%`
        : `${gate.accuracy.samples} of ${levels.GATE.accuracyWindow} reviews`],
-    ['Cards retained', gate.retention.value, gate.retention.need,
+    [text('progress.retained'), gate.retention.value, gate.retention.need,
      `${gate.retention.value} of ${gate.retention.need} past ${levels.GATE.retentionDays}d`],
-    ['Answered in time', paceBar[0], paceBar[1],
+    [text('progress.inTime'), paceBar[0], paceBar[1],
      gate.pace.samples < levels.GATE.accuracyWindow
        ? `${gate.pace.samples} of ${levels.GATE.accuracyWindow} timed`
        : `${Math.round(gate.pace.value * 100)}% of ${Math.round(gate.pace.need * 100)}%`
@@ -675,7 +678,7 @@ async function renderWeakSpots() {
 
   const seen = stats.filter((s) => s.totalCount > 0);
   if (!seen.length) {
-    list.innerHTML = '<p class="empty">Practise, and the grammar features you miss are tallied here.</p>';
+    list.innerHTML = `<p class="empty">${escapeHtml(text('progress.empty'))}</p>`;
     return;
   }
 
@@ -698,8 +701,8 @@ async function renderWeakSpots() {
   };
 
   let html = '<div class="ledger">'
-    + '<div class="ledger-row is-head"><span>Feature</span>'
-    + '<b class="col-n">Wrong</b><b class="col-pct">Rate</b></div>'
+    + `<div class="ledger-row is-head"><span>${escapeHtml(text('progress.feature'))}</span>`
+    + `<b class="col-n">${escapeHtml(text('progress.wrong'))}</b><b class="col-pct">${escapeHtml(text('progress.rate'))}</b></div>`
     + ranked.map((s) => row(s, false)).join('')
     + emerging.map((s) => row(s, true)).join('')
     + '</div>';
@@ -731,7 +734,7 @@ async function renderResults() {
   const list = $('results-list');
 
   if (!graded.length) {
-    list.innerHTML = '<p class="empty">Type or record an answer, then sync to have it graded.</p>';
+    list.innerHTML = `<p class="empty">${escapeHtml(text('results.empty'))}</p>`;
     return;
   }
 
