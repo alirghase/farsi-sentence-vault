@@ -72,7 +72,12 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
 /* The single row geometry in the product: label left, tabular figure right,
    hairline beneath, full-bleed rule, content inset by the gutter. Today, Weak
    spots and Storage all use it, so the tables read as one system. */
-.ledger { border-bottom: 1px solid var(--rule); }
+/* A Persian ledger reads right to left: labels on the right, figures on the
+   left, sharing a left edge. The app's chrome is Persian, so the tables follow
+   rather than keeping an English reading order with Persian words in it. */
+.ledger { border-bottom: 1px solid var(--rule); direction: rtl; }
+.ledger .ledger-row > span { text-align: right; }
+.ledger .ledger-row > b { text-align: left; }
 .ledger-row {
   display: flex; align-items: baseline; gap: 14px;
   /* Fixed pitch: a bigger figure must not make its row taller, or the ruled
@@ -401,7 +406,7 @@ code { font-family: inherit; font-style: italic; }
 
 /* Values that mix a Latin number with a Persian word need explicit direction:
    in an LTR box the bidi algorithm puts "1 روز" on screen as "روز 1". */
-#streak { direction: rtl; }
+/* Inside an rtl ledger this no longer needs its own direction. */
 
 .ledger-row > b.is-hit { color: var(--ink); }
 .ledger-row > b.is-hit::after { content: ' ✓'; color: var(--ink-faint); }
@@ -448,3 +453,8 @@ code { font-family: inherit; font-style: italic; }
   text-transform: uppercase; color: var(--ink-faint); font-weight: 600;
 }
 .alt { margin: 0 0 6px; font-family: var(--serif); font-size: 19px; }
+
+/* Hover only where there is a real pointer; on touch it fires with the tap. */
+@media (hover: hover) {
+  .chip:hover { border-color: var(--ink); }
+}

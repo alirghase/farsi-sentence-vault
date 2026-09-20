@@ -7,7 +7,7 @@ import * as SM2 from './sm2.js';
 import * as speech from './speech.js';
 import * as levels from './levels.js';
 import * as sound from './sound.js';
-import { t as text, applyStrings } from './strings.js';
+import { t as text, applyStrings, faDigits } from './strings.js';
 import { ERROR_TAGS, tagTitle } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
@@ -157,16 +157,16 @@ async function refreshToday() {
   renderPassPanel(gate);
 
   const streak = await session.streak();
-  $('streak').textContent = `${streak.days} ${text('today.day')}`;
+  $('streak').textContent = `${faDigits(streak.days)} ${text('today.day')}`;
   $('streak').classList.toggle('is-zero', streak.days === 0);
 
   const target = state.settings.dailyTarget;
-  $('target-progress').textContent = `${counts.reviewedToday} / ${target}`;
+  $('target-progress').textContent = `${faDigits(counts.reviewedToday)} / ${faDigits(target)}`;
   $('target-progress').classList.toggle('is-hit', counts.reviewedToday >= target);
 
-  $('count-due').textContent = counts.due;
-  $('count-new').textContent = counts.new;
-  $('count-held').textContent = counts.sentenceCount;
+  $('count-due').textContent = faDigits(counts.due);
+  $('count-new').textContent = faDigits(counts.new);
+  $('count-held').textContent = faDigits(counts.sentenceCount);
   $('last-sync').textContent = state.settings.lastSyncAt
     ? relativeTime(state.settings.lastSyncAt)
     : text('today.never');
@@ -191,7 +191,7 @@ async function refreshToday() {
   const status = $('sync-status');
   if (!status.dataset.busy) {
     status.className = 'sync-status';
-    status.textContent = pending ? `${pending} ${text('today.waiting')}` : '';
+    status.textContent = pending ? `${faDigits(pending)} ${text('today.waiting')}` : '';
   }
 }
 
@@ -210,8 +210,8 @@ async function renderRegister() {
       : new Date(row.date).toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
     return `<div class="ledger-row">
       <span>${when}</span>
-      <b class="col-n">${row.reviewed}</b>
-      <b class="col-pct">${Math.round(row.accuracy * 100)}%</b>
+      <b class="col-n">${faDigits(row.reviewed)}</b>
+      <b class="col-pct">${faDigits(Math.round(row.accuracy * 100))}٪</b>
     </div>`;
   }).join('');
 }
@@ -330,7 +330,7 @@ function renderCard() {
   state.shownAt = performance.now();
   startPace(card);
 
-  $('practice-progress').textContent = `${state.completed} / ${state.total}`;
+  $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.total)}`;
   $('card-badge').textContent =
     `${session.directionLabel(card.direction)} · L${card.sentence.difficulty}` +
     (card.review.lapses > 0 ? ` · ${card.review.lapses} lapse${card.review.lapses === 1 ? '' : 's'}` : '');
@@ -512,8 +512,14 @@ function renderBreakdown(sentence) {
         (multi ? `<span class="map-note">${escapeHtml(text('card.unit'))}</span>` : '');
     };
 
+    const hoverable = matchMedia('(hover: hover)').matches;
     for (const chip of all) {
       chip.addEventListener('click', () => select(Number(chip.dataset.u)));
+      // On a touchscreen hover fires as part of the tap, so binding it there
+      // would just duplicate the click.
+      if (hoverable) {
+        chip.addEventListener('mouseenter', () => select(Number(chip.dataset.u)));
+      }
     }
   } else {
     host.innerHTML = '';
@@ -524,16 +530,6 @@ function renderBreakdown(sentence) {
     ? `<p class="alts-head">${escapeHtml(text('card.alsoCorrect'))}</p>` +
       alts.map((a) => `<p class="alt rtl">${escapeHtml(a)}</p>`).join('')
     : '';
-}
-
-/**
- * Western digits to Persian ones (۰۱۲۳۴۵۶۷۸۹).
- *
- * Used only where a number sits inside Persian text. Counters elsewhere stay in
- * Latin digits so the ledger columns remain scannable at a glance.
- */
-function faDigits(value) {
-  return String(value).replace(/\d/g, (d) => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]);
 }
 
 function renderRatings(card) {
@@ -563,7 +559,7 @@ function renderRatings(card) {
 
   // The time is shown after the fact, not as a verdict — it informs the rating
   // rather than making it.
-  $('answer-time').textContent = `${seconds}s`;
+  $('answer-time').textContent = `${faDigits(seconds)}s`;
   $('answer-time').classList.toggle('slow', !withinTarget);
   $('answer-time').hidden = false;
 }
@@ -641,18 +637,18 @@ async function renderGates() {
 
   const rows = [
     [text('progress.seen'), gate.coverage.value, gate.coverage.need,
-     `${gate.coverage.value} of ${gate.coverage.need}`],
+     `${faDigits(gate.coverage.value)} / ${faDigits(gate.coverage.need)}`],
     [text('progress.accuracy'), accuracyBar[0], accuracyBar[1],
      enoughSamples
-       ? `${Math.round(gate.accuracy.value * 100)}% of ${Math.round(gate.accuracy.need * 100)}%`
-       : `${gate.accuracy.samples} of ${levels.GATE.accuracyWindow} reviews`],
+       ? `${faDigits(Math.round(gate.accuracy.value * 100))}٪ / ${faDigits(Math.round(gate.accuracy.need * 100))}٪`
+       : `${faDigits(gate.accuracy.samples)} / ${faDigits(levels.GATE.accuracyWindow)}`],
     [text('progress.retained'), gate.retention.value, gate.retention.need,
-     `${gate.retention.value} of ${gate.retention.need} past ${levels.GATE.retentionDays}d`],
+     `${faDigits(gate.retention.value)} / ${faDigits(gate.retention.need)}`],
     [text('progress.inTime'), paceBar[0], paceBar[1],
      gate.pace.samples < levels.GATE.accuracyWindow
-       ? `${gate.pace.samples} of ${levels.GATE.accuracyWindow} timed`
-       : `${Math.round(gate.pace.value * 100)}% of ${Math.round(gate.pace.need * 100)}%`
-         + (gate.pace.medianMs ? ` · median ${(gate.pace.medianMs / 1000).toFixed(1)}s` : '')],
+       ? `${faDigits(gate.pace.samples)} / ${faDigits(levels.GATE.accuracyWindow)}`
+       : `${faDigits(Math.round(gate.pace.value * 100))}٪ / ${faDigits(Math.round(gate.pace.need * 100))}٪`
+         + (gate.pace.medianMs ? ` · ${faDigits((gate.pace.medianMs / 1000).toFixed(1))}s` : '')],
   ];
 
   $('gate-block').innerHTML = `
@@ -695,8 +691,8 @@ async function renderWeakSpots() {
     const pct = Math.round(rate * 100);
     return `<div class="ledger-row tag-row${dim ? ' is-dim' : ''}">
       <span>${escapeHtml(tagTitle(stat.tag))}</span>
-      <b class="col-n">${stat.failCount}/${stat.totalCount}</b>
-      <b class="col-pct">${dim ? `${stat.totalCount}&times;` : `${pct}%`}</b>
+      <b class="col-n">${faDigits(stat.failCount)}/${faDigits(stat.totalCount)}</b>
+      <b class="col-pct">${dim ? `${faDigits(stat.totalCount)}&times;` : `${faDigits(pct)}٪`}</b>
     </div>`;
   };
 
@@ -880,7 +876,7 @@ async function renderSettings() {
   ];
   $('storage-info').className = 'ledger';
   $('storage-info').innerHTML = rows
-    .map(([k, v]) => `<div class="ledger-row"><span>${k}</span><b>${v}</b></div>`)
+    .map(([k, v]) => `<div class="ledger-row"><span>${k}</span><b>${faDigits(v)}</b></div>`)
     .join('');
 }
 
