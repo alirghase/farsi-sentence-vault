@@ -18,8 +18,18 @@ export const MAX_INTERVAL_DAYS = 365;
 /** Interval an "easy" rating jumps a new card to, skipping the 1-day step. */
 export const EASY_GRADUATING_DAYS = 4;
 
-/** Quality scores for the four self-rating buttons. */
-export const RATING_QUALITY = { again: 2, hard: 3, good: 4, easy: 5 };
+/**
+ * Quality scores for the two rating buttons.
+ *
+ * Binary maps onto SM-2 cleanly: below the passing threshold is a lapse, above
+ * it is a standard review. The ease-factor nuance that Hard and Easy used to
+ * provide is replaced by measured answer time, which is a real signal rather
+ * than a judgement call made under no pressure.
+ */
+export const RATING_QUALITY = { fail: 2, pass: 4 };
+
+/** Ordered for display: the destructive option first, as everywhere else. */
+export const RATINGS = ['fail', 'pass'];
 
 /** AI verdicts mapped onto the same scale. */
 export const VERDICT_QUALITY = { correct: 5, minor: 4, major: 3, wrong: 2 };
