@@ -48,9 +48,6 @@ button, input, textarea, select { border-radius: 0; -webkit-appearance: none; ap
 input, textarea { font: inherit; color: inherit; }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
 
-/* Every number in the app is tabular — the point of a ledger. */
-.num { font-variant-numeric: tabular-nums; font-family: var(--mono); }
-
 /* --- screens --- */
 #screens { height: 100%; }
 .screen {
@@ -349,8 +346,10 @@ code { font-family: inherit; font-style: italic; }
 }
 
 .verdict-fail { background: linear-gradient(to bottom, #c2453a, #9b2f26); }
-.verdict-pass { background: linear-gradient(to bottom, #3d8f63, #2c6244); }
-.verdict-pass { border-left: 1px solid rgba(0, 0, 0, .18); }
+.verdict-pass {
+  background: linear-gradient(to bottom, #3d8f63, #2c6244);
+  border-left: 1px solid rgba(0, 0, 0, .18);
+}
 
 .verdict:active { filter: brightness(.93); }
 .verdict:active::after { opacity: .5; }

@@ -28,11 +28,7 @@ export const EASY_GRADUATING_DAYS = 4;
  */
 export const RATING_QUALITY = { fail: 2, pass: 4 };
 
-/** Ordered for display: the destructive option first, as everywhere else. */
-export const RATINGS = ['fail', 'pass'];
 
-/** AI verdicts mapped onto the same scale. */
-export const VERDICT_QUALITY = { correct: 5, minor: 4, major: 3, wrong: 2 };
 
 export function newState() {
   return { easeFactor: DEFAULT_EASE, intervalDays: 0, repetitions: 0, lapses: 0 };

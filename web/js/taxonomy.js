@@ -78,6 +78,9 @@ export function tagTitle(key) {
   return ERROR_TAGS[key]?.title ?? key;
 }
 
+// Not read at runtime. tools/check_mirror.py parses this list out of this file
+// and compares it with core/taxonomy.py, so deleting it as "unused" would
+// silently disable that check rather than breaking anything visibly.
 export const SITUATIONS = [
   'phone call with family',
   'ordering food or coffee',

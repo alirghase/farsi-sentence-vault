@@ -137,42 +137,15 @@ If no voice is available the play button simply does not appear. Nothing breaks.
 
 ---
 
-## Step 6 — The GCP backend (optional)
+## Parked: the GCP backend
 
-Needed only for grading typed/recorded answers and for adaptive daily batches.
-Everything else works without it. Full detail in [`infra/README.md`](infra/README.md).
+`backend/` and `infra/` hold a Cloud Run service and its Terraform, built and
+validated but never deployed — the billing account needed reopening and the
+route was dropped in favour of keeping the app self-contained.
 
-```bash
-brew install --cask google-cloud-sdk
-brew install hashicorp/tap/terraform
-
-gcloud auth login
-gcloud projects create farsi-vault-$RANDOM --name="Farsi Vault"
-gcloud config set project YOUR_PROJECT_ID
-gcloud auth application-default login
-```
-
-Attach a billing account at <https://console.cloud.google.com/billing>. GCP's
-always-free tier requires a card, which is why the budget alert below is not
-optional.
-
-```bash
-cp infra/example.tfvars infra/terraform.tfvars
-openssl rand -base64 32        # api_token
-gcloud billing accounts list   # billing_account
-```
-
-Fill in `infra/terraform.tfvars` — including `allowed_origins`, which must be
-your Pages origin, exactly `https://alirghase.github.io` (scheme and host only, no path) or the browser
-will block every request.
-
-```bash
-cd infra && terraform init && terraform apply
-cd .. && bash infra/deploy.sh YOUR_PROJECT_ID
-```
-
-Put the printed URL and your token into the app's **Settings**, then tap
-**Test connection**.
+Nothing in the app depends on them. Left in the repository because the work is
+done and the decision may be revisited; `infra/README.md` has the detail if it
+ever is.
 
 ---
 
@@ -183,7 +156,5 @@ Put the printed URL and your token into the app's **Settings**, then tap
 | Changes do not appear | service worker cached the old files | it is network-first on localhost; elsewhere reload twice |
 | Microphone does nothing | page is on plain HTTP | needs HTTPS — Step 4 Option B |
 | No play button | no Persian voice installed | Step 5 |
-| Sync: "rejected the token" | token mismatch | compare Settings against `terraform.tfvars` |
-| Sync fails in browser only | CORS | `allowed_origins` must be `https://alirghase.github.io` — host only, no trailing slash, no path |
 | `429` during seed generation | free-tier rate limit | it retries and falls back automatically; wait |
 | Today shows 0 new | seed JSON missing | re-run the `cp` at the end of Step 2 |

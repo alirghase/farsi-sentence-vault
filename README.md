@@ -1,118 +1,114 @@
 # Farsi Sentence Vault
 
-**Live: <https://alirghase.github.io/farsi-sentence-vault/>** — open it on a
-phone and Add to Home Screen.
+**Live: <https://alirghase.github.io/farsi-sentence-vault/>** — open on a phone,
+Share → Add to Home Screen.
 
-Translation drilling for people who know the words but freeze when they have to
-speak. Prompt → produce the sentence out loud → reveal → rate. Hundreds of reps
+Translation drilling for someone who knows the words but freezes when they have
+to produce a sentence. Prompt → say it → reveal → Fail or Pass. Hundreds of reps
 a week, offline, on a commute.
 
-The problem is retrieval under pressure, not vocabulary. So the default path
-costs **zero taps until Reveal**: read the prompt, say the Farsi aloud, tap to
-check, tap to rate. Typing and recording are opt-in per card.
+The problem is retrieval under pressure, not vocabulary — so the card is timed,
+the rating is one tap, and the whole loop runs with no network.
 
-## How it fits together
+## How it works
 
 ```
-BUILD TIME (once, on the Mac)
-  tools/generate_seed.py ──> Gemini ──> seed_sentences.json ──┐
-                                                              │ bundled
-RUN TIME                                                      ▼
-  ┌────────────── PWA on the phone (offline) ────────────────────┐
-  │  IndexedDB · SM-2 scheduler · service worker · MediaRecorder │
-  └────────────────────────────┬─────────────────────────────────┘
-                               │ HTTPS, only when you tap Sync
-                               ▼
-  ┌──────────────────────── GCP ─────────────────────────────────┐
-  │  Cloud Run (FastAPI)  ──>  Gemini 3.6 Flash                  │
-  │    ├─ grade attempts (text + audio) → scores, error tags     │
-  │    └─ generate next batch, weighted to your weak spots       │
-  │  Firestore · Secret Manager · Cloud Scheduler (05:00 nightly)│
-  └──────────────────────────────────────────────────────────────┘
+BUILD TIME (on the Mac, no network needed at run time)
+  tools/         write, validate and annotate sentences
+                 └─> web/data/seed_sentences.json, bundled into the app
+
+RUN TIME
+  ┌──────────────── PWA on the phone, fully offline ────────────────┐
+  │  IndexedDB · SM-2 scheduler · CEFR level gate · service worker   │
+  │  word map · pace timing · TTS · audio recording                  │
+  └──────────────────────────────────────────────────────────────────┘
 ```
 
-Everything in the practice loop is local. Sync is the only network boundary and
-it is a pull — nothing is pushed to the phone.
-
-`core/` is shared by the seed generator and the Cloud Run service, so prompts,
-taxonomy, and validation cannot drift between them. `tools/check_mirror.py`
-guards the JavaScript copy of the taxonomy on top of that.
+Everything the practice loop needs is local. There is no runtime dependency on
+anything else.
 
 ## Repository layout
 
 | Path | What it is |
 |---|---|
-| `core/` | Shared Python: Gemini client, prompts, taxonomy, validation |
-| `tools/` | One-off CLIs: seed generation, prompt iteration, drift checks |
-| `backend/` | FastAPI service deployed to Cloud Run |
-| `infra/` | Terraform for the whole GCP footprint |
-| `web/` | The app: static PWA, no build step, ES modules |
+| `web/` | The app. Static PWA, ES modules, no build step, no `node_modules` |
+| `core/` | Shared Python: taxonomy, prompts, validation, Gemini client |
+| `tools/` | Content pipeline — see below |
+| `backend/`, `infra/` | **Parked.** A Cloud Run service and its Terraform, built then set aside when the GCP route was dropped. Nothing references them at run time |
 
-There is no bundler and no `node_modules`. `web/` is served as-is.
+## The content pipeline
+
+| Tool | What it does |
+|---|---|
+| `generate_seed.py` | Generates sentences, optionally `--syllabus` to target core-verb gaps |
+| `merge_handwritten.py` | Merges hand-written batches, through the same validation |
+| `derive_breakdown.py` | Builds word mappings from the gloss already in the deck — no API |
+| `augment.py` | Model-written breakdowns and alternatives for what cannot be derived |
+| `coverage.py` | Reports core-verb coverage and what is still missing |
+| `check_mirror.py` | Guards the JS ↔ Python vocabularies against drift |
+| `prompt_harness.py` | Iterate prompts without a rebuild |
+| `check_js.mjs` | Every web module imports cleanly |
+
+## How the app decides what to show you
+
+**Levels.** A1 → C1. New cards come only from your current level; due reviews
+come from every level, so passing A1 does not mean forgetting it.
+
+**The gate.** Four things must all hold: 60 distinct cards seen, 85% accuracy
+over the last 40 reviews, 30 cards past a 7-day interval, and 60% of answers
+produced inside their target time. Retention stops a level being crammed; pace
+stops you passing while still needing ten seconds a sentence.
+
+**Scheduling.** SM-2. Fail is a lapse and returns the card this session; pass
+follows the standard 1, 6, 15, 38, 95, 238-day progression.
 
 ## Getting it running
 
-Step-by-step, in order, is in [SETUP.md](SETUP.md). Short version:
-
 ```bash
-export GEMINI_API_KEY=...                       # aistudio.google.com/apikey
-python3 tools/generate_seed.py --count 400      # ~15 min
-python3 tools/generate_seed.py --review         # READ THIS
-cp tools/seed_sentences.json web/data/
-
-python3 -m http.server 8000 --directory web     # open http://localhost:8000
+python3 -m http.server 8000 --directory web    # then open localhost:8000
 ```
 
-The backend is optional — the app practises offline without it. Only grading
-and new batches need it. See [`infra/README.md`](infra/README.md).
+To add content, write a batch into `tools/handwritten/`, then:
 
-## Things worth knowing before building on this
+```bash
+python3 tools/merge_handwritten.py
+python3 tools/derive_breakdown.py
+cp tools/seed_sentences.json web/data/
+```
 
-- **Apple does not support Persian dictation.** Farsi is absent from the iOS
-  Dictation language list, so there is no free on-device Persian speech
-  recognition anywhere on the platform. Recordings are transcribed by Gemini at
-  sync time instead.
-- **Persian text-to-speech depends on an installed system voice.** iOS Safari
-  exposes only voices present on the device. The app detects this and hides
-  playback rather than failing; Settings explains how to add one.
-- **Gemini retires models aggressively.** `gemini-2.5-flash` now 404s for new
-  API keys while still appearing in the model listing. The client defaults to
-  `gemini-3.6-flash` and falls back through `gemini-3.5-flash` and
-  `gemini-flash-latest`, so a retirement degrades rather than breaks.
-- **GCP's free tier needs a billing account.** Three guardrails exist because of
-  that: instance caps, per-day model-call limits enforced in Firestore, and a
-  budget alert. See `infra/README.md`.
+Deploys happen on push — `.github/workflows/pages.yml` runs the checks and
+publishes `web/`.
+
+## Things that will bite you
+
+- **Apple has no Persian dictation.** There is no free on-device Persian speech
+  recognition anywhere on iOS. Text-to-speech works if a Farsi voice is
+  installed; the app detects this and hides listening entirely when it is not.
+- **Gemini retires models aggressively** and the free tier has a hard daily
+  request ceiling shared across models. The client falls back through
+  `gemini-3.6-flash` → `gemini-3.5-flash` → `gemini-flash-latest`.
 - **The error tag vocabulary is closed and duplicated** across Python and
-  JavaScript. Run `python3 tools/check_mirror.py` after touching either — if
-  they drift, adaptation degrades silently, with no crash.
-- **iOS can evict web-app storage.** The app requests persistent storage and the
-  backend holds a copy of everything that matters, but install it to the Home
-  Screen rather than leaving it a browser tab.
-
-## Deployment
-
-`web/` is published to GitHub Pages by `.github/workflows/pages.yml` on every
-push that touches it. Deploys are gated on the checks below, so a broken module
-or a missing seed bank fails the build instead of shipping an empty app.
-
-Two constraints that shaped this: GitHub Pages is unavailable on private repos
-on the free plan, and branch-based Pages can only serve `/` or `/docs` — never
-an arbitrary folder like `web/`. Hence public, and hence Actions.
+  JavaScript. Run `check_mirror.py` after touching either: drift degrades
+  adaptation silently, with no crash.
+- **`SITUATIONS` in `web/js/taxonomy.js` looks unused.** It is parsed by
+  `check_mirror.py`. Deleting it disables that check rather than breaking
+  anything visible.
+- **iOS can evict web-app storage.** Install to the Home Screen rather than
+  leaving it a browser tab.
 
 ## Checks
 
 ```bash
-python3 tools/check_mirror.py     # JS ↔ Python vocabulary
-node tools/check_js.mjs           # web modules import cleanly
-python3 -m py_compile backend/*.py core/*.py
-cd infra && terraform validate
+node tools/check_js.mjs
+python3 tools/check_mirror.py
+python3 tools/coverage.py
+python3 tools/generate_seed.py --review      # register health
 ```
 
 ## History
 
 A native SwiftUI client was built first and removed in favour of the PWA,
-because building for iOS requires Xcode and the download was blocking all
-progress. It is preserved in git history:
+because building for iOS requires Xcode. It is preserved in history:
 
 ```bash
 git checkout f7f9bb7 -- FarsiVault FarsiVaultTests
