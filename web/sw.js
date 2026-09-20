@@ -5,7 +5,9 @@
 // platform with no signal. API calls are never cached — a stale grade or a
 // replayed sync would corrupt local state.
 
-const VERSION = 'v1';
+// Bump to purge every cached entry. Without a change here the cache name stays
+// constant, so a stale entry can win on cache-first forever.
+const VERSION = 'v3';
 const SHELL_CACHE = `farsi-shell-${VERSION}`;
 
 const SHELL = [
@@ -43,63 +45,51 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// On localhost the cache-first strategy serves stale CSS and JS after every
-// edit, which makes changes look like they did not apply. Development goes
-// network-first with a cache fallback, so offline behaviour is still testable.
-const IS_DEV = ['localhost', '127.0.0.1'].includes(self.location.hostname);
+/**
+ * Network-first with a short timeout, falling back to cache.
+ *
+ * Cache-first was the wrong default here. The deck and the modules change on
+ * every deploy, and a constant cache name meant a stale entry could keep
+ * winning — the app served a 400-sentence deck while the server had 730, with
+ * no error and no way for the user to tell.
+ *
+ * The timeout keeps offline fast: if the network has not answered in 1.5s we
+ * serve the cached copy, so a dead connection costs a moment, not a hang.
+ */
+const NETWORK_TIMEOUT_MS = 1500;
 
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
 
   const url = new URL(request.url);
-  // Anything off-origin is the backend. Never cache it.
+  // Anything off-origin is an API call. Never cache it.
   if (url.origin !== self.location.origin) return;
 
-  if (IS_DEV) {
-    event.respondWith(
-      fetch(request)
-        .then((response) => {
-          if (response.ok) {
-            const copy = response.clone();
-            event.waitUntil(caches.open(SHELL_CACHE).then((c) => c.put(request, copy)));
-          }
-          return response;
-        })
-        .catch(() => caches.match(request).then((c) => c ?? caches.match('./index.html'))),
-    );
-    return;
-  }
-
-  event.respondWith(
-    caches.match(request).then((cached) => {
-      if (cached) {
-        // Refresh in the background so the next open is current, without
-        // making this one wait on the network.
-        event.waitUntil(updateCache(request));
-        return cached;
-      }
-      return fetch(request)
-        .then((response) => {
-          if (response.ok) {
-            const copy = response.clone();
-            event.waitUntil(caches.open(SHELL_CACHE).then((c) => c.put(request, copy)));
-          }
-          return response;
-        })
-        .catch(() => caches.match('./index.html'));
-    }),
-  );
+  event.respondWith(networkFirst(request));
 });
 
-async function updateCache(request) {
+async function networkFirst(request) {
+  const cached = caches.match(request);
+
   try {
-    const response = await fetch(request);
-    if (response.ok) {
-      const cache = await caches.open(SHELL_CACHE);
-      await cache.put(request, response);
+    const response = await Promise.race([
+      // `cache: 'no-cache'` forces revalidation: a plain fetch() inside a
+      // service worker still goes through the browser's HTTP cache, which was
+      // handing back a stale deck even after the SW cache was purged.
+      fetch(new Request(request.url, { cache: 'no-cache' })),
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error('slow')), NETWORK_TIMEOUT_MS)),
+    ]);
+    if (response && response.ok) {
+      const copy = response.clone();
+      caches.open(SHELL_CACHE).then((c) => c.put(request, copy));
+      return response;
     }
+    // A non-OK response is still better than nothing if we have no cache.
+    return (await cached) ?? response;
   } catch {
-    // Offline is the normal case here, not an error.
+    // Offline, or the network was too slow to wait for.
+    return (await cached) ?? caches.match('./index.html');
   }
 }
