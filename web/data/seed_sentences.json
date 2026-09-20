@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 670,
+  "count": 778,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -8669,6 +8669,2542 @@
         "colloquial",
         "preposition"
       ]
+    },
+    {
+      "englishText": "Put the key on the table.",
+      "farsiText": "کلید رو بذار روی میز.",
+      "finglish": "kelid ro bezâr ruye miz.",
+      "literalGloss": "key (object marker) put on table.",
+      "difficulty": 1,
+      "situation": "home and household objects",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "preposition"
+      ]
+    },
+    {
+      "englishText": "When do you sleep?",
+      "farsiText": "کی می‌خوابی؟",
+      "finglish": "key mikhâbi?",
+      "literalGloss": "when you-sleep?",
+      "difficulty": 1,
+      "situation": "time",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "We sat in the park.",
+      "farsiText": "ما تو پارک نشستیم.",
+      "finglish": "mâ tu pârk neshastim.",
+      "literalGloss": "we in park we-sat.",
+      "difficulty": 1,
+      "situation": "places, directions and the city",
+      "grammarTags": [
+        "colloquial",
+        "preposition",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "I don't want it for Saturday.",
+      "farsiText": "واسه شنبه نمی‌خوام.",
+      "finglish": "vâse shanbe nemikhâm.",
+      "literalGloss": "for Saturday I-not-want.",
+      "difficulty": 1,
+      "situation": "days and dates",
+      "grammarTags": [
+        "colloquial",
+        "preposition"
+      ]
+    },
+    {
+      "englishText": "Did you pick up the book?",
+      "farsiText": "کتاب رو برداشتی؟",
+      "finglish": "ketâb ro bardâshti?",
+      "literalGloss": "book (object marker) you-picked-up?",
+      "difficulty": 1,
+      "situation": "home and household objects",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "Bring some water for me.",
+      "farsiText": "واسم آب بیار.",
+      "finglish": "vâsam âb biyâr.",
+      "literalGloss": "for-me water bring.",
+      "difficulty": 1,
+      "situation": "home and household objects",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "Sit here, please.",
+      "farsiText": "اینجا بشین، لطفا.",
+      "finglish": "injâ beshin, lotfan.",
+      "literalGloss": "here sit, please.",
+      "difficulty": 1,
+      "situation": "places, directions and the city",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "englishText": "I slept early last night.",
+      "farsiText": "دیشب زود خوابیدم.",
+      "finglish": "dishab zud khâbidam.",
+      "literalGloss": "last-night early I-slept.",
+      "difficulty": 1,
+      "situation": "time",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "Did you bring the calendar today?",
+      "farsiText": "امروز تقویم رو آوردی؟",
+      "finglish": "emruz taghvim ro âvordi?",
+      "literalGloss": "today calendar (object marker) you-brought?",
+      "difficulty": 1,
+      "situation": "days and dates",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "I don't park my car here.",
+      "farsiText": "ماشینم رو اینجا نمی‌ذارم.",
+      "finglish": "mâshinam ro injâ nemizâram.",
+      "literalGloss": "my-car (object marker) here I-not-put.",
+      "difficulty": 1,
+      "situation": "places, directions and the city",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "I don't want this old carpet.",
+      "farsiText": "این فرش کهنه رو نمی‌خوام.",
+      "finglish": "in farshe kohne ro nemikhâm.",
+      "literalGloss": "this carpet-of old (object marker) I-not-want.",
+      "difficulty": 1,
+      "situation": "home and household objects",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "Pick up the phone now!",
+      "farsiText": "الان تلفن رو بردار!",
+      "finglish": "al'ân telefon ro bardâr!",
+      "literalGloss": "now telephone (object marker) pick-up!",
+      "difficulty": 1,
+      "situation": "time",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "I have brought the food to the park.",
+      "farsiText": "غذا رو آوردم تو پارک.",
+      "finglish": "ghazâ ro âvardam tu pârk.",
+      "literalGloss": "food (object marker) I-brought in park.",
+      "difficulty": 1,
+      "situation": "places, directions and the city",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "preposition"
+      ]
+    },
+    {
+      "englishText": "I don't sit in the yard on Mondays.",
+      "farsiText": "دوشنبه‌ها تو حیاط نمی‌شینم.",
+      "finglish": "doshanbehâ tu hayât nemishinam.",
+      "literalGloss": "Mondays in yard I-not-sit.",
+      "difficulty": 1,
+      "situation": "days and dates",
+      "grammarTags": [
+        "colloquial",
+        "preposition",
+        "plural"
+      ]
+    },
+    {
+      "englishText": "Where did you put my glasses?",
+      "farsiText": "عینکم رو کجا گذاشتی؟",
+      "finglish": "'eynakam ro kojâ gozâshti?",
+      "literalGloss": "my-glasses (object marker) where you-put?",
+      "difficulty": 1,
+      "situation": "home and household objects",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "I don't want this hot weather.",
+      "farsiText": "این هوای گرم رو نمی‌خوام.",
+      "finglish": "in havâ-ye garm ro nemikhâm.",
+      "literalGloss": "this weather-of warm [ra-marker] I-don't-want",
+      "difficulty": 1,
+      "situation": "weather and seasons",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "Yesterday we walked in the rain.",
+      "farsiText": "دیروز توی بارون قدم زدیم.",
+      "finglish": "diruz tuye bârun ghadam zadim.",
+      "literalGloss": "yesterday in rain step we-hit",
+      "difficulty": 1,
+      "situation": "weather and seasons",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "preposition"
+      ]
+    },
+    {
+      "englishText": "I waited for two hours.",
+      "farsiText": "دو ساعت منتظر موندم.",
+      "finglish": "do sâ'at montazer mundam.",
+      "literalGloss": "two hour waiting I-stayed",
+      "difficulty": 1,
+      "situation": "time",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb"
+      ]
+    },
+    {
+      "englishText": "I started my diet today.",
+      "farsiText": "رژیمم رو امروز شروع کردم.",
+      "finglish": "rezhimam ro emruz shoru' kardam.",
+      "literalGloss": "diet-my [ra-marker] today start I-did",
+      "difficulty": 1,
+      "situation": "health and feeling unwell",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "ra-marker",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "I have finished my work today.",
+      "farsiText": "کارم رو امروز تموم کردم.",
+      "finglish": "kâram ro emruz tamum kardam.",
+      "literalGloss": "work-my [ra-marker] today finish I-did",
+      "difficulty": 1,
+      "situation": "days and dates",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "ra-marker",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "Spring came very early.",
+      "farsiText": "بهار خیلی زود اومد.",
+      "finglish": "bahâr kheyli zud umad.",
+      "literalGloss": "spring very early came",
+      "difficulty": 1,
+      "situation": "weather and seasons",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "englishText": "I don't want this medicine.",
+      "farsiText": "این دارو رو نمی‌خوام.",
+      "finglish": "in dâru ro nemikhâm.",
+      "literalGloss": "this medicine [ra-marker] I-don't-want",
+      "difficulty": 1,
+      "situation": "health and feeling unwell",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "I don't walk at night.",
+      "farsiText": "من شب‌ها قدم نمی‌زنم.",
+      "finglish": "man shabhâ ghadam nemizanam.",
+      "literalGloss": "I nights step I-don't-hit",
+      "difficulty": 1,
+      "situation": "time",
+      "grammarTags": [
+        "compound-verb",
+        "colloquial"
+      ]
+    },
+    {
+      "englishText": "I will wait until Friday.",
+      "farsiText": "تا جمعه منتظر می‌مونم.",
+      "finglish": "tâ jom'e montazer mimunam.",
+      "literalGloss": "until Friday waiting I-stay",
+      "difficulty": 1,
+      "situation": "days and dates",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb"
+      ]
+    },
+    {
+      "englishText": "We started our trip in winter.",
+      "farsiText": "سفرمون رو زمستون شروع کردیم.",
+      "finglish": "safaremun ro zemestun shoru' kardim.",
+      "literalGloss": "trip-our [ra-marker] winter start we-did",
+      "difficulty": 1,
+      "situation": "weather and seasons",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "ra-marker",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "I finished my exercise today.",
+      "farsiText": "امروز ورزشم رو تموم کردم.",
+      "finglish": "emruz varzesham ro tamum kardam.",
+      "literalGloss": "today exercise-my [ra-marker] finish I-did",
+      "difficulty": 1,
+      "situation": "body",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "ra-marker",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "My fever didn't come down.",
+      "farsiText": "تبم پایین نیومد.",
+      "finglish": "tabam pâyeen nayumad.",
+      "literalGloss": "fever-my down didn't-come",
+      "difficulty": 1,
+      "situation": "health and feeling unwell",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "I don't want cold water for my throat.",
+      "farsiText": "واسه گلوم آب سرد نمی‌خوام.",
+      "finglish": "vâse galum âb-e sard nemikhâm.",
+      "literalGloss": "for throat-my water-of cold I-don't-want",
+      "difficulty": 1,
+      "situation": "body",
+      "grammarTags": [
+        "colloquial",
+        "ezafe",
+        "preposition",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "I used to walk for my health.",
+      "farsiText": "واسه سلامتی قدم می‌زدم.",
+      "finglish": "vâse salâmati ghadam mizadam.",
+      "literalGloss": "for health step I-was-hitting",
+      "difficulty": 1,
+      "situation": "health and feeling unwell",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "preposition"
+      ]
+    },
+    {
+      "englishText": "I don't wait in the cold.",
+      "farsiText": "توی سرما منتظر نمی‌مونم.",
+      "finglish": "tuye sarmâ montazer nemimunam.",
+      "literalGloss": "in cold waiting I-don't-stay",
+      "difficulty": 1,
+      "situation": "weather and seasons",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "preposition"
+      ]
+    },
+    {
+      "englishText": "I don't want this big jacket.",
+      "farsiText": "این کاپشن بزرگ رو نمی‌خوام.",
+      "finglish": "in kâpshen-e bozorg ro nemikhâm",
+      "literalGloss": "this jacket-of big ra-marker I-not-want",
+      "difficulty": 1,
+      "situation": "sizes and shopping",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "Where did you put my spoon?",
+      "farsiText": "قاشقم رو کجا گذاشتی؟",
+      "finglish": "ghâshogh-am ro kojâ gozâshti",
+      "literalGloss": "spoon-my ra-marker where you-put?",
+      "difficulty": 1,
+      "situation": "the home and household objects",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "I don't know your brother.",
+      "farsiText": "برادرت رو نمی‌شناسم.",
+      "finglish": "barâdar-et ro nemishenâsam",
+      "literalGloss": "brother-your ra-marker I-not-know-person",
+      "difficulty": 1,
+      "situation": "opinions and reactions",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "I did not eat the apple.",
+      "farsiText": "سیب رو نخوردم.",
+      "finglish": "sib ro nakhordam",
+      "literalGloss": "apple ra-marker I-not-ate",
+      "difficulty": 1,
+      "situation": "opinions and reactions",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "I don't know the price.",
+      "farsiText": "قیمت رو نمی‌دونم.",
+      "finglish": "gheymat ro nemidunam",
+      "literalGloss": "price ra-marker I-not-know-fact",
+      "difficulty": 1,
+      "situation": "sizes and shopping",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "Can you see the shirt?",
+      "farsiText": "می‌تونی پیرهن رو ببینی؟",
+      "finglish": "mituni pirhan ro bebini",
+      "literalGloss": "you-can shirt ra-marker you-see?",
+      "difficulty": 1,
+      "situation": "clothes",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "subjunctive"
+      ]
+    },
+    {
+      "englishText": "What do you want now?",
+      "farsiText": "الان چی می‌خوای؟",
+      "finglish": "al'ân chi mikhây",
+      "literalGloss": "now what you-want?",
+      "difficulty": 1,
+      "situation": "feelings",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "englishText": "I cannot buy this dress.",
+      "farsiText": "نمی‌تونم این لباس رو بخرم.",
+      "finglish": "nemitunam in lebâs ro bekharam",
+      "literalGloss": "I-cannot this dress ra-marker I-buy",
+      "difficulty": 1,
+      "situation": "sizes and shopping",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "subjunctive"
+      ]
+    },
+    {
+      "englishText": "I did not put the plate here.",
+      "farsiText": "بشقاب رو اینجا نذاشتم.",
+      "finglish": "boshghâb ro injâ nazâshtam",
+      "literalGloss": "plate ra-marker here I-not-put",
+      "difficulty": 1,
+      "situation": "the home and household objects",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "Do you know the size?",
+      "farsiText": "سایز رو می‌دونی؟",
+      "finglish": "sâyz ro miduni",
+      "literalGloss": "size ra-marker you-know-fact?",
+      "difficulty": 1,
+      "situation": "sizes and shopping",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "Do you know the seller?",
+      "farsiText": "فروشنده رو می‌شناسی؟",
+      "finglish": "forushandeh ro mishenâsi",
+      "literalGloss": "seller ra-marker you-know-person?",
+      "difficulty": 1,
+      "situation": "sizes and shopping",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "Do you want to wear this skirt?",
+      "farsiText": "می‌خوای این دامن رو بپوشی؟",
+      "finglish": "mikhây in dâman ro bepushi",
+      "literalGloss": "you-want this skirt ra-marker you-wear?",
+      "difficulty": 1,
+      "situation": "clothes",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "subjunctive"
+      ]
+    },
+    {
+      "englishText": "I don't put the shoes inside.",
+      "farsiText": "کفش‌ها رو تو نمی‌ذارم.",
+      "finglish": "kafshâ ro tu nemizâram",
+      "literalGloss": "shoes ra-marker inside I-not-put",
+      "difficulty": 1,
+      "situation": "the home and household objects",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "plural"
+      ]
+    },
+    {
+      "englishText": "Why aren't you eating the soup?",
+      "farsiText": "چرا سوپ رو نمی‌خوری؟",
+      "finglish": "cherâ sup ro nemikhori",
+      "literalGloss": "why soup ra-marker you-not-eat?",
+      "difficulty": 1,
+      "situation": "opinions and reactions",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "I don't know that tall doctor.",
+      "farsiText": "اون دکتر قدبلند رو نمی‌شناسم.",
+      "finglish": "un doktore ghadboland ro nemishnâsam",
+      "literalGloss": "that doctor-of tall [ra] I-not-know",
+      "difficulty": 1,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "Do you want this headache pill?",
+      "farsiText": "این قرص سردرد رو می‌خوای؟",
+      "finglish": "in ghorse sardard ro mikhây?",
+      "literalGloss": "this pill-of headache [ra] you-want?",
+      "difficulty": 1,
+      "situation": "health and feeling unwell",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "I must pick up my key.",
+      "farsiText": "باید کلیدم رو بردارم.",
+      "finglish": "bâyad kelidam ro bardâram",
+      "literalGloss": "must my-key [ra] I-pick-up",
+      "difficulty": 1,
+      "situation": "transport: taxi, metro, driving",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "pronoun-clitic",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "I cannot drive in the rain.",
+      "farsiText": "تو بارون نمی‌تونم رانندگی کنم.",
+      "finglish": "tu bârun nemitunam rânandegi konam",
+      "literalGloss": "in rain I-cannot driving I-do",
+      "difficulty": 1,
+      "situation": "transport: taxi, metro, driving",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "subjunctive"
+      ]
+    },
+    {
+      "englishText": "Do you know the metro station?",
+      "farsiText": "ایستگاه مترو رو می‌دونی؟",
+      "finglish": "istgâhe metro ro miduni?",
+      "literalGloss": "station-of metro [ra] you-know?",
+      "difficulty": 1,
+      "situation": "transport: taxi, metro, driving",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "He has sold his cheap car.",
+      "farsiText": "ماشین ارزونش رو فروخته.",
+      "finglish": "mâshine arzunesh ro foruhte",
+      "literalGloss": "car-of cheap-his [ra] he-has-sold",
+      "difficulty": 1,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "ra-marker",
+        "verb-tense",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "I wanted a fast taxi.",
+      "farsiText": "یه تاکسی سریع می‌خواستم.",
+      "finglish": "ye tâksie sari' mikhâstam",
+      "literalGloss": "one taxi-of fast I-was-wanting",
+      "difficulty": 1,
+      "situation": "transport: taxi, metro, driving",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "I don't know the cause of my back pain.",
+      "farsiText": "علت کمردردم رو نمی‌دونم.",
+      "finglish": "ellate kamardardam ro nemidunam",
+      "literalGloss": "cause-of my-backache [ra] I-not-know",
+      "difficulty": 1,
+      "situation": "body",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "Have you picked up your medicine?",
+      "farsiText": "داروت رو برداشتی؟",
+      "finglish": "dârut ro bardâshti?",
+      "literalGloss": "your-medicine [ra] you-have-picked-up?",
+      "difficulty": 1,
+      "situation": "health and feeling unwell",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "ra-marker",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "I couldn't open the heavy door.",
+      "farsiText": "نمی‌تونستم در سنگین رو باز کنم.",
+      "finglish": "nemitunestam dare sangin ro bâz konam",
+      "literalGloss": "I-was-not-able door-of heavy [ra] open I-do",
+      "difficulty": 1,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "compound-verb",
+        "ezafe",
+        "ra-marker"
+      ]
+    },
+    {
+      "englishText": "I didn't use to know this street.",
+      "farsiText": "این خیابون رو نمی‌شناختم.",
+      "finglish": "in khiyâbun ro nemishnâkhtam",
+      "literalGloss": "this street [ra] I-was-not-knowing",
+      "difficulty": 1,
+      "situation": "transport: taxi, metro, driving",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "verb-tense"
+      ]
+    },
+    {
+      "englishText": "Why did you sell your yellow bicycle?",
+      "farsiText": "چرا دوچرخه زردت رو فروختی؟",
+      "finglish": "cherâ docharkheye zardet ro forukhti?",
+      "literalGloss": "why bicycle-of yellow-your [ra] you-sold?",
+      "difficulty": 1,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe",
+        "pronoun-clitic"
+      ]
+    },
+    {
+      "englishText": "I don't know the weight of this package.",
+      "farsiText": "وزن این بسته رو نمی‌دونم.",
+      "finglish": "vazne in baste ro nemidunam",
+      "literalGloss": "weight-of this package [ra] I-not-know",
+      "difficulty": 1,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "I want to see the beautiful room.",
+      "farsiText": "می‌خوام اتاق قشنگ رو ببینم.",
+      "finglish": "mikhâm otâge ghashang ro bebinam",
+      "literalGloss": "I-want room-of beautiful [ra] I-see",
+      "difficulty": 1,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "Did you pick up the car keys?",
+      "farsiText": "سوییچ ماشین رو برداشتی؟",
+      "finglish": "suiche mâshin ro bardâshti?",
+      "literalGloss": "key-of car [ra] you-picked-up?",
+      "difficulty": 1,
+      "situation": "transport: taxi, metro, driving",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "ezafe"
+      ]
+    },
+    {
+      "englishText": "I don't understand this message.",
+      "farsiText": "این پیامو نمی‌فهمم.",
+      "finglish": "in payâmo nemifahmam",
+      "literalGloss": "this message-RA I-don't-understand",
+      "difficulty": 1,
+      "situation": "phone, messages and making plans",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ]
+    },
+    {
+      "id": "10a3ee90-addf-43cc-8998-8026e00bfeb6",
+      "englishText": "I told him yesterday.",
+      "farsiText": "دیروز بهش گفتم.",
+      "finglish": "diruz behesh goftam",
+      "literalGloss": "yesterday to him I said",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "verb-tense",
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "دیروز",
+          "translit": "diruz",
+          "en": "yesterday",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بهش",
+          "translit": "behesh",
+          "en": "to him",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "گفتم",
+          "translit": "goftam",
+          "en": "I said",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "دیروز به‌ش گفتم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "6de5c742-64fb-495b-875e-ade9bd0809e9",
+      "englishText": "What did you say to her?",
+      "farsiText": "بهش چی گفتی؟",
+      "finglish": "behesh chi gofti?",
+      "literalGloss": "to her what you said",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "pronoun-clitic",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "بهش",
+          "translit": "behesh",
+          "en": "to her",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "گفتی",
+          "translit": "gofti",
+          "en": "you said",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "چی بهش گفتی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "c74c9631-228c-4692-92af-25413ce8b98d",
+      "englishText": "I wanted to come but I couldn't.",
+      "farsiText": "می‌خواستم بیام ولی نتونستم.",
+      "finglish": "mikhâstam biyâm vali natunestam",
+      "literalGloss": "I wanted to come but I couldn't",
+      "difficulty": 2,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "subjunctive",
+        "verb-tense",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خواستم",
+          "translit": "mikhâstam",
+          "en": "I wanted",
+          "pos": "verb"
+        },
+        {
+          "fa": "بیام",
+          "translit": "biyâm",
+          "en": "to come",
+          "pos": "verb"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "نتونستم",
+          "translit": "natunestam",
+          "en": "I couldn't",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "می‌خواستم بیام اما نشد."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "6b74093f-6371-441a-a492-7c318218a01c",
+      "englishText": "What do you want for dinner?",
+      "farsiText": "شام چی می‌خوای؟",
+      "finglish": "shâm chi mikhây?",
+      "literalGloss": "dinner what you want",
+      "difficulty": 2,
+      "situation": "food, drink and eating out",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "شام",
+          "translit": "shâm",
+          "en": "dinner",
+          "pos": "noun"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌خوای",
+          "translit": "mikhây",
+          "en": "you want",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "واسه شام چی می‌خوای؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "5ebe1372-9084-411a-9e6d-7d3e7a6dacd8",
+      "englishText": "I couldn't find your house.",
+      "farsiText": "نتونستم خونه‌تون رو پیدا کنم.",
+      "finglish": "natunestam khunetun ro peydâ konam",
+      "literalGloss": "I couldn't your house [object] find",
+      "difficulty": 2,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "subjunctive",
+        "compound-verb",
+        "ra-marker",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "نتونستم",
+          "translit": "natunestam",
+          "en": "I couldn't",
+          "pos": "verb"
+        },
+        {
+          "fa": "خونه‌تون",
+          "translit": "khunetun",
+          "en": "your house",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "پیدا کنم",
+          "translit": "peydâ konam",
+          "en": "find",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "خونه‌تونو پیدا نکردم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "a82c7f3b-7927-4374-a374-980832abee4c",
+      "englishText": "Can you help me tomorrow?",
+      "farsiText": "فردا می‌تونی کمکم کنی؟",
+      "finglish": "fardâ mituni komakam koni?",
+      "literalGloss": "tomorrow you can help me",
+      "difficulty": 2,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "subjunctive",
+        "compound-verb",
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "فردا",
+          "translit": "fardâ",
+          "en": "tomorrow",
+          "pos": "adverb"
+        },
+        {
+          "fa": "می‌تونی",
+          "translit": "mituni",
+          "en": "you can",
+          "pos": "verb"
+        },
+        {
+          "fa": "کمکم کنی",
+          "translit": "komakam koni",
+          "en": "help me",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "فردا می‌تونی بهم کمک کنی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "008a5408-9367-4eca-b782-59fef9666fc3",
+      "englishText": "I didn't know you were here.",
+      "farsiText": "نمی‌دونستم اینجایی.",
+      "finglish": "nemidunestam injâyi",
+      "literalGloss": "I didn't know you are here",
+      "difficulty": 2,
+      "situation": "greetings, politeness and taarof",
+      "grammarTags": [
+        "verb-tense",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "نمی‌دونستم",
+          "translit": "nemidunestam",
+          "en": "I didn't know",
+          "pos": "verb"
+        },
+        {
+          "fa": "اینجایی",
+          "translit": "injâyi",
+          "en": "you are here",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [
+        "خبر نداشتم اینجایی."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "8f872cc3-9f4d-482d-98d6-5463cffba701",
+      "englishText": "Do you know where the station is?",
+      "farsiText": "می‌دونی ایستگاه کجاست؟",
+      "finglish": "miduni istgâh kojâst?",
+      "literalGloss": "do you know the station where is",
+      "difficulty": 2,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌دونی",
+          "translit": "miduni",
+          "en": "do you know",
+          "pos": "verb"
+        },
+        {
+          "fa": "ایستگاه",
+          "translit": "istgâh",
+          "en": "the station",
+          "pos": "noun"
+        },
+        {
+          "fa": "کجاست",
+          "translit": "kojâst",
+          "en": "where is",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [
+        "ایستگاه کجاست، می‌دونی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "7ca413b6-fc57-4540-b6b5-470af63b7b9f",
+      "englishText": "Do you know that girl?",
+      "farsiText": "اون دخترو می‌شناسی؟",
+      "finglish": "un dokhtaro mishnâsi?",
+      "literalGloss": "that girl [object] do you know",
+      "difficulty": 2,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "ra-marker",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اون",
+          "translit": "un",
+          "en": "that",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "دخترو",
+          "translit": "dokhtaro",
+          "en": "girl [object]",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌شناسی",
+          "translit": "mishnâsi",
+          "en": "do you know",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اون دختر رو می‌شناسی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "7fb2d2d8-d7b8-48f1-a049-c88dd974a3ed",
+      "englishText": "I didn't know her before.",
+      "farsiText": "قبلا نمی‌شناختمش.",
+      "finglish": "ghablan nemishnâkhtamesh",
+      "literalGloss": "before I didn't know her",
+      "difficulty": 2,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "verb-tense",
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "قبلاً",
+          "translit": "ghablan",
+          "en": "before",
+          "pos": "adverb"
+        },
+        {
+          "fa": "نمی‌شناختمش",
+          "translit": "nemishnâkhtamesh",
+          "en": "I didn't know her",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "قبلا باهاش آشنا نبودم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "2e22c000-50fd-479e-8490-0e341cce18e2",
+      "englishText": "I brought you a present.",
+      "farsiText": "برات یه کادو آوردم.",
+      "finglish": "barât ye kâdo âvordam",
+      "literalGloss": "for you a present I brought",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "pronoun-clitic",
+        "verb-tense",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "برات",
+          "translit": "barât",
+          "en": "for you",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "کادو",
+          "translit": "kâdo",
+          "en": "present",
+          "pos": "noun"
+        },
+        {
+          "fa": "آوردم",
+          "translit": "âvordam",
+          "en": "I brought",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "یه کادو برات گرفتم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "420aea50-a86e-4012-a714-7dad3a1ac3f9",
+      "englishText": "Bring me a glass of water.",
+      "farsiText": "یه لیوان آب برام بیار.",
+      "finglish": "ye livân âb barâm biyâr",
+      "literalGloss": "a glass of water for me bring",
+      "difficulty": 2,
+      "situation": "food, drink and eating out",
+      "grammarTags": [
+        "ezafe",
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "یه لیوان آب",
+          "translit": "ye livân âb",
+          "en": "a glass of water",
+          "pos": "noun"
+        },
+        {
+          "fa": "برام",
+          "translit": "barâm",
+          "en": "for me",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "بیار",
+          "translit": "biyâr",
+          "en": "bring",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "برام یه آب بیار."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "e2de6048-4c8d-479b-ac71-3bb25a2b8233",
+      "englishText": "I took the kids to the park.",
+      "farsiText": "بچه‌ها رو بردم پارک.",
+      "finglish": "bachehâ ro bordam pârk",
+      "literalGloss": "the kids [object] I took to the park",
+      "difficulty": 2,
+      "situation": "the home and household objects",
+      "grammarTags": [
+        "ra-marker",
+        "plural",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "بچه‌ها",
+          "translit": "bachehâ",
+          "en": "the kids",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "بردم",
+          "translit": "bordam",
+          "en": "I took",
+          "pos": "verb"
+        },
+        {
+          "fa": "پارک",
+          "translit": "pârk",
+          "en": "to the park",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [
+        "بچه‌هارو بردم پارک."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "27765dbf-5f36-4c55-afa7-768b1e325087",
+      "englishText": "Who took my pen?",
+      "farsiText": "کی خودکارمو برد؟",
+      "finglish": "ki khodkâramo bord?",
+      "literalGloss": "who my pen [object] took",
+      "difficulty": 2,
+      "situation": "work, study and daily routine",
+      "grammarTags": [
+        "pronoun-clitic",
+        "ra-marker"
+      ],
+      "breakdown": [
+        {
+          "fa": "کی",
+          "translit": "ki",
+          "en": "who",
+          "pos": "question word"
+        },
+        {
+          "fa": "خودکارمو",
+          "translit": "khodkâramo",
+          "en": "my pen [object]",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "برد",
+          "translit": "bord",
+          "en": "took",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "خودکار منو کی برد؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "37139d47-5be1-4a8e-af75-f26cc5f84dc2",
+      "englishText": "I picked up the phone.",
+      "farsiText": "گوشی رو برداشتم.",
+      "finglish": "gushi ro bardâshtam",
+      "literalGloss": "the phone [object] I picked up",
+      "difficulty": 2,
+      "situation": "phone, messages and making plans",
+      "grammarTags": [
+        "ra-marker",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "گوشی",
+          "translit": "gushi",
+          "en": "the phone",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "برداشتم",
+          "translit": "bardâshtam",
+          "en": "I picked up",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "گوشیو برداشتم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "d3d489a5-0f5b-4d85-8c8c-eaddaa629a0e",
+      "englishText": "She picked up her bag and left.",
+      "farsiText": "کیفشو برداشت و رفت.",
+      "finglish": "kifesho bardâsht o raft",
+      "literalGloss": "her bag [object] picked up and left",
+      "difficulty": 2,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "pronoun-clitic",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "کیفشو",
+          "translit": "kifesho",
+          "en": "her bag [object]",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "برداشت",
+          "translit": "bardâsht",
+          "en": "picked up",
+          "pos": "verb"
+        },
+        {
+          "fa": "و",
+          "translit": "o",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "رفت",
+          "translit": "raft",
+          "en": "left",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "کیفش رو برداشت و رفت."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "85b8f552-7c79-4385-9f3f-69d7785e69ed",
+      "englishText": "They sold their car last year.",
+      "farsiText": "پارسال ماشینشون رو فروختن.",
+      "finglish": "pârsâl mâshineshun ro forukhtan",
+      "literalGloss": "last year their car [object] they sold",
+      "difficulty": 2,
+      "situation": "numbers, prices and money",
+      "grammarTags": [
+        "ra-marker",
+        "pronoun-clitic",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "پارسال",
+          "translit": "pârsâl",
+          "en": "last year",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ماشینشون",
+          "translit": "mâshineshun",
+          "en": "their car",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "فروختن",
+          "translit": "forukhtan",
+          "en": "they sold",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "پارسال ماشینشونو فروختن."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "4c052032-c64d-4337-840f-c193760ff304",
+      "englishText": "How much did you sell it for?",
+      "farsiText": "چند فروختیش؟",
+      "finglish": "chand forukhtish?",
+      "literalGloss": "how much did you sell it",
+      "difficulty": 2,
+      "situation": "numbers, prices and money",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "چند",
+          "translit": "chand",
+          "en": "how much",
+          "pos": "question word"
+        },
+        {
+          "fa": "فروختیش",
+          "translit": "forukhtish",
+          "en": "did you sell it",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "چقدر فروختیش؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "142ad9a4-af5e-49ce-9c88-b4e2f603c11a",
+      "englishText": "I wrote him a letter.",
+      "farsiText": "براش یه نامه نوشتم.",
+      "finglish": "barâsh ye nâme neveshtam",
+      "literalGloss": "for him a letter I wrote",
+      "difficulty": 2,
+      "situation": "work, study and daily routine",
+      "grammarTags": [
+        "pronoun-clitic",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "براش",
+          "translit": "barâsh",
+          "en": "for him",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "یه نامه",
+          "translit": "ye nâme",
+          "en": "a letter",
+          "pos": "noun"
+        },
+        {
+          "fa": "نوشتم",
+          "translit": "neveshtam",
+          "en": "I wrote",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "یه نامه بهش نوشتم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "97e2e5b2-9b8a-44b8-86ab-b6a375763c0e",
+      "englishText": "Write your name here.",
+      "farsiText": "اسمتو اینجا بنویس.",
+      "finglish": "esmeto injâ benevis",
+      "literalGloss": "your name [object] here write",
+      "difficulty": 2,
+      "situation": "work, study and daily routine",
+      "grammarTags": [
+        "pronoun-clitic",
+        "ra-marker"
+      ],
+      "breakdown": [
+        {
+          "fa": "اسمتو",
+          "translit": "esmeto",
+          "en": "your name [object]",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "اینجا",
+          "translit": "injâ",
+          "en": "here",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بنویس",
+          "translit": "benevis",
+          "en": "write",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اسمت رو اینجا بنویس."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "56662ff7-7d32-4eb3-833a-aee6f4e0c1c9",
+      "englishText": "Did you read my message?",
+      "farsiText": "پیاممو خوندی؟",
+      "finglish": "payâmamo khundi?",
+      "literalGloss": "my message [object] did you read",
+      "difficulty": 2,
+      "situation": "phone, messages and making plans",
+      "grammarTags": [
+        "pronoun-clitic",
+        "ra-marker",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "پیاممو",
+          "translit": "payâmamo",
+          "en": "my message [object]",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "خوندی",
+          "translit": "khundi",
+          "en": "did you read",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "پیام منو خوندی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "3b0e91c0-7031-4c54-981c-7d680865bbb9",
+      "englishText": "She sings really well.",
+      "farsiText": "خیلی قشنگ می‌خونه.",
+      "finglish": "kheyli ghashang mikhune",
+      "literalGloss": "very beautifully she sings",
+      "difficulty": 2,
+      "situation": "describing people and things",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "قشنگ",
+          "translit": "ghashang",
+          "en": "beautifully",
+          "pos": "adjective"
+        },
+        {
+          "fa": "می‌خونه",
+          "translit": "mikhune",
+          "en": "she sings",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "صداش خیلی قشنگه."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "3800827f-5bb7-4893-ad19-687c5898d722",
+      "englishText": "We arrived late.",
+      "farsiText": "دیر رسیدیم.",
+      "finglish": "dir residim",
+      "literalGloss": "late we arrived",
+      "difficulty": 2,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "دیر",
+          "translit": "dir",
+          "en": "late",
+          "pos": "adverb"
+        },
+        {
+          "fa": "رسیدیم",
+          "translit": "residim",
+          "en": "we arrived",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "با تأخیر رسیدیم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "ee1358aa-eb97-496a-805d-9f751ea0011f",
+      "englishText": "When did you get home?",
+      "farsiText": "کی رسیدی خونه؟",
+      "finglish": "key residi khune?",
+      "literalGloss": "when did you arrive home",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "کی",
+          "translit": "key",
+          "en": "when",
+          "pos": "question word"
+        },
+        {
+          "fa": "رسیدی",
+          "translit": "residi",
+          "en": "did you arrive",
+          "pos": "verb"
+        },
+        {
+          "fa": "خونه",
+          "translit": "khune",
+          "en": "home",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [
+        "کی رسیدی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "b9fb751f-e532-4a99-b813-fe9d82358c54",
+      "englishText": "I didn't understand what he said.",
+      "farsiText": "نفهمیدم چی گفت.",
+      "finglish": "nafahmidam chi goft",
+      "literalGloss": "I didn't understand what he said",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "نفهمیدم",
+          "translit": "nafahmidam",
+          "en": "I didn't understand",
+          "pos": "verb"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "گفت",
+          "translit": "goft",
+          "en": "he said",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "متوجه نشدم چی گفت."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "bc53d2fc-745f-49a0-a39c-fe545bf3ad0e",
+      "englishText": "Now I understand.",
+      "farsiText": "حالا فهمیدم.",
+      "finglish": "hâlâ fahmidam",
+      "literalGloss": "now I understood",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "حالا",
+          "translit": "hâlâ",
+          "en": "now",
+          "pos": "adverb"
+        },
+        {
+          "fa": "فهمیدم",
+          "translit": "fahmidam",
+          "en": "I understood",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "آهان، فهمیدم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "66cf6a37-98bc-4aa4-b7cd-5f2419016f99",
+      "englishText": "I asked him but he didn't answer.",
+      "farsiText": "ازش پرسیدم ولی جواب نداد.",
+      "finglish": "azash porsidam vali javâb nadâd",
+      "literalGloss": "from him I asked but didn't answer",
+      "difficulty": 2,
+      "situation": "disagreeing politely",
+      "grammarTags": [
+        "pronoun-clitic",
+        "compound-verb",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "ازش",
+          "translit": "azash",
+          "en": "from him",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "پرسیدم",
+          "translit": "porsidam",
+          "en": "I asked",
+          "pos": "verb"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "جواب نداد",
+          "translit": "javâb nadâd",
+          "en": "didn't answer",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "ازش پرسیدم اما جوابی نداد."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "6b3ec866-cfed-42de-b112-a7a5ea4fb143",
+      "englishText": "Can I ask you something?",
+      "farsiText": "می‌تونم یه چیزی ازت بپرسم؟",
+      "finglish": "mitunam ye chizi azat beporsam?",
+      "literalGloss": "can I something from you ask",
+      "difficulty": 2,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "subjunctive",
+        "pronoun-clitic",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌تونم",
+          "translit": "mitunam",
+          "en": "can I",
+          "pos": "verb"
+        },
+        {
+          "fa": "یه چیزی",
+          "translit": "ye chizi",
+          "en": "something",
+          "pos": "noun"
+        },
+        {
+          "fa": "ازت",
+          "translit": "azat",
+          "en": "from you",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "بپرسم",
+          "translit": "beporsam",
+          "en": "ask",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "یه سؤال ازت بپرسم؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "e15c5778-6201-42db-a750-7a2326dc7059",
+      "englishText": "Sit here next to me.",
+      "farsiText": "بشین اینجا کنار من.",
+      "finglish": "beshin injâ kenâr-e man",
+      "literalGloss": "sit here next to me",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "ezafe",
+        "preposition"
+      ],
+      "breakdown": [
+        {
+          "fa": "بشین",
+          "translit": "beshin",
+          "en": "sit",
+          "pos": "verb"
+        },
+        {
+          "fa": "اینجا",
+          "translit": "injâ",
+          "en": "here",
+          "pos": "adverb"
+        },
+        {
+          "fa": "کنار من",
+          "translit": "kenâr-e man",
+          "en": "next to me",
+          "pos": "preposition"
+        }
+      ],
+      "alternatives": [
+        "بیا اینجا بشین."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "d828a838-2306-4f11-9e3e-7ec2d07e6a0b",
+      "englishText": "We sat in the garden.",
+      "farsiText": "تو باغ نشستیم.",
+      "finglish": "tu bâgh neshastim",
+      "literalGloss": "in the garden we sat",
+      "difficulty": 2,
+      "situation": "the home and household objects",
+      "grammarTags": [
+        "preposition",
+        "verb-tense",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "باغ",
+          "translit": "bâgh",
+          "en": "the garden",
+          "pos": "noun"
+        },
+        {
+          "fa": "نشستیم",
+          "translit": "neshastim",
+          "en": "we sat",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "توی باغ نشستیم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "8e3da834-92d8-412e-ba87-feb89000baae",
+      "englishText": "I slept really well last night.",
+      "farsiText": "دیشب خیلی خوب خوابیدم.",
+      "finglish": "dishab kheyli khub khâbidam",
+      "literalGloss": "last night really well I slept",
+      "difficulty": 2,
+      "situation": "body, health and feeling unwell",
+      "grammarTags": [
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "دیشب",
+          "translit": "dishab",
+          "en": "last night",
+          "pos": "adverb"
+        },
+        {
+          "fa": "خیلی خوب",
+          "translit": "kheyli khub",
+          "en": "really well",
+          "pos": "adverb"
+        },
+        {
+          "fa": "خوابیدم",
+          "translit": "khâbidam",
+          "en": "I slept",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "دیشب خوابم خیلی خوب بود."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "f7eced0c-83f6-4b30-8fe8-4e17b04a3e72",
+      "englishText": "I couldn't sleep at all.",
+      "farsiText": "اصلا نتونستم بخوابم.",
+      "finglish": "aslan natunestam bekhâbam",
+      "literalGloss": "at all I couldn't sleep",
+      "difficulty": 2,
+      "situation": "body, health and feeling unwell",
+      "grammarTags": [
+        "subjunctive",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اصلاً",
+          "translit": "aslan",
+          "en": "at all",
+          "pos": "adverb"
+        },
+        {
+          "fa": "نتونستم",
+          "translit": "natunestam",
+          "en": "I couldn't",
+          "pos": "verb"
+        },
+        {
+          "fa": "بخوابم",
+          "translit": "bekhâbam",
+          "en": "sleep",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اصلا خوابم نبرد."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "c2f5102b-bc06-4e58-ae1d-f479295104ea",
+      "englishText": "We walked by the river.",
+      "farsiText": "کنار رودخونه قدم زدیم.",
+      "finglish": "kenâr-e rudkhune ghadam zadim",
+      "literalGloss": "by the river we walked",
+      "difficulty": 2,
+      "situation": "places, directions and the city",
+      "grammarTags": [
+        "compound-verb",
+        "ezafe",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "کنار رودخونه",
+          "translit": "kenâr-e rudkhune",
+          "en": "by the river",
+          "pos": "preposition"
+        },
+        {
+          "fa": "قدم زدیم",
+          "translit": "ghadam zadim",
+          "en": "we walked",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "کنار رودخونه راه رفتیم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "56adcf31-f1a9-4da9-b05c-fac510a7124c",
+      "englishText": "Let's go for a walk.",
+      "farsiText": "بریم یه کم قدم بزنیم.",
+      "finglish": "berim ye kam ghadam bezanim",
+      "literalGloss": "let's go a bit walk",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "subjunctive",
+        "compound-verb",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بریم",
+          "translit": "berim",
+          "en": "let's go",
+          "pos": "verb"
+        },
+        {
+          "fa": "یه کم",
+          "translit": "ye kam",
+          "en": "a bit",
+          "pos": "adverb"
+        },
+        {
+          "fa": "قدم بزنیم",
+          "translit": "ghadam bezanim",
+          "en": "walk",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "بریم یه دوری بزنیم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "51f96fa8-336c-44cb-9955-83b2ceef33cb",
+      "englishText": "I really liked that film.",
+      "farsiText": "اون فیلمو خیلی دوست داشتم.",
+      "finglish": "un filmo kheyli dust dâshtam",
+      "literalGloss": "that film [object] really I liked",
+      "difficulty": 2,
+      "situation": "feelings, opinions and reactions",
+      "grammarTags": [
+        "compound-verb",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "اون",
+          "translit": "un",
+          "en": "that",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "فیلمو",
+          "translit": "filmo",
+          "en": "film [object]",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "really",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دوست داشتم",
+          "translit": "dust dâshtam",
+          "en": "I liked",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "از اون فیلم خیلی خوشم اومد."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "4fa40aa8-701b-4cd4-aa3f-531e0c59f5c9",
+      "englishText": "Do you like Persian food?",
+      "farsiText": "غذای ایرانی دوست داری؟",
+      "finglish": "ghazâ-ye irâni dust dâri?",
+      "literalGloss": "Persian food do you like",
+      "difficulty": 2,
+      "situation": "food, drink and eating out",
+      "grammarTags": [
+        "compound-verb",
+        "ezafe"
+      ],
+      "breakdown": [
+        {
+          "fa": "غذای ایرانی",
+          "translit": "ghazâ-ye irâni",
+          "en": "Persian food",
+          "pos": "noun"
+        },
+        {
+          "fa": "دوست داری",
+          "translit": "dust dâri",
+          "en": "do you like",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "از غذای ایرانی خوشت میاد؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "51d8afa5-d8f4-479c-967e-fc2e97b43522",
+      "englishText": "I waited for an hour.",
+      "farsiText": "یه ساعت منتظر موندم.",
+      "finglish": "ye sâ'at montazer mundam",
+      "literalGloss": "an hour I waited",
+      "difficulty": 2,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "compound-verb",
+        "verb-tense",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یه ساعت",
+          "translit": "ye sâ'at",
+          "en": "an hour",
+          "pos": "noun"
+        },
+        {
+          "fa": "منتظر موندم",
+          "translit": "montazer mundam",
+          "en": "I waited",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "یه ساعت معطل شدم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "93b67f5e-9503-444b-99d0-2a905076b2f9",
+      "englishText": "Wait for me outside.",
+      "farsiText": "بیرون منتظرم بمون.",
+      "finglish": "birun montazeram bemun",
+      "literalGloss": "outside wait for me",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بیرون",
+          "translit": "birun",
+          "en": "outside",
+          "pos": "adverb"
+        },
+        {
+          "fa": "منتظرم بمون",
+          "translit": "montazeram bemun",
+          "en": "wait for me",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "بیرون وایسا تا بیام."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "79c76a6a-cbba-4b47-b260-34f72240bd9c",
+      "englishText": "I found my keys.",
+      "farsiText": "کلیدهامو پیدا کردم.",
+      "finglish": "kelidhâmo peydâ kardam",
+      "literalGloss": "my keys [object] I found",
+      "difficulty": 2,
+      "situation": "the home and household objects",
+      "grammarTags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "ra-marker",
+        "plural"
+      ],
+      "breakdown": [
+        {
+          "fa": "کلیدهامو",
+          "translit": "kelidhâmo",
+          "en": "my keys [object]",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "پیدا کردم",
+          "translit": "peydâ kardam",
+          "en": "I found",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "کلیدام رو پیدا کردم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "fa3f3d5b-46e8-44a8-98ef-9f6a83adb42a",
+      "englishText": "Did you find what you wanted?",
+      "farsiText": "چیزی که می‌خواستی پیدا کردی؟",
+      "finglish": "chizi ke mikhâsti peydâ kardi?",
+      "literalGloss": "the thing that you wanted did you find",
+      "difficulty": 2,
+      "situation": "clothes, sizes and shopping",
+      "grammarTags": [
+        "compound-verb",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "چیزی که",
+          "translit": "chizi ke",
+          "en": "the thing that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "می‌خواستی",
+          "translit": "mikhâsti",
+          "en": "you wanted",
+          "pos": "verb"
+        },
+        {
+          "fa": "پیدا کردی",
+          "translit": "peydâ kardi",
+          "en": "did you find",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "اونی که می‌خواستی رو پیدا کردی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "2d2fa5ed-ab3d-47be-9a83-a18121edd35f",
+      "englishText": "Open the window please.",
+      "farsiText": "لطفا پنجره رو باز کن.",
+      "finglish": "lotfan panjere ro bâz kon",
+      "literalGloss": "please the window [object] open",
+      "difficulty": 2,
+      "situation": "the home and household objects",
+      "grammarTags": [
+        "compound-verb",
+        "ra-marker",
+        "formality"
+      ],
+      "breakdown": [
+        {
+          "fa": "لطفاً",
+          "translit": "lotfan",
+          "en": "please",
+          "pos": "adverb"
+        },
+        {
+          "fa": "پنجره",
+          "translit": "panjere",
+          "en": "the window",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "باز کن",
+          "translit": "bâz kon",
+          "en": "open",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "میشه پنجره رو باز کنی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "64ee30b6-bda1-49f4-887f-7746eeaa6ef1",
+      "englishText": "He opened the box.",
+      "farsiText": "جعبه رو باز کرد.",
+      "finglish": "ja'be ro bâz kard",
+      "literalGloss": "the box [object] opened",
+      "difficulty": 2,
+      "situation": "the home and household objects",
+      "grammarTags": [
+        "compound-verb",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "جعبه",
+          "translit": "ja'be",
+          "en": "the box",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "باز کرد",
+          "translit": "bâz kard",
+          "en": "opened",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "در جعبه رو باز کرد."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "b73d4a62-b818-462e-b769-b1904f203b37",
+      "englishText": "I closed my eyes.",
+      "farsiText": "چشمامو بستم.",
+      "finglish": "cheshmâmo bastam",
+      "literalGloss": "my eyes [object] I closed",
+      "difficulty": 2,
+      "situation": "body, health and feeling unwell",
+      "grammarTags": [
+        "pronoun-clitic",
+        "ra-marker",
+        "plural"
+      ],
+      "breakdown": [
+        {
+          "fa": "چشمامو",
+          "translit": "cheshmâmo",
+          "en": "my eyes [object]",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "بستم",
+          "translit": "bastam",
+          "en": "I closed",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "چشمام رو بستم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "0b3367e7-6968-418f-9ce8-c4a1fb4387f6",
+      "englishText": "They closed the shop early.",
+      "farsiText": "مغازه رو زود بستن.",
+      "finglish": "maghâze ro zud bastan",
+      "literalGloss": "the shop [object] early they closed",
+      "difficulty": 2,
+      "situation": "clothes, sizes and shopping",
+      "grammarTags": [
+        "ra-marker",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "مغازه",
+          "translit": "maghâze",
+          "en": "the shop",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "زود",
+          "translit": "zud",
+          "en": "early",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بستن",
+          "translit": "bastan",
+          "en": "they closed",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "مغازه رو زودتر تعطیل کردن."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "ea0df71d-63e6-4099-b608-f6396ee7d835",
+      "englishText": "When did you start?",
+      "farsiText": "کی شروع کردی؟",
+      "finglish": "key shoru' kardi?",
+      "literalGloss": "when did you start",
+      "difficulty": 2,
+      "situation": "work, study and daily routine",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "کی",
+          "translit": "key",
+          "en": "when",
+          "pos": "question word"
+        },
+        {
+          "fa": "شروع کردی",
+          "translit": "shoru' kardi",
+          "en": "did you start",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "از کی شروع کردی؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "52e1303e-dd0d-4122-aee1-c8d83510aa50",
+      "englishText": "Let's start.",
+      "farsiText": "بیا شروع کنیم.",
+      "finglish": "biyâ shoru' konim",
+      "literalGloss": "come let's start",
+      "difficulty": 2,
+      "situation": "work, study and daily routine",
+      "grammarTags": [
+        "compound-verb",
+        "subjunctive"
+      ],
+      "breakdown": [
+        {
+          "fa": "بیا",
+          "translit": "biyâ",
+          "en": "come",
+          "pos": "verb"
+        },
+        {
+          "fa": "شروع کنیم",
+          "translit": "shoru' konim",
+          "en": "let's start",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "شروع کنیم؟"
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "aa477402-5c04-4016-b6c7-cedff6c77113",
+      "englishText": "I finished my homework.",
+      "farsiText": "مشقمو تموم کردم.",
+      "finglish": "mashgamo tamum kardam",
+      "literalGloss": "my homework [object] I finished",
+      "difficulty": 2,
+      "situation": "work, study and daily routine",
+      "grammarTags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "ra-marker",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "مشقمو",
+          "translit": "mashgamo",
+          "en": "my homework [object]",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "تموم کردم",
+          "translit": "tamum kardam",
+          "en": "I finished",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "تکالیفمو تموم کردم."
+      ],
+      "source": "handwritten"
+    },
+    {
+      "id": "9a79a58d-5011-4831-a5d8-764a5ad00910",
+      "englishText": "Finish your food.",
+      "farsiText": "غذاتو تموم کن.",
+      "finglish": "ghazâto tamum kon",
+      "literalGloss": "your food [object] finish",
+      "difficulty": 2,
+      "situation": "food, drink and eating out",
+      "grammarTags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "ra-marker",
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "غذاتو",
+          "translit": "ghazâto",
+          "en": "your food [object]",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "تموم کن",
+          "translit": "tamum kon",
+          "en": "finish",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "غذات رو تموم کن."
+      ],
+      "source": "handwritten"
     }
   ]
 }

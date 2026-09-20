@@ -32,7 +32,7 @@ async function boot() {
   // an installed PWA with granted persistence is far less likely to lose it.
   db.requestPersistence();
 
-  await loadSeedIfEmpty();
+  await loadSeedIfNeeded();
   state.speechOK = await speech.isSpeechAvailable();
 
   bindTabs();
@@ -44,20 +44,47 @@ async function boot() {
   registerServiceWorker();
 }
 
-/** Load the bundled seed bank on first run, so the app works offline immediately. */
-async function loadSeedIfEmpty() {
-  if ((await db.count(db.STORE.sentences)) > 0) return;
+/**
+ * Load the bundled deck, and merge in anything added since.
+ *
+ * Seeding only when the store was empty meant an existing learner never
+ * received new sentences: the deck grew from 400 to 730 and their device kept
+ * showing 400, silently, forever. Matching on farsiText rather than id because
+ * ids are minted per device.
+ */
+async function loadSeedIfNeeded() {
   try {
     const response = await fetch('data/seed_sentences.json');
     if (!response.ok) return;
     const bundle = await response.json();
-    const rows = (bundle.sentences ?? []).map((s) => ({
-      id: crypto.randomUUID(),
-      ...s,
-      source: 'seed',
-      createdAt: Date.now(),
-    }));
-    await db.putMany(db.STORE.sentences, rows);
+    const incoming = bundle.sentences ?? [];
+    if (!incoming.length) return;
+
+    const existing = await db.getAll(db.STORE.sentences);
+    const seen = new Set(existing.map((s) => s.farsiText));
+
+    const fresh = incoming
+      .filter((s) => !seen.has(s.farsiText))
+      .map((s) => ({
+        id: crypto.randomUUID(),
+        ...s,
+        kind: s.kind ?? 'sentence',
+        source: 'seed',
+        createdAt: Date.now(),
+      }));
+
+    if (fresh.length) await db.putMany(db.STORE.sentences, fresh);
+
+    // Annotations (breakdown, alternatives) are added to sentences that already
+    // exist on device, so merge those onto the rows we already hold.
+    const byText = new Map(incoming.map((s) => [s.farsiText, s]));
+    const updated = [];
+    for (const row of existing) {
+      const source = byText.get(row.farsiText);
+      if (!source?.breakdown || row.breakdown) continue;
+      updated.push({ ...row, breakdown: source.breakdown, alternatives: source.alternatives ?? [] });
+    }
+    if (updated.length) await db.putMany(db.STORE.sentences, updated);
   } catch {
     // Not fatal — the Today screen surfaces an empty deck and Sync can fill it.
   }
