@@ -73,10 +73,7 @@ export async function progress(level) {
     .sort((a, b) => b.createdAt - a.createdAt)
     .slice(0, GATE.accuracyWindow);
 
-  const correct = recent.filter((a) => {
-    if (a.aiVerdict) return ['correct', 'minor'].includes(a.aiVerdict);
-    return a.selfRating === 'pass';
-  }).length;
+  const correct = recent.filter((a) => a.selfRating === 'pass').length;
   const rate = recent.length ? correct / recent.length : 0;
 
   // Breadth cannot exceed what exists: a level with 40 cards can never reach a

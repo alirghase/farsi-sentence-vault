@@ -41,10 +41,6 @@
 
     </div>
 
-    <div class="sync-bar" id="sync-bar" hidden>
-      <p class="sync-status" id="sync-status"></p>
-      <button id="btn-sync" data-t="today.sync">Sync</button>
-    </div>
   </section>
 
   <!-- Weak spots -->
@@ -52,7 +48,6 @@
     <header class="screen-head"><h1 data-t="tab.progress">Progress</h1></header>
     <div class="list">
       <div class="ledger" id="today-stats">
-        <div class="ledger-row" id="sync-row"><span data-t="today.synced">Synced</span><b id="last-sync">never</b></div>
         <div class="ledger-row"><span data-t="today.target">Target</span><b id="target-progress">0 / 40</b></div>
         <div class="ledger-row"><span data-t="today.streak">Streak</span><b id="streak">0 days</b></div>
         <div class="ledger-row"><span data-t="today.held">Sentences</span><b id="count-held">0</b></div>
@@ -69,46 +64,18 @@
     </div>
   </section>
 
-  <!-- Results -->
-  <section class="screen" id="screen-results">
-    <header class="screen-head"><h1 data-t="tab.results">Results</h1></header>
-    <div class="list" id="results-list"></div>
-  </section>
-
   <!-- Settings -->
   <section class="screen" id="screen-settings">
     <header class="screen-head"><h1 data-t="tab.settings">Settings</h1></header>
     <div class="list settings">
 
       <div class="group">
-        <h2 data-t="settings.backend">Backend</h2>
-        <label>Service URL
-          <input type="url" id="set-url" placeholder="https://….run.app"
-                 autocomplete="off" autocapitalize="off" spellcheck="false">
-        </label>
-        <label>Bearer token
-          <input type="password" id="set-token" autocomplete="off">
-        </label>
-        <button id="btn-health">Test connection</button>
-        <p class="hint" id="health-result"></p>
-        <p class="hint">From <code>terraform output service_url</code>. Practising offline needs neither — only syncing does.</p>
-      </div>
-
-      <div class="group">
         <h2 data-t="settings.practice">Practice</h2>
-        <label>Daily batch size <b id="batch-value">100</b>
-          <input type="range" id="set-batch" min="10" max="200" step="10">
-        </label>
         <label>Daily target <b id="target-value">40</b>
           <input type="range" id="set-target" min="10" max="150" step="5">
         </label>
-        <label>Produce Farsi <b id="w-prod-value">60%</b>
-          <input type="range" id="w-prod" min="20" max="100" step="5">
-        </label>
-        <label>Read Farsi <b id="w-read-value">20%</b>
-          <input type="range" id="w-read" min="0" max="60" step="5">
-        </label>
-        <p class="hint" id="weights-hint">Producing Farsi is the skill that freezes; recognising it is easier. Weighted to production.</p>
+        <p class="hint">Cards a day that counts as done. One you clear most days
+        builds the habit; one you miss erodes it.</p>
       </div>
 
       <div class="group">
@@ -136,25 +103,9 @@
       </div>
 
       <div class="group">
-        <h2 data-t="settings.storage">Storage</h2>
-        <div class="kv" id="storage-info"></div>
-      </div>
-
-      <div class="group" id="backup-group" hidden>
-        <h2 data-t="settings.backup">Backup</h2>
-        <button id="btn-restore">Restore from backend</button>
-        <p class="hint" id="restore-result"></p>
-        <p class="hint">Every sync backs up your review schedule. Restore pulls it
-        back onto this device if storage was cleared. Anything practised since the
-        last sync is kept — local progress always wins.</p>
-      </div>
-
-      <div class="group">
         <h2>What leaves this device</h2>
-        <p class="hint">Only when you tap Sync, and only: your typed or recorded
-        answers, which sentence they were for, your self-ratings, and your review
-        schedule. Recordings are deleted once graded. Nothing is sent while you
-        practise. With no backend configured, nothing leaves at all.</p>
+        <p class="hint">Nothing. There is no server and no account. Every
+        sentence, rating and schedule stays in this browser.</p>
       </div>
 
     </div>
@@ -165,7 +116,6 @@
 <nav class="tabs">
   <button data-screen="today" class="is-active" data-t="tab.today">Today</button>
   <button data-screen="weak" data-t="tab.progress">Progress</button>
-  <button data-screen="results" id="tab-results" data-t="tab.results" hidden>Results</button>
   <button data-screen="settings" data-t="tab.settings">Settings</button>
 </nav>
 

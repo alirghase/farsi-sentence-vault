@@ -13,7 +13,6 @@ export const STRINGS = {
   // Tabs and screen titles
   'tab.today': 'امروز',
   'tab.progress': 'پیشرفت',
-  'tab.results': 'نتایج',
   'tab.settings': 'تنظیمات',
 
   // Today
@@ -21,17 +20,12 @@ export const STRINGS = {
   'today.new': 'جدید',
   'today.target': 'هدف امروز',
   'today.held': 'جمله‌ها',
-  'today.synced': 'همگام‌سازی',
   'today.level': 'سطح',
   'today.streak': 'پیاپی',
   'today.start': 'شروع',
   'today.nothing': 'چیزی نمونده',
-  'today.sync': 'همگام‌سازی',
   'today.empty': 'هنوز جمله‌ای نیست.',
-  'today.never': 'هنوز',
   'today.day': 'روز',
-  'today.days': 'روز',
-  'today.waiting': 'منتظر بررسی',
   'today.session': 'جلسه',
   'today.cards': 'کارت',
   'today.right': 'درست',
@@ -58,25 +52,14 @@ export const STRINGS = {
   'progress.empty': 'تمرین کن تا ضعف‌هات اینجا بیاد.',
 
   // Settings
-  'settings.backend': 'سرور',
   'settings.practice': 'تمرین',
   'settings.audio': 'صدا',
   'settings.level': 'سطح',
-  'settings.storage': 'حافظه',
-  'settings.backup': 'پشتیبان',
-  'settings.privacy': 'چی از دستگاه بیرون می‌ره',
   'settings.dailyTarget': 'هدف روزانه',
-  'settings.produce': 'فارسی بگو',
-  'settings.read': 'فارسی بخون',
-  'settings.hear': 'فارسی بشنو',
-  'settings.speak': 'جواب رو بلند بخون',
   'settings.sound': 'صدا موقع رد شدن',
   'settings.currentLevel': 'سطح فعلی',
 
   // Results
-  'results.empty': 'جوابی تایپ یا ضبط کن، بعد همگام‌سازی کن.',
-  'results.spoken': 'گفتاری',
-  'results.typed': 'تایپی',
 };
 
 /**

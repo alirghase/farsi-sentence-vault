@@ -118,11 +118,8 @@ export async function clear(store) {
 // --- meta / settings -------------------------------------------------------
 
 const SETTING_DEFAULTS = {
-  backendURL: '',
-  apiToken: '',
   dailyBatchSize: 100,
   speakEnabled: true,
-  lastSyncAt: null,
   // CEFR progression. New cards come only from here; reviews come from
   // everywhere. Advanced by passing the gate, or manually from Settings.
   currentLevel: 'A1',
@@ -131,7 +128,6 @@ const SETTING_DEFAULTS = {
   // a target you clear most days builds the habit; one you miss erodes it.
   dailyTarget: 40,
   soundEnabled: true,
-  directionWeights: { enToFa: 0.7, faToEn: 0.3 },
 };
 
 export async function getSettings() {
