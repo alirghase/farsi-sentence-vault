@@ -125,16 +125,22 @@ async function refreshToday() {
   $('level-now').textContent = level;
   renderPassPanel(gate);
 
+  const streak = await session.streak();
+  $('streak').textContent = streak.days === 1 ? '1 day' : `${streak.days} days`;
+  $('streak').classList.toggle('is-zero', streak.days === 0);
+
+  const target = state.settings.dailyTarget;
+  $('target-progress').textContent = `${counts.reviewedToday} / ${target}`;
+  $('target-progress').classList.toggle('is-hit', counts.reviewedToday >= target);
+
   $('count-due').textContent = counts.due;
   $('count-new').textContent = counts.new;
-  $('count-done').textContent = counts.reviewedToday;
   $('count-held').textContent = counts.sentenceCount;
   $('last-sync').textContent = state.settings.lastSyncAt
     ? relativeTime(state.settings.lastSyncAt)
     : 'never';
 
-  for (const [id, value] of [['count-due', counts.due], ['count-new', counts.new],
-                             ['count-done', counts.reviewedToday]]) {
+  for (const [id, value] of [['count-due', counts.due], ['count-new', counts.new]]) {
     $(id).classList.toggle('is-zero', value === 0);
   }
 
@@ -256,6 +262,9 @@ function bindPractice() {
   $('btn-speak').addEventListener('click', () => {
     speech.speak(currentCard().sentence.farsiText);
   });
+  $('btn-listen').addEventListener('click', () => {
+    speech.speak(session.audioFor(currentCard().sentence));
+  });
 }
 
 async function startSession() {
@@ -265,8 +274,9 @@ async function startSession() {
   const limit = Math.min(state.settings.dailyBatchSize, Math.max(counts.total, 1));
   state.queue = await session.build({
     limit,
-    productionRatio: state.settings.productionRatio,
+    weights: state.settings.directionWeights,
     level: state.settings.currentLevel,
+    speechAvailable: state.speechOK,
   });
   if (!state.queue.length) return;
 
@@ -292,9 +302,17 @@ function renderCard() {
     `${session.directionLabel(card.direction)} · L${card.sentence.difficulty}` +
     (card.review.lapses > 0 ? ` · ${card.review.lapses} lapse${card.review.lapses === 1 ? '' : 's'}` : '');
 
+  const listening = session.isListening(card.direction);
   const prompt = $('card-prompt');
   prompt.textContent = session.promptFor(card.sentence, card.direction);
   prompt.classList.toggle('rtl', card.direction === 'faToEn');
+  prompt.hidden = listening;
+
+  // A listening card must show no Persian text — revealing it would turn the
+  // exercise back into reading.
+  $('btn-listen').hidden = !listening;
+  $('listen-hint').hidden = !listening;
+  if (listening) speech.speak(session.audioFor(card.sentence));
 
   const typed = $('card-typed');
   typed.value = '';
@@ -350,8 +368,17 @@ async function reveal() {
   answer.textContent = session.answerFor(card.sentence, card.direction);
   answer.classList.toggle('rtl', card.direction === 'enToFa');
 
+  // After a listening card is answered, show the Persian that was spoken —
+  // hearing it without ever seeing it leaves the spelling unlearned.
+  const heard = $('card-prompt');
+  if (session.isListening(card.direction)) {
+    heard.textContent = card.sentence.farsiText;
+    heard.classList.add('rtl');
+    heard.hidden = false;
+  }
+
   $('answer-finglish').textContent = card.sentence.finglish ?? '';
-  $('answer-gloss').textContent = card.sentence.literalGloss ?? '';
+  renderBreakdown(card.sentence);
   const tags = (card.sentence.grammarTags ?? []).map(tagTitle);
   $('answer-tags').className = 'taglist';
   $('answer-tags').textContent = tags.join(' · ');
@@ -362,6 +389,44 @@ async function reveal() {
   $('input-row').hidden = true;
 
   renderRatings(card);
+}
+
+/**
+ * Word-by-word breakdown, plus other acceptable renderings.
+ *
+ * The breakdown supersedes the flat literal gloss, which actively misleads on
+ * compound verbs: "بلند می‌شه" word-by-word reads "tall becomes" rather than
+ * "gets up". Units arrive already grouped, so a compound verb is one row.
+ *
+ * Alternatives matter because self-rating cannot otherwise distinguish "wrong"
+ * from "said it a different valid way".
+ */
+function renderBreakdown(sentence) {
+  const units = sentence.breakdown ?? [];
+  const alts = sentence.alternatives ?? [];
+
+  // Fall back to the old gloss for sentences not yet annotated.
+  $('answer-gloss').textContent = units.length ? '' : (sentence.literalGloss ?? '');
+  $('answer-gloss').hidden = units.length > 0;
+
+  $('answer-breakdown').hidden = units.length === 0;
+  $('answer-breakdown').innerHTML = units.map((u) => `
+    <div class="unit">
+      <div class="unit-top">
+        <span class="unit-fa rtl">${escapeHtml(u.fa)}</span>
+        <span class="unit-translit">${escapeHtml(u.translit)}</span>
+      </div>
+      <div class="unit-bot">
+        <span class="unit-en">${escapeHtml(u.en)}</span>
+        <span class="unit-pos">${escapeHtml(u.pos)}</span>
+      </div>
+    </div>`).join('');
+
+  $('answer-alts').hidden = alts.length === 0;
+  $('answer-alts').innerHTML = alts.length
+    ? `<p class="alts-head">Also correct</p>` +
+      alts.map((a) => `<p class="alt rtl">${escapeHtml(a)}</p>`).join('')
+    : '';
 }
 
 function renderRatings(card) {
@@ -569,10 +634,21 @@ function bindSettings() {
     $('batch-value').textContent = e.target.value;
     state.settings = await db.saveSettings({ dailyBatchSize: Number(e.target.value) });
   });
-  $('set-ratio').addEventListener('input', async (e) => {
-    $('ratio-value').textContent = `${e.target.value}%`;
-    state.settings = await db.saveSettings({ productionRatio: Number(e.target.value) / 100 });
+  $('set-target').addEventListener('input', async (e) => {
+    $('target-value').textContent = e.target.value;
+    state.settings = await db.saveSettings({ dailyTarget: Number(e.target.value) });
   });
+
+  // The three weights are normalised at selection time, so they need not sum to
+  // 100 — the labels show raw values and the builder handles the proportions.
+  for (const [id, key] of [['w-prod', 'enToFa'], ['w-read', 'faToEn'], ['w-listen', 'listenToEn']]) {
+    $(id).addEventListener('input', async (e) => {
+      $(`${id}-value`).textContent = `${e.target.value}%`;
+      state.settings = await db.saveSettings({
+        directionWeights: { ...state.settings.directionWeights, [key]: Number(e.target.value) / 100 },
+      });
+    });
+  }
   $('set-speak').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
   });
@@ -613,8 +689,19 @@ async function renderSettings() {
   $('set-token').value = s.apiToken;
   $('set-batch').value = s.dailyBatchSize;
   $('batch-value').textContent = s.dailyBatchSize;
-  $('set-ratio').value = Math.round(s.productionRatio * 100);
-  $('ratio-value').textContent = `${Math.round(s.productionRatio * 100)}%`;
+  $('set-target').value = s.dailyTarget;
+  $('target-value').textContent = s.dailyTarget;
+  const w = s.directionWeights;
+  for (const [id, key] of [['w-prod', 'enToFa'], ['w-read', 'faToEn'], ['w-listen', 'listenToEn']]) {
+    $(id).value = Math.round((w[key] ?? 0) * 100);
+    $(`${id}-value`).textContent = `${Math.round((w[key] ?? 0) * 100)}%`;
+  }
+  // Hide the listening weight entirely when the device has no Persian voice —
+  // a slider that changes nothing is worse than no slider.
+  $('listen-weight-row').hidden = !state.speechOK;
+  $('weights-hint').textContent = state.speechOK
+    ? 'Producing Farsi is the skill that freezes; recognising it is easier.'
+    : 'Hearing is unavailable: no Persian voice is installed on this device.';
   $('set-speak').checked = s.speakEnabled;
 
   $('set-level').innerHTML = levels.LEVELS

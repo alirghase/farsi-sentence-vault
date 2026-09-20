@@ -4,10 +4,32 @@ import * as db from './db.js';
 import * as SM2 from './sm2.js';
 import { idsForLevel } from './levels.js';
 
-export const DIRECTIONS = ['enToFa', 'faToEn'];
+// enToFa is production (what freezes), faToEn is reading, listenToEn is hearing.
+// Listening is a separate direction rather than a mode because a listening card
+// and a reading card of the same sentence are different skills and must
+// schedule independently — which ReviewState's sentenceId::direction key
+// already supports.
+export const DIRECTIONS = ['enToFa', 'faToEn', 'listenToEn'];
+
+/**
+ * Share of new cards per direction. Weighted to production because producing
+ * Farsi is the skill that freezes; reading and hearing are easier.
+ */
+export const DEFAULT_WEIGHTS = { enToFa: 0.6, faToEn: 0.2, listenToEn: 0.2 };
+
+/** Directions usable right now. Listening needs a Persian voice on the device. */
+export function availableDirections(speechAvailable) {
+  return speechAvailable ? DIRECTIONS : DIRECTIONS.filter((d) => d !== 'listenToEn');
+}
 
 export function directionLabel(direction) {
-  return direction === 'enToFa' ? 'EN → FA' : 'FA → EN';
+  return { enToFa: 'EN → FA', faToEn: 'FA → EN', listenToEn: 'LISTEN → EN' }[direction]
+    ?? direction;
+}
+
+/** True when the prompt is audio rather than text. */
+export function isListening(direction) {
+  return direction === 'listenToEn';
 }
 
 export function reviewKey(sentenceId, direction) {
@@ -15,11 +37,19 @@ export function reviewKey(sentenceId, direction) {
 }
 
 export function promptFor(sentence, direction) {
+  // Listening shows no text at all — revealing the Persian would turn it back
+  // into a reading exercise.
+  if (direction === 'listenToEn') return '';
   return direction === 'enToFa' ? sentence.englishText : sentence.farsiText;
 }
 
 export function answerFor(sentence, direction) {
   return direction === 'enToFa' ? sentence.farsiText : sentence.englishText;
+}
+
+/** The text spoken aloud for a listening prompt. */
+export function audioFor(sentence) {
+  return sentence.farsiText;
 }
 
 /**
@@ -103,13 +133,47 @@ export async function history(days = 14) {
 }
 
 /**
+ * Consecutive days of practice, counting back from today.
+ *
+ * Yesterday still counts as alive: a streak that dies at midnight punishes you
+ * for the session you are about to do, which is exactly backwards for the habit
+ * this is meant to support.
+ */
+export async function streak(now = Date.now()) {
+  const rows = await history(400);
+  if (!rows.length) return { days: 0, practisedToday: false };
+
+  const startOfDay = (ms) => { const d = new Date(ms); d.setHours(0, 0, 0, 0); return d.getTime(); };
+  const today = startOfDay(now);
+  const days = new Set(rows.map((r) => startOfDay(r.date)));
+
+  const practisedToday = days.has(today);
+  let cursor = practisedToday ? today : today - 86400000;
+  if (!days.has(cursor)) return { days: 0, practisedToday };
+
+  let count = 0;
+  while (days.has(cursor)) {
+    count += 1;
+    cursor -= 86400000;
+  }
+  return { days: count, practisedToday };
+}
+
+/**
  * Build a session.
  *
  * Review states are created lazily: materialising two rows for every sentence
  * up front would mean 800 rows for a 400-sentence bank the learner has not
  * touched yet.
  */
-export async function build({ limit, productionRatio = 0.7, level = null, now = Date.now() }) {
+export async function build({
+  limit,
+  weights = DEFAULT_WEIGHTS,
+  level = null,
+  speechAvailable = false,
+  kinds = null,
+  now = Date.now(),
+}) {
   const [sentences, reviews] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
@@ -120,12 +184,16 @@ export async function build({ limit, productionRatio = 0.7, level = null, now = 
   // New cards are restricted to the current level; due reviews are not, so
   // earlier levels keep resurfacing on their own schedule.
   const levelIds = level ? idsForLevel(sentences, level) : null;
+  const directions = availableDirections(speechAvailable);
 
   const due = [];
   const fresh = [];
 
   for (const sentence of sentences) {
-    for (const direction of DIRECTIONS) {
+    // A word card and a sentence card are both rows here; `kinds` lets a
+    // session be restricted to one without a second store.
+    if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) continue;
+    for (const direction of directions) {
       const key = reviewKey(sentence.id, direction);
       const existing = byKey.get(key);
       if (existing) {
@@ -148,20 +216,32 @@ export async function build({ limit, productionRatio = 0.7, level = null, now = 
   due.sort((a, b) => a.review.dueDate - b.review.dueDate);
   shuffle(fresh);
 
-  const chosen = select(due, fresh, limit, productionRatio);
+  const chosen = select(due, fresh, limit, weights, directions);
   // A session that front-loads every review and back-loads every new card feels
   // like two different activities.
   shuffle(chosen);
   return chosen;
 }
 
-/** Honour the EN→FA ratio while filling, preferring due cards over new ones. */
-function select(due, fresh, limit, productionRatio) {
-  const ratio = Math.min(Math.max(productionRatio, 0), 1);
-  const remaining = {
-    enToFa: Math.round(limit * ratio),
-    faToEn: limit - Math.round(limit * ratio),
-  };
+/**
+ * Fill the session honouring the direction weights, preferring due cards.
+ *
+ * Weights are normalised over the directions actually available, so removing
+ * listening (no voice installed) redistributes its share rather than leaving
+ * the session short.
+ */
+function select(due, fresh, limit, weights, directions) {
+  const total = directions.reduce((sum, d) => sum + (weights[d] ?? 0), 0) || 1;
+
+  const remaining = {};
+  let allocated = 0;
+  directions.forEach((d, i) => {
+    const share = i === directions.length - 1
+      ? limit - allocated                       // last one absorbs the rounding
+      : Math.round((limit * (weights[d] ?? 0)) / total);
+    remaining[d] = Math.max(0, share);
+    allocated += remaining[d];
+  });
 
   const chosen = [];
   const taken = new Set();
@@ -169,7 +249,7 @@ function select(due, fresh, limit, productionRatio) {
   for (const pool of [due, fresh]) {
     for (const card of pool) {
       if (chosen.length >= limit) break;
-      if (remaining[card.direction] <= 0) continue;
+      if ((remaining[card.direction] ?? 0) <= 0) continue;
       chosen.push(card);
       taken.add(cardId(card));
       remaining[card.direction] -= 1;
@@ -177,8 +257,8 @@ function select(due, fresh, limit, productionRatio) {
   }
 
   // If one direction ran dry, backfill rather than returning a short session.
-  // Backfill draws from the same two pools, which are already gated, so it
-  // cannot reintroduce off-level material.
+  // Both pools are already level- and kind-filtered, so this cannot reintroduce
+  // off-level material.
   if (chosen.length < limit) {
     for (const pool of [due, fresh]) {
       for (const card of pool) {

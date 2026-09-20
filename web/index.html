@@ -24,10 +24,11 @@
       <div class="ledger" id="counts">
         <div class="ledger-row lead"><span>Due</span><b id="count-due">0</b></div>
         <div class="ledger-row lead"><span>New</span><b id="count-new">0</b></div>
-        <div class="ledger-row"><span>Reviewed today</span><b id="count-done">0</b></div>
+        <div class="ledger-row"><span>Today&rsquo;s target</span><b id="target-progress">0 / 40</b></div>
         <div class="ledger-row"><span>Sentences held</span><b id="count-held">0</b></div>
         <div class="ledger-row"><span>Last synced</span><b id="last-sync">never</b></div>
         <div class="ledger-row lead"><span>Level</span><b id="level-now">A1</b></div>
+        <div class="ledger-row"><span>Streak</span><b id="streak">0 days</b></div>
       </div>
 
       <p class="empty" id="today-empty" hidden>
@@ -96,10 +97,19 @@
         <label>Daily batch size <b id="batch-value">100</b>
           <input type="range" id="set-batch" min="10" max="200" step="10">
         </label>
-        <label>English → Farsi <b id="ratio-value">70%</b>
-          <input type="range" id="set-ratio" min="30" max="100" step="5">
+        <label>Daily target <b id="target-value">40</b>
+          <input type="range" id="set-target" min="10" max="150" step="5">
         </label>
-        <p class="hint">Producing Farsi is the skill that freezes; recognising it is easier. Weighted to production.</p>
+        <label>Produce Farsi <b id="w-prod-value">60%</b>
+          <input type="range" id="w-prod" min="20" max="100" step="5">
+        </label>
+        <label>Read Farsi <b id="w-read-value">20%</b>
+          <input type="range" id="w-read" min="0" max="60" step="5">
+        </label>
+        <label id="listen-weight-row">Hear Farsi <b id="w-listen-value">20%</b>
+          <input type="range" id="w-listen" min="0" max="60" step="5">
+        </label>
+        <p class="hint" id="weights-hint">Producing Farsi is the skill that freezes; recognising it is easier. Weighted to production.</p>
       </div>
 
       <div class="group">
@@ -167,6 +177,8 @@
   <div class="card-scroll">
     <p class="badge" id="card-badge"></p>
     <p class="prompt" id="card-prompt"></p>
+    <button id="btn-listen" class="listen-prompt" hidden>Play &#9654;</button>
+    <p class="hint" id="listen-hint" hidden>Listen, then say the English.</p>
 
     <textarea id="card-typed" class="typed" rows="2" hidden
               autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
@@ -178,6 +190,8 @@
       </div>
       <p class="finglish" id="answer-finglish"></p>
       <p class="gloss" id="answer-gloss"></p>
+      <div class="breakdown" id="answer-breakdown" hidden></div>
+      <div class="alts" id="answer-alts" hidden></div>
       <p class="tags" id="answer-tags"></p>
     </div>
   </div>

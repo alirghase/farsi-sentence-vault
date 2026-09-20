@@ -277,3 +277,108 @@ def grading_user(attempts: list[dict]) -> str:
         f"Grade these {len(attempts)} attempts. Return one entry per attemptId, "
         "in the same order.\n\n" + "\n\n".join(blocks)
     )
+
+# ---------------------------------------------------------------------------
+# Word-by-word breakdown and acceptable alternatives
+# ---------------------------------------------------------------------------
+
+# Closed set, for the same reason the error tags are closed: free-form labels
+# fragment and stop being groupable or stylable.
+PARTS_OF_SPEECH = [
+    "noun",
+    "verb",
+    "compound verb",
+    "adjective",
+    "adverb",
+    "pronoun",
+    "attached pronoun",
+    "preposition",
+    "question word",
+    "conjunction",
+    "number",
+    "particle",
+    "expression",
+]
+
+
+def breakdown_system() -> str:
+    return f"""\
+You annotate Persian sentences for an English-speaking learner, so they can see
+which Persian word carries which part of the English meaning.
+
+{REGISTER_RULES}
+
+For each sentence produce two things.
+
+1. "breakdown": the sentence split into meaning units, in Persian word order.
+
+   UNIT RULES - these matter more than anything else:
+   - A COMPOUND VERB IS ONE UNIT. Persian builds most verbs as noun + light
+     verb, and splitting them produces nonsense. "بلند می‌شه" is one unit
+     meaning "gets up" - never "tall" + "becomes". Likewise "زنگ می‌زنم" is
+     "I call", not "bell" + "I hit"; "دوست دارم" is "I like", not "friend" +
+     "I have".
+   - An attached pronoun stays with its host: "خواهرت" is one unit, "your
+     sister". Tag it "attached pronoun" when the clitic is the point.
+   - A preposition plus its pronoun is one unit: "بهش" = "to him/her".
+   - Ezâfe chains that form one idea stay together: "هوای تهران" = "Tehran's
+     weather".
+   - Otherwise split at word boundaries.
+
+   Each unit has:
+     fa        the Persian, exactly as it appears in the sentence
+     translit  the same transliteration scheme as elsewhere
+     en        what this unit contributes in English, in plain words
+     pos       ONE of: {", ".join(PARTS_OF_SPEECH)}
+
+2. "alternatives": one or two OTHER natural ways a native speaker could say the
+   same English sentence, in the same spoken register. These exist so a learner
+   whose answer differs from the reference can tell whether they were actually
+   wrong. If the sentence has no genuinely different natural rendering, return
+   an empty list rather than inventing a clumsy one.
+"""
+
+
+BREAKDOWN_SCHEMA = {
+    "type": "OBJECT",
+    "properties": {
+        "items": {
+            "type": "ARRAY",
+            "items": {
+                "type": "OBJECT",
+                "properties": {
+                    "id": {"type": "STRING"},
+                    "breakdown": {
+                        "type": "ARRAY",
+                        "items": {
+                            "type": "OBJECT",
+                            "properties": {
+                                "fa": {"type": "STRING"},
+                                "translit": {"type": "STRING"},
+                                "en": {"type": "STRING"},
+                                "pos": {"type": "STRING", "enum": PARTS_OF_SPEECH},
+                            },
+                            "required": ["fa", "translit", "en", "pos"],
+                            "propertyOrdering": ["fa", "translit", "en", "pos"],
+                        },
+                    },
+                    "alternatives": {"type": "ARRAY", "items": {"type": "STRING"}},
+                },
+                "required": ["id", "breakdown", "alternatives"],
+                "propertyOrdering": ["id", "breakdown", "alternatives"],
+            },
+        }
+    },
+    "required": ["items"],
+}
+
+
+def breakdown_user(sentences: list[dict]) -> str:
+    blocks = [
+        f"id: {s['id']}\n  english: {s['englishText']}\n  persian: {s['farsiText']}"
+        for s in sentences
+    ]
+    return (
+        f"Annotate these {len(sentences)} sentences. Return one entry per id.\n\n"
+        + "\n\n".join(blocks)
+    )

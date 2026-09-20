@@ -28,7 +28,9 @@ API_ROOT = "https://generativelanguage.googleapis.com/v1beta/models"
 # 2026 and now returns 404 even though it still appears in the model listing.
 # Verified working 2026-09-19: 3.6-flash (~14s/call), 3.5-flash (~26s),
 # flash-latest (~42s). gemini-3.8-flash exists but returned 503 "high demand".
-DEFAULT_MODEL = "gemini-3.6-flash"
+# Override with GEMINI_MODEL when a model's daily quota is spent, to skip the
+# dead ones rather than paying the fallback probe on every call.
+DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 
 # Tried in order when the primary model 404s (retired) or is persistently
 # unavailable. Without this, a model retirement is a hard outage.
@@ -179,6 +181,11 @@ def _attempt_model(
             # another model may work.
             if exc.code == 404:
                 raise _ModelUnavailable(last_error) from exc
+            # A daily quota exhaustion is not transient: retrying this model
+            # wastes a minute of backoff before failing anyway. Fall through to
+            # the next model immediately, which lives in a different bucket.
+            if exc.code == 429 and "exceeded your current quota" in detail:
+                raise _ModelUnavailable(last_error) from exc
             # 429 rate limit, 5xx transient. Anything else is our bug — fail fast.
             if exc.code not in (429, 500, 502, 503, 504):
                 raise last_error from exc
@@ -203,7 +210,7 @@ def _attempt_model(
 
         if attempt < max_retries:
             time.sleep(delay)
-            delay = min(delay * 2, 60.0)
+            delay = min(delay * 2, 20.0)
 
     # Exhausted retries on a transient failure (typically 503 "high demand"):
     # treat as unavailable so the caller can fall back to another model.

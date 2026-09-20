@@ -382,3 +382,36 @@ code { font-family: inherit; font-style: italic; }
   text-align: right; text-align-last: right;
 }
 .settings select:focus { outline: 0; border-bottom-color: var(--ink); }
+
+.ledger-row > b.is-hit { color: var(--ink); }
+.ledger-row > b.is-hit::after { content: ' ✓'; color: var(--ink-faint); }
+
+/* Listening prompt: the control IS the card, so it gets real presence. */
+.listen-prompt {
+  display: block; width: 100%; text-align: center;
+  border: 1px solid var(--ink); padding: 26px 0;
+  font-size: 17px; font-weight: 600; letter-spacing: .04em;
+}
+.listen-prompt:active { background: var(--ink); color: var(--paper); }
+#listen-hint { text-align: center; margin-top: 12px; }
+
+/* --- word-by-word breakdown --- */
+.breakdown { margin-top: 16px; border-top: 1px solid var(--rule); }
+.unit { padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.unit-top, .unit-bot { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.unit-fa { font-size: 19px; }
+.unit-translit { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.unit-bot { margin-top: 3px; }
+.unit-en { font-size: 14px; color: var(--ink-soft); }
+.unit-pos {
+  font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-faint); white-space: nowrap;
+}
+
+/* --- other acceptable answers --- */
+.alts { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--rule); }
+.alts-head {
+  margin: 0 0 8px; font-size: 10px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-faint); font-weight: 600;
+}
+.alt { margin: 0 0 6px; font-family: var(--serif); font-size: 19px; }

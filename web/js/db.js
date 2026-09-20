@@ -121,14 +121,16 @@ const SETTING_DEFAULTS = {
   backendURL: '',
   apiToken: '',
   dailyBatchSize: 100,
-  // Weighted to production: freezing happens when speaking, not when reading.
-  productionRatio: 0.7,
   speakEnabled: true,
   lastSyncAt: null,
   // CEFR progression. New cards come only from here; reviews come from
   // everywhere. Advanced by passing the gate, or manually from Settings.
   currentLevel: 'A1',
   levelsPassed: [],
+  // Cards per day that counts as done. Smaller than dailyBatchSize on purpose:
+  // a target you clear most days builds the habit; one you miss erodes it.
+  dailyTarget: 40,
+  directionWeights: { enToFa: 0.6, faToEn: 0.2, listenToEn: 0.2 },
 };
 
 export async function getSettings() {
