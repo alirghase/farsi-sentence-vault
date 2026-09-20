@@ -350,14 +350,15 @@ function renderBreakdown(sentence) {
   host.hidden = units.length === 0;
 
   if (units.length) {
-    const chips = (text, unitIndex, extra = '') => text
-      .split(/\s+/)
-      .filter(Boolean)
-      .map((w) => `<button class="chip ${extra}" data-u="${unitIndex}">${escapeHtml(w)}</button>`)
-      .join('');
+    // One chip per unit, never per word. A unit is the thing that maps: a
+    // compound verb like پیدا کنم is one idea and one chip, and so is a gloss
+    // of several English words. Splitting on spaces broke the pairing — the
+    // two rows ended up with different chip counts and stopped lining up.
+    const chip = (label, unitIndex, extra) =>
+      `<button class="chip ${extra}" data-u="${unitIndex}">${escapeHtml(label.trim())}</button>`;
 
-    const farsi = units.map((u, i) => chips(u.fa, i, 'chip-fa')).join('');
-    const english = units.map((u, i) => chips(u.en, i, 'chip-en')).join('');
+    const farsi = units.map((u, i) => chip(u.fa, i, 'chip-fa')).join('');
+    const english = units.map((u, i) => chip(u.en, i, 'chip-en')).join('');
 
     host.innerHTML = `
       <div class="map-row rtl" id="map-fa">${farsi}</div>
