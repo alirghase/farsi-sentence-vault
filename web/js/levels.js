@@ -26,10 +26,6 @@ export const GATE = {
   accuracyTarget: 0.85,     // and the bar it must clear
   retainedCards: 30,        // depth: cards that actually stuck
   retentionDays: 7,         // the interval that counts as "stuck"
-  // Fluency: the share of recent answers produced inside their target time.
-  // Deliberately lenient — the point is to stop you passing a level while still
-  // needing ten seconds a sentence, not to demand perfection under pressure.
-  paceTarget: 0.6,
 };
 
 export function levelForDifficulty(difficulty) {
@@ -83,24 +79,12 @@ export async function progress(level) {
   }).length;
   const rate = recent.length ? correct / recent.length : 0;
 
-  // Speed, over the same window. Attempts recorded before timing existed have
-  // no msToReveal and are excluded rather than counted as failures.
-  const timed = recent.filter((a) => typeof a.msToReveal === 'number' && a.targetMs);
-  const inTime = timed.filter((a) => a.msToReveal <= a.targetMs).length;
-  const paceRate = timed.length ? inTime / timed.length : 0;
-
   // Breadth cannot exceed what exists: a level with 40 cards can never reach a
   // 60-card target, which would lock you in permanently.
   const coverageNeed = Math.min(GATE.distinctCards, totalCards);
   const retentionNeed = Math.min(GATE.retainedCards, totalCards);
 
   const coverage = { value: seen, need: coverageNeed };
-  const pace = {
-    value: timed.length >= GATE.accuracyWindow ? paceRate : 0,
-    need: GATE.paceTarget,
-    samples: timed.length,
-    medianMs: median(timed.map((a) => a.msToReveal)),
-  };
   const accuracy = { value: recent.length >= GATE.accuracyWindow ? rate : 0,
                      need: GATE.accuracyTarget, samples: recent.length };
   const retention = { value: retained, need: retentionNeed };
@@ -111,23 +95,14 @@ export async function progress(level) {
     coverage,
     accuracy,
     retention,
-    pace,
     passed:
       coverage.value >= coverage.need &&
       recent.length >= GATE.accuracyWindow &&
       rate >= GATE.accuracyTarget &&
-      retention.value >= retention.need &&
-      timed.length >= GATE.accuracyWindow &&
-      paceRate >= GATE.paceTarget,
+      retention.value >= retention.need,
   };
 }
 
-function median(values) {
-  if (!values.length) return null;
-  const sorted = [...values].sort((a, b) => a - b);
-  const mid = Math.floor(sorted.length / 2);
-  return sorted.length % 2 ? sorted[mid] : Math.round((sorted[mid - 1] + sorted[mid]) / 2);
-}
 
 /** Sentence ids belonging to a level, for the session builder. */
 export function idsForLevel(sentences, level) {

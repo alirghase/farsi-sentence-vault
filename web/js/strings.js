@@ -55,7 +55,6 @@ export const STRINGS = {
   'progress.seen': 'کارت‌های دیده‌شده',
   'progress.accuracy': 'دقت',
   'progress.retained': 'کارت‌های مونده',
-  'progress.inTime': 'به‌موقع',
   'progress.empty': 'تمرین کن تا ضعف‌هات اینجا بیاد.',
 
   // Settings

@@ -347,7 +347,6 @@ function renderCard() {
   state.revealed = false;
   state.typedOpen = false;
   state.shownAt = performance.now();
-  startPace(card);
 
   $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.total)}`;
   $('card-badge').textContent =
@@ -371,39 +370,6 @@ function renderCard() {
   $('btn-type').classList.remove('on');
 }
 
-/**
- * A line that depletes over the card's target time.
- *
- * It never blocks and never auto-fails: an app that snatches the card away
- * teaches anxiety, not fluency. Running out simply marks the attempt slow.
- */
-function startPace(card) {
-  const fill = $('pace-fill');
-  const target = session.targetMs(card.sentence, card.direction);
-
-  fill.style.transition = 'none';
-  fill.style.width = '100%';
-  fill.classList.remove('over');
-
-  // Force a reflow so the reset applies before the animation starts.
-  void fill.offsetWidth;
-
-  fill.style.transition = `width ${target}ms linear`;
-  fill.style.width = '0%';
-
-  clearTimeout(startPace._timer);
-  startPace._timer = setTimeout(() => {
-    if (!state.revealed) fill.classList.add('over');
-  }, target);
-}
-
-function stopPace() {
-  clearTimeout(startPace._timer);
-  const fill = $('pace-fill');
-  fill.style.transition = 'none';
-  fill.style.width = '0%';
-}
-
 function toggleTyping() {
   state.typedOpen = !state.typedOpen;
   const typed = $('card-typed');
@@ -416,8 +382,9 @@ async function reveal() {
   const card = currentCard();
   $('card-typed').blur();
   state.revealed = true;
+  // Still recorded, but nothing is shown and nothing gates on it. It is the
+  // one measurement a better scheduler would need later.
   state.msToReveal = Math.round(performance.now() - state.shownAt);
-  stopPace();
 
   const answer = $('answer-text');
   answer.textContent = session.answerFor(card.sentence, card.direction);
@@ -512,10 +479,6 @@ function renderBreakdown(sentence) {
 
 function renderRatings(card) {
   const row = $('rating-row');
-  const target = session.targetMs(card.sentence, card.direction);
-  const withinTarget = (state.msToReveal ?? 0) <= target;
-  const seconds = ((state.msToReveal ?? 0) / 1000).toFixed(1);
-
   const passDays = SM2.previewInterval(card.review, 'pass');
 
   // Persian labels: غلط (wrong) and درست (correct). Two short words you would
@@ -534,12 +497,6 @@ function renderRatings(card) {
     button.addEventListener('click', () => rate(button.dataset.r), { once: true });
   }
   row.hidden = false;
-
-  // The time is shown after the fact, not as a verdict — it informs the rating
-  // rather than making it.
-  $('answer-time').textContent = `${faDigits(seconds)}s`;
-  $('answer-time').classList.toggle('slow', !withinTarget);
-  $('answer-time').hidden = false;
 }
 
 async function rate(rating) {
@@ -581,7 +538,6 @@ function renderDone() {
 }
 
 async function endSession() {
-  stopPace();
   speech.stopSpeaking();
   $('practice').hidden = true;
   // The done screen replaced the card markup; a reload restores it cleanly.
@@ -606,11 +562,6 @@ async function renderGates() {
     ? [Math.round(gate.accuracy.value * 100), Math.round(gate.accuracy.need * 100)]
     : [gate.accuracy.samples, levels.GATE.accuracyWindow];
 
-  const enoughPace = gate.pace.samples >= levels.GATE.accuracyWindow;
-  const paceBar = enoughPace
-    ? [Math.round(gate.pace.value * 100), Math.round(gate.pace.need * 100)]
-    : [gate.pace.samples, levels.GATE.accuracyWindow];
-
   const rows = [
     [text('progress.seen'), gate.coverage.value, gate.coverage.need,
      `${faDigits(gate.coverage.value)} / ${faDigits(gate.coverage.need)}`],
@@ -620,11 +571,6 @@ async function renderGates() {
        : `${faDigits(gate.accuracy.samples)} / ${faDigits(levels.GATE.accuracyWindow)}`],
     [text('progress.retained'), gate.retention.value, gate.retention.need,
      `${faDigits(gate.retention.value)} / ${faDigits(gate.retention.need)}`],
-    [text('progress.inTime'), paceBar[0], paceBar[1],
-     gate.pace.samples < levels.GATE.accuracyWindow
-       ? `${faDigits(gate.pace.samples)} / ${faDigits(levels.GATE.accuracyWindow)}`
-       : `${faDigits(Math.round(gate.pace.value * 100))}٪ / ${faDigits(Math.round(gate.pace.need * 100))}٪`
-         + (gate.pace.medianMs ? ` · ${faDigits((gate.pace.medianMs / 1000).toFixed(1))}s` : '')],
   ];
 
   $('gate-block').innerHTML = `
@@ -640,7 +586,7 @@ async function renderGates() {
     </div>
     <p class="section-note">${gate.passed
       ? 'Passed &mdash; unlock the next level from Today.'
-      : 'All four must be met. Retention stops a level being crammed; pace stops you passing it while still needing ten seconds a sentence.'}</p>`;
+      : 'All three must be met. Retention is the one that matters: it stops a level being passed by cramming.'}</p>`;
 }
 
 async function renderWeakSpots() {
@@ -833,11 +779,6 @@ async function renderSettings() {
   ]);
   const estimate = await db.estimateUsage();
   const persisted = navigator.storage?.persisted ? await navigator.storage.persisted() : false;
-
-  const enoughPace = gate.pace.samples >= levels.GATE.accuracyWindow;
-  const paceBar = enoughPace
-    ? [Math.round(gate.pace.value * 100), Math.round(gate.pace.need * 100)]
-    : [gate.pace.samples, levels.GATE.accuracyWindow];
 
   const rows = [
     ['Sentences', sentences],
