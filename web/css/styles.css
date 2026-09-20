@@ -315,44 +315,35 @@ code { font-family: inherit; font-style: italic; }
 .answer-time.slow { color: var(--alarm); }
 
 /* --- verdict buttons --- */
-/* The only colour in the app, and the only gloss. These are tapped hundreds of
-   times a week, so they get real presence: one soft vertical gradient and a
-   fine inner highlight. Square corners and full-bleed geometry keep them inside
-   the ledger's language rather than imported from a different app. */
+/* No colour and no gloss: these are two more cells in the ledger, distinguished
+   by position rather than decoration — destructive on the left, as everywhere
+   else in the app. Pressing inverts to ink, which is the only feedback needed
+   and matches how every other control here behaves. */
 .rating-row {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  display: grid; grid-template-columns: 1fr 1fr;
   margin: 0 calc(-1 * var(--gutter)) calc(-12px - env(safe-area-inset-bottom, 0px));
   border-top: 1px solid var(--rule-strong);
 }
 
 .verdict {
-  position: relative; overflow: hidden;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 2px; padding: 18px 0 calc(16px + env(safe-area-inset-bottom, 0px));
-  font-size: 17px; font-weight: 650; letter-spacing: .01em; color: #fff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, .18);
+  gap: 4px; padding: 18px 0 calc(16px + env(safe-area-inset-bottom, 0px));
+  color: var(--ink); background: var(--paper);
+  transition: background .1s, color .1s;
+}
+.verdict + .verdict { border-left: 1px solid var(--rule); }
+
+.verdict-word {
+  font-size: 24px; line-height: 1; font-weight: 500;
+  direction: rtl;
 }
 .verdict small {
-  font-size: 11px; font-weight: 500; font-family: var(--mono);
-  font-variant-numeric: tabular-nums; color: rgba(255, 255, 255, .78);
-  text-shadow: none;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--ink-faint); direction: rtl;
 }
 
-/* The sheen: a single highlight across the top third, not a candy bevel. */
-.verdict::after {
-  content: ''; position: absolute; inset: 0 0 auto; height: 52%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, .22), rgba(255, 255, 255, 0));
-  pointer-events: none;
-}
-
-.verdict-fail { background: linear-gradient(to bottom, #c2453a, #9b2f26); }
-.verdict-pass {
-  background: linear-gradient(to bottom, #3d8f63, #2c6244);
-  border-left: 1px solid rgba(0, 0, 0, .18);
-}
-
-.verdict:active { filter: brightness(.93); }
-.verdict:active::after { opacity: .5; }
+.verdict:active { background: var(--ink); color: var(--paper); }
+.verdict:active small { color: rgba(251, 250, 248, .7); }
 
 .done-panel { padding: 48px 0; }
 .done-panel h2 { margin: 0 0 6px; font-family: var(--serif); font-size: 24px; font-weight: 500; }
