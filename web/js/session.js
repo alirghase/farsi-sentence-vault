@@ -300,15 +300,6 @@ export async function recordAttempt({ card, rating, typedAnswer, msToReveal = nu
     // Speed is the gap the app previously could not see at all.
     msToReveal,
     targetMs: targetMs(card.sentence, card.direction),
-    // Graded fields are filled in at sync time.
-    transcript: null,
-    aiScore: null,
-    aiVerdict: null,
-    aiFeedback: null,
-    correctedFarsi: null,
-    aiErrorTags: [],
-    gradedAt: null,
-    syncedAt: null,
     createdAt: now,
   };
 

@@ -1,7 +1,6 @@
 // UI controller. Plain DOM — no framework, no build step.
 
 import * as db from './db.js';
-import * as api from './api.js';
 import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as speech from './speech.js';
@@ -117,7 +116,6 @@ async function showScreen(name) {
   }
   if (name === 'today') await refreshToday();
   if (name === 'weak') await renderWeakSpots();
-  if (name === 'results') await renderResults();
   if (name === 'settings') await renderSettings();
 }
 
@@ -143,21 +141,8 @@ function bindToday() {
     toast(`Now on ${next}.`);
     await refreshToday();
   });
-  $('btn-sync').addEventListener('click', doSync);
 }
 
-/**
- * Sync is only real when a backend is configured, and by default none is.
- * Same principle applied throughout: a control that cannot succeed is
- * worse than no control, because tapping it teaches you the app is broken.
- */
-function applyBackendVisibility() {
-  const configured = Boolean(state.settings.backendURL);
-  $('sync-bar').hidden = !configured;
-  $('backup-group').hidden = !configured;
-  $('tab-results').hidden = !configured;
-  $('sync-row').hidden = !configured;
-}
 
 async function refreshToday() {
   const level = state.settings.currentLevel;
@@ -184,15 +169,6 @@ async function refreshToday() {
     ? `${text('today.start')} &rarr;`
     : text('today.nothing');
 
-  applyBackendVisibility();
-  if (!state.settings.backendURL) return;
-
-  const pending = (await api.pendingAttempts(1000)).length;
-  const status = $('sync-status');
-  if (!status.dataset.busy) {
-    status.className = 'sync-status';
-    status.textContent = pending ? `${faDigits(pending)} ${text('today.waiting')}` : '';
-  }
 }
 
 /**
@@ -213,9 +189,6 @@ async function renderProgressStats() {
   $('target-progress').classList.toggle('is-hit', counts.reviewedToday >= target);
 
   $('count-held').textContent = faDigits(counts.sentenceCount);
-  $('last-sync').textContent = state.settings.lastSyncAt
-    ? relativeTime(state.settings.lastSyncAt)
-    : text('today.never');
 
   await renderRegister();
 }
@@ -241,6 +214,10 @@ async function renderRegister() {
   }).join('');
 }
 
+
+
+// --- practice --------------------------------------------------------------
+
 /** The moment a level is cleared. Advancing is a deliberate tap, not automatic. */
 function renderPassPanel(gate) {
   const panel = $('passed-panel');
@@ -253,62 +230,6 @@ function renderPassPanel(gate) {
     `${levels.LEVEL_META[next].summary} Earlier levels keep coming back on schedule.`;
   $('btn-advance').innerHTML = `Unlock ${next} &rarr;`;
 }
-
-function relativeTime(ms) {
-  const minutes = Math.round((Date.now() - ms) / 60000);
-  if (minutes < 1) return 'just now';
-  if (minutes < 60) return `${minutes} min ago`;
-  const hours = Math.round(minutes / 60);
-  if (hours < 24) return `${hours} h ago`;
-  return `${Math.round(hours / 24)} d ago`;
-}
-
-async function doSync(restore = false) {
-  const status = $('sync-status');
-  const button = $('btn-sync');
-  status.dataset.busy = '1';
-  button.disabled = true;
-
-  const setStatus = (text, kind = '') => {
-    status.className = `sync-status ${kind}`.trim();
-    status.textContent = text;
-  };
-
-  try {
-    const pending = await api.pendingAttempts();
-    setStatus(pending.length ? `Grading ${pending.length}…` : 'Fetching sentences…');
-
-    const reviews = await api.changedReviews(state.settings.lastSyncAt);
-    const result = await api.sync({
-      attempts: pending,
-      reviews,
-      wantSentences: state.settings.dailyBatchSize,
-      since: state.settings.lastSyncAt,
-      settings: state.settings,
-      restore,
-    });
-
-    const { graded, added, restored } = await api.applyResult(result, pending);
-    state.settings = await db.getSettings();
-
-    const parts = [];
-    if (graded) parts.push(`${graded} graded`);
-    if (added) parts.push(`${added} new`);
-    if (restored) parts.push(`${restored} schedules restored`);
-    if (reviews.length) parts.push(`${reviews.length} backed up`);
-    setStatus(parts.join(' · ') || 'Nothing to sync.');
-
-    for (const warning of result.warnings ?? []) toast(warning, 5000);
-  } catch (error) {
-    setStatus(error.message, 'error');
-  } finally {
-    delete status.dataset.busy;
-    button.disabled = false;
-    await refreshToday();
-  }
-}
-
-// --- practice --------------------------------------------------------------
 
 function bindPractice() {
   $('btn-quit').addEventListener('click', endSession);
@@ -326,7 +247,7 @@ async function startSession() {
   const limit = Math.min(state.settings.dailyBatchSize, Math.max(counts.total, 1));
   state.queue = await session.build({
     limit,
-    weights: state.settings.directionWeights,
+    weights: session.DEFAULT_WEIGHTS,
     level: state.settings.currentLevel,
   });
   if (!state.queue.length) return;
@@ -521,17 +442,14 @@ async function rate(rating) {
   else sound.next();
 
   speech.stopSpeaking();
-  $('answer-time').hidden = true;
   state.index += 1;
   renderCard();
 }
 
 function renderDone() {
-  $('card-scroll');
   document.querySelector('.card-scroll').innerHTML =
     `<div class="done-panel"><h2>${escapeHtml(text('card.done'))}</h2>
      <p class="note">${state.completed} ${escapeHtml(text('card.practised'))}</p></div>`;
-  $('controls');
   document.querySelector('.controls').innerHTML =
     `<button id="btn-finish" style="text-align:right;font-size:19px;font-weight:600;padding:8px 0">${escapeHtml(text('card.exit'))} &rarr;</button>`;
   $('btn-finish').addEventListener('click', endSession);
@@ -643,69 +561,15 @@ function rateColour(rate) {
 
 // --- results ---------------------------------------------------------------
 
-async function renderResults() {
-  const [attempts, sentences] = await Promise.all([
-    db.getAll(db.STORE.attempts),
-    db.getAll(db.STORE.sentences),
-  ]);
-  const byId = new Map(sentences.map((s) => [s.id, s]));
-  const graded = attempts.filter((a) => a.gradedAt).sort((a, b) => b.createdAt - a.createdAt);
-  const list = $('results-list');
-
-  if (!graded.length) {
-    list.innerHTML = `<p class="empty">${escapeHtml(text('results.empty'))}</p>`;
-    return;
-  }
-
-  list.innerHTML = graded.slice(0, 100).map((a) => {
-    const sentence = byId.get(a.sentenceId);
-    // Only a real failure earns colour; the rest are figures in a column.
-    const colour = ['major', 'wrong'].includes(a.aiVerdict)
-      ? 'var(--alarm)' : 'var(--ink)';
-    const said = a.transcript || a.typedAnswer;
-    return `<div class="entry">
-      <div class="entry-top">
-        <b>${sentence ? escapeHtml(sentence.englishText) : '&mdash;'}</b>
-        <span class="entry-figure" style="color:${colour}">${a.aiScore ?? '--'}</span>
-      </div>
-      ${said ? `<p class="note rtl" style="margin-top:8px">${escapeHtml(said)}</p>` : ''}
-      ${a.correctedFarsi && a.correctedFarsi !== said
-        ? `<p class="note rtl" style="margin-top:4px;color:var(--ink)">${escapeHtml(a.correctedFarsi)}</p>` : ''}
-      ${a.aiFeedback ? `<p class="note-faint">${escapeHtml(a.aiFeedback)}</p>` : ''}
-      ${(a.aiErrorTags ?? []).length
-        ? `<p class="taglist bad">${(a.aiErrorTags).map((t) => escapeHtml(tagTitle(t))).join(' \u00b7 ')}</p>` : ''}
-    </div>`;
-  }).join('');
-}
 
 // --- settings --------------------------------------------------------------
 
 function bindSettings() {
-  $('set-url').addEventListener('change', async (e) => {
-    state.settings = await db.saveSettings({ backendURL: e.target.value.trim() });
-  });
-  $('set-token').addEventListener('change', async (e) => {
-    state.settings = await db.saveSettings({ apiToken: e.target.value.trim() });
-  });
-  $('set-batch').addEventListener('input', async (e) => {
-    $('batch-value').textContent = e.target.value;
-    state.settings = await db.saveSettings({ dailyBatchSize: Number(e.target.value) });
-  });
   $('set-target').addEventListener('input', async (e) => {
     $('target-value').textContent = e.target.value;
     state.settings = await db.saveSettings({ dailyTarget: Number(e.target.value) });
   });
 
-  // The weights are normalised at selection time, so they need not sum to 100 —
-  // the labels show raw values and the builder handles the proportions.
-  for (const [id, key] of [['w-prod', 'enToFa'], ['w-read', 'faToEn']]) {
-    $(id).addEventListener('input', async (e) => {
-      $(`${id}-value`).textContent = `${e.target.value}%`;
-      state.settings = await db.saveSettings({
-        directionWeights: { ...state.settings.directionWeights, [key]: Number(e.target.value) / 100 },
-      });
-    });
-  }
   $('set-speak').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
   });
@@ -721,45 +585,12 @@ function bindSettings() {
     await renderSettings();
   });
 
-  $('btn-restore').addEventListener('click', async () => {
-    const out = $('restore-result');
-    out.textContent = 'Restoring…';
-    await doSync(true);
-    const settings = await db.getSettings();
-    out.textContent = settings.lastSyncAt
-      ? 'Done — see the Sync line on Today for what came back.'
-      : 'Could not reach the backend.';
-    await renderSettings();
-  });
-
-  $('btn-health').addEventListener('click', async () => {
-    const result = $('health-result');
-    result.textContent = 'Checking…';
-    try {
-      const body = await api.health(state.settings.backendURL);
-      result.textContent = `OK — service is up (${body.tags} tags).`;
-      result.style.color = 'var(--green)';
-    } catch (error) {
-      result.textContent = error.message;
-      result.style.color = 'var(--red)';
-    }
-  });
 }
 
 async function renderSettings() {
   const s = state.settings;
-  applyBackendVisibility();
-  $('set-url').value = s.backendURL;
-  $('set-token').value = s.apiToken;
-  $('set-batch').value = s.dailyBatchSize;
-  $('batch-value').textContent = s.dailyBatchSize;
   $('set-target').value = s.dailyTarget;
   $('target-value').textContent = s.dailyTarget;
-  const w = s.directionWeights;
-  for (const [id, key] of [['w-prod', 'enToFa'], ['w-read', 'faToEn']]) {
-    $(id).value = Math.round((w[key] ?? 0) * 100);
-    $(`${id}-value`).textContent = `${Math.round((w[key] ?? 0) * 100)}%`;
-  }
   $('set-speak').checked = s.speakEnabled;
   $('set-sound').checked = s.soundEnabled !== false;
 
@@ -772,31 +603,6 @@ async function renderSettings() {
     ? `Persian voice available: ${voices.persian.join(', ')}`
     : `No Persian voice on this device (${voices.total} voices found). ` +
       'Add one in iOS Settings → Accessibility → Spoken Content → Voices → Farsi, then reopen this app.';
-
-  const [sentences, attempts] = await Promise.all([
-    db.count(db.STORE.sentences),
-    db.getAll(db.STORE.attempts),
-  ]);
-  const estimate = await db.estimateUsage();
-  const persisted = navigator.storage?.persisted ? await navigator.storage.persisted() : false;
-
-  const rows = [
-    ['Sentences', sentences],
-    ['Attempts', attempts.length],
-    ['Waiting to sync', attempts.filter((a) => !a.syncedAt).length],
-    ['Storage used', estimate ? formatBytes(estimate.usage) : 'n/a'],
-    ['Eviction protected', persisted ? 'Yes' : 'No'],
-  ];
-  $('storage-info').className = 'ledger';
-  $('storage-info').innerHTML = rows
-    .map(([k, v]) => `<div class="ledger-row"><span>${k}</span><b>${faDigits(v)}</b></div>`)
-    .join('');
-}
-
-function formatBytes(bytes = 0) {
-  if (bytes < 1024) return `${bytes} B`;
-  if (bytes < 1048576) return `${(bytes / 1024).toFixed(0)} KB`;
-  return `${(bytes / 1048576).toFixed(1)} MB`;
 }
 
 function escapeHtml(value) {
