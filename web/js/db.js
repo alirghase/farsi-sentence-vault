@@ -130,6 +130,7 @@ const SETTING_DEFAULTS = {
   // Cards per day that counts as done. Smaller than dailyBatchSize on purpose:
   // a target you clear most days builds the habit; one you miss erodes it.
   dailyTarget: 40,
+  soundEnabled: true,
   directionWeights: { enToFa: 0.6, faToEn: 0.2, listenToEn: 0.2 },
 };
 
