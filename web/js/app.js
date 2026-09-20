@@ -523,6 +523,16 @@ function renderBreakdown(sentence) {
     : '';
 }
 
+/**
+ * Western digits to Persian ones (۰۱۲۳۴۵۶۷۸۹).
+ *
+ * Used only where a number sits inside Persian text. Counters elsewhere stay in
+ * Latin digits so the ledger columns remain scannable at a glance.
+ */
+function faDigits(value) {
+  return String(value).replace(/\d/g, (d) => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]);
+}
+
 function renderRatings(card) {
   const row = $('rating-row');
   const target = session.targetMs(card.sentence, card.direction);
@@ -531,9 +541,17 @@ function renderRatings(card) {
 
   const passDays = SM2.previewInterval(card.review, 'pass');
 
+  // Persian labels: غلط (wrong) and درست (correct). Two short words you would
+  // actually think in Persian, rather than an English verdict on Persian work.
   row.innerHTML = `
-    <button data-r="fail" class="verdict verdict-fail">Fail<small>now</small></button>
-    <button data-r="pass" class="verdict verdict-pass">Pass<small>${passDays}d</small></button>`;
+    <button data-r="fail" class="verdict">
+      <span class="verdict-word">غلط</span>
+      <small>حالا</small>
+    </button>
+    <button data-r="pass" class="verdict">
+      <span class="verdict-word">درست</span>
+      <small>${faDigits(passDays)} روز</small>
+    </button>`;
 
   for (const button of row.querySelectorAll('button')) {
     button.addEventListener('click', () => rate(button.dataset.r), { once: true });
