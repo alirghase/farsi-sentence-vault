@@ -125,6 +125,10 @@ const SETTING_DEFAULTS = {
   productionRatio: 0.7,
   speakEnabled: true,
   lastSyncAt: null,
+  // CEFR progression. New cards come only from here; reviews come from
+  // everywhere. Advanced by passing the gate, or manually from Settings.
+  currentLevel: 'A1',
+  levelsPassed: [],
 };
 
 export async function getSettings() {

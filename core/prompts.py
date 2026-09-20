@@ -89,6 +89,8 @@ def generation_user(
     difficulty_mix: dict[int, int],
     focus_tags: list[str] | None = None,
     avoid: list[str] | None = None,
+    verb_targets: list[tuple[str, str]] | None = None,
+    tense_targets: list[tuple[str, str]] | None = None,
 ) -> str:
     mix = ", ".join(f"{n} at level {lvl}" for lvl, n in sorted(difficulty_mix.items()))
     lines = [
@@ -100,6 +102,19 @@ def generation_user(
         lines.append(
             "PRIORITY: the learner is currently failing these grammar features — "
             f"at least half the sentences must require them: {', '.join(focus_tags)}."
+        )
+    if verb_targets:
+        verbs = "\n".join(f"  - {v} ({gloss})" for v, gloss in verb_targets)
+        lines.append(
+            "COVERAGE REQUIREMENT: these core verbs are missing from the learner's "
+            "deck. Every sentence must use one of them as its main verb, and you "
+            "must use each at least once:\n" + verbs
+        )
+    if tense_targets:
+        tenses = "\n".join(f"  - {name}: {detail}" for name, detail in tense_targets)
+        lines.append(
+            "Spread the sentences across these tenses and moods. Skip any "
+            "combination that would be unnatural rather than forcing it:\n" + tenses
         )
     if avoid:
         sample = "\n".join(f"  - {s}" for s in avoid[:40])

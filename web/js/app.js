@@ -5,6 +5,7 @@ import * as api from './api.js';
 import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as speech from './speech.js';
+import * as levels from './levels.js';
 import { ERROR_TAGS, tagTitle } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
@@ -102,11 +103,27 @@ function toast(message, ms = 2600) {
 
 function bindToday() {
   $('btn-start').addEventListener('click', startSession);
+  $('btn-advance').addEventListener('click', async () => {
+    const next = levels.nextLevel(state.settings.currentLevel);
+    if (!next) return;
+    state.settings = await db.saveSettings({
+      currentLevel: next,
+      levelsPassed: [...state.settings.levelsPassed, state.settings.currentLevel],
+    });
+    toast(`Now on ${next}.`);
+    await refreshToday();
+  });
   $('btn-sync').addEventListener('click', doSync);
 }
 
 async function refreshToday() {
-  const counts = await session.counts(Date.now(), state.settings.dailyBatchSize);
+  const level = state.settings.currentLevel;
+  const counts = await session.counts(Date.now(), state.settings.dailyBatchSize, level);
+  const gate = await levels.progress(level);
+  state.gate = gate;
+
+  $('level-now').textContent = level;
+  renderPassPanel(gate);
 
   $('count-due').textContent = counts.due;
   $('count-new').textContent = counts.new;
@@ -160,6 +177,19 @@ async function renderRegister() {
       <b class="col-pct">${Math.round(row.accuracy * 100)}%</b>
     </div>`;
   }).join('');
+}
+
+/** The moment a level is cleared. Advancing is a deliberate tap, not automatic. */
+function renderPassPanel(gate) {
+  const panel = $('passed-panel');
+  const next = levels.nextLevel(gate.level);
+  panel.hidden = !gate.passed || !next;
+  if (panel.hidden) return;
+
+  $('passed-head').textContent = `${gate.level} passed.`;
+  $('passed-note').textContent =
+    `${levels.LEVEL_META[next].summary} Earlier levels keep coming back on schedule.`;
+  $('btn-advance').innerHTML = `Unlock ${next} &rarr;`;
 }
 
 function relativeTime(ms) {
@@ -229,11 +259,14 @@ function bindPractice() {
 }
 
 async function startSession() {
-  const counts = await session.counts();
+  const counts = await session.counts(
+    Date.now(), state.settings.dailyBatchSize, state.settings.currentLevel,
+  );
   const limit = Math.min(state.settings.dailyBatchSize, Math.max(counts.total, 1));
   state.queue = await session.build({
     limit,
     productionRatio: state.settings.productionRatio,
+    level: state.settings.currentLevel,
   });
   if (!state.queue.length) return;
 
@@ -395,7 +428,48 @@ async function endSession() {
 
 const MIN_EVIDENCE = 3;
 
+/** The three counts that gate the current level, as bars you can watch fill. */
+async function renderGates() {
+  const gate = await levels.progress(state.settings.currentLevel);
+  const pct = (v, n) => Math.min(100, Math.round((v / n) * 100));
+
+  // Before there are enough reviews to judge accuracy, the bar tracks progress
+  // toward having a sample — otherwise it reads 0% while the label says
+  // "12 of 40 reviews", which are two different measurements.
+  const enoughSamples = gate.accuracy.samples >= levels.GATE.accuracyWindow;
+  const accuracyBar = enoughSamples
+    ? [Math.round(gate.accuracy.value * 100), Math.round(gate.accuracy.need * 100)]
+    : [gate.accuracy.samples, levels.GATE.accuracyWindow];
+
+  const rows = [
+    ['Cards seen', gate.coverage.value, gate.coverage.need,
+     `${gate.coverage.value} of ${gate.coverage.need}`],
+    ['Accuracy', accuracyBar[0], accuracyBar[1],
+     enoughSamples
+       ? `${Math.round(gate.accuracy.value * 100)}% of ${Math.round(gate.accuracy.need * 100)}%`
+       : `${gate.accuracy.samples} of ${levels.GATE.accuracyWindow} reviews`],
+    ['Cards retained', gate.retention.value, gate.retention.need,
+     `${gate.retention.value} of ${gate.retention.need} past ${levels.GATE.retentionDays}d`],
+  ];
+
+  $('gate-block').innerHTML = `
+    <div class="ledger">
+      <div class="ledger-row is-head">
+        <span>${gate.level} &middot; ${escapeHtml(levels.LEVEL_META[gate.level].summary)}</span>
+      </div>
+      ${rows.map(([label, value, need, detail]) => `
+        <div class="gate-row">
+          <div class="entry-top"><b>${label}</b><span class="entry-figure">${detail}</span></div>
+          <div class="gate-bar"><i style="width:${pct(value, need)}%"></i></div>
+        </div>`).join('')}
+    </div>
+    <p class="section-note">${gate.passed
+      ? 'Passed &mdash; unlock the next level from Today.'
+      : 'All three must be met. Retention is what stops a level being crammed.'}</p>`;
+}
+
 async function renderWeakSpots() {
+  await renderGates();
   const stats = await db.getAll(db.STORE.tagStats);
   const list = $('weak-list');
 
@@ -502,6 +576,12 @@ function bindSettings() {
   $('set-speak').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
   });
+  $('set-level').addEventListener('change', async (e) => {
+    state.settings = await db.saveSettings({ currentLevel: e.target.value });
+    toast(`New cards now come from ${e.target.value}.`);
+    await renderSettings();
+  });
+
   $('btn-restore').addEventListener('click', async () => {
     const out = $('restore-result');
     out.textContent = 'Restoring…';
@@ -536,6 +616,10 @@ async function renderSettings() {
   $('set-ratio').value = Math.round(s.productionRatio * 100);
   $('ratio-value').textContent = `${Math.round(s.productionRatio * 100)}%`;
   $('set-speak').checked = s.speakEnabled;
+
+  $('set-level').innerHTML = levels.LEVELS
+    .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
+    .join('');
 
   const voices = await speech.voiceReport();
   $('voice-report').textContent = voices.persian.length
