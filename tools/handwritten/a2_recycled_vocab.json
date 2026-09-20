@@ -1,0 +1,1362 @@
+{
+  "note": "Everyday sentences built to REUSE words already in the deck rather than add new ones. 60% of the deck's vocabulary appeared exactly once, which builds recognition but not recall.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "How are you today?",
+      "fa": "امروز حالت چطوره؟",
+      "tr": "emruz hâlet chetore?",
+      "sit": "greeting a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "حالت",
+          "hâlet",
+          "your state",
+          "attached pronoun"
+        ],
+        [
+          "چطوره",
+          "chetore",
+          "how is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's very simple.",
+      "fa": "خیلی ساده‌ست.",
+      "tr": "kheyli sâdast",
+      "sit": "explaining something",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "ساده‌ست",
+          "sâdast",
+          "is simple",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's enough, thanks.",
+      "fa": "کافیه، مرسی.",
+      "tr": "kâfiye, mersi",
+      "sit": "being served food",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کافیه",
+          "kâfiye",
+          "is enough",
+          "adjective"
+        ],
+        [
+          "مرسی",
+          "mersi",
+          "thanks",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My clothes are still wet.",
+      "fa": "لباسام هنوز خیسه.",
+      "tr": "lebâsâm hanuz khise",
+      "sit": "after the rain",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "لباسام",
+          "lebâsâm",
+          "my clothes",
+          "attached pronoun"
+        ],
+        [
+          "هنوز",
+          "hanuz",
+          "still",
+          "adverb"
+        ],
+        [
+          "خیسه",
+          "khise",
+          "is wet",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you get my message?",
+      "fa": "پیاممو گرفتی؟",
+      "tr": "payâmamo gerefti?",
+      "sit": "checking on a text",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "پیاممو",
+          "payâmamo",
+          "my message",
+          "attached pronoun"
+        ],
+        [
+          "گرفتی",
+          "gerefti",
+          "you got",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm busy this evening.",
+      "fa": "امشب مشغولم.",
+      "tr": "emshab mashghulam",
+      "sit": "declining an invitation",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "امشب",
+          "emshab",
+          "tonight",
+          "adverb"
+        ],
+        [
+          "مشغولم",
+          "mashghulam",
+          "I am busy",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The street is very crowded today.",
+      "fa": "امروز خیابون خیلی شلوغه.",
+      "tr": "emruz khiyâbun kheyli sholughe",
+      "sit": "describing the city",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "خیابون",
+          "khiyâbun",
+          "street",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "شلوغه",
+          "sholughe",
+          "is crowded",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The park was quiet this morning.",
+      "fa": "صبح پارک خلوت بود.",
+      "tr": "sobh pârk khalvat bud",
+      "sit": "describing a walk",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "صبح",
+          "sobh",
+          "morning",
+          "noun"
+        ],
+        [
+          "پارک",
+          "pârk",
+          "park",
+          "noun"
+        ],
+        [
+          "خلوت",
+          "khalvat",
+          "quiet",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I feel better today.",
+      "fa": "امروز حالم بهتره.",
+      "tr": "emruz hâlam behtare",
+      "sit": "recovering from illness",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "حالم",
+          "hâlam",
+          "my state",
+          "attached pronoun"
+        ],
+        [
+          "بهتره",
+          "behtare",
+          "is better",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We have a meeting this afternoon.",
+      "fa": "عصر قرار داریم.",
+      "tr": "asr gharâr dârim",
+      "sit": "planning the day",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "عصر",
+          "asr",
+          "afternoon",
+          "noun"
+        ],
+        [
+          "قرار داریم",
+          "gharâr dârim",
+          "we have a meeting",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you ready?",
+      "fa": "آماده‌ای؟",
+      "tr": "âmâdei?",
+      "sit": "before leaving",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آماده‌ای",
+          "âmâdei",
+          "are you ready",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I like this colour a lot.",
+      "fa": "این رنگ رو خیلی دوست دارم.",
+      "tr": "in rang ro kheyli dust dâram",
+      "sit": "shopping for clothes",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "رنگ",
+          "rang",
+          "colour",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "a lot",
+          "adverb"
+        ],
+        [
+          "دوست دارم",
+          "dust dâram",
+          "I like",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Where is my bag?",
+      "fa": "کیفم کجاست؟",
+      "tr": "kifam kojâst?",
+      "sit": "leaving a café",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "کیفم",
+          "kifam",
+          "my bag",
+          "attached pronoun"
+        ],
+        [
+          "کجاست",
+          "kojâst",
+          "where is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Wait a moment, please.",
+      "fa": "یه لحظه صبر کن، لطفا.",
+      "tr": "ye lahze sabr kon, lotfan",
+      "sit": "on the phone",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "لحظه",
+          "lahze",
+          "moment",
+          "noun"
+        ],
+        [
+          "صبر کن",
+          "sabr kon",
+          "wait",
+          "compound verb"
+        ],
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I need a piece of paper.",
+      "fa": "یه کاغذ لازم دارم.",
+      "tr": "ye kâghaz lâzem dâram",
+      "sit": "at a desk",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "کاغذ",
+          "kâghaz",
+          "paper",
+          "noun"
+        ],
+        [
+          "لازم دارم",
+          "lâzem dâram",
+          "I need",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The office opens at eight.",
+      "fa": "اداره ساعت هشت باز می‌شه.",
+      "tr": "edâre sâate hasht bâz mishe",
+      "sit": "planning an errand",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اداره",
+          "edâre",
+          "office",
+          "noun"
+        ],
+        [
+          "ساعت",
+          "sâat",
+          "hour",
+          "noun"
+        ],
+        [
+          "هشت",
+          "hasht",
+          "eight",
+          "number"
+        ],
+        [
+          "باز می‌شه",
+          "bâz mishe",
+          "opens",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Close your eyes.",
+      "fa": "چشماتو ببند.",
+      "tr": "cheshmâto beband",
+      "sit": "a surprise",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "چشماتو",
+          "cheshmâto",
+          "your eyes",
+          "attached pronoun"
+        ],
+        [
+          "ببند",
+          "beband",
+          "close",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do I have permission to come in?",
+      "fa": "اجازه دارم بیام تو؟",
+      "tr": "ejâze dâram biyâm tu?",
+      "sit": "at a doorway",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اجازه دارم",
+          "ejâze dâram",
+          "I have permission",
+          "compound verb"
+        ],
+        [
+          "بیام",
+          "biyâm",
+          "I come",
+          "verb"
+        ],
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's a different subject.",
+      "fa": "اون یه موضوع دیگه‌ست.",
+      "tr": "un ye mozue digast",
+      "sit": "changing topic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "موضوع",
+          "mozu",
+          "subject",
+          "noun"
+        ],
+        [
+          "دیگه‌ست",
+          "digast",
+          "is another",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have good news for you.",
+      "fa": "یه خبر خوب واسه‌ت دارم.",
+      "tr": "ye khabare khub vâset dâram",
+      "sit": "sharing news",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "خبر",
+          "khabar",
+          "news",
+          "noun"
+        ],
+        [
+          "خوب",
+          "khub",
+          "good",
+          "adjective"
+        ],
+        [
+          "واسه‌ت",
+          "vâset",
+          "for you",
+          "attached pronoun"
+        ],
+        [
+          "دارم",
+          "dâram",
+          "I have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Give me your hand.",
+      "fa": "دستتو بده به من.",
+      "tr": "dasteto bede be man",
+      "sit": "helping someone up",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دستتو",
+          "dasteto",
+          "your hand",
+          "attached pronoun"
+        ],
+        [
+          "بده",
+          "bede",
+          "give",
+          "verb"
+        ],
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "من",
+          "man",
+          "me",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I don't have time now.",
+      "fa": "الان وقت ندارم.",
+      "tr": "alân vaght nadâram",
+      "sit": "turning down a request",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "الان",
+          "alân",
+          "now",
+          "adverb"
+        ],
+        [
+          "وقت",
+          "vaght",
+          "time",
+          "noun"
+        ],
+        [
+          "ندارم",
+          "nadâram",
+          "I don't have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We'll talk about it in the future.",
+      "fa": "در آینده درباره‌ش حرف می‌زنیم.",
+      "tr": "dar âyande darbâresh harf mizanim",
+      "sit": "postponing a decision",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "در",
+          "dar",
+          "in",
+          "preposition"
+        ],
+        [
+          "آینده",
+          "âyande",
+          "future",
+          "noun"
+        ],
+        [
+          "درباره‌ش",
+          "darbâresh",
+          "about it",
+          "attached pronoun"
+        ],
+        [
+          "حرف می‌زنیم",
+          "harf mizanim",
+          "we talk",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "His shoes are very big.",
+      "fa": "کفشاش خیلی بزرگه.",
+      "tr": "kafshâsh kheyli bozorge",
+      "sit": "in a shop",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "کفشاش",
+          "kafshâsh",
+          "his shoes",
+          "attached pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "بزرگه",
+          "bozorge",
+          "is big",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have practice tomorrow morning.",
+      "fa": "فردا صبح تمرین دارم.",
+      "tr": "fardâ sobh tamrin dâram",
+      "sit": "about football",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "صبح",
+          "sobh",
+          "morning",
+          "noun"
+        ],
+        [
+          "تمرین دارم",
+          "tamrin dâram",
+          "I have practice",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The door is locked.",
+      "fa": "در قفله.",
+      "tr": "dar ghofle",
+      "sit": "locked out",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "در",
+          "dar",
+          "door",
+          "noun"
+        ],
+        [
+          "قفله",
+          "ghofle",
+          "is locked",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Sit down and relax.",
+      "fa": "بشین راحت باش.",
+      "tr": "beshin râhat bâsh",
+      "sit": "welcoming a guest",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بشین",
+          "beshin",
+          "sit",
+          "verb"
+        ],
+        [
+          "راحت",
+          "râhat",
+          "comfortable",
+          "adjective"
+        ],
+        [
+          "باش",
+          "bâsh",
+          "be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They invited us to dinner.",
+      "fa": "ما رو شام دعوت کردن.",
+      "tr": "mâ ro shâm davat kardan",
+      "sit": "family news",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "ما",
+          "mâ",
+          "us",
+          "pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "دعوت کردن",
+          "davat kardan",
+          "they invited",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The food was excellent.",
+      "fa": "غذا عالی بود.",
+      "tr": "ghazâ âli bud",
+      "sit": "after a meal",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "عالی",
+          "âli",
+          "excellent",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I've finished all my work.",
+      "fa": "تمام کارمو تموم کردم.",
+      "tr": "tamâme kâramo tamum kardam",
+      "sit": "end of the day",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "تمام",
+          "tamâm",
+          "all",
+          "adjective"
+        ],
+        [
+          "کارمو",
+          "kâramo",
+          "my work",
+          "attached pronoun"
+        ],
+        [
+          "تموم کردم",
+          "tamum kardam",
+          "I finished",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How do I get to Tehran?",
+      "fa": "چطوری برم تهران؟",
+      "tr": "chetori beram tehrân?",
+      "sit": "asking directions",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "چطوری",
+          "chetori",
+          "how",
+          "question word"
+        ],
+        [
+          "برم",
+          "beram",
+          "I go",
+          "verb"
+        ],
+        [
+          "تهران",
+          "tehrân",
+          "Tehran",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Come and sit next to me.",
+      "fa": "بیا بشین پیشم.",
+      "tr": "biyâ beshin pisham",
+      "sit": "at a gathering",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "بیا",
+          "biyâ",
+          "come",
+          "verb"
+        ],
+        [
+          "بشین",
+          "beshin",
+          "sit",
+          "verb"
+        ],
+        [
+          "پیشم",
+          "pisham",
+          "next to me",
+          "attached pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We saw them at the station.",
+      "fa": "توی ایستگاه دیدیمشون.",
+      "tr": "tuye istgâh didimeshun",
+      "sit": "reporting a meeting",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "توی",
+          "tuye",
+          "in",
+          "preposition"
+        ],
+        [
+          "ایستگاه",
+          "istgâh",
+          "station",
+          "noun"
+        ],
+        [
+          "دیدیمشون",
+          "didimeshun",
+          "we saw them",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I ate too much.",
+      "fa": "زیادی خوردم.",
+      "tr": "ziyâdi khordam",
+      "sit": "after dinner",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "زیادی",
+          "ziyâdi",
+          "too much",
+          "adverb"
+        ],
+        [
+          "خوردم",
+          "khordam",
+          "I ate",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Where did you go yesterday?",
+      "fa": "دیروز کجا رفتی؟",
+      "tr": "diruz kojâ rafti?",
+      "sit": "catching up",
+      "tags": [
+        "word-order"
+      ],
+      "bd": [
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "رفتی",
+          "rafti",
+          "you went",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's go now.",
+      "fa": "حالا بریم.",
+      "tr": "hâlâ berim",
+      "sit": "leaving",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "حالا",
+          "hâlâ",
+          "now",
+          "adverb"
+        ],
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm very happy.",
+      "fa": "خیلی خوشحالم.",
+      "tr": "kheyli khoshhâlam",
+      "sit": "receiving good news",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "خوشحالم",
+          "khoshhâlam",
+          "I am happy",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "There's a lot of work today.",
+      "fa": "امروز کلی کار داریم.",
+      "tr": "emruz koli kâr dârim",
+      "sit": "at the office",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "کلی",
+          "koli",
+          "a lot of",
+          "adjective"
+        ],
+        [
+          "کار",
+          "kâr",
+          "work",
+          "noun"
+        ],
+        [
+          "داریم",
+          "dârim",
+          "we have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My teacher is very good.",
+      "fa": "استادم خیلی خوبه.",
+      "tr": "ostâdam kheyli khube",
+      "sit": "about university",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "استادم",
+          "ostâdam",
+          "my teacher",
+          "attached pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "خوبه",
+          "khube",
+          "is good",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They're coming this evening.",
+      "fa": "عصر بیان.",
+      "tr": "asr biyân",
+      "sit": "expecting guests",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "عصر",
+          "asr",
+          "afternoon",
+          "noun"
+        ],
+        [
+          "بیان",
+          "biyân",
+          "they come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What's your opinion?",
+      "fa": "نظرت چیه؟",
+      "tr": "nazaret chiye?",
+      "sit": "asking advice",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "نظرت",
+          "nazaret",
+          "your opinion",
+          "attached pronoun"
+        ],
+        [
+          "چیه",
+          "chiye",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm hungry.",
+      "fa": "گشنمه.",
+      "tr": "goshname",
+      "sit": "before dinner",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "گشنمه",
+          "goshname",
+          "I am hungry",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The price is too high.",
+      "fa": "قیمتش خیلی بالاست.",
+      "tr": "ghymatesh kheyli bâlâst",
+      "sit": "at a market",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "قیمتش",
+          "ghymatesh",
+          "its price",
+          "attached pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "too",
+          "adverb"
+        ],
+        [
+          "بالاست",
+          "bâlâst",
+          "is high",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I prefer tea.",
+      "fa": "چای ترجیح می‌دم.",
+      "tr": "chây tarjih midam",
+      "sit": "being offered a drink",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "چای",
+          "chây",
+          "tea",
+          "noun"
+        ],
+        [
+          "ترجیح می‌دم",
+          "tarjih midam",
+          "I prefer",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Take care of yourself.",
+      "fa": "مواظب خودت باش.",
+      "tr": "movâzebe khodet bâsh",
+      "sit": "saying goodbye",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "مواظب",
+          "movâzeb",
+          "careful",
+          "adjective"
+        ],
+        [
+          "خودت",
+          "khodet",
+          "yourself",
+          "pronoun"
+        ],
+        [
+          "باش",
+          "bâsh",
+          "be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll be there in ten minutes.",
+      "fa": "ده دقیقه دیگه اونجام.",
+      "tr": "dah daghighe dige unjâm",
+      "sit": "on the way",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ده",
+          "dah",
+          "ten",
+          "number"
+        ],
+        [
+          "دقیقه",
+          "daghighe",
+          "minutes",
+          "noun"
+        ],
+        [
+          "دیگه",
+          "dige",
+          "more",
+          "adjective"
+        ],
+        [
+          "اونجام",
+          "unjâm",
+          "I am there",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

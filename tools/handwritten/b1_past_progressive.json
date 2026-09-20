@@ -1,0 +1,1086 @@
+{
+  "note": "Past progressive with داشتن as auxiliary — داشتم می‌رفتم. The everyday way to say what you were in the middle of.",
+  "difficulty": 3,
+  "sentences": [
+    {
+      "en": "I was going home when he called.",
+      "fa": "داشتم می‌رفتم خونه که زنگ زد.",
+      "tr": "dâshtam miraftam khune ke zang zad",
+      "sit": "explaining a missed call",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتم می‌رفتم",
+          "dâshtam miraftam",
+          "I was going",
+          "verb"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ],
+        [
+          "که",
+          "ke",
+          "when",
+          "conjunction"
+        ],
+        [
+          "زنگ زد",
+          "zang zad",
+          "he called",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We were eating dinner.",
+      "fa": "داشتیم شام می‌خوردیم.",
+      "tr": "dâshtim shâm mikhordim",
+      "sit": "explaining why nobody answered",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتیم",
+          "dâshtim",
+          "we were",
+          "verb"
+        ],
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "می‌خوردیم",
+          "mikhordim",
+          "eating",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She was working when I arrived.",
+      "fa": "وقتی رسیدم داشت کار می‌کرد.",
+      "tr": "vaghti residam dâsht kâr mikard",
+      "sit": "arriving at an office",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "وقتی",
+          "vaghti",
+          "when",
+          "conjunction"
+        ],
+        [
+          "رسیدم",
+          "residam",
+          "I arrived",
+          "verb"
+        ],
+        [
+          "داشت",
+          "dâsht",
+          "was",
+          "verb"
+        ],
+        [
+          "کار می‌کرد",
+          "kâr mikard",
+          "working",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They were waiting outside.",
+      "fa": "داشتن بیرون منتظر می‌موندن.",
+      "tr": "dâshtan birun montazer mimundan",
+      "sit": "arriving late",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتن",
+          "dâshtan",
+          "they were",
+          "verb"
+        ],
+        [
+          "بیرون",
+          "birun",
+          "outside",
+          "adverb"
+        ],
+        [
+          "منتظر می‌موندن",
+          "montazer mimundan",
+          "waiting",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was reading your message.",
+      "fa": "داشتم پیامتو می‌خوندم.",
+      "tr": "dâshtam payâmeto mikhundam",
+      "sit": "mid-conversation",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتم",
+          "dâshtam",
+          "I was",
+          "verb"
+        ],
+        [
+          "پیامتو",
+          "payâmeto",
+          "your message",
+          "attached pronoun"
+        ],
+        [
+          "می‌خوندم",
+          "mikhundam",
+          "reading",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He was sleeping when we came.",
+      "fa": "وقتی اومدیم داشت می‌خوابید.",
+      "tr": "vaghti umadim dâsht mikhâbid",
+      "sit": "coming home quietly",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "وقتی",
+          "vaghti",
+          "when",
+          "conjunction"
+        ],
+        [
+          "اومدیم",
+          "umadim",
+          "we came",
+          "verb"
+        ],
+        [
+          "داشت",
+          "dâsht",
+          "was",
+          "verb"
+        ],
+        [
+          "می‌خوابید",
+          "mikhâbid",
+          "sleeping",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We were talking about you.",
+      "fa": "داشتیم درباره‌ت حرف می‌زدیم.",
+      "tr": "dâshtim darbâret harf mizadim",
+      "sit": "someone walks in",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتیم",
+          "dâshtim",
+          "we were",
+          "verb"
+        ],
+        [
+          "درباره‌ت",
+          "darbâret",
+          "about you",
+          "attached pronoun"
+        ],
+        [
+          "حرف می‌زدیم",
+          "harf mizadim",
+          "talking",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was looking for my phone.",
+      "fa": "داشتم دنبال گوشیم می‌گشتم.",
+      "tr": "dâshtam donbâle gushim migashtam",
+      "sit": "explaining a delay",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتم",
+          "dâshtam",
+          "I was",
+          "verb"
+        ],
+        [
+          "دنبال",
+          "donbâl",
+          "for",
+          "preposition"
+        ],
+        [
+          "گوشیم",
+          "gushim",
+          "my phone",
+          "attached pronoun"
+        ],
+        [
+          "می‌گشتم",
+          "migashtam",
+          "looking",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She was cooking all morning.",
+      "fa": "کل صبح داشت غذا می‌پخت.",
+      "tr": "kole sobh dâsht ghazâ mipokht",
+      "sit": "describing a busy day",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "کل",
+          "kol",
+          "all",
+          "adjective"
+        ],
+        [
+          "صبح",
+          "sobh",
+          "morning",
+          "noun"
+        ],
+        [
+          "داشت",
+          "dâsht",
+          "was",
+          "verb"
+        ],
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "می‌پخت",
+          "mipokht",
+          "cooking",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They were leaving when I saw them.",
+      "fa": "وقتی دیدمشون داشتن می‌رفتن.",
+      "tr": "vaghti didameshun dâshtan miraftan",
+      "sit": "at a party",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "وقتی",
+          "vaghti",
+          "when",
+          "conjunction"
+        ],
+        [
+          "دیدمشون",
+          "didameshun",
+          "I saw them",
+          "verb"
+        ],
+        [
+          "داشتن",
+          "dâshtan",
+          "they were",
+          "verb"
+        ],
+        [
+          "می‌رفتن",
+          "miraftan",
+          "leaving",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was driving in heavy traffic.",
+      "fa": "داشتم توی ترافیک سنگین رانندگی می‌کردم.",
+      "tr": "dâshtam tuye trâfike sangin rânandegi mikardam",
+      "sit": "explaining lateness",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتم",
+          "dâshtam",
+          "I was",
+          "verb"
+        ],
+        [
+          "توی",
+          "tuye",
+          "in",
+          "preposition"
+        ],
+        [
+          "ترافیک",
+          "trâfik",
+          "traffic",
+          "noun"
+        ],
+        [
+          "سنگین",
+          "sangin",
+          "heavy",
+          "adjective"
+        ],
+        [
+          "رانندگی می‌کردم",
+          "rânandegi mikardam",
+          "driving",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We were watching a film.",
+      "fa": "داشتیم فیلم می‌دیدیم.",
+      "tr": "dâshtim film mididim",
+      "sit": "interrupted at home",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتیم",
+          "dâshtim",
+          "we were",
+          "verb"
+        ],
+        [
+          "فیلم",
+          "film",
+          "film",
+          "noun"
+        ],
+        [
+          "می‌دیدیم",
+          "mididim",
+          "watching",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He was writing something.",
+      "fa": "داشت یه چیزی می‌نوشت.",
+      "tr": "dâsht ye chizi minevesht",
+      "sit": "describing a scene",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشت",
+          "dâsht",
+          "was",
+          "verb"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "چیزی",
+          "chizi",
+          "something",
+          "pronoun"
+        ],
+        [
+          "می‌نوشت",
+          "minevesht",
+          "writing",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was drinking tea when you rang.",
+      "fa": "داشتم چای می‌خوردم که زنگ زدی.",
+      "tr": "dâshtam chây mikhordam ke zang zadi",
+      "sit": "on the phone",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتم",
+          "dâshtam",
+          "I was",
+          "verb"
+        ],
+        [
+          "چای",
+          "chây",
+          "tea",
+          "noun"
+        ],
+        [
+          "می‌خوردم",
+          "mikhordam",
+          "drinking",
+          "verb"
+        ],
+        [
+          "که",
+          "ke",
+          "when",
+          "conjunction"
+        ],
+        [
+          "زنگ زدی",
+          "zang zadi",
+          "you rang",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They were building a house there.",
+      "fa": "اونجا داشتن یه خونه می‌ساختن.",
+      "tr": "unjâ dâshtan ye khune misâkhtan",
+      "sit": "describing a street",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "اونجا",
+          "unjâ",
+          "there",
+          "adverb"
+        ],
+        [
+          "داشتن",
+          "dâshtan",
+          "they were",
+          "verb"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "خونه",
+          "khune",
+          "house",
+          "noun"
+        ],
+        [
+          "می‌ساختن",
+          "misâkhtan",
+          "building",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We were coming back from the park.",
+      "fa": "داشتیم از پارک برمی‌گشتیم.",
+      "tr": "dâshtim az pârk barmigashtim",
+      "sit": "recounting an afternoon",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتیم",
+          "dâshtim",
+          "we were",
+          "verb"
+        ],
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "پارک",
+          "pârk",
+          "park",
+          "noun"
+        ],
+        [
+          "برمی‌گشتیم",
+          "barmigashtim",
+          "coming back",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was waiting at the station.",
+      "fa": "داشتم توی ایستگاه منتظر می‌موندم.",
+      "tr": "dâshtam tuye istgâh montazer mimundam",
+      "sit": "a missed meeting",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتم",
+          "dâshtam",
+          "I was",
+          "verb"
+        ],
+        [
+          "توی",
+          "tuye",
+          "in",
+          "preposition"
+        ],
+        [
+          "ایستگاه",
+          "istgâh",
+          "station",
+          "noun"
+        ],
+        [
+          "منتظر می‌موندم",
+          "montazer mimundam",
+          "waiting",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She was telling me about her work.",
+      "fa": "داشت درباره کارش بهم می‌گفت.",
+      "tr": "dâsht darbâreye kâresh beham migoft",
+      "sit": "recounting a conversation",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشت",
+          "dâsht",
+          "was",
+          "verb"
+        ],
+        [
+          "درباره",
+          "darbâreye",
+          "about",
+          "preposition"
+        ],
+        [
+          "کارش",
+          "kâresh",
+          "her work",
+          "attached pronoun"
+        ],
+        [
+          "بهم",
+          "beham",
+          "to me",
+          "attached pronoun"
+        ],
+        [
+          "می‌گفت",
+          "migoft",
+          "telling",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It was raining when we left.",
+      "fa": "وقتی رفتیم داشت بارون می‌اومد.",
+      "tr": "vaghti raftim dâsht bârun miyumad",
+      "sit": "recounting a walk",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "وقتی",
+          "vaghti",
+          "when",
+          "conjunction"
+        ],
+        [
+          "رفتیم",
+          "raftim",
+          "we left",
+          "verb"
+        ],
+        [
+          "داشت",
+          "dâsht",
+          "was",
+          "verb"
+        ],
+        [
+          "بارون",
+          "bârun",
+          "rain",
+          "noun"
+        ],
+        [
+          "می‌اومد",
+          "miyumad",
+          "coming",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They were laughing the whole time.",
+      "fa": "کل مدت داشتن می‌خندیدن.",
+      "tr": "kole modat dâshtan mikhandidan",
+      "sit": "about a dinner",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "کل",
+          "kol",
+          "whole",
+          "adjective"
+        ],
+        [
+          "مدت",
+          "modat",
+          "time",
+          "noun"
+        ],
+        [
+          "داشتن",
+          "dâshtan",
+          "they were",
+          "verb"
+        ],
+        [
+          "می‌خندیدن",
+          "mikhandidan",
+          "laughing",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was thinking about it all night.",
+      "fa": "کل شب داشتم بهش فکر می‌کردم.",
+      "tr": "kole shab dâshtam behesh fekr mikardam",
+      "sit": "after bad news",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "کل",
+          "kol",
+          "all",
+          "adjective"
+        ],
+        [
+          "شب",
+          "shab",
+          "night",
+          "noun"
+        ],
+        [
+          "داشتم",
+          "dâshtam",
+          "I was",
+          "verb"
+        ],
+        [
+          "بهش",
+          "behesh",
+          "about it",
+          "attached pronoun"
+        ],
+        [
+          "فکر می‌کردم",
+          "fekr mikardam",
+          "thinking",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We were looking at the photos.",
+      "fa": "داشتیم عکسا رو نگاه می‌کردیم.",
+      "tr": "dâshtim aksâ ro negâh mikardim",
+      "sit": "with family",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتیم",
+          "dâshtim",
+          "we were",
+          "verb"
+        ],
+        [
+          "عکسا",
+          "aksâ",
+          "the photos",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "نگاه می‌کردیم",
+          "negâh mikardim",
+          "looking at",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He was running to the bus.",
+      "fa": "داشت می‌دوید سمت اتوبوس.",
+      "tr": "dâsht midavid samte otobus",
+      "sit": "a near miss",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشت",
+          "dâsht",
+          "was",
+          "verb"
+        ],
+        [
+          "می‌دوید",
+          "midavid",
+          "running",
+          "verb"
+        ],
+        [
+          "سمت",
+          "samte",
+          "towards",
+          "preposition"
+        ],
+        [
+          "اتوبوس",
+          "otobus",
+          "bus",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was paying when she arrived.",
+      "fa": "وقتی رسید داشتم پول می‌دادم.",
+      "tr": "vaghti resid dâshtam pul midâdam",
+      "sit": "at a shop",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "وقتی",
+          "vaghti",
+          "when",
+          "conjunction"
+        ],
+        [
+          "رسید",
+          "resid",
+          "she arrived",
+          "verb"
+        ],
+        [
+          "داشتم",
+          "dâshtam",
+          "I was",
+          "verb"
+        ],
+        [
+          "پول می‌دادم",
+          "pul midâdam",
+          "paying",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They were asking about you.",
+      "fa": "داشتن ازت می‌پرسیدن.",
+      "tr": "dâshtan azet miporsidan",
+      "sit": "passing on a message",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتن",
+          "dâshtan",
+          "they were",
+          "verb"
+        ],
+        [
+          "ازت",
+          "azet",
+          "about you",
+          "attached pronoun"
+        ],
+        [
+          "می‌پرسیدن",
+          "miporsidan",
+          "asking",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We were sitting in the car.",
+      "fa": "داشتیم توی ماشین می‌نشستیم.",
+      "tr": "dâshtim tuye mâshin mineshastim",
+      "sit": "waiting out rain",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتیم",
+          "dâshtim",
+          "we were",
+          "verb"
+        ],
+        [
+          "توی",
+          "tuye",
+          "in",
+          "preposition"
+        ],
+        [
+          "ماشین",
+          "mâshin",
+          "car",
+          "noun"
+        ],
+        [
+          "می‌نشستیم",
+          "mineshastim",
+          "sitting",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She was buying bread.",
+      "fa": "داشت نون می‌خرید.",
+      "tr": "dâsht nun mikharid",
+      "sit": "at the bakery",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشت",
+          "dâsht",
+          "was",
+          "verb"
+        ],
+        [
+          "نون",
+          "nun",
+          "bread",
+          "noun"
+        ],
+        [
+          "می‌خرید",
+          "mikharid",
+          "buying",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was learning Persian then.",
+      "fa": "اون موقع داشتم فارسی یاد می‌گرفتم.",
+      "tr": "un moghe dâshtam fârsi yâd migereftam",
+      "sit": "talking about the past",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "موقع",
+          "moghe",
+          "time",
+          "noun"
+        ],
+        [
+          "داشتم",
+          "dâshtam",
+          "I was",
+          "verb"
+        ],
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "یاد می‌گرفتم",
+          "yâd migereftam",
+          "learning",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They were closing the shop.",
+      "fa": "داشتن مغازه رو می‌بستن.",
+      "tr": "dâshtan maghâze ro mibastan",
+      "sit": "arriving too late",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتن",
+          "dâshtan",
+          "they were",
+          "verb"
+        ],
+        [
+          "مغازه",
+          "maghâze",
+          "shop",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "می‌بستن",
+          "mibastan",
+          "closing",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We were getting ready to leave.",
+      "fa": "داشتیم آماده می‌شدیم بریم.",
+      "tr": "dâshtim âmâde mishodim berim",
+      "sit": "at the end of an evening",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "داشتیم",
+          "dâshtim",
+          "we were",
+          "verb"
+        ],
+        [
+          "آماده می‌شدیم",
+          "âmâde mishodim",
+          "getting ready",
+          "compound verb"
+        ],
+        [
+          "بریم",
+          "berim",
+          "to go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

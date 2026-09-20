@@ -1,0 +1,1185 @@
+{
+  "note": "Plural pronouns (اونا, ما) and the possessive clitics مون/تون/شون. اونا appeared twice in 778 sentences and شون three times.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "They're coming tonight.",
+      "fa": "اونا امشب میان.",
+      "tr": "unâ emshab miyân",
+      "sit": "expecting guests",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "امشب",
+          "emshab",
+          "tonight",
+          "adverb"
+        ],
+        [
+          "میان",
+          "miyân",
+          "they come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They didn't say anything.",
+      "fa": "اونا هیچی نگفتن.",
+      "tr": "unâ hichi nagoftan",
+      "sit": "after a meeting",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "هیچی",
+          "hichi",
+          "nothing",
+          "pronoun"
+        ],
+        [
+          "نگفتن",
+          "nagoftan",
+          "they didn't say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Their house is near the park.",
+      "fa": "خونه‌شون نزدیک پارکه.",
+      "tr": "khuneshun nazdike pârke",
+      "sit": "describing where friends live",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "خونه‌شون",
+          "khuneshun",
+          "their house",
+          "attached pronoun"
+        ],
+        [
+          "نزدیک",
+          "nazdik",
+          "near",
+          "preposition"
+        ],
+        [
+          "پارکه",
+          "pârke",
+          "is the park",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our car broke down.",
+      "fa": "ماشینمون خراب شد.",
+      "tr": "mâshinemun kharâb shod",
+      "sit": "explaining a delay",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "ماشینمون",
+          "mâshinemun",
+          "our car",
+          "attached pronoun"
+        ],
+        [
+          "خراب شد",
+          "kharâb shod",
+          "broke down",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is this your house?",
+      "fa": "این خونه‌تونه؟",
+      "tr": "in khunetune?",
+      "sit": "arriving at a friend's place",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "خونه‌تونه",
+          "khunetune",
+          "is your house",
+          "attached pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We're waiting for them.",
+      "fa": "ما منتظرشونیم.",
+      "tr": "mâ montazereshunim",
+      "sit": "outside a cinema",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "ما",
+          "mâ",
+          "we",
+          "pronoun"
+        ],
+        [
+          "منتظرشونیم",
+          "montazereshunim",
+          "we are waiting for them",
+          "attached pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They went home early.",
+      "fa": "اونا زود رفتن خونه.",
+      "tr": "unâ zud raftan khune",
+      "sit": "after a party",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "زود",
+          "zud",
+          "early",
+          "adverb"
+        ],
+        [
+          "رفتن",
+          "raftan",
+          "they went",
+          "verb"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our food got cold.",
+      "fa": "غذامون سرد شد.",
+      "tr": "ghazâmun sard shod",
+      "sit": "at a restaurant",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "غذامون",
+          "ghazâmun",
+          "our food",
+          "attached pronoun"
+        ],
+        [
+          "سرد شد",
+          "sard shod",
+          "got cold",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I saw them yesterday.",
+      "fa": "دیروز دیدمشون.",
+      "tr": "diruz didameshun",
+      "sit": "reporting news",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "دیدمشون",
+          "didameshun",
+          "I saw them",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Your room is very clean.",
+      "fa": "اتاقتون خیلی تمیزه.",
+      "tr": "otâghetun kheyli tamize",
+      "sit": "complimenting hosts",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "اتاقتون",
+          "otâghetun",
+          "your room",
+          "attached pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "تمیزه",
+          "tamize",
+          "is clean",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They don't know yet.",
+      "fa": "اونا هنوز نمی‌دونن.",
+      "tr": "unâ hanuz nemidunan",
+      "sit": "withholding news",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "هنوز",
+          "hanuz",
+          "yet",
+          "adverb"
+        ],
+        [
+          "نمی‌دونن",
+          "nemidunan",
+          "they don't know",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our train is late.",
+      "fa": "قطارمون دیر کرده.",
+      "tr": "ghatâremun dir karde",
+      "sit": "at the station",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "قطارمون",
+          "ghatâremun",
+          "our train",
+          "attached pronoun"
+        ],
+        [
+          "دیر کرده",
+          "dir karde",
+          "is late",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We brought their bags.",
+      "fa": "کیفاشونو آوردیم.",
+      "tr": "kifâshuno âvordim",
+      "sit": "helping friends move",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "کیفاشونو",
+          "kifâshuno",
+          "their bags",
+          "attached pronoun"
+        ],
+        [
+          "آوردیم",
+          "âvordim",
+          "we brought",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They live in the north.",
+      "fa": "اونا شمال زندگی می‌کنن.",
+      "tr": "unâ shomâl zendegi mikonan",
+      "sit": "talking about relatives",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "شمال",
+          "shomâl",
+          "north",
+          "noun"
+        ],
+        [
+          "زندگی می‌کنن",
+          "zendegi mikonan",
+          "they live",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our teacher is very good.",
+      "fa": "معلممون خیلی خوبه.",
+      "tr": "moalememun kheyli khube",
+      "sit": "about a class",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "معلممون",
+          "moalememun",
+          "our teacher",
+          "attached pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "خوبه",
+          "khube",
+          "is good",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you get their message?",
+      "fa": "پیامشون بهتون رسید؟",
+      "tr": "payâmeshun behetun resid?",
+      "sit": "checking on a group chat",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "پیامشون",
+          "payâmeshun",
+          "their message",
+          "attached pronoun"
+        ],
+        [
+          "بهتون",
+          "behetun",
+          "to you",
+          "attached pronoun"
+        ],
+        [
+          "رسید",
+          "resid",
+          "arrived",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They helped us a lot.",
+      "fa": "اونا خیلی بهمون کمک کردن.",
+      "tr": "unâ kheyli behemun komak kardan",
+      "sit": "thanking someone",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "a lot",
+          "adverb"
+        ],
+        [
+          "بهمون",
+          "behemun",
+          "to us",
+          "attached pronoun"
+        ],
+        [
+          "کمک کردن",
+          "komak kardan",
+          "they helped",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our order hasn't come yet.",
+      "fa": "سفارشمون هنوز نیومده.",
+      "tr": "sefâreshemun hanuz nayumade",
+      "sit": "at a restaurant",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "سفارشمون",
+          "sefâreshemun",
+          "our order",
+          "attached pronoun"
+        ],
+        [
+          "هنوز",
+          "hanuz",
+          "yet",
+          "adverb"
+        ],
+        [
+          "نیومده",
+          "nayumade",
+          "hasn't come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They're all waiting outside.",
+      "fa": "همه‌شون بیرون منتظرن.",
+      "tr": "hamashun birun montazeran",
+      "sit": "at a venue",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "همه‌شون",
+          "hamashun",
+          "all of them",
+          "attached pronoun"
+        ],
+        [
+          "بیرون",
+          "birun",
+          "outside",
+          "adverb"
+        ],
+        [
+          "منتظرن",
+          "montazeran",
+          "are waiting",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We lost their number.",
+      "fa": "شماره‌شونو گم کردیم.",
+      "tr": "shomâreshuno gom kardim",
+      "sit": "trying to reach someone",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "شماره‌شونو",
+          "shomâreshuno",
+          "their number",
+          "attached pronoun"
+        ],
+        [
+          "گم کردیم",
+          "gom kardim",
+          "we lost",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Your food is ready.",
+      "fa": "غذاتون حاضره.",
+      "tr": "ghazâtun hâzere",
+      "sit": "a waiter speaking",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "غذاتون",
+          "ghazâtun",
+          "your food",
+          "attached pronoun"
+        ],
+        [
+          "حاضره",
+          "hâzere",
+          "is ready",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They bought a new house.",
+      "fa": "اونا یه خونه جدید خریدن.",
+      "tr": "unâ ye khuneye jadid kharidan",
+      "sit": "family news",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "خونه",
+          "khune",
+          "house",
+          "noun"
+        ],
+        [
+          "جدید",
+          "jadid",
+          "new",
+          "adjective"
+        ],
+        [
+          "خریدن",
+          "kharidan",
+          "they bought",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our seats are at the back.",
+      "fa": "صندلیامون عقبه.",
+      "tr": "sandaliyâmun aghabe",
+      "sit": "at a cinema",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "صندلیامون",
+          "sandaliyâmun",
+          "our seats",
+          "attached pronoun"
+        ],
+        [
+          "عقبه",
+          "aghabe",
+          "is at the back",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I told them yesterday.",
+      "fa": "دیروز بهشون گفتم.",
+      "tr": "diruz beheshun goftam",
+      "sit": "passing on news",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "بهشون",
+          "beheshun",
+          "to them",
+          "attached pronoun"
+        ],
+        [
+          "گفتم",
+          "goftam",
+          "I said",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They work a lot.",
+      "fa": "اونا خیلی کار می‌کنن.",
+      "tr": "unâ kheyli kâr mikonan",
+      "sit": "about colleagues",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "a lot",
+          "adverb"
+        ],
+        [
+          "کار می‌کنن",
+          "kâr mikonan",
+          "they work",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our flight is tomorrow morning.",
+      "fa": "پروازمون فردا صبحه.",
+      "tr": "parvâzemun fardâ sobhe",
+      "sit": "before travelling",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "پروازمون",
+          "parvâzemun",
+          "our flight",
+          "attached pronoun"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "صبحه",
+          "sobhe",
+          "is morning",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We saw their new car.",
+      "fa": "ماشین جدیدشونو دیدیم.",
+      "tr": "mâshine jadideshuno didim",
+      "sit": "visiting friends",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "ماشین",
+          "mâshin",
+          "car",
+          "noun"
+        ],
+        [
+          "جدیدشونو",
+          "jadideshuno",
+          "their new",
+          "attached pronoun"
+        ],
+        [
+          "دیدیم",
+          "didim",
+          "we saw",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They didn't come.",
+      "fa": "اونا نیومدن.",
+      "tr": "unâ nayumadan",
+      "sit": "after waiting",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "نیومدن",
+          "nayumadan",
+          "they didn't come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Your key is on the table.",
+      "fa": "کلیدتون روی میزه.",
+      "tr": "kelidetun ruye mize",
+      "sit": "at reception",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "کلیدتون",
+          "kelidetun",
+          "your key",
+          "attached pronoun"
+        ],
+        [
+          "روی",
+          "ruye",
+          "on",
+          "preposition"
+        ],
+        [
+          "میزه",
+          "mize",
+          "is the table",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We miss them.",
+      "fa": "دلمون براشون تنگ شده.",
+      "tr": "delemun barâshun tang shode",
+      "sit": "about distant family",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دلمون",
+          "delemun",
+          "our heart",
+          "attached pronoun"
+        ],
+        [
+          "براشون",
+          "barâshun",
+          "for them",
+          "attached pronoun"
+        ],
+        [
+          "تنگ شده",
+          "tang shode",
+          "has become tight",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They called us last night.",
+      "fa": "دیشب بهمون زنگ زدن.",
+      "tr": "dishab behemun zang zadan",
+      "sit": "reporting a call",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دیشب",
+          "dishab",
+          "last night",
+          "adverb"
+        ],
+        [
+          "بهمون",
+          "behemun",
+          "to us",
+          "attached pronoun"
+        ],
+        [
+          "زنگ زدن",
+          "zang zadan",
+          "they called",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our street is very quiet.",
+      "fa": "خیابونمون خیلی ساکته.",
+      "tr": "khiyâbunemun kheyli sâkete",
+      "sit": "describing home",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "خیابونمون",
+          "khiyâbunemun",
+          "our street",
+          "attached pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "ساکته",
+          "sâkete",
+          "is quiet",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They ate everything.",
+      "fa": "اونا همه‌شو خوردن.",
+      "tr": "unâ hamasho khordan",
+      "sit": "after a meal",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "همه‌شو",
+          "hamasho",
+          "all of it",
+          "attached pronoun"
+        ],
+        [
+          "خوردن",
+          "khordan",
+          "they ate",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We have their address.",
+      "fa": "آدرسشونو داریم.",
+      "tr": "âdreseshuno dârim",
+      "sit": "planning a visit",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "آدرسشونو",
+          "âdreseshuno",
+          "their address",
+          "attached pronoun"
+        ],
+        [
+          "داریم",
+          "dârim",
+          "we have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Your taxi is here.",
+      "fa": "تاکسیتون اومد.",
+      "tr": "tâksitun umad",
+      "sit": "at a hotel door",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "تاکسیتون",
+          "tâksitun",
+          "your taxi",
+          "attached pronoun"
+        ],
+        [
+          "اومد",
+          "umad",
+          "came",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They want to see us.",
+      "fa": "اونا می‌خوان ما رو ببینن.",
+      "tr": "unâ mikhân mâ ro bebinan",
+      "sit": "family plans",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "می‌خوان",
+          "mikhân",
+          "they want",
+          "verb"
+        ],
+        [
+          "ما",
+          "mâ",
+          "us",
+          "pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "ببینن",
+          "bebinan",
+          "to see",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our money finished.",
+      "fa": "پولمون تموم شد.",
+      "tr": "pulemun tamum shod",
+      "sit": "on a trip",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "پولمون",
+          "pulemun",
+          "our money",
+          "attached pronoun"
+        ],
+        [
+          "تموم شد",
+          "tamum shod",
+          "finished",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I gave them the book.",
+      "fa": "کتابو بهشون دادم.",
+      "tr": "ketâbo beheshun dâdam",
+      "sit": "returning something",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "کتابو",
+          "ketâbo",
+          "the book",
+          "noun"
+        ],
+        [
+          "بهشون",
+          "beheshun",
+          "to them",
+          "attached pronoun"
+        ],
+        [
+          "دادم",
+          "dâdam",
+          "I gave",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They're not at home.",
+      "fa": "اونا خونه نیستن.",
+      "tr": "unâ khune nistan",
+      "sit": "after knocking",
+      "tags": [
+        "plural"
+      ],
+      "bd": [
+        [
+          "اونا",
+          "unâ",
+          "they",
+          "pronoun"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ],
+        [
+          "نیستن",
+          "nistan",
+          "they are not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our work finished late.",
+      "fa": "کارمون دیر تموم شد.",
+      "tr": "kâremun dir tamum shod",
+      "sit": "explaining a late arrival",
+      "tags": [
+        "plural",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "کارمون",
+          "kâremun",
+          "our work",
+          "attached pronoun"
+        ],
+        [
+          "دیر",
+          "dir",
+          "late",
+          "adverb"
+        ],
+        [
+          "تموم شد",
+          "tamum shod",
+          "finished",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}
