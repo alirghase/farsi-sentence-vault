@@ -29,7 +29,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from core.syllabus import CORE_VERBS
 
 BANK = pathlib.Path(__file__).parent / "seed_sentences.json"
-PUNCT = "؟?!.،,:;"
+PUNCT = "؟?!.،,:;\"“”'‘’"
 
 # Light verbs that form Persian compound verbs. A compound is a nominal plus one
 # of these; splitting them is the single worst thing a word-by-word gloss can do,

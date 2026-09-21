@@ -890,7 +890,7 @@
         },
         {
           "fa": "ساعته",
-          "translit": "sa'ate",
+          "translit": "saate",
           "en": "hour is",
           "pos": "verb"
         },
@@ -1381,7 +1381,7 @@
         },
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -1534,7 +1534,7 @@
         },
         {
           "fa": "بعدش",
-          "translit": "ba'desh",
+          "translit": "badesh",
           "en": "after it",
           "pos": "verb"
         }
@@ -2034,7 +2034,7 @@
       "breakdown": [
         {
           "fa": "جمعه",
-          "translit": "jom'e",
+          "translit": "jome",
           "en": "Friday",
           "pos": "noun"
         },
@@ -2639,7 +2639,7 @@
         },
         {
           "fa": "جمعه",
-          "translit": "jom'e",
+          "translit": "jome",
           "en": "Friday",
           "pos": "noun"
         },
@@ -2952,7 +2952,7 @@
         },
         {
           "fa": "می‌اومد",
-          "translit": "mi'âmad",
+          "translit": "miâmad",
           "en": "was coming",
           "pos": "noun"
         }
@@ -2980,7 +2980,7 @@
         },
         {
           "fa": "بعدازظهر",
-          "translit": "ba'dazbohr",
+          "translit": "badazbohr",
           "en": "afternoon",
           "pos": "noun"
         },
@@ -3194,13 +3194,13 @@
       "breakdown": [
         {
           "fa": "رییسم",
-          "translit": "ra'isam",
+          "translit": "raisam",
           "en": "my boss",
           "pos": "attached pronoun"
         },
         {
           "fa": "ساعت",
-          "translit": "sâ'at-e",
+          "translit": "sâat-e",
           "en": "hour of",
           "pos": "noun"
         },
@@ -3380,7 +3380,7 @@
         },
         {
           "fa": "بعد",
-          "translit": "ba'd",
+          "translit": "bad",
           "en": "after",
           "pos": "noun"
         },
@@ -3615,7 +3615,7 @@
         },
         {
           "fa": "ساعت",
-          "translit": "sâ'at",
+          "translit": "sâat",
           "en": "hours",
           "pos": "noun"
         },
@@ -3785,7 +3785,7 @@
         },
         {
           "fa": "می‌اد",
-          "translit": "mi'âd",
+          "translit": "miâd",
           "en": "comes",
           "pos": "noun"
         },
@@ -3833,7 +3833,7 @@
       "englishText": "Don't wait up for me for dinner tonight because I'll be late.",
       "farsiText": "امشب منتظر من واسه شام نمونین چون دیر می‌ام.",
       "finglish": "emshab montazer-e man vâse shâm namunin chun dir mi'âm.",
-      "literalGloss": "tonight waiting-for me for dinner don't-stay because late I-come",
+      "literalGloss": "tonight waiting-for me for dinner dont-stay because late I-come",
       "difficulty": 3,
       "situation": "phone call with family",
       "grammarTags": [
@@ -3875,7 +3875,7 @@
         {
           "fa": "نمونین",
           "translit": "namunin",
-          "en": "don't stay",
+          "en": "dont stay",
           "pos": "noun"
         },
         {
@@ -3892,7 +3892,7 @@
         },
         {
           "fa": "می‌ام",
-          "translit": "mi'âm",
+          "translit": "miâm",
           "en": "I come",
           "pos": "verb"
         }
@@ -3939,7 +3939,7 @@
         },
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -3999,7 +3999,7 @@
       "englishText": "I am so embarrassed for keeping you waiting in this cold; I really don't know how to apologize.",
       "farsiText": "واقعا شرمنده‌ام که تو این سرما معطلتون کردم، اصلا نمی‌دونم چطوری عذرخواهی کنم.",
       "finglish": "vâghe'an sharmandam ke tu in sarmâ mo'attalatun kardam, aslan nemidunam chetori ozrkhâhi konam.",
-      "literalGloss": "really ashamed-I-am that in this cold waiting-you I-did, at-all I-don't-know how apology I-do",
+      "literalGloss": "really ashamed-I-am that in this cold waiting-you I-did, at-all I-dont-know how apology I-do",
       "difficulty": 5,
       "situation": "apologising or explaining lateness",
       "grammarTags": [
@@ -4011,7 +4011,7 @@
       "breakdown": [
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -4047,7 +4047,7 @@
         },
         {
           "fa": "معطلتون",
-          "translit": "mo'attalatun",
+          "translit": "moattalatun",
           "en": "waiting you",
           "pos": "verb"
         },
@@ -4066,7 +4066,7 @@
         {
           "fa": "نمی‌دونم",
           "translit": "nemidunam",
-          "en": "I don't know",
+          "en": "I dont know",
           "pos": "verb"
         },
         {
@@ -4637,7 +4637,7 @@
       "englishText": "Don't trouble yourself, I'm not hungry at all.",
       "farsiText": "تو زحمت نیفت، من اصلا گشنه‌م نیست.",
       "finglish": "to zahmat nayoft, man aslan goshnem nist.",
-      "literalGloss": "in trouble don't-fall, I at-all my-hunger is-not.",
+      "literalGloss": "in trouble dont-fall, I at-all my-hunger is-not.",
       "difficulty": 2,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -4660,7 +4660,7 @@
         {
           "fa": "نیفت",
           "translit": "nayoft",
-          "en": "don't fall",
+          "en": "dont fall",
           "pos": "noun"
         },
         {
@@ -5336,7 +5336,7 @@
         },
         {
           "fa": "ساعته",
-          "translit": "sâ'ate",
+          "translit": "sâate",
           "en": "hour is",
           "pos": "verb"
         },
@@ -5674,7 +5674,7 @@
       "breakdown": [
         {
           "fa": "جمعه",
-          "translit": "jo'me",
+          "translit": "jome",
           "en": "Friday",
           "pos": "noun"
         },
@@ -5881,7 +5881,7 @@
       "englishText": "I see your point, but I don't think that's true.",
       "farsiText": "حرفت رو می‌فهمم، ولی فکر نمی‌کنم این‌طور باشه.",
       "finglish": "harfet ro mifahmam, vali fekr nemikonam in-tur bâshe.",
-      "literalGloss": "word-your [obj] I-understand, but thought I-don't-do this-way it-be",
+      "literalGloss": "word-your [obj] I-understand, but thought I-dont-do this-way it-be",
       "difficulty": 3,
       "situation": "disagreeing politely",
       "grammarTags": [
@@ -5917,7 +5917,7 @@
         {
           "fa": "فکر نمی‌کنم",
           "translit": "fekr nemikonam",
-          "en": "thought I don't do",
+          "en": "thought I dont do",
           "pos": "compound verb"
         },
         {
@@ -6262,7 +6262,7 @@
       "englishText": "With all due respect, I don't think this plan will work out the way you expect.",
       "farsiText": "با همه احترامی که قائل هستم، فکر نمی‌کنم این طرح اون‌جوری که انتظار داری جواب بده.",
       "finglish": "bâ hame ehterâmi ke ghâ'el hastam, fekr nemikonam in tarh un-juri ke entezâr dâri javâb bede.",
-      "literalGloss": "with all respect that consider I-am, thought I-don't-do this plan that-way that expectation you-have answer it-give",
+      "literalGloss": "with all respect that consider I-am, thought I-dont-do this plan that-way that expectation you-have answer it-give",
       "difficulty": 4,
       "situation": "disagreeing politely",
       "grammarTags": [
@@ -6298,7 +6298,7 @@
         },
         {
           "fa": "قائل",
-          "translit": "ghâ'el",
+          "translit": "ghâel",
           "en": "consider",
           "pos": "noun"
         },
@@ -6311,7 +6311,7 @@
         {
           "fa": "فکر نمی‌کنم",
           "translit": "fekr nemikonam",
-          "en": "thought I don't do",
+          "en": "thought I dont do",
           "pos": "compound verb"
         },
         {
@@ -6594,7 +6594,7 @@
       "englishText": "Since we haven't seen each other for ages, let me know when you're free so we can grab lunch.",
       "farsiText": "چون خیلی وقته همدیگه‌رو ندیدیم، هر وقت سرت خلوت شد بگو با هم ناهار بخوریم.",
       "finglish": "chun kheyli vaghte hamdige-ro nadidim, har vaght saret khalvat shod begu bâ ham nâhâr bokhorim.",
-      "literalGloss": "because very time-is each-other [obj] we-haven't-seen, each time head-your empty became speak with together lunch we-eat",
+      "literalGloss": "because very time-is each-other [obj] we-havent-seen, each time head-your empty became speak with together lunch we-eat",
       "difficulty": 4,
       "situation": "making plans with a friend",
       "grammarTags": [
@@ -6718,7 +6718,7 @@
       "englishText": "If it's no trouble and I'm not bothering you, I'd love to drop by this evening.",
       "farsiText": "اگه زحمتی نیست و مزاحمتون نمی‌شم، خیلی دوست دارم امشب یه سری بهتون بزنم.",
       "finglish": "age zahmati nist o mozâhemetun nemisham, kheyli dust dâram emshab ye sari behetun bezanam.",
-      "literalGloss": "if trouble-a is-not and nuisance-your I-don't-become, very friend I-have tonight a head to-you I-strike",
+      "literalGloss": "if trouble-a is-not and nuisance-your I-dont-become, very friend I-have tonight a head to-you I-strike",
       "difficulty": 5,
       "situation": "making plans with a friend",
       "grammarTags": [
@@ -6762,7 +6762,7 @@
         {
           "fa": "نمی‌شم",
           "translit": "nemisham",
-          "en": "I don't become",
+          "en": "I dont become",
           "pos": "verb"
         },
         {
@@ -7786,7 +7786,7 @@
         },
         {
           "fa": "مایی",
-          "translit": "mâ'i",
+          "translit": "mâi",
           "en": "of us are",
           "pos": "noun"
         }
@@ -8250,7 +8250,7 @@
       "breakdown": [
         {
           "fa": "بعد",
-          "translit": "ba'd",
+          "translit": "bad",
           "en": "after",
           "pos": "noun"
         },
@@ -8548,7 +8548,7 @@
         },
         {
           "fa": "ساعت",
-          "translit": "sâ'at",
+          "translit": "sâat",
           "en": "hour",
           "pos": "noun"
         },
@@ -8913,7 +8913,7 @@
         },
         {
           "fa": "مایی",
-          "translit": "mâ'i",
+          "translit": "mâi",
           "en": "of us are",
           "pos": "noun"
         },
@@ -9105,7 +9105,7 @@
       "breakdown": [
         {
           "fa": "خونه‌ای",
-          "translit": "khune'i",
+          "translit": "khunei",
           "en": "home are you",
           "pos": "verb"
         }
@@ -9413,7 +9413,7 @@
         },
         {
           "fa": "بعدازظهر",
-          "translit": "ba'dazzohr",
+          "translit": "badazzohr",
           "en": "afternoon",
           "pos": "noun"
         },
@@ -9477,7 +9477,7 @@
         },
         {
           "fa": "پایین",
-          "translit": "pâ'in",
+          "translit": "pâin",
           "en": "down",
           "pos": "noun"
         }
@@ -10033,7 +10033,7 @@
         },
         {
           "fa": "دعاتون",
-          "translit": "do'âtun",
+          "translit": "doâtun",
           "en": "pray for you",
           "pos": "verb"
         },
@@ -10276,7 +10276,7 @@
         },
         {
           "fa": "رئیسم",
-          "translit": "ra'isam",
+          "translit": "raisam",
           "en": "boss my",
           "pos": "attached pronoun"
         },
@@ -10413,7 +10413,7 @@
       "englishText": "My phone didn't ring this morning.",
       "farsiText": "امروز صبح گوشیم زنگ نخورد.",
       "finglish": "emruz sobh gushim zang nakhord.",
-      "literalGloss": "today morning phone-my ring didn't-eat.",
+      "literalGloss": "today morning phone-my ring didnt-eat.",
       "difficulty": 2,
       "situation": "apologising or explaining lateness",
       "grammarTags": [
@@ -10442,7 +10442,7 @@
         {
           "fa": "زنگ نخورد",
           "translit": "zang nakhord",
-          "en": "ring didn't eat",
+          "en": "ring didnt eat",
           "pos": "compound verb"
         }
       ],
@@ -10564,7 +10564,7 @@
       "englishText": "If I don't finish this project, I'll be in trouble.",
       "farsiText": "اگه این پروژه رو تموم نکنم، به مشکل می‌خورم.",
       "finglish": "age in porozhe ro tamum nakonam, be moshkel mikhoram.",
-      "literalGloss": "if this project RA finished I-don't-make, to problem I-eat.",
+      "literalGloss": "if this project RA finished I-dont-make, to problem I-eat.",
       "difficulty": 3,
       "situation": "talking about work or study",
       "grammarTags": [
@@ -10601,7 +10601,7 @@
         {
           "fa": "تموم نکنم",
           "translit": "tamum nakonam",
-          "en": "finished I don't make",
+          "en": "finished I dont make",
           "pos": "compound verb"
         },
         {
@@ -10630,7 +10630,7 @@
       "englishText": "In my opinion, it's better if we don't buy this house.",
       "farsiText": "به نظر من، بهتره این خونه رو نخریم.",
       "finglish": "be nazare man, behtare in khune ro nakharim.",
-      "literalGloss": "to opinion of me, it-is-better this house RA we-don't-buy.",
+      "literalGloss": "to opinion of me, it-is-better this house RA we-dont-buy.",
       "difficulty": 3,
       "situation": "expressing an opinion",
       "grammarTags": [
@@ -10944,7 +10944,7 @@
       "englishText": "I think your plan is good, but we don't have enough money to start it now.",
       "farsiText": "فکر می‌کنم طرحت خوبه، ولی واسه شروع کردنش الان پول کافی نداریم.",
       "finglish": "fekr mikonam tarhet khube, vali vâse shoru' kardanesh alân pule kâfi nadârim.",
-      "literalGloss": "thought I-make plan-your is-good, but for start making-of-it now money-of enough we-don't-have.",
+      "literalGloss": "thought I-make plan-your is-good, but for start making-of-it now money-of enough we-dont-have.",
       "difficulty": 4,
       "situation": "expressing an opinion",
       "grammarTags": [
@@ -10986,7 +10986,7 @@
         },
         {
           "fa": "شروع کردنش",
-          "translit": "shoru' kardanesh",
+          "translit": "shoru kardanesh",
           "en": "start making of it",
           "pos": "compound verb"
         },
@@ -11011,7 +11011,7 @@
         {
           "fa": "نداریم",
           "translit": "nadârim",
-          "en": "we don't have",
+          "en": "we dont have",
           "pos": "verb"
         }
       ],
@@ -11203,7 +11203,7 @@
       "englishText": "I'm so ashamed I kept you waiting, please don't be upset with me, I really didn't mean to.",
       "farsiText": "خیلی شرمنده‌ام که معطلت کردم، تو رو خدا از دستم دلخور نشو، اصلا دست خودم نبود.",
       "finglish": "kheyli sharmande'am ke mo'attalet kardam, to ro khodâ az dastam delkhor nasho, aslan daste khodam nabud.",
-      "literalGloss": "very ashamed-I-am that waiting-you I-did, you RA God from hand-my upset don't-become, at-all hand-of myself it-was-not.",
+      "literalGloss": "very ashamed-I-am that waiting-you I-did, you RA God from hand-my upset dont-become, at-all hand-of myself it-was-not.",
       "difficulty": 5,
       "situation": "apologising or explaining lateness",
       "grammarTags": [
@@ -11222,7 +11222,7 @@
         },
         {
           "fa": "شرمنده‌ام",
-          "translit": "sharmande'am",
+          "translit": "sharmandeam",
           "en": "ashamed I am",
           "pos": "verb"
         },
@@ -11234,7 +11234,7 @@
         },
         {
           "fa": "معطلت",
-          "translit": "mo'attalet",
+          "translit": "moattalet",
           "en": "waiting you",
           "pos": "verb"
         },
@@ -11283,7 +11283,7 @@
         {
           "fa": "نشو",
           "translit": "nasho",
-          "en": "don't become",
+          "en": "dont become",
           "pos": "noun"
         },
         {
@@ -11318,7 +11318,7 @@
       "englishText": "They didn't give me any choice; either I had to accept their conditions or quit my job.",
       "farsiText": "هیچ چاره‌ای برام نذاشتن؛ یا باید شرایطشون رو قبول می‌کردم یا از کارم استعفا می‌دادم.",
       "finglish": "hich châre'i barâm nazâshtan; yâ bâyad sharâyeteshun ro ghabul mikardam yâ az kâram este'fâ midâdam.",
-      "literalGloss": "no solution-a for-me they-didn't-leave; either must conditions-their RA acceptance I-was-doing or from work-my resignation I-was-giving.",
+      "literalGloss": "no solution-a for-me they-didnt-leave; either must conditions-their RA acceptance I-was-doing or from work-my resignation I-was-giving.",
       "difficulty": 5,
       "situation": "expressing an opinion",
       "grammarTags": [
@@ -11337,7 +11337,7 @@
         },
         {
           "fa": "چاره‌ای",
-          "translit": "châre'i",
+          "translit": "chârei",
           "en": "solution a",
           "pos": "noun"
         },
@@ -11350,7 +11350,7 @@
         {
           "fa": "نذاشتن؛",
           "translit": "nazâshtan",
-          "en": "they didn't leave",
+          "en": "they didnt leave",
           "pos": "verb"
         },
         {
@@ -11409,7 +11409,7 @@
         },
         {
           "fa": "استعفا",
-          "translit": "este'fâ",
+          "translit": "estefâ",
           "en": "resignation",
           "pos": "noun"
         },
@@ -11546,7 +11546,7 @@
       "breakdown": [
         {
           "fa": "بعد",
-          "translit": "ba'd",
+          "translit": "bad",
           "en": "after",
           "pos": "noun"
         },
@@ -11645,7 +11645,7 @@
         },
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -11723,7 +11723,7 @@
       "englishText": "You shouldn't have bought a gift, please don't embarrass me.",
       "farsiText": "کادو لازم نبود بخری، توروخدا منو خجالت نده.",
       "finglish": "kâdo lâzem nabud bakhari, toro khodâ mano khejâlat nade",
-      "literalGloss": "gift necessary was-not you-buy, you-the-God me-[ra] embarrassment don't-give",
+      "literalGloss": "gift necessary was-not you-buy, you-the-God me-[ra] embarrassment dont-give",
       "difficulty": 3,
       "situation": "compliments and thanking (taarof)",
       "grammarTags": [
@@ -11870,7 +11870,7 @@
       "englishText": "I really don't know how to thank you for helping my brother with his exam prep.",
       "farsiText": "واقعا نمی‌دونم چطور ازت تشکر کنم که واسه امتحان به برادرم کمک کردی.",
       "finglish": "vâghe'an nemidunam chetor azat tashakkor konam ke vâse emtehân be barâdaram komak kardi",
-      "literalGloss": "really I-don't-know how from-you thanks I-do that for exam to brother-my help you-did",
+      "literalGloss": "really I-dont-know how from-you thanks I-do that for exam to brother-my help you-did",
       "difficulty": 4,
       "situation": "compliments and thanking (taarof)",
       "grammarTags": [
@@ -11883,14 +11883,14 @@
       "breakdown": [
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
         {
           "fa": "نمی‌دونم",
           "translit": "nemidunam",
-          "en": "I don't know",
+          "en": "I dont know",
           "pos": "verb"
         },
         {
@@ -12027,7 +12027,7 @@
         },
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -12069,7 +12069,7 @@
         },
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -12371,7 +12371,7 @@
       "breakdown": [
         {
           "fa": "جمعه",
-          "translit": "jom'e",
+          "translit": "jome",
           "en": "Friday",
           "pos": "noun"
         },
@@ -12449,7 +12449,7 @@
         },
         {
           "fa": "بعد",
-          "translit": "ba'd",
+          "translit": "bad",
           "en": "after",
           "pos": "noun"
         },
@@ -12527,7 +12527,7 @@
         },
         {
           "fa": "اعتماد",
-          "translit": "e'temâd",
+          "translit": "etemâd",
           "en": "trust",
           "pos": "noun"
         },
@@ -12805,7 +12805,7 @@
         },
         {
           "fa": "دعوتت",
-          "translit": "da'vatet",
+          "translit": "davatet",
           "en": "invite you",
           "pos": "verb"
         },
@@ -12867,7 +12867,7 @@
       "breakdown": [
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -13176,7 +13176,7 @@
         },
         {
           "fa": "بعد",
-          "translit": "ba'd",
+          "translit": "bad",
           "en": "after",
           "pos": "noun"
         },
@@ -13216,7 +13216,7 @@
       "breakdown": [
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -13434,7 +13434,7 @@
       "breakdown": [
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -13559,7 +13559,7 @@
         },
         {
           "fa": "ساعتی",
-          "translit": "sâ'ati",
+          "translit": "sâati",
           "en": "hour",
           "pos": "noun"
         },
@@ -13659,7 +13659,7 @@
       "englishText": "Your cooking is wonderful, I really enjoyed this food.",
       "farsiText": "دستپختت حرف نداره، واقعا از این غذا لذت بردم.",
       "finglish": "dastpokhtet harf nadâre, vâghe'an az in ghazâ lezzat bordam.",
-      "literalGloss": "your-cooking word doesn't-have, really from this food pleasure I-carried.",
+      "literalGloss": "your-cooking word doesnt-have, really from this food pleasure I-carried.",
       "difficulty": 3,
       "situation": "compliments and thanking (taarof)",
       "grammarTags": [
@@ -13684,12 +13684,12 @@
         {
           "fa": "نداره",
           "translit": "nadâre",
-          "en": "doesn't have",
+          "en": "doesnt have",
           "pos": "noun"
         },
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -13731,7 +13731,7 @@
       "englishText": "I think we missed the turn because the GPS isn't working.",
       "farsiText": "فکر کنم پیچ رو رد کردیم چون جی‌پی‌اس کار نمی‌کنه.",
       "finglish": "fekr konam pich ro rad kardim chun jipias kâr nemikone.",
-      "literalGloss": "thought I-do turn [ra] pass we-did because GPS work doesn't-do.",
+      "literalGloss": "thought I-do turn [ra] pass we-did because GPS work doesnt-do.",
       "difficulty": 3,
       "situation": "giving or following directions",
       "grammarTags": [
@@ -13785,7 +13785,7 @@
         {
           "fa": "کار نمی‌کنه",
           "translit": "kâr nemikone",
-          "en": "work doesn't do",
+          "en": "work doesnt do",
           "pos": "compound verb"
         }
       ],
@@ -13965,7 +13965,7 @@
       "breakdown": [
         {
           "fa": "شرمنده‌ام",
-          "translit": "sharmande'am",
+          "translit": "sharmandeam",
           "en": "ashamed me",
           "pos": "noun"
         },
@@ -14460,7 +14460,7 @@
       "englishText": "If we don't leave now, we will get stuck in traffic.",
       "farsiText": "اگه الان راه نیفتیم، تو ترافیک گیر می‌کنیم.",
       "finglish": "age alân râh nayoftim, tu terâfik gir mikonim.",
-      "literalGloss": "if now path we-don't-fall, in traffic catch we-do.",
+      "literalGloss": "if now path we-dont-fall, in traffic catch we-do.",
       "difficulty": 3,
       "situation": "small talk about weather or traffic",
       "grammarTags": [
@@ -14490,7 +14490,7 @@
         {
           "fa": "نیفتیم",
           "translit": "nayoftim",
-          "en": "we don't fall",
+          "en": "we dont fall",
           "pos": "verb"
         },
         {
@@ -14808,7 +14808,7 @@
         },
         {
           "fa": "تعطیله",
-          "translit": "ta'tile",
+          "translit": "tatile",
           "en": "closed is",
           "pos": "verb"
         }
@@ -14915,7 +14915,7 @@
         },
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -15452,7 +15452,7 @@
         },
         {
           "fa": "ساعت",
-          "translit": "sâ'at",
+          "translit": "sâat",
           "en": "hour",
           "pos": "noun"
         },
@@ -15704,7 +15704,7 @@
         },
         {
           "fa": "بعدی",
-          "translit": "ba'di",
+          "translit": "badi",
           "en": "next",
           "pos": "noun"
         },
@@ -15752,7 +15752,7 @@
         },
         {
           "fa": "ساعت",
-          "translit": "sâ'at",
+          "translit": "sâat",
           "en": "hour",
           "pos": "noun"
         },
@@ -16193,7 +16193,7 @@
       "englishText": "I'd really appreciate it if you didn't tell anyone about our conversation until tomorrow.",
       "farsiText": "خیلی ممنون می‌شم اگه تا فردا درباره حرفامون به هیچ‌کس چیزی نگی.",
       "finglish": "kheyli mamnun misham age tâ fardâ darbâreye harfâmun be hich kas chizi nagi.",
-      "literalGloss": "very grateful I-become if until tomorrow about-of words-our to no-person something you-don't-say.",
+      "literalGloss": "very grateful I-become if until tomorrow about-of words-our to no-person something you-dont-say.",
       "difficulty": 4,
       "situation": "negotiating or asking for a favour",
       "grammarTags": [
@@ -16207,7 +16207,7 @@
       "englishText": "Don't worry about it at all, you are always a crown on our heads and we are at your service.",
       "farsiText": "اصلا نگران نباشید، شما همیشه تاج سر مایید و ما در خدمتتون هستیم.",
       "finglish": "aslan negarân nabâshid, shomâ hamishe tâje sare mâid o mâ dar khedmatetun hastim.",
-      "literalGloss": "at-all worried don't-be, you always crown-of head-of our-are and we in service-your we-are.",
+      "literalGloss": "at-all worried dont-be, you always crown-of head-of our-are and we in service-your we-are.",
       "difficulty": 5,
       "situation": "phone call with family",
       "grammarTags": [
@@ -16232,7 +16232,7 @@
         {
           "fa": "نباشید",
           "translit": "nabâshid",
-          "en": "don't be",
+          "en": "dont be",
           "pos": "noun"
         },
         {
@@ -16688,7 +16688,7 @@
       "englishText": "If you have time tonight, let's go out for a little walk together.",
       "farsiText": "اگه امشب وقت داری، بریم با هم یه کم پیاده‌روی کنیم.",
       "finglish": "age emshab vaght dâri, berim bâ ham ye kam piâde ravi konim.",
-      "literalGloss": "if tonight time you-have, let's-go with each-other a little walking we-do.",
+      "literalGloss": "if tonight time you-have, lets-go with each-other a little walking we-do.",
       "difficulty": 3,
       "situation": "making plans with a friend",
       "grammarTags": [
@@ -16727,7 +16727,7 @@
       "englishText": "I don't think he will agree with our suggestion.",
       "farsiText": "فکر نمی‌کنم اون با پیشنهاد ما موافقت کنه.",
       "finglish": "fekr nemikonam un bâ pishnehâde mâ movâfeghat kone.",
-      "literalGloss": "thought I-don't-do he with suggestion of us agreement he-do.",
+      "literalGloss": "thought I-dont-do he with suggestion of us agreement he-do.",
       "difficulty": 3,
       "situation": "expressing an opinion",
       "grammarTags": [
@@ -16941,7 +16941,7 @@
         },
         {
           "fa": "ساعت",
-          "translit": "sâ'at",
+          "translit": "sâat",
           "en": "hour",
           "pos": "noun"
         },
@@ -17011,7 +17011,7 @@
       "breakdown": [
         {
           "fa": "مطمئن",
-          "translit": "motma'en",
+          "translit": "motmaen",
           "en": "certain",
           "pos": "noun"
         },
@@ -17173,7 +17173,7 @@
         },
         {
           "fa": "رئیسم",
-          "translit": "ra'isam",
+          "translit": "raisam",
           "en": "my boss",
           "pos": "attached pronoun"
         },
@@ -17381,7 +17381,7 @@
         },
         {
           "fa": "بعد",
-          "translit": "ba'd",
+          "translit": "bad",
           "en": "after",
           "pos": "noun"
         },
@@ -17881,7 +17881,7 @@
       "englishText": "I don't think you can finish this project alone.",
       "farsiText": "فکر نمی‌کنم بتونی این پروژه رو تنهایی تموم کنی.",
       "finglish": "fekr nemikonam betuni in proje ro tanhâyi tamum koni.",
-      "literalGloss": "thought I-don't-do you-can this project RA alone end you-do.",
+      "literalGloss": "thought I-dont-do you-can this project RA alone end you-do.",
       "difficulty": 3,
       "situation": "expressing an opinion",
       "grammarTags": [
@@ -17894,7 +17894,7 @@
         {
           "fa": "فکر نمی‌کنم",
           "translit": "fekr nemikonam",
-          "en": "thought I don't do",
+          "en": "thought I dont do",
           "pos": "compound verb"
         },
         {
@@ -18320,7 +18320,7 @@
         },
         {
           "fa": "واقعا",
-          "translit": "vâghe'an",
+          "translit": "vâghean",
           "en": "really",
           "pos": "adverb"
         },
@@ -18987,7 +18987,7 @@
         },
         {
           "fa": "معتقده",
-          "translit": "mo'taghede",
+          "translit": "motaghede",
           "en": "believer is",
           "pos": "verb"
         },
@@ -19046,7 +19046,7 @@
         },
         {
           "fa": "یهویی",
-          "translit": "yeho'i",
+          "translit": "yehoi",
           "en": "suddenly",
           "pos": "noun"
         },
@@ -19401,7 +19401,7 @@
         },
         {
           "fa": "اعصاب‌خردکنی",
-          "translit": "a'sâb-khord-koniye",
+          "translit": "asâb-khord-koniye",
           "en": "nerve grating of",
           "pos": "noun"
         },
@@ -19805,7 +19805,7 @@
         },
         {
           "fa": "قطع",
-          "translit": "ghat'",
+          "translit": "ghat",
           "en": "cut",
           "pos": "noun"
         },
@@ -19911,7 +19911,7 @@
         },
         {
           "fa": "ساعته",
-          "translit": "sâ'ate",
+          "translit": "sâate",
           "en": "hour is",
           "pos": "verb"
         },
@@ -19975,7 +19975,7 @@
         },
         {
           "fa": "موقع",
-          "translit": "moghe'e",
+          "translit": "moghee",
           "en": "time of",
           "pos": "noun"
         },
@@ -20263,7 +20263,7 @@
         },
         {
           "fa": "معرکه‌ست؛",
-          "translit": "ma'reka-st",
+          "translit": "mareka-st",
           "en": "great is",
           "pos": "verb"
         },
@@ -20709,7 +20709,7 @@
       "englishText": "Make yourself at home.",
       "farsiText": "راحت باش.",
       "finglish": "râhat bâsh.",
-      "literalGloss": "\"comfortable be.\"",
+      "literalGloss": "comfortable be.",
       "difficulty": 1,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -20720,13 +20720,13 @@
         {
           "fa": "راحت",
           "translit": "râhat",
-          "en": "\"comfortable",
+          "en": "comfortable",
           "pos": "noun"
         },
         {
           "fa": "باش",
           "translit": "bâsh",
-          "en": "be.\"",
+          "en": "be.",
           "pos": "noun"
         }
       ],
@@ -20737,7 +20737,7 @@
       "englishText": "We're moving next week.",
       "farsiText": "هفته بعد جابه‌جا می‌شیم.",
       "finglish": "hafte-ye ba'd jâbejâ mishim.",
-      "literalGloss": "\"week-of next moved we-become.\"",
+      "literalGloss": "week-of next moved we-become.",
       "difficulty": 2,
       "situation": "talking about future plans",
       "grammarTags": [
@@ -20749,12 +20749,12 @@
         {
           "fa": "هفته",
           "translit": "hafte-ye",
-          "en": "\"week of",
+          "en": "week of",
           "pos": "noun"
         },
         {
           "fa": "بعد",
-          "translit": "ba'd",
+          "translit": "bad",
           "en": "next",
           "pos": "noun"
         },
@@ -20767,7 +20767,7 @@
         {
           "fa": "می‌شیم",
           "translit": "mishim",
-          "en": "we become.\"",
+          "en": "we become.",
           "pos": "verb"
         }
       ],
@@ -20778,7 +20778,7 @@
       "englishText": "Take off your shoes here.",
       "farsiText": "کفشات رو اینجا دربیار.",
       "finglish": "kafshât ro injâ darbiâr.",
-      "literalGloss": "\"shoes-your direct-object here take-off.\"",
+      "literalGloss": "shoes-your direct-object here take-off.",
       "difficulty": 2,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -20791,7 +20791,7 @@
         {
           "fa": "کفشات",
           "translit": "kafshât",
-          "en": "\"shoes your",
+          "en": "shoes your",
           "pos": "attached pronoun"
         },
         {
@@ -20809,7 +20809,7 @@
         {
           "fa": "دربیار",
           "translit": "darbiâr",
-          "en": "take off.\"",
+          "en": "take off.",
           "pos": "noun"
         }
       ],
@@ -20820,7 +20820,7 @@
       "englishText": "I'm really stressed about the interview.",
       "farsiText": "واسه مصاحبه خیلی استرس دارم.",
       "finglish": "vâse mosahebe kheyli esteres dâram.",
-      "literalGloss": "\"for interview very stress I-have.\"",
+      "literalGloss": "for interview very stress I-have.",
       "difficulty": 2,
       "situation": "describing how you feel",
       "grammarTags": [
@@ -20832,7 +20832,7 @@
         {
           "fa": "واسه",
           "translit": "vâse",
-          "en": "\"for",
+          "en": "for",
           "pos": "noun"
         },
         {
@@ -20856,7 +20856,7 @@
         {
           "fa": "دارم",
           "translit": "dâram",
-          "en": "I have.\"",
+          "en": "I have.",
           "pos": "verb"
         }
       ],
@@ -20867,7 +20867,7 @@
       "englishText": "I didn't catch that last word.",
       "farsiText": "کلمه آخری رو متوجه نشدم.",
       "finglish": "kalame-ye âkheri ro motevajeh nashodam.",
-      "literalGloss": "\"word-of last direct-object realizing not-became-I.\"",
+      "literalGloss": "word-of last direct-object realizing not-became-I.",
       "difficulty": 2,
       "situation": "asking someone to repeat or clarify",
       "grammarTags": [
@@ -20879,7 +20879,7 @@
         {
           "fa": "کلمه",
           "translit": "kalame-ye",
-          "en": "\"word of",
+          "en": "word of",
           "pos": "noun"
         },
         {
@@ -20903,7 +20903,7 @@
         {
           "fa": "نشدم",
           "translit": "nashodam",
-          "en": "not became I.\"",
+          "en": "not became I.",
           "pos": "verb"
         }
       ],
@@ -20914,7 +20914,7 @@
       "englishText": "Whenever it rains like this, I feel kind of down.",
       "farsiText": "هر وقت این‌طوری بارون میاد، یه‌کم دلم می‌گیره.",
       "finglish": "har vaght intori bârun miyâd, yekam delam migire.",
-      "literalGloss": "\"every time like-this rain comes, a-little heart-my tightens.\"",
+      "literalGloss": "every time like-this rain comes, a-little heart-my tightens.",
       "difficulty": 3,
       "situation": "describing how you feel",
       "grammarTags": [
@@ -20926,7 +20926,7 @@
         {
           "fa": "هر",
           "translit": "har",
-          "en": "\"every",
+          "en": "every",
           "pos": "noun"
         },
         {
@@ -20968,7 +20968,7 @@
         {
           "fa": "می‌گیره",
           "translit": "migire",
-          "en": "tightens.\"",
+          "en": "tightens.",
           "pos": "noun"
         }
       ],
@@ -20979,7 +20979,7 @@
       "englishText": "Don't get up, I'll go pour the tea myself.",
       "farsiText": "پا نشو، خودم می‌رم چایی می‌ریزم.",
       "finglish": "pâ nasho, khodam miram châyi mirizam.",
-      "literalGloss": "\"foot not-become, myself I-go tea I-pour.\"",
+      "literalGloss": "foot not-become, myself I-go tea I-pour.",
       "difficulty": 3,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -20991,7 +20991,7 @@
         {
           "fa": "پا",
           "translit": "pâ",
-          "en": "\"foot",
+          "en": "foot",
           "pos": "noun"
         },
         {
@@ -21021,7 +21021,7 @@
         {
           "fa": "می‌ریزم",
           "translit": "mirizam",
-          "en": "I pour.\"",
+          "en": "I pour.",
           "pos": "verb"
         }
       ],
@@ -21032,7 +21032,7 @@
       "englishText": "If I save enough money, I want to travel abroad next year.",
       "farsiText": "اگه پول پس‌انداز کنم، سال دیگه می‌خوام برم سفر خارجی.",
       "finglish": "age pul pas-andâz konam, sâle dige mikhwâm beram safare khâreji.",
-      "literalGloss": "\"if money savings I-make, year other I-want I-go trip foreign.\"",
+      "literalGloss": "if money savings I-make, year other I-want I-go trip foreign.",
       "difficulty": 3,
       "situation": "talking about future plans",
       "grammarTags": [
@@ -21045,7 +21045,7 @@
         {
           "fa": "اگه",
           "translit": "age",
-          "en": "\"if",
+          "en": "if",
           "pos": "noun"
         },
         {
@@ -21099,7 +21099,7 @@
         {
           "fa": "خارجی",
           "translit": "khâreji",
-          "en": "foreign.\"",
+          "en": "foreign.",
           "pos": "noun"
         }
       ],
@@ -21110,7 +21110,7 @@
       "englishText": "I didn't catch the name of that restaurant you just mentioned.",
       "farsiText": "اسم اون رستورانی که الان گفتی رو نفهمیدم.",
       "finglish": "esme un restorâni ke alân gofti ro nafahmidam.",
-      "literalGloss": "\"name-of that restaurant that now you-said direct-object not-understood-I.\"",
+      "literalGloss": "name-of that restaurant that now you-said direct-object not-understood-I.",
       "difficulty": 3,
       "situation": "asking someone to repeat or clarify",
       "grammarTags": [
@@ -21122,7 +21122,7 @@
         {
           "fa": "اسم",
           "translit": "esme",
-          "en": "\"name of",
+          "en": "name of",
           "pos": "noun"
         },
         {
@@ -21164,7 +21164,7 @@
         {
           "fa": "نفهمیدم",
           "translit": "nafahmidam",
-          "en": "not understood I.\"",
+          "en": "not understood I.",
           "pos": "verb"
         }
       ],
@@ -21175,7 +21175,7 @@
       "englishText": "I'm so excited that I honestly can't even sleep tonight.",
       "farsiText": "این‌قدر ذوق دارم که واقعا امشب خوابم نمی‌بره.",
       "finglish": "inghadr zogh dâram ke vâghean emshab khâbam nemibare.",
-      "literalGloss": "\"this-much excitement I-have that really tonight sleep-my not-takes.\"",
+      "literalGloss": "this-much excitement I-have that really tonight sleep-my not-takes.",
       "difficulty": 3,
       "situation": "describing how you feel",
       "grammarTags": [
@@ -21187,7 +21187,7 @@
         {
           "fa": "این‌قدر",
           "translit": "inghadr",
-          "en": "\"this much",
+          "en": "this much",
           "pos": "noun"
         },
         {
@@ -21229,7 +21229,7 @@
         {
           "fa": "نمی‌بره",
           "translit": "nemibare",
-          "en": "not takes.\"",
+          "en": "not takes.",
           "pos": "noun"
         }
       ],
@@ -21240,7 +21240,7 @@
       "englishText": "Please have some sweets, my sister baked them herself.",
       "farsiText": "از این شیرینی‌ها بردار، خواهرم خودش پخته.",
       "finglish": "az in shiriniyâ bardâr, khâharam khodesh pokhte.",
-      "literalGloss": "\"from these sweets pick-up, sister-my herself has-baked.\"",
+      "literalGloss": "from these sweets pick-up, sister-my herself has-baked.",
       "difficulty": 3,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -21253,7 +21253,7 @@
         {
           "fa": "از",
           "translit": "az",
-          "en": "\"from",
+          "en": "from",
           "pos": "noun"
         },
         {
@@ -21289,7 +21289,7 @@
         {
           "fa": "پخته",
           "translit": "pokhte",
-          "en": "has baked.\"",
+          "en": "has baked.",
           "pos": "noun"
         }
       ],
@@ -21300,7 +21300,7 @@
       "englishText": "We're planning to rent a cabin up north for the weekend.",
       "farsiText": "برنامه داریم واسه آخر هفته شمال یه کلبه کرایه کنیم.",
       "finglish": "barnâme dârim vâse âkhare hafte shomâl ye kolbe kerâye konim.",
-      "literalGloss": "\"plan we-have for end-of week North a cabin rent we-do.\"",
+      "literalGloss": "plan we-have for end-of week North a cabin rent we-do.",
       "difficulty": 3,
       "situation": "talking about future plans",
       "grammarTags": [
@@ -21313,7 +21313,7 @@
         {
           "fa": "برنامه",
           "translit": "barnâme",
-          "en": "\"plan",
+          "en": "plan",
           "pos": "noun"
         },
         {
@@ -21367,7 +21367,7 @@
         {
           "fa": "کنیم",
           "translit": "konim",
-          "en": "we do.\"",
+          "en": "we do.",
           "pos": "verb"
         }
       ],
@@ -21378,7 +21378,7 @@
       "englishText": "Could you clarify what you meant, so there isn't any misunderstanding?",
       "farsiText": "می‌شه منظورت رو بهتر بگی که یه وقت سوءتفاهم پیش نیاد؟",
       "finglish": "mishe manzuret ro behtar begi ke ye vaght su'e-tafâhom pish nayâd?",
-      "literalGloss": "\"becomes purpose-your direct-object better you-say that an occasion misunderstanding forward not-comes?\"",
+      "literalGloss": "becomes purpose-your direct-object better you-say that an occasion misunderstanding forward not-comes?",
       "difficulty": 4,
       "situation": "asking someone to repeat or clarify",
       "grammarTags": [
@@ -21391,7 +21391,7 @@
         {
           "fa": "می‌شه",
           "translit": "mishe",
-          "en": "\"becomes",
+          "en": "becomes",
           "pos": "noun"
         },
         {
@@ -21438,7 +21438,7 @@
         },
         {
           "fa": "سوءتفاهم",
-          "translit": "su'e-tafâhom",
+          "translit": "sue-tafâhom",
           "en": "misunderstanding",
           "pos": "noun"
         },
@@ -21451,7 +21451,7 @@
         {
           "fa": "نیاد",
           "translit": "nayâd",
-          "en": "not comes?\"",
+          "en": "not comes?",
           "pos": "noun"
         }
       ],
@@ -21462,7 +21462,7 @@
       "englishText": "I've been under so much pressure at work lately that I have no energy to go out with friends on weekends.",
       "farsiText": "این چند وقته اون‌قدر سر کار تحت فشار بودم که آخر هفته‌ها اصلا حس و حال بیرون رفتن با دوستام رو ندارم.",
       "finglish": "in chand vaghte unghadr sare kâr tahte feshâr budam ke âkhare haftehâ aslan hesso-hâle birun raftan bâ dustâm ro nadâram.",
-      "literalGloss": "\"this few while that-much on work under pressure I-was that end-of weeks at-all mood-and-state-of outside going with friends-my direct-object not-have-I.\"",
+      "literalGloss": "this few while that-much on work under pressure I-was that end-of weeks at-all mood-and-state-of outside going with friends-my direct-object not-have-I.",
       "difficulty": 4,
       "situation": "describing how you feel",
       "grammarTags": [
@@ -21477,7 +21477,7 @@
       "englishText": "Don't worry about tidying up; just relax on the sofa while I set the dinner table.",
       "farsiText": "اصلا نگران جمع‌وجور کردن نباش؛ رو مبل بشین استراحت کن تا من میز شام رو بچینم.",
       "finglish": "aslan negarâne jam-o-jur kardan nabâsh; ru mobl beshin esterâhat kon tâ man mize shâm ro bechinam.",
-      "literalGloss": "\"at-all worried-of tidy doing not-be; on sofa sit rest do until I table-of dinner direct-object arrange-I.\"",
+      "literalGloss": "at-all worried-of tidy doing not-be; on sofa sit rest do until I table-of dinner direct-object arrange-I.",
       "difficulty": 4,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -21490,7 +21490,7 @@
         {
           "fa": "اصلا",
           "translit": "aslan",
-          "en": "\"at all",
+          "en": "at all",
           "pos": "noun"
         },
         {
@@ -21580,7 +21580,7 @@
         {
           "fa": "بچینم",
           "translit": "bechinam",
-          "en": "arrange I.\"",
+          "en": "arrange I.",
           "pos": "verb"
         }
       ],
@@ -21591,7 +21591,7 @@
       "englishText": "As soon as my classes finish this summer, I intend to look for a marketing internship.",
       "farsiText": "تابستون به محض اینکه کلاسم تموم بشه، قصد دارم برم دنبال یه دوره کارآموزی تو بازاریابی.",
       "finglish": "tâbestun be mahze inke kelâsam tamum beshe, ghasd dâram beram donbâle ye dore-ye kâr-âmuzi tu bâzâryâbi.",
-      "literalGloss": "\"summer to immediate that class-my finished becomes, intention I-have I-go after a period-of internship in marketing.\"",
+      "literalGloss": "summer to immediate that class-my finished becomes, intention I-have I-go after a period-of internship in marketing.",
       "difficulty": 4,
       "situation": "talking about future plans",
       "grammarTags": [
@@ -21604,7 +21604,7 @@
         {
           "fa": "تابستون",
           "translit": "tâbestun",
-          "en": "\"summer",
+          "en": "summer",
           "pos": "noun"
         },
         {
@@ -21688,7 +21688,7 @@
         {
           "fa": "بازاریابی",
           "translit": "bâzâryâbi",
-          "en": "marketing.\"",
+          "en": "marketing.",
           "pos": "noun"
         }
       ],
@@ -21699,7 +21699,7 @@
       "englishText": "You honored our home by coming; please forgive us if our hospitality fell short tonight.",
       "farsiText": "قدم روی چشم ما گذاشتین، ببخشید اگه پذیرایی ما اصلا در شأن شما نبود و کم و کسری داشت.",
       "finglish": "ghadam ruye cheshme mâ gozâshtin, bebakhshid age pazirâyi-ye mâ aslan dar sha'ne shomâ nabud o kam o kasri dâsht.",
-      "literalGloss": "\"step on eye-of us you-put, forgive if hospitality-of us at-all in dignity-of you was-not and short and deficiency had.\"",
+      "literalGloss": "step on eye-of us you-put, forgive if hospitality-of us at-all in dignity-of you was-not and short and deficiency had.",
       "difficulty": 5,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -21712,7 +21712,7 @@
         {
           "fa": "قدم",
           "translit": "ghadam",
-          "en": "\"step",
+          "en": "step",
           "pos": "noun"
         },
         {
@@ -21777,7 +21777,7 @@
         },
         {
           "fa": "شأن",
-          "translit": "sha'ne",
+          "translit": "shane",
           "en": "dignity of",
           "pos": "noun"
         },
@@ -21820,7 +21820,7 @@
         {
           "fa": "داشت",
           "translit": "dâsht",
-          "en": "had.\"",
+          "en": "had.",
           "pos": "noun"
         }
       ],
@@ -21831,7 +21831,7 @@
       "englishText": "I have mixed feelings about moving to another city; on one hand I'm thrilled, but on the other hand my heart aches from being away from everyone.",
       "farsiText": "واسه رفتن به یه شهر دیگه احساساتم خیلی متناقضه؛ از یه طرف ذوق دارم، از یه طرف دیگه دلم از دوری همه بدجوری گرفته.",
       "finglish": "vâse raftan be ye shahre dige ehsâsâtam kheyli motanâghese; az ye taraf zogh dâram, az ye tarafe dige delam az duriye hame badjuri gerefte.",
-      "literalGloss": "\"for going to a city other feelings-my very contradictory-is; from one side excitement I-have, from one side other heart-my from distance-of all badly has-tightened.\"",
+      "literalGloss": "for going to a city other feelings-my very contradictory-is; from one side excitement I-have, from one side other heart-my from distance-of all badly has-tightened.",
       "difficulty": 5,
       "situation": "describing how you feel",
       "grammarTags": [
@@ -21845,7 +21845,7 @@
         {
           "fa": "واسه",
           "translit": "vâse",
-          "en": "\"for",
+          "en": "for",
           "pos": "noun"
         },
         {
@@ -21983,7 +21983,7 @@
         {
           "fa": "گرفته",
           "translit": "gerefte",
-          "en": "has tightened.\"",
+          "en": "has tightened.",
           "pos": "noun"
         }
       ],
@@ -22249,7 +22249,7 @@
       "englishText": "Dad said he will buy the bread himself on his way home, so don't worry.",
       "farsiText": "بابا گفت خودش سر راه خونه نون می‌خره، پس نگران نباش.",
       "finglish": "bâbâ goft khodesh sare râhe khune nun mikhare, pas negarân nabâsh.",
-      "literalGloss": "dad said himself head-of way-of home bread buys, so worried don't-be.",
+      "literalGloss": "dad said himself head-of way-of home bread buys, so worried dont-be.",
       "difficulty": 3,
       "situation": "phone call with family",
       "grammarTags": [
@@ -22321,7 +22321,7 @@
         {
           "fa": "نباش",
           "translit": "nabâsh",
-          "en": "don't be",
+          "en": "dont be",
           "pos": "noun"
         }
       ],
@@ -22851,7 +22851,7 @@
         },
         {
           "fa": "خونه‌ای",
-          "translit": "khune'i",
+          "translit": "khunei",
           "en": "home are you",
           "pos": "verb"
         }
@@ -22944,7 +22944,7 @@
       "englishText": "How much is this apple?",
       "farsiText": "این سیب چنده؟",
       "finglish": "in sib chande?",
-      "literalGloss": "\"this apple how-much-is?\"",
+      "literalGloss": "this apple how-much-is?",
       "difficulty": 1,
       "situation": "shopping and asking prices",
       "grammarTags": [
@@ -22955,7 +22955,7 @@
         {
           "fa": "این",
           "translit": "in",
-          "en": "\"this",
+          "en": "this",
           "pos": "noun"
         },
         {
@@ -22967,7 +22967,7 @@
         {
           "fa": "چنده",
           "translit": "chande",
-          "en": "how much is?\"",
+          "en": "how much is?",
           "pos": "verb"
         }
       ],
@@ -22978,7 +22978,7 @@
       "englishText": "I want a kilo of tomatoes.",
       "farsiText": "یه کیلو گوجه می‌خوام.",
       "finglish": "ye kilo goje mikham",
-      "literalGloss": "\"one kilo tomato I-want\"",
+      "literalGloss": "one kilo tomato I-want",
       "difficulty": 1,
       "situation": "shopping and asking prices",
       "grammarTags": [
@@ -22989,7 +22989,7 @@
         {
           "fa": "یه",
           "translit": "ye",
-          "en": "\"one",
+          "en": "one",
           "pos": "noun"
         },
         {
@@ -23007,7 +23007,7 @@
         {
           "fa": "می‌خوام",
           "translit": "mikham",
-          "en": "I want\"",
+          "en": "I want",
           "pos": "verb"
         }
       ],
@@ -23018,7 +23018,7 @@
       "englishText": "Is this shirt expensive?",
       "farsiText": "این پیراهن گرونه؟",
       "finglish": "in pirâhan gerune?",
-      "literalGloss": "\"this shirt expensive-is?\"",
+      "literalGloss": "this shirt expensive-is?",
       "difficulty": 1,
       "situation": "shopping and asking prices",
       "grammarTags": [
@@ -23029,7 +23029,7 @@
         {
           "fa": "این",
           "translit": "in",
-          "en": "\"this",
+          "en": "this",
           "pos": "noun"
         },
         {
@@ -23041,7 +23041,7 @@
         {
           "fa": "گرونه",
           "translit": "gerune",
-          "en": "expensive is?\"",
+          "en": "expensive is?",
           "pos": "verb"
         }
       ],
@@ -23052,7 +23052,7 @@
       "englishText": "How much does it come to in total?",
       "farsiText": "کلا چقدر میشه؟",
       "finglish": "kollan cheghadr mishe?",
-      "literalGloss": "\"in-total how-much it-becomes?\"",
+      "literalGloss": "in-total how-much it-becomes?",
       "difficulty": 1,
       "situation": "shopping and asking prices",
       "grammarTags": [
@@ -23063,7 +23063,7 @@
         {
           "fa": "کلا",
           "translit": "kollan",
-          "en": "\"in total",
+          "en": "in total",
           "pos": "noun"
         },
         {
@@ -23075,7 +23075,7 @@
         {
           "fa": "میشه",
           "translit": "mishe",
-          "en": "it becomes?\"",
+          "en": "it becomes?",
           "pos": "verb"
         }
       ],
@@ -23086,7 +23086,7 @@
       "englishText": "Go straight ahead.",
       "farsiText": "مستقیم برو جلو.",
       "finglish": "mostaghim boro jalo",
-      "literalGloss": "\"straight go forward\"",
+      "literalGloss": "straight go forward",
       "difficulty": 1,
       "situation": "giving or following directions",
       "grammarTags": [
@@ -23097,7 +23097,7 @@
         {
           "fa": "مستقیم",
           "translit": "mostaghim",
-          "en": "\"straight",
+          "en": "straight",
           "pos": "noun"
         },
         {
@@ -23109,7 +23109,7 @@
         {
           "fa": "جلو",
           "translit": "jalo",
-          "en": "forward\"",
+          "en": "forward",
           "pos": "noun"
         }
       ],
@@ -23120,7 +23120,7 @@
       "englishText": "Turn left here.",
       "farsiText": "اینجا بپیچ چپ.",
       "finglish": "injâ bepich chap",
-      "literalGloss": "\"here turn left\"",
+      "literalGloss": "here turn left",
       "difficulty": 1,
       "situation": "giving or following directions",
       "grammarTags": [
@@ -23131,7 +23131,7 @@
         {
           "fa": "اینجا",
           "translit": "injâ",
-          "en": "\"here",
+          "en": "here",
           "pos": "noun"
         },
         {
@@ -23143,7 +23143,7 @@
         {
           "fa": "چپ",
           "translit": "chap",
-          "en": "left\"",
+          "en": "left",
           "pos": "noun"
         }
       ],
@@ -23154,7 +23154,7 @@
       "englishText": "Is the shop near here?",
       "farsiText": "مغازه این نزدیکی‌هاست؟",
       "finglish": "maghâze in nazdiki'âst?",
-      "literalGloss": "\"shop this near-here-is?\"",
+      "literalGloss": "shop this near-here-is?",
       "difficulty": 1,
       "situation": "giving or following directions",
       "grammarTags": [
@@ -23165,7 +23165,7 @@
         {
           "fa": "مغازه",
           "translit": "maghâze",
-          "en": "\"shop",
+          "en": "shop",
           "pos": "noun"
         },
         {
@@ -23176,8 +23176,8 @@
         },
         {
           "fa": "نزدیکی‌هاست",
-          "translit": "nazdiki'âst",
-          "en": "near here is?\"",
+          "translit": "nazdikiâst",
+          "en": "near here is?",
           "pos": "verb"
         }
       ],
@@ -23188,7 +23188,7 @@
       "englishText": "The bank is across the street.",
       "farsiText": "بانک اون‌ور خیابونه.",
       "finglish": "bânk unvar-e khiyâbune",
-      "literalGloss": "\"bank that-side-of street-is\"",
+      "literalGloss": "bank that-side-of street-is",
       "difficulty": 1,
       "situation": "giving or following directions",
       "grammarTags": [
@@ -23199,7 +23199,7 @@
         {
           "fa": "بانک",
           "translit": "bânk",
-          "en": "\"bank",
+          "en": "bank",
           "pos": "noun"
         },
         {
@@ -23211,7 +23211,7 @@
         {
           "fa": "خیابونه",
           "translit": "khiyâbune",
-          "en": "street is\"",
+          "en": "street is",
           "pos": "verb"
         }
       ],
@@ -23222,7 +23222,7 @@
       "englishText": "Please sit down here.",
       "farsiText": "بفرما اینجا بشین.",
       "finglish": "befarmâ injâ beshin",
-      "literalGloss": "\"please here sit\"",
+      "literalGloss": "please here sit",
       "difficulty": 1,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -23233,7 +23233,7 @@
         {
           "fa": "بفرما",
           "translit": "befarmâ",
-          "en": "\"please",
+          "en": "please",
           "pos": "noun"
         },
         {
@@ -23245,7 +23245,7 @@
         {
           "fa": "بشین",
           "translit": "beshin",
-          "en": "sit\"",
+          "en": "sit",
           "pos": "noun"
         }
       ],
@@ -23256,7 +23256,7 @@
       "englishText": "Would you like tea?",
       "farsiText": "چایی می‌خوری؟",
       "finglish": "châyi mikhori?",
-      "literalGloss": "\"tea you-eat?\"",
+      "literalGloss": "tea you-eat?",
       "difficulty": 1,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -23267,13 +23267,13 @@
         {
           "fa": "چایی",
           "translit": "châyi",
-          "en": "\"tea",
+          "en": "tea",
           "pos": "noun"
         },
         {
           "fa": "می‌خوری",
           "translit": "mikhori",
-          "en": "you eat?\"",
+          "en": "you eat?",
           "pos": "verb"
         }
       ],
@@ -23284,7 +23284,7 @@
       "englishText": "Your house is very pretty.",
       "farsiText": "خونه‌تون خیلی قشنگه.",
       "finglish": "khunetun kheyli ghashange",
-      "literalGloss": "\"house-your very pretty-is\"",
+      "literalGloss": "house-your very pretty-is",
       "difficulty": 1,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -23295,7 +23295,7 @@
         {
           "fa": "خونه‌تون",
           "translit": "khunetun",
-          "en": "\"house your",
+          "en": "house your",
           "pos": "attached pronoun"
         },
         {
@@ -23307,7 +23307,7 @@
         {
           "fa": "قشنگه",
           "translit": "ghashange",
-          "en": "pretty is\"",
+          "en": "pretty is",
           "pos": "verb"
         }
       ],
@@ -23318,7 +23318,7 @@
       "englishText": "Thank you, I am full.",
       "farsiText": "مرسی، من سیرم.",
       "finglish": "mersi, man siram",
-      "literalGloss": "\"thanks, I full-am\"",
+      "literalGloss": "thanks, I full-am",
       "difficulty": 1,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -23329,7 +23329,7 @@
         {
           "fa": "مرسی",
           "translit": "mersi",
-          "en": "\"thanks",
+          "en": "thanks",
           "pos": "noun"
         },
         {
@@ -23341,7 +23341,7 @@
         {
           "fa": "سیرم",
           "translit": "siram",
-          "en": "full am\"",
+          "en": "full am",
           "pos": "noun"
         }
       ],
@@ -23352,7 +23352,7 @@
       "englishText": "Welcome to our home!",
       "farsiText": "خوش اومدی به خونه‌مون!",
       "finglish": "khosh omadi be khunemun!",
-      "literalGloss": "\"happy you-came to house-our!\"",
+      "literalGloss": "happy you-came to house-our!",
       "difficulty": 1,
       "situation": "hosting or visiting someone's home",
       "grammarTags": [
@@ -23363,7 +23363,7 @@
         {
           "fa": "خوش",
           "translit": "khosh",
-          "en": "\"happy",
+          "en": "happy",
           "pos": "noun"
         },
         {
@@ -23381,7 +23381,7 @@
         {
           "fa": "خونه‌مون",
           "translit": "khunemun",
-          "en": "house our!\"",
+          "en": "house our!",
           "pos": "noun"
         }
       ],
@@ -23392,7 +23392,7 @@
       "englishText": "Did you sleep well?",
       "farsiText": "خوب خوابیدی؟",
       "finglish": "khub khâbidi?",
-      "literalGloss": "\"well you-slept?\"",
+      "literalGloss": "well you-slept?",
       "difficulty": 1,
       "situation": "talking about the past (what you did)",
       "grammarTags": [
@@ -23403,13 +23403,13 @@
         {
           "fa": "خوب",
           "translit": "khub",
-          "en": "\"well",
+          "en": "well",
           "pos": "noun"
         },
         {
           "fa": "خوابیدی",
           "translit": "khâbidi",
-          "en": "you slept?\"",
+          "en": "you slept?",
           "pos": "verb"
         }
       ],
@@ -23420,7 +23420,7 @@
       "englishText": "I bought fruit today.",
       "farsiText": "امروز میوه خریدم.",
       "finglish": "emruz mive kharidam",
-      "literalGloss": "\"today fruit I-bought\"",
+      "literalGloss": "today fruit I-bought",
       "difficulty": 1,
       "situation": "talking about the past (what you did)",
       "grammarTags": [
@@ -23431,7 +23431,7 @@
         {
           "fa": "امروز",
           "translit": "emruz",
-          "en": "\"today",
+          "en": "today",
           "pos": "noun"
         },
         {
@@ -23443,7 +23443,7 @@
         {
           "fa": "خریدم",
           "translit": "kharidam",
-          "en": "I bought\"",
+          "en": "I bought",
           "pos": "verb"
         }
       ],
@@ -23454,7 +23454,7 @@
       "englishText": "Did you watch the game?",
       "farsiText": "بازی رو دیدی؟",
       "finglish": "bâzi ro didi?",
-      "literalGloss": "\"game [object] you-saw?\"",
+      "literalGloss": "game [object] you-saw?",
       "difficulty": 1,
       "situation": "talking about the past (what you did)",
       "grammarTags": [
@@ -23465,7 +23465,7 @@
         {
           "fa": "بازی",
           "translit": "bâzi",
-          "en": "\"game",
+          "en": "game",
           "pos": "noun"
         },
         {
@@ -23477,7 +23477,7 @@
         {
           "fa": "دیدی",
           "translit": "didi",
-          "en": "you saw?\"",
+          "en": "you saw?",
           "pos": "verb"
         }
       ],
@@ -23488,7 +23488,7 @@
       "englishText": "I called my mom yesterday.",
       "farsiText": "دیروز به مامانم زنگ زدم.",
       "finglish": "diruz be mâmânam zang zadam",
-      "literalGloss": "\"yesterday to my-mom bell I-hit\"",
+      "literalGloss": "yesterday to my-mom bell I-hit",
       "difficulty": 1,
       "situation": "talking about the past (what you did)",
       "grammarTags": [
@@ -23499,7 +23499,7 @@
         {
           "fa": "دیروز",
           "translit": "diruz",
-          "en": "\"yesterday",
+          "en": "yesterday",
           "pos": "noun"
         },
         {
@@ -23517,7 +23517,7 @@
         {
           "fa": "زنگ زدم",
           "translit": "zang zadam",
-          "en": "bell I hit\"",
+          "en": "bell I hit",
           "pos": "compound verb"
         }
       ],
@@ -23528,7 +23528,7 @@
       "englishText": "We stayed home yesterday.",
       "farsiText": "دیروز تو خونه موندیم.",
       "finglish": "diruz to khune mundim",
-      "literalGloss": "\"yesterday in house we-stayed\"",
+      "literalGloss": "yesterday in house we-stayed",
       "difficulty": 1,
       "situation": "talking about the past (what you did)",
       "grammarTags": [
@@ -23539,7 +23539,7 @@
         {
           "fa": "دیروز",
           "translit": "diruz",
-          "en": "\"yesterday",
+          "en": "yesterday",
           "pos": "noun"
         },
         {
@@ -23557,7 +23557,7 @@
         {
           "fa": "موندیم",
           "translit": "mundim",
-          "en": "we stayed\"",
+          "en": "we stayed",
           "pos": "verb"
         }
       ],
@@ -24121,7 +24121,7 @@
         },
         {
           "fa": "تعطیلم",
-          "translit": "ta'tilam",
+          "translit": "tatilam",
           "en": "I am off",
           "pos": "verb"
         }
@@ -24284,7 +24284,7 @@
         },
         {
           "fa": "دیگه‌ای",
-          "translit": "dige'i",
+          "translit": "digei",
           "en": "other",
           "pos": "noun"
         },
@@ -25029,7 +25029,7 @@
         },
         {
           "fa": "کجایی",
-          "translit": "kojâ'i",
+          "translit": "kojâi",
           "en": "where you are",
           "pos": "verb"
         }
@@ -25399,7 +25399,7 @@
       "breakdown": [
         {
           "fa": "جمعش",
-          "translit": "jam'esh",
+          "translit": "jamesh",
           "en": "its total",
           "pos": "attached pronoun"
         },
@@ -25501,7 +25501,7 @@
       "breakdown": [
         {
           "fa": "الان",
-          "translit": "al'an",
+          "translit": "alan",
           "en": "now",
           "pos": "adverb"
         },
@@ -26825,7 +26825,7 @@
         },
         {
           "fa": "سریع",
-          "translit": "sari'",
+          "translit": "sari",
           "en": "fast",
           "pos": "noun"
         },
@@ -27191,7 +27191,7 @@
       "englishText": "Take the driver's license!",
       "farsiText": "گواهینامه رو بگیر!",
       "finglish": "govâhinâme ro begir",
-      "literalGloss": "driver's-license [object marker] take",
+      "literalGloss": "drivers-license [object marker] take",
       "difficulty": 1,
       "situation": "transport: driving",
       "grammarTags": [
@@ -27203,7 +27203,7 @@
       "englishText": "I didn't find the metro station.",
       "farsiText": "ایستگاه مترو رو پیدا نکردم.",
       "finglish": "istgâh-e metro ro peydâ nakardam",
-      "literalGloss": "station-of metro [object marker] find I-didn't-do",
+      "literalGloss": "station-of metro [object marker] find I-didnt-do",
       "difficulty": 1,
       "situation": "transport: metro",
       "grammarTags": [
@@ -27301,7 +27301,7 @@
       "englishText": "She didn't want a big wedding.",
       "farsiText": "اون یه عروسی بزرگ نخواست.",
       "finglish": "un ye 'arusi-ye bozorg nakhâst",
-      "literalGloss": "she one wedding-of big didn't-want",
+      "literalGloss": "she one wedding-of big didnt-want",
       "difficulty": 1,
       "situation": "family and relationships",
       "grammarTags": [
@@ -27323,7 +27323,7 @@
         },
         {
           "fa": "عروسی",
-          "translit": "'arusi-ye",
+          "translit": "arusi-ye",
           "en": "wedding of",
           "pos": "noun"
         },
@@ -27336,7 +27336,7 @@
         {
           "fa": "نخواست",
           "translit": "nakhâst",
-          "en": "didn't want",
+          "en": "didnt want",
           "pos": "noun"
         }
       ],
@@ -27423,7 +27423,7 @@
       "englishText": "We didn't start the party.",
       "farsiText": "مهمونی رو شروع نکردیم.",
       "finglish": "mehmuni ro shoru nakardim",
-      "literalGloss": "party [object marker] start we-didn't-do",
+      "literalGloss": "party [object marker] start we-didnt-do",
       "difficulty": 1,
       "situation": "family and relationships",
       "grammarTags": [
@@ -27476,7 +27476,7 @@
       "englishText": "He didn't take the photo.",
       "farsiText": "عکس رو نگرفت.",
       "finglish": "'aks ro nagereft",
-      "literalGloss": "photo [object marker] he-didn't-take",
+      "literalGloss": "photo [object marker] he-didnt-take",
       "difficulty": 1,
       "situation": "describing people and things",
       "grammarTags": [
@@ -27529,7 +27529,7 @@
       "englishText": "I didn't say that.",
       "farsiText": "اون رو نگفتم.",
       "finglish": "un ro nagoftam",
-      "literalGloss": "that [object marker] I-didn't-say",
+      "literalGloss": "that [object marker] I-didnt-say",
       "difficulty": 1,
       "situation": "family and relationships",
       "grammarTags": [
@@ -27555,7 +27555,7 @@
       "englishText": "She didn't finish her dinner.",
       "farsiText": "شامش رو تموم نکرد.",
       "finglish": "shâmesh ro tamum nakard",
-      "literalGloss": "dinner-her [object marker] finish she-didn't-do",
+      "literalGloss": "dinner-her [object marker] finish she-didnt-do",
       "difficulty": 1,
       "situation": "describing people and things",
       "grammarTags": [
@@ -28062,7 +28062,7 @@
         },
         {
           "fa": "مودبانه",
-          "translit": "mo'adabâne",
+          "translit": "moadabâne",
           "en": "polite",
           "pos": "noun"
         },
@@ -29630,7 +29630,7 @@
         },
         {
           "fa": "سوال",
-          "translit": "so'âl",
+          "translit": "soâl",
           "en": "question",
           "pos": "noun"
         },
@@ -29778,7 +29778,7 @@
         },
         {
           "fa": "جمعه‌ها",
-          "translit": "jom'ehâ",
+          "translit": "jomehâ",
           "en": "Fridays",
           "pos": "noun"
         },
@@ -30554,7 +30554,7 @@
       "breakdown": [
         {
           "fa": "الان",
-          "translit": "al'ân",
+          "translit": "alân",
           "en": "now",
           "pos": "adverb"
         },
@@ -30590,7 +30590,7 @@
       "englishText": "Don't look for excuses.",
       "farsiText": "دنبال بهونه نگرد.",
       "finglish": "donbâle bahune nagard.",
-      "literalGloss": "after excuse don't-search",
+      "literalGloss": "after excuse dont-search",
       "difficulty": 1,
       "situation": "opinions and reactions",
       "grammarTags": [
@@ -30613,7 +30613,7 @@
         {
           "fa": "نگرد",
           "translit": "nagard",
-          "en": "don't search",
+          "en": "dont search",
           "pos": "noun"
         }
       ],
@@ -30750,7 +30750,7 @@
         },
         {
           "fa": "الان",
-          "translit": "al'ân",
+          "translit": "alân",
           "en": "now",
           "pos": "adverb"
         },
@@ -31162,7 +31162,7 @@
       "englishText": "I don't want this hot weather.",
       "farsiText": "این هوای گرم رو نمی‌خوام.",
       "finglish": "in havâ-ye garm ro nemikhâm.",
-      "literalGloss": "this weather-of warm [ra-marker] I-don't-want",
+      "literalGloss": "this weather-of warm [ra-marker] I-dont-want",
       "difficulty": 1,
       "situation": "weather and seasons",
       "grammarTags": [
@@ -31198,7 +31198,7 @@
         {
           "fa": "نمی‌خوام",
           "translit": "nemikhâm",
-          "en": "I don't want",
+          "en": "I dont want",
           "pos": "verb"
         }
       ],
@@ -31266,7 +31266,7 @@
         },
         {
           "fa": "ساعت",
-          "translit": "sâ'at",
+          "translit": "sâat",
           "en": "hour",
           "pos": "noun"
         },
@@ -31314,7 +31314,7 @@
         },
         {
           "fa": "شروع کردم",
-          "translit": "shoru' kardam",
+          "translit": "shoru kardam",
           "en": "start I did",
           "pos": "compound verb"
         }
@@ -31407,7 +31407,7 @@
       "englishText": "I don't want this medicine.",
       "farsiText": "این دارو رو نمی‌خوام.",
       "finglish": "in dâru ro nemikhâm.",
-      "literalGloss": "this medicine [ra-marker] I-don't-want",
+      "literalGloss": "this medicine [ra-marker] I-dont-want",
       "difficulty": 1,
       "situation": "health and feeling unwell",
       "grammarTags": [
@@ -31436,7 +31436,7 @@
         {
           "fa": "نمی‌خوام",
           "translit": "nemikhâm",
-          "en": "I don't want",
+          "en": "I dont want",
           "pos": "verb"
         }
       ],
@@ -31447,7 +31447,7 @@
       "englishText": "I don't walk at night.",
       "farsiText": "من شب‌ها قدم نمی‌زنم.",
       "finglish": "man shabhâ ghadam nemizanam.",
-      "literalGloss": "I nights step I-don't-hit",
+      "literalGloss": "I nights step I-dont-hit",
       "difficulty": 1,
       "situation": "time",
       "grammarTags": [
@@ -31470,7 +31470,7 @@
         {
           "fa": "قدم نمی‌زنم",
           "translit": "ghadam nemizanam",
-          "en": "step I don't hit",
+          "en": "step I dont hit",
           "pos": "compound verb"
         }
       ],
@@ -31497,7 +31497,7 @@
         },
         {
           "fa": "جمعه",
-          "translit": "jom'e",
+          "translit": "jome",
           "en": "Friday",
           "pos": "noun"
         },
@@ -31545,7 +31545,7 @@
         },
         {
           "fa": "شروع کردیم",
-          "translit": "shoru' kardim",
+          "translit": "shoru kardim",
           "en": "start we did",
           "pos": "compound verb"
         }
@@ -31599,7 +31599,7 @@
       "englishText": "My fever didn't come down.",
       "farsiText": "تبم پایین نیومد.",
       "finglish": "tabam pâyeen nayumad.",
-      "literalGloss": "fever-my down didn't-come",
+      "literalGloss": "fever-my down didnt-come",
       "difficulty": 1,
       "situation": "health and feeling unwell",
       "grammarTags": [
@@ -31622,7 +31622,7 @@
         {
           "fa": "نیومد",
           "translit": "nayumad",
-          "en": "didn't come",
+          "en": "didnt come",
           "pos": "noun"
         }
       ],
@@ -31633,7 +31633,7 @@
       "englishText": "I don't want cold water for my throat.",
       "farsiText": "واسه گلوم آب سرد نمی‌خوام.",
       "finglish": "vâse galum âb-e sard nemikhâm.",
-      "literalGloss": "for throat-my water-of cold I-don't-want",
+      "literalGloss": "for throat-my water-of cold I-dont-want",
       "difficulty": 1,
       "situation": "body",
       "grammarTags": [
@@ -31670,7 +31670,7 @@
         {
           "fa": "نمی‌خوام",
           "translit": "nemikhâm",
-          "en": "I don't want",
+          "en": "I dont want",
           "pos": "verb"
         }
       ],
@@ -31716,7 +31716,7 @@
       "englishText": "I don't wait in the cold.",
       "farsiText": "توی سرما منتظر نمی‌مونم.",
       "finglish": "tuye sarmâ montazer nemimunam.",
-      "literalGloss": "in cold waiting I-don't-stay",
+      "literalGloss": "in cold waiting I-dont-stay",
       "difficulty": 1,
       "situation": "weather and seasons",
       "grammarTags": [
@@ -31740,7 +31740,7 @@
         {
           "fa": "منتظر نمی‌مونم",
           "translit": "montazer nemimunam",
-          "en": "waiting I don't stay",
+          "en": "waiting I dont stay",
           "pos": "compound verb"
         }
       ],
@@ -31993,7 +31993,7 @@
       "breakdown": [
         {
           "fa": "الان",
-          "translit": "al'ân",
+          "translit": "alân",
           "en": "now",
           "pos": "adverb"
         },
@@ -32592,7 +32592,7 @@
         },
         {
           "fa": "سریع",
-          "translit": "sari'",
+          "translit": "sari",
           "en": "fast",
           "pos": "noun"
         },
@@ -32962,7 +32962,7 @@
       "englishText": "I don't understand this message.",
       "farsiText": "این پیامو نمی‌فهمم.",
       "finglish": "in payâmo nemifahmam",
-      "literalGloss": "this message-RA I-don't-understand",
+      "literalGloss": "this message-RA I-dont-understand",
       "difficulty": 1,
       "situation": "phone, messages and making plans",
       "grammarTags": [
@@ -32985,7 +32985,7 @@
         {
           "fa": "نمی‌فهمم",
           "translit": "nemifahmam",
-          "en": "I don't understand",
+          "en": "I dont understand",
           "pos": "verb"
         }
       ],
@@ -33072,7 +33072,7 @@
       "englishText": "I wanted to come but I couldn't.",
       "farsiText": "می‌خواستم بیام ولی نتونستم.",
       "finglish": "mikhâstam biyâm vali natunestam",
-      "literalGloss": "I wanted to come but I couldn't",
+      "literalGloss": "I wanted to come but I couldnt",
       "difficulty": 2,
       "situation": "apologising or explaining lateness",
       "grammarTags": [
@@ -33102,7 +33102,7 @@
         {
           "fa": "نتونستم",
           "translit": "natunestam",
-          "en": "I couldn't",
+          "en": "I couldnt",
           "pos": "verb"
         }
       ],
@@ -33153,7 +33153,7 @@
       "englishText": "I couldn't find your house.",
       "farsiText": "نتونستم خونه‌تون رو پیدا کنم.",
       "finglish": "natunestam khunetun ro peydâ konam",
-      "literalGloss": "I couldn't your house [object] find",
+      "literalGloss": "I couldnt your house [object] find",
       "difficulty": 2,
       "situation": "giving or following directions",
       "grammarTags": [
@@ -33166,7 +33166,7 @@
         {
           "fa": "نتونستم",
           "translit": "natunestam",
-          "en": "I couldn't",
+          "en": "I couldnt",
           "pos": "verb"
         },
         {
@@ -33236,7 +33236,7 @@
       "englishText": "I didn't know you were here.",
       "farsiText": "نمی‌دونستم اینجایی.",
       "finglish": "nemidunestam injâyi",
-      "literalGloss": "I didn't know you are here",
+      "literalGloss": "I didnt know you are here",
       "difficulty": 2,
       "situation": "greetings, politeness and taarof",
       "grammarTags": [
@@ -33247,7 +33247,7 @@
         {
           "fa": "نمی‌دونستم",
           "translit": "nemidunestam",
-          "en": "I didn't know",
+          "en": "I didnt know",
           "pos": "verb"
         },
         {
@@ -33341,7 +33341,7 @@
       "englishText": "I didn't know her before.",
       "farsiText": "قبلا نمی‌شناختمش.",
       "finglish": "ghablan nemishnâkhtamesh",
-      "literalGloss": "before I didn't know her",
+      "literalGloss": "before I didnt know her",
       "difficulty": 2,
       "situation": "describing people and things",
       "grammarTags": [
@@ -33358,7 +33358,7 @@
         {
           "fa": "نمی‌شناختمش",
           "translit": "nemishnâkhtamesh",
-          "en": "I didn't know her",
+          "en": "I didnt know her",
           "pos": "verb"
         }
       ],
@@ -33902,7 +33902,7 @@
       "englishText": "I didn't understand what he said.",
       "farsiText": "نفهمیدم چی گفت.",
       "finglish": "nafahmidam chi goft",
-      "literalGloss": "I didn't understand what he said",
+      "literalGloss": "I didnt understand what he said",
       "difficulty": 2,
       "situation": "asking someone to repeat or clarify",
       "grammarTags": [
@@ -33913,7 +33913,7 @@
         {
           "fa": "نفهمیدم",
           "translit": "nafahmidam",
-          "en": "I didn't understand",
+          "en": "I didnt understand",
           "pos": "verb"
         },
         {
@@ -33970,7 +33970,7 @@
       "englishText": "I asked him but he didn't answer.",
       "farsiText": "ازش پرسیدم ولی جواب نداد.",
       "finglish": "azash porsidam vali javâb nadâd",
-      "literalGloss": "from him I asked but didn't answer",
+      "literalGloss": "from him I asked but didnt answer",
       "difficulty": 2,
       "situation": "disagreeing politely",
       "grammarTags": [
@@ -34000,7 +34000,7 @@
         {
           "fa": "جواب نداد",
           "translit": "javâb nadâd",
-          "en": "didn't answer",
+          "en": "didnt answer",
           "pos": "compound verb"
         }
       ],
@@ -34170,7 +34170,7 @@
       "englishText": "I couldn't sleep at all.",
       "farsiText": "اصلا نتونستم بخوابم.",
       "finglish": "aslan natunestam bekhâbam",
-      "literalGloss": "at all I couldn't sleep",
+      "literalGloss": "at all I couldnt sleep",
       "difficulty": 2,
       "situation": "body, health and feeling unwell",
       "grammarTags": [
@@ -34188,7 +34188,7 @@
         {
           "fa": "نتونستم",
           "translit": "natunestam",
-          "en": "I couldn't",
+          "en": "I couldnt",
           "pos": "verb"
         },
         {
@@ -34240,7 +34240,7 @@
       "englishText": "Let's go for a walk.",
       "farsiText": "بریم یه کم قدم بزنیم.",
       "finglish": "berim ye kam ghadam bezanim",
-      "literalGloss": "let's go a bit walk",
+      "literalGloss": "lets go a bit walk",
       "difficulty": 2,
       "situation": "making plans with a friend",
       "grammarTags": [
@@ -34252,7 +34252,7 @@
         {
           "fa": "بریم",
           "translit": "berim",
-          "en": "let's go",
+          "en": "lets go",
           "pos": "verb"
         },
         {
@@ -34364,7 +34364,7 @@
       "breakdown": [
         {
           "fa": "یه ساعت",
-          "translit": "ye sâ'at",
+          "translit": "ye sâat",
           "en": "an hour",
           "pos": "noun"
         },
@@ -34542,7 +34542,7 @@
       "breakdown": [
         {
           "fa": "جعبه",
-          "translit": "ja'be",
+          "translit": "jabe",
           "en": "the box",
           "pos": "noun"
         },
@@ -34661,7 +34661,7 @@
         },
         {
           "fa": "شروع کردی",
-          "translit": "shoru' kardi",
+          "translit": "shoru kardi",
           "en": "did you start",
           "pos": "compound verb"
         }
@@ -34676,7 +34676,7 @@
       "englishText": "Let's start.",
       "farsiText": "بیا شروع کنیم.",
       "finglish": "biyâ shoru' konim",
-      "literalGloss": "come let's start",
+      "literalGloss": "come lets start",
       "difficulty": 2,
       "situation": "work, study and daily routine",
       "grammarTags": [
@@ -34692,8 +34692,8 @@
         },
         {
           "fa": "شروع کنیم",
-          "translit": "shoru' konim",
-          "en": "let's start",
+          "translit": "shoru konim",
+          "en": "lets start",
           "pos": "compound verb"
         }
       ],
@@ -37791,7 +37791,7 @@
       "englishText": "Please don't worry.",
       "farsiText": "لطفا نگران نباشید.",
       "finglish": "lotfan negarân nabâshid.",
-      "literalGloss": "please worried don't be",
+      "literalGloss": "please worried dont be",
       "difficulty": 2,
       "situation": "reassuring someone older",
       "grammarTags": [
@@ -37813,7 +37813,7 @@
         {
           "fa": "نباشید",
           "translit": "nabâshid",
-          "en": "don't be",
+          "en": "dont be",
           "pos": "verb"
         }
       ],
@@ -37859,7 +37859,7 @@
       "englishText": "They didn't say anything.",
       "farsiText": "اونا هیچی نگفتن.",
       "finglish": "unâ hichi nagoftan",
-      "literalGloss": "they nothing they didn't say",
+      "literalGloss": "they nothing they didnt say",
       "difficulty": 2,
       "situation": "after a meeting",
       "grammarTags": [
@@ -37881,7 +37881,7 @@
         {
           "fa": "نگفتن",
           "translit": "nagoftan",
-          "en": "they didn't say",
+          "en": "they didnt say",
           "pos": "verb"
         }
       ],
@@ -38147,7 +38147,7 @@
       "englishText": "They don't know yet.",
       "farsiText": "اونا هنوز نمی‌دونن.",
       "finglish": "unâ hanuz nemidunan",
-      "literalGloss": "they yet they don't know",
+      "literalGloss": "they yet they dont know",
       "difficulty": 2,
       "situation": "withholding news",
       "grammarTags": [
@@ -38169,7 +38169,7 @@
         {
           "fa": "نمی‌دونن",
           "translit": "nemidunan",
-          "en": "they don't know",
+          "en": "they dont know",
           "pos": "verb"
         }
       ],
@@ -38384,7 +38384,7 @@
       "englishText": "Our order hasn't come yet.",
       "farsiText": "سفارشمون هنوز نیومده.",
       "finglish": "sefâreshemun hanuz nayumade",
-      "literalGloss": "our order yet hasn't come",
+      "literalGloss": "our order yet hasnt come",
       "difficulty": 2,
       "situation": "at a restaurant",
       "grammarTags": [
@@ -38407,7 +38407,7 @@
         {
           "fa": "نیومده",
           "translit": "nayumade",
-          "en": "hasn't come",
+          "en": "hasnt come",
           "pos": "verb"
         }
       ],
@@ -38725,7 +38725,7 @@
       "englishText": "They didn't come.",
       "farsiText": "اونا نیومدن.",
       "finglish": "unâ nayumadan",
-      "literalGloss": "they they didn't come",
+      "literalGloss": "they they didnt come",
       "difficulty": 2,
       "situation": "after waiting",
       "grammarTags": [
@@ -38741,7 +38741,7 @@
         {
           "fa": "نیومدن",
           "translit": "nayumadan",
-          "en": "they didn't come",
+          "en": "they didnt come",
           "pos": "verb"
         }
       ],
@@ -42122,7 +42122,7 @@
       "englishText": "I don't have time now.",
       "farsiText": "الان وقت ندارم.",
       "finglish": "alân vaght nadâram",
-      "literalGloss": "now time I don't have",
+      "literalGloss": "now time I dont have",
       "difficulty": 2,
       "situation": "turning down a request",
       "grammarTags": [
@@ -42144,7 +42144,7 @@
         {
           "fa": "ندارم",
           "translit": "nadâram",
-          "en": "I don't have",
+          "en": "I dont have",
           "pos": "verb"
         }
       ],
@@ -42598,7 +42598,7 @@
       "englishText": "Let's go now.",
       "farsiText": "حالا بریم.",
       "finglish": "hâlâ berim",
-      "literalGloss": "now let's go",
+      "literalGloss": "now lets go",
       "difficulty": 2,
       "situation": "leaving",
       "grammarTags": [
@@ -42614,7 +42614,7 @@
         {
           "fa": "بریم",
           "translit": "berim",
-          "en": "let's go",
+          "en": "lets go",
           "pos": "verb"
         }
       ],
@@ -43288,7 +43288,7 @@
       "englishText": "I didn't get the opportunity.",
       "farsiText": "فرصتش رو پیدا نکردم.",
       "finglish": "forsatesh ro peydâ nakardam",
-      "literalGloss": "its opportunity [object] I didn't find",
+      "literalGloss": "its opportunity [object] I didnt find",
       "difficulty": 2,
       "situation": "explaining a failure",
       "grammarTags": [
@@ -43310,7 +43310,7 @@
         {
           "fa": "پیدا نکردم",
           "translit": "peydâ nakardam",
-          "en": "I didn't find",
+          "en": "I didnt find",
           "pos": "compound verb"
         }
       ],
@@ -43508,7 +43508,7 @@
       "englishText": "We tried but it didn't work.",
       "farsiText": "سعی کردیم ولی نشد.",
       "finglish": "sai kardim vali nashod",
-      "literalGloss": "we tried but it didn't work",
+      "literalGloss": "we tried but it didnt work",
       "difficulty": 2,
       "situation": "after a failure",
       "grammarTags": [
@@ -43530,7 +43530,7 @@
         {
           "fa": "نشد",
           "translit": "nashod",
-          "en": "it didn't work",
+          "en": "it didnt work",
           "pos": "verb"
         }
       ],
@@ -43644,7 +43644,7 @@
       "englishText": "Don't be surprised.",
       "farsiText": "تعجب نکن.",
       "finglish": "tajob nakon",
-      "literalGloss": "don't be surprised",
+      "literalGloss": "dont be surprised",
       "difficulty": 2,
       "situation": "before a reveal",
       "grammarTags": [
@@ -43654,7 +43654,7 @@
         {
           "fa": "تعجب نکن",
           "translit": "tajob nakon",
-          "en": "don't be surprised",
+          "en": "dont be surprised",
           "pos": "compound verb"
         }
       ],
@@ -43768,7 +43768,7 @@
       "englishText": "Stop, don't go.",
       "farsiText": "وایسا، نرو.",
       "finglish": "vâysâ, naro",
-      "literalGloss": "stop don't go",
+      "literalGloss": "stop dont go",
       "difficulty": 2,
       "situation": "stopping someone",
       "grammarTags": [
@@ -43784,7 +43784,7 @@
         {
           "fa": "نرو",
           "translit": "naro",
-          "en": "don't go",
+          "en": "dont go",
           "pos": "verb"
         }
       ],
@@ -43818,7 +43818,7 @@
       "englishText": "Don't be scared, it's nothing.",
       "farsiText": "نترس، چیزی نیست.",
       "finglish": "natars, chizi nist",
-      "literalGloss": "don't be scared anything is not",
+      "literalGloss": "dont be scared anything is not",
       "difficulty": 2,
       "situation": "reassuring a child",
       "grammarTags": [
@@ -43828,7 +43828,7 @@
         {
           "fa": "نترس",
           "translit": "natars",
-          "en": "don't be scared",
+          "en": "dont be scared",
           "pos": "verb"
         },
         {
@@ -44266,7 +44266,7 @@
       "englishText": "I'm hungry, let's eat.",
       "farsiText": "گشنمه، بریم غذا بخوریم.",
       "finglish": "goshname, berim ghazâ bokhorim",
-      "literalGloss": "I am hungry let's go food eat",
+      "literalGloss": "I am hungry lets go food eat",
       "difficulty": 2,
       "situation": "at lunchtime",
       "grammarTags": [
@@ -44282,7 +44282,7 @@
         {
           "fa": "بریم",
           "translit": "berim",
-          "en": "let's go",
+          "en": "lets go",
           "pos": "verb"
         },
         {
@@ -44458,7 +44458,7 @@
       "englishText": "I have no experience of this work.",
       "farsiText": "تجربه این کار رو ندارم.",
       "finglish": "tajrobeye in kâr ro nadâram",
-      "literalGloss": "experience this work [object] I don't have",
+      "literalGloss": "experience this work [object] I dont have",
       "difficulty": 2,
       "situation": "in an interview",
       "grammarTags": [
@@ -44492,7 +44492,7 @@
         {
           "fa": "ندارم",
           "translit": "nadâram",
-          "en": "I don't have",
+          "en": "I dont have",
           "pos": "verb"
         }
       ],
@@ -44504,7 +44504,7 @@
       "englishText": "Let's change the subject.",
       "farsiText": "موضوع رو عوض کنیم.",
       "finglish": "mozu ro avaz konim",
-      "literalGloss": "subject [object] let's change",
+      "literalGloss": "subject [object] lets change",
       "difficulty": 2,
       "situation": "avoiding a topic",
       "grammarTags": [
@@ -44526,7 +44526,7 @@
         {
           "fa": "عوض کنیم",
           "translit": "avaz konim",
-          "en": "let's change",
+          "en": "lets change",
           "pos": "compound verb"
         }
       ],
@@ -44634,7 +44634,7 @@
       "englishText": "Don't be upset, it's fine.",
       "farsiText": "ناراحت نباش، چیزی نیست.",
       "finglish": "nârâhat nabâsh, chizi nist",
-      "literalGloss": "upset don't be anything is not",
+      "literalGloss": "upset dont be anything is not",
       "difficulty": 2,
       "situation": "comforting a friend",
       "grammarTags": [
@@ -44650,7 +44650,7 @@
         {
           "fa": "نباش",
           "translit": "nabâsh",
-          "en": "don't be",
+          "en": "dont be",
           "pos": "verb"
         },
         {
@@ -44696,7 +44696,7 @@
       "englishText": "Don't get angry with me.",
       "farsiText": "از دستم عصبانی نشو.",
       "finglish": "az dastam asabâni nasho",
-      "literalGloss": "from my hand don't get angry",
+      "literalGloss": "from my hand dont get angry",
       "difficulty": 2,
       "situation": "in an argument",
       "grammarTags": [
@@ -44718,7 +44718,7 @@
         {
           "fa": "عصبانی نشو",
           "translit": "asabâni nasho",
-          "en": "don't get angry",
+          "en": "dont get angry",
           "pos": "compound verb"
         }
       ],
@@ -44764,7 +44764,7 @@
       "englishText": "Don't go alone.",
       "farsiText": "تنها نرو.",
       "finglish": "tanhâ naro",
-      "literalGloss": "alone don't go",
+      "literalGloss": "alone dont go",
       "difficulty": 2,
       "situation": "warning a friend",
       "grammarTags": [
@@ -44780,7 +44780,7 @@
         {
           "fa": "نرو",
           "translit": "naro",
-          "en": "don't go",
+          "en": "dont go",
           "pos": "verb"
         }
       ],
@@ -45164,7 +45164,7 @@
       "englishText": "Be careful, don't fall.",
       "farsiText": "مواظب باش، نیفتی.",
       "finglish": "movâzeb bâsh, nayofti",
-      "literalGloss": "be careful you don't fall",
+      "literalGloss": "be careful you dont fall",
       "difficulty": 2,
       "situation": "on wet steps",
       "grammarTags": [
@@ -45180,7 +45180,7 @@
         {
           "fa": "نیفتی",
           "translit": "nayofti",
-          "en": "you don't fall",
+          "en": "you dont fall",
           "pos": "verb"
         }
       ],
@@ -45192,7 +45192,7 @@
       "englishText": "They didn't accept it.",
       "farsiText": "قبول نکردن.",
       "finglish": "ghabul nakardan",
-      "literalGloss": "they didn't accept",
+      "literalGloss": "they didnt accept",
       "difficulty": 2,
       "situation": "after an application",
       "grammarTags": [
@@ -45202,7 +45202,7 @@
         {
           "fa": "قبول نکردن",
           "translit": "ghabul nakardan",
-          "en": "they didn't accept",
+          "en": "they didnt accept",
           "pos": "compound verb"
         }
       ],
