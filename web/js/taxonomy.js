@@ -7,67 +7,67 @@
 
 export const ERROR_TAGS = {
   'ezafe': {
-    title: 'Ezâfe',
+    title: 'اضافه',
     detail: 'Missing, added, or misplaced ezâfe (the -e/-ye linking vowel).',
   },
   'ra-marker': {
-    title: 'Object marker',
+    title: 'نشانهٔ مفعول',
     detail: 'Object marker را missing, added wrongly, or misplaced.',
   },
   'verb-tense': {
-    title: 'Verb tense',
+    title: 'زمان فعل',
     detail: 'Wrong tense (past vs present vs perfect vs progressive).',
   },
   'subjunctive': {
-    title: 'Subjunctive',
+    title: 'التزامی',
     detail: 'Subjunctive missing or malformed after a modal/wish/necessity.',
   },
   'verb-agreement': {
-    title: 'Verb agreement',
+    title: 'مطابقت فعل',
     detail: 'Verb ending disagrees with the subject in person or number.',
   },
   'word-order': {
-    title: 'Word order',
+    title: 'ترتیب کلمه',
     detail: 'Constituents out of order; Persian is subject-object-verb.',
   },
   'preposition': {
-    title: 'Prepositions',
+    title: 'حرف اضافه',
     detail: 'Wrong or missing preposition (به/از/با/در/روی/تو).',
   },
   'pronoun-clitic': {
-    title: 'Attached pronouns',
+    title: 'ضمیر متصل',
     detail: 'Attached possessive/object pronouns (-am/-et/-esh) wrong.',
   },
   'plural': {
-    title: 'Plurals',
+    title: 'جمع',
     detail: 'Plural formation wrong (ها/ان), or plural where Persian uses singular.',
   },
   'compound-verb': {
-    title: 'Compound verbs',
+    title: 'فعل مرکب',
     detail: 'Wrong light verb (کردن/شدن/زدن/دادن/گرفتن) or wrong nominal part.',
   },
   'vocab-gap': {
-    title: 'Missing vocabulary',
+    title: 'کمبود واژه',
     detail: 'Did not produce the needed word at all.',
   },
   'vocab-wrong': {
-    title: 'Wrong word choice',
+    title: 'واژهٔ نادرست',
     detail: 'Produced a word that exists but is the wrong choice here.',
   },
   'formality': {
-    title: 'Formality',
+    title: 'رسمی بودن',
     detail: 'Register mismatch: formal where informal is natural, or vice versa.',
   },
   'colloquial': {
-    title: 'Spoken vs written',
+    title: 'گفتاری یا نوشتاری',
     detail: 'Bookish form where spoken Persian differs (می‌روم vs می‌رم).',
   },
   'spelling': {
-    title: 'Spelling',
+    title: 'املا',
     detail: 'Persian script spelling error, including ZWNJ (نیم‌فاصله).',
   },
   'naturalness': {
-    title: 'Naturalness',
+    title: 'طبیعی بودن',
     detail: 'Grammatical and understandable, but not how a native would say it.',
   },
 };

@@ -9,6 +9,7 @@
 // or after the deck was reloaded — maps back through the text, not the id.
 
 import * as db from './db.js';
+import { t } from './strings.js';
 
 const FORMAT = 'farsi-vault-backup';
 const VERSION = 1;
@@ -46,8 +47,8 @@ export async function exportData() {
  * longer in the deck.
  */
 export async function importData(backup) {
-  if (backup?.format !== FORMAT) throw new Error('Not a Farsi Vault backup file.');
-  if (backup.version > VERSION) throw new Error('This backup is from a newer version of the app.');
+  if (backup?.format !== FORMAT) throw new Error(t('settings.notBackup'));
+  if (backup.version > VERSION) throw new Error(t('settings.newerBackup'));
 
   if (backup.customSentences?.length) {
     await db.putMany(db.STORE.sentences, backup.customSentences);

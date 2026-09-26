@@ -112,7 +112,7 @@ function bindToday() {
       currentLevel: next,
       levelsPassed: [...state.settings.levelsPassed, state.settings.currentLevel],
     });
-    toast(`Now on ${next}.`);
+    toast(`${text('today.nowOn')} ${next}`);
     await refreshToday();
   });
 }
@@ -154,10 +154,10 @@ function renderPassPanel(gate) {
   panel.hidden = !gate.passed || !next;
   if (panel.hidden) return;
 
-  $('passed-head').textContent = `${gate.level} passed.`;
+  $('passed-head').textContent = `${gate.level} — ${text('today.passedHead')}`;
   $('passed-note').textContent =
-    `${levels.LEVEL_META[next].summary} Earlier levels keep coming back on schedule.`;
-  $('btn-advance').innerHTML = `Unlock ${next} &rarr;`;
+    `${levels.LEVEL_META[next].summary} ${text('today.passedNote')}`;
+  $('btn-advance').innerHTML = `${text('today.unlock')} ${next} &rarr;`;
 }
 
 /**
@@ -192,7 +192,7 @@ async function renderRegister() {
   $('register-rows').innerHTML = rows.map((row) => {
     const when = row.date === today.getTime()
       ? text('tab.today')
-      : new Date(row.date).toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
+      : faDigits(new Date(row.date).toLocaleDateString('fa-IR', { day: 'numeric', month: 'long' }));
     return `<div class="ledger-row">
       <span>${when}</span>
       <b class="col-n">${faDigits(row.reviewed)}</b>
@@ -301,9 +301,9 @@ function renderCard() {
 
   $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.queue.length)}`;
   $('card-badge').textContent =
-    `${session.directionLabel(card.direction)} · ${levels.levelForDifficulty(card.sentence.difficulty)}` +
-    (card.isNew ? ' · new' : '') +
-    (card.review.lapses > 0 ? ` · ${card.review.lapses} lapse${card.review.lapses === 1 ? '' : 's'}` : '');
+    `${text(`dir.${card.direction}`)} · ${levels.levelForDifficulty(card.sentence.difficulty)}` +
+    (card.isNew ? ` · ${text('card.newBadge')}` : '') +
+    (card.review.lapses > 0 ? ` · ${faDigits(card.review.lapses)} ${text('card.lapse')}` : '');
 
   const prompt = $('card-prompt');
   prompt.textContent = session.promptFor(card.sentence, card.direction);
@@ -313,7 +313,7 @@ function renderCard() {
   typed.value = '';
   typed.hidden = true;
   typed.classList.toggle('rtl', card.direction === 'enToFa');
-  typed.placeholder = card.direction === 'enToFa' ? 'بنویس…' : 'Type the English…';
+  typed.placeholder = text(card.direction === 'enToFa' ? 'card.typeFarsi' : 'card.typeEnglish');
 
   $('card-answer').hidden = true;
   $('btn-reveal').hidden = false;
@@ -607,9 +607,8 @@ async function renderGates() {
           <div class="gate-bar"><i style="width:${pct(value, need)}%"></i></div>
         </div>`).join('')}
     </div>
-    <p class="section-note">${gate.passed
-      ? 'Passed &mdash; unlock the next level from Today.'
-      : `All three must be met. Seen: distinct cards at this level. Accuracy: the last ${levels.GATE.accuracyWindow} reviews here. Retained: cards now ${levels.GATE.retentionDays}+ days apart &mdash; the one that stops a level being passed by cramming.`}</p>`;
+    <p class="section-note">${escapeHtml(
+      gate.passed ? text('progress.passed') : text('progress.gateHint'))}</p>`;
 }
 
 async function renderWeakSpots() {
@@ -649,9 +648,8 @@ async function renderWeakSpots() {
     + emerging.map((s) => row(s, true)).join('')
     + '</div>';
 
-  html += ranked.length
-    ? '<p class="section-note">Every feature a missed sentence exercises is counted against, so read this as where misses cluster, not as a diagnosis.</p>'
-    : `<p class="section-note">Rates appear once a feature has come up ${MIN_EVIDENCE} times.</p>`;
+  html += `<p class="section-note">${escapeHtml(
+    ranked.length ? text('progress.tagNote') : text('progress.tagNeed'))}</p>`;
   list.innerHTML = html;
 }
 
@@ -659,7 +657,7 @@ async function renderWeakSpots() {
 
 function bindSettings() {
   const slider = (id, labelId, key) => {
-    $(id).addEventListener('input', (e) => { $(labelId).textContent = e.target.value; });
+    $(id).addEventListener('input', (e) => { $(labelId).textContent = faDigits(e.target.value); });
     $(id).addEventListener('change', async (e) => {
       state.settings = await db.saveSettings({ [key]: Number(e.target.value) });
     });
@@ -679,7 +677,7 @@ function bindSettings() {
 
   $('set-level').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ currentLevel: e.target.value });
-    toast(`New cards now come from ${e.target.value}.`);
+    toast(`${text('settings.levelNow')} ${e.target.value}`);
     await renderSettings();
   });
 
@@ -689,7 +687,8 @@ function bindSettings() {
     if (outcome === 'cancelled') return;
     await db.saveSettings({ lastBackupAt: Date.now() });
     state.settings = await db.getSettings();
-    toast(`Backup saved: ${data.reviews.length} scheduled cards, ${data.attempts.length} reviews.`);
+    toast(`${text('settings.backupSaved')} — ${faDigits(data.reviews.length)} `
+      + `${text('settings.scheduled')}، ${faDigits(data.attempts.length)} ${text('settings.reviews')}`);
     await renderSettings();
   });
 
@@ -700,17 +699,21 @@ function bindSettings() {
     if (!file) return;
     try {
       const data = JSON.parse(await file.text());
-      const when = data.exportedAt ? new Date(data.exportedAt).toLocaleString() : 'an unknown date';
+      const when = data.exportedAt
+        ? faDigits(new Date(data.exportedAt).toLocaleString('fa-IR'))
+        : text('settings.unknownDate');
       // eslint-disable-next-line no-alert
-      if (!confirm(`Replace this device's progress with the backup from ${when}?`)) return;
+      if (!confirm(`${text('settings.confirmRestore')}\n${when}`)) return;
       const result = await backup.importData(data);
       state.settings = result.settings;
       sound.setEnabled(state.settings.soundEnabled !== false);
-      toast(`Restored ${result.reviews} scheduled cards and ${result.attempts} reviews` +
-        (result.skipped ? ` (${result.skipped} no longer in the deck).` : '.'), 4000);
+      toast(`${text('settings.backupRestored')} — ${faDigits(result.reviews)} `
+        + `${text('settings.scheduled')}، ${faDigits(result.attempts)} ${text('settings.reviews')}`
+        + (result.skipped
+          ? ` (${faDigits(result.skipped)} ${text('settings.goneFromDeck')})` : ''), 4000);
       await renderSettings();
     } catch (error) {
-      toast(error.message || 'That file could not be read.', 4000);
+      toast(error.message || text('settings.backupFailed'), 4000);
     }
   });
 }
@@ -718,11 +721,11 @@ function bindSettings() {
 async function renderSettings() {
   const s = state.settings;
   $('set-new').value = s.newPerDay;
-  $('new-value').textContent = s.newPerDay;
+  $('new-value').textContent = faDigits(s.newPerDay);
   $('set-round').value = s.sessionSize;
-  $('round-value').textContent = s.sessionSize;
+  $('round-value').textContent = faDigits(s.sessionSize);
   $('set-target').value = s.dailyTarget;
-  $('target-value').textContent = s.dailyTarget;
+  $('target-value').textContent = faDigits(s.dailyTarget);
   $('set-speak').checked = s.speakEnabled;
   $('set-sound').checked = s.soundEnabled !== false;
 
@@ -731,16 +734,17 @@ async function renderSettings() {
     .join('');
 
   $('backup-report').textContent = s.lastBackupAt
-    ? `Last backup ${new Date(s.lastBackupAt).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' })}. Restoring replaces what is on this device.`
-    : 'Your schedule and history exist only in this browser, and iOS can clear a web app\'s storage. Save a backup to Files now and then; restoring replaces what is on this device.';
+    ? `${text('settings.lastBackup')} ${faDigits(new Date(s.lastBackupAt)
+        .toLocaleDateString('fa-IR', { day: 'numeric', month: 'long', year: 'numeric' }))}`
+      + ` — ${text('settings.backupReplace')}`
+    : text('settings.backupHint');
 
   $('keys-group').hidden = !matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   const voices = await speech.voiceReport();
   $('voice-report').textContent = voices.persian.length
-    ? `Persian voice available: ${voices.persian.join(', ')}`
-    : `No Persian voice on this device (${voices.total} voices found). ` +
-      'Add one in iOS Settings → Accessibility → Spoken Content → Voices → Farsi, then reopen this app.';
+    ? `${text('settings.voiceFound')} ${voices.persian.join('، ')}`
+    : `${text('settings.voiceMissing')} — ${text('settings.voiceHow')}`;
 }
 
 function escapeHtml(value) {

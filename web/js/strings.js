@@ -62,6 +62,71 @@ export const STRINGS = {
   'settings.sound': 'صدا موقع رد شدن',
   'settings.currentLevel': 'سطح فعلی',
   'settings.backup': 'پشتیبان',
+
+  // Settings — practice
+  'settings.newPerDay': 'کارت جدید در روز',
+  'settings.newPerDayHint': 'هر کارت جدید هفته‌ها مرور می‌سازه، پس این بیشتر بارِ فرداست تا امروز. فقط وقتی ببرش بالا که مرورها دارن تموم می‌شن.',
+  'settings.perRound': 'کارت در هر دور',
+  'settings.perRoundHint': 'هر دور یعنی یه بار زدنِ شروع. وقتی تموم شد می‌تونی همون‌جا دوباره بری.',
+  'settings.dailyTargetHint': 'چند کارت در روز یعنی تموم. هدفی که بیشتر روزها بهش می‌رسی عادت می‌سازه؛ هدفی که ازش جا می‌مونی عادت رو خراب می‌کنه.',
+  'settings.levelHint': 'کارت جدید فقط از این سطح میاد؛ مرور از همه‌جا. معمولاً وقتی از دروازهٔ پیشرفت رد بشی خودش جلو می‌ره — دستی عوضش کن اگه نمی‌خوای صبر کنی، یا می‌خوای برگردی عقب.',
+
+  // Settings — audio
+  'settings.speak': 'خوندن جواب با صدا',
+  'settings.voiceChecking': 'دنبال صدای فارسی…',
+  'settings.voiceFound': 'صدای فارسی هست:',
+  'settings.voiceMissing': 'صدای فارسی روی این دستگاه نیست',
+  'settings.voiceHow': 'از Settings → Accessibility → Spoken Content → Voices → Farsi اضافه‌ش کن، بعد برنامه رو دوباره باز کن.',
+
+  // Settings — backup
+  'settings.exportBackup': 'ذخیرهٔ پشتیبان',
+  'settings.importBackup': 'بازگردانی…',
+  'settings.backupHint': 'برنامهٔ مرور و تاریخچه‌ات فقط توی همین مرورگره، و iOS می‌تونه پاکش کنه. هر از گاهی یه پشتیبان توی Files ذخیره کن؛ بازگردانی چیزی رو که اینجاست جایگزین می‌کنه.',
+  'settings.backupSaved': 'پشتیبان ذخیره شد',
+  'settings.backupRestored': 'بازگردانی شد',
+  'settings.backupFailed': 'این فایل خونده نشد.',
+  'settings.scheduled': 'کارت زمان‌بندی‌شده',
+  'settings.reviews': 'مرور',
+
+  // Settings — keyboard and privacy
+  'settings.keyboard': 'صفحه‌کلید',
+  'settings.keyboardHint': 'فاصله جواب · ۱ غلط · ۲ درست · T تایپ · P پخش · U برگرد · Esc خروج. موقع تایپ، Enter جواب رو نشون می‌ده.',
+  'settings.privacy': 'چی از این دستگاه بیرون می‌ره',
+  'settings.privacyHint': 'هیچی. نه سروری هست نه حسابی. هر جمله، هر نمره و کل برنامهٔ مرور توی همین مرورگر می‌مونه، و پشتیبان فقط جایی می‌ره که خودت می‌فرستیش.',
+  'settings.levelNow': 'کارت‌های جدید حالا از این سطح میان:',
+
+  // Card
+  'card.typeFarsi': 'بنویس…',
+  'card.typeEnglish': 'انگلیسی‌شو بنویس…',
+
+  // Today and progress
+  'today.unlock': 'باز کردن',
+  'progress.passed': 'قبول شدی — سطح بعدی رو از امروز باز کن.',
+  'progress.gateHint': 'هر سه تا باید برسن. دیده‌شده: کارت‌های متمایز این سطح. دقت: مرورهای اخیر همین‌جا. مونده: کارت‌هایی که حالا چند روز فاصله دارن — همونی که نمی‌ذاره سطحی رو با حفظ‌کردن رد کنی.',
+  'progress.tagNote': 'هر ویژگی‌ای که توی یه جملهٔ غلط بوده شمرده می‌شه، پس این رو جای تجمع خطا بخون، نه تشخیص قطعی.',
+  'progress.tagNeed': 'نسبت‌ها وقتی میان که یه ویژگی چند بار اومده باشه.',
+
+
+  // Card badge and directions
+  'dir.enToFa': 'انگلیسی ← فارسی',
+  'dir.faToEn': 'فارسی ← انگلیسی',
+  'card.newBadge': 'جدید',
+  'card.lapse': 'لغزش',
+
+  // Level panel
+  'today.passedHead': 'رد شدی',
+  'today.passedNote': 'سطح‌های قبلی سر وقت خودشون برمی‌گردن.',
+  'today.nowOn': 'حالا روی سطح',
+
+  // Backup detail
+  'settings.lastBackup': 'آخرین پشتیبان',
+  'settings.backupReplace': 'بازگردانی چیزی رو که روی این دستگاهه جایگزین می‌کنه.',
+  'settings.unknownDate': 'تاریخ نامشخص',
+  'settings.confirmRestore': 'پیشرفت این دستگاه با پشتیبانِ این تاریخ جایگزین بشه؟',
+  'settings.notBackup': 'این فایل پشتیبانِ این برنامه نیست.',
+  'settings.newerBackup': 'این پشتیبان مال نسخهٔ جدیدتریه.',
+  'settings.goneFromDeck': 'دیگه توی بسته نیستن',
+
 };
 
 /**

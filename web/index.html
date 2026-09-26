@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
@@ -34,7 +34,7 @@
       <div class="passed-panel" id="passed-panel" hidden>
         <p class="passed-head" id="passed-head"></p>
         <p class="hint" id="passed-note"></p>
-        <button id="btn-advance">Unlock &rarr;</button>
+        <button id="btn-advance" data-t="today.unlock">Unlock</button>
       </div>
 
       <button id="btn-start">Start &rarr;</button>
@@ -71,73 +71,60 @@
 
       <div class="group">
         <h2 data-t="settings.practice">Practice</h2>
-        <label>New cards a day <b id="new-value">20</b>
+        <label><span data-t="settings.newPerDay">New cards a day</span> <b id="new-value">20</b>
           <input type="range" id="set-new" min="0" max="60" step="5">
         </label>
-        <p class="hint">Every new card turns into reviews for weeks, so this
-        sets tomorrow's workload more than today's. Raise it only while the
-        reviews are getting done.</p>
-        <label>Cards per round <b id="round-value">20</b>
+        <p class="hint" data-t="settings.newPerDayHint"></p>
+        <label><span data-t="settings.perRound">Cards per round</span> <b id="round-value">20</b>
           <input type="range" id="set-round" min="5" max="60" step="5">
         </label>
-        <p class="hint">One round is one tap of Start. When it ends you can go
-        again straight away.</p>
-        <label>Daily target <b id="target-value">40</b>
+        <p class="hint" data-t="settings.perRoundHint"></p>
+        <label><span data-t="settings.dailyTarget">Daily target</span> <b id="target-value">40</b>
           <input type="range" id="set-target" min="10" max="150" step="5">
         </label>
-        <p class="hint">Cards a day that counts as done. One you clear most days
-        builds the habit; one you miss erodes it.</p>
+        <p class="hint" data-t="settings.dailyTargetHint"></p>
       </div>
 
       <div class="group">
         <h2 data-t="settings.level">Level</h2>
         <label class="row">
-          <span>Current level</span>
+          <span data-t="settings.currentLevel">Current level</span>
           <select id="set-level"></select>
         </label>
-        <p class="hint">New cards come only from this level; reviews come from
-        everywhere. Normally it advances when you pass the gate on Progress —
-        set it by hand if you would rather not wait, or want to drop back.</p>
+        <p class="hint" data-t="settings.levelHint"></p>
       </div>
 
       <div class="group">
         <h2 data-t="settings.audio">Audio</h2>
         <label class="row">
-          <span>Read answers aloud</span>
+          <span data-t="settings.speak">Read answers aloud</span>
           <input type="checkbox" id="set-speak">
         </label>
         <label class="row">
-          <span>Sound when a card advances</span>
+          <span data-t="settings.sound">Sound when a card advances</span>
           <input type="checkbox" id="set-sound">
         </label>
-        <p class="hint" id="voice-report">Checking for a Persian voice…</p>
+        <p class="hint" id="voice-report" data-t="settings.voiceChecking"></p>
       </div>
 
       <div class="group">
         <h2 data-t="settings.backup">Backup</h2>
         <div class="button-row">
-          <button id="btn-export">Save a backup</button>
-          <button id="btn-import">Restore&hellip;</button>
+          <button id="btn-export" data-t="settings.exportBackup">Save a backup</button>
+          <button id="btn-import" data-t="settings.importBackup">Restore</button>
         </div>
         <input type="file" id="import-file" accept="application/json,.json" hidden>
-        <p class="hint" id="backup-report">Your schedule and history exist only
-        in this browser, and iOS can clear a web app's storage. Save a backup to
-        Files now and then; restoring replaces what is here.</p>
+        <p class="hint" id="backup-report" data-t="settings.backupHint"></p>
       </div>
 
       <div class="group" id="keys-group">
-        <h2>Keyboard</h2>
-        <p class="hint"><kbd>Space</kbd> reveal &middot; <kbd>1</kbd> غلط &middot;
-        <kbd>2</kbd> درست &middot; <kbd>T</kbd> type &middot; <kbd>P</kbd> play
-        &middot; <kbd>U</kbd> undo &middot; <kbd>Esc</kbd> exit. While typing,
-        <kbd>Enter</kbd> reveals.</p>
+        <h2 data-t="settings.keyboard">Keyboard</h2>
+        <p class="hint" data-t="settings.keyboardHint"></p>
       </div>
 
       <div class="group">
-        <h2>What leaves this device</h2>
-        <p class="hint">Nothing. There is no server and no account. Every
-        sentence, rating and schedule stays in this browser, and a backup goes
-        only where you send it.</p>
+        <h2 data-t="settings.privacy">What leaves this device</h2>
+        <p class="hint" data-t="settings.privacyHint"></p>
       </div>
 
     </div>

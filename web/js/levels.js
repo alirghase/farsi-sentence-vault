@@ -12,11 +12,11 @@ import * as db from './db.js';
 export const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
 export const LEVEL_META = {
-  A1: { difficulty: 1, summary: 'One clause, present tense, everyday words.' },
-  A2: { difficulty: 2, summary: 'Past and future, simple compound verbs.' },
-  B1: { difficulty: 3, summary: 'Subordinate clauses and the subjunctive.' },
-  B2: { difficulty: 4, summary: 'Conditionals, reported speech, register.' },
-  C1: { difficulty: 5, summary: 'Idiom, abstraction, taarof.' },
+  A1: { difficulty: 1, summary: 'یه جمله، زمان حال، کلمه‌های هر روز.' },
+  A2: { difficulty: 2, summary: 'گذشته و آینده، فعل مرکب ساده.' },
+  B1: { difficulty: 3, summary: 'جملهٔ پیرو و التزامی.' },
+  B2: { difficulty: 4, summary: 'شرطی، نقل قول، لحن رسمی.' },
+  C1: { difficulty: 5, summary: 'اصطلاح، مفهوم انتزاعی، تعارف.' },
 };
 
 /** The gate. Every threshold is visible in the UI so nothing is a mystery. */

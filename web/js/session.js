@@ -15,10 +15,6 @@ export const DIRECTIONS = ['enToFa', 'faToEn'];
  */
 export const DEFAULT_WEIGHTS = { enToFa: 0.7, faToEn: 0.3 };
 
-export function directionLabel(direction) {
-  return { enToFa: 'EN → FA', faToEn: 'FA → EN' }[direction] ?? direction;
-}
-
 export function reviewKey(sentenceId, direction) {
   return `${sentenceId}::${direction}`;
 }

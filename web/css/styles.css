@@ -153,13 +153,16 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
 .settings .group > .ledger { margin: 0 calc(-1 * var(--gutter)) -18px; border-bottom: 0; }
 .settings .group:last-child { border-bottom: 0; }
 .settings h2 {
+  direction: rtl; text-align: right;
   margin: 0 0 14px; font-size: 11px; letter-spacing: .16em;
   text-transform: uppercase; color: var(--ink-faint); font-weight: 600;
 }
-.settings label { display: block; margin-bottom: 16px; font-size: 13px; color: var(--ink-soft); }
+.settings label { display: block; margin-bottom: 16px; font-size: 13px; color: var(--ink-soft); direction: rtl; text-align: right; }
 .settings label.row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0; }
 .settings label b {
-  float: right; color: var(--ink); font-family: var(--mono);
+  /* The label reads right-to-left, so the figure belongs at the far (left)
+     edge. float:right would put it on top of the first word. */
+  float: left; color: var(--ink); font-family: var(--mono);
   font-variant-numeric: tabular-nums; font-weight: 600;
 }
 .settings input:focus { outline: 0; }
@@ -203,7 +206,12 @@ kbd {
   font-family: var(--mono); font-size: 11px; color: var(--ink-soft);
   border: 1px solid var(--rule); padding: 0 4px;
 }
-.hint { color: var(--ink-faint); font-size: 12px; margin: 8px 0 0; }
+.hint {
+  color: var(--ink-faint); font-size: 12px; margin: 8px 0 0;
+  /* Persian prose in an LTR block throws trailing punctuation to the far end
+     of the line — the full stop lands before the first word. */
+  direction: rtl; text-align: right;
+}
 .settings .hint + label { margin-top: 22px; }
 .settings .button-row + input + .hint { margin-top: 12px; }
 code { font-family: inherit; font-style: italic; }
