@@ -1,0 +1,1812 @@
+{
+  "note": "A second exposure for 29 content words the vocabulary report found at one occurrence. Built to reuse words already in the deck rather than add more.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "He's a good person.",
+      "fa": "آدم خوبیه.",
+      "tr": "âdame khubiye.",
+      "sit": "describing someone",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "آدم",
+          "âdam",
+          "person",
+          "noun"
+        ],
+        [
+          "خوبیه",
+          "khubiye",
+          "is a good one",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She's a very kind person.",
+      "fa": "خیلی آدم مهربونیه.",
+      "tr": "kheyli âdame mehrubuniye.",
+      "sit": "describing someone",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "آدم",
+          "âdam",
+          "person",
+          "noun"
+        ],
+        [
+          "مهربونیه",
+          "mehrubuniye",
+          "is a kind one",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "This is easier than that.",
+      "fa": "این از اون آسون‌تره.",
+      "tr": "in az un âsuntare.",
+      "sit": "comparing",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "از",
+          "az",
+          "than",
+          "preposition"
+        ],
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "آسون‌تره",
+          "âsuntare",
+          "is easier",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Persian isn't easy.",
+      "fa": "فارسی آسون نیست.",
+      "tr": "fârsi âsun nist.",
+      "sit": "talking about learning",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "آسون",
+          "âsun",
+          "easy",
+          "adjective"
+        ],
+        [
+          "نیست",
+          "nist",
+          "is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Dinner is ready.",
+      "fa": "شام آماده‌ست.",
+      "tr": "shâm âmâdast.",
+      "sit": "calling people to eat",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "آماده‌ست",
+          "âmâdast",
+          "is ready",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm not ready yet.",
+      "fa": "هنوز آماده نیستم.",
+      "tr": "hanuz âmâde nistam.",
+      "sit": "before going out",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هنوز",
+          "hanuz",
+          "yet",
+          "adverb"
+        ],
+        [
+          "آماده",
+          "âmâde",
+          "ready",
+          "adjective"
+        ],
+        [
+          "نیستم",
+          "nistam",
+          "I am not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The kitchen is very clean.",
+      "fa": "آشپزخونه خیلی تمیزه.",
+      "tr": "âshpazkhune kheyli tamize.",
+      "sit": "at home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آشپزخونه",
+          "âshpazkhune",
+          "kitchen",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "تمیزه",
+          "tamize",
+          "is clean",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Mum is in the kitchen.",
+      "fa": "مامان توی آشپزخونه‌ست.",
+      "tr": "mâmân tuye âshpazkhunast.",
+      "sit": "at home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مامان",
+          "mâmân",
+          "mum",
+          "noun"
+        ],
+        [
+          "توی",
+          "tuye",
+          "in",
+          "preposition"
+        ],
+        [
+          "آشپزخونه‌ست",
+          "âshpazkhunast",
+          "is the kitchen",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We'll talk about it in the future.",
+      "fa": "در آینده درباره‌ش حرف می‌زنیم.",
+      "tr": "dar âyande darbâresh harf mizanim.",
+      "sit": "postponing",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "در",
+          "dar",
+          "in",
+          "preposition"
+        ],
+        [
+          "آینده",
+          "âyande",
+          "future",
+          "noun"
+        ],
+        [
+          "درباره‌ش",
+          "darbâresh",
+          "about it",
+          "attached pronoun"
+        ],
+        [
+          "حرف می‌زنیم",
+          "harf mizanim",
+          "we talk",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Nobody knows the future.",
+      "fa": "هیچ‌کس آینده رو نمی‌دونه.",
+      "tr": "hichkas âyande ro nemidune.",
+      "sit": "philosophising",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هیچ‌کس",
+          "hichkas",
+          "nobody",
+          "pronoun"
+        ],
+        [
+          "آینده",
+          "âyande",
+          "future",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "نمی‌دونه",
+          "nemidune",
+          "doesn't know",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do I have permission to come in?",
+      "fa": "اجازه دارم بیام تو؟",
+      "tr": "ejâze dâram biyâm tu?",
+      "sit": "at a doorway",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اجازه دارم",
+          "ejâze dâram",
+          "I have permission",
+          "compound verb"
+        ],
+        [
+          "بیام",
+          "biyâm",
+          "I come",
+          "verb"
+        ],
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Ask your mother's permission.",
+      "fa": "از مامانت اجازه بگیر.",
+      "tr": "az mâmânet ejâze begir.",
+      "sit": "to a child",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "مامانت",
+          "mâmânet",
+          "your mother",
+          "attached pronoun"
+        ],
+        [
+          "اجازه بگیر",
+          "ejâze begir",
+          "get permission",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have a strange feeling.",
+      "fa": "یه احساس عجیبی دارم.",
+      "tr": "ye ehsâse ajibi dâram.",
+      "sit": "unease",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "احساس",
+          "ehsâs",
+          "feeling",
+          "noun"
+        ],
+        [
+          "عجیبی",
+          "ajibi",
+          "strange",
+          "adjective"
+        ],
+        [
+          "دارم",
+          "dâram",
+          "I have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I understand your feeling.",
+      "fa": "احساستو درک می‌کنم.",
+      "tr": "ehsâseto dark mikonam.",
+      "sit": "comforting a friend",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "احساستو",
+          "ehsâseto",
+          "your feeling",
+          "attached pronoun"
+        ],
+        [
+          "درک می‌کنم",
+          "dark mikonam",
+          "I understand",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "This is my first time here.",
+      "fa": "بار اول اینجام.",
+      "tr": "bâre aval injâm.",
+      "sit": "somewhere new",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "بار",
+          "bâr",
+          "time",
+          "noun"
+        ],
+        [
+          "اول",
+          "aval",
+          "first",
+          "adjective"
+        ],
+        [
+          "اینجام",
+          "injâm",
+          "I am here",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's go first, then eat.",
+      "fa": "اول بریم، بعد بخوریم.",
+      "tr": "aval berim, ba'd bokhorim.",
+      "sit": "planning an outing",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "اول",
+          "aval",
+          "first",
+          "adverb"
+        ],
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ],
+        [
+          "بعد",
+          "ba'd",
+          "then",
+          "adverb"
+        ],
+        [
+          "بخوریم",
+          "bokhorim",
+          "eat",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's a hard choice.",
+      "fa": "انتخاب سختیه.",
+      "tr": "entekhâbe sakhtiye.",
+      "sit": "deciding",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "انتخاب",
+          "entekhâb",
+          "choice",
+          "noun"
+        ],
+        [
+          "سختیه",
+          "sakhtiye",
+          "is a hard one",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The choice is yours.",
+      "fa": "انتخاب با خودته.",
+      "tr": "entekhâb bâ khodete.",
+      "sit": "letting someone decide",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "انتخاب",
+          "entekhâb",
+          "choice",
+          "noun"
+        ],
+        [
+          "با",
+          "bâ",
+          "with",
+          "preposition"
+        ],
+        [
+          "خودته",
+          "khodete",
+          "is yourself",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The game starts at eight.",
+      "fa": "بازی ساعت هشت شروع می‌شه.",
+      "tr": "bâzi sâate hasht shoru mishe.",
+      "sit": "football",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "بازی",
+          "bâzi",
+          "game",
+          "noun"
+        ],
+        [
+          "ساعت",
+          "sâat",
+          "hour",
+          "noun"
+        ],
+        [
+          "هشت",
+          "hasht",
+          "eight",
+          "number"
+        ],
+        [
+          "شروع می‌شه",
+          "shoru mishe",
+          "starts",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you watch the game?",
+      "fa": "بازی رو دیدی؟",
+      "tr": "bâzi ro didi?",
+      "sit": "after a match",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بازی",
+          "bâzi",
+          "game",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "دیدی",
+          "didi",
+          "did you see",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The bank opens at nine.",
+      "fa": "بانک ساعت نه باز می‌شه.",
+      "tr": "bânk sâate noh bâz mishe.",
+      "sit": "running errands",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "بانک",
+          "bânk",
+          "bank",
+          "noun"
+        ],
+        [
+          "ساعت",
+          "sâat",
+          "hour",
+          "noun"
+        ],
+        [
+          "نه",
+          "noh",
+          "nine",
+          "number"
+        ],
+        [
+          "باز می‌شه",
+          "bâz mishe",
+          "opens",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have to go to the bank.",
+      "fa": "باید برم بانک.",
+      "tr": "bâyad beram bânk.",
+      "sit": "planning the day",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "particle"
+        ],
+        [
+          "برم",
+          "beram",
+          "I go",
+          "verb"
+        ],
+        [
+          "بانک",
+          "bânk",
+          "bank",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It snowed a lot last night.",
+      "fa": "دیشب خیلی برف اومد.",
+      "tr": "dishab kheyli barf umad.",
+      "sit": "winter weather",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "دیشب",
+          "dishab",
+          "last night",
+          "adverb"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "a lot",
+          "adverb"
+        ],
+        [
+          "برف",
+          "barf",
+          "snow",
+          "noun"
+        ],
+        [
+          "اومد",
+          "umad",
+          "came",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is it going to snow?",
+      "fa": "برف میاد؟",
+      "tr": "barf miyâd?",
+      "sit": "checking the weather",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "برف",
+          "barf",
+          "snow",
+          "noun"
+        ],
+        [
+          "میاد",
+          "miyâd",
+          "comes",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's talk about it next week.",
+      "fa": "هفتهٔ بعدی درباره‌ش حرف می‌زنیم.",
+      "tr": "hafteye ba'di darbâresh harf mizanim.",
+      "sit": "at work",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "هفتهٔ",
+          "hafteye",
+          "week",
+          "noun"
+        ],
+        [
+          "بعدی",
+          "ba'di",
+          "next",
+          "adjective"
+        ],
+        [
+          "درباره‌ش",
+          "darbâresh",
+          "about it",
+          "attached pronoun"
+        ],
+        [
+          "حرف می‌زنیم",
+          "harf mizanim",
+          "we talk",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Get off at the next stop.",
+      "fa": "ایستگاه بعدی پیاده شو.",
+      "tr": "istgâhe ba'di piyâde sho.",
+      "sit": "on a bus",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "ایستگاه",
+          "istgâh",
+          "station",
+          "noun"
+        ],
+        [
+          "بعدی",
+          "ba'di",
+          "next",
+          "adjective"
+        ],
+        [
+          "پیاده شو",
+          "piyâde sho",
+          "get off",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Spring is my favourite season.",
+      "fa": "بهار رو از همه بیشتر دوست دارم.",
+      "tr": "bahâr ro az hame bishtar dust dâram.",
+      "sit": "small talk",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "بهار",
+          "bahâr",
+          "spring",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "از",
+          "az",
+          "than",
+          "preposition"
+        ],
+        [
+          "همه",
+          "hame",
+          "all",
+          "pronoun"
+        ],
+        [
+          "بیشتر",
+          "bishtar",
+          "more",
+          "adverb"
+        ],
+        [
+          "دوست دارم",
+          "dust dâram",
+          "I like",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The weather is nice in spring.",
+      "fa": "بهار هوا قشنگه.",
+      "tr": "bahâr havâ ghashange.",
+      "sit": "small talk",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بهار",
+          "bahâr",
+          "spring",
+          "noun"
+        ],
+        [
+          "هوا",
+          "havâ",
+          "weather",
+          "noun"
+        ],
+        [
+          "قشنگه",
+          "ghashange",
+          "is lovely",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Summer here is very hot.",
+      "fa": "اینجا تابستون خیلی گرمه.",
+      "tr": "injâ tâbestun kheyli garme.",
+      "sit": "small talk",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "تابستون",
+          "tâbestun",
+          "summer",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "گرمه",
+          "garme",
+          "is hot",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We're going north in the summer.",
+      "fa": "تابستون می‌ریم شمال.",
+      "tr": "tâbestun mirim shomâl.",
+      "sit": "holiday plans",
+      "tags": [
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "تابستون",
+          "tâbestun",
+          "summer",
+          "noun"
+        ],
+        [
+          "می‌ریم",
+          "mirim",
+          "we go",
+          "verb"
+        ],
+        [
+          "شمال",
+          "shomâl",
+          "north",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Take him to the hospital.",
+      "fa": "ببرش بیمارستان.",
+      "tr": "bebaresh bimârestân.",
+      "sit": "an emergency",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "ببرش",
+          "bebaresh",
+          "take him",
+          "verb"
+        ],
+        [
+          "بیمارستان",
+          "bimârestân",
+          "hospital",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The hospital is near the park.",
+      "fa": "بیمارستان نزدیک پارکه.",
+      "tr": "bimârestân nazdike pârke.",
+      "sit": "giving directions",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "بیمارستان",
+          "bimârestân",
+          "hospital",
+          "noun"
+        ],
+        [
+          "نزدیک",
+          "nazdik",
+          "near",
+          "preposition"
+        ],
+        [
+          "پارکه",
+          "pârke",
+          "is the park",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "This coffee is too bitter.",
+      "fa": "این قهوه خیلی تلخه.",
+      "tr": "in ghahve kheyli talkhe.",
+      "sit": "at a cafe",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "قهوه",
+          "ghahve",
+          "coffee",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "too",
+          "adverb"
+        ],
+        [
+          "تلخه",
+          "talkhe",
+          "is bitter",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I don't like bitter tea.",
+      "fa": "چای تلخ دوست ندارم.",
+      "tr": "chây-e talkh dust nadâram.",
+      "sit": "being offered a drink",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "چای",
+          "chây",
+          "tea",
+          "noun"
+        ],
+        [
+          "تلخ",
+          "talkh",
+          "bitter",
+          "adjective"
+        ],
+        [
+          "دوست ندارم",
+          "dust nadâram",
+          "I don't like",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have practice tomorrow.",
+      "fa": "فردا تمرین دارم.",
+      "tr": "fardâ tamrin dâram.",
+      "sit": "football",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "تمرین دارم",
+          "tamrin dâram",
+          "I have practice",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Practice makes it easier.",
+      "fa": "تمرین آسونش می‌کنه.",
+      "tr": "tamrin âsunesh mikone.",
+      "sit": "encouraging someone",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "تمرین",
+          "tamrin",
+          "practice",
+          "noun"
+        ],
+        [
+          "آسونش می‌کنه",
+          "âsunesh mikone",
+          "makes it easier",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's a very interesting book.",
+      "fa": "کتاب خیلی جالبیه.",
+      "tr": "ketâbe kheyli jâlebiye.",
+      "sit": "recommending a book",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "کتاب",
+          "ketâb",
+          "book",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "جالبیه",
+          "jâlebiye",
+          "is an interesting one",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What an interesting idea.",
+      "fa": "چه فکر جالبی.",
+      "tr": "che fekre jâlebi.",
+      "sit": "in a meeting",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "what",
+          "question word"
+        ],
+        [
+          "فکر",
+          "fekr",
+          "thought",
+          "noun"
+        ],
+        [
+          "جالبی",
+          "jâlebi",
+          "interesting",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "His salary is very good.",
+      "fa": "حقوقش خیلی خوبه.",
+      "tr": "hoghughesh kheyli khube.",
+      "sit": "about a job",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "حقوقش",
+          "hoghughesh",
+          "his salary",
+          "attached pronoun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "خوبه",
+          "khube",
+          "is good",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They pay the salary on Mondays.",
+      "fa": "حقوق رو دوشنبه‌ها می‌دن.",
+      "tr": "hoghugh ro doshanbehâ midan.",
+      "sit": "at work",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "حقوق",
+          "hoghugh",
+          "salary",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "دوشنبه‌ها",
+          "doshanbehâ",
+          "Mondays",
+          "noun"
+        ],
+        [
+          "می‌دن",
+          "midan",
+          "they give",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My sister goes to university.",
+      "fa": "خواهرم دانشگاه می‌ره.",
+      "tr": "khâharam dâneshgâh mire.",
+      "sit": "about family",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "خواهرم",
+          "khâharam",
+          "my sister",
+          "attached pronoun"
+        ],
+        [
+          "دانشگاه",
+          "dâneshgâh",
+          "university",
+          "noun"
+        ],
+        [
+          "می‌ره",
+          "mire",
+          "goes",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The university is far from here.",
+      "fa": "دانشگاه از اینجا دوره.",
+      "tr": "dâneshgâh az injâ dure.",
+      "sit": "giving directions",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دانشگاه",
+          "dâneshgâh",
+          "university",
+          "noun"
+        ],
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "دوره",
+          "dure",
+          "is far",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That girl is my sister.",
+      "fa": "اون دختر خواهرمه.",
+      "tr": "un dokhtar khâharame.",
+      "sit": "introducing family",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "دختر",
+          "dokhtar",
+          "girl",
+          "noun"
+        ],
+        [
+          "خواهرمه",
+          "khâharame",
+          "is my sister",
+          "attached pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Their daughter is at university.",
+      "fa": "دخترشون دانشگاهه.",
+      "tr": "dokhtareshun dâneshgâhe.",
+      "sit": "family news",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دخترشون",
+          "dokhtareshun",
+          "their daughter",
+          "attached pronoun"
+        ],
+        [
+          "دانشگاهه",
+          "dâneshgâhe",
+          "is university",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "There's no reason to worry.",
+      "fa": "دلیلی واسه نگرانی نیست.",
+      "tr": "dalili vâse negarâni nist.",
+      "sit": "reassuring someone",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دلیلی",
+          "dalili",
+          "a reason",
+          "noun"
+        ],
+        [
+          "واسه",
+          "vâse",
+          "for",
+          "preposition"
+        ],
+        [
+          "نگرانی",
+          "negarâni",
+          "worry",
+          "noun"
+        ],
+        [
+          "نیست",
+          "nist",
+          "there is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Tell me the reason.",
+      "fa": "دلیلشو بهم بگو.",
+      "tr": "dalilesho beham begu.",
+      "sit": "asking for an explanation",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دلیلشو",
+          "dalilesho",
+          "its reason",
+          "attached pronoun"
+        ],
+        [
+          "بهم",
+          "beham",
+          "to me",
+          "attached pronoun"
+        ],
+        [
+          "بگو",
+          "begu",
+          "say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He's seen the whole world.",
+      "fa": "کل دنیا رو دیده.",
+      "tr": "kole donyâ ro dide.",
+      "sit": "about a traveller",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کل",
+          "kol",
+          "whole",
+          "adjective"
+        ],
+        [
+          "دنیا",
+          "donyâ",
+          "world",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "دیده",
+          "dide",
+          "has seen",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The world is very small.",
+      "fa": "دنیا خیلی کوچیکه.",
+      "tr": "donyâ kheyli kuchike.",
+      "sit": "a coincidence",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دنیا",
+          "donyâ",
+          "world",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "کوچیکه",
+          "kuchike",
+          "is small",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "This is my second coffee.",
+      "fa": "این قهوهٔ دوممه.",
+      "tr": "in ghahveye dovomame.",
+      "sit": "at a cafe",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "قهوهٔ",
+          "ghahveye",
+          "coffee",
+          "noun"
+        ],
+        [
+          "دوممه",
+          "dovomame",
+          "is my second",
+          "attached pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Take the second street.",
+      "fa": "خیابون دوم رو برو.",
+      "tr": "khiyâbune dovom ro boro.",
+      "sit": "giving directions",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "خیابون",
+          "khiyâbun",
+          "street",
+          "noun"
+        ],
+        [
+          "دوم",
+          "dovom",
+          "second",
+          "adjective"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "برو",
+          "boro",
+          "go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I ate too much.",
+      "fa": "زیاد خوردم.",
+      "tr": "ziyâd khordam.",
+      "sit": "after dinner",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "زیاد",
+          "ziyâd",
+          "too much",
+          "adverb"
+        ],
+        [
+          "خوردم",
+          "khordam",
+          "I ate",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't talk too much.",
+      "fa": "زیاد حرف نزن.",
+      "tr": "ziyâd harf nazan.",
+      "sit": "advice",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "زیاد",
+          "ziyâd",
+          "too much",
+          "adverb"
+        ],
+        [
+          "حرف نزن",
+          "harf nazan",
+          "don't talk",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Of course I'll come.",
+      "fa": "البته که میام.",
+      "tr": "albate ke miyâm.",
+      "sit": "agreeing",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "البته",
+          "albate",
+          "of course",
+          "adverb"
+        ],
+        [
+          "که",
+          "ke",
+          "that",
+          "conjunction"
+        ],
+        [
+          "میام",
+          "miyâm",
+          "I come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Of course it's not easy.",
+      "fa": "البته آسون نیست.",
+      "tr": "albate âsun nist.",
+      "sit": "agreeing with a caveat",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "البته",
+          "albate",
+          "of course",
+          "adverb"
+        ],
+        [
+          "آسون",
+          "âsun",
+          "easy",
+          "adjective"
+        ],
+        [
+          "نیست",
+          "nist",
+          "is not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "In short, we couldn't go.",
+      "fa": "خلاصه نتونستیم بریم.",
+      "tr": "kholâse natunestim berim.",
+      "sit": "summarising",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "خلاصه",
+          "kholâse",
+          "in short",
+          "adverb"
+        ],
+        [
+          "نتونستیم",
+          "natunestim",
+          "we couldn't",
+          "verb"
+        ],
+        [
+          "بریم",
+          "berim",
+          "go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "In short, it was a good day.",
+      "fa": "خلاصه روز خوبی بود.",
+      "tr": "kholâse ruze khubi bud.",
+      "sit": "summarising",
+      "tags": [
+        "ezafe"
+      ],
+      "bd": [
+        [
+          "خلاصه",
+          "kholâse",
+          "in short",
+          "adverb"
+        ],
+        [
+          "روز",
+          "ruz",
+          "day",
+          "noun"
+        ],
+        [
+          "خوبی",
+          "khubi",
+          "good",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Their joy was obvious.",
+      "fa": "شادیشون معلوم بود.",
+      "tr": "shâdiyeshun ma'lum bud.",
+      "sit": "after good news",
+      "tags": [
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "شادیشون",
+          "shâdiyeshun",
+          "their joy",
+          "attached pronoun"
+        ],
+        [
+          "معلوم",
+          "ma'lum",
+          "obvious",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "There was a lot of joy in the house.",
+      "fa": "خونه پر از شادی بود.",
+      "tr": "khune por az shâdi bud.",
+      "sit": "a celebration",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خونه",
+          "khune",
+          "house",
+          "noun"
+        ],
+        [
+          "پر",
+          "por",
+          "full",
+          "adjective"
+        ],
+        [
+          "از",
+          "az",
+          "of",
+          "preposition"
+        ],
+        [
+          "شادی",
+          "shâdi",
+          "joy",
+          "noun"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}
