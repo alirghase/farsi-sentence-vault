@@ -32,14 +32,19 @@ curl -sS "https://generativelanguage.googleapis.com/v1beta/models?key=$GEMINI_AP
 
 ---
 
-## Step 2 — Seed bank
+## Step 2 — Adding to the bank
 
-~400 sentences, roughly 15 minutes. It saves after every batch, so if it stops,
-re-run the same command and it resumes.
+The bank already ships with the app (`web/data/seed_sentences.json`, 1,080
+sentences), so this step is only for adding more. Generation writes straight
+into that file and saves after every batch, so a run stopped by the daily
+quota keeps what it got.
 
 ```bash
-cd ~/projects/farsi-sentence-vault && python3 tools/generate_seed.py --count 400
+cd ~/projects/farsi-sentence-vault && python3 tools/generate_seed.py --count 40
 ```
+
+`--difficulty 3` restricts it to one level (1 = A1 … 5 = C1); `--syllabus`
+targets core verbs the deck is thin on.
 
 Then the step not to skip:
 
@@ -61,13 +66,12 @@ What is left is the part a script cannot do:
   one message. Ask "does this sound normal or weird?", not "is it correct" —
   the second invites a grammar lecture instead of a register judgement.
 
-If it reads stiff, tighten `REGISTER_RULES` in `core/prompts.py`, delete
-`tools/seed_sentences.json`, and regenerate.
-
-Then put it in the app:
+If it reads stiff, tighten `REGISTER_RULES` in `core/prompts.py`, undo the run
+with `git checkout web/data`, and regenerate. Then fill in word maps for the new
+sentences:
 
 ```bash
-cp tools/seed_sentences.json web/data/seed_sentences.json
+python3 tools/derive_breakdown.py
 ```
 
 ---
@@ -78,14 +82,14 @@ cp tools/seed_sentences.json web/data/seed_sentences.json
 python3 -m http.server 8000 --directory web
 ```
 
-Open <http://localhost:8000>. You should see `0 due · 100 new`. Press Start and
-do a few cards.
+Open <http://localhost:8000>. On a fresh browser Today shows level A1, 0 due and
+20 new. Press Start and do a few cards.
 
 ---
 
 ## Step 4 — Get it on your phone
 
-The app needs **HTTPS** to install as a PWA and to use the microphone. Two ways.
+The app needs **HTTPS** to install as a PWA and to keep its storage. Two ways.
 
 ### Option A — same WiFi, for a quick try
 
@@ -95,7 +99,7 @@ python3 -m http.server 8000 --directory web
 ```
 
 Open `http://YOUR-IP:8000` on the phone. Good enough to look at, but Safari
-blocks the microphone on plain HTTP and will not install it properly.
+will not install it properly over plain HTTP.
 
 ### Option B — GitHub Pages, the real one
 
@@ -108,7 +112,8 @@ knowing because they are easy to get wrong:
 - **Branch-based Pages can only serve `/` or `/docs`**, never an arbitrary
   folder. The app lives in `web/`, so deployment goes through
   `.github/workflows/pages.yml` instead. That workflow also gates every deploy
-  on the module check, the JS/Python vocabulary check, and a non-empty seed bank.
+  on the module check, the unit tests, the JS/Python vocabulary check, and a
+  seed bank where every sentence has a unique id.
 
 Deploying is therefore just:
 
@@ -154,7 +159,7 @@ ever is.
 | Symptom | Cause | Fix |
 |---|---|---|
 | Changes do not appear | service worker cached the old files | it is network-first on localhost; elsewhere reload twice |
-| Microphone does nothing | page is on plain HTTP | needs HTTPS — Step 4 Option B |
 | No play button | no Persian voice installed | Step 5 |
 | `429` during seed generation | free-tier rate limit | it retries and falls back automatically; wait |
-| Today shows 0 new | seed JSON missing | re-run the `cp` at the end of Step 2 |
+| Today shows 0 new | today's new-card allowance is used up, or the level has none left | Settings → New cards a day, or move up a level |
+| Lost progress after an iOS update | web-app storage was evicted | Settings → Restore, from your last backup |
