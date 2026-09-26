@@ -28770,9 +28770,9 @@
     },
     {
       "englishText": "I want to talk with my mother.",
-      "farsiText": "می‌خوام با مادرم صحبت کنم.",
-      "finglish": "mikham bâ mâdaram sohbat konam",
-      "literalGloss": "I-want with my-mother talk I-do",
+      "farsiText": "می‌خوام با مامانم صحبت کنم.",
+      "finglish": "mikhâm bâ mâmânam sohbat konam",
+      "literalGloss": "I-want with my-mum talk to-do",
       "difficulty": 1,
       "situation": "phone call with family",
       "grammarTags": [
@@ -29053,10 +29053,10 @@
       "id": "e1fffd34-776c-4ed5-8f15-024b65102ef6"
     },
     {
-      "englishText": "You don't understand my mother.",
-      "farsiText": "تو مادرم رو نمی‌فهمی.",
-      "finglish": "to mâdaram ro nemifahmi",
-      "literalGloss": "you my-mother [object marker] do-not-understand",
+      "englishText": "You don't understand me.",
+      "farsiText": "تو منو نمی‌فهمی.",
+      "finglish": "to mano nemifahmi",
+      "literalGloss": "you me [object marker] do-not-understand",
       "difficulty": 1,
       "situation": "phone call with family",
       "grammarTags": [

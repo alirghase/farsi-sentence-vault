@@ -7,6 +7,8 @@ quality control. The other half is you reading 20 of them.
 
 from __future__ import annotations
 
+import functools
+
 import re
 import unicodedata
 
@@ -26,6 +28,22 @@ BOOKISH_MARKERS = {
     "می‌کنم": None,   # fine in speech, listed for reference only
     "نمی‌باشد": "نیست",
     "می‌باشد": "هست",
+}
+
+# Lexical choices, as opposed to the phonological variants above. مادر is not
+# written-only the way خانه is — it is said — but this deck teaches everyday
+# speech, where مامان and بابا are the default. They had drifted to مادر 2 /
+# مامان 12 and پدر 0 / بابا 8, so the deck had already chosen; this keeps it.
+#
+# Matching needs care in both directions. A plain word-boundary test misses
+# مادرم, because the possessive clitic attaches; matching the bare stem instead
+# fires inside مادربزرگ. So the stem must be followed by a known clitic (or
+# nothing) and then a boundary — بزرگ is not a clitic, so مادربزرگ is safe.
+PREFER_SPOKEN = {
+    "مادر": "مامان",
+    "پدر": "بابا",
+    "خواهر": None,   # no colloquial twin; listed so the pair is not added later
+    "دختر": None,
 }
 
 # Register detection.
@@ -99,6 +117,17 @@ SPOKEN_MARKERS = {
 
 _WRITTEN_PATTERNS = {w: _word_pattern(w) for w in WRITTEN_ONLY}
 _SPOKEN_PATTERNS = {w: _word_pattern(w) for w in SPOKEN_MARKERS}
+
+
+_CLITICS = "مون|تون|شون|ام|ات|اش|ها|های|هام|م|ت|ش|ی|و|رو"
+
+
+@functools.lru_cache(maxsize=None)
+def _stem_pattern(stem: str) -> re.Pattern:
+    """A stem plus an optional attached clitic, bounded on both sides."""
+    return re.compile(
+        rf"(?<![{_PERSIAN_CHARS}]){re.escape(stem)}(?:{_CLITICS})?(?![{_PERSIAN_CHARS}])"
+    )
 
 
 def register_report(farsi: str) -> tuple[list[str], list[str]]:
@@ -191,6 +220,10 @@ def check_sentence(s: dict) -> list[str]:
             problems.append(f"unknown grammar tags: {unknown}")
         if not tags:
             problems.append("grammarTags is empty")
+
+    for formal, spoken in PREFER_SPOKEN.items():
+        if spoken and _stem_pattern(formal).search(farsi):
+            problems.append(f"formal {formal!r} — this deck says {spoken!r}")
 
     for bookish, spoken in BOOKISH_MARKERS.items():
         if spoken and bookish in farsi:
