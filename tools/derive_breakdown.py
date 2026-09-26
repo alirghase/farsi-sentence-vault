@@ -19,7 +19,6 @@ is marked "model" and is never overwritten by this tool.
 from __future__ import annotations
 
 import argparse
-import json
 import pathlib
 import re
 import sys
@@ -28,7 +27,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core.syllabus import CORE_VERBS
 
-BANK = pathlib.Path(__file__).parent / "seed_sentences.json"
+from core import bank
 PUNCT = "؟?!.،,:;\"“”'‘’"
 
 # Light verbs that form Persian compound verbs. A compound is a nominal plus one
@@ -183,7 +182,7 @@ def main() -> int:
     ap.add_argument("--show", type=int, default=0)
     args = ap.parse_args()
 
-    data = json.loads(BANK.read_text(encoding="utf-8"))
+    data = bank.load()
     derived = skipped = kept = 0
     examples = []
 
@@ -210,7 +209,7 @@ def main() -> int:
             print(f"    {u['fa']:<20} {u['en']:<24} {u['pos']}")
 
     if not args.dry_run:
-        BANK.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        bank.save(data)
 
     total = len(data["sentences"])
     print(f"\n  derived {derived}   already annotated {kept}   unalignable {skipped}")

@@ -19,7 +19,7 @@ from core import validate
 from core.prompts import PARTS_OF_SPEECH
 from core.taxonomy import ERROR_TAG_KEYS
 
-BANK = pathlib.Path(__file__).parent / "seed_sentences.json"
+from core import bank
 HANDWRITTEN = pathlib.Path(__file__).parent / "handwritten"
 
 
@@ -38,7 +38,7 @@ def main() -> int:
         else sorted(HANDWRITTEN.glob("*.json"))
     )
 
-    deck = json.loads(BANK.read_text(encoding="utf-8"))
+    deck = bank.load()
     existing = {s["farsiText"] for s in deck["sentences"]}
     total_added = 0
 
@@ -50,8 +50,7 @@ def main() -> int:
         print(f"\n{path.name} (difficulty {difficulty})")
         total_added += merge_one(source, difficulty, deck, existing)
 
-    deck["count"] = len(deck["sentences"])
-    BANK.write_text(json.dumps(deck, ensure_ascii=False, indent=2), encoding="utf-8")
+    bank.save(deck)
     print(f"\n  added {total_added} in total; deck now {deck['count']} sentences")
     return 0
 

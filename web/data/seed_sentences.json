@@ -13,7 +13,8 @@
         "ezafe",
         "colloquial",
         "verb-tense"
-      ]
+      ],
+      "id": "23bfcad1-042a-42ff-bf11-890f5f1c2569"
     },
     {
       "englishText": "How much is this dress?",
@@ -47,7 +48,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6c1406de-d309-4866-819e-e62c39378fb2"
     },
     {
       "englishText": "What did you say?",
@@ -75,7 +77,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "af740c1d-b241-47bc-b178-59b055031fff"
     },
     {
       "englishText": "Can I get a cup of tea with milk?",
@@ -134,7 +137,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "52337245-b95f-4ec8-ae48-02349c320021"
     },
     {
       "englishText": "Do you have a smaller size in stock?",
@@ -176,7 +180,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e9bdd24b-d0bc-478a-9543-87819a64c0ce"
     },
     {
       "englishText": "Please speak a bit slower.",
@@ -235,7 +240,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "99e37ff6-43a1-46c0-a52e-bb2c79956549"
     },
     {
       "englishText": "The Wi-Fi here isn't working at all.",
@@ -276,7 +282,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "13fa4970-e4de-49ba-bbba-291a2170beb9"
     },
     {
       "englishText": "My phone screen broke yesterday.",
@@ -289,7 +296,8 @@
         "pronoun-clitic",
         "ezafe",
         "verb-tense"
-      ]
+      ],
+      "id": "c249b407-4da1-456a-b408-ab2c75bb1e4c"
     },
     {
       "englishText": "Did you give me the receipt?",
@@ -336,7 +344,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "34cda064-b9de-484e-9769-5fdb87b8922a"
     },
     {
       "englishText": "We didn't order this food.",
@@ -389,7 +398,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "bb2d7e33-6922-4be8-be49-1e8a35dfa17c"
     },
     {
       "englishText": "Could you please bring us two glasses of water before the food comes?",
@@ -485,7 +495,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b60dcfb0-24a7-4098-bb56-9603d49e4d45"
     },
     {
       "englishText": "If I buy two of these, will you give me a discount?",
@@ -557,7 +568,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "227de02f-9405-40f1-91ea-be17285277d3"
     },
     {
       "englishText": "I didn't quite understand what you meant by that.",
@@ -622,7 +634,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "add7779b-7fd0-4966-aadc-f68b98551136"
     },
     {
       "englishText": "This elevator has been broken for two days and no one is fixing it.",
@@ -693,7 +706,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "06265697-5f44-4789-8c0f-0603582f44e2"
     },
     {
       "englishText": "I told the waiter that I am allergic to peanuts, but he forgot.",
@@ -706,7 +720,8 @@
         "preposition",
         "pronoun-clitic",
         "verb-tense"
-      ]
+      ],
+      "id": "99b9d8dd-b1e6-4584-93af-39f2a2379179"
     },
     {
       "englishText": "Could you explain one more time how this app works?",
@@ -783,7 +798,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9d0bbcfe-4986-483f-bf2f-ccbac35426fc"
     },
     {
       "englishText": "I brought this shirt back because the zip broke as soon as I wore it.",
@@ -866,7 +882,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b340a5b6-7f6a-47e2-bd4c-59ffb4a42ede"
     },
     {
       "englishText": "I’ve been calling customer service for an hour, but their phone is constantly busy.",
@@ -944,7 +961,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "77548ec2-2baf-493d-9723-8f27824b9461"
     },
     {
       "englishText": "You promised to fix my laptop by today, but you haven't even looked at it yet.",
@@ -1041,7 +1059,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3c25cb89-0231-4bc3-9a36-000c1aeaa71e"
     },
     {
       "englishText": "Please don't go to any trouble for me, a simple coffee will be more than enough!",
@@ -1055,7 +1074,8 @@
         "naturalness",
         "pronoun-clitic",
         "subjunctive"
-      ]
+      ],
+      "id": "63631058-1b66-4333-a362-eb6ff8aa6ae7"
     },
     {
       "englishText": "My head hurts a lot.",
@@ -1095,7 +1115,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c2ff30b2-4c52-403a-8813-d5992d14f147"
     },
     {
       "englishText": "I'm going home tomorrow.",
@@ -1129,7 +1150,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "635651a0-2278-41ac-986a-5e807fe1d82b"
     },
     {
       "englishText": "We watched a movie last night.",
@@ -1168,7 +1190,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f8839379-46e9-47b1-9f87-502a64cd09bf"
     },
     {
       "englishText": "Thanks a lot for your help!",
@@ -1202,7 +1225,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a12cc812-d060-4414-929e-2ffbf399826e"
     },
     {
       "englishText": "Do you have pills for a sore throat?",
@@ -1242,7 +1266,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "135519a2-9368-47ac-86a3-bb8700ded74a"
     },
     {
       "englishText": "I stayed home all weekend and rested.",
@@ -1313,7 +1338,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "db8f12a3-4cfb-4f94-aeb8-3240f7fba5aa"
     },
     {
       "englishText": "Next week we want to travel up north.",
@@ -1359,7 +1385,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "cd971b75-d901-4f06-a171-f4da16c21d60"
     },
     {
       "englishText": "Your home is really beautiful and cozy.",
@@ -1405,7 +1432,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f2b83736-b6a4-481b-bebb-31416c99d031"
     },
     {
       "englishText": "I've had a severe cough and a fever for three days.",
@@ -1469,7 +1497,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a85e32c7-3e54-43b8-99f4-8bd5a73eff65"
     },
     {
       "englishText": "Should I take this medicine before food or after?",
@@ -1540,7 +1569,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d57ed7f3-f4d3-482d-bbc2-3228e23534c0"
     },
     {
       "englishText": "When I was cooking yesterday, I burnt my hand.",
@@ -1598,7 +1628,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4a9e779c-5791-4e20-8102-68e4d4f1f0ef"
     },
     {
       "englishText": "We went to that new restaurant, but the food wasn't good at all.",
@@ -1669,7 +1700,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0c4f55b4-742b-4e20-89cd-5232c65768e3"
     },
     {
       "englishText": "If it doesn't rain, we want to go for a walk in the park.",
@@ -1734,7 +1766,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "066a287b-c79a-480e-bafc-4fa1cf9f5173"
     },
     {
       "englishText": "As soon as I finish my work, I'll call you.",
@@ -1793,7 +1826,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2fb57186-8c4c-4597-986c-4d3a787f8560"
     },
     {
       "englishText": "It was really kind of you to invite us to your place tonight.",
@@ -1806,7 +1840,8 @@
         "compound-verb",
         "ra-marker",
         "pronoun-clitic"
-      ]
+      ],
+      "id": "1f368ca7-23ef-42d6-82a0-b2338584023f"
     },
     {
       "englishText": "The doctor gave me a prescription, but the pharmacy said they didn't have one of these pills.",
@@ -1902,7 +1937,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b8f65b0d-e8f9-4572-896d-51f1091b27c2"
     },
     {
       "englishText": "Last week I bought a jacket online, but because the size was too big, I had to return it.",
@@ -2016,7 +2052,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9b36cc88-5c0b-4a94-b1aa-311e0705e751"
     },
     {
       "englishText": "My friends want to come over on Friday, so I have to clean the whole house tomorrow.",
@@ -2118,7 +2155,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "db604be8-4f58-4aa9-a6d2-a9d7bd8bad64"
     },
     {
       "englishText": "Everything was wonderful and the food was delicious; you really went to so much trouble.",
@@ -2131,7 +2169,8 @@
         "formality",
         "compound-verb",
         "colloquial"
-      ]
+      ],
+      "id": "b11f8ba9-458b-4e1f-8e1f-deabc451235f"
     },
     {
       "englishText": "You shouldn't have brought a gift at all; your presence alone was the greatest gift for us!",
@@ -2232,7 +2271,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "846226e9-c2e4-4dd6-bb82-4429adc4a382"
     },
     {
       "englishText": "Sorry I'm late, the traffic was very heavy.",
@@ -2290,7 +2330,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5a804e53-ce40-4a88-a5c0-f8086b5b11a1"
     },
     {
       "englishText": "My car broke down on the way.",
@@ -2336,7 +2377,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3033499a-c336-4596-983e-126a4c7fa3e3"
     },
     {
       "englishText": "In my opinion, this decision isn't right.",
@@ -2348,7 +2390,8 @@
       "grammarTags": [
         "ezafe",
         "preposition"
-      ]
+      ],
+      "id": "f10bf9d1-f440-40fc-a548-a12cb3c6be4d"
     },
     {
       "englishText": "That movie wasn't worth watching at all.",
@@ -2360,7 +2403,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "5420d1a9-2071-49b0-a1ff-5e629d26b702"
     },
     {
       "englishText": "Shall we go to the cafe together tomorrow?",
@@ -2406,7 +2450,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "472bb803-99dd-48dc-af16-b07dacc2e8fd"
     },
     {
       "englishText": "Are you free this weekend to meet up?",
@@ -2418,7 +2463,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "70346c4d-47db-4af5-9e73-ed8470640def"
     },
     {
       "englishText": "Can you give me a ride home?",
@@ -2470,7 +2516,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3682984d-54ce-4c86-9fc7-26158dc22deb"
     },
     {
       "englishText": "Can you give me a small discount on this?",
@@ -2482,7 +2529,8 @@
       "grammarTags": [
         "pronoun-clitic",
         "ezafe"
-      ]
+      ],
+      "id": "ce092b77-736c-4900-b3a4-b3153a159f26"
     },
     {
       "englishText": "Could you lend me your charger for an hour?",
@@ -2495,7 +2543,8 @@
         "pronoun-clitic",
         "ra-marker",
         "compound-verb"
-      ]
+      ],
+      "id": "3a6aa88e-ddc3-4b08-82fc-92570ce45b1d"
     },
     {
       "englishText": "I lost track of time because I was busy working.",
@@ -2508,7 +2557,8 @@
         "pronoun-clitic",
         "preposition",
         "ezafe"
-      ]
+      ],
+      "id": "10e9566c-d783-4df7-8805-3208d0219ac6"
     },
     {
       "englishText": "I missed the bus, so I had to take a taxi.",
@@ -2591,7 +2641,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0623ec04-9c6e-4cd7-a915-bba2807ecd89"
     },
     {
       "englishText": "I think we should talk to him directly before deciding.",
@@ -2604,7 +2655,8 @@
         "subjunctive",
         "compound-verb",
         "pronoun-clitic"
-      ]
+      ],
+      "id": "6b9e4bdb-7843-4331-9d7c-e55e30ab2a6d"
     },
     {
       "englishText": "Although the price is high, the quality of this service is excellent.",
@@ -2617,7 +2669,8 @@
         "pronoun-clitic",
         "ezafe",
         "colloquial"
-      ]
+      ],
+      "id": "31791ab9-1b8d-4f44-87d8-fe256e7ecf8a"
     },
     {
       "englishText": "If you are free on Friday, let's go to the mountains together.",
@@ -2687,7 +2740,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4a29b949-a352-4b64-b46e-f2bd169f7a4b"
     },
     {
       "englishText": "Whenever you finish your class, text me so I can come get you.",
@@ -2700,7 +2754,8 @@
         "subjunctive",
         "pronoun-clitic",
         "preposition"
-      ]
+      ],
+      "id": "914c24ca-cdcd-4035-ac2a-7bcbb2df17b2"
     },
     {
       "englishText": "Could you watch my bags for five minutes while I go to the bathroom?",
@@ -2713,7 +2768,8 @@
         "subjunctive",
         "plural",
         "pronoun-clitic"
-      ]
+      ],
+      "id": "b49d7ff7-bdd7-45a4-bdcf-9469ae07a418"
     },
     {
       "englishText": "I am really sorry I'm late; my phone battery died and I couldn't check the address.",
@@ -2727,7 +2783,8 @@
         "ra-marker",
         "verb-tense",
         "subjunctive"
-      ]
+      ],
+      "id": "91e181a5-cd8c-40b3-b3af-7f1c37a1576e"
     },
     {
       "englishText": "If you lower the price a little bit, I will buy both of these suits right now.",
@@ -2846,7 +2903,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c73ffe00-9714-4914-a87f-eafa014d8b69"
     },
     {
       "englishText": "In my opinion, if we don't start the project today, we won't finish it by next week.",
@@ -2859,7 +2917,8 @@
         "ra-marker",
         "pronoun-clitic",
         "ezafe"
-      ]
+      ],
+      "id": "863ce85e-f798-4bc8-81f4-871744bf989a"
     },
     {
       "englishText": "I know you are very busy, but if it is not too much trouble, could you take a look at my CV?",
@@ -2873,7 +2932,8 @@
         "pronoun-clitic",
         "subjunctive",
         "ezafe"
-      ]
+      ],
+      "id": "5e51e743-a0a6-4faa-b759-1bf04e1801da"
     },
     {
       "englishText": "Today the weather is super hot.",
@@ -2912,7 +2972,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d81a6595-c6b6-44f5-8735-ee63e4ff90c8"
     },
     {
       "englishText": "It was raining heavily yesterday morning.",
@@ -2958,7 +3019,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d7926119-77e0-4fc1-96a7-a8bc852dab80"
     },
     {
       "englishText": "The highway was completely jammed this afternoon.",
@@ -3010,7 +3072,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f53a8532-0bdd-4591-aef8-f983acd0926f"
     },
     {
       "englishText": "Tomorrow the air in Tehran will be very polluted.",
@@ -3062,7 +3125,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "19014059-4df7-45ca-8a91-895369577458"
     },
     {
       "englishText": "I got stuck behind a bad accident on the highway.",
@@ -3126,7 +3190,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "35e91f33-1485-45e4-aa73-a53445f3318a"
     },
     {
       "englishText": "I was looking for a parking spot for twenty minutes.",
@@ -3178,7 +3243,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f580361b-7d99-406c-8248-d1938921a21f"
     },
     {
       "englishText": "My boss called an urgent meeting at five o'clock.",
@@ -3236,7 +3302,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3e154466-21e8-4ca6-b920-24fa2bc1e069"
     },
     {
       "englishText": "I got confused and accidentally turned into another alley.",
@@ -3306,7 +3373,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5e1dc0ee-958a-4c4c-b623-d02ad30df0ec"
     },
     {
       "englishText": "I've been feeling really dizzy since this morning.",
@@ -3358,7 +3426,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b2ad2dd3-faf9-478f-821d-37dfd6116651"
     },
     {
       "englishText": "My legs are super sore after yesterday's workout.",
@@ -3416,7 +3485,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6550735f-eeda-42ff-87a1-e00822ea937d"
     },
     {
       "englishText": "The smells in this place are making me feel a bit sick.",
@@ -3486,7 +3556,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f50b2f3a-a5b1-43a7-9b00-66f1222b63f7"
     },
     {
       "englishText": "I'm so exhausted today that I can't even get out of bed.",
@@ -3563,7 +3634,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7eac5fcb-4baf-4fbd-ba5b-3b47e055125d"
     },
     {
       "englishText": "Whenever I eat fast food, my stomach hurts for hours.",
@@ -3633,7 +3705,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "283a2b3e-43a4-4516-b0e1-6178ba45d26d"
     },
     {
       "englishText": "Mom, did you leave my keys on the counter?",
@@ -3692,7 +3765,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f087339c-4f05-4ba2-bb48-0dd94b93c922"
     },
     {
       "englishText": "I'm buying some fruit on my way back home.",
@@ -3744,7 +3818,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "278d0394-1276-4f51-a4c8-624a992efa3a"
     },
     {
       "englishText": "Tell Dad to buy some milk and bread when he comes home.",
@@ -3827,7 +3902,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "13714c7b-8d7a-4d13-bbd7-448d959a84e2"
     },
     {
       "englishText": "Don't wait up for me for dinner tonight because I'll be late.",
@@ -3898,7 +3974,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "06afe3ea-9735-43c9-bcd8-bc5d5f68f863"
     },
     {
       "englishText": "I really missed you guys; dinner last night wasn't the same without you.",
@@ -3993,7 +4070,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "adf2f716-5e3d-4142-8224-804c814b606c"
     },
     {
       "englishText": "I am so embarrassed for keeping you waiting in this cold; I really don't know how to apologize.",
@@ -4089,7 +4167,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "95ef7dbe-17f1-4b8f-a2f3-240786c3c6dc"
     },
     {
       "englishText": "Ever since I heard that bad news, I've been feeling heart-sick and I can't focus on anything.",
@@ -4209,7 +4288,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3e2d731b-3f92-41d9-8639-e5d6e91e4607"
     },
     {
       "englishText": "How much is this watermelon per kilo?",
@@ -4249,7 +4329,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "05028260-213f-4df6-82f3-1ac97db9d74c"
     },
     {
       "englishText": "I have a terrible headache today.",
@@ -4289,7 +4370,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b232b2fa-21ca-456e-b7b4-fb44a46d683d"
     },
     {
       "englishText": "Please make yourself at home!",
@@ -4317,7 +4399,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c0a4e4b4-ed23-4cd5-9750-51d609defe7b"
     },
     {
       "englishText": "Go straight until you reach the square.",
@@ -4370,7 +4453,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4e4f569e-73f4-4d53-a1ff-019a44cde7aa"
     },
     {
       "englishText": "Do you have a smaller size in this jacket?",
@@ -4422,7 +4506,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "58c537bf-c4c6-4327-be47-0f169210d28e"
     },
     {
       "englishText": "Thank you for the delicious dinner tonight!",
@@ -4468,7 +4553,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2fafafd1-8463-46a5-b34a-ef950150d3fd"
     },
     {
       "englishText": "I felt very stressed during the interview.",
@@ -4514,7 +4600,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f188f196-1855-4fa9-8861-31b278665b6e"
     },
     {
       "englishText": "Turn right at the second intersection.",
@@ -4566,7 +4653,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7e716713-eb93-41c3-b57d-300047708043"
     },
     {
       "englishText": "I bought these shoes at a great discount.",
@@ -4631,7 +4719,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9e73ac57-a467-4ef6-b594-360c283efc14"
     },
     {
       "englishText": "Don't trouble yourself, I'm not hungry at all.",
@@ -4689,7 +4778,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3d6bffd1-877f-4831-8ab1-217c3898cfa1"
     },
     {
       "englishText": "I caught a cold and stayed home today.",
@@ -4741,7 +4831,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a50b7403-b550-4443-8a62-8ee57f1c2396"
     },
     {
       "englishText": "If you pass the pharmacy, you've gone too far.",
@@ -4800,7 +4891,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c1ec8f06-8d78-4d2c-bf61-1faf563838b1"
     },
     {
       "englishText": "I bought some pastries so we can have tea together.",
@@ -4871,7 +4963,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "54d80be4-84c8-46b1-8e99-df07acfe0bcd"
     },
     {
       "englishText": "I want to return this shirt because it's too big for me.",
@@ -4943,7 +5036,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c7ab6161-251d-41b3-89ad-8521946ec335"
     },
     {
       "englishText": "Whenever I drink coffee late at night, I can't sleep.",
@@ -5008,7 +5102,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "764f138a-3ed4-455f-ade8-46ec622f1df9"
     },
     {
       "englishText": "Turn into the alley when you see the blue sign on the right.",
@@ -5085,7 +5180,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a573471a-c955-4ede-a85f-6dc10a025558"
     },
     {
       "englishText": "Sit down for a minute while I bring you a glass of water.",
@@ -5150,7 +5246,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7dfcc169-08b3-47bf-892e-928de24e3522"
     },
     {
       "englishText": "If I buy three of these, can you give me a discount?",
@@ -5228,7 +5325,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3b1ac898-b1a9-431b-ba5c-4a9a04b1eaac"
     },
     {
       "englishText": "I wish you had told me earlier that you were coming so I could have prepared a proper meal.",
@@ -5312,7 +5410,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2f0d8ec9-37d8-403b-98b3-760c58f73304"
     },
     {
       "englishText": "I've been walking around this mall for two hours looking for shoes, and my feet are killing me now.",
@@ -5438,7 +5537,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "63be8387-f4cd-4545-ad16-6c4e89c9197c"
     },
     {
       "englishText": "I want a black coffee, please.",
@@ -5484,7 +5584,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5fcb6c83-8b89-44bb-b925-f97263e47d2b"
     },
     {
       "englishText": "Are you free tonight?",
@@ -5518,7 +5619,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0a68101b-d614-4640-be85-940f5abbe91e"
     },
     {
       "englishText": "I slept until noon yesterday.",
@@ -5558,7 +5660,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b17ab17e-453b-419c-809e-f70b80349b4d"
     },
     {
       "englishText": "Actually, I think it's a bit different.",
@@ -5611,7 +5714,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "cfdbee25-8346-4c3f-abe1-6bd9cf5efe75"
     },
     {
       "englishText": "Can we have the menu, please?",
@@ -5658,7 +5762,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c6f08126-18c9-4a82-bc34-186c85dbea96"
     },
     {
       "englishText": "We are going to the cinema on Friday.",
@@ -5692,7 +5797,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "debd7598-3f2d-4ca3-b9cb-5b8a04e686de"
     },
     {
       "englishText": "I cleaned the whole house yesterday afternoon.",
@@ -5751,7 +5857,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e07d605f-7879-49f8-b659-e94099eea142"
     },
     {
       "englishText": "I met up with Ali at the cafe.",
@@ -5804,7 +5911,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5ea632ea-2d27-48e8-9970-8d3ce623d9c5"
     },
     {
       "englishText": "If the food isn't too spicy, I'd like to order the chicken.",
@@ -5875,7 +5983,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "702dcfcb-8960-479d-b476-f83b6ed117ba"
     },
     {
       "englishText": "I see your point, but I don't think that's true.",
@@ -5934,7 +6043,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "557d3d81-f1b6-45fa-84de-bf5f8e1300c3"
     },
     {
       "englishText": "Whenever you're ready, call me so we can leave together.",
@@ -6012,7 +6122,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2ced8e8c-52d8-452d-ab53-7e306723c342"
     },
     {
       "englishText": "Last night I stayed up late studying for my exam.",
@@ -6089,7 +6200,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2d6345f2-1ea3-4bb1-90b9-506078071e72"
     },
     {
       "englishText": "I respect your opinion, but I look at it differently.",
@@ -6166,7 +6278,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "57fc8962-b4a5-404b-b7d9-e50332e2ba9a"
     },
     {
       "englishText": "If you're not busy this weekend, we could go hiking in the mountains together.",
@@ -6256,7 +6369,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0487a482-c368-4b51-ac47-072f27ad7653"
     },
     {
       "englishText": "With all due respect, I don't think this plan will work out the way you expect.",
@@ -6364,7 +6478,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d7c164cd-b255-44db-baa2-86e466dce8b1"
     },
     {
       "englishText": "Could you please bring us two glasses of water first, before taking our food order?",
@@ -6473,7 +6588,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "24ddbf73-fbce-4341-a04c-236b0a131cd7"
     },
     {
       "englishText": "Last week I spent three whole days fixing up my old computer that had crashed.",
@@ -6588,7 +6704,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7a02401e-2ca7-45f5-b900-a0bbaace79f5"
     },
     {
       "englishText": "Since we haven't seen each other for ages, let me know when you're free so we can grab lunch.",
@@ -6603,7 +6720,8 @@
         "subjunctive",
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "987c3237-7f72-42ec-b41c-ca33247ca5c1"
     },
     {
       "englishText": "You're always so kind, but I really can't let you pay for everyone again.",
@@ -6712,7 +6830,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "afe3323a-6159-4100-8dc0-b04dd0e8092f"
     },
     {
       "englishText": "If it's no trouble and I'm not bothering you, I'd love to drop by this evening.",
@@ -6809,7 +6928,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "be38cbab-da3e-4df0-a940-76d21b7633db"
     },
     {
       "englishText": "In my opinion, this color is very pretty.",
@@ -6861,7 +6981,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "576830de-4f46-402c-86e0-e03ee747414d"
     },
     {
       "englishText": "My throat hurts a lot.",
@@ -6902,7 +7023,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5aad04dd-6920-4bfb-be58-6827827769cb"
     },
     {
       "englishText": "Thank you so much, you really went to trouble.",
@@ -6954,7 +7076,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f65160a4-4db2-444b-800d-fce45e88b87c"
     },
     {
       "englishText": "Did you take your medicine this morning?",
@@ -7001,7 +7124,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f8a0de51-71ba-461f-a153-bfbaefdbff20"
     },
     {
       "englishText": "Could you hold this bag for a second?",
@@ -7066,7 +7190,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "61ddb3dd-dcaf-44be-aa7c-206385f6f635"
     },
     {
       "englishText": "I don't think this shirt suits him.",
@@ -7114,7 +7239,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2ddb5a04-2294-406f-8fd5-db1450f7228b"
     },
     {
       "englishText": "I need to go see the doctor today.",
@@ -7161,7 +7287,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e977a309-bdc4-40b7-86e1-93efcb8a7a89"
     },
     {
       "englishText": "If you're going to the kitchen, could you bring me a glass of water too?",
@@ -7244,7 +7371,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "72af68d3-e8a9-4a1b-b621-114ffaffecd8"
     },
     {
       "englishText": "I think if we leave early, we won't get stuck in traffic.",
@@ -7316,7 +7444,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "85b6cd1e-d7a1-4c02-afb2-63826638b0e6"
     },
     {
       "englishText": "Since yesterday, my stomach has been hurting and I feel nauseated.",
@@ -7329,7 +7458,8 @@
         "pronoun-clitic",
         "colloquial",
         "preposition"
-      ]
+      ],
+      "id": "6ea0c52a-5bea-4994-b15e-4eec28941a50"
     },
     {
       "englishText": "Your home is very beautiful, hopefully you will always live in it with a happy heart.",
@@ -7413,7 +7543,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4db15a95-3567-4d03-9226-e546f59ff052"
     },
     {
       "englishText": "If I buy both of these, will you give me a better discount?",
@@ -7492,7 +7623,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "54a7c5aa-60eb-4197-a781-2b9c7644b5f4"
     },
     {
       "englishText": "The doctor said I must take these pills before meals.",
@@ -7570,7 +7702,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "fa6efe90-653b-41d1-a014-5c08160191e1"
     },
     {
       "englishText": "Can you watch my dog for two days while I go on a trip?",
@@ -7642,7 +7775,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5c2dc8f0-c048-4cb6-a138-6423b2c440a2"
     },
     {
       "englishText": "I prefer to stay home tonight because I have a lot of unfinished work.",
@@ -7726,7 +7860,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "727f9725-3ee8-4d14-834f-27fa5a5e6a36"
     },
     {
       "englishText": "We are nothing compared to you, you are our master.",
@@ -7792,7 +7927,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c74aae90-8332-40db-a30a-06a6c07c87e0"
     },
     {
       "englishText": "Could you please sign this paper so that I can give it to the office?",
@@ -7882,7 +8018,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c18f5b45-976d-4943-9f63-0ac7f0d8711f"
     },
     {
       "englishText": "I can't breathe properly, is it possible to write me a referral for a specialist doctor?",
@@ -7897,7 +8034,8 @@
         "subjunctive",
         "ezafe",
         "compound-verb"
-      ]
+      ],
+      "id": "7c452b80-eb25-40e0-8601-9c4ccd60b864"
     },
     {
       "englishText": "Although your opinion is completely correct, in my view we don't have enough budget to start this project right now.",
@@ -8017,7 +8155,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f0c827d0-636f-4ad5-a65c-b154d849d355"
     },
     {
       "englishText": "I really don't want to trouble you, but if you're passing by the dry cleaner, could you please pick up my suit too?",
@@ -8033,7 +8172,8 @@
         "verb-tense",
         "ezafe",
         "subjunctive"
-      ]
+      ],
+      "id": "47273e2c-5323-4d2a-9740-bdb1d1d490ce"
     },
     {
       "englishText": "I want a hot tea.",
@@ -8078,7 +8218,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "18f57154-7c85-4ed6-8192-132eaf5aa3f7"
     },
     {
       "englishText": "Where is my headache pill?",
@@ -8112,7 +8253,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5a6fd916-bbb4-4fd2-b9c6-bb53961a21a3"
     },
     {
       "englishText": "We are going north tomorrow.",
@@ -8146,7 +8288,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b07d8bae-4957-4c2c-b8ba-477eb916ff25"
     },
     {
       "englishText": "I don't think so.",
@@ -8180,7 +8323,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e97370e6-6a59-424e-bcaf-95321c597db5"
     },
     {
       "englishText": "Could you bring a little more sugar?",
@@ -8233,7 +8377,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e109fcdc-e6ad-4984-804d-30f8ad5b6825"
     },
     {
       "englishText": "I'll call you after work.",
@@ -8280,7 +8425,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f7945379-263e-41f4-8b4c-784cc5cd8c36"
     },
     {
       "englishText": "I had a fever all night.",
@@ -8320,7 +8466,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "fda05363-8742-49ed-8a26-68de0652fecc"
     },
     {
       "englishText": "I have a different opinion.",
@@ -8366,7 +8513,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "350dbb64-ee17-43a9-8e6e-0816bd11c06b"
     },
     {
       "englishText": "We want two portions of kebab.",
@@ -8412,7 +8560,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0045c7c6-dc08-42bc-9381-4f067aaebd7d"
     },
     {
       "englishText": "Can I get this medicine without a prescription?",
@@ -8465,7 +8614,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "911b586b-17b7-404a-8f4a-41fc7c605c74"
     },
     {
       "englishText": "Are you going to travel next week?",
@@ -8478,7 +8628,8 @@
         "colloquial",
         "ezafe",
         "compound-verb"
-      ]
+      ],
+      "id": "434028ab-2e23-4c50-b8d9-88554059e8f9"
     },
     {
       "englishText": "That's not completely correct.",
@@ -8524,7 +8675,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1d205d59-6e9e-4536-bde9-4e40ad63dcf6"
     },
     {
       "englishText": "We ordered our food an hour ago.",
@@ -8584,7 +8736,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "dcf76382-107d-43af-973e-bd9098bac7a3"
     },
     {
       "englishText": "If it's sunny tomorrow, we will go to the park.",
@@ -8637,7 +8790,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2d10f25d-53af-4c8c-be12-887bdcf2bd98"
     },
     {
       "englishText": "You're right, but we have to look at the budget too.",
@@ -8715,7 +8869,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e5061f56-5cc8-4c5a-9b28-32e8a7482a3e"
     },
     {
       "englishText": "I must go to the drugstore to get my syrup.",
@@ -8775,7 +8930,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "80e96b6d-4ecb-452a-9ba4-d50f658d0f3a"
     },
     {
       "englishText": "I want to try this food if it's not too greasy.",
@@ -8853,7 +9009,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "104f348c-8138-4a7b-b510-c5f672865310"
     },
     {
       "englishText": "I understand what you're saying, but our conditions are totally different from last year.",
@@ -8867,7 +9024,8 @@
         "ezafe",
         "preposition",
         "compound-verb"
-      ]
+      ],
+      "id": "9988d5a1-2196-4268-95ed-04ecc51794d8"
     },
     {
       "englishText": "I promised my brother to help him move next Friday, so I can't come.",
@@ -8882,7 +9040,8 @@
         "pronoun-clitic",
         "subjunctive",
         "compound-verb"
-      ]
+      ],
+      "id": "aba5dad1-536c-4443-aef5-82af66052a82"
     },
     {
       "englishText": "You are our elder and your words are highly respected, but please allow me to explain my perspective on this matter.",
@@ -9021,7 +9180,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d7bc5c41-cab3-409b-a395-57385adbeae0"
     },
     {
       "englishText": "What are you saying?",
@@ -9049,7 +9209,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "abb19950-bf23-4ec9-ad2e-e6d0830b021a"
     },
     {
       "englishText": "The weather is very hot today.",
@@ -9089,7 +9250,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "169cb3b8-0117-44fb-8e40-59e59bacb194"
     },
     {
       "englishText": "Are you at home?",
@@ -9111,7 +9273,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ca5627b8-66c8-4eaf-899b-aa9894f48150"
     },
     {
       "englishText": "Give me a discount.",
@@ -9146,7 +9309,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c31556c3-5cee-494e-8eba-a959e42ef32d"
     },
     {
       "englishText": "I don't understand.",
@@ -9174,7 +9338,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "145dbfad-3de0-4e01-a4ca-25656566372c"
     },
     {
       "englishText": "I called you three times yesterday.",
@@ -9221,7 +9386,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ea5d8269-c8e2-4b3d-812e-61696380cab4"
     },
     {
       "englishText": "The highway traffic is very heavy.",
@@ -9261,7 +9427,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7f5a28db-66c7-491b-8734-7664f0711f38"
     },
     {
       "englishText": "Can you do me a favor?",
@@ -9309,7 +9476,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4dc4d3fc-89ba-4aa8-96f4-bc793639804d"
     },
     {
       "englishText": "Can you explain this again?",
@@ -9357,7 +9525,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e4e38c76-0166-4fa0-86b3-4e1ea58cdab9"
     },
     {
       "englishText": "When are you coming back home?",
@@ -9391,7 +9560,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2a7c2f17-deb8-498b-9231-2a40d862eefd"
     },
     {
       "englishText": "It's going to rain this afternoon.",
@@ -9431,7 +9601,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e4c7d7dd-d78c-4108-a812-bbfdba95c682"
     },
     {
       "englishText": "Please lower the price a little.",
@@ -9483,7 +9654,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "291b6a4f-f2f2-47de-802e-ed1d31b93de2"
     },
     {
       "englishText": "Speak a bit slower, please.",
@@ -9529,7 +9701,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1ff0d018-f9e3-444e-8b69-41b1a9a31d10"
     },
     {
       "englishText": "If you are going to the bakery, buy some bread too.",
@@ -9600,7 +9773,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "545d72e7-a8e2-4631-894b-968190ae5963"
     },
     {
       "englishText": "I wanted to come, but the traffic was so bad I couldn't.",
@@ -9671,7 +9845,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5f784061-8de9-4a02-ad94-156acab845fe"
     },
     {
       "englishText": "I'll sign the contract if you deliver the goods tomorrow.",
@@ -9737,7 +9912,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "079f288e-f09a-4f87-b09d-c95c79126643"
     },
     {
       "englishText": "I didn't hear what you said because the phone was cutting out, so please say it again.",
@@ -9840,7 +10016,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4339eeb2-1ab5-4abf-a2a7-da682a7077e9"
     },
     {
       "englishText": "They said on the radio that there is an accident on the highway and the road is completely closed.",
@@ -9936,7 +10113,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5dd99daf-15c6-4bdf-aa84-6e78615c85bf"
     },
     {
       "englishText": "I know you're very busy, but if you could do me this favor, I would be forever grateful to you.",
@@ -10045,7 +10223,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "32486915-227c-4a94-b571-8cfaece0ed96"
     },
     {
       "englishText": "I was so worried when you didn't answer your phone; my heart was literally in my mouth until you called.",
@@ -10147,7 +10326,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "69ce5fbf-f68d-4ef5-953c-033dcbde84f3"
     },
     {
       "englishText": "I have a lot of work today.",
@@ -10181,7 +10361,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4c0a2355-a5d2-496d-bb39-09cccdc0b3b2"
     },
     {
       "englishText": "This food is very delicious.",
@@ -10220,7 +10401,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4394b6d6-40da-4f81-92a3-8868b806e52a"
     },
     {
       "englishText": "Excuse me, I'm late.",
@@ -10254,7 +10436,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0e75c956-bc7f-4217-979c-0cd77b78611c"
     },
     {
       "englishText": "My boss was very angry yesterday.",
@@ -10300,7 +10483,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "bfb5f535-b6b4-4e5d-8ea5-4b08457fcc88"
     },
     {
       "englishText": "Can you lend me your car?",
@@ -10354,7 +10538,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "94b02b5c-bcda-42ac-8d7c-dd75ad6d5944"
     },
     {
       "englishText": "Honestly, I don't like this color.",
@@ -10407,7 +10592,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "49768966-31a5-4cfa-8071-70a95eb8d64e"
     },
     {
       "englishText": "My phone didn't ring this morning.",
@@ -10447,7 +10633,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e4fdb723-114d-46ab-a0d0-a15113d0aa61"
     },
     {
       "englishText": "I graduated from university last year.",
@@ -10493,7 +10680,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1f92b4bf-3f68-4397-831c-b81e990988aa"
     },
     {
       "englishText": "I got stuck in traffic, that's why I'm late.",
@@ -10558,7 +10746,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "30a7dccb-ae5b-4478-a322-e2efbac75548"
     },
     {
       "englishText": "If I don't finish this project, I'll be in trouble.",
@@ -10624,7 +10813,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "abba8ca3-9462-428b-b432-d47f76ddbc0f"
     },
     {
       "englishText": "In my opinion, it's better if we don't buy this house.",
@@ -10638,7 +10828,8 @@
         "ra-marker",
         "colloquial",
         "subjunctive"
-      ]
+      ],
+      "id": "6efa7aef-b64e-4e8d-9d46-5c608a5857ce"
     },
     {
       "englishText": "Could you please sign these papers by tomorrow?",
@@ -10710,7 +10901,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0ca97426-60ef-4484-aa76-87f9c143ccd1"
     },
     {
       "englishText": "I forgot my key and had to go back home.",
@@ -10782,7 +10974,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "95248ef2-52ea-4bfd-af18-cf04d261a4dc"
     },
     {
       "englishText": "My colleague has been sick for three days, so I have to do his work too.",
@@ -10860,7 +11053,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "411ea8b1-25b9-48bf-88da-59d181ec517f"
     },
     {
       "englishText": "If you have free time tonight, can you help me with my math homework?",
@@ -10938,7 +11132,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "af06e1e9-45b8-400d-a19b-9e73981d61ca"
     },
     {
       "englishText": "I think your plan is good, but we don't have enough money to start it now.",
@@ -11016,7 +11211,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "34b05404-0805-49b0-8510-20114ca322b3"
     },
     {
       "englishText": "I wanted to call you to say I'd be late, but my phone battery died.",
@@ -11095,7 +11291,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "96f6292b-da0e-420b-8c21-96cedb8972b1"
     },
     {
       "englishText": "I'm embarrassed to ask, but is it possible to lend me some money until payday?",
@@ -11197,7 +11394,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c71f7cc9-4dd2-4bbf-abef-d773e6be97a4"
     },
     {
       "englishText": "I'm so ashamed I kept you waiting, please don't be upset with me, I really didn't mean to.",
@@ -11312,7 +11510,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3d5e663e-c5ab-4bc0-a8b7-93c7d9e43a8f"
     },
     {
       "englishText": "They didn't give me any choice; either I had to accept their conditions or quit my job.",
@@ -11421,7 +11620,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1d9c28bb-9194-4e39-879b-e375a890cd45"
     },
     {
       "englishText": "I am very tired.",
@@ -11433,7 +11633,8 @@
       "grammarTags": [
         "colloquial",
         "pronoun-clitic"
-      ]
+      ],
+      "id": "cd143dd9-0e8e-4d6a-84bd-ea288e3d1f29"
     },
     {
       "englishText": "My head hurts.",
@@ -11468,7 +11669,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "903ee4ca-adc7-47f6-a668-843c6e4df341"
     },
     {
       "englishText": "I'm so happy today!",
@@ -11502,7 +11704,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "084fdd7c-4713-4a7a-beaf-c065a04a1c7e"
     },
     {
       "englishText": "We are going to Shiraz next week.",
@@ -11515,7 +11718,8 @@
         "colloquial",
         "ezafe",
         "verb-tense"
-      ]
+      ],
+      "id": "dddf7e81-2a11-4d1c-92c1-523be1a9c58c"
     },
     {
       "englishText": "Are you buying a new car tomorrow?",
@@ -11528,7 +11732,8 @@
         "colloquial",
         "ezafe",
         "verb-tense"
-      ]
+      ],
+      "id": "0ff076c1-575b-4c4a-8274-a41377ea2eea"
     },
     {
       "englishText": "I will call you after dinner.",
@@ -11576,7 +11781,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "be380a03-add3-4db9-8d22-89cece20e3d5"
     },
     {
       "englishText": "Go straight until you reach the red light, then turn right.",
@@ -11589,7 +11795,8 @@
         "subjunctive",
         "preposition",
         "ezafe"
-      ]
+      ],
+      "id": "4457c1e7-258a-4d80-8c23-9fb35441e43e"
     },
     {
       "englishText": "If you pass the square, you will see the pharmacy on your left.",
@@ -11604,7 +11811,8 @@
         "pronoun-clitic",
         "subjunctive",
         "ezafe"
-      ]
+      ],
+      "id": "c6cf5be5-49a1-4786-8b43-e37c3bb0205e"
     },
     {
       "englishText": "Thank you so much for the dinner, you really went to a lot of trouble.",
@@ -11663,7 +11871,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "88923699-29eb-46fc-9e4c-9dad5477d39a"
     },
     {
       "englishText": "Your hands shouldn't ache, the tea was wonderful!",
@@ -11717,7 +11926,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ef2b4d03-7cca-41dd-ab4b-0552b4855b1e"
     },
     {
       "englishText": "You shouldn't have bought a gift, please don't embarrass me.",
@@ -11731,7 +11941,8 @@
         "ra-marker",
         "compound-verb",
         "subjunctive"
-      ]
+      ],
+      "id": "5ae3e943-de75-4d0d-90a9-919c133906df"
     },
     {
       "englishText": "We are planning to go to the north next month if the weather gets better.",
@@ -11745,7 +11956,8 @@
         "compound-verb",
         "subjunctive",
         "ezafe"
-      ]
+      ],
+      "id": "71390181-bf73-41dd-97a4-88c01c2d139e"
     },
     {
       "englishText": "Turn around at the next intersection and then ask the shopkeeper across the street for the address.",
@@ -11760,7 +11972,8 @@
         "compound-verb",
         "ezafe",
         "preposition"
-      ]
+      ],
+      "id": "7934b7c6-6974-456f-9612-6759dbb38d69"
     },
     {
       "englishText": "I feel like crying because I lost the necklace that my mother bought for my birthday.",
@@ -11864,7 +12077,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b2106776-7b7d-4bb5-9b41-322cc19f7f76"
     },
     {
       "englishText": "I really don't know how to thank you for helping my brother with his exam prep.",
@@ -11955,7 +12169,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "96d1cf4f-3d6c-480f-80e7-1ab885d81f5a"
     },
     {
       "englishText": "If you are using GPS, enter the name of the park so it doesn't take you through the heavy traffic.",
@@ -11971,7 +12186,8 @@
         "verb-tense",
         "pronoun-clitic",
         "ezafe"
-      ]
+      ],
+      "id": "de882469-df34-4d79-a4d3-fe29b9ca4b2b"
     },
     {
       "englishText": "When I heard that they accepted my article, I was so excited that I couldn't sleep all night.",
@@ -11987,7 +12203,8 @@
         "subjunctive",
         "verb-tense",
         "ezafe"
-      ]
+      ],
+      "id": "e98f570e-87c3-4c76-a490-628b97d09fea"
     },
     {
       "englishText": "We are going to pack our bags tonight because the flight is tomorrow morning at six o'clock.",
@@ -12002,7 +12219,8 @@
         "ra-marker",
         "plural",
         "ezafe"
-      ]
+      ],
+      "id": "38334c58-c047-4a7f-90c8-01f3e9f807d7"
     },
     {
       "englishText": "Your house is absolutely beautiful, may it always be filled with joy; truly your taste is exemplary.",
@@ -12093,7 +12311,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "451452a8-42f9-4d07-8d30-b4283003ccb5"
     },
     {
       "englishText": "I really didn't want to bother you, but I was so desperate that I had no choice but to come to you.",
@@ -12109,7 +12328,8 @@
         "subjunctive",
         "compound-verb",
         "naturalness"
-      ]
+      ],
+      "id": "b8c45c98-34f0-44d2-99c1-ba1192c60e7a"
     },
     {
       "englishText": "We are going to the cinema tonight.",
@@ -12144,7 +12364,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d224ef62-77dd-4d16-a456-e5f4af273b6d"
     },
     {
       "englishText": "I really like your dress.",
@@ -12192,7 +12413,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "413addc8-8d68-47ac-9c14-fffef5775987"
     },
     {
       "englishText": "How is your new university?",
@@ -12205,7 +12427,8 @@
         "colloquial",
         "ezafe",
         "pronoun-clitic"
-      ]
+      ],
+      "id": "9d1617f5-29f3-4fe9-9a4f-cd5af7fb5328"
     },
     {
       "englishText": "I didn't pass my math exam yesterday.",
@@ -12220,7 +12443,8 @@
         "ezafe",
         "pronoun-clitic",
         "compound-verb"
-      ]
+      ],
+      "id": "0f22c9f6-e44a-451e-a316-3c89d32715e4"
     },
     {
       "englishText": "Let's drink a cup of coffee together tomorrow.",
@@ -12279,7 +12503,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "79925cff-d3a6-412e-8056-b1322abf3c16"
     },
     {
       "englishText": "Honestly, your idea is not bad at all.",
@@ -12326,7 +12551,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a995377a-13b2-47c6-9f31-7aa3cad34a8f"
     },
     {
       "englishText": "I bought a small gift for your sister.",
@@ -12340,7 +12566,8 @@
         "ezafe",
         "pronoun-clitic",
         "preposition"
-      ]
+      ],
+      "id": "c53e9606-b4d2-4cb9-bbf3-6bd6b1ace810"
     },
     {
       "englishText": "My brother changed his job last week.",
@@ -12354,7 +12581,8 @@
         "ra-marker",
         "pronoun-clitic",
         "compound-verb"
-      ]
+      ],
+      "id": "fece6c5d-8a08-4a6c-8d76-cf8484b1c048"
     },
     {
       "englishText": "Are you coming to the park with us on Friday?",
@@ -12401,7 +12629,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "23032060-0007-406a-bd45-632a90d0e9e1"
     },
     {
       "englishText": "If you have time, we can go shopping tomorrow afternoon.",
@@ -12479,7 +12708,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3d3d2013-9716-4d2f-a0ac-96c292f3dc65"
     },
     {
       "englishText": "I think we shouldn't trust this guy.",
@@ -12539,7 +12769,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "286d5ec9-4a2f-43b4-b6fb-654d653d8524"
     },
     {
       "englishText": "When I saw your grade, I became very proud of you.",
@@ -12606,7 +12837,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "10ff5f54-aa09-41d5-a909-818225b2b29b"
     },
     {
       "englishText": "I have to stay at the office until late tonight to finish this report.",
@@ -12702,7 +12934,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2728d734-5318-43e2-93a3-da9934ffa644"
     },
     {
       "englishText": "Thanks a lot for sending the book so quickly.",
@@ -12716,7 +12949,8 @@
         "ra-marker",
         "pronoun-clitic",
         "preposition"
-      ]
+      ],
+      "id": "e7092659-bc93-4844-b0e5-1a5fea1f1c44"
     },
     {
       "englishText": "If my exam results are good, my father has promised to buy me a new laptop.",
@@ -12732,7 +12966,8 @@
         "ezafe",
         "preposition",
         "compound-verb"
-      ]
+      ],
+      "id": "a853c681-b4c1-4ff2-9438-03a923b795e5"
     },
     {
       "englishText": "Since you helped me with my homework, I want to invite you to lunch tomorrow.",
@@ -12817,7 +13052,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d45b3606-c198-408a-92a6-6f18dc990645"
     },
     {
       "englishText": "My friend told me that the restaurant we wanted to go to is closed on Mondays.",
@@ -12832,7 +13068,8 @@
         "pronoun-clitic",
         "verb-tense",
         "plural"
-      ]
+      ],
+      "id": "f5f79c54-0439-49b3-b6b7-918db77a0d7b"
     },
     {
       "englishText": "I think if we discuss this project with the boss tomorrow, we might find a better solution.",
@@ -12847,7 +13084,8 @@
         "preposition",
         "compound-verb",
         "subjunctive"
-      ]
+      ],
+      "id": "d2f8b58c-86bb-4434-ac30-c41494e8739d"
     },
     {
       "englishText": "You really shouldn't have made yourself so much trouble; your presence alone was enough for us.",
@@ -12957,7 +13195,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6a1a308d-bdf7-46d7-b149-ad4d2cee8084"
     },
     {
       "englishText": "If you hadn't put so much effort into teaching me, I would have definitely failed this semester's university exams.",
@@ -12973,7 +13212,8 @@
         "compound-verb",
         "ezafe",
         "plural"
-      ]
+      ],
+      "id": "12c952c6-7c44-4440-b34a-cb38dc52bf03"
     },
     {
       "englishText": "Let's go out tomorrow.",
@@ -13013,7 +13253,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3479a291-40da-4ad5-bce8-72be8622abbe"
     },
     {
       "englishText": "My throat is sore.",
@@ -13048,7 +13289,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0392a3bb-3943-4c66-91a1-aae0825f9377"
     },
     {
       "englishText": "Turn left at the first alley.",
@@ -13088,7 +13330,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e47a94f3-077b-421d-8ca7-6f9e973d1ff0"
     },
     {
       "englishText": "Do you have time this weekend?",
@@ -13135,7 +13378,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "983a6e27-8a0b-4c87-8bc3-0f57976d2084"
     },
     {
       "englishText": "I have to take this pill after food.",
@@ -13200,7 +13444,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2c0346a7-7c5c-4b63-a4ed-c78c31fcbe07"
     },
     {
       "englishText": "It was a really great party.",
@@ -13246,7 +13491,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e9ab462c-f365-48d1-ad77-dbaab4557caf"
     },
     {
       "englishText": "If we walk, we will get there in ten minutes.",
@@ -13305,7 +13551,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5e627c71-159b-4216-ac00-a0235486a3bd"
     },
     {
       "englishText": "I want to see you before you travel.",
@@ -13359,7 +13606,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1abee37f-328e-46a0-9865-066fcaeecbb9"
     },
     {
       "englishText": "If my fever doesn't go down, I must go to the hospital.",
@@ -13418,7 +13666,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "67a5cc44-2654-4883-addf-417df8ba2e92"
     },
     {
       "englishText": "I'm really glad that I have a friend like you.",
@@ -13476,7 +13725,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f434ab48-4d6d-4559-8439-38e56ca52a5c"
     },
     {
       "englishText": "Ask the traffic policeman where the nearest pharmacy is.",
@@ -13535,7 +13785,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "453508f8-b64e-4093-aae3-588031b24e11"
     },
     {
       "englishText": "What time should I pick you up from your house?",
@@ -13595,7 +13846,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0038fb5d-b906-4244-9b71-17b630330e72"
     },
     {
       "englishText": "The doctor said I need to rest for three days.",
@@ -13653,7 +13905,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "277a9747-7ea1-463e-afe4-4675be17f197"
     },
     {
       "englishText": "Your cooking is wonderful, I really enjoyed this food.",
@@ -13725,7 +13978,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a58479e8-d8c7-4933-ba88-4c52a44ba580"
     },
     {
       "englishText": "I think we missed the turn because the GPS isn't working.",
@@ -13790,7 +14044,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b332a184-2693-4dfc-9262-7c69ee26ea77"
     },
     {
       "englishText": "If you can't come tonight, we can go next week.",
@@ -13856,7 +14111,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "beb5dfb0-f769-4ab4-96c1-60c1565f188f"
     },
     {
       "englishText": "If we take the highway instead of the main street, we'll get to the café much faster.",
@@ -13946,7 +14202,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6df81281-d85d-4a40-ba16-2f45588aef33"
     },
     {
       "englishText": "I'm embarrassed that you bought these beautiful flowers, I didn't want you to go to any trouble.",
@@ -14043,7 +14300,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ac78b583-1885-4409-8c27-bf196c939fe8"
     },
     {
       "englishText": "I really want you to step on my eyes and come to our house for dinner this weekend.",
@@ -14158,7 +14416,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "45747bb7-9e1c-4324-b059-8ed0d37439bc"
     },
     {
       "englishText": "I'm really tired today.",
@@ -14192,7 +14451,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "297dc0dc-cef5-44d2-9e51-7804bf4a3554"
     },
     {
       "englishText": "How much is this?",
@@ -14220,7 +14480,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8943a0e5-ab65-4922-aaaa-0eeb4e436f86"
     },
     {
       "englishText": "Do you have a cheaper one?",
@@ -14255,7 +14516,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4f34ffac-b0bc-498e-918a-c902c50b3551"
     },
     {
       "englishText": "The traffic is really bad tonight.",
@@ -14267,7 +14529,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "8d365d84-1706-435e-9036-47d7d2456464"
     },
     {
       "englishText": "It looks like it's going to rain.",
@@ -14307,7 +14570,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "57665459-77dc-4307-8d3f-3f87d47c048d"
     },
     {
       "englishText": "We really missed you.",
@@ -14347,7 +14611,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f188ba9e-4403-4af0-9c9d-36ad022c6365"
     },
     {
       "englishText": "My head has been hurting since morning.",
@@ -14401,7 +14666,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "866ab7bc-09ba-4d38-a137-852fa5956c9f"
     },
     {
       "englishText": "Where did you buy these shoes?",
@@ -14454,7 +14720,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "115c887a-bafe-438f-91a8-0160d390c5c6"
     },
     {
       "englishText": "If we don't leave now, we will get stuck in traffic.",
@@ -14519,7 +14786,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "15f78c3d-eaf4-4023-a6d4-99be3c75fe1f"
     },
     {
       "englishText": "I want to buy a jacket that isn't too expensive.",
@@ -14583,7 +14851,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e79d9099-ab80-45d7-aca1-bd02d6f785c0"
     },
     {
       "englishText": "I feel like I'm catching a cold.",
@@ -14630,7 +14899,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "114bec48-9a5d-414e-a475-e58f1afbbe67"
     },
     {
       "englishText": "I was so happy when I saw you yesterday.",
@@ -14683,7 +14953,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3e7b4d6d-80e4-45b7-9939-b8de0a064200"
     },
     {
       "englishText": "If you pay cash, they might give you a discount.",
@@ -14749,7 +15020,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "616e11c3-6f54-4bbe-93e4-ef3eb26c348e"
     },
     {
       "englishText": "Because of the heavy snow, all the schools are closed today.",
@@ -14814,7 +15086,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4dc73dfe-2743-4940-8bac-f422d1234565"
     },
     {
       "englishText": "I am so stressed that I can't sleep at all.",
@@ -14872,7 +15145,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e4aa17e7-e2f9-4d90-868f-76f39c47ed67"
     },
     {
       "englishText": "You went to so much trouble for us, we really don't know how to thank you.",
@@ -14951,7 +15225,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c8733f3f-9a53-4028-ae8c-1e74fef187e4"
     },
     {
       "englishText": "Let's check the weather forecast before we go to the mountains.",
@@ -15029,7 +15304,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "99288e4d-9ad0-417f-8028-f15aa2932226"
     },
     {
       "englishText": "We would be very honored if you and your family would come to our house for dinner next weekend.",
@@ -15043,7 +15319,8 @@
         "colloquial",
         "ezafe",
         "vocab-wrong"
-      ]
+      ],
+      "id": "ca46a411-c843-405c-88de-cda5dc6f9d32"
     },
     {
       "englishText": "This hot and humid weather makes me feel so lazy that I don't want to do anything.",
@@ -15058,7 +15335,8 @@
         "subjunctive",
         "pronoun-clitic",
         "ra-marker"
-      ]
+      ],
+      "id": "13566ab5-7bdd-4a08-8a7b-44341f17f16b"
     },
     {
       "englishText": "Are you at home right now?",
@@ -15086,7 +15364,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "612f65bb-a67d-4abc-bb73-094eef3d7efe"
     },
     {
       "englishText": "It is really windy today.",
@@ -15126,7 +15405,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0b901e02-35c2-4637-92b2-456c039f1871"
     },
     {
       "englishText": "Where is the subway station?",
@@ -15160,7 +15440,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e8c7846f-daae-45f3-9c07-32f8bb324614"
     },
     {
       "englishText": "Can you help me move this table?",
@@ -15226,7 +15507,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "aee53ec5-56c0-4db7-ba08-e28803cbfd9a"
     },
     {
       "englishText": "I'll call you as soon as I get to work.",
@@ -15292,7 +15574,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "915d9d7b-63d8-41fb-a199-297bf9cd7775"
     },
     {
       "englishText": "The highway is completely blocked because of an accident.",
@@ -15345,7 +15628,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9cbb9ed5-4993-40f1-85a8-f4109d4cc981"
     },
     {
       "englishText": "Go straight until you reach the big square.",
@@ -15404,7 +15688,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4f32bb38-9143-45d5-9440-9366b115995d"
     },
     {
       "englishText": "Could you lend me your car for two hours?",
@@ -15476,7 +15761,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0051ff00-4a08-409e-9a36-8e6214856f19"
     },
     {
       "englishText": "Give Mom a big hug for me.",
@@ -15535,7 +15821,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7f5910b3-2083-416b-8c5d-eb8620dbc3cc"
     },
     {
       "englishText": "Since yesterday it's been raining non-stop and all the streets are flooded.",
@@ -15631,7 +15918,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e787bb1f-25be-459f-8517-049bd974fe88"
     },
     {
       "englishText": "If you miss this exit, you have to go all the way around from the next square.",
@@ -15722,7 +16010,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a733bc28-3a6e-4ab7-80ac-3dde30930b65"
     },
     {
       "englishText": "Can you watch my kids for an hour so I can do my errands?",
@@ -15800,7 +16089,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "07bfaa83-5007-4eb9-803c-b233c3096516"
     },
     {
       "englishText": "I was just talking about you with Dad when my phone rang.",
@@ -15878,7 +16168,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3ccbd8ad-97c0-408d-8b72-45d6a335e180"
     },
     {
       "englishText": "The pharmacy is on the other side of the street, right next to the flower shop.",
@@ -15890,7 +16181,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "9358a0b2-503e-4d8d-9593-4170cd66e625"
     },
     {
       "englishText": "If you buy two of these jackets, I can give you a twenty percent discount.",
@@ -15987,7 +16279,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f63dcc99-798c-4db7-a316-efbceb36f864"
     },
     {
       "englishText": "I wanted to come earlier, but the traffic on the highway was so heavy that I got stuck.",
@@ -16077,7 +16370,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7be01716-bd96-4843-9b2e-4c896244c01e"
     },
     {
       "englishText": "Call your brother and tell him to bring his warm clothes because it's freezing here.",
@@ -16187,7 +16481,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "cee53f0a-b1b6-4c50-95b9-013479f96e34"
     },
     {
       "englishText": "I'd really appreciate it if you didn't tell anyone about our conversation until tomorrow.",
@@ -16201,7 +16496,8 @@
         "pronoun-clitic",
         "subjunctive",
         "ezafe"
-      ]
+      ],
+      "id": "af945f9d-5869-424f-b31f-c5915e24b6ad"
     },
     {
       "englishText": "Don't worry about it at all, you are always a crown on our heads and we are at your service.",
@@ -16297,7 +16593,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "dbfe0148-1378-4e95-9ae7-8af637171fd4"
     },
     {
       "englishText": "I am sorry to bother you, but if it's not too much trouble, could you sign this paper for me?",
@@ -16394,7 +16691,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "16db7700-4f77-4e22-b28d-1f6e398bc475"
     },
     {
       "englishText": "I want a cup of coffee, please.",
@@ -16446,7 +16744,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "56f632dd-c056-4a65-889e-7086aa81f52c"
     },
     {
       "englishText": "Shall we go to the cinema tomorrow night?",
@@ -16486,7 +16785,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2214031f-1575-4657-ad70-028499147bc4"
     },
     {
       "englishText": "I think this food is not delicious at all.",
@@ -16544,7 +16844,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4bc9d616-2406-4e91-b4cb-8c16467d11a9"
     },
     {
       "englishText": "I lost my keys and I was delayed.",
@@ -16603,7 +16904,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ffdcc17f-376f-4aa5-9b74-76bf4bf0dd7d"
     },
     {
       "englishText": "Can we sit at that table by the window?",
@@ -16656,7 +16958,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0a13d8b7-5bd5-4068-9291-0b10ae94f0a4"
     },
     {
       "englishText": "Is your time free this weekend?",
@@ -16669,7 +16972,8 @@
         "ezafe",
         "pronoun-clitic",
         "colloquial"
-      ]
+      ],
+      "id": "b3e38286-2060-4fd6-8f2a-c25f016a9cd9"
     },
     {
       "englishText": "If you ask me, we shouldn't buy this laptop because it's too old.",
@@ -16682,7 +16986,8 @@
         "subjunctive",
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "6e2baa94-71dd-4c56-86b8-92ebaa5d59fb"
     },
     {
       "englishText": "If you have time tonight, let's go out for a little walk together.",
@@ -16695,7 +17000,8 @@
         "subjunctive",
         "compound-verb",
         "colloquial"
-      ]
+      ],
+      "id": "87714b7c-9241-4ed7-a23a-3fa00d4041d1"
     },
     {
       "englishText": "Sorry I'm late, I searched the whole street for a parking spot.",
@@ -16708,7 +17014,8 @@
         "ra-marker",
         "preposition",
         "colloquial"
-      ]
+      ],
+      "id": "fdec0c6d-01ae-4dcf-831e-281f60e06300"
     },
     {
       "englishText": "Can you please tell me what the soup of the day is?",
@@ -16721,7 +17028,8 @@
         "formality",
         "subjunctive",
         "colloquial"
-      ]
+      ],
+      "id": "dd72e5a8-5894-46e0-b9f0-6f4e7dbca210"
     },
     {
       "englishText": "I don't think he will agree with our suggestion.",
@@ -16734,7 +17042,8 @@
         "subjunctive",
         "compound-verb",
         "colloquial"
-      ]
+      ],
+      "id": "876166b6-3c7a-463f-ad5d-fc9d65e16d91"
     },
     {
       "englishText": "Let's meet at the same cafe we went to last week.",
@@ -16747,7 +17056,8 @@
         "subjunctive",
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "4f6ca1eb-3fff-4ddb-b731-56f2ecb972e1"
     },
     {
       "englishText": "I forgot to set my phone alarm last night, so I woke up late.",
@@ -16761,7 +17071,8 @@
         "ra-marker",
         "subjunctive",
         "compound-verb"
-      ]
+      ],
+      "id": "d84f55a1-996e-4e99-8d26-1a50f07cf858"
     },
     {
       "englishText": "I want a pizza, but please don't put mushrooms on it because I have an allergy.",
@@ -16850,7 +17161,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "fa53f535-c941-49c2-95b3-dc27d45b74b7"
     },
     {
       "englishText": "In my opinion, you shouldn't sell your car because the prices are going up.",
@@ -16864,7 +17176,8 @@
         "ra-marker",
         "verb-tense",
         "colloquial"
-      ]
+      ],
+      "id": "040217f8-0f02-4791-834a-505cd0c4cb1c"
     },
     {
       "englishText": "I got stuck behind a bad accident on the highway, otherwise I would have been here half an hour ago.",
@@ -16965,7 +17278,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d54d5549-f357-4027-ad2e-9939b41a9bdc"
     },
     {
       "englishText": "If you can make it by seven o'clock, we can catch the early show of the movie.",
@@ -16979,7 +17293,8 @@
         "pronoun-clitic",
         "ra-marker",
         "compound-verb"
-      ]
+      ],
+      "id": "90ae65b0-d397-4e6f-9a28-39d73e383485"
     },
     {
       "englishText": "We have been waiting for our food for forty minutes; could you please check what happened to our order?",
@@ -16993,7 +17308,8 @@
         "pronoun-clitic",
         "subjunctive",
         "compound-verb"
-      ]
+      ],
+      "id": "f1f87a8a-7243-4094-9cf5-92af53748f62"
     },
     {
       "englishText": "I'm not sure if we should rent this apartment or not, because it doesn't get any sunlight at all.",
@@ -17101,7 +17417,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9def2115-a6ad-4bbc-b76f-c90564f6520b"
     },
     {
       "englishText": "I'm really sorry, my boss called me for an urgent meeting right when I was about to leave the office.",
@@ -17215,7 +17532,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "19e0348d-69c5-48f0-ac50-50ff1d5d1ba0"
     },
     {
       "englishText": "Where is the ticket office?",
@@ -17243,7 +17561,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "77ff0bc1-658a-48c9-b3ec-f065cc844ead"
     },
     {
       "englishText": "This movie is very boring.",
@@ -17283,7 +17602,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3165adb2-f6cd-42c1-b4e4-0dbbe9317e16"
     },
     {
       "englishText": "Yesterday I bought a shirt.",
@@ -17323,7 +17643,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "755cab87-4ef7-4568-ab39-b529fcdd9a68"
     },
     {
       "englishText": "Call me when you arrive.",
@@ -17358,7 +17679,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b868da0a-8438-4e2f-ad1f-192ea8e925b8"
     },
     {
       "englishText": "Please pull over after the bridge.",
@@ -17411,7 +17733,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "494d3411-a7e0-4b76-8787-69daf5dcef34"
     },
     {
       "englishText": "To be honest, I don't like his behavior.",
@@ -17459,7 +17782,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0e5c3fdd-a726-415f-9ce3-646c9f143507"
     },
     {
       "englishText": "I cleaned the whole house last night.",
@@ -17513,7 +17837,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6144197f-54b0-40f4-b69b-90cb923cf7df"
     },
     {
       "englishText": "Did you give the keys to your brother?",
@@ -17561,7 +17886,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "50d3eec4-fda4-457f-8746-e8427d4ccb44"
     },
     {
       "englishText": "Does this train stop at Imam Khomeini station?",
@@ -17620,7 +17946,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b5058b0c-d6b3-4d1b-a68f-50c4c82c4e25"
     },
     {
       "englishText": "I think this restaurant's food is overpriced.",
@@ -17679,7 +18006,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "208f0c39-2292-4e43-a5ed-68f67b2fe110"
     },
     {
       "englishText": "While I was studying, my mom cooked dinner.",
@@ -17745,7 +18073,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ee16594f-0215-4fc1-8893-38108de997b8"
     },
     {
       "englishText": "I have to buy some fruits before I come home.",
@@ -17822,7 +18151,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a7215505-a581-4557-b31a-3c9531749fdd"
     },
     {
       "englishText": "If we take a taxi, we will arrive much faster.",
@@ -17875,7 +18205,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6f12d110-95f4-409d-a548-8134ac8e436d"
     },
     {
       "englishText": "I don't think you can finish this project alone.",
@@ -17935,7 +18266,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2b9ede6a-1403-490a-b35c-b6a825975f77"
     },
     {
       "englishText": "Tell Dad that I bought his medicine and I'll bring it tonight.",
@@ -18013,7 +18345,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3052db13-f250-4b46-b91d-00beb32fae94"
     },
     {
       "englishText": "I wanted to call you yesterday, but my phone had no signal.",
@@ -18085,7 +18418,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "35bd7ecc-84f1-4c41-962f-72da27bff4b5"
     },
     {
       "englishText": "Even if you pay me double, I am not willing to work with him.",
@@ -18170,7 +18504,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "cb43c3de-433f-4632-a225-3b6a47d109bf"
     },
     {
       "englishText": "Ask the driver if he goes toward Tajrish, because the metro is too crowded.",
@@ -18259,7 +18594,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "81594612-bf82-4f4a-847b-f922ba08767f"
     },
     {
       "englishText": "You shouldn't have said that to your sister; you really broke her heart.",
@@ -18338,7 +18674,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f2582529-94e6-4eb1-97f7-bedf8246e82b"
     },
     {
       "englishText": "I don't want to interfere, but I think you'd better make up with him.",
@@ -18428,7 +18765,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9fb6de9d-1943-4165-bf82-a1a7d6557ba6"
     },
     {
       "englishText": "I have an earache.",
@@ -18463,7 +18801,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e710f2f4-3cf2-4d19-af3b-a39f8c553572"
     },
     {
       "englishText": "Could you speak a little louder?",
@@ -18516,7 +18855,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "267d25c2-1fd6-4641-b2a8-0f39758ddf49"
     },
     {
       "englishText": "Bring us two iced Americanos, please.",
@@ -18581,7 +18921,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ae487831-2462-4ab6-a9cd-e45491f907d2"
     },
     {
       "englishText": "I've had a bad cough since two days ago.",
@@ -18639,7 +18980,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2f9e8add-9e97-4045-b3e8-3b434f138181"
     },
     {
       "englishText": "Do you need a prescription for these painkillers?",
@@ -18686,7 +19028,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6e1ee1ac-cf43-4706-80e0-ff4ae28b66ff"
     },
     {
       "englishText": "His novel was really interesting.",
@@ -18726,7 +19069,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "be6c7142-42b5-4d81-ac17-de2f86f6c8dd"
     },
     {
       "englishText": "Excuse me, does this pasta dish have garlic in it?",
@@ -18785,7 +19129,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "62b68c0c-070a-4ca1-b1dd-057ebcbdf252"
     },
     {
       "englishText": "I didn't quite catch that, can you repeat the address?",
@@ -18799,7 +19144,8 @@
         "subjunctive",
         "compound-verb",
         "colloquial"
-      ]
+      ],
+      "id": "719d47ec-78ce-4fd6-9a80-235ecd1a576a"
     },
     {
       "englishText": "I have to take this antibiotic every eight hours.",
@@ -18813,7 +19159,8 @@
         "ra-marker",
         "vocab-wrong",
         "colloquial"
-      ]
+      ],
+      "id": "80669aaa-1584-46f5-9a93-b56715f13260"
     },
     {
       "englishText": "I feel you're rushing this decision way too much.",
@@ -18885,7 +19232,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d66d147b-0b9e-43c7-bd59-caae3f369d4c"
     },
     {
       "englishText": "Can you bring a little extra bread with our salad?",
@@ -18951,7 +19299,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5f4253fb-8bc0-4597-8c21-947c438420ae"
     },
     {
       "englishText": "Do you mean we should cancel the whole plan?",
@@ -18965,7 +19314,8 @@
         "ra-marker",
         "pronoun-clitic",
         "colloquial"
-      ]
+      ],
+      "id": "c6cdd57d-c400-4683-b06d-ad64897c9f33"
     },
     {
       "englishText": "She believes it's much better to travel by train.",
@@ -19023,7 +19373,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8e4718e2-a817-4f37-b985-55ee50055296"
     },
     {
       "englishText": "I'm dizzy whenever I stand up suddenly.",
@@ -19076,7 +19427,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "47f37cb6-e44c-4b06-a726-a15fc9e8825a"
     },
     {
       "englishText": "We haven't decided yet, could you give us another five minutes?",
@@ -19142,7 +19494,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5dcfe1e6-3544-4117-8f9f-b317524ca16c"
     },
     {
       "englishText": "My stomach has been hurting since breakfast, and I think I need to see a specialist.",
@@ -19226,7 +19579,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b5ce9af1-43b4-4de2-a7a6-0c2ae17bfde1"
     },
     {
       "englishText": "I didn't hear what you said because of the background noise; would you explain it again from the beginning?",
@@ -19329,7 +19683,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "172a9c68-33fc-4ce5-9a39-609a06cdcf34"
     },
     {
       "englishText": "Personally, I feel that living in a quiet town would be much less stressful than this chaotic city.",
@@ -19449,7 +19804,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "008d57e2-c7e4-48cc-990f-578e440067d5"
     },
     {
       "englishText": "We'd like to change our order before the chef starts cooking, if that's still possible.",
@@ -19464,7 +19820,8 @@
         "ra-marker",
         "pronoun-clitic",
         "colloquial"
-      ]
+      ],
+      "id": "24d3994e-5f56-4fa2-8962-62491637a018"
     },
     {
       "englishText": "The coffee is too sweet.",
@@ -19503,7 +19860,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b4e7506e-1d5d-40a6-a16a-2d647819de77"
     },
     {
       "englishText": "Your hands shouldn't ache, thank you!",
@@ -19538,7 +19896,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e0f0e527-3199-47f1-aae4-e392aedd2d8f"
     },
     {
       "englishText": "The elevator is broken.",
@@ -19565,7 +19924,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "286b3f5e-5796-4577-86bb-ddbf9705a6ea"
     },
     {
       "englishText": "The heating broke down again last night.",
@@ -19611,7 +19971,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "541f29a6-9027-449e-ab26-2aa7fceb3b0c"
     },
     {
       "englishText": "Can you bring the tea without sugar, please?",
@@ -19665,7 +20026,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "57993721-5369-4511-ac7b-f5f27b102f4d"
     },
     {
       "englishText": "You really put yourself through so much trouble tonight.",
@@ -19711,7 +20073,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d904ccf0-e7ef-4748-8ccd-a0692e4a4c6a"
     },
     {
       "englishText": "I think this jacket looks great on you.",
@@ -19770,7 +20133,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e9b5d245-9010-49cc-a1c1-26f00d1cc8c5"
     },
     {
       "englishText": "The Wi-Fi in the room is constantly cutting out.",
@@ -19829,7 +20193,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "45715c9e-07b0-4d13-b473-742142ce2fcf"
     },
     {
       "englishText": "I understand your point, but that's not quite how it is.",
@@ -19888,7 +20253,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "283c9d24-e806-4b7a-9822-f20e96a03115"
     },
     {
       "englishText": "We've been waiting for our main course for half an hour.",
@@ -19947,7 +20313,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a5b4faa4-5fc1-4d25-b479-a38ca573800e"
     },
     {
       "englishText": "The washing machine shakes violently whenever it spins.",
@@ -20005,7 +20372,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2832d507-6cee-453c-9d61-9a90d68d45da"
     },
     {
       "englishText": "I see what you mean, but we need to look at the budget too.",
@@ -20077,7 +20445,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "403af52c-e8a3-4bd2-b312-f2502779699c"
     },
     {
       "englishText": "If possible, please make the soup without any cream.",
@@ -20143,7 +20512,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2a83dbdb-7693-4ac2-b8df-420fe9b0d6fb"
     },
     {
       "englishText": "The air conditioner in the living room has been leaking water since this morning, and it smells bad.",
@@ -20233,7 +20603,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b2aabb4e-bfd8-4291-8ddb-047702463063"
     },
     {
       "englishText": "Your cooking is genuinely delicious; I ate so much that I can't even move.",
@@ -20311,7 +20682,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3455072c-73db-4b2a-bac7-3aaf0b7dbd64"
     },
     {
       "englishText": "I understand your concern, but if we delay the meeting, everyone will get confused.",
@@ -20407,7 +20779,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8d8cdf64-b3ef-4740-82de-ae1763f904e8"
     },
     {
       "englishText": "Excuse me, we asked for the steak well-done, but the inside is still completely raw.",
@@ -20491,7 +20864,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2caba98b-3ff1-4a21-9616-6421a6813f77"
     },
     {
       "englishText": "I respect your experience, but we might get a better result if we try a different approach.",
@@ -20606,7 +20980,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6b90b405-d84a-4cb0-8491-9e0367efb744"
     },
     {
       "englishText": "You really shouldn't have embarrassed me with such a generous gift, but you've honored me so much!",
@@ -20703,7 +21078,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "cb8404e3-ffd7-4f7b-a85a-d5abfd99990e"
     },
     {
       "englishText": "Make yourself at home.",
@@ -20731,7 +21107,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "bb32fcd0-f661-42c8-a9ef-08934ef00a2f"
     },
     {
       "englishText": "We're moving next week.",
@@ -20772,7 +21149,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e9a718e5-7e52-40d2-85c6-a92a06eeb3c4"
     },
     {
       "englishText": "Take off your shoes here.",
@@ -20814,7 +21192,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e4e313e6-54b2-4771-b540-5c4cd9a7f087"
     },
     {
       "englishText": "I'm really stressed about the interview.",
@@ -20861,7 +21240,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5873f419-8154-45e7-8fdc-121602c8142f"
     },
     {
       "englishText": "I didn't catch that last word.",
@@ -20908,7 +21288,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "fe88e393-39e6-485c-b014-ed12c1159106"
     },
     {
       "englishText": "Whenever it rains like this, I feel kind of down.",
@@ -20973,7 +21354,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0682732c-42ac-466b-a7d2-aa9c8cd82951"
     },
     {
       "englishText": "Don't get up, I'll go pour the tea myself.",
@@ -21026,7 +21408,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "32a440e3-4bd3-4e64-8f9c-23f55bde9760"
     },
     {
       "englishText": "If I save enough money, I want to travel abroad next year.",
@@ -21104,7 +21487,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8dabf93f-35da-418f-b637-230a1693ef7d"
     },
     {
       "englishText": "I didn't catch the name of that restaurant you just mentioned.",
@@ -21169,7 +21553,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0c77d454-c9fd-4832-9963-2b4718c5bb46"
     },
     {
       "englishText": "I'm so excited that I honestly can't even sleep tonight.",
@@ -21234,7 +21619,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7fbfdab9-3183-4355-93b6-69590be39bb2"
     },
     {
       "englishText": "Please have some sweets, my sister baked them herself.",
@@ -21294,7 +21680,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4bc63167-a84f-494a-93fa-398ea59d9022"
     },
     {
       "englishText": "We're planning to rent a cabin up north for the weekend.",
@@ -21372,7 +21759,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b5918b38-4335-456b-873f-de007ec637e1"
     },
     {
       "englishText": "Could you clarify what you meant, so there isn't any misunderstanding?",
@@ -21456,7 +21844,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1f2723f2-d69e-4e74-94fe-2bc1d009d30a"
     },
     {
       "englishText": "I've been under so much pressure at work lately that I have no energy to go out with friends on weekends.",
@@ -21471,7 +21860,8 @@
         "ra-marker",
         "pronoun-clitic",
         "word-order"
-      ]
+      ],
+      "id": "2e0433c4-278a-4f3e-936e-2fe0f723314b"
     },
     {
       "englishText": "Don't worry about tidying up; just relax on the sofa while I set the dinner table.",
@@ -21585,7 +21975,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "810e6725-2b21-4128-9e1e-a3a801dc3dfa"
     },
     {
       "englishText": "As soon as my classes finish this summer, I intend to look for a marketing internship.",
@@ -21693,7 +22084,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "865e8095-42cd-47a9-9124-29aedbf74eca"
     },
     {
       "englishText": "You honored our home by coming; please forgive us if our hospitality fell short tonight.",
@@ -21825,7 +22217,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "54399ad7-d5ec-4158-974c-7f1b56a27555"
     },
     {
       "englishText": "I have mixed feelings about moving to another city; on one hand I'm thrilled, but on the other hand my heart aches from being away from everyone.",
@@ -21988,7 +22381,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "000bbc58-14db-4cd5-99be-21b5a916232d"
     },
     {
       "englishText": "Could you bring me an iced Americano with extra milk?",
@@ -22053,7 +22447,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ec0283f7-0262-418e-9e0c-84d5519ce371"
     },
     {
       "englishText": "Mom, I'll call you back myself in five minutes.",
@@ -22113,7 +22508,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8a7b2aa4-d3d9-4e95-9a63-7619566bd0ea"
     },
     {
       "englishText": "We want to go to Shiraz at the end of the month.",
@@ -22166,7 +22562,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "982bbce4-9c1a-4389-87ce-26899dc18eec"
     },
     {
       "englishText": "I didn't catch what you said at all, could you say it again a bit slower?",
@@ -22243,7 +22640,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b9e3ebcb-dbaf-4064-9da7-858d7c87e0e5"
     },
     {
       "englishText": "Dad said he will buy the bread himself on his way home, so don't worry.",
@@ -22326,7 +22724,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "197c2e77-40f6-472b-bc3f-38974e7fa34a"
     },
     {
       "englishText": "If my brother gets his visa on time, we'll all go north together for Nowruz and stay there for a few days.",
@@ -22452,7 +22851,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c268f67c-e58a-4d20-ba36-eaf823557c34"
     },
     {
       "englishText": "A black coffee, please.",
@@ -22464,7 +22864,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "3afc58a6-92a9-461a-99e0-8ce196c3791a"
     },
     {
       "englishText": "Do you have fresh juice?",
@@ -22477,7 +22878,8 @@
         "ezafe",
         "formality",
         "verb-agreement"
-      ]
+      ],
+      "id": "3d66f2de-1b27-42ad-a696-fbda9f9fb414"
     },
     {
       "englishText": "Is this soup spicy?",
@@ -22511,7 +22913,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "821c77a2-3888-424a-8f8f-8adf3b4ac71b"
     },
     {
       "englishText": "I want two sandwiches.",
@@ -22551,7 +22954,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c3d37ba3-759e-433b-919b-aeb8bd490316"
     },
     {
       "englishText": "How much is the fare to the square?",
@@ -22591,7 +22995,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "21e12ef9-6843-43af-88bf-9483b791b376"
     },
     {
       "englishText": "Where is the nearest metro station?",
@@ -22604,7 +23009,8 @@
         "colloquial",
         "ezafe",
         "word-order"
-      ]
+      ],
+      "id": "1c4c8f63-75e6-4bd7-b7bd-abb144ea7f3c"
     },
     {
       "englishText": "Please turn right here.",
@@ -22645,7 +23051,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2407a0e3-f527-4ef9-9022-2def5921526b"
     },
     {
       "englishText": "Does this train go to the airport?",
@@ -22686,7 +23093,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "01d6afdf-46ef-4ed5-9431-a2bbcde8dc1e"
     },
     {
       "englishText": "Where should I get off?",
@@ -22721,7 +23129,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f10df981-9a64-47ab-8b97-c883f0351a88"
     },
     {
       "englishText": "I have a severe headache.",
@@ -22755,7 +23164,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "35d6cb7b-a132-4613-8668-16a6f46567b7"
     },
     {
       "englishText": "I feel great today.",
@@ -22795,7 +23205,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1c55d4a5-5585-4f5c-a949-cefeed3e62b9"
     },
     {
       "englishText": "Why are you so sad?",
@@ -22829,7 +23240,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "51f7df9b-4852-4693-9302-30d120d05416"
     },
     {
       "englishText": "Are you home, Mom?",
@@ -22857,7 +23269,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e9e7d1fa-5153-4233-87e9-085633fd41e6"
     },
     {
       "englishText": "What are you cooking today?",
@@ -22891,7 +23304,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6ea12aa4-fcfb-4e38-8949-e371bd014da6"
     },
     {
       "englishText": "Is Dad still at work?",
@@ -22904,7 +23318,8 @@
         "colloquial",
         "ezafe",
         "preposition"
-      ]
+      ],
+      "id": "b943245f-b5fe-4778-8620-e1e45b9d010f"
     },
     {
       "englishText": "I am coming home now.",
@@ -22938,7 +23353,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "588cb205-9691-40f3-9807-4d7e47e47e92"
     },
     {
       "englishText": "How much is this apple?",
@@ -22972,7 +23388,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c5974cc0-0333-42da-a369-ae97a5dcf2ee"
     },
     {
       "englishText": "I want a kilo of tomatoes.",
@@ -23012,7 +23429,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "bcf8433c-06b4-42d9-a36a-730660a73888"
     },
     {
       "englishText": "Is this shirt expensive?",
@@ -23046,7 +23464,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1421a064-02a4-4f18-b52c-37e9fa67782d"
     },
     {
       "englishText": "How much does it come to in total?",
@@ -23080,7 +23499,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f21f919c-95ea-4477-baab-6feeae0ba8e4"
     },
     {
       "englishText": "Go straight ahead.",
@@ -23114,7 +23534,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "fc69c4cb-0fe6-4bf9-b9da-927e2c1f4ed0"
     },
     {
       "englishText": "Turn left here.",
@@ -23148,7 +23569,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "80b4518f-c8c5-4efc-8492-2678ad7973d5"
     },
     {
       "englishText": "Is the shop near here?",
@@ -23182,7 +23604,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "91908b42-8e0e-4e23-a11e-e42f6a657598"
     },
     {
       "englishText": "The bank is across the street.",
@@ -23216,7 +23639,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "18d94a19-7ec9-4b82-a76f-cdde89675c33"
     },
     {
       "englishText": "Please sit down here.",
@@ -23250,7 +23674,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "25aa6a6d-820e-4fa6-a822-be5f860359d3"
     },
     {
       "englishText": "Would you like tea?",
@@ -23278,7 +23703,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d2c7b6b9-6363-4276-8036-9f2dc32c673d"
     },
     {
       "englishText": "Your house is very pretty.",
@@ -23312,7 +23738,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c92f0c84-f572-45e3-8c8d-6a609682f6ee"
     },
     {
       "englishText": "Thank you, I am full.",
@@ -23346,7 +23773,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6afbb169-d1c3-4fc1-823c-35f390958b79"
     },
     {
       "englishText": "Welcome to our home!",
@@ -23386,7 +23814,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "70f54a17-2efd-43ff-b930-ba3685ebbc86"
     },
     {
       "englishText": "Did you sleep well?",
@@ -23414,7 +23843,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8d151827-5d7c-413f-bb93-37a9bd71ea38"
     },
     {
       "englishText": "I bought fruit today.",
@@ -23448,7 +23878,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e19a6338-e2ab-4d5f-b4be-3cf184d8436c"
     },
     {
       "englishText": "Did you watch the game?",
@@ -23482,7 +23913,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "eab9f298-6dd1-4ece-a9e0-37bcab7d583f"
     },
     {
       "englishText": "I called my mom yesterday.",
@@ -23522,7 +23954,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "69aea510-2643-4d2d-8889-43d16b29afa7"
     },
     {
       "englishText": "We stayed home yesterday.",
@@ -23562,7 +23995,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "53424297-6942-4b28-83e8-ac3b6a65b7c9"
     },
     {
       "englishText": "I read a book yesterday.",
@@ -23602,7 +24036,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a9f96ee5-412f-4aad-a870-ae361f69a0f3"
     },
     {
       "englishText": "I washed my hands.",
@@ -23637,7 +24072,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8f8e4250-3620-4ed3-9855-f30cf230abf1"
     },
     {
       "englishText": "I cooked dinner.",
@@ -23665,7 +24101,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "125cd443-a70a-4527-afa2-7a83b3339c35"
     },
     {
       "englishText": "We walked today.",
@@ -23678,7 +24115,8 @@
         "compound-verb",
         "verb-tense",
         "spelling"
-      ]
+      ],
+      "id": "31836eed-7e37-455f-b211-7f89318ff495"
     },
     {
       "englishText": "I cleaned the room.",
@@ -23719,7 +24157,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "08825dad-b853-4cac-8a8e-c6c58f3ff365"
     },
     {
       "englishText": "But it is not like that.",
@@ -23753,7 +24192,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5cfd2c5f-9ce2-48bf-8beb-dbe3df81fb2d"
     },
     {
       "englishText": "I do not agree.",
@@ -23786,7 +24226,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5d4c0a39-b01b-4372-b73e-c9c94abcde83"
     },
     {
       "englishText": "I think differently.",
@@ -23832,7 +24273,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e18c8231-a59a-4765-b3ce-0abcc0037622"
     },
     {
       "englishText": "I think you are mistaken.",
@@ -23873,7 +24315,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8e391529-f860-4bfb-917a-a1b32ffd6f25"
     },
     {
       "englishText": "That is not quite correct.",
@@ -23912,7 +24355,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a3ecf98b-4d4e-49d8-8457-15b82136abf3"
     },
     {
       "englishText": "Do you offer a discount?",
@@ -23945,7 +24389,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "cc67edb1-2e5a-4772-845d-733b10d4ee6e"
     },
     {
       "englishText": "This is too expensive.",
@@ -23978,7 +24423,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "70ae6a75-926b-4ca5-89d2-86b29882fb7c"
     },
     {
       "englishText": "I will buy this one.",
@@ -24012,7 +24458,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "66c016fb-13e8-43cb-9c05-285a3dbfabda"
     },
     {
       "englishText": "I study Persian.",
@@ -24045,7 +24492,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8399faa3-435e-4982-9225-995e713e4a01"
     },
     {
       "englishText": "Where do you work?",
@@ -24072,7 +24520,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "66dfff4e-e58e-4185-a6da-f3d13d5e5282"
     },
     {
       "englishText": "I have a lot of work.",
@@ -24099,7 +24548,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "200fdbf3-5627-4cc3-8cd0-d7f04aaa0618"
     },
     {
       "englishText": "Today is my day off.",
@@ -24127,7 +24577,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "14a90dca-2a92-4f50-8fb6-f4293ea927a6"
     },
     {
       "englishText": "Where is the pharmacy?",
@@ -24154,7 +24605,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7dbf9b97-fcd5-4752-99e1-ead5a6b56649"
     },
     {
       "englishText": "My stomach hurts.",
@@ -24189,7 +24641,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0dfa6344-9cca-4fc5-91ec-316df683cdf8"
     },
     {
       "englishText": "Do I need a prescription?",
@@ -24217,7 +24670,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d09bdd4e-131a-4b57-88ed-ead72d3b0880"
     },
     {
       "englishText": "I have a high fever.",
@@ -24250,7 +24704,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "14790ed3-083a-47ef-921b-63ad4f933be7"
     },
     {
       "englishText": "But I have another opinion.",
@@ -24296,7 +24751,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f0e4a7eb-4a04-49f1-8af8-3ecce9965a84"
     },
     {
       "englishText": "This is not my opinion.",
@@ -24335,7 +24791,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8d96f7b9-d285-489e-90c9-83783acbb08f"
     },
     {
       "englishText": "The internet is very slow today.",
@@ -24374,7 +24831,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2ad12e25-745f-4e02-8c20-2520f69e3a10"
     },
     {
       "englishText": "The TV won't turn on.",
@@ -24408,7 +24866,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c466e0d1-f986-4dcf-8307-46ac43c137b3"
     },
     {
       "englishText": "There is no warm water.",
@@ -24441,7 +24900,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b148f59f-4883-4042-881d-e2a1ff843650"
     },
     {
       "englishText": "This phone does not work.",
@@ -24475,7 +24935,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1ee700fa-f8ef-4304-8f1b-1f97313f95c3"
     },
     {
       "englishText": "Today's weather is very hot.",
@@ -24515,7 +24976,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "348450b3-9299-407a-b97e-b2e1c83e4547"
     },
     {
       "englishText": "The street is very crowded.",
@@ -24548,7 +25010,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9f311b7d-c62c-4f39-a767-b8abc25d7009"
     },
     {
       "englishText": "Is it raining outside?",
@@ -24581,7 +25044,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1a9eb719-7c87-4ae7-9871-5c33ee37330a"
     },
     {
       "englishText": "The traffic is very heavy.",
@@ -24614,7 +25078,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "89363d6c-97df-4654-b998-98994e6fb61c"
     },
     {
       "englishText": "The air is very dirty today.",
@@ -24653,7 +25118,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "55a0bfaf-ba24-460c-baf5-ad2213414c69"
     },
     {
       "englishText": "It is very cold outside.",
@@ -24686,7 +25152,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "050dbc1e-7483-4ea9-be90-828ed5b14223"
     },
     {
       "englishText": "Today the weather is very cool.",
@@ -24725,7 +25192,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e49a462c-663b-433b-abf8-4ecc972f09fe"
     },
     {
       "englishText": "Is the wind blowing now?",
@@ -24759,7 +25227,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "56d8b372-3f62-4824-a906-502a72fe419d"
     },
     {
       "englishText": "The street is completely closed.",
@@ -24792,7 +25261,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "78e7f5cd-d2e8-4e25-ad87-69acf84058f7"
     },
     {
       "englishText": "Traffic is moving very slowly.",
@@ -24832,7 +25302,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8f62b397-80d3-49b0-87e4-5574bf24683e"
     },
     {
       "englishText": "I do not think like that.",
@@ -24844,7 +25315,8 @@
       "grammarTags": [
         "compound-verb",
         "colloquial"
-      ]
+      ],
+      "id": "946788f5-5757-4096-a1b7-2873e3224c4d"
     },
     {
       "englishText": "This is not a good idea.",
@@ -24883,7 +25355,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ef017284-bc24-4708-9858-8f23ea1ddb26"
     },
     {
       "englishText": "That task is a bit difficult.",
@@ -24928,7 +25401,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a391b178-4742-4c71-b7ef-743801bf610f"
     },
     {
       "englishText": "How are you doing right now?",
@@ -24962,7 +25436,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7583a252-4ca0-4a77-b5c2-e5272f4f30ae"
     },
     {
       "englishText": "I miss you a lot.",
@@ -25002,7 +25477,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "49d2cc26-8b6e-4ee5-ba57-4d949286d56e"
     },
     {
       "englishText": "Where are you right now?",
@@ -25035,7 +25511,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "40b85f0b-0e5a-4dc9-9a2e-1ca2c7530ae9"
     },
     {
       "englishText": "I hear your voice clearly.",
@@ -25070,7 +25547,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "568f891f-f057-449e-981d-215048635c79"
     },
     {
       "englishText": "What is the price of this?",
@@ -25104,7 +25582,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "10227f72-a217-43b3-bb33-2860907571b7"
     },
     {
       "englishText": "How much are these apples?",
@@ -25138,7 +25617,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "978a7d79-63f8-4706-bfa8-c1a3a352ad10"
     },
     {
       "englishText": "Is this bread fresh?",
@@ -25171,7 +25651,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7095f9e8-0a4c-4710-be85-818a1ec8021b"
     },
     {
       "englishText": "Do you have fresh milk?",
@@ -25204,7 +25685,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "83d3df41-a819-48eb-84fd-32c290047f3e"
     },
     {
       "englishText": "Go straight from here.",
@@ -25244,7 +25726,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d1912036-61d4-4fa8-bf42-bbabc3995643"
     },
     {
       "englishText": "Turn left at the corner.",
@@ -25283,7 +25766,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3a7537bb-b3f3-475a-9fbb-3f37f7118fbc"
     },
     {
       "englishText": "You are very kind.",
@@ -25316,7 +25800,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "30556759-09f6-4579-8306-c1c5c45e7882"
     },
     {
       "englishText": "I came home late.",
@@ -25350,7 +25835,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0c8e540d-197b-49c4-ac3f-143d2036d4b4"
     },
     {
       "englishText": "I bought a book.",
@@ -25383,7 +25869,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d02e2b77-059c-4a68-bb9c-d688e786222e"
     },
     {
       "englishText": "How much is the total?",
@@ -25417,7 +25904,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0c12dd2c-d562-4d87-aaaf-1bf225116605"
     },
     {
       "englishText": "Do you have a smaller size?",
@@ -25451,7 +25939,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5f4a4e72-cf8d-4c41-a103-bff14e264ee8"
     },
     {
       "englishText": "Are you going straight, sir?",
@@ -25485,7 +25974,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "159b3738-051e-48cf-9b7d-267a5ca12df7"
     },
     {
       "englishText": "Do you want a taxi now?",
@@ -25519,7 +26009,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "32962717-1457-48d6-90d9-73e50262ba36"
     },
     {
       "englishText": "I want ten thousand tomans.",
@@ -25559,7 +26050,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4ddba36d-1888-45f6-8468-ee44d59e3c5a"
     },
     {
       "englishText": "Can you go straight?",
@@ -25594,7 +26086,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "dd9707e6-d933-436f-b4eb-e18796fa0e6f"
     },
     {
       "englishText": "I couldn't park here.",
@@ -25635,7 +26128,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a177f32d-8e18-4c99-afc3-8ffaf304224d"
     },
     {
       "englishText": "Do you know the way?",
@@ -25669,7 +26163,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "819fd03d-baf9-48ab-84f7-e1b4ce574842"
     },
     {
       "englishText": "I didn't know the ticket price.",
@@ -25710,7 +26205,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a3954f46-5c20-44e6-b56b-56cbf79a1b80"
     },
     {
       "englishText": "Do you know this street?",
@@ -25750,7 +26246,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ed48b0bd-2de4-4113-9a1a-08e049681cf7"
     },
     {
       "englishText": "I recognized that driver.",
@@ -25790,7 +26287,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4fec85f1-e9d4-4800-bc90-b0e5bd05b482"
     },
     {
       "englishText": "I brought the money.",
@@ -25824,7 +26322,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "41bf0bc5-6ed2-47c9-8910-eebea15fa47f"
     },
     {
       "englishText": "Will you bring your car?",
@@ -25859,7 +26358,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ebb1c03e-18f5-4732-a63c-92e5760452b3"
     },
     {
       "englishText": "He took my bag to the car.",
@@ -25907,7 +26407,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "eb2d8c72-10bd-4c3c-af25-68ad104246d9"
     },
     {
       "englishText": "Where are you taking me?",
@@ -25947,7 +26448,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a11b956f-4e13-4b7f-a161-01140b0b1b00"
     },
     {
       "englishText": "I want to buy a ticket.",
@@ -25981,7 +26483,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "72f0e97a-1112-4bee-a5eb-9f0294299ee6"
     },
     {
       "englishText": "Could you buy a card?",
@@ -26015,7 +26518,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c6fd7880-5af1-4ee4-bc5a-bd1dbca15107"
     },
     {
       "englishText": "I don't know the exact price.",
@@ -26056,7 +26560,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "370248ed-80d5-494a-a322-510a3e7c4624"
     },
     {
       "englishText": "I didn't recognize this hotel.",
@@ -26096,7 +26601,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d02d92b1-1217-4c40-8de4-4ca4ae89d923"
     },
     {
       "englishText": "I didn't bring cash.",
@@ -26130,7 +26636,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a7d4238e-abfa-4032-91ea-9681bf9cedaa"
     },
     {
       "englishText": "I will take the bicycle.",
@@ -26165,7 +26672,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8c42aaab-0c56-441f-bb20-f927e0b8afad"
     },
     {
       "englishText": "I want a cold drink.",
@@ -26177,7 +26685,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "1136a5d5-cda5-4f2b-9d2d-bc58ad04639e"
     },
     {
       "englishText": "Do you want this hot soup?",
@@ -26190,7 +26699,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "e40c5199-e1e9-4334-9ca0-2729d67a3db5"
     },
     {
       "englishText": "We want warm weather.",
@@ -26202,7 +26712,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "cce4e90a-34e3-4529-a38d-2f7f37b5e19e"
     },
     {
       "englishText": "Pick up your fork!",
@@ -26237,7 +26748,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e227d79a-fc96-490f-b324-e5d15951cc06"
     },
     {
       "englishText": "I didn't pick up that heavy box.",
@@ -26250,7 +26762,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "b4d15e7a-d0ce-4d28-afb7-54841144c73d"
     },
     {
       "englishText": "Should I take this big apple?",
@@ -26264,7 +26777,8 @@
         "ra-marker",
         "ezafe",
         "subjunctive"
-      ]
+      ],
+      "id": "758b2d8b-aae0-4988-8460-d74a1964fd8a"
     },
     {
       "englishText": "Does he sell sour cherries?",
@@ -26298,7 +26812,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3843fa5f-9da7-4a95-bd24-3e73713de832"
     },
     {
       "englishText": "They don't sell fresh fish here.",
@@ -26311,7 +26826,8 @@
         "colloquial",
         "ezafe",
         "verb-agreement"
-      ]
+      ],
+      "id": "38ea4049-268a-4e16-b068-8f72747dee2c"
     },
     {
       "englishText": "I sold my old bicycle.",
@@ -26325,7 +26841,8 @@
         "ra-marker",
         "ezafe",
         "pronoun-clitic"
-      ]
+      ],
+      "id": "c2ecaa8c-d5a6-4ec7-8cc1-bff2d823f67e"
     },
     {
       "englishText": "Write the food order.",
@@ -26338,7 +26855,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "dec090f3-311f-4786-a2ed-b6d6b4442b73"
     },
     {
       "englishText": "Write the name of this beautiful season.",
@@ -26351,7 +26869,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "6d3a5867-d9cd-4ecc-9c4f-debdb05e3e4c"
     },
     {
       "englishText": "I didn't write the restaurant's name.",
@@ -26364,7 +26883,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "6545968e-1372-4a06-86cd-823e2aa073fb"
     },
     {
       "englishText": "Do you understand his difficult language?",
@@ -26378,7 +26898,8 @@
         "ra-marker",
         "ezafe",
         "pronoun-clitic"
-      ]
+      ],
+      "id": "0d88dd33-d9e9-496a-bd39-45c4c39f67fe"
     },
     {
       "englishText": "Did you understand the weather report?",
@@ -26391,7 +26912,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "10586c22-77bd-42e6-8671-275e660a9267"
     },
     {
       "englishText": "I don't understand this strange sign.",
@@ -26404,7 +26926,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "9c13ded6-e350-479f-b1db-a7df8529cd8c"
     },
     {
       "englishText": "Ask that polite waiter!",
@@ -26417,7 +26940,8 @@
         "colloquial",
         "ezafe",
         "preposition"
-      ]
+      ],
+      "id": "e6114666-de39-48aa-8260-1c27a60f4198"
     },
     {
       "englishText": "Did you ask about the weather?",
@@ -26451,7 +26975,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5f787322-de56-41b2-be33-8d8c48adb544"
     },
     {
       "englishText": "They didn't ask about our dinner.",
@@ -26486,7 +27011,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "cc1428ae-d718-4fb0-b400-3fb49da72905"
     },
     {
       "englishText": "He wants fifty dollars.",
@@ -26526,7 +27052,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "bdbbd883-2396-4c82-a5be-18fddeeaf65b"
     },
     {
       "englishText": "We want a private taxi.",
@@ -26561,7 +27088,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "eedaae40-7f44-4408-ada3-98be84a8dbaa"
     },
     {
       "englishText": "I picked up fifty thousand tomans.",
@@ -26601,7 +27129,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a318fd5f-0457-4767-b724-fb60b2a0d699"
     },
     {
       "englishText": "Why didn't you pick up your phone?",
@@ -26643,7 +27172,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7e4e0aa4-8926-406d-99ad-02d0762be883"
     },
     {
       "englishText": "Sit in the front.",
@@ -26671,7 +27201,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "85ea401f-5325-4233-a5d7-6dbb996c65a4"
     },
     {
       "englishText": "Did you sit on the seat?",
@@ -26705,7 +27236,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0f51084a-2fee-4c23-ac28-51920eedb8a9"
     },
     {
       "englishText": "We walked in the park.",
@@ -26740,7 +27272,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0b38d737-b05b-44ca-843f-773a292b426f"
     },
     {
       "englishText": "I want to walk.",
@@ -26753,7 +27286,8 @@
         "compound-verb",
         "subjunctive",
         "colloquial"
-      ]
+      ],
+      "id": "09c52ac2-60f6-4b39-870a-d50607b38264"
     },
     {
       "englishText": "I don't like this cheap car.",
@@ -26801,7 +27335,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6f2e24e6-b7b3-4f00-9929-a83f140488c8"
     },
     {
       "englishText": "He loves fast driving.",
@@ -26843,7 +27378,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9f5c8493-b495-485c-9cd7-2beec4892aee"
     },
     {
       "englishText": "Wait here for the taxi.",
@@ -26885,7 +27421,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2681dd6c-7815-431f-a8f8-f62225e49d56"
     },
     {
       "englishText": "Did you wait for the metro?",
@@ -26921,7 +27458,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2eb6d7c9-1fe4-4b89-a2c9-8caaa4708f40"
     },
     {
       "englishText": "I want three tickets.",
@@ -26961,7 +27499,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "08d40dbd-d3c3-43d0-a29a-a938697f1009"
     },
     {
       "englishText": "Don't take the money!",
@@ -26995,7 +27534,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ec8b7448-8725-46d3-9f0e-1ce719184044"
     },
     {
       "englishText": "Did he sit in the back?",
@@ -27029,7 +27569,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "dc7428dd-de80-4d09-a207-d271c6fcd57a"
     },
     {
       "englishText": "Why are you walking so fast?",
@@ -27069,7 +27610,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c437f8e8-ef59-4f76-b935-8fd87f30f3b2"
     },
     {
       "englishText": "Do you like this car?",
@@ -27109,7 +27651,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7aae02e1-f57c-4f0c-b900-f965ffc0e9a9"
     },
     {
       "englishText": "I waited for twenty minutes.",
@@ -27144,7 +27687,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "494cc28c-2413-4c72-bf2e-ab8aef1b19b7"
     },
     {
       "englishText": "I want a cheap taxi.",
@@ -27185,7 +27729,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "979bdb20-0de9-4522-82a2-2bfe7b63b6c3"
     },
     {
       "englishText": "Take the driver's license!",
@@ -27197,7 +27742,8 @@
       "grammarTags": [
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "1c2a6447-78a0-471a-be56-2fd18c9ca12b"
     },
     {
       "englishText": "I didn't find the metro station.",
@@ -27211,7 +27757,8 @@
         "ezafe",
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "226ab403-bb10-497d-8c1a-c7208863696b"
     },
     {
       "englishText": "I have told my brother.",
@@ -27246,7 +27793,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0c9f0693-62db-481a-b4ca-50e780d89444"
     },
     {
       "englishText": "The heavy traffic is starting.",
@@ -27281,7 +27829,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c201e2e6-489f-4d32-8994-db102a6ec1af"
     },
     {
       "englishText": "Finish your homework!",
@@ -27295,7 +27844,8 @@
         "pronoun-clitic",
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "f2df4244-7ec0-489f-ad9d-f91299f212ad"
     },
     {
       "englishText": "She didn't want a big wedding.",
@@ -27341,7 +27891,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "dffa1818-9eb1-474c-96de-fe63aae05e66"
     },
     {
       "englishText": "Do you get a receipt?",
@@ -27369,7 +27920,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8332db75-f18c-4566-b09b-1bc9b80641a4"
     },
     {
       "englishText": "I will find the car key.",
@@ -27383,7 +27935,8 @@
         "ezafe",
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "8b40ece8-4d16-4849-8378-12c80b7c1258"
     },
     {
       "englishText": "Tell the driver!",
@@ -27417,7 +27970,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c5c841b9-7290-4bfc-aac9-8fdd5101ddaa"
     },
     {
       "englishText": "We didn't start the party.",
@@ -27430,7 +27984,8 @@
         "compound-verb",
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "d46a63de-8ae5-4ba1-8130-6d7ebb8ebb77"
     },
     {
       "englishText": "I have run out of gas.",
@@ -27458,7 +28013,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2e798d8d-ced2-4c61-a533-67740239e073"
     },
     {
       "englishText": "Do you want this seat?",
@@ -27470,7 +28026,8 @@
       "grammarTags": [
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "b12e0904-c6f4-42da-aa46-498b2c0c96b5"
     },
     {
       "englishText": "He didn't take the photo.",
@@ -27482,7 +28039,8 @@
       "grammarTags": [
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "e184951e-df55-45bc-932d-3ba86a9d051a"
     },
     {
       "englishText": "I found a good friend.",
@@ -27523,7 +28081,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "462fea08-bb59-46fc-826a-81d091af24f1"
     },
     {
       "englishText": "I didn't say that.",
@@ -27535,7 +28094,8 @@
       "grammarTags": [
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "cbfea1f9-d30e-41a9-8c95-d280eb369632"
     },
     {
       "englishText": "We are starting our trip.",
@@ -27549,7 +28109,8 @@
         "ra-marker",
         "pronoun-clitic",
         "colloquial"
-      ]
+      ],
+      "id": "e93251be-9571-4617-b62d-f54d6b8486a6"
     },
     {
       "englishText": "She didn't finish her dinner.",
@@ -27563,7 +28124,8 @@
         "ra-marker",
         "pronoun-clitic",
         "colloquial"
-      ]
+      ],
+      "id": "b9824561-6083-4c74-9e5a-0a8606447a6c"
     },
     {
       "englishText": "I want hot tea.",
@@ -27604,7 +28166,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6b7c2cf4-b8f3-4694-b005-7aaa54d8845b"
     },
     {
       "englishText": "Did you bring the salt?",
@@ -27639,7 +28202,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9f4c3b01-d7d5-4186-a2b7-3c62e692c0ab"
     },
     {
       "englishText": "I don't know the recipe.",
@@ -27652,7 +28216,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "61b93a40-a688-41f6-9b4d-13d47723af95"
     },
     {
       "englishText": "Who picked up the spoon?",
@@ -27693,7 +28258,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c7509511-5f02-41d4-8c2a-7c4b25688be5"
     },
     {
       "englishText": "They sell fresh bread here.",
@@ -27706,7 +28272,8 @@
         "colloquial",
         "ezafe",
         "vocab-gap"
-      ]
+      ],
+      "id": "5f24a2d2-bf12-4579-9d13-9526f00d65d5"
     },
     {
       "englishText": "I wrote the order.",
@@ -27741,7 +28308,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "73ec9800-8964-441f-8f09-576774c58b0c"
     },
     {
       "englishText": "I don't want cold weather.",
@@ -27753,7 +28321,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "9d5bdb2b-0db0-437d-a805-2e4306804598"
     },
     {
       "englishText": "He is bringing an umbrella.",
@@ -27787,7 +28356,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7116d607-376e-497b-8d78-b8919e1f9d97"
     },
     {
       "englishText": "Do you know the weather tomorrow?",
@@ -27800,7 +28370,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "b70ae022-1624-484a-88c3-a031ae4b8a1d"
     },
     {
       "englishText": "Did you pick up your jacket?",
@@ -27836,7 +28407,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c716b739-4501-483f-92ad-b7d7a6f06f3c"
     },
     {
       "englishText": "They don't sell ice cream in winter.",
@@ -27870,7 +28442,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "951aa6a1-5e78-4487-882d-1f8a8823beae"
     },
     {
       "englishText": "Have you written the weather report?",
@@ -27884,7 +28457,8 @@
         "ra-marker",
         "ezafe",
         "verb-tense"
-      ]
+      ],
+      "id": "d86fc0c6-ef46-40dc-980a-19c2f682c28c"
     },
     {
       "englishText": "What do you want, dear?",
@@ -27918,7 +28492,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c8e403cf-4da5-42ed-a3dc-ab150f8f50ac"
     },
     {
       "englishText": "I have brought a small gift for you.",
@@ -27932,7 +28507,8 @@
         "preposition",
         "ezafe",
         "verb-tense"
-      ]
+      ],
+      "id": "05099d22-1cfe-4597-82e3-82a611cf8430"
     },
     {
       "englishText": "I know your kindness.",
@@ -27946,7 +28522,8 @@
         "formality",
         "pronoun-clitic",
         "ra-marker"
-      ]
+      ],
+      "id": "295dca22-23f3-49dd-bead-e6aa74eeef15"
     },
     {
       "englishText": "You always pick up the bill.",
@@ -27994,7 +28571,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6ba2ade2-db4d-46e3-a411-5cae809fb050"
     },
     {
       "englishText": "They sold hot soup today.",
@@ -28034,7 +28612,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d4d58ea9-d1c4-41f9-a36b-fd712a59d7d6"
     },
     {
       "englishText": "I wrote a polite letter.",
@@ -28074,7 +28653,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c04ec42a-b08f-4d72-b7c8-d82e6480d857"
     },
     {
       "englishText": "I don't want fish today.",
@@ -28108,7 +28688,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "43c8e334-864d-42da-ae48-1ec5406c0fad"
     },
     {
       "englishText": "Do you know the autumn weather?",
@@ -28121,7 +28702,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "4b10bb8d-3f1f-455a-a7d8-94b90988040b"
     },
     {
       "englishText": "My brother read the letter.",
@@ -28134,7 +28716,8 @@
         "colloquial",
         "ra-marker",
         "pronoun-clitic"
-      ]
+      ],
+      "id": "790845f5-f75b-4b91-bf82-14197e508ade"
     },
     {
       "englishText": "I didn't understand the menu.",
@@ -28146,7 +28729,8 @@
       "grammarTags": [
         "colloquial",
         "ra-marker"
-      ]
+      ],
+      "id": "a1c9a670-7154-4664-be35-53648e324434"
     },
     {
       "englishText": "Why is your sister getting up?",
@@ -28181,7 +28765,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1ca36ac7-7482-4462-9193-b0a4bfe76bc5"
     },
     {
       "englishText": "I want to talk with my mother.",
@@ -28223,7 +28808,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4bb3cea4-d650-4146-a80c-de3b45fac208"
     },
     {
       "englishText": "My son wanted ice cream.",
@@ -28257,7 +28843,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0c61e098-8a4a-46c3-9d8f-895149e0f330"
     },
     {
       "englishText": "We don't know the spring weather.",
@@ -28270,7 +28857,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "0047c1cd-546a-4fff-aa97-40bb3b4d9223"
     },
     {
       "englishText": "My sister sings well.",
@@ -28304,7 +28892,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9f344611-dadc-466a-8177-11c77c266c20"
     },
     {
       "englishText": "I understand your hunger.",
@@ -28317,7 +28906,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "77110c5b-6909-43cd-9b03-be7afa17f547"
     },
     {
       "englishText": "A warm wind got up.",
@@ -28358,7 +28948,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6d290c36-e1f0-4817-80d3-68a141c89d0d"
     },
     {
       "englishText": "I didn't talk with my brother.",
@@ -28393,7 +28984,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "59a9daf3-f674-4f5e-a926-d71ec0b04f9e"
     },
     {
       "englishText": "I want to eat lunch.",
@@ -28428,7 +29020,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3764df65-ff64-4d63-aab0-a17564da7ef4"
     },
     {
       "englishText": "My sister knew your secret.",
@@ -28442,7 +29035,8 @@
         "pronoun-clitic",
         "ra-marker",
         "verb-tense"
-      ]
+      ],
+      "id": "66cff4d5-adcd-46d2-9b9b-ec2668ddc8ee"
     },
     {
       "englishText": "I want to read the menu.",
@@ -28455,7 +29049,8 @@
         "colloquial",
         "ra-marker",
         "subjunctive"
-      ]
+      ],
+      "id": "e1fffd34-776c-4ed5-8f15-024b65102ef6"
     },
     {
       "englishText": "You don't understand my mother.",
@@ -28468,7 +29063,8 @@
         "colloquial",
         "pronoun-clitic",
         "ra-marker"
-      ]
+      ],
+      "id": "f1b8ce91-0470-4731-9e7a-61b0c216c4fa"
     },
     {
       "englishText": "My husband didn't get up from the table.",
@@ -28482,7 +29078,8 @@
         "compound-verb",
         "pronoun-clitic",
         "ezafe"
-      ]
+      ],
+      "id": "aafbe73f-3095-4499-ac06-bc7e32954e06"
     },
     {
       "englishText": "We are talking about food.",
@@ -28496,7 +29093,8 @@
         "compound-verb",
         "preposition",
         "ezafe"
-      ]
+      ],
+      "id": "eda934d5-c349-4cd6-8615-d8f8462e3630"
     },
     {
       "englishText": "I opened the window.",
@@ -28509,7 +29107,8 @@
         "ra-marker",
         "colloquial",
         "compound-verb"
-      ]
+      ],
+      "id": "35f85c25-467a-43cd-a80a-5d5da5da4ce5"
     },
     {
       "englishText": "I will get a taxi.",
@@ -28543,7 +29142,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "58c5fbc3-fcb6-4e81-9c4c-1c285c576cbd"
     },
     {
       "englishText": "I want a glass of water.",
@@ -28583,7 +29183,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "90330988-c035-4e4c-b79c-268a7a68c069"
     },
     {
       "englishText": "I couldn't sleep.",
@@ -28611,7 +29212,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f8f9f6d3-eec7-4ca3-8d57-f4c0dddd1781"
     },
     {
       "englishText": "We need a car.",
@@ -28651,7 +29253,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3ce2e5a5-9e87-44e7-b183-d3f59f2fc4a2"
     },
     {
       "englishText": "He is helping me.",
@@ -28686,7 +29289,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3711df11-b7a9-418e-a3e7-5aaf79203ae7"
     },
     {
       "englishText": "I got my driver's license.",
@@ -28699,7 +29303,8 @@
         "pronoun-clitic",
         "ra-marker",
         "colloquial"
-      ]
+      ],
+      "id": "3185c3fb-2709-4b02-908e-be3600c40fae"
     },
     {
       "englishText": "She didn't want this.",
@@ -28734,7 +29339,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "32b59ae4-bcab-414b-b8f0-fd398931758e"
     },
     {
       "englishText": "I am opening the door.",
@@ -28747,7 +29353,8 @@
         "ra-marker",
         "colloquial",
         "compound-verb"
-      ]
+      ],
+      "id": "ec207c30-f54b-415d-b364-9c9c44acb04d"
     },
     {
       "englishText": "I needed a key.",
@@ -28787,7 +29394,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "879d9d81-5a22-4410-9700-f9fcc9c32787"
     },
     {
       "englishText": "They helped us.",
@@ -28827,7 +29435,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a5313545-6a9d-485c-baf2-1b4bfed43990"
     },
     {
       "englishText": "Do you want tea?",
@@ -28855,7 +29464,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7167c97e-9428-4ad8-9afa-fb9d42e95441"
     },
     {
       "englishText": "We will get a ticket.",
@@ -28883,7 +29493,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3d48e28c-1f42-4eee-bba6-c15148199f0d"
     },
     {
       "englishText": "Can you see?",
@@ -28911,7 +29522,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0eb060ee-6861-4431-ad13-f9e925664183"
     },
     {
       "englishText": "Do you need a plate?",
@@ -28939,7 +29551,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "97cb710b-f194-4f2c-8c3b-76ce037be5ef"
     },
     {
       "englishText": "You didn't help me.",
@@ -28974,7 +29587,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "06b70ce9-aba6-47f6-9845-2a630af64b24"
     },
     {
       "englishText": "I didn't open the box.",
@@ -28987,7 +29601,8 @@
         "ra-marker",
         "compound-verb",
         "colloquial"
-      ]
+      ],
+      "id": "c5bbd7d2-d054-4df1-9042-9af1c70e73a0"
     },
     {
       "englishText": "I couldn't find my keys.",
@@ -29001,7 +29616,8 @@
         "pronoun-clitic",
         "colloquial",
         "subjunctive"
-      ]
+      ],
+      "id": "fcfd87f6-fe18-4b0d-88b4-fec595ce8915"
     },
     {
       "englishText": "I didn't know the answer.",
@@ -29036,7 +29652,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c3a68e07-4609-4ef6-9692-d4a1dad44f87"
     },
     {
       "englishText": "Do you want to know?",
@@ -29064,7 +29681,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2d7948e2-3731-435a-a4c6-05e2beff893e"
     },
     {
       "englishText": "I used to know this address.",
@@ -29105,7 +29723,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d64afe7d-e8d4-416c-87d4-e4cb96485b25"
     },
     {
       "englishText": "I didn't recognize your manager.",
@@ -29140,7 +29759,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "55b71730-e5c4-4fda-ad63-36196fb43d11"
     },
     {
       "englishText": "I want to know the new chef.",
@@ -29188,7 +29808,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "bc558f4c-540b-4e74-b732-6cf362644f80"
     },
     {
       "englishText": "We used to know that doctor.",
@@ -29229,7 +29850,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ac40ac64-a0e4-4032-b101-12560798c9b9"
     },
     {
       "englishText": "We didn't sell our car.",
@@ -29264,7 +29886,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4a56e1c1-1e46-459f-b771-96c5e325b5d9"
     },
     {
       "englishText": "He wants to sell his laptop.",
@@ -29306,7 +29929,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "41962bde-a4ca-4497-821a-9bbdd1134294"
     },
     {
       "englishText": "He was selling fresh bread.",
@@ -29341,7 +29965,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e014b555-ca54-454f-bc9f-1dbb9a3ce111"
     },
     {
       "englishText": "I didn't read the text message.",
@@ -29375,7 +30000,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5433d66a-8992-4ccc-8e58-992431bdf9dc"
     },
     {
       "englishText": "Should I read this menu?",
@@ -29416,7 +30042,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5dc3d8bd-8e90-4452-b7be-2934d2820b33"
     },
     {
       "englishText": "I was reading a book.",
@@ -29450,7 +30077,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0bee3405-7965-4c60-8d49-89c9cc9ab9fd"
     },
     {
       "englishText": "I didn't understand your message.",
@@ -29485,7 +30113,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c95f1844-48e0-4fff-a82d-668596ebdd6b"
     },
     {
       "englishText": "He wants to understand the lesson.",
@@ -29526,7 +30155,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e69ea771-3689-44cc-b4a0-dfc7ed9d68f7"
     },
     {
       "englishText": "I have understood the main point.",
@@ -29568,7 +30198,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c7445521-b075-4a75-a014-634a089a926b"
     },
     {
       "englishText": "I didn't ask the price.",
@@ -29602,7 +30233,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "580c9ec0-18ac-4ad2-b124-8b717c3f95f6"
     },
     {
       "englishText": "I want to ask a question.",
@@ -29642,7 +30274,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "65c4c663-3545-41e5-8de5-44b2c9a75ded"
     },
     {
       "englishText": "She was always asking about you.",
@@ -29684,7 +30317,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8e8b826b-8e0d-47b0-8f06-d646b4bef79a"
     },
     {
       "englishText": "I sleep at ten o'clock.",
@@ -29696,7 +30330,8 @@
       "grammarTags": [
         "colloquial",
         "word-order"
-      ]
+      ],
+      "id": "af227d56-e43b-47e6-a8eb-ea7f191e5ee6"
     },
     {
       "englishText": "I don't sit on this chair.",
@@ -29742,7 +30377,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d6414157-0edc-4611-99fe-e506154c3a3c"
     },
     {
       "englishText": "Why do you search for your book?",
@@ -29755,7 +30391,8 @@
         "colloquial",
         "pronoun-clitic",
         "compound-verb"
-      ]
+      ],
+      "id": "6123d7b6-d5d6-4168-b09e-8a30f4c37cd1"
     },
     {
       "englishText": "Does he come on Fridays?",
@@ -29790,7 +30427,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b4bc69a9-8eb9-4777-8302-0b83bbfa610d"
     },
     {
       "englishText": "You must say your problem.",
@@ -29832,7 +30470,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9470e18b-f41a-48b1-b0cc-087413c31391"
     },
     {
       "englishText": "I want to take your hand.",
@@ -29874,7 +30513,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f8f47f2b-5165-4f69-a5b3-e3d9eaea1050"
     },
     {
       "englishText": "Why don't you come to work?",
@@ -29886,7 +30526,8 @@
       "grammarTags": [
         "colloquial",
         "preposition"
-      ]
+      ],
+      "id": "a3ea7c09-0c34-47ec-9b21-fb6a4ab98352"
     },
     {
       "englishText": "I want to sleep now.",
@@ -29920,7 +30561,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "51854276-65b1-4e93-9ac6-497dce63b2d8"
     },
     {
       "englishText": "We don't sit in the class.",
@@ -29960,7 +30602,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "04a80f61-59de-4e19-a151-3958d209e7a0"
     },
     {
       "englishText": "When does he come?",
@@ -29994,7 +30637,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a586ea37-9dac-4a6f-8c28-193742b403da"
     },
     {
       "englishText": "My eyes are looking for you.",
@@ -30029,7 +30673,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c905f9b2-a252-4fba-9251-7d53f94bb8ad"
     },
     {
       "englishText": "She doesn't say her salary.",
@@ -30070,7 +30715,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "95193d2c-8fa2-4c1d-9987-0c360878ebfd"
     },
     {
       "englishText": "Do you take medicine?",
@@ -30103,7 +30749,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f21f7c8f-e9d0-47cf-81d9-f0d0f5532136"
     },
     {
       "englishText": "We want to come on Saturday.",
@@ -30137,7 +30784,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b61cf0b6-622f-46fc-b3a7-9315995fec9a"
     },
     {
       "englishText": "Where do we sit at noon?",
@@ -30171,7 +30819,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b620e8c4-8f8a-4b49-9a79-30c629ad1387"
     },
     {
       "englishText": "They are looking for a job.",
@@ -30184,7 +30833,8 @@
         "colloquial",
         "verb-agreement",
         "compound-verb"
-      ]
+      ],
+      "id": "9e4221e1-c18b-4675-9fc1-68010bf6e84e"
     },
     {
       "englishText": "He doesn't take his bag.",
@@ -30225,7 +30875,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "aa0ac7de-8216-41bb-984c-7bee7b982a32"
     },
     {
       "englishText": "Do you sleep during the day?",
@@ -30253,7 +30904,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0168ea37-0499-4fb2-bd84-0ddcbf6d2710"
     },
     {
       "englishText": "Are you coming here today?",
@@ -30287,7 +30939,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "481d0a39-cf6f-4330-aed3-8f2ffe5f2133"
     },
     {
       "englishText": "He told me the truth.",
@@ -30328,7 +30981,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8fd7cbe1-61a8-48de-84bc-04967834e73a"
     },
     {
       "englishText": "Take my number.",
@@ -30363,7 +31017,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b96186a2-a4be-4cc7-a421-cb4eba789082"
     },
     {
       "englishText": "I sleep well here.",
@@ -30397,7 +31052,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "53a456c0-6b00-4792-a0c4-ee412aa39cef"
     },
     {
       "englishText": "We are sitting in the shade.",
@@ -30431,7 +31087,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9c53541f-07ef-497c-979f-8fa05b883ce5"
     },
     {
       "englishText": "I searched the whole city.",
@@ -30444,7 +31101,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "ad1736ff-4d50-4b3c-acd4-5a0d01d5973f"
     },
     {
       "englishText": "What did he say on the phone?",
@@ -30456,7 +31114,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "b20e0574-faae-4dfc-9bed-7c7f0403460a"
     },
     {
       "englishText": "Did you get a taxi in the rain?",
@@ -30496,7 +31155,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4fd85faf-4fc3-4c08-a5b4-8868f9c14769"
     },
     {
       "englishText": "I liked your work.",
@@ -30538,7 +31198,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1e9e9160-a08f-40d6-a197-1977a2bdbf61"
     },
     {
       "englishText": "Have you slept already?",
@@ -30572,7 +31233,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d069543a-67b2-4bdf-97dd-302bf800efc2"
     },
     {
       "englishText": "Sit next to me.",
@@ -30584,7 +31246,8 @@
       "grammarTags": [
         "colloquial",
         "ezafe"
-      ]
+      ],
+      "id": "55925875-2ca3-4505-a8b5-1089a723ecf9"
     },
     {
       "englishText": "Don't look for excuses.",
@@ -30618,7 +31281,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7a305e1e-7195-478b-bbbd-bb3e92ecc233"
     },
     {
       "englishText": "I already told her the plan.",
@@ -30659,7 +31323,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d4949792-dd90-43d8-8035-6b9137faccc2"
     },
     {
       "englishText": "I felt very sad.",
@@ -30694,7 +31359,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d5dd7d15-a028-4fa3-8b04-d9fb916bcc99"
     },
     {
       "englishText": "It is raining.",
@@ -30728,7 +31394,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7b027c82-c899-4e23-b363-261576724971"
     },
     {
       "englishText": "Why aren't you sleeping now?",
@@ -30762,7 +31429,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e56d6af4-f98a-4f8c-9730-0d55b6739bc2"
     },
     {
       "englishText": "We sat there.",
@@ -30796,7 +31464,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "631743e0-7967-4c9a-bc1f-acabbcf344ae"
     },
     {
       "englishText": "Did you search the net?",
@@ -30808,7 +31477,8 @@
       "grammarTags": [
         "colloquial",
         "preposition"
-      ]
+      ],
+      "id": "522a412c-2c03-47a7-a48f-69cd21785e91"
     },
     {
       "englishText": "Put the key on the table.",
@@ -30821,7 +31491,8 @@
         "colloquial",
         "ra-marker",
         "preposition"
-      ]
+      ],
+      "id": "802cf3cf-bfa1-43bc-bcf3-d739c9b10e3a"
     },
     {
       "englishText": "When do you sleep?",
@@ -30849,7 +31520,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e77d64d8-e2d8-4d05-bb4a-672e32e763af"
     },
     {
       "englishText": "We sat in the park.",
@@ -30890,7 +31562,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e0f1295b-2590-4644-b97b-327526aaee1b"
     },
     {
       "englishText": "I don't want it for Saturday.",
@@ -30924,7 +31597,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "b1e2264a-f59e-4d31-9696-a532a4388c4c"
     },
     {
       "englishText": "Did you pick up the book?",
@@ -30937,7 +31611,8 @@
         "colloquial",
         "ra-marker",
         "verb-tense"
-      ]
+      ],
+      "id": "e8272b06-ac19-4d09-b72e-e52240105607"
     },
     {
       "englishText": "Bring some water for me.",
@@ -30971,7 +31646,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "082c2dc9-b100-494b-ac8c-ca688c7e2cf1"
     },
     {
       "englishText": "Sit here, please.",
@@ -31004,7 +31680,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a93278b3-0663-4f53-954d-b6896266a310"
     },
     {
       "englishText": "I slept early last night.",
@@ -31038,7 +31715,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "501bc325-aa21-4111-85e6-ed99bd305b62"
     },
     {
       "englishText": "Did you bring the calendar today?",
@@ -31051,7 +31729,8 @@
         "colloquial",
         "ra-marker",
         "verb-tense"
-      ]
+      ],
+      "id": "7c6b32d2-f4c5-428e-a0b8-914fdd736436"
     },
     {
       "englishText": "I don't park my car here.",
@@ -31064,7 +31743,8 @@
         "colloquial",
         "pronoun-clitic",
         "ra-marker"
-      ]
+      ],
+      "id": "e829f787-bd0f-4066-80d7-edb05e2ef194"
     },
     {
       "englishText": "I don't want this old carpet.",
@@ -31077,7 +31757,8 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ]
+      ],
+      "id": "a51e5e77-0a1b-482e-83c5-066f193658d3"
     },
     {
       "englishText": "Pick up the phone now!",
@@ -31089,7 +31770,8 @@
       "grammarTags": [
         "colloquial",
         "ra-marker"
-      ]
+      ],
+      "id": "a4f9646c-a549-4752-bbef-d6862dafb16f"
     },
     {
       "englishText": "I have brought the food to the park.",
@@ -31102,7 +31784,8 @@
         "colloquial",
         "ra-marker",
         "preposition"
-      ]
+      ],
+      "id": "cb5e7946-9bc3-4c5a-bbf3-750870cdcdac"
     },
     {
       "englishText": "I don't sit in the yard on Mondays.",
@@ -31143,7 +31826,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "392d9f25-0f13-4da3-af39-267fab9c97ec"
     },
     {
       "englishText": "Where did you put my glasses?",
@@ -31156,7 +31840,8 @@
         "colloquial",
         "pronoun-clitic",
         "ra-marker"
-      ]
+      ],
+      "id": "44b2298e-d457-427b-9d6c-e2d3511088a3"
     },
     {
       "englishText": "I don't want this hot weather.",
@@ -31203,7 +31888,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d1d2940f-e47a-4995-bb63-bd82b05f58ee"
     },
     {
       "englishText": "Yesterday we walked in the rain.",
@@ -31244,7 +31930,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c9c8bc69-7bc9-4eb7-8dc7-c5bc58b5cc30"
     },
     {
       "englishText": "I waited for two hours.",
@@ -31278,7 +31965,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "0b054eaf-08bc-4f36-93be-ffc6d1eee1e9"
     },
     {
       "englishText": "I started my diet today.",
@@ -31320,7 +32008,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "acc6c19a-d708-4c49-b308-b91b66935b0a"
     },
     {
       "englishText": "I have finished my work today.",
@@ -31362,7 +32051,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "d1ccb5f8-59b7-41f1-8a6b-e5e35ea2de47"
     },
     {
       "englishText": "Spring came very early.",
@@ -31401,7 +32091,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2c4da5f9-20be-469c-822e-b04bad75c9bd"
     },
     {
       "englishText": "I don't want this medicine.",
@@ -31441,7 +32132,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "8c8687a9-20db-46ed-b9e9-8efb19dd94ce"
     },
     {
       "englishText": "I don't walk at night.",
@@ -31475,7 +32167,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "10073324-8945-4b60-a311-6bc4a2d065b4"
     },
     {
       "englishText": "I will wait until Friday.",
@@ -31509,7 +32202,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9e3bfea9-7737-434e-97e7-1be0eb17d375"
     },
     {
       "englishText": "We started our trip in winter.",
@@ -31551,7 +32245,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "6db68e8f-3139-4933-8906-11c92f1f18ca"
     },
     {
       "englishText": "I finished my exercise today.",
@@ -31593,7 +32288,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "35f51a61-dd54-4f84-a12b-add8e089adaf"
     },
     {
       "englishText": "My fever didn't come down.",
@@ -31627,7 +32323,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c4b46e78-c1dd-439a-9a96-56446ba49ce4"
     },
     {
       "englishText": "I don't want cold water for my throat.",
@@ -31675,7 +32372,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c01fcc46-be9f-495b-9316-094fa82830e3"
     },
     {
       "englishText": "I used to walk for my health.",
@@ -31710,7 +32408,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "fc181cef-68a2-4784-805d-8423611a58fe"
     },
     {
       "englishText": "I don't wait in the cold.",
@@ -31745,7 +32444,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e71ba468-181f-4398-82a8-e9ae9d6053a8"
     },
     {
       "englishText": "I don't want this big jacket.",
@@ -31792,7 +32492,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "782aee2a-2034-407b-8af4-77579f2144ee"
     },
     {
       "englishText": "Where did you put my spoon?",
@@ -31833,7 +32534,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "7e8dcd0d-b5cc-4e4e-bf35-32d67948689d"
     },
     {
       "englishText": "I don't know your brother.",
@@ -31868,7 +32570,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3b630a62-6584-42f5-bde9-7ebffa8e7023"
     },
     {
       "englishText": "I did not eat the apple.",
@@ -31903,7 +32606,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "06e6a85f-e595-457b-860f-282e65eb66c8"
     },
     {
       "englishText": "I don't know the price.",
@@ -31937,7 +32641,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f51d2c42-ac76-4adf-bbc4-6b1478abda84"
     },
     {
       "englishText": "Can you see the shirt?",
@@ -31978,7 +32683,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "fde75f9b-4941-4584-bd34-0581b0455551"
     },
     {
       "englishText": "What do you want now?",
@@ -32011,7 +32717,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "2d2fe771-d9d2-40e4-ba36-ab22cf9ae38e"
     },
     {
       "englishText": "I cannot buy this dress.",
@@ -32058,7 +32765,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "50e5bb99-fc71-445c-846c-bf40c6e229e6"
     },
     {
       "englishText": "I did not put the plate here.",
@@ -32099,7 +32807,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "513cb5ce-bc12-4fbc-998f-09be84f4fbe1"
     },
     {
       "englishText": "Do you know the size?",
@@ -32133,7 +32842,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c80b0a46-4bc6-4152-8741-598b0ade24f9"
     },
     {
       "englishText": "Do you know the seller?",
@@ -32167,7 +32877,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "4186fa0c-43a6-44a6-b289-7d4efd3661ed"
     },
     {
       "englishText": "Do you want to wear this skirt?",
@@ -32214,7 +32925,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "bc4076bc-e4d3-4ec4-84ce-c59e5c47659f"
     },
     {
       "englishText": "I don't put the shoes inside.",
@@ -32255,7 +32967,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "007415e2-1d55-422f-84a9-e6a7caabcf41"
     },
     {
       "englishText": "Why aren't you eating the soup?",
@@ -32295,7 +33008,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "95e6e332-e08c-4f58-8035-e0c463027022"
     },
     {
       "englishText": "I don't know that tall doctor.",
@@ -32342,7 +33056,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "5a0530fa-7ee3-4d35-8da6-1bead7e2d4f9"
     },
     {
       "englishText": "Do you want this headache pill?",
@@ -32390,7 +33105,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "3f336cf0-09ff-411f-a2bd-b86d3b537f08"
     },
     {
       "englishText": "I must pick up my key.",
@@ -32432,7 +33148,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e5a706fb-0d92-4457-bea3-6216c2f3bd18"
     },
     {
       "englishText": "I cannot drive in the rain.",
@@ -32479,7 +33196,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "c7266e8e-c3c6-4bb7-89d0-5581f4fc9da9"
     },
     {
       "englishText": "Do you know the metro station?",
@@ -32520,7 +33238,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "83e8f2b1-3bb2-45cd-859e-66da97862068"
     },
     {
       "englishText": "He has sold his cheap car.",
@@ -32563,7 +33282,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "9e09597c-e5d9-43df-bd8c-123021df2a02"
     },
     {
       "englishText": "I wanted a fast taxi.",
@@ -32604,7 +33324,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "ad82289c-1b14-4324-99d6-09e8bb138e73"
     },
     {
       "englishText": "I don't know the cause of my back pain.",
@@ -32646,7 +33367,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "762c1728-7772-4004-aa95-f46503c53f85"
     },
     {
       "englishText": "Have you picked up your medicine?",
@@ -32682,7 +33404,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "1afdd75d-c1f4-4538-9a44-012bb132633f"
     },
     {
       "englishText": "I couldn't open the heavy door.",
@@ -32731,7 +33454,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "22e87991-a9c5-4be4-8665-d418fca4172d"
     },
     {
       "englishText": "I didn't use to know this street.",
@@ -32772,7 +33496,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "e7e00556-2ef9-4b5b-8d48-dda95bb65675"
     },
     {
       "englishText": "Why did you sell your yellow bicycle?",
@@ -32820,7 +33545,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a1b1c0bc-01dc-4f14-b33a-c2d15c31e68a"
     },
     {
       "englishText": "I don't know the weight of this package.",
@@ -32867,7 +33593,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "a6e4fa50-7c4c-4b26-9e23-6fd15ae10b0d"
     },
     {
       "englishText": "I want to see the beautiful room.",
@@ -32915,7 +33642,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "f136d087-18b3-484f-8307-6414a73de3b7"
     },
     {
       "englishText": "Did you pick up the car keys?",
@@ -32956,7 +33684,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "16062660-e1cc-4610-9c48-55c6fd2c1d67"
     },
     {
       "englishText": "I don't understand this message.",
@@ -32990,7 +33719,8 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": []
+      "alternatives": [],
+      "id": "89eb9f41-9575-4474-aeb2-6a5d390145e1"
     },
     {
       "id": "10a3ee90-addf-43cc-8998-8026e00bfeb6",

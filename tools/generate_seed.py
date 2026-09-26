@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Generate the seed sentence bank, once, on the Mac.
+"""Add model-generated sentences to the bank the app ships.
 
-The output JSON is bundled into the iOS app so it is useful offline on first
-launch. This script is NOT a runtime dependency — delete it afterwards and the
-app is unaffected.
+Writes straight into web/data/seed_sentences.json, saving after every batch,
+so a run stopped by the free-tier quota keeps everything it got. Nothing here
+runs on the phone.
 
 Usage:
     export GEMINI_API_KEY=...
-    python3 tools/generate_seed.py --count 400
-    python3 tools/generate_seed.py --review        # read them before bundling
+    python3 tools/generate_seed.py --count 40                 # add 40, weighted mix
+    python3 tools/generate_seed.py --count 40 --difficulty 3  # add 40 at B1
+    python3 tools/generate_seed.py --review                   # read them before shipping
 """
 
 from __future__ import annotations
@@ -28,7 +29,9 @@ from core import validate
 from core.syllabus import CORE_VERBS, DOMAINS, TENSES, coverage
 from core.taxonomy import SITUATIONS
 
-OUT = pathlib.Path(__file__).parent / "seed_sentences.json"
+from core import bank
+
+OUT = bank.BANK
 
 # Weighted toward 2-3: level 1 gets boring fast, level 5 is demoralising in bulk.
 DIFFICULTY_WEIGHTS = {1: 0.15, 2: 0.30, 3: 0.30, 4: 0.18, 5: 0.07}
@@ -46,23 +49,13 @@ def plan_batch(size: int, rng: random.Random) -> tuple[dict[int, int], list[str]
 
 
 def load_existing() -> list[dict]:
-    if OUT.exists():
-        try:
-            return json.loads(OUT.read_text(encoding="utf-8"))["sentences"]
-        except (json.JSONDecodeError, KeyError):
-            print(f"warning: {OUT} unreadable, starting fresh", file=sys.stderr)
-    return []
+    # Unreadable is fatal, not "start fresh": starting fresh here would
+    # overwrite the shipped deck with the first batch.
+    return bank.load()["sentences"]
 
 
 def save(sentences: list[dict]) -> None:
-    OUT.write_text(
-        json.dumps(
-            {"version": 1, "count": len(sentences), "sentences": sentences},
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
+    bank.save({"version": 1, "sentences": sentences})
 
 
 def review(limit: int) -> int:
@@ -126,7 +119,7 @@ def review(limit: int) -> int:
 
     print("  If the written-marker percentage is near zero and these sound")
     print("  sayable, you are good. If not, tighten REGISTER_RULES in")
-    print("  core/prompts.py, delete tools/seed_sentences.json, regenerate.")
+    print("  core/prompts.py and regenerate; `git checkout web/data` undoes a bad run.")
     return 0
 
 
@@ -147,7 +140,8 @@ def summarise(sentences: list[dict]) -> None:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--count", type=int, default=400, help="target total (default 400)")
+    ap.add_argument("--count", type=int, default=40,
+                    help="sentences to add (default 40, about two batches of quota)")
     ap.add_argument("--batch", type=int, default=20, help="sentences per API call")
     ap.add_argument("--review", action="store_true", help="print a sample and exit")
     ap.add_argument("--review-limit", type=int, default=20)
@@ -178,7 +172,7 @@ def main() -> int:
     rejected_total = 0
     started = time.monotonic()
 
-    target = len(sentences) + args.count if args.difficulty else args.count
+    target = len(sentences) + args.count
     while len(sentences) < target:
         need = min(args.batch, target - len(sentences))
         verb_targets = None
