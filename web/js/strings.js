@@ -1,9 +1,8 @@
 // Interface text.
 //
 // The chrome is Persian so the words you read hundreds of times a week are
-// themselves repetitions. Numbers stay in Latin digits: the ledger screens are
-// meant to be read at a glance, and decoding ۳۸۱ to learn how many sentences
-// you hold works against that.
+// themselves repetitions. Figures go through faDigits below for the same
+// reason.
 //
 // One module rather than Persian scattered through the markup, so the whole
 // interface vocabulary can be reviewed — and corrected by a native speaker — in
@@ -40,6 +39,10 @@ export const STRINGS = {
   'card.unit': 'این کلمه‌ها با هم یک واحدن',
   'card.done': 'تموم شد',
   'card.practised': 'کارت تمرین شد',
+  'card.again': 'یه دور دیگه',
+  'card.allDone': 'برای امروز همه‌ش تموم شد.',
+  'card.undo': 'برگرد',
+  'card.undone': 'لغو شد',
 
   // Progress
   'progress.weakSpots': 'نقاط ضعف',
@@ -58,8 +61,7 @@ export const STRINGS = {
   'settings.dailyTarget': 'هدف روزانه',
   'settings.sound': 'صدا موقع رد شدن',
   'settings.currentLevel': 'سطح فعلی',
-
-  // Results
+  'settings.backup': 'پشتیبان',
 };
 
 /**

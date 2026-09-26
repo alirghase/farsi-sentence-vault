@@ -1,13 +1,12 @@
 // Service worker: makes the app open and run with no network.
 //
-// Strategy is deliberately split. The shell (HTML/CSS/JS/seed data) is
-// cache-first, because it changes only when I deploy and must be instant on a
-// platform with no signal. API calls are never cached — a stale grade or a
-// replayed sync would corrupt local state.
+// Every same-origin GET is network-first with a short timeout, falling back to
+// the cache — see networkFirst below for why not cache-first. Anything
+// off-origin is left alone.
 
 // Bump to purge every cached entry. Without a change here the cache name stays
 // constant, so a stale entry can win on cache-first forever.
-const VERSION = 'v5';
+const VERSION = 'v6';
 const SHELL_CACHE = `farsi-shell-${VERSION}`;
 
 const SHELL = [
@@ -16,7 +15,9 @@ const SHELL = [
   './manifest.webmanifest',
   './css/styles.css',
   './js/app.js',
+  './js/backup.js',
   './js/db.js',
+  './js/deck.js',
   './js/levels.js',
   './js/sound.js',
   './js/strings.js',
@@ -91,7 +92,12 @@ async function networkFirst(request) {
     // A non-OK response is still better than nothing if we have no cache.
     return (await cached) ?? response;
   } catch {
-    // Offline, or the network was too slow to wait for.
-    return (await cached) ?? caches.match('./index.html');
+    // Offline, or the network was too slow to wait for. Only a page load falls
+    // back to the app shell: answering a missing image or script with HTML
+    // turns one absent file into a confusing parse error.
+    const hit = await cached;
+    if (hit) return hit;
+    if (request.mode === 'navigate') return caches.match('./index.html');
+    return Response.error();
   }
 }
