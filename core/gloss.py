@@ -244,3 +244,61 @@ def tidy(farsi: str, english: str) -> str:
             tokens = replacement
 
     return " ".join(tokens).strip()
+
+
+# --- parts of speech --------------------------------------------------------
+#
+# Derived breakdowns guess the part of speech from a heuristic that defaults to
+# "noun", and it shows: across 3530 derived units there are 1657 nouns and not
+# one adjective or expression. The label is shown every time a word is tapped,
+# so a wrong one actively misleads.
+#
+# Unlike meaning, part of speech is a property of the word rather than the
+# sentence. Of the 615 distinct forms in the hand-written breakdowns only two
+# carry more than one label — در (noun and preposition) and خوب (adjective and
+# adverb). That is why a lexicon copied from hand-written material is safe here
+# when copying the *gloss* would not be: ما is "we" or "us" depending on the
+# sentence, but it is a pronoun either way.
+
+_VERB_PREFIXES = ("می‌", "نمی‌")
+
+
+def pos_lexicon(sentences: list[dict]) -> dict[str, str]:
+    """Learn form -> part of speech from the hand-written word maps.
+
+    Forms carrying more than one label are left out rather than resolved by
+    majority; there are only two and guessing buys nothing.
+    """
+    counts: dict[str, dict[str, int]] = {}
+    for sentence in sentences:
+        if sentence.get("breakdownSource") or not sentence.get("breakdown"):
+            continue  # derived maps are what we are trying to repair
+        for unit in sentence["breakdown"]:
+            form = (unit.get("fa") or "").strip()
+            pos = (unit.get("pos") or "").strip()
+            if form and pos:
+                counts.setdefault(form, {})
+                counts[form][pos] = counts[form].get(pos, 0) + 1
+    return {
+        form: next(iter(labels))
+        for form, labels in counts.items()
+        if len(labels) == 1
+    }
+
+
+def tidy_pos(farsi: str, current: str, lexicon: dict[str, str]) -> str:
+    """Return a corrected part of speech, or `current` when nothing is certain."""
+    form = (farsi or "").strip()
+    if not form:
+        return current
+
+    known = lexicon.get(form)
+    if known:
+        return known
+
+    # A می‌/نمی‌ prefix is an unambiguous verb marker; the heuristic still calls
+    # some of them nouns.
+    if form.startswith(_VERB_PREFIXES) and " " not in form:
+        return "verb"
+
+    return current

@@ -206,7 +206,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "یه",
@@ -224,7 +224,7 @@
           "fa": "آروم‌تر",
           "translit": "arumtar",
           "en": "slower",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "حرف",
@@ -425,13 +425,13 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "قبل",
           "translit": "ghabl",
           "en": "before",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "از",
@@ -443,7 +443,7 @@
           "fa": "اینکه",
           "translit": "inke",
           "en": "this that",
-          "pos": "noun"
+          "pos": "conjunction"
         },
         {
           "fa": "غذا",
@@ -455,7 +455,7 @@
           "fa": "بیاد",
           "translit": "biyad",
           "en": "comes",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "واسه‌مون",
@@ -473,7 +473,7 @@
           "fa": "تا",
           "translit": "ta",
           "en": "item",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "لیوان",
@@ -528,7 +528,7 @@
           "fa": "تا",
           "translit": "ta",
           "en": "item",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "از",
@@ -552,7 +552,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "تخفیف",
@@ -618,7 +618,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "چی",
@@ -630,7 +630,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -702,7 +702,7 @@
           "fa": "نمی‌کنه",
           "translit": "nemikone",
           "en": "doesn't do",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -758,7 +758,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "توضیح",
@@ -854,7 +854,7 @@
           "fa": "تا",
           "translit": "ta",
           "en": "as soon as",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "پوشیدمش",
@@ -878,7 +878,7 @@
           "fa": "شد",
           "translit": "shod",
           "en": "became",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -1049,7 +1049,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "also",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نکردین",
@@ -1168,7 +1168,7 @@
           "fa": "دیشب",
           "translit": "dishab",
           "en": "last night",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "یه",
@@ -1286,7 +1286,7 @@
           "fa": "تمام",
           "translit": "tamâme",
           "en": "all",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "آخر",
@@ -1304,7 +1304,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "خونه",
@@ -1363,7 +1363,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "next",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "می‌خوایم",
@@ -1416,7 +1416,7 @@
           "fa": "قشنگ",
           "translit": "ghashang",
           "en": "pretty",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "و",
@@ -1529,19 +1529,19 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "قبل",
           "translit": "ghable",
           "en": "before",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "غذا",
@@ -1594,7 +1594,7 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "داشتم",
@@ -1612,7 +1612,7 @@
           "fa": "می‌پختم",
           "translit": "mipokhtam",
           "en": "cooking",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "دستم",
@@ -1654,7 +1654,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "رستوران",
@@ -1798,7 +1798,7 @@
           "fa": "اینکه",
           "translit": "inke",
           "en": "this that",
-          "pos": "noun"
+          "pos": "conjunction"
         },
         {
           "fa": "کارم",
@@ -1867,7 +1867,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "نسخه",
@@ -1897,25 +1897,25 @@
           "fa": "گفت",
           "translit": "goft",
           "en": "said",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "یکی",
           "translit": "yeki",
           "en": "one",
-          "pos": "number"
+          "pos": "pronoun"
         },
         {
           "fa": "از",
           "translit": "az",
           "en": "of",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "این",
           "translit": "in",
           "en": "these",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "قرص‌ها",
@@ -1927,7 +1927,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نداره",
@@ -2024,7 +2024,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "مجبور",
@@ -2085,19 +2085,19 @@
           "fa": "می‌خوان",
           "translit": "mikhvân",
           "en": "want",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "بیان",
           "translit": "beyân",
           "en": "come",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "پیشم",
           "translit": "pishem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "واسه",
@@ -2121,13 +2121,13 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "کل",
           "translit": "kole",
           "en": "whole",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "خونه",
@@ -2139,7 +2139,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "تمیز",
@@ -2249,7 +2249,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "us",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "بزرگ‌ترین",
@@ -2267,7 +2267,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -2290,13 +2290,13 @@
           "fa": "ببخشید",
           "translit": "bebekshid",
           "en": "sorry",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "دیر",
           "translit": "dir",
           "en": "late",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "کردم",
@@ -2320,13 +2320,13 @@
           "fa": "سنگین",
           "translit": "sangin",
           "en": "heavy",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -2373,7 +2373,7 @@
           "fa": "شد",
           "translit": "shod",
           "en": "became",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -2434,7 +2434,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "together",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بریم",
@@ -2494,7 +2494,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "تا",
@@ -2583,7 +2583,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "از",
@@ -2712,7 +2712,7 @@
           "fa": "بیا",
           "translit": "biyâ",
           "en": "come",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "با",
@@ -2724,7 +2724,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "together",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بریم",
@@ -2815,13 +2815,13 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "یکم",
           "translit": "yekam",
           "en": "a little",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "پایین",
@@ -2869,7 +2869,7 @@
           "fa": "تا",
           "translit": "tâ",
           "en": "item",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "کت",
@@ -2893,7 +2893,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌خرم",
@@ -3015,7 +3015,7 @@
           "fa": "می‌اومد",
           "translit": "miâmad",
           "en": "was coming",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -3068,7 +3068,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -3121,7 +3121,7 @@
           "fa": "می‌شه",
           "translit": "mishe",
           "en": "becomes",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -3162,7 +3162,7 @@
           "fa": "سنگین",
           "translit": "sangin",
           "en": "heavy",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "تو",
@@ -3221,7 +3221,7 @@
           "fa": "دنبال",
           "translit": "donbâl-e",
           "en": "looking for",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "جای",
@@ -3351,7 +3351,7 @@
           "fa": "تو",
           "translit": "tu",
           "en": "into",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "یه",
@@ -3369,7 +3369,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -3528,7 +3528,7 @@
           "fa": "یکم",
           "translit": "yekam",
           "en": "a little",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "حالم",
@@ -3546,13 +3546,13 @@
           "fa": "هم",
           "translit": "ham",
           "en": "together",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌خوره",
           "translit": "mikhore",
           "en": "hits",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -3677,13 +3677,13 @@
           "fa": "تا",
           "translit": "tâ",
           "en": "till",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "چند",
           "translit": "chand",
           "en": "a few",
-          "pos": "noun"
+          "pos": "question word"
         },
         {
           "fa": "ساعت",
@@ -3743,13 +3743,13 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "روی",
           "translit": "ruy-e",
           "en": "on",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "کانتر",
@@ -3802,7 +3802,7 @@
           "fa": "یکم",
           "translit": "yekam",
           "en": "a little",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "میوه",
@@ -3814,7 +3814,7 @@
           "fa": "می‌خرم",
           "translit": "mikharam",
           "en": "buying",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -3856,13 +3856,13 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "می‌اد",
           "translit": "miâd",
           "en": "comes",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "خونه",
@@ -3874,7 +3874,7 @@
           "fa": "یکم",
           "translit": "yekam",
           "en": "a little",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "شیر",
@@ -3922,7 +3922,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "منتظر",
@@ -3964,7 +3964,7 @@
           "fa": "دیر",
           "translit": "dir",
           "en": "late",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "می‌ام",
@@ -3994,7 +3994,7 @@
           "fa": "دیشب",
           "translit": "dishab",
           "en": "last night",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "سر",
@@ -4036,7 +4036,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "اصلا",
@@ -4194,13 +4194,13 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "خبر",
@@ -4218,7 +4218,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "شنیدم",
@@ -4389,13 +4389,13 @@
           "fa": "راحت",
           "translit": "râhat",
           "en": "comfortable",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "باش",
           "translit": "bâsh",
           "en": "be",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -4525,7 +4525,7 @@
           "fa": "مرسی",
           "translit": "mersi",
           "en": "thanks",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "بابت",
@@ -4549,7 +4549,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         }
       ],
       "breakdownSource": "derived",
@@ -4643,13 +4643,13 @@
           "fa": "سمت",
           "translit": "samt-e",
           "en": "direction",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "راست",
           "translit": "râst",
           "en": "right",
-          "pos": "noun"
+          "pos": "adverb"
         }
       ],
       "breakdownSource": "derived",
@@ -4673,7 +4673,7 @@
           "fa": "این",
           "translit": "in",
           "en": "these",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "کفشا",
@@ -4685,7 +4685,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "با",
@@ -4709,7 +4709,7 @@
           "fa": "خوبی",
           "translit": "khubi",
           "en": "good",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "خریدم",
@@ -4881,7 +4881,7 @@
           "fa": "زیادی",
           "translit": "ziyâdi",
           "en": "too much",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "رفتی",
@@ -4947,7 +4947,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "together",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "چای",
@@ -5032,7 +5032,7 @@
           "fa": "بزرگه",
           "translit": "bozorge",
           "en": "big is",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -5068,7 +5068,7 @@
           "fa": "دیر",
           "translit": "dir",
           "en": "late",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "وقت",
@@ -5098,7 +5098,7 @@
           "fa": "نمی‌بره",
           "translit": "nemibare",
           "en": "doesn't take",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -5122,7 +5122,7 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "تابلوی",
@@ -5140,19 +5140,19 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "سمت",
           "translit": "samt-e",
           "en": "direction",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "راست",
           "translit": "râst",
           "en": "right",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "دیدی",
@@ -5170,7 +5170,7 @@
           "fa": "تو",
           "translit": "tu",
           "en": "into",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "کوچه",
@@ -5218,7 +5218,7 @@
           "fa": "برات",
           "translit": "barât",
           "en": "for you",
-          "pos": "verb"
+          "pos": "attached pronoun"
         },
         {
           "fa": "یه",
@@ -5279,7 +5279,7 @@
           "fa": "تا",
           "translit": "tâ",
           "en": "item",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "از",
@@ -5309,7 +5309,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "تخفیف",
@@ -5358,7 +5358,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "می‌گفتی",
@@ -5473,7 +5473,7 @@
           "fa": "دنبال",
           "translit": "donbâl-e",
           "en": "after",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "کفش",
@@ -5503,7 +5503,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "پاهام",
@@ -5515,7 +5515,7 @@
           "fa": "داره",
           "translit": "dâre",
           "en": "is",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "از",
@@ -5533,7 +5533,7 @@
           "fa": "می‌ترکه",
           "translit": "mitarake",
           "en": "bursting",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -5580,7 +5580,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         }
       ],
       "breakdownSource": "derived",
@@ -5603,7 +5603,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "وقت",
@@ -5740,7 +5740,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "منو",
@@ -5829,7 +5829,7 @@
           "fa": "کل",
           "translit": "kole",
           "en": "whole",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "خونه",
@@ -6088,7 +6088,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "زنگ بزن",
@@ -6112,7 +6112,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "together",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بریم",
@@ -6142,7 +6142,7 @@
           "fa": "دیشب",
           "translit": "dishab",
           "en": "last night",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "تا",
@@ -6154,7 +6154,7 @@
           "fa": "دیروقت",
           "translit": "dir-vaght",
           "en": "late time",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "بیدار",
@@ -6256,13 +6256,13 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بهش",
           "translit": "behesh",
           "en": "to it",
-          "pos": "verb"
+          "pos": "attached pronoun"
         },
         {
           "fa": "نگاه",
@@ -6353,7 +6353,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "together",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بریم",
@@ -6396,7 +6396,7 @@
           "fa": "همه",
           "translit": "hame",
           "en": "all",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "احترامی",
@@ -6506,13 +6506,13 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "قبل",
           "translit": "ghabl",
           "en": "before",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "از",
@@ -6524,7 +6524,7 @@
           "fa": "اینکه",
           "translit": "inke",
           "en": "this that",
-          "pos": "noun"
+          "pos": "conjunction"
         },
         {
           "fa": "سفارش",
@@ -6566,7 +6566,7 @@
           "fa": "تا",
           "translit": "tâ",
           "en": "item",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "لیوان",
@@ -6634,7 +6634,7 @@
           "fa": "تمام",
           "translit": "tamâm",
           "en": "whole",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "وقت",
@@ -6694,7 +6694,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "had",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "درست کنم",
@@ -6900,7 +6900,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "یه",
@@ -6918,7 +6918,7 @@
           "fa": "بهتون",
           "translit": "behetun",
           "en": "to you",
-          "pos": "verb"
+          "pos": "attached pronoun"
         },
         {
           "fa": "بزنم",
@@ -7229,13 +7229,13 @@
           "fa": "بهش",
           "translit": "behesh",
           "en": "to him",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "بیاد",
           "translit": "biyâd",
           "en": "comes",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -7259,7 +7259,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "امروز",
@@ -7319,7 +7319,7 @@
           "fa": "می‌ری",
           "translit": "miri",
           "en": "going",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "آشپزخونه",
@@ -7404,7 +7404,7 @@
           "fa": "زود",
           "translit": "zud",
           "en": "early",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "راه",
@@ -7601,7 +7601,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "تخفیف",
@@ -7650,13 +7650,13 @@
           "fa": "گفت",
           "translit": "goft",
           "en": "said",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "این",
           "translit": "in",
           "en": "these",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "قرص‌ها",
@@ -7674,13 +7674,13 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "قبل",
           "translit": "ghabl",
           "en": "before",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "از",
@@ -7759,7 +7759,7 @@
           "fa": "مواظب",
           "translit": "movâzebe",
           "en": "mindful",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "سگم",
@@ -7814,7 +7814,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "خونه",
@@ -7838,7 +7838,7 @@
           "fa": "کلی",
           "translit": "kolli",
           "en": "a lot",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "کار",
@@ -7899,7 +7899,7 @@
           "fa": "هیچی",
           "translit": "hichi",
           "en": "nothing",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "نیستیم",
@@ -7954,7 +7954,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "این",
@@ -8067,7 +8067,7 @@
           "fa": "شما",
           "translit": "shomâ",
           "en": "of you",
-          "pos": "verb"
+          "pos": "pronoun"
         },
         {
           "fa": "کاملا",
@@ -8103,7 +8103,7 @@
           "fa": "من",
           "translit": "man",
           "en": "of me",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "الان",
@@ -8139,7 +8139,7 @@
           "fa": "این",
           "translit": "in",
           "en": "of this",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "پروژه",
@@ -8367,7 +8367,7 @@
           "fa": "بیشتر",
           "translit": "bishtar",
           "en": "more",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "بیارین",
@@ -8444,7 +8444,7 @@
           "fa": "دیشب",
           "translit": "dishab",
           "en": "last night",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "همه‌ش",
@@ -8503,7 +8503,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "دارم",
@@ -8592,7 +8592,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بدون",
@@ -8720,7 +8720,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "سفارش",
@@ -8835,7 +8835,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "به",
@@ -8853,7 +8853,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "also",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نگاه",
@@ -8890,7 +8890,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "برم",
@@ -8908,7 +8908,7 @@
           "fa": "تا",
           "translit": "tâ",
           "en": "so that",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "شربتم",
@@ -8920,7 +8920,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بگیرم",
@@ -8969,7 +8969,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "امتحان",
@@ -9092,7 +9092,7 @@
           "fa": "رو",
           "translit": "ru",
           "en": "on",
-          "pos": "preposition"
+          "pos": "particle"
         },
         {
           "fa": "چشم",
@@ -9104,7 +9104,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "of us",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "جا",
@@ -9116,7 +9116,7 @@
           "fa": "داره",
           "translit": "dâre",
           "en": "has",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "ولی",
@@ -9134,7 +9134,7 @@
           "fa": "بده",
           "translit": "bede",
           "en": "give",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "منم",
@@ -9152,7 +9152,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "درباره‌ی",
@@ -9293,7 +9293,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "تخفیف",
@@ -9305,7 +9305,7 @@
           "fa": "بده",
           "translit": "bede",
           "en": "give",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -9466,7 +9466,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "بکنی",
@@ -9503,7 +9503,7 @@
           "fa": "اینو",
           "translit": "ino",
           "en": "this obj",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "دوباره",
@@ -9620,7 +9620,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "قیمتو",
@@ -9644,7 +9644,7 @@
           "fa": "بیار",
           "translit": "biyâr",
           "en": "bring",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "پایین",
@@ -9673,7 +9673,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "یه",
@@ -9691,7 +9691,7 @@
           "fa": "آروم‌تر",
           "translit": "ârumtar",
           "en": "slower",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "صحبت کن",
@@ -9733,7 +9733,7 @@
           "fa": "می‌ری",
           "translit": "miri",
           "en": "going",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "نونوایی",
@@ -9763,7 +9763,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "also",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بخر",
@@ -9823,13 +9823,13 @@
           "fa": "سنگین",
           "translit": "sangin",
           "en": "heavy",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "که",
@@ -9946,7 +9946,7 @@
           "fa": "داشت",
           "translit": "dâsht",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "قطع",
@@ -9970,7 +9970,7 @@
           "fa": "می‌شد",
           "translit": "mishod",
           "en": "becoming",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "صداتو",
@@ -10037,7 +10037,7 @@
           "fa": "توی",
           "translit": "tuye",
           "en": "inside",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "رادیو",
@@ -10061,7 +10061,7 @@
           "fa": "توی",
           "translit": "tuye",
           "en": "inside",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "اتوبان",
@@ -10153,7 +10153,7 @@
           "fa": "شلوغه",
           "translit": "sholughe",
           "en": "is busy",
-          "pos": "verb"
+          "pos": "adjective"
         },
         {
           "fa": "ولی",
@@ -10244,7 +10244,7 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "تلفنو",
@@ -10304,7 +10304,7 @@
           "fa": "رسید",
           "translit": "resid",
           "en": "reached",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "تا",
@@ -10316,7 +10316,7 @@
           "fa": "خودت",
           "translit": "khodet",
           "en": "yourself",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "زنگ زدی",
@@ -10420,13 +10420,13 @@
           "fa": "ببخشید",
           "translit": "bebakhshid",
           "en": "excuse",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "دیر",
           "translit": "dir",
           "en": "late",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "کردم",
@@ -10479,7 +10479,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -10522,7 +10522,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "قرض",
@@ -10652,7 +10652,7 @@
           "fa": "پارسال",
           "translit": "pârsâl",
           "en": "last year",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "از",
@@ -10736,7 +10736,7 @@
           "fa": "دیر",
           "translit": "dir",
           "en": "late",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "رسیدم",
@@ -10855,13 +10855,13 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "این",
           "translit": "in",
           "en": "these",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "برگه‌ها",
@@ -11031,7 +11031,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "کارای",
@@ -11080,7 +11080,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "وقت",
@@ -11122,7 +11122,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "کمک کنی",
@@ -11165,7 +11165,7 @@
           "fa": "خوبه",
           "translit": "khube",
           "en": "is good",
-          "pos": "verb"
+          "pos": "adjective"
         },
         {
           "fa": "ولی",
@@ -11257,7 +11257,7 @@
           "fa": "دیر",
           "translit": "dir",
           "en": "late",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "میام",
@@ -11318,7 +11318,7 @@
           "fa": "نمی‌شه",
           "translit": "nemishe",
           "en": "doesn't become",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "بپرسم",
@@ -11378,7 +11378,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "قرض",
@@ -11446,7 +11446,7 @@
           "fa": "تو",
           "translit": "to",
           "en": "you",
-          "pos": "pronoun"
+          "pos": "preposition"
         },
         {
           "fa": "رو",
@@ -11544,7 +11544,7 @@
           "fa": "برام",
           "translit": "barâm",
           "en": "for me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "نذاشتن؛",
@@ -11556,13 +11556,13 @@
           "fa": "یا",
           "translit": "yâ",
           "en": "either",
-          "pos": "noun"
+          "pos": "conjunction"
         },
         {
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "شرایطشون",
@@ -11665,7 +11665,7 @@
           "fa": "می‌کنه",
           "translit": "mikone",
           "en": "does",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -11700,7 +11700,7 @@
           "fa": "خوشحالم",
           "translit": "khoshhalam",
           "en": "happy I am",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -11759,7 +11759,7 @@
           "fa": "از",
           "translit": "az",
           "en": "of",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "شام",
@@ -12001,7 +12001,7 @@
           "fa": "می‌خواد",
           "translit": "mikhoâd",
           "en": "wants",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "گریه",
@@ -12031,7 +12031,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "که",
@@ -12117,7 +12117,7 @@
           "fa": "ازت",
           "translit": "azat",
           "en": "from you",
-          "pos": "verb"
+          "pos": "attached pronoun"
         },
         {
           "fa": "تشکر",
@@ -12348,7 +12348,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "می‌ریم",
@@ -12385,7 +12385,7 @@
           "fa": "خیلی",
           "translit": "kheyli",
           "en": "much",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "از",
@@ -12475,7 +12475,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "each other",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "یه",
@@ -12613,7 +12613,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "us",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "میای",
@@ -12686,7 +12686,7 @@
           "fa": "از",
           "translit": "az",
           "en": "of",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "ظهر",
@@ -12735,7 +12735,7 @@
           "fa": "نباید",
           "translit": "nabâyad",
           "en": "must not",
-          "pos": "verb"
+          "pos": "particle"
         },
         {
           "fa": "به",
@@ -12791,7 +12791,7 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "نمره‌ت",
@@ -12803,7 +12803,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "دیدم",
@@ -12858,13 +12858,13 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "تا",
@@ -12876,7 +12876,7 @@
           "fa": "دیر",
           "translit": "dir",
           "en": "late",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "وقت",
@@ -12924,7 +12924,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "تموم کنم",
@@ -13006,7 +13006,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "کمک کردی",
@@ -13149,7 +13149,7 @@
           "fa": "خودت",
           "translit": "khodet",
           "en": "yourself",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "اومدی",
@@ -13167,7 +13167,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "us",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "یه",
@@ -13191,7 +13191,7 @@
           "fa": "داشت",
           "translit": "dâsht",
           "en": "had",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -13231,7 +13231,7 @@
           "fa": "بیا",
           "translit": "biyâ",
           "en": "come",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "فردا",
@@ -13249,7 +13249,7 @@
           "fa": "بیرون",
           "translit": "birun",
           "en": "out",
-          "pos": "noun"
+          "pos": "adverb"
         }
       ],
       "breakdownSource": "derived",
@@ -13398,7 +13398,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "این",
@@ -13416,7 +13416,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بعد",
@@ -13481,13 +13481,13 @@
           "fa": "خوبی",
           "translit": "khubi",
           "en": "good",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -13529,7 +13529,7 @@
           "fa": "ده",
           "translit": "dah",
           "en": "ten",
-          "pos": "noun"
+          "pos": "number"
         },
         {
           "fa": "دقیقه‌ای",
@@ -13578,7 +13578,7 @@
           "fa": "قبل",
           "translit": "ghabl",
           "en": "before",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "از",
@@ -13650,7 +13650,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "برم",
@@ -13691,7 +13691,7 @@
           "fa": "خوشحالم",
           "translit": "khoshhâlam",
           "en": "I am happy",
-          "pos": "verb"
+          "pos": "adjective"
         },
         {
           "fa": "که",
@@ -13715,7 +13715,7 @@
           "fa": "تو",
           "translit": "to",
           "en": "you",
-          "pos": "pronoun"
+          "pos": "preposition"
         },
         {
           "fa": "دارم",
@@ -13818,7 +13818,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بیام",
@@ -13871,13 +13871,13 @@
           "fa": "گفت",
           "translit": "goft",
           "en": "said",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "سه",
@@ -14010,7 +14010,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "رد",
@@ -14071,7 +14071,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "نمی‌تونی",
@@ -14083,7 +14083,7 @@
           "fa": "بیای",
           "translit": "biyây",
           "en": "come",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "می‌تونیم",
@@ -14101,7 +14101,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بریم",
@@ -14242,7 +14242,7 @@
           "fa": "این",
           "translit": "in",
           "en": "these",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "گل‌های",
@@ -14254,13 +14254,13 @@
           "fa": "قشنگ",
           "translit": "ghashang",
           "en": "beautiful",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "خریدی",
@@ -14334,7 +14334,7 @@
           "fa": "می‌خواد",
           "translit": "mikhâd",
           "en": "wants",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "این",
@@ -14412,7 +14412,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "us",
-          "pos": "noun"
+          "pos": "pronoun"
         }
       ],
       "breakdownSource": "derived",
@@ -14506,7 +14506,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "داری",
@@ -14554,7 +14554,7 @@
           "fa": "داره",
           "translit": "dâre",
           "en": "is",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "بارون",
@@ -14607,7 +14607,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -14650,7 +14650,7 @@
           "fa": "داره",
           "translit": "dâre",
           "en": "is",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "درد",
@@ -14662,7 +14662,7 @@
           "fa": "می‌کنه",
           "translit": "mikone",
           "en": "doing",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -14686,7 +14686,7 @@
           "fa": "این",
           "translit": "in",
           "en": "these",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "کفشا",
@@ -14698,7 +14698,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "از",
@@ -14895,7 +14895,7 @@
           "fa": "می‌خورم",
           "translit": "mikhoram",
           "en": "eating",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -14925,7 +14925,7 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "دیدمت",
@@ -15040,7 +15040,7 @@
           "fa": "به",
           "translit": "be",
           "en": "because",
-          "pos": "conjunction"
+          "pos": "preposition"
         },
         {
           "fa": "خاطر",
@@ -15058,7 +15058,7 @@
           "fa": "سنگین",
           "translit": "sangin",
           "en": "heavy",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "امروز",
@@ -15070,7 +15070,7 @@
           "fa": "همه",
           "translit": "hameye",
           "en": "all",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "مدرسه‌ها",
@@ -15167,7 +15167,7 @@
           "fa": "خیلی",
           "translit": "kheyli",
           "en": "much",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "برامون",
@@ -15246,19 +15246,19 @@
           "fa": "قبل",
           "translit": "ghabl",
           "en": "before",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "از",
           "translit": "az",
           "en": "of",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "اینکه",
           "translit": "inke",
           "en": "this that",
-          "pos": "noun"
+          "pos": "conjunction"
         },
         {
           "fa": "بریم",
@@ -15276,7 +15276,7 @@
           "fa": "بیا",
           "translit": "biyâ",
           "en": "come",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "هواشناسی",
@@ -15288,7 +15288,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "چک",
@@ -15497,7 +15497,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "کمک کنی",
@@ -15540,7 +15540,7 @@
           "fa": "اینکه",
           "translit": "inke",
           "en": "this that",
-          "pos": "noun"
+          "pos": "conjunction"
         },
         {
           "fa": "برسم",
@@ -15721,7 +15721,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "واسه",
@@ -15745,7 +15745,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "قرض",
@@ -15787,7 +15787,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "از",
@@ -15854,7 +15854,7 @@
           "fa": "داره",
           "translit": "dâre",
           "en": "is",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "یه",
@@ -15890,7 +15890,7 @@
           "fa": "همه",
           "translit": "hameye",
           "en": "all",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "خیابونا",
@@ -15902,7 +15902,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "آب",
@@ -15958,7 +15958,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "رد",
@@ -15976,7 +15976,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "از",
@@ -16128,13 +16128,13 @@
           "fa": "درباره",
           "translit": "darbâreye",
           "en": "about",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "تو",
           "translit": "to",
           "en": "you",
-          "pos": "pronoun"
+          "pos": "preposition"
         },
         {
           "fa": "حرف",
@@ -16152,7 +16152,7 @@
           "fa": "که",
           "translit": "ke",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "گوشیم",
@@ -16233,7 +16233,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بخری",
@@ -16342,13 +16342,13 @@
           "fa": "سنگین",
           "translit": "sangin",
           "en": "heavy",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "که",
@@ -16435,7 +16435,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بیاره",
@@ -16523,13 +16523,13 @@
           "fa": "نگران",
           "translit": "negarân",
           "en": "worried",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "نباشید",
           "translit": "nabâshid",
           "en": "dont be",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "شما",
@@ -16615,7 +16615,7 @@
           "fa": "ببخشید",
           "translit": "bebakhshid",
           "en": "forgive me",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "مزاحمتون",
@@ -16669,13 +16669,13 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "واسم",
           "translit": "vâsam",
           "en": "for me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "امضا",
@@ -16740,7 +16740,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         }
       ],
       "breakdownSource": "derived",
@@ -16870,7 +16870,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "گم",
@@ -16900,7 +16900,7 @@
           "fa": "شد",
           "translit": "shod",
           "en": "became",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -16936,7 +16936,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "میز",
@@ -17121,7 +17121,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "توش",
@@ -17220,7 +17220,7 @@
           "fa": "توی",
           "translit": "tuye",
           "en": "inside",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "اتوبان",
@@ -17329,7 +17329,7 @@
           "fa": "مطمئن",
           "translit": "motmaen",
           "en": "certain",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "نیستم",
@@ -17347,7 +17347,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "این",
@@ -17365,7 +17365,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "اجاره",
@@ -17444,7 +17444,7 @@
           "fa": "ببخشید",
           "translit": "bebakhshid",
           "en": "forgive",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "درست",
@@ -17456,7 +17456,7 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "می‌خواستم",
@@ -17486,7 +17486,7 @@
           "fa": "بیرون",
           "translit": "birun",
           "en": "out",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "رئیسم",
@@ -17669,7 +17669,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "زنگ بزن",
@@ -17699,7 +17699,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "بعد",
@@ -17711,7 +17711,7 @@
           "fa": "از",
           "translit": "az",
           "en": "of",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "پل",
@@ -17803,13 +17803,13 @@
           "fa": "دیشب",
           "translit": "dishab",
           "en": "last night",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "کل",
           "translit": "kolle",
           "en": "whole",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "خونه",
@@ -18027,7 +18027,7 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "داشتم",
@@ -18093,25 +18093,25 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "قبل",
           "translit": "ghabl",
           "en": "before",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "از",
           "translit": "az",
           "en": "of",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "اینکه",
           "translit": "inke",
           "en": "this that",
-          "pos": "noun"
+          "pos": "conjunction"
         },
         {
           "fa": "بیام",
@@ -18329,13 +18329,13 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "براش",
           "translit": "barâsh",
           "en": "for him",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "میارم",
@@ -18464,7 +18464,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "پول",
@@ -18542,7 +18542,7 @@
           "fa": "سمت",
           "translit": "samte",
           "en": "direction",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "تجریش",
@@ -18590,7 +18590,7 @@
           "fa": "شلوغه",
           "translit": "sholughe",
           "en": "crowded is",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -18616,13 +18616,13 @@
           "fa": "نباید",
           "translit": "nabâyad",
           "en": "mustn't",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "حرف",
@@ -18743,7 +18743,7 @@
           "fa": "بهتره",
           "translit": "behtare",
           "en": "better is",
-          "pos": "verb"
+          "pos": "adjective"
         },
         {
           "fa": "باهاش",
@@ -18797,7 +18797,7 @@
           "fa": "می‌کنه",
           "translit": "mikone",
           "en": "does",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -18839,7 +18839,7 @@
           "fa": "بلندتر",
           "translit": "bolandtar",
           "en": "louder",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "حرف",
@@ -18887,7 +18887,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "us",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "دو",
@@ -18899,7 +18899,7 @@
           "fa": "تا",
           "translit": "tâ",
           "en": "item",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "آیس",
@@ -19065,7 +19065,7 @@
           "fa": "بود",
           "translit": "bud",
           "en": "was",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -19089,13 +19089,13 @@
           "fa": "ببخشید",
           "translit": "bebakhshid",
           "en": "excuse me",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "تو",
           "translit": "tu",
           "en": "inside",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "این",
@@ -19119,7 +19119,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "also",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "ریختید",
@@ -19369,7 +19369,7 @@
           "fa": "بهتره",
           "translit": "behtare",
           "en": "better is",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -19393,7 +19393,7 @@
           "fa": "وقتی",
           "translit": "vaghti",
           "en": "when",
-          "pos": "question word"
+          "pos": "conjunction"
         },
         {
           "fa": "یهویی",
@@ -19423,7 +19423,7 @@
           "fa": "می‌ره",
           "translit": "mire",
           "en": "goes",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -19484,7 +19484,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بیاید",
@@ -19557,7 +19557,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "برم",
@@ -19746,7 +19746,7 @@
           "fa": "خلوت",
           "translit": "khalvat",
           "en": "quiet",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "خیلی",
@@ -19800,7 +19800,7 @@
           "fa": "داره",
           "translit": "dâre",
           "en": "has",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -19943,7 +19943,7 @@
           "fa": "دیشب",
           "translit": "dishab",
           "en": "last night",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "شوفاژ",
@@ -19967,7 +19967,7 @@
           "fa": "شد",
           "translit": "shod",
           "en": "became",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -20045,7 +20045,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "واقعا",
@@ -20057,7 +20057,7 @@
           "fa": "خیلی",
           "translit": "kheyli",
           "en": "much",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "زحمت",
@@ -20411,7 +20411,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "حواسمون",
@@ -20435,7 +20435,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "also",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "باشه",
@@ -20472,7 +20472,7 @@
           "fa": "ممکنه",
           "translit": "momkene",
           "en": "possible is",
-          "pos": "verb"
+          "pos": "adjective"
         },
         {
           "fa": "سوپ",
@@ -20557,7 +20557,7 @@
           "fa": "داره",
           "translit": "dâre",
           "en": "is",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "آب",
@@ -20763,7 +20763,7 @@
           "fa": "همه",
           "translit": "hame",
           "en": "all",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "گیج",
@@ -20800,7 +20800,7 @@
           "fa": "ببخشید",
           "translit": "bebakhshid",
           "en": "excuse",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "ما",
@@ -20940,7 +20940,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "رو",
@@ -21097,13 +21097,13 @@
           "fa": "راحت",
           "translit": "râhat",
           "en": "comfortable",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "باش",
           "translit": "bâsh",
           "en": "be.",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -21176,7 +21176,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "اینجا",
@@ -21212,7 +21212,7 @@
           "fa": "واسه",
           "translit": "vâse",
           "en": "for",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "مصاحبه",
@@ -21272,7 +21272,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "متوجه",
@@ -21350,7 +21350,7 @@
           "fa": "می‌گیره",
           "translit": "migire",
           "en": "tightens.",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -21459,7 +21459,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "می‌خوام",
@@ -21513,7 +21513,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "رستورانی",
@@ -21543,7 +21543,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نفهمیدم",
@@ -21603,7 +21603,7 @@
           "fa": "امشب",
           "translit": "emshab",
           "en": "tonight",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "خوابم",
@@ -21615,7 +21615,7 @@
           "fa": "نمی‌بره",
           "translit": "nemibare",
           "en": "doesn't take.",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -21640,13 +21640,13 @@
           "fa": "از",
           "translit": "az",
           "en": "from",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "این",
           "translit": "in",
           "en": "these",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "شیرینی‌ها",
@@ -21780,7 +21780,7 @@
           "fa": "می‌شه",
           "translit": "mishe",
           "en": "becomes",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "منظورت",
@@ -21792,7 +21792,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بهتر",
@@ -21887,7 +21887,7 @@
           "fa": "نگران",
           "translit": "negarâne",
           "en": "worried",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "جمع‌وجور",
@@ -21911,7 +21911,7 @@
           "fa": "رو",
           "translit": "ru",
           "en": "on",
-          "pos": "preposition"
+          "pos": "particle"
         },
         {
           "fa": "مبل",
@@ -21923,7 +21923,7 @@
           "fa": "بشین",
           "translit": "beshin",
           "en": "sit",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "استراحت",
@@ -21965,7 +21965,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بچینم",
@@ -22050,7 +22050,7 @@
           "fa": "دنبال",
           "translit": "donbâle",
           "en": "after",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "یه",
@@ -22123,7 +22123,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "us",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "گذاشتین",
@@ -22135,7 +22135,7 @@
           "fa": "ببخشید",
           "translit": "bebakhshid",
           "en": "forgive",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "اگه",
@@ -22153,7 +22153,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "us",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "اصلا",
@@ -22213,7 +22213,7 @@
           "fa": "داشت",
           "translit": "dâsht",
           "en": "had.",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -22239,13 +22239,13 @@
           "fa": "واسه",
           "translit": "vâse",
           "en": "for",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "رفتن",
           "translit": "raftan",
           "en": "going",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "به",
@@ -22269,7 +22269,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "احساساتم",
@@ -22341,7 +22341,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "دلم",
@@ -22365,7 +22365,7 @@
           "fa": "همه",
           "translit": "hame",
           "en": "all",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "بدجوری",
@@ -22401,7 +22401,7 @@
           "fa": "برام",
           "translit": "barâm",
           "en": "for me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "یه",
@@ -22486,7 +22486,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "خودم",
@@ -22594,7 +22594,7 @@
           "fa": "نفهمیدم",
           "translit": "nafahmidam",
           "en": "didn't understand",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "چی",
@@ -22618,13 +22618,13 @@
           "fa": "یکم",
           "translit": "yekam",
           "en": "a bit",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "آروم‌تر",
           "translit": "ârumtar",
           "en": "slower",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "دوباره",
@@ -22666,7 +22666,7 @@
           "fa": "گفت",
           "translit": "goft",
           "en": "said",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "خودش",
@@ -22702,7 +22702,7 @@
           "fa": "می‌خره",
           "translit": "mikhare",
           "en": "buys",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "پس",
@@ -22714,13 +22714,13 @@
           "fa": "نگران",
           "translit": "negarân",
           "en": "worried",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "نباش",
           "translit": "nabâsh",
           "en": "dont be",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -22763,7 +22763,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "به‌موقع",
@@ -22793,7 +22793,7 @@
           "fa": "همه",
           "translit": "hame",
           "en": "all",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "با",
@@ -22805,7 +22805,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "together",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌ریم",
@@ -22829,7 +22829,7 @@
           "fa": "چند",
           "translit": "chand",
           "en": "a few",
-          "pos": "noun"
+          "pos": "question word"
         },
         {
           "fa": "روز",
@@ -22938,7 +22938,7 @@
           "fa": "تا",
           "translit": "tâ",
           "en": "count",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "ساندویچ",
@@ -23029,7 +23029,7 @@
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "اینجا",
@@ -23047,7 +23047,7 @@
           "fa": "راست",
           "translit": "râst",
           "en": "right",
-          "pos": "noun"
+          "pos": "adverb"
         }
       ],
       "breakdownSource": "derived",
@@ -23083,7 +23083,7 @@
           "fa": "می‌ره",
           "translit": "mire",
           "en": "goes",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "فرودگاه",
@@ -23119,7 +23119,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "پیاده بشم",
@@ -23201,7 +23201,7 @@
           "fa": "خوبه",
           "translit": "khube",
           "en": "good is",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -23236,7 +23236,7 @@
           "fa": "ناراحتی",
           "translit": "nârâhati",
           "en": "sad you are",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -23372,7 +23372,7 @@
           "fa": "این",
           "translit": "in",
           "en": "this",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "سیب",
@@ -23407,7 +23407,7 @@
           "fa": "یه",
           "translit": "ye",
           "en": "one",
-          "pos": "noun"
+          "pos": "number"
         },
         {
           "fa": "کیلو",
@@ -23448,7 +23448,7 @@
           "fa": "این",
           "translit": "in",
           "en": "this",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "پیراهن",
@@ -23553,7 +23553,7 @@
           "fa": "اینجا",
           "translit": "injâ",
           "en": "here",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "بپیچ",
@@ -23670,7 +23670,7 @@
           "fa": "بشین",
           "translit": "beshin",
           "en": "sit",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -23757,7 +23757,7 @@
           "fa": "مرسی",
           "translit": "mersi",
           "en": "thanks",
-          "pos": "noun"
+          "pos": "expression"
         },
         {
           "fa": "من",
@@ -23862,7 +23862,7 @@
           "fa": "امروز",
           "translit": "emruz",
           "en": "today",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "میوه",
@@ -23932,7 +23932,7 @@
           "fa": "دیروز",
           "translit": "diruz",
           "en": "yesterday",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "به",
@@ -23973,7 +23973,7 @@
           "fa": "دیروز",
           "translit": "diruz",
           "en": "yesterday",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "تو",
@@ -24062,7 +24062,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "شستم",
@@ -24141,7 +24141,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "تمیز",
@@ -24216,13 +24216,13 @@
           "fa": "موافق",
           "translit": "movâfegh",
           "en": "agree",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "نیستم",
           "translit": "nistam",
           "en": "am not",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -24263,7 +24263,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "other",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "فکر می‌کنم",
@@ -24379,7 +24379,7 @@
           "fa": "هم",
           "translit": "ham",
           "en": "also",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "دارید",
@@ -24448,7 +24448,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌خرم",
@@ -24637,7 +24637,7 @@
           "fa": "می‌کنه",
           "translit": "mikone",
           "en": "does",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -24666,7 +24666,7 @@
           "fa": "می‌خواد",
           "translit": "mikhâd",
           "en": "wants",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -24747,7 +24747,7 @@
           "fa": "دارم",
           "translit": "dâram",
           "en": "have",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -24781,7 +24781,7 @@
           "fa": "من",
           "translit": "man",
           "en": "of me",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "نیست",
@@ -24862,7 +24862,7 @@
           "fa": "نمی‌شه",
           "translit": "nemishe",
           "en": "doesn't become",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -24890,7 +24890,7 @@
           "fa": "گرم",
           "translit": "garm",
           "en": "warm",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "نیست",
@@ -24960,7 +24960,7 @@
           "fa": "امروز",
           "translit": "emruz",
           "en": "of today",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "خیلی",
@@ -25006,7 +25006,7 @@
           "fa": "شلوغه",
           "translit": "sholughe",
           "en": "crowded is",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -25028,7 +25028,7 @@
           "fa": "بیرون",
           "translit": "birun",
           "en": "outside",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "بارون",
@@ -25114,7 +25114,7 @@
           "fa": "کثیفه",
           "translit": "kasife",
           "en": "dirty is",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -25136,7 +25136,7 @@
           "fa": "بیرون",
           "translit": "birun",
           "en": "outside",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "خیلی",
@@ -25223,7 +25223,7 @@
           "fa": "می‌آد",
           "translit": "miyâd",
           "en": "comes",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -25298,7 +25298,7 @@
           "fa": "می‌ره",
           "translit": "mire",
           "en": "goes",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -25345,7 +25345,7 @@
           "fa": "خوبی",
           "translit": "khubi",
           "en": "good",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "نیست",
@@ -25397,7 +25397,7 @@
           "fa": "سخته",
           "translit": "sakhte",
           "en": "hard is",
-          "pos": "verb"
+          "pos": "adjective"
         }
       ],
       "breakdownSource": "derived",
@@ -25461,7 +25461,7 @@
           "fa": "برات",
           "translit": "barât",
           "en": "for you",
-          "pos": "verb"
+          "pos": "attached pronoun"
         },
         {
           "fa": "خیلی",
@@ -25601,7 +25601,7 @@
           "fa": "این",
           "translit": "in",
           "en": "these",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "سیبا",
@@ -25819,7 +25819,7 @@
           "fa": "دیر",
           "translit": "dir",
           "en": "late",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "اومدم",
@@ -25900,7 +25900,7 @@
           "fa": "می‌شه",
           "translit": "mishe",
           "en": "becomes",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -26028,7 +26028,7 @@
           "fa": "ده",
           "translit": "dah",
           "en": "ten",
-          "pos": "noun"
+          "pos": "number"
         },
         {
           "fa": "هزار",
@@ -26153,7 +26153,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌دونی",
@@ -26195,7 +26195,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "ندونستم",
@@ -26236,7 +26236,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌شناسی",
@@ -26265,7 +26265,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "راننده",
@@ -26277,7 +26277,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "شناختم",
@@ -26312,7 +26312,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "آوردم",
@@ -26348,7 +26348,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌آری",
@@ -26385,7 +26385,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "برد",
@@ -26432,7 +26432,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "کجا",
@@ -26550,7 +26550,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌دونم",
@@ -26591,7 +26591,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نشناختم",
@@ -26662,7 +26662,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌برم",
@@ -26796,7 +26796,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "s/he",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "آلبالو",
@@ -27030,7 +27030,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "that one",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "پنجاه",
@@ -27048,7 +27048,7 @@
           "fa": "می‌خواد",
           "translit": "mikhâd",
           "en": "wants",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -27084,7 +27084,7 @@
           "fa": "می‌خوایم",
           "translit": "mikhâym",
           "en": "want",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -27162,7 +27162,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "برنداشتی",
@@ -27191,7 +27191,7 @@
           "fa": "بشین",
           "translit": "beshin",
           "en": "sit",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "جلو",
@@ -27220,7 +27220,7 @@
           "fa": "روی",
           "translit": "ruye",
           "en": "on",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "صندلی",
@@ -27325,7 +27325,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "دوست ندارم",
@@ -27368,7 +27368,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "دوست داره",
@@ -27483,7 +27483,7 @@
           "fa": "تا",
           "translit": "tâ",
           "en": "unit",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "بلیط",
@@ -27524,7 +27524,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "برندار",
@@ -27641,7 +27641,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "دوست داری",
@@ -27713,7 +27713,7 @@
           "fa": "تاکسی",
           "translit": "tâksi-ye",
           "en": "taxi",
-          "pos": "verb"
+          "pos": "noun"
         },
         {
           "fa": "ارزون",
@@ -27819,7 +27819,7 @@
           "fa": "سنگین",
           "translit": "sangin",
           "en": "heavy",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "شروع می‌شه",
@@ -27910,7 +27910,7 @@
           "fa": "رسید",
           "translit": "resid",
           "en": "receipt",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "می‌گیری",
@@ -28162,7 +28162,7 @@
           "fa": "می‌خوام",
           "translit": "mikhâm",
           "en": "want",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -28254,7 +28254,7 @@
           "fa": "برداشت",
           "translit": "bardâsht",
           "en": "picked up",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -28352,7 +28352,7 @@
           "fa": "می‌آره",
           "translit": "miyâre",
           "en": "brings",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -28888,7 +28888,7 @@
           "fa": "می‌خونه",
           "translit": "mikhune",
           "en": "sings",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -28938,7 +28938,7 @@
           "fa": "گرم",
           "translit": "garm",
           "en": "warm",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بلند شد",
@@ -29279,7 +29279,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "کمک می‌کنه",
@@ -29329,13 +29329,13 @@
           "fa": "اینو",
           "translit": "ino",
           "en": "this one object marker",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "نمی‌خواست",
           "translit": "nemikhâst",
           "en": "didn't want",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -29425,7 +29425,7 @@
           "fa": "ما",
           "translit": "mâ",
           "en": "us",
-          "pos": "noun"
+          "pos": "pronoun"
         },
         {
           "fa": "کمک کردن",
@@ -29571,13 +29571,13 @@
           "fa": "تو",
           "translit": "to",
           "en": "you",
-          "pos": "pronoun"
+          "pos": "preposition"
         },
         {
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "کمک نکردی",
@@ -29792,7 +29792,7 @@
           "fa": "جدید",
           "translit": "jadid",
           "en": "new",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "رو",
@@ -29828,7 +29828,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "دکتر",
@@ -30448,7 +30448,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "مشکلت",
@@ -30460,7 +30460,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بگی",
@@ -30503,7 +30503,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بگیرم",
@@ -30705,7 +30705,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌گه",
@@ -30733,7 +30733,7 @@
           "fa": "تو",
           "translit": "to",
           "en": "you",
-          "pos": "pronoun"
+          "pos": "preposition"
         },
         {
           "fa": "دارو",
@@ -30865,7 +30865,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌گیره",
@@ -30971,7 +30971,7 @@
           "fa": "بهم",
           "translit": "behem",
           "en": "to me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "گفت",
@@ -31194,7 +31194,7 @@
           "fa": "اومد",
           "translit": "umad",
           "en": "came",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -31223,7 +31223,7 @@
           "fa": "دیگه",
           "translit": "dige",
           "en": "already",
-          "pos": "adverb"
+          "pos": "adjective"
         },
         {
           "fa": "خوابیدی",
@@ -31265,7 +31265,7 @@
           "fa": "دنبال",
           "translit": "donbâle",
           "en": "after",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "بهونه",
@@ -31313,7 +31313,7 @@
           "fa": "بهش",
           "translit": "behesh",
           "en": "to him",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "گفتم",
@@ -31378,7 +31378,7 @@
           "fa": "داره",
           "translit": "dâre",
           "en": "is",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "بارون",
@@ -31460,7 +31460,7 @@
           "fa": "نشستیم",
           "translit": "neshastim",
           "en": "sat",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -31630,7 +31630,7 @@
           "fa": "واسم",
           "translit": "vâsam",
           "en": "for me",
-          "pos": "noun"
+          "pos": "attached pronoun"
         },
         {
           "fa": "آب",
@@ -31642,7 +31642,7 @@
           "fa": "بیار",
           "translit": "biyâr",
           "en": "bring",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -31670,13 +31670,13 @@
           "fa": "بشین",
           "translit": "beshin",
           "en": "sit",
-          "pos": "noun"
+          "pos": "verb"
         },
         {
           "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
-          "pos": "noun"
+          "pos": "adverb"
         }
       ],
       "breakdownSource": "derived",
@@ -31699,13 +31699,13 @@
           "fa": "دیشب",
           "translit": "dishab",
           "en": "last night",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "زود",
           "translit": "zud",
           "en": "early",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "خوابیدم",
@@ -31872,13 +31872,13 @@
           "fa": "گرم",
           "translit": "garm",
           "en": "warm",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌خوام",
@@ -31992,7 +31992,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "امروز",
@@ -32035,7 +32035,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "امروز",
@@ -32081,13 +32081,13 @@
           "fa": "زود",
           "translit": "zud",
           "en": "early",
-          "pos": "noun"
+          "pos": "adverb"
         },
         {
           "fa": "اومد",
           "translit": "umad",
           "en": "came",
-          "pos": "noun"
+          "pos": "verb"
         }
       ],
       "breakdownSource": "derived",
@@ -32122,7 +32122,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌خوام",
@@ -32229,7 +32229,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "زمستون",
@@ -32278,7 +32278,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "تموم کردم",
@@ -32482,7 +32482,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌خوام",
@@ -32518,7 +32518,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "کجا",
@@ -32560,7 +32560,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌شناسم",
@@ -32596,7 +32596,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نخوردم",
@@ -32631,7 +32631,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌دونم",
@@ -32673,7 +32673,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "ببینی",
@@ -32755,7 +32755,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بخرم",
@@ -32791,7 +32791,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "اینجا",
@@ -32832,7 +32832,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌دونی",
@@ -32867,7 +32867,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌شناسی",
@@ -32915,7 +32915,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بپوشی",
@@ -32951,13 +32951,13 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "تو",
           "translit": "tu",
           "en": "inside",
-          "pos": "noun"
+          "pos": "preposition"
         },
         {
           "fa": "نمی‌ذارم",
@@ -32998,7 +32998,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌خوری",
@@ -33028,7 +33028,7 @@
           "fa": "اون",
           "translit": "un",
           "en": "that",
-          "pos": "conjunction"
+          "pos": "pronoun"
         },
         {
           "fa": "دکتر",
@@ -33046,7 +33046,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌شناسم",
@@ -33095,7 +33095,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌خوای",
@@ -33126,7 +33126,7 @@
           "fa": "باید",
           "translit": "bâyad",
           "en": "must",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "کلیدم",
@@ -33138,7 +33138,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "بردارم",
@@ -33228,7 +33228,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "می‌دونی",
@@ -33272,7 +33272,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "فروخته",
@@ -33308,7 +33308,7 @@
           "fa": "تاکسی",
           "translit": "tâksie",
           "en": "taxi",
-          "pos": "verb"
+          "pos": "noun"
         },
         {
           "fa": "سریع",
@@ -33357,7 +33357,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌دونم",
@@ -33394,7 +33394,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "برداشتی",
@@ -33438,13 +33438,13 @@
           "fa": "سنگین",
           "translit": "sangin",
           "en": "heavy",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "باز کنم",
@@ -33486,7 +33486,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌شناختم",
@@ -33535,7 +33535,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "فروختی",
@@ -33583,7 +33583,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "نمی‌دونم",
@@ -33626,13 +33626,13 @@
           "fa": "قشنگ",
           "translit": "ghashang",
           "en": "beautiful",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "ببینم",
@@ -33674,7 +33674,7 @@
           "fa": "رو",
           "translit": "ro",
           "en": "[object]",
-          "pos": "noun"
+          "pos": "particle"
         },
         {
           "fa": "برداشتی",

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply core.gloss.tidy to the word maps already in the deck.
+"""Repair the word maps already in the deck: glosses and parts of speech.
 
 Derived breakdowns were written before these rules existed, and re-deriving
 them is not an option — the derivation is lossy and the hand-written batches
@@ -21,7 +21,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import bank
-from core.gloss import tidy
+from core.gloss import pos_lexicon, tidy, tidy_pos
 
 
 def main() -> int:
@@ -31,17 +31,31 @@ def main() -> int:
     args = ap.parse_args()
 
     changes: list[tuple[str, str, str]] = []
+    pos_changes: list[tuple[str, str, str]] = []
 
     deck = bank.load()
+    lexicon = pos_lexicon(deck["sentences"])
+
     for sentence in deck["sentences"]:
         # literalGloss is the fallback for an unannotated sentence — a whole
         # sentence, not a unit — so the word-level rules do not touch it.
+        derived = bool(sentence.get("breakdownSource"))
         for unit in sentence.get("breakdown") or []:
             before = unit.get("en") or ""
             after = tidy(unit.get("fa") or "", before)
             if after != before:
                 changes.append((unit.get("fa") or "", before, after))
                 unit["en"] = after
+
+            # Hand-written maps are the lexicon's source; correcting them from
+            # themselves would be circular.
+            if derived:
+                was = unit.get("pos") or ""
+                now = tidy_pos(unit.get("fa") or "", was, lexicon)
+                if now != was:
+                    pos_changes.append((unit.get("fa") or "", was, now))
+                    unit["pos"] = now
+
     if args.write:
         bank.save(deck)
 
@@ -56,7 +70,8 @@ def main() -> int:
         else:
             kinds["possessive moved to front"] += 1
 
-    print(f"{len(changes)} glosses changed\n")
+    print(f"{len(changes)} glosses changed, {len(pos_changes)} parts of speech "
+          f"corrected (lexicon: {len(lexicon)} forms)\n")
     for kind, count in kinds.most_common():
         print(f"  {count:4}  {kind}")
 
