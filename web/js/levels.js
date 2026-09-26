@@ -50,11 +50,7 @@ export async function progress(level) {
     db.getAll(db.STORE.attempts),
   ]);
 
-  const atLevel = new Set(
-    sentences
-      .filter((s) => levelForDifficulty(s.difficulty) === level)
-      .map((s) => s.id),
-  );
+  const atLevel = idsForLevel(sentences, level);
   const totalCards = atLevel.size * 2;
 
   // Breadth: distinct (sentence, direction) pairs actually practised.

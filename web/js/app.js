@@ -634,7 +634,7 @@ async function renderWeakSpots() {
   const row = (stat, dim) => {
     const rate = stat.totalCount ? stat.failCount / stat.totalCount : 0;
     const pct = Math.round(rate * 100);
-    return `<div class="ledger-row tag-row${dim ? ' is-dim' : ''}">
+    return `<div class="ledger-row${dim ? ' is-dim' : ''}">
       <span>${escapeHtml(tagTitle(stat.tag))}</span>
       <b class="col-n">${faDigits(stat.failCount)}/${faDigits(stat.totalCount)}</b>
       <b class="col-pct">${dim ? `${faDigits(stat.totalCount)}&times;` : `${faDigits(pct)}٪`}</b>

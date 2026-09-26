@@ -120,11 +120,6 @@ export async function removeMany(store, keys) {
   return keys.length;
 }
 
-export async function count(store) {
-  const db = await open();
-  const { transaction } = tx(db, [store], 'readonly');
-  return wrap(transaction.objectStore(store).count());
-}
 
 export async function clear(store) {
   const db = await open();
@@ -186,11 +181,3 @@ export async function requestPersistence() {
   }
 }
 
-export async function estimateUsage() {
-  if (!navigator.storage?.estimate) return null;
-  try {
-    return await navigator.storage.estimate();
-  } catch {
-    return null;
-  }
-}

@@ -39,14 +39,13 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-[dir="rtl"], .rtl { direction: rtl; text-align: right; }
+.rtl { direction: rtl; text-align: right; }
 
 button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; padding: 0; }
-/* Safari rounds buttons and inputs by default, which is why the TYPE/RECORD
-   controls read as pills in a design that forbids rounded containers. */
+/* Safari rounds buttons and inputs by default, which is why these controls
+   read as pills in a design that forbids rounded containers. */
 button, input, textarea, select { border-radius: 0; -webkit-appearance: none; appearance: none; }
 input, textarea { font: inherit; color: inherit; }
-hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
 
 /* --- screens --- */
 #screens { height: 100%; }
@@ -128,7 +127,6 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
   -webkit-overflow-scrolling: touch;
 }
 
-.entry { padding: 14px var(--gutter); border-bottom: 1px solid var(--rule); }
 .entry-top {
   display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
 }
@@ -142,7 +140,6 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
 
 /* Tags read as a comma list, not as pills — pills are containers. */
 .taglist { color: var(--ink-faint); font-size: 12px; margin: 9px 0 0; }
-.taglist.bad { color: var(--alarm); }
 
 .section-note { color: var(--ink-faint); font-size: 12px; padding: 14px var(--gutter) 0; margin: 0; }
 
@@ -214,7 +211,6 @@ kbd {
 }
 .settings .hint + label { margin-top: 22px; }
 .settings .button-row + input + .hint { margin-top: 12px; }
-code { font-family: inherit; font-style: italic; }
 
 /* --- tabs --- */
 .tabs {
@@ -288,8 +284,7 @@ code { font-family: inherit; font-style: italic; }
   border-top: 1px solid var(--rule-strong);
   display: flex; flex-direction: column; justify-content: center; gap: 10px;
 }
-/* Type / Record. Restored: these sat between two .rating-row rules and went
-   with the old four-way verdict block. */
+/* The Type control. */
 .input-row { display: flex; gap: 10px; }
 .input-row button {
   flex: 1; font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
