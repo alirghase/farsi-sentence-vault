@@ -1,0 +1,300 @@
+{
+  "note": "یاد گرفتن and درست کردن, the two core verbs the corrected coverage report found at one sentence each.",
+  "difficulty": 1,
+  "sentences": [
+    {
+      "en": "I'm learning Persian.",
+      "fa": "دارم فارسی یاد می‌گیرم.",
+      "tr": "dâram fârsi yâd migiram.",
+      "sit": "introducing yourself",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "دارم",
+          "dâram",
+          "I am",
+          "verb"
+        ],
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "یاد می‌گیرم",
+          "yâd migiram",
+          "learning",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Where did you learn that?",
+      "fa": "اینو کجا یاد گرفتی؟",
+      "tr": "ino kojâ yâd gerefti?",
+      "sit": "impressed by a friend",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اینو",
+          "ino",
+          "this",
+          "pronoun"
+        ],
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "یاد گرفتی",
+          "yâd gerefti",
+          "you learned",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You'll learn quickly.",
+      "fa": "زود یاد می‌گیری.",
+      "tr": "zud yâd migiri.",
+      "sit": "encouraging someone",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "زود",
+          "zud",
+          "quickly",
+          "adverb"
+        ],
+        [
+          "یاد می‌گیری",
+          "yâd migiri",
+          "you learn",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to learn to drive.",
+      "fa": "می‌خوام رانندگی یاد بگیرم.",
+      "tr": "mikhâm rânandegi yâd begiram.",
+      "sit": "talking about plans",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "رانندگی",
+          "rânandegi",
+          "driving",
+          "noun"
+        ],
+        [
+          "یاد بگیرم",
+          "yâd begiram",
+          "to learn",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "She learned it from her mother.",
+      "fa": "از مامانش یاد گرفت.",
+      "tr": "az mâmânesh yâd gereft.",
+      "sit": "talking about cooking",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "مامانش",
+          "mâmânesh",
+          "her mother",
+          "attached pronoun"
+        ],
+        [
+          "یاد گرفت",
+          "yâd gereft",
+          "she learned",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My mum is making dinner.",
+      "fa": "مامانم داره شام درست می‌کنه.",
+      "tr": "mâmânam dâre shâm dorost mikone.",
+      "sit": "at home",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "مامانم",
+          "mâmânam",
+          "my mum",
+          "attached pronoun"
+        ],
+        [
+          "داره",
+          "dâre",
+          "is",
+          "verb"
+        ],
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "درست می‌کنه",
+          "dorost mikone",
+          "making",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Can you fix it?",
+      "fa": "می‌تونی درستش کنی؟",
+      "tr": "mituni dorostesh koni?",
+      "sit": "a broken phone",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "می‌تونی",
+          "mituni",
+          "can you",
+          "verb"
+        ],
+        [
+          "درستش کنی",
+          "dorostesh koni",
+          "fix it",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I made this myself.",
+      "fa": "اینو خودم درست کردم.",
+      "tr": "ino khodam dorost kardam.",
+      "sit": "showing something off",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اینو",
+          "ino",
+          "this",
+          "pronoun"
+        ],
+        [
+          "خودم",
+          "khodam",
+          "myself",
+          "pronoun"
+        ],
+        [
+          "درست کردم",
+          "dorost kardam",
+          "I made",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Shall I make some tea?",
+      "fa": "چای درست کنم؟",
+      "tr": "chây dorost konam?",
+      "sit": "hosting",
+      "tags": [
+        "subjunctive"
+      ],
+      "bd": [
+        [
+          "چای",
+          "chây",
+          "tea",
+          "noun"
+        ],
+        [
+          "درست کنم",
+          "dorost konam",
+          "shall I make",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They fixed the door yesterday.",
+      "fa": "دیروز در رو درست کردن.",
+      "tr": "diruz dar ro dorost kardan.",
+      "sit": "about the house",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "در",
+          "dar",
+          "door",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "درست کردن",
+          "dorost kardan",
+          "they fixed",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

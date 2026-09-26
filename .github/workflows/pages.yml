@@ -2,7 +2,7 @@
 #
 # Deploying via Actions rather than "branch + folder" because the branch option
 # only ever offers / or /docs — it cannot serve an arbitrary directory, and the
-# app lives in web/ alongside the Python backend and Terraform.
+# app lives in web/ alongside the Python content pipeline.
 name: Deploy PWA to Pages
 
 on:
@@ -10,7 +10,12 @@ on:
     branches: [master]
     paths:
       - 'web/**'
-      - 'tools/test_js.mjs'
+      - 'tools/*.mjs'
+      # The job runs check_mirror.py, which guards core/taxonomy.py against
+      # web/js/taxonomy.js. Without these two the guard could be broken by a
+      # change to the very files it watches and CI would never run.
+      - 'core/**'
+      - 'tools/*.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 

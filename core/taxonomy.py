@@ -1,8 +1,8 @@
 """Shared vocabulary for sentence generation and attempt grading.
 
 This module is the single source of truth for the closed sets the model is
-constrained to. It is mirrored in Swift at FarsiVault/AI/Prompts.swift — if you
-change anything here, change it there too, or adaptation silently breaks.
+constrained to. It is mirrored in web/js/taxonomy.js — if you change anything
+here, change it there too. tools/check_mirror.py enforces that, and runs in CI.
 
 Why closed sets: free-form tags from an LLM fragment across runs
 ("ezafe" / "ezāfe" / "missing ezafe" / "incorrect ezafe construction"). Once tags

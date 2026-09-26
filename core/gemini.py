@@ -1,7 +1,7 @@
 """Minimal Gemini REST client. Standard library only — no pip install.
 
-Deliberately dependency-free so the request/response shapes stay visible and
-port mechanically to Swift's URLSession in FarsiVault/AI/GeminiClient.swift.
+Deliberately dependency-free so the request and response shapes stay visible
+and the whole pipeline runs from a clone with nothing installed.
 
 Free-tier reality this client is built around:
   - gemini-2.5-flash: ~1500 requests/day, 15 requests/minute

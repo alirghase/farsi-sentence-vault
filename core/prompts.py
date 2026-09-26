@@ -1,7 +1,7 @@
 """Prompt templates and response schemas for generation and grading.
 
-Mirrored in Swift at FarsiVault/AI/Prompts.swift. Iterate here first — a Python
-round-trip is seconds, a Swift rebuild is minutes.
+Iterate with tools/prompt_harness.py, which round-trips a prompt against real
+data in seconds.
 """
 
 from __future__ import annotations

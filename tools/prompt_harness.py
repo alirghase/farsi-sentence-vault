@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Iterate generation and grading prompts against real data, fast.
 
-Round-trip here is seconds; through a Swift rebuild it is minutes. Port to
-FarsiVault/AI/Prompts.swift only once output is consistently good.
+Edit core/prompts.py, run this, read the output. Nothing is written to the
+deck, so it is safe to run against anything.
 
     python3 tools/prompt_harness.py gen --count 5
     python3 tools/prompt_harness.py grade --text "man miram khune"

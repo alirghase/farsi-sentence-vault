@@ -67,8 +67,10 @@ anything else.
 |---|---|
 | `generate_seed.py` | Adds model-generated sentences, optionally `--syllabus` to target core-verb gaps |
 | `merge_handwritten.py` | Merges hand-written batches, through the same validation |
+| `check_handwritten.py` | Checks a batch before it is merged: parts of speech, tags, register, and that the word map covers every word |
 | `derive_breakdown.py` | Builds word mappings from the gloss already in the deck — no API |
 | `augment.py` | Model-written breakdowns and alternatives for what cannot be derived |
+| `fix_glosses.py` | Repairs word maps written before the gloss and part-of-speech rules existed |
 | `coverage.py` | Reports core-verb coverage and what is still missing |
 | `check_mirror.py` | Guards the JS ↔ Python vocabularies against drift |
 | `prompt_harness.py` | Iterate prompts without a rebuild |

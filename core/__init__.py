@@ -1,6 +1,7 @@
 """Shared Farsi Vault logic.
 
-Used by BOTH the one-off seed generator (tools/) and the Cloud Run service
-(backend/). Keeping prompts, taxonomy, and validation in one place is what stops
-the generator and the live service from drifting apart.
+Used by the content pipeline in tools/. Also imported by backend/, which is
+parked and not deployed — nothing in web/ or tools/ references it at run time.
+Keeping prompts, taxonomy and validation in one place is what stops the
+generator and the app from drifting apart.
 """

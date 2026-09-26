@@ -3,8 +3,9 @@ __pycache__/
 *.pyc
 .venv/
 
-# Generated content — regenerate with tools/generate_seed.py
-tools/seed_sentences.json
+# The deck itself is tracked: web/data/seed_sentences.json is the one bank and
+# its diff is the review of what changed. There used to be a working copy here
+# plus a cp step to publish it, which is how a stale deck got shipped.
 
 # Secrets. Never commit these.
 .env

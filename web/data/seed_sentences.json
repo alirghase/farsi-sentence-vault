@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 1080,
+  "count": 1147,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -46107,6 +46107,1870 @@
           "fa": "یاد می‌گیرم",
           "translit": "yâd migiram",
           "en": "learning",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "cbe0db55-0942-44df-b9a3-b786b79ecd91",
+      "englishText": "Hello, how are you?",
+      "farsiText": "سلام، خوبی؟",
+      "finglish": "salâm, khubi?",
+      "literalGloss": "hello are you well",
+      "difficulty": 1,
+      "situation": "greeting a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "سلام",
+          "translit": "salâm",
+          "en": "hello",
+          "pos": "expression"
+        },
+        {
+          "fa": "خوبی",
+          "translit": "khubi",
+          "en": "are you well",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "4b1026d6-c373-4020-8e09-865b4645cd65",
+      "englishText": "I'm good, thanks. You?",
+      "farsiText": "خوبم مرسی، تو چطوری؟",
+      "finglish": "khubam mersi, to chetori?",
+      "literalGloss": "I am well thanks you how are you",
+      "difficulty": 1,
+      "situation": "greeting a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خوبم",
+          "translit": "khubam",
+          "en": "I am well",
+          "pos": "adjective"
+        },
+        {
+          "fa": "مرسی",
+          "translit": "mersi",
+          "en": "thanks",
+          "pos": "expression"
+        },
+        {
+          "fa": "تو",
+          "translit": "to",
+          "en": "you",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "چطوری",
+          "translit": "chetori",
+          "en": "how are you",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "16f08180-187e-428b-8b18-301d59443827",
+      "englishText": "What's new?",
+      "farsiText": "چه خبر؟",
+      "finglish": "che khabar?",
+      "literalGloss": "what news",
+      "difficulty": 1,
+      "situation": "greeting a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چه خبر",
+          "translit": "che khabar",
+          "en": "what news",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "2299f8d8-38e0-46f6-900d-5878ab0c376f",
+      "englishText": "Nothing much.",
+      "farsiText": "سلامتی.",
+      "finglish": "salâmati.",
+      "literalGloss": "health — nothing much",
+      "difficulty": 1,
+      "situation": "answering what's new",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "سلامتی",
+          "translit": "salâmati",
+          "en": "health — nothing much",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "26ed2bb4-5451-41ba-8b58-41c774d77e96",
+      "englishText": "Good morning.",
+      "farsiText": "صبح بخیر.",
+      "finglish": "sobh bekheyr.",
+      "literalGloss": "morning well",
+      "difficulty": 1,
+      "situation": "morning at home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "صبح",
+          "translit": "sobh",
+          "en": "morning",
+          "pos": "noun"
+        },
+        {
+          "fa": "بخیر",
+          "translit": "bekheyr",
+          "en": "well",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "b8d253d0-78c4-4e53-b8ce-d1545fbfa420",
+      "englishText": "Good night.",
+      "farsiText": "شب بخیر.",
+      "finglish": "shab bekheyr.",
+      "literalGloss": "night well",
+      "difficulty": 1,
+      "situation": "going to bed",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "شب",
+          "translit": "shab",
+          "en": "night",
+          "pos": "noun"
+        },
+        {
+          "fa": "بخیر",
+          "translit": "bekheyr",
+          "en": "well",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "73a8641c-634f-469c-8fbd-c1705d590a92",
+      "englishText": "Goodbye, see you.",
+      "farsiText": "خداحافظ، می‌بینمت.",
+      "finglish": "khodâhâfez, mibinamet.",
+      "literalGloss": "goodbye I'll see you",
+      "difficulty": 1,
+      "situation": "leaving",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "خداحافظ",
+          "translit": "khodâhâfez",
+          "en": "goodbye",
+          "pos": "expression"
+        },
+        {
+          "fa": "می‌بینمت",
+          "translit": "mibinamet",
+          "en": "I'll see you",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "65780480-978e-4862-a377-8fb5f5ca00e9",
+      "englishText": "See you later.",
+      "farsiText": "فعلا.",
+      "finglish": "felan.",
+      "literalGloss": "see you for now",
+      "difficulty": 1,
+      "situation": "leaving casually",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "فعلا",
+          "translit": "felan",
+          "en": "see you for now",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "df1b0fe1-92fb-4c5b-ae5e-3fa0c78e7db4",
+      "englishText": "Welcome!",
+      "farsiText": "خوش اومدی!",
+      "finglish": "khosh umadi!",
+      "literalGloss": "you came pleasantly",
+      "difficulty": 1,
+      "situation": "greeting a guest",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خوش اومدی",
+          "translit": "khosh umadi",
+          "en": "you came pleasantly",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "523ef684-e1aa-4c39-a934-7ca5707e58ec",
+      "englishText": "Long time no see.",
+      "farsiText": "چه عجب!",
+      "finglish": "che ajab!",
+      "literalGloss": "what a surprise",
+      "difficulty": 1,
+      "situation": "meeting an old friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چه عجب",
+          "translit": "che ajab",
+          "en": "what a surprise",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "a054932a-71fe-403e-9ca9-08fda73e8c56",
+      "englishText": "Thank you very much.",
+      "farsiText": "خیلی ممنون.",
+      "finglish": "kheyli mamnun.",
+      "literalGloss": "very grateful",
+      "difficulty": 1,
+      "situation": "thanking someone",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ممنون",
+          "translit": "mamnun",
+          "en": "grateful",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "e08b2ee2-a130-4de9-86d6-6f2aeaa67a60",
+      "englishText": "You're welcome.",
+      "farsiText": "خواهش می‌کنم.",
+      "finglish": "khâhesh mikonam.",
+      "literalGloss": "you're welcome",
+      "difficulty": 1,
+      "situation": "answering thanks",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "خواهش می‌کنم",
+          "translit": "khâhesh mikonam",
+          "en": "you're welcome",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "92751771-1c55-44e6-af65-950e76ce8e17",
+      "englishText": "It's nothing.",
+      "farsiText": "قابلی نداره.",
+      "finglish": "ghâbeli nadâre.",
+      "literalGloss": "it has no worth",
+      "difficulty": 1,
+      "situation": "refusing payment politely",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "قابلی نداره",
+          "translit": "ghâbeli nadâre",
+          "en": "it has no worth",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "22f2fc2f-cd94-443e-b3c4-ed729f932ee1",
+      "englishText": "Sorry, excuse me.",
+      "farsiText": "ببخشید، معذرت می‌خوام.",
+      "finglish": "bebakhshid, ma'zerat mikhâm.",
+      "literalGloss": "excuse me I apologise",
+      "difficulty": 1,
+      "situation": "apologising",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "ببخشید",
+          "translit": "bebakhshid",
+          "en": "excuse me",
+          "pos": "expression"
+        },
+        {
+          "fa": "معذرت می‌خوام",
+          "translit": "ma'zerat mikhâm",
+          "en": "I apologise",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "8b232961-aaff-4c3e-8e76-aae3f72cc0e0",
+      "englishText": "Well done, you must be tired.",
+      "farsiText": "خسته نباشی.",
+      "finglish": "khaste nabâshi.",
+      "literalGloss": "may you not be tired",
+      "difficulty": 1,
+      "situation": "greeting someone at work",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خسته نباشی",
+          "translit": "khaste nabâshi",
+          "en": "may you not be tired",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "158b101b-5fb9-42af-9219-8df68f219305",
+      "englishText": "Enjoy your meal.",
+      "farsiText": "نوش جان.",
+      "finglish": "nush-e jân.",
+      "literalGloss": "may it be sweet",
+      "difficulty": 1,
+      "situation": "serving food",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "نوش جان",
+          "translit": "nush-e jân",
+          "en": "may it be sweet",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "9c1fff62-fff3-45ee-be29-2e4e882d7771",
+      "englishText": "Cheers, to your health.",
+      "farsiText": "به سلامتی.",
+      "finglish": "be salâmati.",
+      "literalGloss": "to health",
+      "difficulty": 1,
+      "situation": "raising a glass",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "سلامتی",
+          "translit": "salâmati",
+          "en": "health",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "57ce3c50-8cda-42ed-8901-1e734ce588b1",
+      "englishText": "Certainly, of course.",
+      "farsiText": "چشم.",
+      "finglish": "cheshm.",
+      "literalGloss": "eye — certainly",
+      "difficulty": 1,
+      "situation": "agreeing to a request",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چشم",
+          "translit": "cheshm",
+          "en": "eye — certainly",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "b95d5c1e-da91-43ec-b74f-5519f97f400f",
+      "englishText": "Please, go ahead.",
+      "farsiText": "بفرمایید.",
+      "finglish": "befarmâyid.",
+      "literalGloss": "please go ahead",
+      "difficulty": 1,
+      "situation": "offering a seat or food",
+      "grammarTags": [
+        "formality"
+      ],
+      "breakdown": [
+        {
+          "fa": "بفرمایید",
+          "translit": "befarmâyid",
+          "en": "please go ahead",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "7fd22583-d036-4468-b8b8-bda55f3b5c83",
+      "englishText": "Bless you, thank you.",
+      "farsiText": "قربونت برم.",
+      "finglish": "ghorbunet beram.",
+      "literalGloss": "may I be your sacrifice",
+      "difficulty": 1,
+      "situation": "warm thanks to family",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "قربونت برم",
+          "translit": "ghorbunet beram",
+          "en": "may I be your sacrifice",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "ce5a527c-40f6-44a3-8acc-bbd95e60283a",
+      "englishText": "May God protect you.",
+      "farsiText": "خدا حفظت کنه.",
+      "finglish": "khodâ hefzet kone.",
+      "literalGloss": "God protect you",
+      "difficulty": 1,
+      "situation": "saying goodbye warmly",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "خدا",
+          "translit": "khodâ",
+          "en": "God",
+          "pos": "noun"
+        },
+        {
+          "fa": "حفظت کنه",
+          "translit": "hefzet kone",
+          "en": "protect you",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "0a06d471-a0da-42df-b978-64a71235a747",
+      "englishText": "Of course.",
+      "farsiText": "البته.",
+      "finglish": "albate.",
+      "literalGloss": "of course",
+      "difficulty": 1,
+      "situation": "agreeing",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "البته",
+          "translit": "albate",
+          "en": "of course",
+          "pos": "adverb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "80f68edb-c00f-40c7-92bb-c9d81ca73746",
+      "englishText": "Definitely.",
+      "farsiText": "حتما.",
+      "finglish": "hatman.",
+      "literalGloss": "definitely",
+      "difficulty": 1,
+      "situation": "agreeing",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "حتما",
+          "translit": "hatman",
+          "en": "definitely",
+          "pos": "adverb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "439d1b70-3508-4a09-b41f-efde3737d380",
+      "englishText": "Exactly.",
+      "farsiText": "دقیقا.",
+      "finglish": "daghighan.",
+      "literalGloss": "exactly",
+      "difficulty": 1,
+      "situation": "agreeing strongly",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دقیقا",
+          "translit": "daghighan",
+          "en": "exactly",
+          "pos": "adverb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "f3d8ae4f-98ed-477a-a6bf-5344066717b0",
+      "englishText": "That's right.",
+      "farsiText": "درسته.",
+      "finglish": "doroste.",
+      "literalGloss": "it is right",
+      "difficulty": 1,
+      "situation": "confirming",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "درسته",
+          "translit": "doroste",
+          "en": "it is right",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "c19b1a39-2b8a-489f-96cc-9b4392676d2c",
+      "englishText": "I agree with you.",
+      "farsiText": "منم موافقم.",
+      "finglish": "manam movâfegham.",
+      "literalGloss": "me too I agree",
+      "difficulty": 1,
+      "situation": "in a discussion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "منم",
+          "translit": "manam",
+          "en": "me too",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "موافقم",
+          "translit": "movâfegham",
+          "en": "I agree",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "fdd5d7ab-f122-46e4-b1d9-56c86c946283",
+      "englishText": "Really?",
+      "farsiText": "جدی؟",
+      "finglish": "jedi?",
+      "literalGloss": "serious — really",
+      "difficulty": 1,
+      "situation": "hearing surprising news",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "جدی",
+          "translit": "jedi",
+          "en": "serious — really",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "fba1e103-35f8-45f2-8a92-6bd2e3a9def0",
+      "englishText": "No way!",
+      "farsiText": "نه بابا!",
+      "finglish": "na bâbâ!",
+      "literalGloss": "no dad — come on",
+      "difficulty": 1,
+      "situation": "disbelief",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "نه",
+          "translit": "na",
+          "en": "no",
+          "pos": "particle"
+        },
+        {
+          "fa": "بابا",
+          "translit": "bâbâ",
+          "en": "dad — come on",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "3b061c56-0932-47cd-a881-31498c636d81",
+      "englishText": "How nice!",
+      "farsiText": "چه خوب!",
+      "finglish": "che khub!",
+      "literalGloss": "what good",
+      "difficulty": 1,
+      "situation": "hearing good news",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چه",
+          "translit": "che",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "خوب",
+          "translit": "khub",
+          "en": "good",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "0c312f28-e9e1-4800-920f-b52c52d98e60",
+      "englishText": "Oh dear.",
+      "farsiText": "ای بابا.",
+      "finglish": "ey bâbâ.",
+      "literalGloss": "oh dear",
+      "difficulty": 1,
+      "situation": "mild frustration",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "ای بابا",
+          "translit": "ey bâbâ",
+          "en": "oh dear",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "4612a7a6-097e-4f0c-b3d1-691b481853fe",
+      "englishText": "What a shame.",
+      "farsiText": "حیف شد.",
+      "finglish": "heyf shod.",
+      "literalGloss": "it became a pity",
+      "difficulty": 1,
+      "situation": "hearing bad news",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "حیف شد",
+          "translit": "heyf shod",
+          "en": "it became a pity",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "609589a0-1fe6-4de7-bda4-3db67e5cc9d5",
+      "englishText": "Never mind.",
+      "farsiText": "مهم نیست.",
+      "finglish": "mohem nist.",
+      "literalGloss": "important is not",
+      "difficulty": 1,
+      "situation": "brushing something off",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "مهم",
+          "translit": "mohem",
+          "en": "important",
+          "pos": "adjective"
+        },
+        {
+          "fa": "نیست",
+          "translit": "nist",
+          "en": "is not",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "66315f2e-a03b-41cc-834f-0cef674c9884",
+      "englishText": "As you wish.",
+      "farsiText": "هرجور راحتی.",
+      "finglish": "har jur râhati.",
+      "literalGloss": "whichever way you are comfortable",
+      "difficulty": 1,
+      "situation": "letting someone choose",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هرجور",
+          "translit": "har jur",
+          "en": "whichever way",
+          "pos": "adverb"
+        },
+        {
+          "fa": "راحتی",
+          "translit": "râhati",
+          "en": "you are comfortable",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "91288352-ffc1-422a-906c-74b93914f361",
+      "englishText": "I don't know.",
+      "farsiText": "نمی‌دونم.",
+      "finglish": "nemidunam.",
+      "literalGloss": "I don't know",
+      "difficulty": 1,
+      "situation": "answering a question",
+      "grammarTags": [
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "نمی‌دونم",
+          "translit": "nemidunam",
+          "en": "I don't know",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "fa1b439d-dcff-4d91-91e1-3a0049c81a57",
+      "englishText": "Maybe, I'm not sure.",
+      "farsiText": "شاید، مطمئن نیستم.",
+      "finglish": "shâyad, motmaen nistam.",
+      "literalGloss": "maybe sure I am not",
+      "difficulty": 1,
+      "situation": "hedging",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "شاید",
+          "translit": "shâyad",
+          "en": "maybe",
+          "pos": "adverb"
+        },
+        {
+          "fa": "مطمئن",
+          "translit": "motmaen",
+          "en": "sure",
+          "pos": "adjective"
+        },
+        {
+          "fa": "نیستم",
+          "translit": "nistam",
+          "en": "I am not",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "62449899-3a11-4d47-bbb2-1eed0f1aa738",
+      "englishText": "I don't think so.",
+      "farsiText": "فکر نکنم.",
+      "finglish": "fekr nakonam.",
+      "literalGloss": "I don't think so",
+      "difficulty": 1,
+      "situation": "disagreeing gently",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "فکر نکنم",
+          "translit": "fekr nakonam",
+          "en": "I don't think so",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "d3a6db5a-61d9-40ef-8aee-a18dac63f55e",
+      "englishText": "In my opinion, it's better.",
+      "farsiText": "به نظرم بهتره.",
+      "finglish": "be nazaram behtare.",
+      "literalGloss": "to my opinion is better",
+      "difficulty": 1,
+      "situation": "giving an opinion",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "نظرم",
+          "translit": "nazaram",
+          "en": "my opinion",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "بهتره",
+          "translit": "behtare",
+          "en": "is better",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "26bf923b-1bfd-43db-bdb9-cc10457c27ca",
+      "englishText": "To be honest, I'm tired.",
+      "farsiText": "راستش خسته‌ام.",
+      "finglish": "râstesh khastam.",
+      "literalGloss": "its truth — honestly I am tired",
+      "difficulty": 1,
+      "situation": "being candid",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "راستش",
+          "translit": "râstesh",
+          "en": "its truth — honestly",
+          "pos": "expression"
+        },
+        {
+          "fa": "خسته‌ام",
+          "translit": "khastam",
+          "en": "I am tired",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "5a0f1473-bd9b-46e2-ba0d-0c601e4dda7b",
+      "englishText": "Anyway, let's go.",
+      "farsiText": "به هر حال، بریم.",
+      "finglish": "be har hâl, berim.",
+      "literalGloss": "in any case let's go",
+      "difficulty": 1,
+      "situation": "moving a conversation on",
+      "grammarTags": [
+        "subjunctive"
+      ],
+      "breakdown": [
+        {
+          "fa": "به هر حال",
+          "translit": "be har hâl",
+          "en": "in any case",
+          "pos": "expression"
+        },
+        {
+          "fa": "بریم",
+          "translit": "berim",
+          "en": "let's go",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "58ebb3c1-6ca5-4d93-ab92-8121746be1b0",
+      "englishText": "In short, it didn't work.",
+      "farsiText": "خلاصه نشد.",
+      "finglish": "kholâse nashod.",
+      "literalGloss": "in short it didn't happen",
+      "difficulty": 1,
+      "situation": "summarising",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خلاصه",
+          "translit": "kholâse",
+          "en": "in short",
+          "pos": "adverb"
+        },
+        {
+          "fa": "نشد",
+          "translit": "nashod",
+          "en": "it didn't happen",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "4b05c7bd-d232-4f02-8e8a-2e2fe8544c60",
+      "englishText": "I mean, it's not far.",
+      "farsiText": "یعنی دور نیست.",
+      "finglish": "yani dur nist.",
+      "literalGloss": "I mean far is not",
+      "difficulty": 1,
+      "situation": "clarifying",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یعنی",
+          "translit": "yani",
+          "en": "I mean",
+          "pos": "expression"
+        },
+        {
+          "fa": "دور",
+          "translit": "dur",
+          "en": "far",
+          "pos": "adjective"
+        },
+        {
+          "fa": "نیست",
+          "translit": "nist",
+          "en": "is not",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "1f20f0e0-79d0-4d6a-b072-c078d6fa7ae2",
+      "englishText": "Could you help me?",
+      "farsiText": "می‌شه کمکم کنی؟",
+      "finglish": "mishe komakam koni?",
+      "literalGloss": "is it possible you help me",
+      "difficulty": 1,
+      "situation": "asking a favour",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌شه",
+          "translit": "mishe",
+          "en": "is it possible",
+          "pos": "verb"
+        },
+        {
+          "fa": "کمکم کنی",
+          "translit": "komakam koni",
+          "en": "you help me",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "657895e4-6e42-4d09-89e0-2acfcd8c42bc",
+      "englishText": "One moment please.",
+      "farsiText": "یه لحظه لطفا.",
+      "finglish": "ye lahze lotfan.",
+      "literalGloss": "a moment please",
+      "difficulty": 1,
+      "situation": "asking someone to wait",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "لحظه",
+          "translit": "lahze",
+          "en": "moment",
+          "pos": "noun"
+        },
+        {
+          "fa": "لطفا",
+          "translit": "lotfan",
+          "en": "please",
+          "pos": "adverb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "83cc570c-1e67-4759-bc75-dc714444efbc",
+      "englishText": "Sorry to bother you.",
+      "farsiText": "ببخشید مزاحم شدم.",
+      "finglish": "bebakhshid mozâhem shodam.",
+      "literalGloss": "excuse me I became a bother",
+      "difficulty": 1,
+      "situation": "interrupting someone",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "ببخشید",
+          "translit": "bebakhshid",
+          "en": "excuse me",
+          "pos": "expression"
+        },
+        {
+          "fa": "مزاحم شدم",
+          "translit": "mozâhem shodam",
+          "en": "I became a bother",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "7242b06d-452b-4b50-b4e5-cd18addcbce3",
+      "englishText": "Hello? Where are you?",
+      "farsiText": "الو؟ کجایی؟",
+      "finglish": "alo? kojâyi?",
+      "literalGloss": "hello where are you",
+      "difficulty": 1,
+      "situation": "on the phone",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "الو",
+          "translit": "alo",
+          "en": "hello",
+          "pos": "expression"
+        },
+        {
+          "fa": "کجایی",
+          "translit": "kojâyi",
+          "en": "where are you",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "715f7aca-29a8-4744-8db9-58a008d66032",
+      "englishText": "I can't hear you.",
+      "farsiText": "صدات نمیاد.",
+      "finglish": "sedât nemiyâd.",
+      "literalGloss": "your voice doesn't come",
+      "difficulty": 1,
+      "situation": "on a bad line",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "صدات",
+          "translit": "sedât",
+          "en": "your voice",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "نمیاد",
+          "translit": "nemiyâd",
+          "en": "doesn't come",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "d26d2b56-bfee-42b3-b3d5-07bc2b4e6760",
+      "englishText": "I'll call you later.",
+      "farsiText": "بعدا بهت زنگ می‌زنم.",
+      "finglish": "ba'dan behet zang mizanam.",
+      "literalGloss": "later to you I call",
+      "difficulty": 1,
+      "situation": "ending a call",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "بعدا",
+          "translit": "ba'dan",
+          "en": "later",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بهت",
+          "translit": "behet",
+          "en": "to you",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "زنگ می‌زنم",
+          "translit": "zang mizanam",
+          "en": "I call",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "078a4372-bf5f-4378-9d98-bfebb1bfac48",
+      "englishText": "I'm on my way.",
+      "farsiText": "دارم میام.",
+      "finglish": "dâram miyâm.",
+      "literalGloss": "I am coming",
+      "difficulty": 1,
+      "situation": "on the phone",
+      "grammarTags": [
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I am",
+          "pos": "verb"
+        },
+        {
+          "fa": "میام",
+          "translit": "miyâm",
+          "en": "coming",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "68a14134-ffad-4816-86c6-bf0dd86069fa",
+      "englishText": "Wait for me.",
+      "farsiText": "منتظرم بمون.",
+      "finglish": "montazeram bemun.",
+      "literalGloss": "waiting for me stay",
+      "difficulty": 1,
+      "situation": "arranging to meet",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "منتظرم",
+          "translit": "montazeram",
+          "en": "waiting for me",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "بمون",
+          "translit": "bemun",
+          "en": "stay",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "c685a4fd-13d8-4bb3-88fc-a41d53e91ce3",
+      "englishText": "I'm a bit late.",
+      "farsiText": "یکم دیر می‌رسم.",
+      "finglish": "yekam dir miresam.",
+      "literalGloss": "a bit late I arrive",
+      "difficulty": 1,
+      "situation": "on the phone",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یکم",
+          "translit": "yekam",
+          "en": "a bit",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دیر",
+          "translit": "dir",
+          "en": "late",
+          "pos": "adverb"
+        },
+        {
+          "fa": "می‌رسم",
+          "translit": "miresam",
+          "en": "I arrive",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "700898f7-6932-4215-8b7d-8fd7c7796abb",
+      "englishText": "How much is it?",
+      "farsiText": "چنده؟",
+      "finglish": "chande?",
+      "literalGloss": "how much is it",
+      "difficulty": 1,
+      "situation": "in a shop",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چنده",
+          "translit": "chande",
+          "en": "how much is it",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "2d92b645-275f-4c6f-aec7-012601b20a59",
+      "englishText": "That's too expensive.",
+      "farsiText": "خیلی گرونه.",
+      "finglish": "kheyli gerune.",
+      "literalGloss": "very is expensive",
+      "difficulty": 1,
+      "situation": "in a market",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "گرونه",
+          "translit": "gerune",
+          "en": "is expensive",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "3923e73e-bcc7-455a-8495-91b89d95e6ba",
+      "englishText": "Do you have a smaller one?",
+      "farsiText": "کوچیک‌ترش رو دارین؟",
+      "finglish": "kuchiktaresh ro dârin?",
+      "literalGloss": "its smaller [object] you have",
+      "difficulty": 1,
+      "situation": "shopping",
+      "grammarTags": [
+        "formality"
+      ],
+      "breakdown": [
+        {
+          "fa": "کوچیک‌ترش",
+          "translit": "kuchiktaresh",
+          "en": "its smaller",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "دارین",
+          "translit": "dârin",
+          "en": "you have",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "4784d8e6-2bf9-4acd-8e4f-a8c67070b362",
+      "englishText": "I'll take this one.",
+      "farsiText": "همینو برمی‌دارم.",
+      "finglish": "haminu barmidâram.",
+      "literalGloss": "this very one I take",
+      "difficulty": 1,
+      "situation": "deciding in a shop",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "همینو",
+          "translit": "haminu",
+          "en": "this very one",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "برمی‌دارم",
+          "translit": "barmidâram",
+          "en": "I take",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "6df9d740-60cb-47d6-909f-4a48686e7055",
+      "englishText": "The bill, please.",
+      "farsiText": "حساب لطفا.",
+      "finglish": "hesâb lotfan.",
+      "literalGloss": "bill please",
+      "difficulty": 1,
+      "situation": "at a restaurant",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "حساب",
+          "translit": "hesâb",
+          "en": "bill",
+          "pos": "noun"
+        },
+        {
+          "fa": "لطفا",
+          "translit": "lotfan",
+          "en": "please",
+          "pos": "adverb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "7505c543-6bd4-484c-acaa-87680de4ef0d",
+      "englishText": "Where's the toilet?",
+      "farsiText": "دستشویی کجاست؟",
+      "finglish": "dastshuyi kojâst?",
+      "literalGloss": "toilet where is",
+      "difficulty": 1,
+      "situation": "in a cafe",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دستشویی",
+          "translit": "dastshuyi",
+          "en": "toilet",
+          "pos": "noun"
+        },
+        {
+          "fa": "کجاست",
+          "translit": "kojâst",
+          "en": "where is",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "2768042a-cd75-496c-8833-92340a1cd499",
+      "englishText": "Can I sit here?",
+      "farsiText": "می‌تونم اینجا بشینم؟",
+      "finglish": "mitunam injâ beshinam?",
+      "literalGloss": "can I here sit",
+      "difficulty": 1,
+      "situation": "in a cafe",
+      "grammarTags": [
+        "subjunctive"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌تونم",
+          "translit": "mitunam",
+          "en": "can I",
+          "pos": "verb"
+        },
+        {
+          "fa": "اینجا",
+          "translit": "injâ",
+          "en": "here",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بشینم",
+          "translit": "beshinam",
+          "en": "sit",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "d8f07f9c-4633-4de5-9a1f-00cbd3b2a539",
+      "englishText": "Just a coffee, thanks.",
+      "farsiText": "فقط یه قهوه، ممنون.",
+      "finglish": "faghat ye ghahve, mamnun.",
+      "literalGloss": "only a coffee thanks",
+      "difficulty": 1,
+      "situation": "ordering",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "فقط",
+          "translit": "faghat",
+          "en": "only",
+          "pos": "adverb"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "قهوه",
+          "translit": "ghahve",
+          "en": "coffee",
+          "pos": "noun"
+        },
+        {
+          "fa": "ممنون",
+          "translit": "mamnun",
+          "en": "thanks",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "b587749c-c875-44fb-a4eb-d20bdad582d5",
+      "englishText": "Where did you learn that?",
+      "farsiText": "اینو کجا یاد گرفتی؟",
+      "finglish": "ino kojâ yâd gerefti?",
+      "literalGloss": "this where you learned",
+      "difficulty": 1,
+      "situation": "impressed by a friend",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "اینو",
+          "translit": "ino",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "کجا",
+          "translit": "kojâ",
+          "en": "where",
+          "pos": "question word"
+        },
+        {
+          "fa": "یاد گرفتی",
+          "translit": "yâd gerefti",
+          "en": "you learned",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "45775330-98c3-4649-ad07-4e05cbd15a44",
+      "englishText": "You'll learn quickly.",
+      "farsiText": "زود یاد می‌گیری.",
+      "finglish": "zud yâd migiri.",
+      "literalGloss": "quickly you learn",
+      "difficulty": 1,
+      "situation": "encouraging someone",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "زود",
+          "translit": "zud",
+          "en": "quickly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "یاد می‌گیری",
+          "translit": "yâd migiri",
+          "en": "you learn",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "daf7c6ca-e768-4c4f-a539-7388a9bd2eed",
+      "englishText": "I want to learn to drive.",
+      "farsiText": "می‌خوام رانندگی یاد بگیرم.",
+      "finglish": "mikhâm rânandegi yâd begiram.",
+      "literalGloss": "I want driving to learn",
+      "difficulty": 1,
+      "situation": "talking about plans",
+      "grammarTags": [
+        "subjunctive"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "رانندگی",
+          "translit": "rânandegi",
+          "en": "driving",
+          "pos": "noun"
+        },
+        {
+          "fa": "یاد بگیرم",
+          "translit": "yâd begiram",
+          "en": "to learn",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "4ae68694-e0af-437d-8fa3-86bfc67066f8",
+      "englishText": "She learned it from her mother.",
+      "farsiText": "از مامانش یاد گرفت.",
+      "finglish": "az mâmânesh yâd gereft.",
+      "literalGloss": "from her mother she learned",
+      "difficulty": 1,
+      "situation": "talking about cooking",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "مامانش",
+          "translit": "mâmânesh",
+          "en": "her mother",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "یاد گرفت",
+          "translit": "yâd gereft",
+          "en": "she learned",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "ccfe1ed2-40f9-474f-adc6-6d4bdfcafd17",
+      "englishText": "My mum is making dinner.",
+      "farsiText": "مامانم داره شام درست می‌کنه.",
+      "finglish": "mâmânam dâre shâm dorost mikone.",
+      "literalGloss": "my mum is dinner making",
+      "difficulty": 1,
+      "situation": "at home",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "مامانم",
+          "translit": "mâmânam",
+          "en": "my mum",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "داره",
+          "translit": "dâre",
+          "en": "is",
+          "pos": "verb"
+        },
+        {
+          "fa": "شام",
+          "translit": "shâm",
+          "en": "dinner",
+          "pos": "noun"
+        },
+        {
+          "fa": "درست می‌کنه",
+          "translit": "dorost mikone",
+          "en": "making",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "d60a133d-f0a3-4cd6-a399-82633af3fe30",
+      "englishText": "Can you fix it?",
+      "farsiText": "می‌تونی درستش کنی؟",
+      "finglish": "mituni dorostesh koni?",
+      "literalGloss": "can you fix it",
+      "difficulty": 1,
+      "situation": "a broken phone",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌تونی",
+          "translit": "mituni",
+          "en": "can you",
+          "pos": "verb"
+        },
+        {
+          "fa": "درستش کنی",
+          "translit": "dorostesh koni",
+          "en": "fix it",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "71f81e49-8909-4f35-b767-462cc34fcf3f",
+      "englishText": "I made this myself.",
+      "farsiText": "اینو خودم درست کردم.",
+      "finglish": "ino khodam dorost kardam.",
+      "literalGloss": "this myself I made",
+      "difficulty": 1,
+      "situation": "showing something off",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "اینو",
+          "translit": "ino",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "خودم",
+          "translit": "khodam",
+          "en": "myself",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "درست کردم",
+          "translit": "dorost kardam",
+          "en": "I made",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "62942bf0-368a-48a5-9e42-273eb6a837c7",
+      "englishText": "Shall I make some tea?",
+      "farsiText": "چای درست کنم؟",
+      "finglish": "chây dorost konam?",
+      "literalGloss": "tea shall I make",
+      "difficulty": 1,
+      "situation": "hosting",
+      "grammarTags": [
+        "subjunctive"
+      ],
+      "breakdown": [
+        {
+          "fa": "چای",
+          "translit": "chây",
+          "en": "tea",
+          "pos": "noun"
+        },
+        {
+          "fa": "درست کنم",
+          "translit": "dorost konam",
+          "en": "shall I make",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten"
+    },
+    {
+      "id": "bb847290-d2e9-4b76-a03b-12c1a9243fc9",
+      "englishText": "They fixed the door yesterday.",
+      "farsiText": "دیروز در رو درست کردن.",
+      "finglish": "diruz dar ro dorost kardan.",
+      "literalGloss": "yesterday door [object] they fixed",
+      "difficulty": 1,
+      "situation": "about the house",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "دیروز",
+          "translit": "diruz",
+          "en": "yesterday",
+          "pos": "adverb"
+        },
+        {
+          "fa": "در",
+          "translit": "dar",
+          "en": "door",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "درست کردن",
+          "translit": "dorost kardan",
+          "en": "they fixed",
           "pos": "compound verb"
         }
       ],
