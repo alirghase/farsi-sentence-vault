@@ -3,9 +3,13 @@
   "configurations": [
     {
       "name": "farsi-vault-web",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "web"],
-      "port": 8000
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "exec python3 -m http.server \"${PORT:-8000}\" --directory web"
+      ],
+      "port": 8000,
+      "autoPort": true
     }
   ]
 }

@@ -25,6 +25,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
+from core.gloss import tidy
 from core.syllabus import CORE_VERBS
 
 from core import bank
@@ -173,7 +174,13 @@ def derive(sentence: dict) -> list[dict] | None:
         }
         for f, t, g in zip(fa, tr, gl)
     ]
-    return merge_compounds(units)
+    merged = merge_compounds(units)
+    # The alignment is faithful to Persian word order, which leaves artefacts
+    # like "head my" and "Wi Fi of". tidy() repairs the mechanical ones; it runs
+    # after merging so it sees the final compound-verb units.
+    for unit in merged:
+        unit["en"] = tidy(unit["fa"], unit["en"])
+    return merged
 
 
 def main() -> int:
