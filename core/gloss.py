@@ -31,9 +31,24 @@ POSSESSIVES = {"my", "your", "his", "her", "our", "their", "its"}
 PRONOUNS = {"I", "you", "he", "she", "we", "they", "it"}
 THIRD_SINGULAR = {"he", "she", "it"}
 
-# The râ marker was glossed five different ways across the deck. One form.
+# The râ marker was glossed ten different ways across the deck — [ra], RA,
+# (ra), OBJ, "direct object" and so on. One form now.
+#
+# Matching is on the normalised spelling AND on the Persian being رو/را, because
+# رو is also the ordinary word "on"; that sense must survive untouched.
 OBJECT_MARKER = "[object]"
-_MARKER_FORMS = {"[ra]", "[obj]", "[object]", "[object marker]", "[ra marker]"}
+_RA_WORDS = {"رو", "را"}
+_MARKER_SPELLINGS = {
+    "ra", "obj", "object", "object marker", "ra marker", "direct object",
+    "ra particle", "object particle", "accusative",
+}
+
+
+def _is_object_marker(farsi: str, english: str) -> bool:
+    if farsi.strip() not in _RA_WORDS:
+        return False
+    stripped = english.strip().strip("[](){}<>").strip().lower()
+    return stripped in _MARKER_SPELLINGS
 
 # Past form -> base. A negated past takes "didn't" plus the base.
 _PAST = {
@@ -219,7 +234,7 @@ def tidy(farsi: str, english: str) -> str:
     if not english:
         return english
 
-    if english.lower() in _MARKER_FORMS:
+    if _is_object_marker(farsi, english):
         return OBJECT_MARKER
 
     tokens = english.split()
