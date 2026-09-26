@@ -39,7 +39,7 @@ export function answerFor(sentence, direction) {
  * pinned at the batch size and never moves as you work — a number that cannot
  * change is useless on a screen whose job is accounting.
  */
-export async function counts(now = Date.now(), dailyBatchSize = 100, level = null) {
+export async function counts(now = Date.now(), newPerDay = 20, level = null) {
   const [sentences, reviews, attempts] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
@@ -64,21 +64,33 @@ export async function counts(now = Date.now(), dailyBatchSize = 100, level = nul
     }
   }
 
-  // A card that reached its first repetition today started today.
-  const newToday = reviews.filter(
-    (r) => r.repetitions === 1 && (r.lastReviewed ?? 0) >= dayStart,
-  ).length;
+  const newToday = introducedSince(reviews, dayStart);
   const reviewedToday = attempts.filter((a) => a.createdAt >= dayStart).length;
 
-  const allowance = Math.max(0, dailyBatchSize - newToday);
+  const allowance = Math.max(0, newPerDay - newToday);
   return {
     due,
     new: Math.min(unseen, allowance),
     unseen,
+    newToday,
+    allowance,
     reviewedToday,
     sentenceCount,
     total: due + Math.min(unseen, allowance),
   };
+}
+
+/**
+ * Cards first seen since `since`.
+ *
+ * Reviews carry `introducedAt` from the first rating on. Rows written before
+ * that field existed fall back to "reached its first repetition since", which
+ * miscounts a relearned card as new and a failed new card as not — close
+ * enough for old rows, and it stops mattering after a day.
+ */
+export function introducedSince(reviews, since) {
+  return reviews.filter((r) => (r.introducedAt
+    ?? (r.repetitions === 1 ? r.lastReviewed ?? 0 : 0)) >= since).length;
 }
 
 /**
@@ -147,6 +159,7 @@ export async function streak(now = Date.now()) {
  */
 export async function build({
   limit,
+  maxNew = limit,
   weights = DEFAULT_WEIGHTS,
   level = null,
   kinds = null,
@@ -194,7 +207,7 @@ export async function build({
   due.sort((a, b) => a.review.dueDate - b.review.dueDate);
   shuffle(fresh);
 
-  const chosen = select(due, fresh, limit, weights, directions);
+  const chosen = select(due, fresh, limit, weights, directions, maxNew);
   // A session that front-loads every review and back-loads every new card feels
   // like two different activities.
   shuffle(chosen);
@@ -206,8 +219,15 @@ export async function build({
  *
  * Weights are normalised over the directions given, so a zeroed direction
  * redistributes its share rather than leaving the session short.
+ *
+ * Two hard limits hold through the backfill as well as the main pass:
+ * - at most `maxNew` unseen cards, so the day's new-card allowance is real
+ *   rather than something a lopsided due pile can leak past;
+ * - one card per sentence. The two directions of a sentence are each other's
+ *   answer, so meeting both in one sitting turns the second into reading back
+ *   what you saw a minute ago.
  */
-function select(due, fresh, limit, weights, directions) {
+export function select(due, fresh, limit, weights, directions = DIRECTIONS, maxNew = limit) {
   const total = directions.reduce((sum, d) => sum + (weights[d] ?? 0), 0) || 1;
 
   const remaining = {};
@@ -221,29 +241,33 @@ function select(due, fresh, limit, weights, directions) {
   });
 
   const chosen = [];
-  const taken = new Set();
+  const sentences = new Set();
+  let newTaken = 0;
+
+  const take = (card) => {
+    if (sentences.has(card.sentence.id)) return false;
+    if (card.isNew && newTaken >= maxNew) return false;
+    chosen.push(card);
+    sentences.add(card.sentence.id);
+    if (card.isNew) newTaken += 1;
+    return true;
+  };
 
   for (const pool of [due, fresh]) {
     for (const card of pool) {
       if (chosen.length >= limit) break;
       if ((remaining[card.direction] ?? 0) <= 0) continue;
-      chosen.push(card);
-      taken.add(cardId(card));
-      remaining[card.direction] -= 1;
+      if (take(card)) remaining[card.direction] -= 1;
     }
   }
 
   // If one direction ran dry, backfill rather than returning a short session.
   // Both pools are already level- and kind-filtered, so this cannot reintroduce
   // off-level material.
-  if (chosen.length < limit) {
-    for (const pool of [due, fresh]) {
-      for (const card of pool) {
-        if (chosen.length >= limit) break;
-        if (taken.has(cardId(card))) continue;
-        chosen.push(card);
-        taken.add(cardId(card));
-      }
+  for (const pool of [due, fresh]) {
+    for (const card of pool) {
+      if (chosen.length >= limit) break;
+      take(card);
     }
   }
   return chosen;
@@ -261,7 +285,6 @@ function shuffle(array) {
   return array;
 }
 
-/** Record one review: persist the attempt and advance the schedule. */
 /**
  * How long an answer should take, in ms.
  *
@@ -277,14 +300,22 @@ export function targetMs(sentence, direction) {
   return Math.round(base * multiplier);
 }
 
+/**
+ * Record one review: persist the attempt and advance the schedule.
+ *
+ * Returns what `undoAttempt` needs to put everything back: the review as it was
+ * before (null for a card never rated until now) and the attempt written.
+ */
 export async function recordAttempt({ card, rating, typedAnswer, msToReveal = null }) {
   const now = Date.now();
   const quality = SM2.RATING_QUALITY[rating];
   const advanced = SM2.next(card.review, quality);
+  const previous = await db.get(db.STORE.reviews, card.review.key);
 
   const review = {
     ...card.review,
     ...advanced,
+    introducedAt: card.review.introducedAt ?? previous?.introducedAt ?? now,
     lastReviewed: now,
     dueDate: SM2.dueDate(advanced, now),
   };
@@ -313,19 +344,67 @@ export async function recordAttempt({ card, rating, typedAnswer, msToReveal = nu
   // excluding it would leave the weak-spot view blind to most practice.
   await bumpTagStats(card.sentence.grammarTags ?? [], rating === 'fail');
 
-  return { attempt, review };
+  return { attempt, review, previous: previous ?? null };
 }
 
-export async function bumpTagStats(tags, failed) {
+/**
+ * Reverse a `recordAttempt`: restore the schedule, drop the attempt, and take
+ * the tag counts back down. A mis-tap on a one-tap binary rating is common on
+ * a phone, and without this it silently resets a card that was fine.
+ */
+export async function undoAttempt({ card, attempt, previous }) {
+  await Promise.all([
+    previous
+      ? db.put(db.STORE.reviews, previous)
+      : db.remove(db.STORE.reviews, card.review.key),
+    db.remove(db.STORE.attempts, attempt.id),
+  ]);
+  await bumpTagStats(card.sentence.grammarTags ?? [], attempt.selfRating === 'fail', -1);
+}
+
+export async function bumpTagStats(tags, failed, delta = 1) {
   for (const tag of tags) {
     const existing = (await db.get(db.STORE.tagStats, tag)) ?? {
       tag,
       failCount: 0,
       totalCount: 0,
     };
-    existing.totalCount += 1;
-    if (failed) existing.failCount += 1;
+    existing.totalCount = Math.max(0, existing.totalCount + delta);
+    if (failed) existing.failCount = Math.max(0, existing.failCount + delta);
     existing.lastSeen = Date.now();
     await db.put(db.STORE.tagStats, existing);
   }
+}
+
+/**
+ * Does a typed answer match the reference, or one of the listed alternatives?
+ *
+ * Deliberately forgiving about what a phone keyboard varies and strict about
+ * everything else. Arabic ي/ك for Persian ی/ک, short-vowel marks, punctuation,
+ * and whether می‌ was joined with a half-space, a space or nothing are all
+ * noise. A different word is not. The verdict is still yours to give: this
+ * only says whether what you wrote is one of the answers on the card.
+ */
+export function matchesAnswer(typed, sentence, direction) {
+  const candidates = direction === 'enToFa'
+    ? [sentence.farsiText, ...(sentence.alternatives ?? [])]
+    : [sentence.englishText];
+  const mine = normaliseAnswer(typed, direction);
+  if (!mine) return false;
+  return candidates.some((c) => normaliseAnswer(c, direction) === mine);
+}
+
+export function normaliseAnswer(value, direction) {
+  let s = String(value ?? '').toLowerCase();
+  if (direction === 'enToFa') {
+    s = s
+      .replace(/ي/g, 'ی').replace(/ى/g, 'ی').replace(/ك/g, 'ک')
+      .replace(/[\u064B-\u0652\u0670]/g, '')       // harakat
+      .replace(/[\u200C\u200D\s]+/g, '');           // ZWNJ, ZWJ, spaces
+  } else {
+    // Apostrophes go entirely: "dont" and "don't" are the same answer typed
+    // on a phone.
+    s = s.replace(/['’‘]/g, '').replace(/\s+/g, ' ');
+  }
+  return s.replace(/[.,!?؟،؛:;«»"“”()\-–—]/g, '').trim();
 }

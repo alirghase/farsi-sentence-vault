@@ -111,28 +111,14 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
 .ledger-row .col-pct { width: 46px; }
 .ledger-row.is-dim > span, .ledger-row.is-dim > b { color: var(--ink-faint); font-weight: 400; }
 
-/* One primary idiom, used by Start, Reveal and Sync alike. */
-#btn-start, #btn-sync, #btn-reveal {
+/* One primary idiom, used by Start and Reveal alike. */
+#btn-start, #btn-reveal {
   display: block; width: 100%; text-align: right;
   font-size: 19px; font-weight: 600; letter-spacing: -.01em;
   padding: 15px var(--gutter);
 }
 #btn-start { border-bottom: 1px solid var(--rule); }
-#btn-start:disabled, #btn-sync:disabled { color: var(--ink-faint); }
-
-/* --- sync --- */
-.sync-bar {
-  /* auto margin pushes this to the foot of the flex column — no spacer element,
-     and it still sits directly under the content when the screen is short. */
-  flex: none; margin-top: auto;
-  padding: 0 0 env(safe-area-inset-bottom, 0px);
-  border-top: 1px solid var(--rule-strong);
-}
-.sync-status { margin: 0; padding: 10px var(--gutter) 0; font-size: 13px;
-  color: var(--ink-soft); }
-.sync-status:empty { display: none; }
-.sync-status.error { color: var(--alarm); }
-.sync-status.warn { color: var(--ink-soft); }
+#btn-start:disabled { color: var(--ink-faint); }
 
 
 /* --- ledger lists --- */
@@ -176,13 +162,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
   float: right; color: var(--ink); font-family: var(--mono);
   font-variant-numeric: tabular-nums; font-weight: 600;
 }
-.settings input[type="url"],
-.settings input[type="password"] {
-  display: block; width: 100%; margin-top: 7px; background: transparent;
-  border: 0; border-bottom: 1px solid var(--rule); border-radius: 0;
-  padding: 7px 0; font-size: 15px;
-}
-.settings input:focus { outline: 0; border-bottom-color: var(--ink); }
+.settings input:focus { outline: 0; }
 /* The default range and checkbox are rounded pills and a system tick — the two
    most prominent controls in Settings contradicting a design that forbids
    rounded containers. Rebuilt square, from rules. */
@@ -213,26 +193,25 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
   content: ''; position: absolute; inset: 4px;
   background: var(--paper);
 }
-#btn-restore, #btn-health {
-  font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--ink); padding: 9px 14px; border: 1px solid var(--rule);
+.button-row { display: flex; gap: 10px; }
+.button-row button {
+  flex: 1; font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink); padding: 10px 0; border: 1px solid var(--rule);
+}
+.button-row button:active { background: var(--ink); color: var(--paper); }
+kbd {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-soft);
+  border: 1px solid var(--rule); padding: 0 4px;
 }
 .hint { color: var(--ink-faint); font-size: 12px; margin: 8px 0 0; }
+.settings .hint + label { margin-top: 22px; }
+.settings .button-row + input + .hint { margin-top: 12px; }
 code { font-family: inherit; font-style: italic; }
-
-.kv { margin: 0; }
-.kv > div {
-  display: flex; justify-content: space-between; align-items: baseline;
-  padding: 7px 0; border-top: 1px solid var(--rule); font-size: 14px;
-}
-.kv > div:first-child { border-top: 0; }
-.kv dt { color: var(--ink-soft); }
-.kv dd { margin: 0; font-family: var(--mono); font-variant-numeric: tabular-nums; }
 
 /* --- tabs --- */
 .tabs {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   background: var(--paper); border-top: 1px solid var(--rule-strong);
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
@@ -251,8 +230,8 @@ code { font-family: inherit; font-style: italic; }
   padding: calc(env(safe-area-inset-top, 0px) + 14px) var(--gutter) 12px;
   border-bottom: 1px solid var(--rule-strong);
 }
-.practice-head .spacer { width: 44px; }
-#btn-quit { font-size: 13px; color: var(--ink-soft); }
+#btn-quit, #btn-undo { font-size: 13px; color: var(--ink-soft); min-width: 44px; }
+#btn-undo { text-align: right; }
 .progress {
   font-family: var(--mono); font-variant-numeric: tabular-nums;
   font-size: 12px; color: var(--ink-faint);
@@ -278,6 +257,12 @@ code { font-family: inherit; font-style: italic; }
 
 .answer { border-left: 2px solid var(--ink); padding: 4px 0 4px 14px; margin-top: 26px; }
 .answer-row { display: flex; gap: 12px; align-items: flex-start; }
+.typed-echo {
+  margin: 0 0 12px; font-family: var(--serif); font-size: 18px;
+  color: var(--ink-faint); text-decoration: line-through;
+  text-decoration-color: var(--rule);
+}
+.typed-echo.is-match { color: var(--ink-soft); text-decoration: none; }
 .answer-text { flex: 1; margin: 0; font-family: var(--serif); font-size: 26px; line-height: 1.4; }
 #btn-speak {
   font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
@@ -337,7 +322,13 @@ code { font-family: inherit; font-style: italic; }
 .verdict:active { background: var(--ink); color: var(--paper); }
 .verdict:active small { color: rgba(251, 250, 248, .7); }
 
-.done-panel { padding: 48px 0; }
+.done-panel { padding: 48px 0; direction: rtl; }
+.done-panel .note { font-size: 15px; }
+.done-panel .note-faint { margin-top: 10px; }
+.done-row { display: flex; justify-content: space-between; align-items: center; }
+.done-row button { font-size: 17px; padding: 8px 0; }
+#btn-finish { color: var(--ink-soft); }
+#btn-again { font-size: 19px; font-weight: 600; }
 .done-panel h2 { margin: 0 0 6px; font-family: var(--serif); font-size: 24px; font-weight: 500; }
 
 /* --- toast --- */
@@ -398,27 +389,24 @@ code { font-family: inherit; font-style: italic; }
 .ledger-row > b.is-hit { color: var(--ink); }
 .ledger-row > b.is-hit::after { content: ' ✓'; color: var(--ink-faint); }
 
-/* Listening prompt: the control IS the card, so it gets real presence. */
-.listen-prompt {
-  display: block; width: 100%; text-align: center;
-  border: 1px solid var(--ink); padding: 26px 0;
-  font-size: 17px; font-weight: 600; letter-spacing: .04em;
-}
-.listen-prompt:active { background: var(--ink); color: var(--paper); }
-#listen-hint { text-align: center; margin-top: 12px; }
-
 /* --- word map --- */
 .breakdown { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--rule); }
-.map-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
-.map-row.rtl { flex-direction: row-reverse; justify-content: flex-start; }
-
-.chip {
-  border: 1px solid var(--rule); padding: 5px 9px;
-  font-size: 15px; line-height: 1.2; color: var(--ink);
+/* Interlinear: one column per unit, Persian over its gloss, columns flowing
+   right to left with the sentence. */
+.map-row {
+  display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px;
+  direction: rtl;
+}
+.pair {
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  border: 1px solid var(--rule); padding: 6px 9px 5px;
+  line-height: 1.2; color: var(--ink);
   transition: background .12s, border-color .12s, color .12s;
 }
-.chip-en { font-size: 13px; color: var(--ink-soft); }
-.chip.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.pair-fa { font-size: 17px; direction: rtl; }
+.pair-en { font-size: 12px; color: var(--ink-soft); direction: ltr; }
+.pair.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.pair.on .pair-en { color: rgba(251, 250, 248, .75); }
 
 .map-detail {
   margin: 10px 0 0; min-height: 34px;
@@ -443,5 +431,5 @@ code { font-family: inherit; font-style: italic; }
 
 /* Hover only where there is a real pointer; on touch it fires with the tap. */
 @media (hover: hover) {
-  .chip:hover { border-color: var(--ink); }
+  .pair:hover { border-color: var(--ink); }
 }

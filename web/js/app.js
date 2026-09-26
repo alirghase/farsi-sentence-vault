@@ -1,13 +1,15 @@
 // UI controller. Plain DOM — no framework, no build step.
 
 import * as db from './db.js';
+import * as deck from './deck.js';
+import * as backup from './backup.js';
 import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as speech from './speech.js';
 import * as levels from './levels.js';
 import * as sound from './sound.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
-import { ERROR_TAGS, tagTitle } from './taxonomy.js';
+import { tagTitle } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
 
@@ -16,10 +18,16 @@ const state = {
   queue: [],
   index: 0,
   completed: 0,
-  total: 0,
+  passes: 0,
   revealed: false,
   typedOpen: false,
   speechOK: false,
+  // A rating is async (IndexedDB), and a second tap landing before it resolves
+  // used to record the same card twice and skip the next one.
+  busy: false,
+  // The most recent rating, for undo. One level deep on purpose: undo is for a
+  // mis-tap, not for re-litigating a session.
+  last: null,
 };
 
 // --- boot ------------------------------------------------------------------
@@ -31,7 +39,7 @@ async function boot() {
   // an installed PWA with granted persistence is far less likely to lose it.
   db.requestPersistence();
 
-  await loadSeedIfNeeded();
+  await deck.loadBundled();
   state.speechOK = await speech.isSpeechAvailable();
   sound.setEnabled(state.settings.soundEnabled !== false);
 
@@ -40,56 +48,17 @@ async function boot() {
   bindTabs();
   bindToday();
   bindPractice();
+  bindKeys();
   bindSettings();
+
+  // An installed app is resumed, not reopened, so without this the counts on
+  // Today are yesterday's the next morning.
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && $('practice').hidden) refreshActive();
+  });
 
   await refreshToday();
   registerServiceWorker();
-}
-
-/**
- * Load the bundled deck, and merge in anything added since.
- *
- * Seeding only when the store was empty meant an existing learner never
- * received new sentences: the deck grew from 400 to 730 and their device kept
- * showing 400, silently, forever. Matching on farsiText rather than id because
- * ids are minted per device.
- */
-async function loadSeedIfNeeded() {
-  try {
-    const response = await fetch('data/seed_sentences.json');
-    if (!response.ok) return;
-    const bundle = await response.json();
-    const incoming = bundle.sentences ?? [];
-    if (!incoming.length) return;
-
-    const existing = await db.getAll(db.STORE.sentences);
-    const seen = new Set(existing.map((s) => s.farsiText));
-
-    const fresh = incoming
-      .filter((s) => !seen.has(s.farsiText))
-      .map((s) => ({
-        id: crypto.randomUUID(),
-        ...s,
-        kind: s.kind ?? 'sentence',
-        source: 'seed',
-        createdAt: Date.now(),
-      }));
-
-    if (fresh.length) await db.putMany(db.STORE.sentences, fresh);
-
-    // Annotations (breakdown, alternatives) are added to sentences that already
-    // exist on device, so merge those onto the rows we already hold.
-    const byText = new Map(incoming.map((s) => [s.farsiText, s]));
-    const updated = [];
-    for (const row of existing) {
-      const source = byText.get(row.farsiText);
-      if (!source?.breakdown || row.breakdown) continue;
-      updated.push({ ...row, breakdown: source.breakdown, alternatives: source.alternatives ?? [] });
-    }
-    if (updated.length) await db.putMany(db.STORE.sentences, updated);
-  } catch {
-    // Not fatal — the Today screen surfaces an empty deck and Sync can fill it.
-  }
 }
 
 function registerServiceWorker() {
@@ -119,6 +88,11 @@ async function showScreen(name) {
   if (name === 'settings') await renderSettings();
 }
 
+function refreshActive() {
+  const active = document.querySelector('.tabs button.is-active')?.dataset.screen ?? 'today';
+  return showScreen(active);
+}
+
 function toast(message, ms = 2600) {
   const element = $('toast');
   element.textContent = message;
@@ -143,10 +117,13 @@ function bindToday() {
   });
 }
 
+const todayCounts = () => session.counts(
+  Date.now(), state.settings.newPerDay, state.settings.currentLevel,
+);
 
 async function refreshToday() {
   const level = state.settings.currentLevel;
-  const counts = await session.counts(Date.now(), state.settings.dailyBatchSize, level);
+  const counts = await todayCounts();
   const gate = await levels.progress(level);
 
   $('level-now').textContent = level;
@@ -168,7 +145,19 @@ async function refreshToday() {
   $('btn-start').innerHTML = startable
     ? `${text('today.start')} &rarr;`
     : text('today.nothing');
+}
 
+/** The moment a level is cleared. Advancing is a deliberate tap, not automatic. */
+function renderPassPanel(gate) {
+  const panel = $('passed-panel');
+  const next = levels.nextLevel(gate.level);
+  panel.hidden = !gate.passed || !next;
+  if (panel.hidden) return;
+
+  $('passed-head').textContent = `${gate.level} passed.`;
+  $('passed-note').textContent =
+    `${levels.LEVEL_META[next].summary} Earlier levels keep coming back on schedule.`;
+  $('btn-advance').innerHTML = `Unlock ${next} &rarr;`;
 }
 
 /**
@@ -176,9 +165,7 @@ async function refreshToday() {
  * none of them belongs on the screen whose only job is to start a session.
  */
 async function renderProgressStats() {
-  const counts = await session.counts(
-    Date.now(), state.settings.dailyBatchSize, state.settings.currentLevel,
-  );
+  const counts = await todayCounts();
 
   const streak = await session.streak();
   $('streak').textContent = `${faDigits(streak.days)} ${text('today.day')}`;
@@ -214,47 +201,84 @@ async function renderRegister() {
   }).join('');
 }
 
-
-
 // --- practice --------------------------------------------------------------
-
-/** The moment a level is cleared. Advancing is a deliberate tap, not automatic. */
-function renderPassPanel(gate) {
-  const panel = $('passed-panel');
-  const next = levels.nextLevel(gate.level);
-  panel.hidden = !gate.passed || !next;
-  if (panel.hidden) return;
-
-  $('passed-head').textContent = `${gate.level} passed.`;
-  $('passed-note').textContent =
-    `${levels.LEVEL_META[next].summary} Earlier levels keep coming back on schedule.`;
-  $('btn-advance').innerHTML = `Unlock ${next} &rarr;`;
-}
 
 function bindPractice() {
   $('btn-quit').addEventListener('click', endSession);
   $('btn-reveal').addEventListener('click', reveal);
   $('btn-type').addEventListener('click', toggleTyping);
+  $('btn-undo').addEventListener('click', undo);
+  $('btn-finish').addEventListener('click', endSession);
+  $('btn-again').addEventListener('click', startSession);
   $('btn-speak').addEventListener('click', () => {
-    speech.speak(currentCard().sentence.farsiText);
+    const card = currentCard() ?? state.last?.card;
+    if (card) speech.speak(card.sentence.farsiText);
+  });
+  $('rating-row').addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-r]');
+    if (button) rate(button.dataset.r);
+  });
+  $('card-typed').addEventListener('keydown', (event) => {
+    // Enter submits; Shift+Enter is still a newline for anyone who wants one.
+    if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
+      event.preventDefault();
+      reveal();
+    }
+  });
+}
+
+/**
+ * Keyboard control, for practising at a desk. Every key maps onto a button
+ * that already exists, so there is no behaviour here the phone lacks.
+ */
+function bindKeys() {
+  document.addEventListener('keydown', (event) => {
+    if ($('practice').hidden || event.metaKey || event.ctrlKey || event.altKey) return;
+    if (event.target === $('card-typed')) {
+      if (event.key === 'Escape') $('card-typed').blur();
+      return;
+    }
+
+    const done = !$('done-view').hidden;
+    const key = event.key.toLowerCase();
+    const act = (fn) => { event.preventDefault(); fn(); };
+
+    if (key === 'escape') return act(endSession);
+    if (key === 'u' || key === 'backspace') return state.last && act(undo);
+    if (done) {
+      if (key === ' ' || key === 'enter') {
+        return act(() => (!$('btn-again').hidden ? startSession() : endSession()));
+      }
+      return undefined;
+    }
+    if (!state.revealed) {
+      if (key === ' ' || key === 'enter') return act(reveal);
+      if (key === 't') return act(toggleTyping);
+      return undefined;
+    }
+    if (key === '1' || key === 'f' || key === 'arrowleft') return act(() => rate('fail'));
+    if (key === '2' || key === 'j' || key === 'arrowright' || key === ' ' || key === 'enter') {
+      return act(() => rate('pass'));
+    }
+    if (key === 'p' && state.speechOK) return act(() => $('btn-speak').click());
+    return undefined;
   });
 }
 
 async function startSession() {
-  const counts = await session.counts(
-    Date.now(), state.settings.dailyBatchSize, state.settings.currentLevel,
-  );
-  const limit = Math.min(state.settings.dailyBatchSize, Math.max(counts.total, 1));
-  state.queue = await session.build({
-    limit,
+  const counts = await todayCounts();
+  const queue = await session.build({
+    limit: state.settings.sessionSize,
+    maxNew: counts.allowance,
     weights: session.DEFAULT_WEIGHTS,
     level: state.settings.currentLevel,
   });
-  if (!state.queue.length) return;
+  if (!queue.length) {
+    toast(text('today.nothing'));
+    return;
+  }
 
-  state.index = 0;
-  state.completed = 0;
-  state.total = state.queue.length;
+  Object.assign(state, { queue, index: 0, completed: 0, passes: 0, last: null, busy: false });
   $('practice').hidden = false;
   renderCard();
 }
@@ -263,15 +287,22 @@ const currentCard = () => state.queue[state.index];
 
 function renderCard() {
   const card = currentCard();
+  $('btn-undo').hidden = !state.last;
   if (!card) return renderDone();
 
   state.revealed = false;
   state.typedOpen = false;
   state.shownAt = performance.now();
 
-  $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.total)}`;
+  $('card-view').hidden = false;
+  $('done-view').hidden = true;
+  $('done-row').hidden = true;
+  document.querySelector('.card-scroll').scrollTop = 0;
+
+  $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.queue.length)}`;
   $('card-badge').textContent =
-    `${session.directionLabel(card.direction)} · L${card.sentence.difficulty}` +
+    `${session.directionLabel(card.direction)} · ${levels.levelForDifficulty(card.sentence.difficulty)}` +
+    (card.isNew ? ' · new' : '') +
     (card.review.lapses > 0 ? ` · ${card.review.lapses} lapse${card.review.lapses === 1 ? '' : 's'}` : '');
 
   const prompt = $('card-prompt');
@@ -292,6 +323,7 @@ function renderCard() {
 }
 
 function toggleTyping() {
+  if (state.revealed) return;
   state.typedOpen = !state.typedOpen;
   const typed = $('card-typed');
   typed.hidden = !state.typedOpen;
@@ -299,8 +331,9 @@ function toggleTyping() {
   if (state.typedOpen) typed.focus();
 }
 
-async function reveal() {
+function reveal() {
   const card = currentCard();
+  if (!card || state.revealed) return;
   $('card-typed').blur();
   state.revealed = true;
   // Still recorded, but nothing is shown and nothing gates on it. It is the
@@ -311,6 +344,10 @@ async function reveal() {
   answer.textContent = session.answerFor(card.sentence, card.direction);
   answer.classList.toggle('rtl', card.direction === 'enToFa');
 
+  renderTypedEcho(card);
+  // The echo above the answer now shows what was typed; leaving the box open
+  // invites editing an answer after seeing the key.
+  $('card-typed').hidden = true;
   $('answer-finglish').textContent = card.sentence.finglish ?? '';
   renderBreakdown(card.sentence);
   const tags = (card.sentence.grammarTags ?? []).map(tagTitle);
@@ -323,20 +360,41 @@ async function reveal() {
   $('input-row').hidden = true;
 
   renderRatings(card);
+
+  // The setting existed and did nothing. Hearing the sentence at the moment
+  // you check it is the cheapest shadowing there is.
+  if (state.speechOK && state.settings.speakEnabled) speech.speak(card.sentence.farsiText);
 }
 
 /**
- * An interactive map between the Persian and the English.
+ * What you typed, next to the answer. A match is marked, a miss is only shown:
+ * the verdict stays yours, because a correct paraphrase will not match.
+ */
+function renderTypedEcho(card) {
+  const echo = $('typed-echo');
+  const typed = $('card-typed').value.trim();
+  echo.hidden = !typed;
+  if (!typed) return;
+
+  const match = session.matchesAnswer(typed, card.sentence, card.direction);
+  echo.className = `typed-echo${match ? ' is-match' : ''}`;
+  echo.classList.toggle('rtl', card.direction === 'enToFa');
+  echo.textContent = match ? `${typed}  ✓` : typed;
+}
+
+/**
+ * An interlinear map between the Persian and the English.
  *
- * Every word is its own chip, so you can see which Persian word carries which
- * English. Tapping either side highlights its counterpart — the mapping works
- * in both directions because word order differs between the two languages and
- * position alone tells you nothing.
+ * Each unit is one column: the Persian on top, its gloss directly beneath. The
+ * columns run right to left, as the sentence does, so the Persian reads in its
+ * real order and every gloss sits exactly under the word it glosses — the way
+ * interlinear glosses of any right-to-left language are set. Two free-flowing
+ * rows could not do both: laid out left to right the Persian read backwards,
+ * and laid out right to left the pairs stopped lining up.
  *
- * Words that belong to one unit highlight together, which is the honest
- * treatment of compound verbs: "بلند می‌شه" is literally "tall becomes" but
- * means "gets up", so the two words map jointly to one English idea rather than
- * one-to-one. The detail line names what the group actually means.
+ * Words that belong to one unit stay one column, which is the honest treatment
+ * of compound verbs: "بلند می‌شه" is literally "tall becomes" but means "gets
+ * up". Tapping a column shows its transliteration and part of speech.
  */
 function renderBreakdown(sentence) {
   const units = sentence.breakdown ?? [];
@@ -350,26 +408,21 @@ function renderBreakdown(sentence) {
   host.hidden = units.length === 0;
 
   if (units.length) {
-    // One chip per unit, never per word. A unit is the thing that maps: a
-    // compound verb like پیدا کنم is one idea and one chip, and so is a gloss
-    // of several English words. Splitting on spaces broke the pairing — the
-    // two rows ended up with different chip counts and stopped lining up.
-    const chip = (label, unitIndex, extra) =>
-      `<button class="chip ${extra}" data-u="${unitIndex}">${escapeHtml(label.trim())}</button>`;
-
-    const farsi = units.map((u, i) => chip(u.fa, i, 'chip-fa')).join('');
-    const english = units.map((u, i) => chip(u.en, i, 'chip-en')).join('');
+    const columns = units.map((u, i) => `
+      <button class="pair" data-u="${i}">
+        <span class="pair-fa">${escapeHtml(u.fa.trim())}</span>
+        <span class="pair-en">${escapeHtml(u.en.trim())}</span>
+      </button>`).join('');
 
     host.innerHTML = `
-      <div class="map-row rtl" id="map-fa">${farsi}</div>
-      <div class="map-row" id="map-en">${english}</div>
+      <div class="map-row">${columns}</div>
       <p class="map-detail" id="map-detail">${escapeHtml(text('card.tapWord'))}</p>`;
 
     const detail = host.querySelector('#map-detail');
-    const all = [...host.querySelectorAll('.chip')];
+    const all = [...host.querySelectorAll('.pair')];
 
     const select = (index) => {
-      for (const chip of all) chip.classList.toggle('on', chip.dataset.u === String(index));
+      for (const pair of all) pair.classList.toggle('on', pair.dataset.u === String(index));
       const u = units[index];
       const multi = u.fa.trim().split(/\s+/).length > 1;
       detail.innerHTML =
@@ -380,12 +433,12 @@ function renderBreakdown(sentence) {
     };
 
     const hoverable = matchMedia('(hover: hover)').matches;
-    for (const chip of all) {
-      chip.addEventListener('click', () => select(Number(chip.dataset.u)));
+    for (const pair of all) {
+      pair.addEventListener('click', () => select(Number(pair.dataset.u)));
       // On a touchscreen hover fires as part of the tap, so binding it there
       // would just duplicate the click.
       if (hoverable) {
-        chip.addEventListener('mouseenter', () => select(Number(chip.dataset.u)));
+        pair.addEventListener('mouseenter', () => select(Number(pair.dataset.u)));
       }
     }
   } else {
@@ -414,54 +467,105 @@ function renderRatings(card) {
       <span class="verdict-word">درست</span>
       <small>${faDigits(passDays)} روز</small>
     </button>`;
-
-  for (const button of row.querySelectorAll('button')) {
-    button.addEventListener('click', () => rate(button.dataset.r), { once: true });
-  }
   row.hidden = false;
 }
 
 async function rate(rating) {
   const card = currentCard();
-  const typed = $('card-typed').value.trim();
+  if (!card || !state.revealed || state.busy) return;
+  state.busy = true;
 
-  await session.recordAttempt({
-    card,
-    rating,
-    typedAnswer: typed || null,
-    msToReveal: state.msToReveal,
-  });
+  try {
+    const typed = $('card-typed').value.trim();
+    const before = card.review;
+    const wasNew = card.isNew;
+    const result = await session.recordAttempt({
+      card,
+      rating,
+      typedAnswer: typed || null,
+      msToReveal: state.msToReveal,
+    });
 
-  state.completed += 1;
-  // "Again" means it comes back this session, not tomorrow — the point is
-  // repetition under pressure, and a day's gap wastes the miss.
-  if (rating === 'fail') state.queue.push(card);
+    // The card object carries its schedule through the session. Leaving the
+    // pre-rating state on it meant a card failed and then passed on its second
+    // showing was scheduled from where it stood *before* the fail — a 15-day
+    // card jumped to ~38 days and lost the lapse.
+    card.review = result.review;
+    card.isNew = false;
 
-  // A distinct tone for a miss, so you register it without reading anything.
-  if (state.index + 1 >= state.queue.length) sound.complete();
-  else if (rating === 'fail') sound.again();
-  else sound.next();
+    state.completed += 1;
+    if (rating === 'pass') state.passes += 1;
+    // A miss comes back this session, not tomorrow — the point is repetition
+    // under pressure, and a day's gap wastes the miss.
+    const requeued = rating === 'fail';
+    if (requeued) state.queue.push(card);
 
-  speech.stopSpeaking();
-  state.index += 1;
-  renderCard();
+    state.last = { card, before, wasNew, rating, requeued, ...result };
+
+    // A distinct tone for a miss, so you register it without reading anything.
+    if (state.index + 1 >= state.queue.length) sound.complete();
+    else if (requeued) sound.again();
+    else sound.next();
+
+    speech.stopSpeaking();
+    state.index += 1;
+    renderCard();
+  } finally {
+    state.busy = false;
+  }
 }
 
-function renderDone() {
-  document.querySelector('.card-scroll').innerHTML =
-    `<div class="done-panel"><h2>${escapeHtml(text('card.done'))}</h2>
-     <p class="note">${state.completed} ${escapeHtml(text('card.practised'))}</p></div>`;
-  document.querySelector('.controls').innerHTML =
-    `<button id="btn-finish" style="text-align:right;font-size:19px;font-weight:600;padding:8px 0">${escapeHtml(text('card.exit'))} &rarr;</button>`;
-  $('btn-finish').addEventListener('click', endSession);
+/** Take back the last rating: schedule, attempt, tag counts and queue position. */
+async function undo() {
+  const last = state.last;
+  if (!last || state.busy) return;
+  state.busy = true;
+  try {
+    await session.undoAttempt(last);
+    last.card.review = last.before;
+    last.card.isNew = last.wasNew;
+    if (last.requeued) state.queue.pop();
+    state.index -= 1;
+    state.completed -= 1;
+    if (last.rating === 'pass') state.passes -= 1;
+    state.last = null;
+    renderCard();
+    toast(text('card.undone'), 1400);
+  } finally {
+    state.busy = false;
+  }
+}
+
+async function renderDone() {
+  state.revealed = false;
+  $('card-view').hidden = true;
+  $('done-view').hidden = false;
+  $('input-row').hidden = true;
+  $('btn-reveal').hidden = true;
+  $('rating-row').hidden = true;
+  $('done-row').hidden = false;
+  $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.queue.length)}`;
+
+  // Distinct cards, not ratings: a card missed twice then passed is one card.
+  const cards = new Set(state.queue.map(session.cardId)).size;
+  $('done-summary').textContent =
+    `${faDigits(cards)} ${text('card.practised')} · ${faDigits(state.passes)}/${faDigits(state.completed)} ${text('today.right')}`;
+
+  const counts = await todayCounts();
+  const more = counts.total > 0;
+  $('btn-again').hidden = !more;
+  $('btn-again').innerHTML = `${escapeHtml(text('card.again'))} &rarr;`;
+  $('done-next').textContent = more
+    ? `${faDigits(counts.due)} ${text('today.due')} · ${faDigits(counts.new)} ${text('today.new')}`
+    : text('card.allDone');
 }
 
 async function endSession() {
   speech.stopSpeaking();
   $('practice').hidden = true;
-  // The done screen replaced the card markup; a reload restores it cleanly.
-  if (!document.querySelector('#card-prompt')) location.reload();
-  await refreshToday();
+  state.queue = [];
+  state.last = null;
+  await refreshActive();
 }
 
 // --- weak spots ------------------------------------------------------------
@@ -471,7 +575,7 @@ const MIN_EVIDENCE = 3;
 /** The three counts that gate the current level, as bars you can watch fill. */
 async function renderGates() {
   const gate = await levels.progress(state.settings.currentLevel);
-  const pct = (v, n) => Math.min(100, Math.round((v / n) * 100));
+  const pct = (v, n) => (n > 0 ? Math.min(100, Math.round((v / n) * 100)) : 0);
 
   // Before there are enough reviews to judge accuracy, the bar tracks progress
   // toward having a sample — otherwise it reads 0% while the label says
@@ -505,7 +609,7 @@ async function renderGates() {
     </div>
     <p class="section-note">${gate.passed
       ? 'Passed &mdash; unlock the next level from Today.'
-      : 'All three must be met. Retention is the one that matters: it stops a level being passed by cramming.'}</p>`;
+      : `All three must be met. Seen: distinct cards at this level. Accuracy: the last ${levels.GATE.accuracyWindow} reviews here. Retained: cards now ${levels.GATE.retentionDays}+ days apart &mdash; the one that stops a level being passed by cramming.`}</p>`;
 }
 
 async function renderWeakSpots() {
@@ -545,31 +649,24 @@ async function renderWeakSpots() {
     + emerging.map((s) => row(s, true)).join('')
     + '</div>';
 
-  if (ranked.length) {
-    html += '<p class="section-note">The worst few are sent with the next sync and weight what gets generated.</p>';
-  }
-  if (emerging.length && !ranked.length) {
-    html += `<p class="section-note">Rates appear once a feature has come up ${MIN_EVIDENCE} times.</p>`;
-  }
+  html += ranked.length
+    ? '<p class="section-note">Every feature a missed sentence exercises is counted against, so read this as where misses cluster, not as a diagnosis.</p>'
+    : `<p class="section-note">Rates appear once a feature has come up ${MIN_EVIDENCE} times.</p>`;
   list.innerHTML = html;
 }
-
-function rateColour(rate) {
-  if (rate < 0.25) return 'var(--green)';
-  if (rate < 0.5) return 'var(--amber)';
-  return 'var(--red)';
-}
-
-// --- results ---------------------------------------------------------------
-
 
 // --- settings --------------------------------------------------------------
 
 function bindSettings() {
-  $('set-target').addEventListener('input', async (e) => {
-    $('target-value').textContent = e.target.value;
-    state.settings = await db.saveSettings({ dailyTarget: Number(e.target.value) });
-  });
+  const slider = (id, labelId, key) => {
+    $(id).addEventListener('input', (e) => { $(labelId).textContent = e.target.value; });
+    $(id).addEventListener('change', async (e) => {
+      state.settings = await db.saveSettings({ [key]: Number(e.target.value) });
+    });
+  };
+  slider('set-new', 'new-value', 'newPerDay');
+  slider('set-round', 'round-value', 'sessionSize');
+  slider('set-target', 'target-value', 'dailyTarget');
 
   $('set-speak').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
@@ -586,10 +683,44 @@ function bindSettings() {
     await renderSettings();
   });
 
+  $('btn-export').addEventListener('click', async () => {
+    const data = await backup.exportData();
+    const outcome = await backup.saveFile(data);
+    if (outcome === 'cancelled') return;
+    await db.saveSettings({ lastBackupAt: Date.now() });
+    state.settings = await db.getSettings();
+    toast(`Backup saved: ${data.reviews.length} scheduled cards, ${data.attempts.length} reviews.`);
+    await renderSettings();
+  });
+
+  $('btn-import').addEventListener('click', () => $('import-file').click());
+  $('import-file').addEventListener('change', async (e) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    try {
+      const data = JSON.parse(await file.text());
+      const when = data.exportedAt ? new Date(data.exportedAt).toLocaleString() : 'an unknown date';
+      // eslint-disable-next-line no-alert
+      if (!confirm(`Replace this device's progress with the backup from ${when}?`)) return;
+      const result = await backup.importData(data);
+      state.settings = result.settings;
+      sound.setEnabled(state.settings.soundEnabled !== false);
+      toast(`Restored ${result.reviews} scheduled cards and ${result.attempts} reviews` +
+        (result.skipped ? ` (${result.skipped} no longer in the deck).` : '.'), 4000);
+      await renderSettings();
+    } catch (error) {
+      toast(error.message || 'That file could not be read.', 4000);
+    }
+  });
 }
 
 async function renderSettings() {
   const s = state.settings;
+  $('set-new').value = s.newPerDay;
+  $('new-value').textContent = s.newPerDay;
+  $('set-round').value = s.sessionSize;
+  $('round-value').textContent = s.sessionSize;
   $('set-target').value = s.dailyTarget;
   $('target-value').textContent = s.dailyTarget;
   $('set-speak').checked = s.speakEnabled;
@@ -598,6 +729,12 @@ async function renderSettings() {
   $('set-level').innerHTML = levels.LEVELS
     .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
     .join('');
+
+  $('backup-report').textContent = s.lastBackupAt
+    ? `Last backup ${new Date(s.lastBackupAt).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' })}. Restoring replaces what is on this device.`
+    : 'Your schedule and history exist only in this browser, and iOS can clear a web app\'s storage. Save a backup to Files now and then; restoring replaces what is on this device.';
+
+  $('keys-group').hidden = !matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   const voices = await speech.voiceReport();
   $('voice-report').textContent = voices.persian.length

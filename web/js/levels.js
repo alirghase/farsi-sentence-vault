@@ -66,8 +66,7 @@ export async function progress(level) {
   // Depth: cards whose interval says they stuck.
   const retained = practised.filter((r) => r.intervalDays >= GATE.retentionDays).length;
 
-  // Accuracy over the most recent reviews at this level. An AI grade, when
-  // there is one, outranks the self-rating that preceded it.
+  // Accuracy over the most recent reviews at this level.
   const recent = attempts
     .filter((a) => atLevel.has(a.sentenceId))
     .sort((a, b) => b.createdAt - a.createdAt)

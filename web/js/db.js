@@ -102,6 +102,24 @@ export async function putMany(store, values) {
   return values.length;
 }
 
+export async function remove(store, key) {
+  const db = await open();
+  const { transaction, done } = tx(db, [store], 'readwrite');
+  transaction.objectStore(store).delete(key);
+  await done;
+}
+
+/** Delete many keys in one transaction. */
+export async function removeMany(store, keys) {
+  if (!keys.length) return 0;
+  const db = await open();
+  const { transaction, done } = tx(db, [store], 'readwrite');
+  const objectStore = transaction.objectStore(store);
+  for (const key of keys) objectStore.delete(key);
+  await done;
+  return keys.length;
+}
+
 export async function count(store) {
   const db = await open();
   const { transaction } = tx(db, [store], 'readonly');
@@ -118,14 +136,19 @@ export async function clear(store) {
 // --- meta / settings -------------------------------------------------------
 
 const SETTING_DEFAULTS = {
-  dailyBatchSize: 100,
+  // New cards introduced per day. Every new card becomes a stream of reviews,
+  // so this is the dial that sets tomorrow's workload, not today's.
+  newPerDay: 20,
+  // Cards in one round. A round fits a stop or two on the Tube; "another
+  // round" is one tap, so a small number costs nothing when there is time.
+  sessionSize: 20,
   speakEnabled: true,
   // CEFR progression. New cards come only from here; reviews come from
   // everywhere. Advanced by passing the gate, or manually from Settings.
   currentLevel: 'A1',
   levelsPassed: [],
-  // Cards per day that counts as done. Smaller than dailyBatchSize on purpose:
-  // a target you clear most days builds the habit; one you miss erodes it.
+  // Cards per day that counts as done: a target you clear most days builds the
+  // habit; one you miss erodes it.
   dailyTarget: 40,
   soundEnabled: true,
 };
@@ -149,8 +172,8 @@ export async function saveSettings(patch) {
  *
  * iOS can clear storage for web apps under pressure or after long disuse.
  * Adding to the Home Screen plus a granted persistence request makes that much
- * less likely — but it is a request, not a guarantee, which is why the backend
- * holds a copy of everything that matters.
+ * less likely — but it is a request, not a guarantee, which is why Settings
+ * offers a backup file.
  */
 export async function requestPersistence() {
   if (!navigator.storage?.persist) return { supported: false, granted: false };

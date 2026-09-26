@@ -71,6 +71,17 @@
 
       <div class="group">
         <h2 data-t="settings.practice">Practice</h2>
+        <label>New cards a day <b id="new-value">20</b>
+          <input type="range" id="set-new" min="0" max="60" step="5">
+        </label>
+        <p class="hint">Every new card turns into reviews for weeks, so this
+        sets tomorrow's workload more than today's. Raise it only while the
+        reviews are getting done.</p>
+        <label>Cards per round <b id="round-value">20</b>
+          <input type="range" id="set-round" min="5" max="60" step="5">
+        </label>
+        <p class="hint">One round is one tap of Start. When it ends you can go
+        again straight away.</p>
         <label>Daily target <b id="target-value">40</b>
           <input type="range" id="set-target" min="10" max="150" step="5">
         </label>
@@ -103,9 +114,30 @@
       </div>
 
       <div class="group">
+        <h2 data-t="settings.backup">Backup</h2>
+        <div class="button-row">
+          <button id="btn-export">Save a backup</button>
+          <button id="btn-import">Restore&hellip;</button>
+        </div>
+        <input type="file" id="import-file" accept="application/json,.json" hidden>
+        <p class="hint" id="backup-report">Your schedule and history exist only
+        in this browser, and iOS can clear a web app's storage. Save a backup to
+        Files now and then; restoring replaces what is here.</p>
+      </div>
+
+      <div class="group" id="keys-group">
+        <h2>Keyboard</h2>
+        <p class="hint"><kbd>Space</kbd> reveal &middot; <kbd>1</kbd> غلط &middot;
+        <kbd>2</kbd> درست &middot; <kbd>T</kbd> type &middot; <kbd>P</kbd> play
+        &middot; <kbd>U</kbd> undo &middot; <kbd>Esc</kbd> exit. While typing,
+        <kbd>Enter</kbd> reveals.</p>
+      </div>
+
+      <div class="group">
         <h2>What leaves this device</h2>
         <p class="hint">Nothing. There is no server and no account. Every
-        sentence, rating and schedule stays in this browser.</p>
+        sentence, rating and schedule stays in this browser, and a backup goes
+        only where you send it.</p>
       </div>
 
     </div>
@@ -124,11 +156,12 @@
   <header class="practice-head">
     <button id="btn-quit">&larr; <span data-t="card.exit">Exit</span></button>
     <span class="progress" id="practice-progress">0 / 0</span>
-    <span class="spacer"></span>
+    <button id="btn-undo" hidden data-t="card.undo">Undo</button>
   </header>
 
 
   <div class="card-scroll">
+   <div id="card-view">
     <p class="badge" id="card-badge"></p>
     <p class="prompt" id="card-prompt"></p>
 
@@ -137,6 +170,7 @@
 
 
     <div id="card-answer" class="answer" hidden>
+      <p class="typed-echo" id="typed-echo" hidden></p>
       <div class="answer-row">
         <p class="answer-text" id="answer-text"></p>
         <button id="btn-speak" hidden aria-label="Play aloud" data-t="card.play">Play</button>
@@ -147,6 +181,13 @@
       <div class="alts" id="answer-alts" hidden></div>
       <p class="tags" id="answer-tags"></p>
     </div>
+   </div>
+
+    <div class="done-panel" id="done-view" hidden>
+      <h2 data-t="card.done">Done</h2>
+      <p class="note" id="done-summary"></p>
+      <p class="note-faint" id="done-next"></p>
+    </div>
   </div>
 
   <div class="controls">
@@ -155,6 +196,10 @@
     </div>
     <button id="btn-reveal"><span data-t="card.reveal">Reveal</span> &rarr;</button>
     <div id="rating-row" class="rating-row" hidden></div>
+    <div id="done-row" class="done-row" hidden>
+      <button id="btn-finish" data-t="card.exit">Exit</button>
+      <button id="btn-again"></button>
+    </div>
   </div>
 </div>
 

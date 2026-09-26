@@ -10,6 +10,7 @@ on:
     branches: [master]
     paths:
       - 'web/**'
+      - 'tools/test_js.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -33,6 +34,8 @@ jobs:
           node-version: '22'
       - name: Check web modules import cleanly
         run: node tools/check_js.mjs
+      - name: Unit-test the scheduler, session selection and answer matching
+        run: node --test tools/test_js.mjs
       - name: Check JS and Python tag vocabularies match
         run: python3 tools/check_mirror.py
       - name: Check the seed bank is present and parses
@@ -44,7 +47,13 @@ jobs:
               sys.exit('seed_sentences.json missing — the app would ship with an empty deck')
           d = json.loads(p.read_text())
           print(f\"{d['count']} sentences\")
-          sys.exit(0 if d['count'] > 0 else 'seed bank is empty')
+          if d['count'] == 0 or d['count'] != len(d['sentences']):
+              sys.exit('seed bank is empty or its count is wrong')
+          # The app matches bundled sentences to device rows by id; one without
+          # an id would arrive as a duplicate whenever its text is corrected.
+          ids = [s.get('id') for s in d['sentences']]
+          if not all(ids) or len(set(ids)) != len(ids):
+              sys.exit('every sentence needs a unique id - save through core/bank.py')
           "
 
   deploy:
