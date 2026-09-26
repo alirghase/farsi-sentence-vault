@@ -1,0 +1,630 @@
+{
+  "note": "Passive and resultative ـه شده — the deck held one. Spoken Persian avoids the full passive but uses the resultative constantly: بسته شده, گم شده, تموم شده.",
+  "difficulty": 3,
+  "sentences": [
+    {
+      "en": "The shop is closed.",
+      "fa": "مغازه بسته شده.",
+      "tr": "maghâze baste shode.",
+      "sit": "arriving too late",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "مغازه",
+          "maghâze",
+          "shop",
+          "noun"
+        ],
+        [
+          "بسته شده",
+          "baste shode",
+          "has been closed",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My phone is lost.",
+      "fa": "گوشیم گم شده.",
+      "tr": "gushim gom shode.",
+      "sit": "a problem",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "گوشیم",
+          "gushim",
+          "my phone",
+          "attached pronoun"
+        ],
+        [
+          "گم شده",
+          "gom shode",
+          "has been lost",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The food is finished.",
+      "fa": "غذا تموم شده.",
+      "tr": "ghazâ tamum shode.",
+      "sit": "at a restaurant",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "تموم شده",
+          "tamum shode",
+          "has been finished",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The car got broken.",
+      "fa": "ماشین خراب شده.",
+      "tr": "mâshin kharâb shode.",
+      "sit": "a breakdown",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "ماشین",
+          "mâshin",
+          "car",
+          "noun"
+        ],
+        [
+          "خراب شده",
+          "kharâb shode",
+          "has been broken",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The room has been cleaned.",
+      "fa": "اتاق تمیز شده.",
+      "tr": "otâgh tamiz shode.",
+      "sit": "at a hotel",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "اتاق",
+          "otâgh",
+          "room",
+          "noun"
+        ],
+        [
+          "تمیز شده",
+          "tamiz shode",
+          "has been cleaned",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The door was opened.",
+      "fa": "در باز شد.",
+      "tr": "dar bâz shod.",
+      "sit": "recounting an event",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "در",
+          "dar",
+          "door",
+          "noun"
+        ],
+        [
+          "باز شد",
+          "bâz shod",
+          "was opened",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The street is closed.",
+      "fa": "خیابون بسته‌ست.",
+      "tr": "khiyâbun bastast.",
+      "sit": "traffic news",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خیابون",
+          "khiyâbun",
+          "street",
+          "noun"
+        ],
+        [
+          "بسته‌ست",
+          "bastast",
+          "is closed",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Dinner has been made.",
+      "fa": "شام درست شده.",
+      "tr": "shâm dorost shode.",
+      "sit": "arriving home",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "درست شده",
+          "dorost shode",
+          "has been made",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The money was paid yesterday.",
+      "fa": "پول دیروز داده شد.",
+      "tr": "pul diruz dâde shod.",
+      "sit": "settling a bill",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "پول",
+          "pul",
+          "money",
+          "noun"
+        ],
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "داده شد",
+          "dâde shod",
+          "was given",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The tickets were sold.",
+      "fa": "بلیتا فروخته شد.",
+      "tr": "belitâ forukhte shod.",
+      "sit": "a sold-out show",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "بلیتا",
+          "belitâ",
+          "the tickets",
+          "noun"
+        ],
+        [
+          "فروخته شد",
+          "forukhte shod",
+          "were sold",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The letter was written yesterday.",
+      "fa": "نامه دیروز نوشته شد.",
+      "tr": "nâme diruz neveshte shod.",
+      "sit": "at the office",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "نامه",
+          "nâme",
+          "letter",
+          "noun"
+        ],
+        [
+          "دیروز",
+          "diruz",
+          "yesterday",
+          "adverb"
+        ],
+        [
+          "نوشته شد",
+          "neveshte shod",
+          "was written",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My keys got lost.",
+      "fa": "کلیدام گم شد.",
+      "tr": "kelidâm gom shod.",
+      "sit": "locked out",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "کلیدام",
+          "kelidâm",
+          "my keys",
+          "attached pronoun"
+        ],
+        [
+          "گم شد",
+          "gom shod",
+          "were lost",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The work is finished.",
+      "fa": "کار تموم شده.",
+      "tr": "kâr tamum shode.",
+      "sit": "end of the day",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "کار",
+          "kâr",
+          "work",
+          "noun"
+        ],
+        [
+          "تموم شده",
+          "tamum shode",
+          "has been finished",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The window got broken.",
+      "fa": "پنجره شکسته شده.",
+      "tr": "panjare shekaste shode.",
+      "sit": "an accident",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "پنجره",
+          "panjare",
+          "window",
+          "noun"
+        ],
+        [
+          "شکسته شده",
+          "shekaste shode",
+          "has been broken",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Everything has been said.",
+      "fa": "همه چیز گفته شده.",
+      "tr": "hame chiz gofte shode.",
+      "sit": "ending an argument",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "همه",
+          "hame",
+          "all",
+          "pronoun"
+        ],
+        [
+          "چیز",
+          "chiz",
+          "thing",
+          "noun"
+        ],
+        [
+          "گفته شده",
+          "gofte shode",
+          "has been said",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The bread has been bought.",
+      "fa": "نون خریده شده.",
+      "tr": "nun kharide shode.",
+      "sit": "at home",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "نون",
+          "nun",
+          "bread",
+          "noun"
+        ],
+        [
+          "خریده شده",
+          "kharide shode",
+          "has been bought",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The table is ready.",
+      "fa": "میز آماده شده.",
+      "tr": "miz âmâde shode.",
+      "sit": "hosting",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "میز",
+          "miz",
+          "table",
+          "noun"
+        ],
+        [
+          "آماده شده",
+          "âmâde shode",
+          "has been prepared",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The problem was solved.",
+      "fa": "مشکل حل شد.",
+      "tr": "moshkel hal shod.",
+      "sit": "at work",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "مشکل",
+          "moshkel",
+          "problem",
+          "noun"
+        ],
+        [
+          "حل شد",
+          "hal shod",
+          "was solved",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The order has been sent.",
+      "fa": "سفارش فرستاده شده.",
+      "tr": "sefâresh ferestâde shode.",
+      "sit": "online shopping",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "سفارش",
+          "sefâresh",
+          "order",
+          "noun"
+        ],
+        [
+          "فرستاده شده",
+          "ferestâde shode",
+          "has been sent",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The seats were taken.",
+      "fa": "صندلیا گرفته شده بود.",
+      "tr": "sandaliyâ gerefte shode bud.",
+      "sit": "arriving late",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "صندلیا",
+          "sandaliyâ",
+          "the seats",
+          "noun"
+        ],
+        [
+          "گرفته شده بود",
+          "gerefte shode bud",
+          "had been taken",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The book was read in one night.",
+      "fa": "کتاب یه شبه خونده شد.",
+      "tr": "ketâb ye shabe khunde shod.",
+      "sit": "about reading",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "کتاب",
+          "ketâb",
+          "book",
+          "noun"
+        ],
+        [
+          "یه",
+          "ye",
+          "one",
+          "number"
+        ],
+        [
+          "شبه",
+          "shabe",
+          "night",
+          "noun"
+        ],
+        [
+          "خونده شد",
+          "khunde shod",
+          "was read",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The photos were seen by everyone.",
+      "fa": "عکسا رو همه دیدن.",
+      "tr": "aksâ ro hame didan.",
+      "sit": "family news",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عکسا",
+          "aksâ",
+          "the photos",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "[object]",
+          "particle"
+        ],
+        [
+          "همه",
+          "hame",
+          "everyone",
+          "pronoun"
+        ],
+        [
+          "دیدن",
+          "didan",
+          "saw",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My bag got left at home.",
+      "fa": "کیفم خونه جا موند.",
+      "tr": "kifam khune jâ mund.",
+      "sit": "forgetting something",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "کیفم",
+          "kifam",
+          "my bag",
+          "attached pronoun"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ],
+        [
+          "جا موند",
+          "jâ mund",
+          "was left",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The class was cancelled.",
+      "fa": "کلاس کنسل شد.",
+      "tr": "kelâs kensel shod.",
+      "sit": "university",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "کلاس",
+          "kelâs",
+          "class",
+          "noun"
+        ],
+        [
+          "کنسل شد",
+          "kensel shod",
+          "was cancelled",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

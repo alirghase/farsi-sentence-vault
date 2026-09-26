@@ -17,7 +17,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import validate
 from core.prompts import PARTS_OF_SPEECH
-from core.taxonomy import ERROR_TAG_KEYS
+from core.taxonomy import ERROR_TAG_KEYS, canonical_situation
 
 from core import bank
 HANDWRITTEN = pathlib.Path(__file__).parent / "handwritten"
@@ -90,7 +90,7 @@ def merge_one(source: dict, difficulty: int, deck: dict, existing: set[str]) -> 
             "finglish": item["tr"],
             "literalGloss": " ".join(u["en"] for u in breakdown),
             "difficulty": difficulty,
-            "situation": item["sit"],
+            "situation": canonical_situation(item["sit"]),
             "grammarTags": tags,
             "breakdown": breakdown,
             "alternatives": [validate.normalise_persian(a) for a in item.get("alt", [])],

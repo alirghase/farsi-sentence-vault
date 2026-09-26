@@ -62,6 +62,106 @@ SITUATIONS = [
     "negotiating or asking for a favour",
 ]
 
+SITUATION_SET = set(SITUATIONS)
+
+# Mapping any free-text theme onto the closed set.
+#
+# The field fragmented to 396 distinct values across 1,224 sentences. Three
+# causes, all fixable: generate_seed.py wrote a vocabulary DOMAIN into the
+# situation field verbatim; a domain containing commas
+# ("transport: taxi, metro, driving") was split into three labels; and the
+# hand-written batches invented their own wording ("family news", "at home").
+#
+# Order matters — the first keyword that matches wins, so the specific ones
+# come before the general.
+_SITUATION_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
+    (("doctor", "pharmacy", "health", "ill", "sick", "pain", "medicine",
+      "hospital", "body", "fever", "unwell", "allerg"), "at the doctor or pharmacy"),
+    (("taxi", "metro", "transport", "driving", "bus", "travel", "train",
+      "flight", "station"), "taxi, metro, and travel"),
+    (("direction", "street", "address", "city", "places", "lost", "map"),
+     "giving or following directions"),
+    (("restaurant", "food", "coffee", "eating", "meal", "drink", "cafe",
+      "order", "breakfast", "lunch", "dinner", "waiter", "menu"),
+     "ordering food or coffee"),
+    (("shop", "price", "money", "cost", "buy", "size", "market", "clothes",
+      "number", "bill", "pay", "bargain"), "shopping and asking prices"),
+    (("late", "apolog", "sorry", "delay", "missed"),
+     "apologising or explaining lateness"),
+    (("broken", "complain", "not working", "repair", "fix", "fault", "problem"),
+     "complaining about something not working"),
+    (("repeat", "clarify", "understand", "hear", "confus"),
+     "asking someone to repeat or clarify"),
+    (("thank", "taarof", "compliment", "polite", "greet", "welcome",
+      "goodbye", "hello", "farewell", "affection"),
+     "compliments and thanking (taarof)"),
+    (("weather", "rain", "traffic", "season", "spring", "summer", "winter",
+      "autumn", "snow", "hot day", "cold"), "small talk about weather or traffic"),
+    (("work", "study", "office", "university", "school", "class", "job",
+      "exam", "routine", "lesson", "interview", "salary", "colleague"),
+     "talking about work or study"),
+    (("feel", "mood", "tired", "happy", "sad", "upset", "angry", "worried",
+      "reaction", "emotion", "nervous"), "describing how you feel"),
+    (("host", "guest", "visit", "home", "house", "household", "room",
+      "kitchen", "neighbour"), "hosting or visiting someone's home"),
+    (("favour", "request", "permission", "help", "negotiat", "borrow"),
+     "negotiating or asking for a favour"),
+    (("disagree", "argu", "object"), "disagreeing politely"),
+    (("opinion", "agree", "think", "describ", "advice", "recommend"),
+     "expressing an opinion"),
+    (("plan", "arrange", "meet", "invit", "weekend", "time", "day", "date",
+      "schedule", "appointment"), "making plans with a friend"),
+    (("past", "yesterday", "memory", "childhood", "recount", "last night",
+      "used to"), "talking about the past (what you did)"),
+    (("future", "tomorrow", "next", "someday"), "talking about future plans"),
+    (("phone", "message", "call", "text", "voicemail"), "phone call with family"),
+    (("family", "relationship", "sister", "brother", "mother", "father",
+      "child", "parent", "cousin", "relative", "sibling"), "phone call with family"),
+    # A second round, from the scenario wording the hand-written batches used.
+    (("news", "secret", "announce", "reveal", "group chat", "reach someone"),
+     "phone call with family"),
+    (("warn", "encourag", "comfort", "reassur", "correct", "advis", "summaris",
+      "hedg", "compar", "discussion", "philosoph", "decid", "weighing",
+      "confirm", "disbelief", "candid", "claim", "declin", "offer"),
+     "expressing an opinion"),
+    (("locked out", "accident", "near miss", "garage", "wet", "broke", "stuck",
+      "emergency", "failure", "frustrat", "waiting", "queue"),
+     "complaining about something not working"),
+    (("small talk", "chat", "catching up", "cooking", "reading", "football",
+      "match", "sport", "learning"), "small talk about weather or traffic"),
+    (("hotel", "reception", "venue", "cinema", "party", "gathering", "trip",
+      "celebration", "desk", "bakery", "park", "stranger", "outing"),
+     "making plans with a friend"),
+    (("teacher", "student", "deadline", "project", "test", "application",
+      "errand"), "talking about work or study"),
+    (("leaving", "goodbye", "seeing someone off", "welcom", "introduc",
+      "gift", "toast", "glass", "bed", "knock", "doorway", "door"),
+     "compliments and thanking (taarof)"),
+    (("wait", "interrupt", "someone walks in", "topic", "postpon", "silence",
+      "conversation"), "asking someone to repeat or clarify"),
+    (("looking for", "forget", "lost", "return", "hands full", "before going out",
+      "somewhere new", "scene", "surprise", "coincidence", "unease"),
+     "describing how you feel"),
+]
+
+DEFAULT_SITUATION = "expressing an opinion"
+
+
+def canonical_situation(label: str) -> str:
+    """Map any theme label onto one of SITUATIONS.
+
+    Returns DEFAULT_SITUATION when nothing matches, so the field can be
+    validated as a closed set rather than drifting again.
+    """
+    if label in SITUATION_SET:
+        return label
+    lowered = (label or "").lower()
+    for keywords, situation in _SITUATION_KEYWORDS:
+        if any(k in lowered for k in keywords):
+            return situation
+    return DEFAULT_SITUATION
+
+
 # --- Difficulty -------------------------------------------------------------
 
 DIFFICULTY = {

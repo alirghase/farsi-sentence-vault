@@ -10,7 +10,7 @@ from __future__ import annotations
 import re
 import unicodedata
 
-from core.taxonomy import ERROR_TAG_KEYS
+from core.taxonomy import ERROR_TAG_KEYS, SITUATION_SET
 
 # Persian/Arabic block plus the Persian-specific letters and ZWNJ.
 PERSIAN_RE = re.compile(r"[؀-ۿ‌]")
@@ -177,6 +177,10 @@ def check_sentence(s: dict) -> list[str]:
     difficulty = s["difficulty"]
     if not isinstance(difficulty, int) or not 1 <= difficulty <= 5:
         problems.append(f"difficulty out of range: {difficulty!r}")
+
+    situation = str(s["situation"])
+    if situation not in SITUATION_SET:
+        problems.append(f"situation outside the closed set: {situation!r}")
 
     tags = s["grammarTags"]
     if not isinstance(tags, list):

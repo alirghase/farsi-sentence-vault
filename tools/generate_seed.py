@@ -27,7 +27,7 @@ from core import gemini
 from core import prompts
 from core import validate
 from core.syllabus import CORE_VERBS, DOMAINS, TENSES, coverage
-from core.taxonomy import SITUATIONS
+from core.taxonomy import SITUATIONS, canonical_situation
 
 from core import bank
 
@@ -224,6 +224,14 @@ def main() -> int:
             return 1
 
         batch = result.get("sentences", [])
+        # In --syllabus mode the prompt is seeded with vocabulary DOMAINS rather
+        # than SITUATIONS, and the model echoes whatever it was given straight
+        # into the situation field. That is how the field fragmented to 408
+        # distinct values. Canonicalise before validation, which now enforces
+        # the closed set.
+        for s in batch:
+            if s.get("situation"):
+                s["situation"] = canonical_situation(s["situation"])
         clean, bad = validate.partition(batch)
         for s, problems in bad:
             rejected_total += 1
