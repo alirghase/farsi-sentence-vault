@@ -24,37 +24,14 @@ are skipped, so an interrupted run costs only the batch in flight.
 from __future__ import annotations
 
 import argparse
-import json
 import pathlib
 import sys
 import time
-import uuid
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import gemini, prompts
-
-BANK = pathlib.Path(__file__).parent / "seed_sentences.json"
-
-
-def load() -> dict:
-    return json.loads(BANK.read_text(encoding="utf-8"))
-
-
-def save(data: dict) -> None:
-    BANK.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-
-
-def ensure_ids(data: dict) -> bool:
-    """Annotations are matched back by id, so every sentence needs one."""
-    changed = False
-    for s in data["sentences"]:
-        if not s.get("id"):
-            s["id"] = str(uuid.uuid4())
-            changed = True
-    return changed
+from core.bank import ensure_ids, load, save
 
 
 def check(entry: dict, sentence: dict) -> list[str]:
