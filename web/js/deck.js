@@ -35,11 +35,16 @@ export async function syncBundled(incoming) {
     db.getAll(db.STORE.reviews),
   ]);
 
+  // Two indexes, and both only ever hold rows the bundle owns. A sentence you
+  // added yourself must not be adoptable: match it by text and the next bundle
+  // that happens to contain the same sentence would overwrite what you wrote.
   const bySeedId = new Map();
   const byText = new Map();
   for (const row of existing) {
+    if (row.source !== 'seed') continue;
     if (row.seedId) bySeedId.set(row.seedId, row);
-    bySeedId.set(row.id, bySeedId.get(row.id) ?? row);
+    // Rows created before seedId existed use the bundle id as their own.
+    if (!bySeedId.has(row.id)) bySeedId.set(row.id, row);
     byText.set(row.farsiText, row);
   }
 

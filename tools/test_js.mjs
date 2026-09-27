@@ -8,7 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 import * as SM2 from '../web/js/sm2.js';
-import { select, matchesAnswer, introducedSince } from '../web/js/session.js';
+import { select, matchesAnswer, introducedSince, eligibleAsNew } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -70,6 +70,25 @@ test('never more new cards than the allowance, even when backfilling', () => {
   const chosen = select(due, fresh, 20, weights, undefined, 5);
   assert.equal(chosen.filter((c) => c.isNew).length, 5);
   assert.equal(chosen.length, 6);
+});
+
+// counts() and build() each decided what may be introduced, and the copies had
+// already drifted — build() honoured `kinds`, counts() did not, so Today would
+// promise new cards a session then refuse to serve them. One rule now, pinned
+// here so the copies cannot come back.
+test('eligibility is the same rule for the counter and the builder', () => {
+  const atLevel = new Set(['a']);
+  const sentence = { id: 'a', kind: 'sentence' };
+  const other = { id: 'b', kind: 'sentence' };
+  const word = { id: 'a', kind: 'word' };
+
+  assert.equal(eligibleAsNew(sentence, atLevel), true);
+  assert.equal(eligibleAsNew(other, atLevel), false, 'outside the level');
+  assert.equal(eligibleAsNew(other, null), true, 'no level gate means no filter');
+  assert.equal(eligibleAsNew(word, atLevel, ['sentence']), false, 'wrong kind');
+  assert.equal(eligibleAsNew(sentence, atLevel, ['sentence']), true);
+  assert.equal(eligibleAsNew({ id: 'a' }, atLevel, ['sentence']), true,
+    'a row with no kind counts as a sentence');
 });
 
 test('both directions of one sentence never share a session', () => {

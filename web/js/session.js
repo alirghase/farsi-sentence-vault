@@ -15,6 +15,19 @@ export const DIRECTIONS = ['enToFa', 'faToEn'];
  */
 export const DEFAULT_WEIGHTS = { enToFa: 0.7, faToEn: 0.3 };
 
+/**
+ * Whether an unseen sentence may be introduced as a new card.
+ *
+ * One rule, used by both counts() and build(). They each had their own copy and
+ * the copies already disagreed: build() honoured `kinds` and counts() ignored
+ * it, so Today would promise new cards a session then refused to serve. Nothing
+ * passes `kinds` today, which is why it never showed.
+ */
+export function eligibleAsNew(sentence, levelIds, kinds = null) {
+  if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) return false;
+  return !levelIds || levelIds.has(sentence.id);
+}
+
 export function reviewKey(sentenceId, direction) {
   return `${sentenceId}::${direction}`;
 }
@@ -35,7 +48,7 @@ export function answerFor(sentence, direction) {
  * pinned at the batch size and never moves as you work — a number that cannot
  * change is useless on a screen whose job is accounting.
  */
-export async function counts(now = Date.now(), newPerDay = 20, level = null) {
+export async function counts(now = Date.now(), newPerDay = 20, level = null, kinds = null) {
   const [sentences, reviews, attempts] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
@@ -54,7 +67,7 @@ export async function counts(now = Date.now(), newPerDay = 20, level = null) {
   const scheduled = new Set(reviews.map((r) => r.key));
   let unseen = 0;
   for (const s of sentences) {
-    if (levelIds && !levelIds.has(s.id)) continue;
+    if (!eligibleAsNew(s, levelIds, kinds)) continue;
     for (const d of DIRECTIONS) {
       if (!scheduled.has(reviewKey(s.id, d))) unseen += 1;
     }
@@ -179,6 +192,8 @@ export async function build({
   for (const sentence of sentences) {
     // A word card and a sentence card are both rows here; `kinds` lets a
     // session be restricted to one without a second store.
+    // `kinds` restricts the whole session, due cards included — eligibleAsNew
+    // below only governs what may be introduced.
     if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) continue;
     for (const direction of directions) {
       const key = reviewKey(sentence.id, direction);
@@ -187,7 +202,7 @@ export async function build({
         if (existing.dueDate <= now) {
           due.push({ sentence, direction, review: existing, isNew: false });
         }
-      } else if (!levelIds || levelIds.has(sentence.id)) {
+      } else if (eligibleAsNew(sentence, levelIds, kinds)) {
         // New cards are gated to the current level. Due reviews above are not,
         // so levels already passed keep resurfacing on their own schedule.
         fresh.push({
