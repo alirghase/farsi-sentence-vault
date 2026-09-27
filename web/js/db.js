@@ -29,10 +29,26 @@ export const BLOCKED = 'db-blocked';
  */
 export const STALE = 'db-stale';
 
+// How long to wait for indexedDB.open before giving up on it.
+//
+// onblocked is supposed to tell us another connection is in the way, but it is
+// not guaranteed to fire: a database can be left with a version-change request
+// queued behind a connection that never closes, and after that every open —
+// even one with no version at all — simply never settles. Observed on the
+// deployed site after a bad build, and unrecoverable from script.
+//
+// A promise that never settles is the worst failure this app can have, because
+// boot awaits it and the screen just stops. Any answer beats no answer.
+const OPEN_TIMEOUT_MS = 8000;
+
 export function open() {
   if (dbPromise) return dbPromise;
   dbPromise = new Promise((resolve, reject) => {
     const request = indexedDB.open(DB_NAME, DB_VERSION);
+    const watchdog = setTimeout(() => reject(new Error(BLOCKED)), OPEN_TIMEOUT_MS);
+    const settle = (fn) => (value) => { clearTimeout(watchdog); fn(value); };
+    resolve = settle(resolve);
+    reject = settle(reject);
 
     request.onupgradeneeded = (event) => {
       const db = event.target.result;
