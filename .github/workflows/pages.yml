@@ -11,9 +11,8 @@ on:
     paths:
       - 'web/**'
       - 'tools/*.mjs'
-      # The job runs check_mirror.py, which guards core/taxonomy.py against
-      # web/js/taxonomy.js. Without these two the guard could be broken by a
-      # change to the very files it watches and CI would never run.
+      # check_deck.py imports core/ and reads the deck, so a change to either
+      # must be able to trigger the job that runs it.
       - 'core/**'
       - 'tools/*.py'
       - '.github/workflows/pages.yml'
@@ -37,12 +36,10 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
-      - name: Check web modules import cleanly
+      - name: Check web modules, cross-module calls, ids and strings
         run: node tools/check_js.mjs
       - name: Unit-test the scheduler, session selection and answer matching
         run: node --test tools/test_js.mjs
-      - name: Check JS and Python tag vocabularies match
-        run: python3 tools/check_mirror.py
       - name: Check the deck for card-level mistakes
         run: python3 tools/check_deck.py --quiet
       - name: Check the seed bank is present and parses

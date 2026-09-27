@@ -98,18 +98,6 @@ input, textarea { font: inherit; color: inherit; }
 .ledger-row.lead > span { color: var(--ink); font-size: 15px; }
 .ledger-row.lead > b { font-size: 20px; }
 
-.ledger-row.is-head { border-top: 0; }
-.ledger-row.is-head > span,
-.ledger-row.is-head > b {
-  font-family: var(--sans); font-size: 10px; font-weight: 600;
-  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
-}
-/* px, not em: the header is 10px sans and the values 15px mono, so an em
-   width gives the two rows different column edges. */
-.ledger-row .col-n { width: 58px; }
-.ledger-row .col-pct { width: 46px; }
-.ledger-row.is-dim > span, .ledger-row.is-dim > b { color: var(--ink-faint); font-weight: 400; }
-
 /* One primary idiom, used by Start and Reveal alike. */
 #btn-start, #btn-reveal {
   display: block; width: 100%; text-align: right;
@@ -127,21 +115,10 @@ input, textarea { font: inherit; color: inherit; }
   -webkit-overflow-scrolling: touch;
 }
 
-.entry-top {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
-}
-.entry-top b { font-weight: 600; font-size: 15px; }
-.entry-figure { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 15px; }
-
 .note { color: var(--ink-soft); font-size: 13px; margin: 0; }
 .note-faint { color: var(--ink-faint); font-size: 12px; margin: 6px 0 0; }
 .empty { color: var(--ink-faint); padding: 22px var(--gutter);
   border-bottom: 1px solid var(--rule); max-width: 34ch; font-size: 14px; }
-
-/* Tags read as a comma list, not as pills — pills are containers. */
-.taglist { color: var(--ink-faint); font-size: 12px; margin: 9px 0 0; }
-
-.section-note { color: var(--ink-faint); font-size: 12px; padding: 14px var(--gutter) 0; margin: 0; }
 
 /* --- settings --- */
 .settings .group { padding: 18px var(--gutter); border-bottom: 1px solid var(--rule); }
@@ -356,14 +333,6 @@ kbd {
   padding: 11px 14px; font-size: 13px; line-height: 1.4;
 }
 
-/* The accumulating register. Sits under the day's counters so Today reads as a
-   running account rather than five current-state numbers and a void. */
-.register { border-top: 1px solid var(--rule-strong); }
-.register .ledger-row { min-height: 38px; }
-.register .ledger-row > span { font-size: 13px; }
-.register .ledger-row > b { font-size: 13px; font-weight: 400; color: var(--ink-soft); }
-.register .ledger-row:first-child { border-top: 0; }
-
 /* --- level progression --- */
 
 /* The moment a level is cleared. Inverted so it reads as an event, not a row. */
@@ -377,19 +346,6 @@ kbd {
 #btn-advance {
   display: block; width: 100%; text-align: right;
   font-size: 17px; font-weight: 600; color: var(--paper); padding: 4px 0;
-}
-
-.gate-row { padding: 12px var(--gutter); border-top: 1px solid var(--rule); }
-.gate-row .entry-top b { font-size: 14px; font-weight: 500; }
-.gate-row .entry-figure { font-size: 13px; color: var(--ink-soft); }
-.gate-bar { height: 2px; background: var(--rule); margin-top: 10px; }
-.gate-bar > i { display: block; height: 100%; background: var(--ink); }
-
-.list-head {
-  margin: 26px 0 0; padding: 0 var(--gutter) 10px;
-  font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
-  color: var(--ink-faint); font-weight: 600;
-  border-bottom: 1px solid var(--rule-strong);
 }
 
 .settings select {

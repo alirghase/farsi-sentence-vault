@@ -43,26 +43,6 @@
 
   </section>
 
-  <!-- Weak spots -->
-  <section class="screen" id="screen-weak">
-    <header class="screen-head"><h1 data-t="tab.progress">Progress</h1></header>
-    <div class="list">
-      <div class="ledger" id="today-stats">
-        <div class="ledger-row"><span data-t="today.streak">Streak</span><b id="streak">0 days</b></div>
-        <div class="ledger-row"><span data-t="today.held">Sentences</span><b id="count-held">0</b></div>
-      </div>
-      <div id="gate-block"></div>
-      <div class="register" id="register" hidden>
-        <div class="ledger-row is-head">
-          <span data-t="today.session">Session</span><b class="col-n" data-t="today.cards">Cards</b><b class="col-pct" data-t="today.right">Right</b>
-        </div>
-        <div id="register-rows"></div>
-      </div>
-      <h2 class="list-head" data-t="progress.weakSpots">Weak spots</h2>
-      <div id="weak-list"></div>
-    </div>
-  </section>
-
   <!-- Settings -->
   <section class="screen" id="screen-settings">
     <header class="screen-head"><h1 data-t="tab.settings">Settings</h1></header>
@@ -74,10 +54,6 @@
           <input type="range" id="set-new" min="0" max="60" step="5">
         </label>
         <p class="hint" data-t="settings.newPerDayHint"></p>
-        <label><span data-t="settings.perRound">Cards per round</span> <b id="round-value">20</b>
-          <input type="range" id="set-round" min="5" max="60" step="5">
-        </label>
-        <p class="hint" data-t="settings.perRoundHint"></p>
       </div>
 
       <div class="group">
@@ -144,7 +120,6 @@
 
 <nav class="tabs">
   <button data-screen="today" class="is-active" data-t="tab.today">Today</button>
-  <button data-screen="weak" data-t="tab.progress">Progress</button>
   <button data-screen="settings" data-t="tab.settings">Settings</button>
 </nav>
 

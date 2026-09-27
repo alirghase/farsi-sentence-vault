@@ -103,63 +103,6 @@ export function introducedSince(reviews, since) {
 }
 
 /**
- * A dated register of practice, newest first.
- *
- * The point of a ledger is that entries accumulate: current-state counters tell
- * you nothing about whether the habit is holding. One row per day, with the
- * accuracy you actually achieved.
- */
-export async function history(days = 14) {
-  const attempts = await db.getAll(db.STORE.attempts);
-  const byDay = new Map();
-
-  for (const attempt of attempts) {
-    const day = new Date(attempt.createdAt);
-    day.setHours(0, 0, 0, 0);
-    const key = day.getTime();
-    const row = byDay.get(key) ?? { date: key, reviewed: 0, again: 0 };
-    row.reviewed += 1;
-    if (attempt.selfRating === 'fail') row.again += 1;
-    byDay.set(key, row);
-  }
-
-  return [...byDay.values()]
-    .sort((a, b) => b.date - a.date)
-    .slice(0, days)
-    .map((row) => ({
-      ...row,
-      accuracy: row.reviewed ? 1 - row.again / row.reviewed : 0,
-    }));
-}
-
-/**
- * Consecutive days of practice, counting back from today.
- *
- * Yesterday still counts as alive: a streak that dies at midnight punishes you
- * for the session you are about to do, which is exactly backwards for the habit
- * this is meant to support.
- */
-export async function streak(now = Date.now()) {
-  const rows = await history(400);
-  if (!rows.length) return { days: 0, practisedToday: false };
-
-  const startOfDay = (ms) => { const d = new Date(ms); d.setHours(0, 0, 0, 0); return d.getTime(); };
-  const today = startOfDay(now);
-  const days = new Set(rows.map((r) => startOfDay(r.date)));
-
-  const practisedToday = days.has(today);
-  let cursor = practisedToday ? today : today - 86400000;
-  if (!days.has(cursor)) return { days: 0, practisedToday };
-
-  let count = 0;
-  while (days.has(cursor)) {
-    count += 1;
-    cursor -= 86400000;
-  }
-  return { days: count, practisedToday };
-}
-
-/**
  * Build a session.
  *
  * Review states are created lazily: materialising two rows for every sentence
@@ -354,18 +297,13 @@ export async function recordAttempt({ card, rating, typedAnswer = null, msToReve
     db.put(db.STORE.attempts, attempt),
   ]);
 
-  // Self-rated attempts carry no per-tag signal, so a fail counts against every
-  // tag the sentence exercises. Coarse, but speak-aloud is the default mode and
-  // excluding it would leave the weak-spot view blind to most practice.
-  await bumpTagStats(card.sentence.grammarTags ?? [], rating === 'fail');
-
   return { attempt, review, previous: previous ?? null };
 }
 
 /**
- * Reverse a `recordAttempt`: restore the schedule, drop the attempt, and take
- * the tag counts back down. A mis-tap on a one-tap binary rating is common on
- * a phone, and without this it silently resets a card that was fine.
+ * Reverse a `recordAttempt`: restore the schedule and drop the attempt. A
+ * mis-tap on a one-tap binary rating is common on a phone, and without this
+ * it silently resets a card that was fine.
  */
 export async function undoAttempt({ card, attempt, previous }) {
   await Promise.all([
@@ -374,22 +312,8 @@ export async function undoAttempt({ card, attempt, previous }) {
       : db.remove(db.STORE.reviews, card.review.key),
     db.remove(db.STORE.attempts, attempt.id),
   ]);
-  await bumpTagStats(card.sentence.grammarTags ?? [], attempt.selfRating === 'fail', -1);
 }
 
-export async function bumpTagStats(tags, failed, delta = 1) {
-  for (const tag of tags) {
-    const existing = (await db.get(db.STORE.tagStats, tag)) ?? {
-      tag,
-      failCount: 0,
-      totalCount: 0,
-    };
-    existing.totalCount = Math.max(0, existing.totalCount + delta);
-    if (failed) existing.failCount = Math.max(0, existing.failCount + delta);
-    existing.lastSeen = Date.now();
-    await db.put(db.STORE.tagStats, existing);
-  }
-}
 
 /**
  * Does a typed answer match the reference, or one of the listed alternatives?

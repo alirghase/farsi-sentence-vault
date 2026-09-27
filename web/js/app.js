@@ -8,7 +8,7 @@ import * as SM2 from './sm2.js';
 import * as speech from './speech.js';
 import * as levels from './levels.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
-import { tagTitle, posTitle } from './taxonomy.js';
+import { posTitle } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
 
@@ -81,7 +81,6 @@ async function showScreen(name) {
     button.classList.toggle('is-active', button.dataset.screen === name);
   }
   if (name === 'today') await refreshToday();
-  if (name === 'weak') await renderWeakSpots();
   if (name === 'settings') await renderSettings();
 }
 
@@ -155,43 +154,6 @@ function renderPassPanel(gate) {
   $('passed-note').textContent =
     `${levels.LEVEL_META[next].summary} ${text('today.passedNote')}`;
   $('btn-advance').innerHTML = `${text('today.unlock')} ${next} &rarr;`;
-}
-
-/**
- * The figures Today used to carry. None of them changes what you do next, so
- * none of them belongs on the screen whose only job is to start a session.
- */
-async function renderProgressStats() {
-  const counts = await todayCounts();
-
-  const streak = await session.streak();
-  $('streak').textContent = `${faDigits(streak.days)} ${text('today.day')}`;
-  $('streak').classList.toggle('is-zero', streak.days === 0);
-
-  $('count-held').textContent = faDigits(counts.sentenceCount);
-
-  await renderRegister();
-}
-
-/** The accumulating half of the ledger: one row per day of practice. */
-async function renderRegister() {
-  const rows = await session.history(14);
-  $('register').hidden = rows.length === 0;
-  if (!rows.length) return;
-
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  $('register-rows').innerHTML = rows.map((row) => {
-    const when = row.date === today.getTime()
-      ? text('tab.today')
-      : faDigits(new Date(row.date).toLocaleDateString('fa-IR', { day: 'numeric', month: 'long' }));
-    return `<div class="ledger-row">
-      <span>${when}</span>
-      <b class="col-n">${faDigits(row.reviewed)}</b>
-      <b class="col-pct">${faDigits(Math.round(row.accuracy * 100))}٪</b>
-    </div>`;
-  }).join('');
 }
 
 // --- practice --------------------------------------------------------------
@@ -551,91 +513,6 @@ async function endSession() {
   await refreshActive();
 }
 
-// --- weak spots ------------------------------------------------------------
-
-const MIN_EVIDENCE = 3;
-
-/** The three counts that gate the current level, as bars you can watch fill. */
-async function renderGates() {
-  const gate = await levels.progress(state.settings.currentLevel);
-  const pct = (v, n) => (n > 0 ? Math.min(100, Math.round((v / n) * 100)) : 0);
-
-  // Before there are enough reviews to judge accuracy, the bar tracks progress
-  // toward having a sample — otherwise it reads 0% while the label says
-  // "12 of 40 reviews", which are two different measurements.
-  const enoughSamples = gate.accuracy.samples >= levels.GATE.accuracyWindow;
-  const accuracyBar = enoughSamples
-    ? [Math.round(gate.accuracy.value * 100), Math.round(gate.accuracy.need * 100)]
-    : [gate.accuracy.samples, levels.GATE.accuracyWindow];
-
-  const rows = [
-    [text('progress.seen'), gate.coverage.value, gate.coverage.need,
-     `${faDigits(gate.coverage.value)} / ${faDigits(gate.coverage.need)}`],
-    [text('progress.accuracy'), accuracyBar[0], accuracyBar[1],
-     enoughSamples
-       ? `${faDigits(Math.round(gate.accuracy.value * 100))}٪ / ${faDigits(Math.round(gate.accuracy.need * 100))}٪`
-       : `${faDigits(gate.accuracy.samples)} / ${faDigits(levels.GATE.accuracyWindow)}`],
-    [text('progress.retained'), gate.retention.value, gate.retention.need,
-     `${faDigits(gate.retention.value)} / ${faDigits(gate.retention.need)}`],
-  ];
-
-  $('gate-block').innerHTML = `
-    <div class="ledger">
-      <div class="ledger-row is-head">
-        <span>${gate.level} &middot; ${escapeHtml(levels.LEVEL_META[gate.level].summary)}</span>
-      </div>
-      ${rows.map(([label, value, need, detail]) => `
-        <div class="gate-row">
-          <div class="entry-top"><b>${label}</b><span class="entry-figure">${detail}</span></div>
-          <div class="gate-bar"><i style="width:${pct(value, need)}%"></i></div>
-        </div>`).join('')}
-    </div>
-    <p class="section-note">${escapeHtml(
-      gate.passed ? text('progress.passed') : text('progress.gateHint'))}</p>`;
-}
-
-async function renderWeakSpots() {
-  await renderProgressStats();
-  await renderGates();
-  const stats = await db.getAll(db.STORE.tagStats);
-  const list = $('weak-list');
-
-  const seen = stats.filter((s) => s.totalCount > 0);
-  if (!seen.length) {
-    list.innerHTML = `<p class="empty">${escapeHtml(text('progress.empty'))}</p>`;
-    return;
-  }
-
-  // Ranked by failure rate, not raw count: a tag you meet constantly and
-  // sometimes fail is a smaller problem than one you fail nearly every time.
-  const ranked = seen
-    .filter((s) => s.totalCount >= MIN_EVIDENCE && s.failCount > 0)
-    .sort((a, b) => b.failCount / b.totalCount - a.failCount / a.totalCount);
-  const emerging = seen.filter((s) => s.totalCount < MIN_EVIDENCE)
-    .sort((a, b) => b.totalCount - a.totalCount);
-
-  const row = (stat, dim) => {
-    const rate = stat.totalCount ? stat.failCount / stat.totalCount : 0;
-    const pct = Math.round(rate * 100);
-    return `<div class="ledger-row${dim ? ' is-dim' : ''}">
-      <span>${escapeHtml(tagTitle(stat.tag))}</span>
-      <b class="col-n">${faDigits(stat.failCount)}/${faDigits(stat.totalCount)}</b>
-      <b class="col-pct">${dim ? `${faDigits(stat.totalCount)}&times;` : `${faDigits(pct)}٪`}</b>
-    </div>`;
-  };
-
-  let html = '<div class="ledger">'
-    + `<div class="ledger-row is-head"><span>${escapeHtml(text('progress.feature'))}</span>`
-    + `<b class="col-n">${escapeHtml(text('progress.wrong'))}</b><b class="col-pct">${escapeHtml(text('progress.rate'))}</b></div>`
-    + ranked.map((s) => row(s, false)).join('')
-    + emerging.map((s) => row(s, true)).join('')
-    + '</div>';
-
-  html += `<p class="section-note">${escapeHtml(
-    ranked.length ? text('progress.tagNote') : text('progress.tagNeed'))}</p>`;
-  list.innerHTML = html;
-}
-
 // --- settings --------------------------------------------------------------
 
 function bindSettings() {
@@ -646,7 +523,6 @@ function bindSettings() {
     });
   };
   slider('set-new', 'new-value', 'newPerDay');
-  slider('set-round', 'round-value', 'sessionSize');
 
   $('set-speak').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
@@ -761,8 +637,6 @@ async function renderSettings() {
   const s = state.settings;
   $('set-new').value = s.newPerDay;
   $('new-value').textContent = faDigits(s.newPerDay);
-  $('set-round').value = s.sessionSize;
-  $('round-value').textContent = faDigits(s.sessionSize);
   $('set-speak').checked = s.speakEnabled;
 
   $('set-level').innerHTML = levels.LEVELS

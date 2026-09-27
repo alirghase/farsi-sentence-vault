@@ -1,13 +1,15 @@
 """Shared vocabulary for sentence generation and attempt grading.
 
 This module is the single source of truth for the closed sets the model is
-constrained to. It is mirrored in web/js/taxonomy.js — if you change anything
-here, change it there too. tools/check_mirror.py enforces that, and runs in CI.
+constrained to. It used to be mirrored in web/js/taxonomy.js, guarded by
+tools/check_mirror.py; the app stopped displaying tags and situations when the
+progress screen was removed, so both the copy and the guard are gone. Nothing
+outside Python reads these now.
 
 Why closed sets: free-form tags from an LLM fragment across runs
-("ezafe" / "ezāfe" / "missing ezafe" / "incorrect ezafe construction"). Once tags
-fragment, ErrorTagStat counts split across near-duplicates and the "target my
-weak spots" loop starts aiming at noise.
+("ezafe" / "ezāfe" / "missing ezafe" / "incorrect ezafe construction"). Once
+they fragment, every count and coverage report built on them splits across
+near-duplicates and quietly measures noise.
 """
 
 # --- Error tags -------------------------------------------------------------

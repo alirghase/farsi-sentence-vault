@@ -11,21 +11,15 @@
 export const STRINGS = {
   // Tabs and screen titles
   'tab.today': 'امروز',
-  'tab.progress': 'پیشرفت',
   'tab.settings': 'تنظیمات',
 
   // Today
   'today.due': 'مرور',
   'today.new': 'جدید',
-  'today.held': 'جمله‌ها',
   'today.level': 'سطح',
-  'today.streak': 'پیاپی',
   'today.start': 'شروع',
   'today.nothing': 'چیزی نمونده',
   'today.empty': 'هنوز جمله‌ای نیست.',
-  'today.day': 'روز',
-  'today.session': 'جلسه',
-  'today.cards': 'کارت',
   'today.right': 'درست',
 
   // Practice
@@ -42,14 +36,6 @@ export const STRINGS = {
   'card.undone': 'لغو شد',
 
   // Progress
-  'progress.weakSpots': 'نقاط ضعف',
-  'progress.feature': 'ویژگی',
-  'progress.wrong': 'غلط',
-  'progress.rate': 'نسبت',
-  'progress.seen': 'کارت‌های دیده‌شده',
-  'progress.accuracy': 'دقت',
-  'progress.retained': 'کارت‌های مونده',
-  'progress.empty': 'تمرین کن تا ضعف‌هات اینجا بیاد.',
 
   // Settings
   'settings.practice': 'تمرین',
@@ -61,8 +47,6 @@ export const STRINGS = {
   // Settings — practice
   'settings.newPerDay': 'کارت جدید در روز',
   'settings.newPerDayHint': 'هر کارت جدید هفته‌ها مرور می‌سازه، پس این بیشتر بارِ فرداست تا امروز. فقط وقتی ببرش بالا که مرورها دارن تموم می‌شن.',
-  'settings.perRound': 'کارت در هر دور',
-  'settings.perRoundHint': 'هر دور یعنی یه بار زدنِ شروع. وقتی تموم شد می‌تونی همون‌جا دوباره بری.',
   'settings.levelHint': 'کارت جدید فقط از این سطح میاد؛ مرور از همه‌جا. معمولاً وقتی از دروازهٔ پیشرفت رد بشی خودش جلو می‌ره — دستی عوضش کن اگه نمی‌خوای صبر کنی، یا می‌خوای برگردی عقب.',
 
   // Settings — audio
@@ -78,6 +62,8 @@ export const STRINGS = {
   'settings.backupHint': 'برنامهٔ مرور و تاریخچه‌ات فقط توی همین مرورگره، و iOS می‌تونه پاکش کنه. هر از گاهی یه پشتیبان توی Files ذخیره کن؛ بازگردانی چیزی رو که اینجاست جایگزین می‌کنه.',
   'settings.backupSaved': 'پشتیبان ذخیره شد',
   'settings.backupRestored': 'بازگردانی شد',
+  'settings.notBackup': 'این فایل پشتیبانِ این برنامه نیست.',
+  'settings.newerBackup': 'این پشتیبان مال نسخهٔ جدیدتریه.',
   'settings.backupFailed': 'این فایل خونده نشد.',
   'settings.scheduled': 'کارت زمان‌بندی‌شده',
   'settings.reviews': 'مرور',
@@ -95,10 +81,6 @@ export const STRINGS = {
 
   // Today and progress
   'today.unlock': 'باز کردن',
-  'progress.passed': 'قبول شدی — سطح بعدی رو از امروز باز کن.',
-  'progress.gateHint': 'هر سه تا باید برسن. دیده‌شده: کارت‌های متمایز این سطح. دقت: مرورهای اخیر همین‌جا. مونده: کارت‌هایی که حالا چند روز فاصله دارن — همونی که نمی‌ذاره سطحی رو با حفظ‌کردن رد کنی.',
-  'progress.tagNote': 'هر ویژگی‌ای که توی یه جملهٔ غلط بوده شمرده می‌شه، پس این رو جای تجمع خطا بخون، نه تشخیص قطعی.',
-  'progress.tagNeed': 'نسبت‌ها وقتی میان که یه ویژگی چند بار اومده باشه.',
 
 
   // Card badge and directions
@@ -115,8 +97,6 @@ export const STRINGS = {
   'settings.backupReplace': 'بازگردانی چیزی رو که روی این دستگاهه جایگزین می‌کنه.',
   'settings.unknownDate': 'تاریخ نامشخص',
   'settings.confirmRestore': 'پیشرفت این دستگاه با پشتیبانِ این تاریخ جایگزین بشه؟',
-  'settings.notBackup': 'این فایل پشتیبانِ این برنامه نیست.',
-  'settings.newerBackup': 'این پشتیبان مال نسخهٔ جدیدتریه.',
   'settings.goneFromDeck': 'دیگه توی بسته نیستن',
 
 
