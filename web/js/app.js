@@ -75,13 +75,22 @@ function bootFailed(error) {
     ?? 'boot.failed';
   $('practice').hidden = true;
   $('counts').hidden = true;
-  $('btn-start').hidden = true;
   $('passed-panel').hidden = true;
   const note = $('today-empty');
   note.hidden = false;
   note.textContent = text(key);
   // Nothing below is usable without the database.
   document.querySelector('.tabs').hidden = true;
+
+  // Every one of these causes is something that can stop being true a moment
+  // later — the other copy gets closed, the upgrade finishes. Leaving the only
+  // way forward as "know to reload a page inside a Home Screen app" is not
+  // much of a way forward.
+  const retry = $('btn-start');
+  retry.hidden = false;
+  retry.disabled = false;
+  retry.textContent = text('boot.retry');
+  retry.onclick = () => location.reload();
 }
 
 /**
