@@ -15,11 +15,10 @@ const FORMAT = 'farsi-vault-backup';
 const VERSION = 1;
 
 export async function exportData() {
-  const [sentences, reviews, attempts, tagStats, settings] = await Promise.all([
+  const [sentences, reviews, attempts, settings] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
     db.getAll(db.STORE.attempts),
-    db.getAll(db.STORE.tagStats),
     db.getSettings(),
   ]);
   const textById = new Map(sentences.map((s) => [s.id, s.farsiText]));
@@ -31,7 +30,6 @@ export async function exportData() {
     settings,
     reviews: reviews.map((r) => ({ ...r, farsiText: textById.get(r.sentenceId) })),
     attempts: attempts.map((a) => ({ ...a, farsiText: textById.get(a.sentenceId) })),
-    tagStats,
     // Anything not from the bundled deck would be lost otherwise. Today that
     // is nothing, but a restore must not depend on that staying true.
     customSentences: sentences.filter((s) => s.source !== 'seed'),
@@ -72,14 +70,19 @@ export async function importData(backup) {
     attempts.push({ ...row, sentenceId });
   }
 
-  await Promise.all([
-    db.clear(db.STORE.reviews),
-    db.clear(db.STORE.attempts),
-    db.clear(db.STORE.tagStats),
+  // One transaction: clear and write together, so a restore that fails leaves
+  // the device as it was rather than emptied. Everything above this line is
+  // pure computation for the same reason — nothing is written until the whole
+  // file has been read and resolved.
+  //
+  // A backup written before the weak-spots view was removed also carries
+  // tagStats. It is ignored rather than restored: nothing counts tags any
+  // more, and refusing an older file would be the wrong trade when it holds a
+  // real review history.
+  await db.replaceAll([
+    [db.STORE.reviews, reviews],
+    [db.STORE.attempts, attempts],
   ]);
-  await db.putMany(db.STORE.reviews, reviews);
-  await db.putMany(db.STORE.attempts, attempts);
-  await db.putMany(db.STORE.tagStats, backup.tagStats ?? []);
   const settings = await db.saveSettings(backup.settings ?? {});
 
   return { reviews: reviews.length, attempts: attempts.length, skipped, settings };

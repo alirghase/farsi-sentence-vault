@@ -5,13 +5,14 @@
 // static files with no build step, and this is about 150 lines of the IDB API.
 
 const DB_NAME = 'farsi-vault';
-const DB_VERSION = 1;
+// 2: tagStats dropped. It counted which grammar features your misses landed
+// on, for a weak-spots view that no longer exists.
+const DB_VERSION = 2;
 
 export const STORE = {
   sentences: 'sentences',
   reviews: 'reviews',
   attempts: 'attempts',
-  tagStats: 'tagStats',
   meta: 'meta',
 };
 
@@ -40,11 +41,13 @@ export function open() {
         const a = db.createObjectStore(STORE.attempts, { keyPath: 'id' });
         a.createIndex('createdAt', 'createdAt', { unique: false });
       }
-      if (!db.objectStoreNames.contains(STORE.tagStats)) {
-        db.createObjectStore(STORE.tagStats, { keyPath: 'tag' });
-      }
       if (!db.objectStoreNames.contains(STORE.meta)) {
         db.createObjectStore(STORE.meta, { keyPath: 'key' });
+      }
+      // Upgrading from 1. Reviews and attempts are untouched — this only
+      // removes the store that fed the weak-spots view.
+      if (db.objectStoreNames.contains('tagStats')) {
+        db.deleteObjectStore('tagStats');
       }
     };
 
@@ -58,8 +61,12 @@ function tx(db, stores, mode) {
   const transaction = db.transaction(stores, mode);
   const done = new Promise((resolve, reject) => {
     transaction.oncomplete = () => resolve();
-    transaction.onerror = () => reject(transaction.error);
-    transaction.onabort = () => reject(transaction.error);
+    // transaction.error is null after an explicit abort(), so rejecting with
+    // it raw produced "Uncaught (in promise) null" — an error with no message
+    // and no stack, which is worse than no error at all.
+    const fail = () => reject(transaction.error ?? new Error('transaction aborted'));
+    transaction.onerror = fail;
+    transaction.onabort = fail;
   });
   return { transaction, done };
 }
@@ -120,6 +127,42 @@ export async function removeMany(store, keys) {
   return keys.length;
 }
 
+
+/**
+ * Replace the whole contents of several stores in ONE transaction.
+ *
+ * A restore used to clear each store and then write it, as separate
+ * transactions. Anything that threw in between — a corrupt file, a store that
+ * no longer exists, a quota error — left the device with its history already
+ * deleted and nothing put back. For the one feature whose entire job is not
+ * losing data, that is the wrong failure. IndexedDB aborts a transaction on
+ * error and rolls the whole thing back, so clearing and writing together means
+ * a failed restore leaves you exactly where you started.
+ */
+export async function replaceAll(entries) {
+  const stores = entries.map(([store]) => store);
+  const db = await open();
+  const { transaction, done } = tx(db, stores, 'readwrite');
+  try {
+    for (const [store, rows] of entries) {
+      const objectStore = transaction.objectStore(store);
+      objectStore.clear();
+      for (const row of rows) objectStore.put(row);
+    }
+  } catch (error) {
+    // A put() that throws synchronously — a value structured clone cannot
+    // handle is the realistic one — does NOT abort the transaction on its own.
+    // Without this, everything queued before the bad row still commits, so a
+    // corrupt backup cleared the stores and half-filled them. Tested: it left
+    // reviews restored and attempts empty.
+    transaction.abort();
+    // The abort rejects `done`, which nothing is awaiting on this path. Left
+    // alone that surfaces as an unhandled rejection alongside the real error.
+    done.catch(() => {});
+    throw error;
+  }
+  await done;
+}
 
 export async function clear(store) {
   const db = await open();

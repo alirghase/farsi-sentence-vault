@@ -25,15 +25,20 @@ tap, a miss comes straight back, and the whole loop runs with no network.
 5. At the end, **یه دور دیگه (Another round)** or Exit.
 
 Do the due reviews every day before anything else; new cards are what create
-tomorrow's reviews. **Progress** shows the level gate, your streak and daily
-target, a 14-day register, and which grammar features your misses cluster on.
-**Settings** has new cards a day (default 20), cards per round (20), daily
-target (40), level, audio, and **Save a backup** — do that now and then,
-because iOS can clear a web app's storage and nothing else holds a copy.
+tomorrow's reviews.
+
+There is no progress screen. The level gate, the streak, the register and the
+per-tag weak spots were all removed: they were things to read rather than
+things to do, and this is a drilling app. The gate still runs, unwatched — when
+a level clears, an unlock panel appears on Today and nowhere else.
+
+**Settings** has new cards a day (default 20), level, audio, your own sentence
+bank, and **Save a backup** — do that now and then, because iOS can clear a web
+app's storage and nothing else holds a copy.
 
 On a keyboard: <kbd>Space</kbd> reveals, <kbd>1</kbd> wrong, <kbd>2</kbd> right,
-<kbd>T</kbd> type, <kbd>P</kbd> play, <kbd>U</kbd> undo, <kbd>Esc</kbd> exit.
-While typing, <kbd>Enter</kbd> reveals.
+<kbd>T</kbd> type, <kbd>U</kbd> undo, <kbd>Esc</kbd> exit. While typing,
+<kbd>Enter</kbd> reveals.
 
 ## How it works
 
@@ -72,9 +77,12 @@ anything else.
 | `augment.py` | Model-written breakdowns and alternatives for what cannot be derived |
 | `fix_glosses.py` | Repairs word maps written before the gloss and part-of-speech rules existed |
 | `coverage.py` | Reports core-verb coverage and what is still missing |
-| `check_mirror.py` | Guards the JS ↔ Python vocabularies against drift |
+| `vocabulary.py` | Content-lemma exposure: what is met once and never again |
+| `tenses.py` | Which tenses and constructions the deck actually contains |
+| `check_deck.py` | Card-level mistakes: word maps that do not reconstruct their sentence, two meanings in one chip, two cards answering one prompt, split clitics |
+| `review_deck.py` | Asks the model whether a native would say the sentence. Caches and resumes — the free tier is a daily ceiling |
 | `prompt_harness.py` | Iterate prompts without a rebuild |
-| `check_js.mjs` | Every web module imports cleanly |
+| `check_js.mjs` | Modules import, cross-module calls resolve, every `$('id')` and string key exists |
 | `test_js.mjs` | Unit tests: scheduler, session selection, answer matching |
 
 Every tool reads and writes `web/data/seed_sentences.json` — the file the app
@@ -122,12 +130,14 @@ publishes `web/`.
 - **Gemini retires models aggressively** and the free tier has a hard daily
   request ceiling shared across models. The client falls back through
   `gemini-3.6-flash` → `gemini-3.5-flash` → `gemini-flash-latest`.
-- **The error tag vocabulary is closed and duplicated** across Python and
-  JavaScript. Run `check_mirror.py` after touching either: drift degrades
-  adaptation silently, with no crash.
-- **`SITUATIONS` in `web/js/taxonomy.js` looks unused.** It is parsed by
-  `check_mirror.py`. Deleting it disables that check rather than breaking
-  anything visible.
+- **Deleting a function by matching braces has eaten its neighbour three
+  times** — walking backwards from `{` runs into the doc comment above the
+  function before it. Every time the module still imported and the failure
+  waited for a button press. `check_js.mjs` now resolves every cross-module
+  call, so it fails in CI instead.
+- **A sentence can pass every check and still be wrong.** `ما هوای بهار رو
+  نمی‌دونیم` parses, validates and is not something anyone says. That is what
+  `review_deck.py` is for; `check_deck.py` cannot see it.
 - **iOS can evict web-app storage.** Install to the Home Screen rather than
   leaving it a browser tab, and save a backup from Settings now and then.
   Restoring maps through the Persian text, so it works on a new device too.
@@ -137,9 +147,9 @@ publishes `web/`.
 ```bash
 node tools/check_js.mjs
 node --test tools/test_js.mjs
-python3 tools/check_mirror.py
+python3 tools/check_deck.py
 python3 tools/coverage.py
-python3 tools/generate_seed.py --review      # register health
+python3 tools/review_deck.py                 # model review, resumes on quota
 ```
 
 ## History

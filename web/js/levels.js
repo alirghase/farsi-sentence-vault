@@ -19,8 +19,9 @@ export const LEVEL_META = {
   C1: { difficulty: 5, summary: 'اصطلاح، مفهوم انتزاعی، تعارف.' },
 };
 
-/** The gate. Every threshold is visible in the UI so nothing is a mystery. */
-export const GATE = {
+// The gate. Not exported any more: the bars that displayed these numbers
+// went with the progress screen, and only progress() reads them now.
+const GATE = {
   distinctCards: 60,        // breadth: you have met enough of the level
   accuracyWindow: 40,       // how many recent reviews accuracy is measured over
   accuracyTarget: 0.85,     // and the bar it must clear
