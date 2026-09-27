@@ -30,7 +30,7 @@ import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from core import gemini, prompts
+from core import gemini, prompts, validate
 from core.gloss import tidy
 from core.bank import ensure_ids, load, save
 
@@ -59,6 +59,15 @@ def check(entry: dict, sentence: dict) -> list[str]:
     overlap = sum(1 for ch in set(original) if ch in joined)
     if original and overlap / max(len(set(original)), 1) < 0.7:
         problems.append("breakdown does not match the sentence")
+
+    # Alternatives are shown as "also correct", so a written-register one would
+    # teach the form the whole deck avoids. Nothing was checking them.
+    for alternative in entry.get("alternatives") or []:
+        written = validate.register_report(alternative)[1]
+        if written:
+            problems.append(f"alternative uses a written form {written[0]}")
+            return problems
+
     return problems
 
 

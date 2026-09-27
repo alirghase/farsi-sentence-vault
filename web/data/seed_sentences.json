@@ -14,7 +14,38 @@
         "colloquial",
         "verb-tense"
       ],
-      "id": "23bfcad1-042a-42ff-bf11-890f5f1c2569"
+      "id": "23bfcad1-042a-42ff-bf11-890f5f1c2569",
+      "breakdown": [
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "قهوه",
+          "translit": "ghahve",
+          "en": "coffee",
+          "pos": "noun"
+        },
+        {
+          "fa": "سرد",
+          "translit": "sard",
+          "en": "cold",
+          "pos": "adjective"
+        },
+        {
+          "fa": "می‌خوام",
+          "translit": "mikham",
+          "en": "I want",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "من یه قهوه سرد می‌خوام.",
+        "یه قهوه سرد لطفا."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "How much is this dress?",
@@ -297,7 +328,37 @@
         "ezafe",
         "verb-tense"
       ],
-      "id": "c249b407-4da1-456a-b408-ab2c75bb1e4c"
+      "id": "c249b407-4da1-456a-b408-ab2c75bb1e4c",
+      "breakdown": [
+        {
+          "fa": "صفحه",
+          "translit": "safhe-ye",
+          "en": "the screen",
+          "pos": "noun"
+        },
+        {
+          "fa": "گوشیم",
+          "translit": "gooshim",
+          "en": "my phone",
+          "pos": "noun"
+        },
+        {
+          "fa": "دیروز",
+          "translit": "dirooz",
+          "en": "yesterday",
+          "pos": "adverb"
+        },
+        {
+          "fa": "شکست",
+          "translit": "shekast",
+          "en": "broke",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "دیروز صفحه گوشیم شکست."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Did you give me the receipt?",
@@ -721,7 +782,67 @@
         "pronoun-clitic",
         "verb-tense"
       ],
-      "id": "99b9d8dd-b1e6-4584-93af-39f2a2379179"
+      "id": "99b9d8dd-b1e6-4584-93af-39f2a2379179",
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "گارسون",
+          "translit": "gârson",
+          "en": "the waiter",
+          "pos": "noun"
+        },
+        {
+          "fa": "گفتم",
+          "translit": "goftam",
+          "en": "I said",
+          "pos": "verb"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "بادام‌زمینی",
+          "translit": "bâdâm-zamini",
+          "en": "peanuts",
+          "pos": "noun"
+        },
+        {
+          "fa": "حساسیت دارم",
+          "translit": "hassâsiyat dâram",
+          "en": "I am allergic",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "یادش رفت",
+          "translit": "yâdash raft",
+          "en": "he forgot",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "به گارسون گفتم به بادام‌زمینی آلرژی دارم ولی فراموش کرد."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Could you explain one more time how this app works?",
@@ -1075,7 +1196,73 @@
         "pronoun-clitic",
         "subjunctive"
       ],
-      "id": "63631058-1b66-4333-a362-eb6ff8aa6ae7"
+      "id": "63631058-1b66-4333-a362-eb6ff8aa6ae7",
+      "breakdown": [
+        {
+          "fa": "تورو خدا",
+          "translit": "toro khodâ",
+          "en": "please / for God's sake",
+          "pos": "expression"
+        },
+        {
+          "fa": "زحمت نکشین",
+          "translit": "zahmat nakeshin",
+          "en": "don't go to trouble",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "قهوه",
+          "translit": "ghahve",
+          "en": "coffee",
+          "pos": "noun"
+        },
+        {
+          "fa": "ساده",
+          "translit": "sâde",
+          "en": "simple",
+          "pos": "adjective"
+        },
+        {
+          "fa": "هم",
+          "translit": "ham",
+          "en": "also / even",
+          "pos": "particle"
+        },
+        {
+          "fa": "بذارین",
+          "translit": "bezârin",
+          "en": "put",
+          "pos": "verb"
+        },
+        {
+          "fa": "جلوم",
+          "translit": "jolom",
+          "en": "in front of me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "کاملا",
+          "translit": "kâmelan",
+          "en": "completely",
+          "pos": "adverb"
+        },
+        {
+          "fa": "کافیه",
+          "translit": "kâfiye",
+          "en": "is enough",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [
+        "لطفاً واسه من زحمت نکشید، یه قهوه ساده هم کاملاً کافیه."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "My head hurts a lot.",
@@ -1841,7 +2028,55 @@
         "ra-marker",
         "pronoun-clitic"
       ],
-      "id": "1f368ca7-23ef-42d6-82a0-b2338584023f"
+      "id": "1f368ca7-23ef-42d6-82a0-b2338584023f",
+      "breakdown": [
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very / really",
+          "pos": "adverb"
+        },
+        {
+          "fa": "لطف کردی",
+          "translit": "lotf kardi",
+          "en": "you were kind",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "امشب",
+          "translit": "emshab",
+          "en": "tonight",
+          "pos": "adverb"
+        },
+        {
+          "fa": "مارو",
+          "translit": "mâro",
+          "en": "us",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "دعوت کردی",
+          "translit": "da'vat kardi",
+          "en": "you invited",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "خونه‌تون",
+          "translit": "khoone-toon",
+          "en": "your place",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [
+        "واقعاً لطف کردی که امشب ما رو به خونه‌تون دعوت کردی."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "The doctor gave me a prescription, but the pharmacy said they didn't have one of these pills.",
@@ -2170,7 +2405,79 @@
         "compound-verb",
         "colloquial"
       ],
-      "id": "b11f8ba9-458b-4e1f-8e1f-deabc451235f"
+      "id": "b11f8ba9-458b-4e1f-8e1f-deabc451235f",
+      "breakdown": [
+        {
+          "fa": "همه چی",
+          "translit": "hame chi",
+          "en": "everything",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "عالی",
+          "translit": "âli",
+          "en": "wonderful",
+          "pos": "adjective"
+        },
+        {
+          "fa": "بود",
+          "translit": "bood",
+          "en": "was",
+          "pos": "verb"
+        },
+        {
+          "fa": "و",
+          "translit": "o",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "غذا",
+          "translit": "ghazâ",
+          "en": "the food",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "خوشمزه",
+          "translit": "khoshmaze",
+          "en": "delicious",
+          "pos": "adjective"
+        },
+        {
+          "fa": "بود",
+          "translit": "bood",
+          "en": "was",
+          "pos": "verb"
+        },
+        {
+          "fa": "واقعا",
+          "translit": "vâghe'an",
+          "en": "really",
+          "pos": "adverb"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "so much",
+          "pos": "adverb"
+        },
+        {
+          "fa": "زحمت کشیدین",
+          "translit": "zahmat keshidin",
+          "en": "you went to trouble",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "همه چیز عالی بود و غذا هم خیلی خوشمزه بود، واقعاً خیلی زحمت کشیدید."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "You shouldn't have brought a gift at all; your presence alone was the greatest gift for us!",
@@ -2391,7 +2698,44 @@
         "ezafe",
         "preposition"
       ],
-      "id": "f10bf9d1-f440-40fc-a548-a12cb3c6be4d"
+      "id": "f10bf9d1-f440-40fc-a548-a12cb3c6be4d",
+      "breakdown": [
+        {
+          "fa": "به نظر من",
+          "translit": "be nazare man",
+          "en": "in my opinion",
+          "pos": "expression"
+        },
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "تصمیم",
+          "translit": "tasmim",
+          "en": "decision",
+          "pos": "noun"
+        },
+        {
+          "fa": "درست",
+          "translit": "dorost",
+          "en": "right",
+          "pos": "adjective"
+        },
+        {
+          "fa": "نیست",
+          "translit": "nist",
+          "en": "isn't",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "به نظرم این تصمیم درست نیست.",
+        "به نظرم این تصمیم خوب نیست."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "That movie wasn't worth watching at all.",
@@ -2404,7 +2748,44 @@
         "colloquial",
         "ezafe"
       ],
-      "id": "5420d1a9-2071-49b0-a1ff-5e629d26b702"
+      "id": "5420d1a9-2071-49b0-a1ff-5e629d26b702",
+      "breakdown": [
+        {
+          "fa": "اون",
+          "translit": "un",
+          "en": "that",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "فیلم",
+          "translit": "film",
+          "en": "movie",
+          "pos": "noun"
+        },
+        {
+          "fa": "اصلا",
+          "translit": "aslan",
+          "en": "at all",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ارزش دیدن",
+          "translit": "arzeshe didan",
+          "en": "worth watching",
+          "pos": "noun"
+        },
+        {
+          "fa": "نداشت",
+          "translit": "nadasht",
+          "en": "didn't have",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اون فیلم ارزش دیدن نداشت کلا.",
+        "اون فیلم اصلا ارزششو نداشت ببینی."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Shall we go to the cafe together tomorrow?",
@@ -2464,7 +2845,44 @@
         "colloquial",
         "ezafe"
       ],
-      "id": "70346c4d-47db-4af5-9e73-ed8470640def"
+      "id": "70346c4d-47db-4af5-9e73-ed8470640def",
+      "breakdown": [
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "آخر هفته",
+          "translit": "âkhare hafte",
+          "en": "weekend",
+          "pos": "noun"
+        },
+        {
+          "fa": "واسه",
+          "translit": "vâse",
+          "en": "for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "دیدن",
+          "translit": "didan",
+          "en": "meeting up",
+          "pos": "noun"
+        },
+        {
+          "fa": "وقت داری",
+          "translit": "vaqt dâri",
+          "en": "do you have time",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "این آخر هفته وقت داری همدیگرو ببینیم؟",
+        "این آخر هفته واسه قرار وقت داری؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Can you give me a ride home?",
@@ -2530,7 +2948,50 @@
         "pronoun-clitic",
         "ezafe"
       ],
-      "id": "ce092b77-736c-4900-b3a4-b3153a159f26"
+      "id": "ce092b77-736c-4900-b3a4-b3153a159f26",
+      "breakdown": [
+        {
+          "fa": "روی",
+          "translit": "ruye",
+          "en": "on",
+          "pos": "preposition"
+        },
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "بهم",
+          "translit": "behem",
+          "en": "to me",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "تخفیف کوچیک",
+          "translit": "takhfife kuchik",
+          "en": "small discount",
+          "pos": "noun"
+        },
+        {
+          "fa": "میدی",
+          "translit": "midi",
+          "en": "will you give",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "می‌تونی روی این یه کم تخفیف بدی؟",
+        "واسه این بهم تخفیف می‌دی؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Could you lend me your charger for an hour?",
@@ -2544,7 +3005,44 @@
         "ra-marker",
         "compound-verb"
       ],
-      "id": "3a6aa88e-ddc3-4b08-82fc-92570ce45b1d"
+      "id": "3a6aa88e-ddc3-4b08-82fc-92570ce45b1d",
+      "breakdown": [
+        {
+          "fa": "شارژرت",
+          "translit": "shârjaret",
+          "en": "your charger",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "یک ساعت",
+          "translit": "yek sâ'at",
+          "en": "for an hour",
+          "pos": "noun"
+        },
+        {
+          "fa": "بهم",
+          "translit": "behem",
+          "en": "to me",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "قرض میدی",
+          "translit": "qarz midi",
+          "en": "will you lend",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "می‌تونی شارژرت رو یه ساعت بهم قرض بدی؟",
+        "شارژرت رو واسه یک ساعت به من قرض می‌دی؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I lost track of time because I was busy working.",
@@ -2558,7 +3056,62 @@
         "preposition",
         "ezafe"
       ],
-      "id": "10e9566c-d783-4df7-8805-3208d0219ac6"
+      "id": "10e9566c-d783-4df7-8805-3208d0219ac6",
+      "breakdown": [
+        {
+          "fa": "چون",
+          "translit": "chun",
+          "en": "because",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "مشغول کار",
+          "translit": "mashghule kâr",
+          "en": "busy working",
+          "pos": "adjective"
+        },
+        {
+          "fa": "بودم",
+          "translit": "budam",
+          "en": "I was",
+          "pos": "verb"
+        },
+        {
+          "fa": "اصلا",
+          "translit": "aslan",
+          "en": "at all",
+          "pos": "adverb"
+        },
+        {
+          "fa": "حواسم",
+          "translit": "havâsam",
+          "en": "my attention",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "زمان",
+          "translit": "zamân",
+          "en": "time",
+          "pos": "noun"
+        },
+        {
+          "fa": "نبود",
+          "translit": "nabud",
+          "en": "wasn't",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "انقدر مشغول کار بودم که گذر زمان رو نفهمیدم.",
+        "از بس سرگرم کار بودم متوجه زمان نشدم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I missed the bus, so I had to take a taxi.",
@@ -2656,7 +3209,56 @@
         "compound-verb",
         "pronoun-clitic"
       ],
-      "id": "6b9e4bdb-7843-4331-9d7c-e55e30ab2a6d"
+      "id": "6b9e4bdb-7843-4331-9d7c-e55e30ab2a6d",
+      "breakdown": [
+        {
+          "fa": "فک کنم",
+          "translit": "fek konam",
+          "en": "I think",
+          "pos": "verb"
+        },
+        {
+          "fa": "قبل از",
+          "translit": "ghabl az",
+          "en": "before",
+          "pos": "preposition"
+        },
+        {
+          "fa": "تصمیم‌گیری",
+          "translit": "tasmim-giri",
+          "en": "deciding",
+          "pos": "noun"
+        },
+        {
+          "fa": "باید",
+          "translit": "bâyad",
+          "en": "should",
+          "pos": "verb"
+        },
+        {
+          "fa": "مستقیما",
+          "translit": "mostaghiman",
+          "en": "directly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "با خودش",
+          "translit": "bâ khodesh",
+          "en": "with him directly",
+          "pos": "preposition"
+        },
+        {
+          "fa": "حرف بزنیم",
+          "translit": "harf bezanim",
+          "en": "we talk",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "به نظرم قبل اینکه تصمیم بگیریم باید مستقیما با خودش صحبت کنیم.",
+        "فک کنم قبل تصمیم گرفتن باید باهاش مستقیما حرف بزنیم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Although the price is high, the quality of this service is excellent.",
@@ -2670,7 +3272,61 @@
         "ezafe",
         "colloquial"
       ],
-      "id": "31791ab9-1b8d-4f44-87d8-fe256e7ecf8a"
+      "id": "31791ab9-1b8d-4f44-87d8-fe256e7ecf8a",
+      "breakdown": [
+        {
+          "fa": "با اینکه",
+          "translit": "bâ inke",
+          "en": "although",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "قیمتش",
+          "translit": "gheymatesh",
+          "en": "its price",
+          "pos": "noun"
+        },
+        {
+          "fa": "بالاست",
+          "translit": "bâlâst",
+          "en": "is high",
+          "pos": "adjective"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "کیفیت",
+          "translit": "keyfiyate",
+          "en": "quality",
+          "pos": "noun"
+        },
+        {
+          "fa": "این خدمات",
+          "translit": "ine khadamât",
+          "en": "this service",
+          "pos": "noun"
+        },
+        {
+          "fa": "واقعا",
+          "translit": "vâghe'an",
+          "en": "really",
+          "pos": "adverb"
+        },
+        {
+          "fa": "عالیه",
+          "translit": "âliye",
+          "en": "is excellent",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [
+        "گرچه قیمتش بالاست، اما کیفیت این سرویس فوق‌العاده‌ست."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "If you are free on Friday, let's go to the mountains together.",
@@ -2755,7 +3411,61 @@
         "pronoun-clitic",
         "preposition"
       ],
-      "id": "914c24ca-cdcd-4035-ac2a-7bcbb2df17b2"
+      "id": "914c24ca-cdcd-4035-ac2a-7bcbb2df17b2",
+      "breakdown": [
+        {
+          "fa": "هر وقت",
+          "translit": "har vaght",
+          "en": "whenever",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "کلاست",
+          "translit": "kelâsat",
+          "en": "your class",
+          "pos": "noun"
+        },
+        {
+          "fa": "تموم شد",
+          "translit": "tamum shod",
+          "en": "finishes",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "بهم",
+          "translit": "behem",
+          "en": "to me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "پیام بده",
+          "translit": "payâm bede",
+          "en": "text",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "تا",
+          "translit": "tâ",
+          "en": "so that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "بیام",
+          "translit": "biyâm",
+          "en": "I come",
+          "pos": "verb"
+        },
+        {
+          "fa": "دنبالت",
+          "translit": "donbâlat",
+          "en": "get you",
+          "pos": "preposition"
+        }
+      ],
+      "alternatives": [
+        "هر موقع کلاست تموم شد اس‌ام‌اس بده تا بیام بردارمت."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Could you watch my bags for five minutes while I go to the bathroom?",
@@ -2769,7 +3479,73 @@
         "plural",
         "pronoun-clitic"
       ],
-      "id": "b49d7ff7-bdd7-45a4-bdcf-9469ae07a418"
+      "id": "b49d7ff7-bdd7-45a4-bdcf-9469ae07a418",
+      "breakdown": [
+        {
+          "fa": "میشه",
+          "translit": "mishe",
+          "en": "could you",
+          "pos": "verb"
+        },
+        {
+          "fa": "تا",
+          "translit": "tâ",
+          "en": "while",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "من",
+          "translit": "man",
+          "en": "I",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "می‌رم",
+          "translit": "miram",
+          "en": "go",
+          "pos": "verb"
+        },
+        {
+          "fa": "دستشویی",
+          "translit": "dastshuyi",
+          "en": "to the bathroom",
+          "pos": "noun"
+        },
+        {
+          "fa": "پنج",
+          "translit": "panj",
+          "en": "five",
+          "pos": "number"
+        },
+        {
+          "fa": "دقیقه",
+          "translit": "daghighe",
+          "en": "minutes",
+          "pos": "noun"
+        },
+        {
+          "fa": "مواظب",
+          "translit": "movâzeb",
+          "en": "watchful",
+          "pos": "adjective"
+        },
+        {
+          "fa": "کیفام",
+          "translit": "kifâm",
+          "en": "my bags",
+          "pos": "noun"
+        },
+        {
+          "fa": "باشی",
+          "translit": "bâshi",
+          "en": "be",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "میتونی پنج دقیقه حواست به کیفام باشه تا من برم دستشویی؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I am really sorry I'm late; my phone battery died and I couldn't check the address.",
@@ -2784,7 +3560,73 @@
         "verb-tense",
         "subjunctive"
       ],
-      "id": "91e181a5-cd8c-40b3-b3af-7f1c37a1576e"
+      "id": "91e181a5-cd8c-40b3-b3af-7f1c37a1576e",
+      "breakdown": [
+        {
+          "fa": "واقعا",
+          "translit": "vâghe'an",
+          "en": "really",
+          "pos": "adverb"
+        },
+        {
+          "fa": "شرمنده‌ام",
+          "translit": "sharmande-am",
+          "en": "I am sorry",
+          "pos": "adjective"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "دیر شد",
+          "translit": "dir shod",
+          "en": "I'm late",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "شارژ گوشیم",
+          "translit": "shârje gushim",
+          "en": "my phone battery",
+          "pos": "noun"
+        },
+        {
+          "fa": "تموم شد",
+          "translit": "tamum shod",
+          "en": "died",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "و",
+          "translit": "va",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "نتونستم",
+          "translit": "natonestam",
+          "en": "I couldn't",
+          "pos": "verb"
+        },
+        {
+          "fa": "آدرس رو",
+          "translit": "âdres ro",
+          "en": "the address",
+          "pos": "noun"
+        },
+        {
+          "fa": "چک کنم",
+          "translit": "chek konam",
+          "en": "check",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "خیلی ببخشید دیر کردم؛ گوشیم خاموش شد نتونستم آدرس رو نگاه کنم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "If you lower the price a little bit, I will buy both of these suits right now.",
@@ -2918,7 +3760,61 @@
         "pronoun-clitic",
         "ezafe"
       ],
-      "id": "863ce85e-f798-4bc8-81f4-871744bf989a"
+      "id": "863ce85e-f798-4bc8-81f4-871744bf989a",
+      "breakdown": [
+        {
+          "fa": "به نظر من",
+          "translit": "be nazare man",
+          "en": "in my opinion",
+          "pos": "expression"
+        },
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "امروز",
+          "translit": "emruz",
+          "en": "today",
+          "pos": "adverb"
+        },
+        {
+          "fa": "پروژه رو",
+          "translit": "poroje ro",
+          "en": "the project",
+          "pos": "noun"
+        },
+        {
+          "fa": "شروع نکنیم",
+          "translit": "shorou nakonim",
+          "en": "we don't start",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "تا",
+          "translit": "tâ",
+          "en": "by",
+          "pos": "preposition"
+        },
+        {
+          "fa": "هفته آینده",
+          "translit": "hafte-ye âyande",
+          "en": "next week",
+          "pos": "noun"
+        },
+        {
+          "fa": "تمومش نمی‌کنیم",
+          "translit": "tamumesh nemikonim",
+          "en": "we won't finish it",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "فک کنم اگه امروز کار روی پروژه رو شروع نکنیم، تا هفته دیگه تموم نمی‌شه."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I know you are very busy, but if it is not too much trouble, could you take a look at my CV?",
@@ -2933,7 +3829,92 @@
         "subjunctive",
         "ezafe"
       ],
-      "id": "5e51e743-a0a6-4faa-b759-1bf04e1801da"
+      "id": "5e51e743-a0a6-4faa-b759-1bf04e1801da",
+      "breakdown": [
+        {
+          "fa": "می‌دونم",
+          "translit": "midunam",
+          "en": "I know",
+          "pos": "verb"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "سرتون",
+          "translit": "seretun",
+          "en": "your head / you",
+          "pos": "noun"
+        },
+        {
+          "fa": "شلوغه",
+          "translit": "sholuqe",
+          "en": "are busy",
+          "pos": "adjective"
+        },
+        {
+          "fa": "اما",
+          "translit": "ammâ",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "زحمتی",
+          "translit": "zahmati",
+          "en": "trouble",
+          "pos": "noun"
+        },
+        {
+          "fa": "نیست",
+          "translit": "nist",
+          "en": "it isn't",
+          "pos": "verb"
+        },
+        {
+          "fa": "میشه",
+          "translit": "mishe",
+          "en": "could you",
+          "pos": "verb"
+        },
+        {
+          "fa": "یه نگاهی",
+          "translit": "ye negâhi",
+          "en": "a look",
+          "pos": "noun"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "at",
+          "pos": "preposition"
+        },
+        {
+          "fa": "رزومه من",
+          "translit": "rezome-ye man",
+          "en": "my CV",
+          "pos": "noun"
+        },
+        {
+          "fa": "بندازین",
+          "translit": "bendâzin",
+          "en": "take / cast",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "می‌دونم سرتون خیلی شلوغه، ولی اگه زحمتی نیست، میشه یه نگاه به رزومه‌ام بندازین؟",
+        "می‌دونم خیلی گرفتاری دارین، اما اگه امکانش هست یه نگاهی به رزومه من بندازین."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Today the weather is super hot.",
@@ -6721,7 +7702,73 @@
         "ra-marker",
         "colloquial"
       ],
-      "id": "987c3237-7f72-42ec-b41c-ca33247ca5c1"
+      "id": "987c3237-7f72-42ec-b41c-ca33247ca5c1",
+      "breakdown": [
+        {
+          "fa": "چون",
+          "translit": "chun",
+          "en": "since",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "خیلی وقته",
+          "translit": "kheyli vaqte",
+          "en": "it's been a long time",
+          "pos": "expression"
+        },
+        {
+          "fa": "همدیگه‌رو",
+          "translit": "hamdiga-ro",
+          "en": "each other",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "ندیدیم",
+          "translit": "nadidim",
+          "en": "we haven't seen",
+          "pos": "verb"
+        },
+        {
+          "fa": "هر وقت",
+          "translit": "har vaqt",
+          "en": "whenever",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "سرت",
+          "translit": "seret",
+          "en": "your head / you",
+          "pos": "noun"
+        },
+        {
+          "fa": "خلوت شد",
+          "translit": "khalvat shod",
+          "en": "get free",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "بگو",
+          "translit": "begu",
+          "en": "let me know",
+          "pos": "verb"
+        },
+        {
+          "fa": "با هم",
+          "translit": "bâ ham",
+          "en": "together",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ناهار بخوریم",
+          "translit": "nâhâr bokhorim",
+          "en": "we grab lunch",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "چون خیلی وقته همدیگه‌رو ندیدیم، هر وقت وقت داشتی بهم بگو تا با هم ناهار بخوریم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "You're always so kind, but I really can't let you pay for everyone again.",
@@ -7459,7 +8506,61 @@
         "colloquial",
         "preposition"
       ],
-      "id": "6ea0c52a-5bea-4994-b15e-4eec28941a50"
+      "id": "6ea0c52a-5bea-4994-b15e-4eec28941a50",
+      "breakdown": [
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "since",
+          "pos": "preposition"
+        },
+        {
+          "fa": "دیروز",
+          "translit": "diruz",
+          "en": "yesterday",
+          "pos": "noun"
+        },
+        {
+          "fa": "تا حالا",
+          "translit": "tâ hâlâ",
+          "en": "until now",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دلم",
+          "translit": "delam",
+          "en": "my stomach",
+          "pos": "noun"
+        },
+        {
+          "fa": "درد می‌کنه",
+          "translit": "dard mikone",
+          "en": "hurts",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "و",
+          "translit": "o",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "حالت تهوع",
+          "translit": "hâlat-e tahao'",
+          "en": "nausea",
+          "pos": "noun"
+        },
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I have / I feel",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "از دیروز تا الان دل‌درد دارم و حالم به هم می‌خوره."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Your home is very beautiful, hopefully you will always live in it with a happy heart.",
@@ -8035,7 +9136,73 @@
         "ezafe",
         "compound-verb"
       ],
-      "id": "7c452b80-eb25-40e0-8601-9c4ccd60b864"
+      "id": "7c452b80-eb25-40e0-8601-9c4ccd60b864",
+      "breakdown": [
+        {
+          "fa": "نمی‌تونم",
+          "translit": "nemitunam",
+          "en": "I can't",
+          "pos": "verb"
+        },
+        {
+          "fa": "درست",
+          "translit": "dorost",
+          "en": "properly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "نفس بکشم",
+          "translit": "nafas bekasham",
+          "en": "breathe",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "می‌شه",
+          "translit": "mishe",
+          "en": "is it possible",
+          "pos": "verb"
+        },
+        {
+          "fa": "واسم",
+          "translit": "vâsam",
+          "en": "for me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "معرفی‌نامه",
+          "translit": "mo'arefi-nâme",
+          "en": "referral letter",
+          "pos": "noun"
+        },
+        {
+          "fa": "برای",
+          "translit": "barâye",
+          "en": "for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "دکتر متخصص",
+          "translit": "doktar-e motakhases",
+          "en": "specialist doctor",
+          "pos": "noun"
+        },
+        {
+          "fa": "بنویسین",
+          "translit": "benevisin",
+          "en": "to write",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "درست نمی‌تونم نفس بکشم، امکانش هست یه معرفی‌نامه واسه دکتر متخصص بم بدین؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Although your opinion is completely correct, in my view we don't have enough budget to start this project right now.",
@@ -8173,7 +9340,91 @@
         "ezafe",
         "subjunctive"
       ],
-      "id": "47273e2c-5323-4d2a-9740-bdb1d1d490ce"
+      "id": "47273e2c-5323-4d2a-9740-bdb1d1d490ce",
+      "breakdown": [
+        {
+          "fa": "واقعا",
+          "translit": "vâqe'an",
+          "en": "really",
+          "pos": "adverb"
+        },
+        {
+          "fa": "نمی‌خوام",
+          "translit": "nemixâm",
+          "en": "I don't want",
+          "pos": "verb"
+        },
+        {
+          "fa": "مزاحمتون بشم",
+          "translit": "mozâhemetun besham",
+          "en": "to trouble you",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "اما",
+          "translit": "ammâ",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "دارین",
+          "translit": "dârin",
+          "en": "you are",
+          "pos": "verb"
+        },
+        {
+          "fa": "از جلو",
+          "translit": "az jolo-ye",
+          "en": "passing by front",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خشک‌شویی",
+          "translit": "khoshk-shuyi",
+          "en": "dry cleaner",
+          "pos": "noun"
+        },
+        {
+          "fa": "رد می‌شین",
+          "translit": "rad mishin",
+          "en": "passing",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "می‌شه",
+          "translit": "mishe",
+          "en": "could you",
+          "pos": "verb"
+        },
+        {
+          "fa": "لطفا",
+          "translit": "lotfan",
+          "en": "please",
+          "pos": "adverb"
+        },
+        {
+          "fa": "کت‌شلوار منم",
+          "translit": "kot-shalvâr-e man-am",
+          "en": "my suit as well",
+          "pos": "noun"
+        },
+        {
+          "fa": "بگیرین",
+          "translit": "begirin",
+          "en": "pick up",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اصلاً نمی‌خوام زحمت بدم، ولی اگه از جلو خشک‌شویی رد می‌شین، میشه کت‌شلوار منم تحویل بگیرین؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I want a hot tea.",
@@ -8629,7 +9880,32 @@
         "ezafe",
         "compound-verb"
       ],
-      "id": "434028ab-2e23-4c50-b8d9-88554059e8f9"
+      "id": "434028ab-2e23-4c50-b8d9-88554059e8f9",
+      "breakdown": [
+        {
+          "fa": "هفته‌ی دیگه",
+          "translit": "hafte-ye dige",
+          "en": "next week",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌ری",
+          "translit": "miri",
+          "en": "are you going",
+          "pos": "verb"
+        },
+        {
+          "fa": "سفر",
+          "translit": "safar",
+          "en": "on a trip / travel",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [
+        "هفته دیگه داری می‌ری مسافرت؟",
+        "هفته آینده میری مسافرت؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "That's not completely correct.",
@@ -9025,7 +10301,68 @@
         "preposition",
         "compound-verb"
       ],
-      "id": "9988d5a1-2196-4268-95ed-04ecc51794d8"
+      "id": "9988d5a1-2196-4268-95ed-04ecc51794d8",
+      "breakdown": [
+        {
+          "fa": "می‌فهمم",
+          "translit": "mifahmam",
+          "en": "I understand",
+          "pos": "verb"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "می‌گی",
+          "translit": "migi",
+          "en": "you're saying",
+          "pos": "verb"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "شرایط ما",
+          "translit": "sharâyete mâ",
+          "en": "our conditions",
+          "pos": "noun"
+        },
+        {
+          "fa": "با",
+          "translit": "bâ",
+          "en": "with / from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "سال پیش",
+          "translit": "sâle pish",
+          "en": "last year",
+          "pos": "noun"
+        },
+        {
+          "fa": "کاملا",
+          "translit": "kâmelan",
+          "en": "totally",
+          "pos": "adverb"
+        },
+        {
+          "fa": "فرق داره",
+          "translit": "fargh dâre",
+          "en": "is different",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "می‌فهمم چی می‌گی، اما شرایطمون با پارسال کاملاً فرق می‌کنه.",
+        "درک می‌کنم چی می‌گی، ولی شرایط ما با سال گذشته کاملاً متفاوته."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I promised my brother to help him move next Friday, so I can't come.",
@@ -9041,7 +10378,79 @@
         "subjunctive",
         "compound-verb"
       ],
-      "id": "aba5dad1-536c-4443-aef5-82af66052a82"
+      "id": "aba5dad1-536c-4443-aef5-82af66052a82",
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "برادرم",
+          "translit": "barâdaram",
+          "en": "my brother",
+          "pos": "noun"
+        },
+        {
+          "fa": "قول دادم",
+          "translit": "ghol dâdam",
+          "en": "I promised",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "جمعه‌ی دیگه",
+          "translit": "jom'eye dige",
+          "en": "next Friday",
+          "pos": "noun"
+        },
+        {
+          "fa": "واسه",
+          "translit": "vâse",
+          "en": "for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "اسباب‌کشی",
+          "translit": "asbâb-keshi",
+          "en": "moving",
+          "pos": "noun"
+        },
+        {
+          "fa": "بهش",
+          "translit": "behesh",
+          "en": "to him",
+          "pos": "preposition"
+        },
+        {
+          "fa": "کمک کنم",
+          "translit": "komak konam",
+          "en": "I help",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "واسه همین",
+          "translit": "vâse hamin",
+          "en": "so / therefore",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "نمی‌تونم",
+          "translit": "nemitoonam",
+          "en": "I can't",
+          "pos": "verb"
+        },
+        {
+          "fa": "بیام",
+          "translit": "biyâm",
+          "en": "come",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "به داداشم قول دادم جمعه دیگه واسه اسباب‌کشی کمکش کنم، واسه همین نمی‌تونم بیام."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "You are our elder and your words are highly respected, but please allow me to explain my perspective on this matter.",
@@ -10829,7 +12238,44 @@
         "colloquial",
         "subjunctive"
       ],
-      "id": "6efa7aef-b64e-4e8d-9d46-5c608a5857ce"
+      "id": "6efa7aef-b64e-4e8d-9d46-5c608a5857ce",
+      "breakdown": [
+        {
+          "fa": "به نظر من",
+          "translit": "be nazare man",
+          "en": "in my opinion",
+          "pos": "expression"
+        },
+        {
+          "fa": "بهتره",
+          "translit": "behtare",
+          "en": "it's better",
+          "pos": "adjective"
+        },
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "خونه رو",
+          "translit": "khoone ro",
+          "en": "house (object)",
+          "pos": "noun"
+        },
+        {
+          "fa": "نخریم",
+          "translit": "nakharim",
+          "en": "we don't buy",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "به نظرم بهتره این خونه رو نخریم.",
+        "فکر کنم بهتره این خونه رو نخریم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Could you please sign these papers by tomorrow?",
@@ -11634,7 +13080,26 @@
         "colloquial",
         "pronoun-clitic"
       ],
-      "id": "cd143dd9-0e8e-4d6a-84bd-ea288e3d1f29"
+      "id": "cd143dd9-0e8e-4d6a-84bd-ea288e3d1f29",
+      "breakdown": [
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "خسته‌ام",
+          "translit": "khaste-am",
+          "en": "I am tired",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [
+        "خیلی خسته شدم.",
+        "حسابی خسته‌ام."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "My head hurts.",
@@ -11719,7 +13184,32 @@
         "ezafe",
         "verb-tense"
       ],
-      "id": "dddf7e81-2a11-4d1c-92c1-523be1a9c58c"
+      "id": "dddf7e81-2a11-4d1c-92c1-523be1a9c58c",
+      "breakdown": [
+        {
+          "fa": "هفته دیگه",
+          "translit": "hafte dige",
+          "en": "next week",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌ریم",
+          "translit": "mirim",
+          "en": "we are going",
+          "pos": "verb"
+        },
+        {
+          "fa": "شیراز",
+          "translit": "shirâz",
+          "en": "Shiraz",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [
+        "ما هفته دیگه داریم می‌ریم شیراز.",
+        "هفته آینده می‌ریم شیراز."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Are you buying a new car tomorrow?",
@@ -11733,7 +13223,32 @@
         "ezafe",
         "verb-tense"
       ],
-      "id": "0ff076c1-575b-4c4a-8274-a41377ea2eea"
+      "id": "0ff076c1-575b-4c4a-8274-a41377ea2eea",
+      "breakdown": [
+        {
+          "fa": "فردا",
+          "translit": "fardâ",
+          "en": "tomorrow",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ماشین جدید",
+          "translit": "mâshine jadid",
+          "en": "new car",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌خری؟",
+          "translit": "mikhari?",
+          "en": "are you buying?",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "فردا داری ماشین جدید می‌خری؟",
+        "فردا ماشین نو می‌خری؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I will call you after dinner.",
@@ -11796,7 +13311,67 @@
         "preposition",
         "ezafe"
       ],
-      "id": "4457c1e7-258a-4d80-8c23-9fb35441e43e"
+      "id": "4457c1e7-258a-4d80-8c23-9fb35441e43e",
+      "breakdown": [
+        {
+          "fa": "مستقیم",
+          "translit": "mostaghim",
+          "en": "straight",
+          "pos": "adverb"
+        },
+        {
+          "fa": "برو",
+          "translit": "boro",
+          "en": "go",
+          "pos": "verb"
+        },
+        {
+          "fa": "تا",
+          "translit": "tâ",
+          "en": "until",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "برسی",
+          "translit": "beresi",
+          "en": "you reach",
+          "pos": "verb"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "چراغ قرمز",
+          "translit": "cherâgh-e ghermez",
+          "en": "the red light",
+          "pos": "noun"
+        },
+        {
+          "fa": "بعد",
+          "translit": "ba'd",
+          "en": "then",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بپیچ",
+          "translit": "bepich",
+          "en": "turn",
+          "pos": "verb"
+        },
+        {
+          "fa": "راست",
+          "translit": "râst",
+          "en": "right",
+          "pos": "adverb"
+        }
+      ],
+      "alternatives": [
+        "مستقیم برو تا چراغ قرمز، بعد بپیچ به راست."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "If you pass the square, you will see the pharmacy on your left.",
@@ -11812,7 +13387,61 @@
         "subjunctive",
         "ezafe"
       ],
-      "id": "c6cf5be5-49a1-4786-8b43-e37c3bb0205e"
+      "id": "c6cf5be5-49a1-4786-8b43-e37c3bb0205e",
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "past / from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "میدون",
+          "translit": "meydun",
+          "en": "the square",
+          "pos": "noun"
+        },
+        {
+          "fa": "رد بشی",
+          "translit": "rad beshi",
+          "en": "you pass",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "داروخونه",
+          "translit": "dârukhune",
+          "en": "the pharmacy",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "سمت چپت",
+          "translit": "samt-e chapet",
+          "en": "on your left",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌بینی",
+          "translit": "mibini",
+          "en": "you will see",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اگه میدون رو رد کنی، داروخونه دست چپته."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Thank you so much for the dinner, you really went to a lot of trouble.",
@@ -11942,7 +13571,50 @@
         "compound-verb",
         "subjunctive"
       ],
-      "id": "5ae3e943-de75-4d0d-90a9-919c133906df"
+      "id": "5ae3e943-de75-4d0d-90a9-919c133906df",
+      "breakdown": [
+        {
+          "fa": "کادو",
+          "translit": "kâdo",
+          "en": "a gift",
+          "pos": "noun"
+        },
+        {
+          "fa": "لازم نبود",
+          "translit": "lâzem nabud",
+          "en": "it wasn't necessary",
+          "pos": "verb"
+        },
+        {
+          "fa": "بخری",
+          "translit": "bekhari",
+          "en": "you buy",
+          "pos": "verb"
+        },
+        {
+          "fa": "توروخدا",
+          "translit": "toro khodâ",
+          "en": "please / for God's sake",
+          "pos": "expression"
+        },
+        {
+          "fa": "منو",
+          "translit": "mano",
+          "en": "me",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "خجالت نده",
+          "translit": "khejâlat nade",
+          "en": "don't embarrass",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "چرا کادو خریدی؟ راضی به زحمتت نبودم، خجالتم نده.",
+        "اصلاً لازم نبود کادو بگیری، شرمنده‌ام نکن."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "We are planning to go to the north next month if the weather gets better.",
@@ -11957,7 +13629,55 @@
         "subjunctive",
         "ezafe"
       ],
-      "id": "71390181-bf73-41dd-97a4-88c01c2d139e"
+      "id": "71390181-bf73-41dd-97a4-88c01c2d139e",
+      "breakdown": [
+        {
+          "fa": "تصمیم داریم",
+          "translit": "tasmim dârim",
+          "en": "we plan / intend",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "ماه آینده",
+          "translit": "mâh-e âyande",
+          "en": "next month",
+          "pos": "noun"
+        },
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "هوا",
+          "translit": "havâ",
+          "en": "the weather",
+          "pos": "noun"
+        },
+        {
+          "fa": "بهتر بشه",
+          "translit": "behtar beshe",
+          "en": "gets better",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "بریم",
+          "translit": "berim",
+          "en": "to go",
+          "pos": "verb"
+        },
+        {
+          "fa": "شمال",
+          "translit": "shomâl",
+          "en": "north",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [
+        "اگه هوا خوب بشه، ماه دیگه می‌خوایم بریم شمال."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Turn around at the next intersection and then ask the shopkeeper across the street for the address.",
@@ -11973,7 +13693,67 @@
         "ezafe",
         "preposition"
       ],
-      "id": "7934b7c6-6974-456f-9612-6759dbb38d69"
+      "id": "7934b7c6-6974-456f-9612-6759dbb38d69",
+      "breakdown": [
+        {
+          "fa": "چهارراه بعدی",
+          "translit": "châhâr-râh-e ba'di",
+          "en": "the next intersection",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "دور بزن",
+          "translit": "dor bezan",
+          "en": "turn around / make a U-turn",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "و",
+          "translit": "o",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "بعد",
+          "translit": "ba'd",
+          "en": "then",
+          "pos": "adverb"
+        },
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "مغازه‌دار",
+          "translit": "maghâze-dâr",
+          "en": "the shopkeeper",
+          "pos": "noun"
+        },
+        {
+          "fa": "اون‌ور خیابون",
+          "translit": "un-var-e khiyâbun",
+          "en": "across the street",
+          "pos": "noun"
+        },
+        {
+          "fa": "آدرس بپرس",
+          "translit": "âdres bepors",
+          "en": "ask for the address",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "از چهارراه بعدی دور بزن، بعد از مغازه‌دار اون‌طرف خیابون آدرس رو بپرس."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I feel like crying because I lost the necklace that my mother bought for my birthday.",
@@ -12187,7 +13967,85 @@
         "pronoun-clitic",
         "ezafe"
       ],
-      "id": "de882469-df34-4d79-a4d3-fe29b9ca4b2b"
+      "id": "de882469-df34-4d79-a4d3-fe29b9ca4b2b",
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "داری",
+          "translit": "dâri",
+          "en": "you are [auxiliary]",
+          "pos": "verb"
+        },
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "[from]",
+          "pos": "preposition"
+        },
+        {
+          "fa": "جی‌پی‌اس",
+          "translit": "jipies",
+          "en": "GPS",
+          "pos": "noun"
+        },
+        {
+          "fa": "استفاده می‌کنی",
+          "translit": "estefâde mikoni",
+          "en": "using",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "اسم پارک",
+          "translit": "esm-e pârk",
+          "en": "the name of the park",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "بزن",
+          "translit": "bezan",
+          "en": "enter / hit",
+          "pos": "verb"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "so that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "از تو",
+          "translit": "az tu",
+          "en": "through / from inside",
+          "pos": "preposition"
+        },
+        {
+          "fa": "ترافیک سنگین",
+          "translit": "terâfik-e sangin",
+          "en": "heavy traffic",
+          "pos": "noun"
+        },
+        {
+          "fa": "نبردت",
+          "translit": "nabaradet",
+          "en": "it doesn't take you",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اگه با جی‌پی‌اس می‌ری، اسم پارک رو سرچ کن تا از تو ترافیک سنگین نبردت."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "When I heard that they accepted my article, I was so excited that I couldn't sleep all night.",
@@ -12204,7 +14062,86 @@
         "verb-tense",
         "ezafe"
       ],
-      "id": "e98f570e-87c3-4c76-a490-628b97d09fea"
+      "id": "e98f570e-87c3-4c76-a490-628b97d09fea",
+      "breakdown": [
+        {
+          "fa": "وقتی",
+          "translit": "vaqti",
+          "en": "when",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "شنیدم",
+          "translit": "šenidam",
+          "en": "I heard",
+          "pos": "verb"
+        },
+        {
+          "fa": "مقاله‌ام",
+          "translit": "maqâle-am",
+          "en": "my article",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "قبول کردن",
+          "translit": "qabul kardan",
+          "en": "they accepted",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "اون‌قدر",
+          "translit": "un-qadr",
+          "en": "so much",
+          "pos": "adverb"
+        },
+        {
+          "fa": "هیجان‌زده",
+          "translit": "hayajân-zade",
+          "en": "excited",
+          "pos": "adjective"
+        },
+        {
+          "fa": "بودم",
+          "translit": "budam",
+          "en": "I was",
+          "pos": "verb"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "کل شب",
+          "translit": "koll-e šab",
+          "en": "all night",
+          "pos": "noun"
+        },
+        {
+          "fa": "نتونستم",
+          "translit": "natunestam",
+          "en": "I couldn't",
+          "pos": "verb"
+        },
+        {
+          "fa": "بخوابم",
+          "translit": "bekhâbam",
+          "en": "sleep",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "وقتی شنیدم مقاله‌ام پذیرفته شده، اون‌قدر ذوق‌زده بودم که تمام شب خوابم نبرد.",
+        "از وقتی شنیدم مقاله‌ام رو قبول کردن، از شدت هیجان کل شب نتونستم بخوابم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "We are going to pack our bags tonight because the flight is tomorrow morning at six o'clock.",
@@ -12220,7 +14157,74 @@
         "plural",
         "ezafe"
       ],
-      "id": "38334c58-c047-4a7f-90c8-01f3e9f807d7"
+      "id": "38334c58-c047-4a7f-90c8-01f3e9f807d7",
+      "breakdown": [
+        {
+          "fa": "ما",
+          "translit": "mâ",
+          "en": "we",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "امشب",
+          "translit": "emšab",
+          "en": "tonight",
+          "pos": "adverb"
+        },
+        {
+          "fa": "چمدونامون",
+          "translit": "čamedunâ-mun",
+          "en": "our bags",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "می‌بندیم",
+          "translit": "mi-bandim",
+          "en": "we pack",
+          "pos": "verb"
+        },
+        {
+          "fa": "چون",
+          "translit": "čun",
+          "en": "because",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "پرواز",
+          "translit": "parvâz",
+          "en": "the flight",
+          "pos": "noun"
+        },
+        {
+          "fa": "فردا صبح",
+          "translit": "fardâ sobh",
+          "en": "tomorrow morning",
+          "pos": "noun"
+        },
+        {
+          "fa": "ساعت",
+          "translit": "sâ'at-e",
+          "en": "at",
+          "pos": "noun"
+        },
+        {
+          "fa": "شیشه",
+          "translit": "šiš-e",
+          "en": "is six",
+          "pos": "number"
+        }
+      ],
+      "alternatives": [
+        "چون پرواز فردا صبح ساعت شیشه، ما امشب چمدونامون رو می‌بندیم.",
+        "ما باید امشب چمدونامون رو ببندیم چون پرواز فردا صبح ساعت شیشه."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Your house is absolutely beautiful, may it always be filled with joy; truly your taste is exemplary.",
@@ -12329,7 +14333,91 @@
         "compound-verb",
         "naturalness"
       ],
-      "id": "b8c45c98-34f0-44d2-99c1-ba1192c60e7a"
+      "id": "b8c45c98-34f0-44d2-99c1-ba1192c60e7a",
+      "breakdown": [
+        {
+          "fa": "اصلا",
+          "translit": "aslan",
+          "en": "really / at all",
+          "pos": "adverb"
+        },
+        {
+          "fa": "نمی‌خواستم",
+          "translit": "ne-mixâstam",
+          "en": "I didn't want",
+          "pos": "verb"
+        },
+        {
+          "fa": "مزاحمتون بشم",
+          "translit": "mozâhem-etun bešam",
+          "en": "to bother you",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "اون‌قدر",
+          "translit": "un-qadr",
+          "en": "so much",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دستم تنگ بود",
+          "translit": "dastam tang bud",
+          "en": "I was desperate / broke",
+          "pos": "expression"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "چاره‌ای",
+          "translit": "čâre-i",
+          "en": "any choice",
+          "pos": "noun"
+        },
+        {
+          "fa": "جز این",
+          "translit": "joz in",
+          "en": "except this",
+          "pos": "preposition"
+        },
+        {
+          "fa": "نداشتم",
+          "translit": "nadâštam",
+          "en": "I didn't have",
+          "pos": "verb"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "but to",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "بیام",
+          "translit": "biyâm",
+          "en": "I come",
+          "pos": "verb"
+        },
+        {
+          "fa": "سراغتون",
+          "translit": "sorâğ-etun",
+          "en": "to you",
+          "pos": "preposition"
+        }
+      ],
+      "alternatives": [
+        "واقعاً نمی‌خواستم مزاحمتون بشم، ولی اون‌قدر مجبور بودم که چاره‌ای جز این نداشتم که بیام پیشتون."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "We are going to the cinema tonight.",
@@ -12428,7 +14516,26 @@
         "ezafe",
         "pronoun-clitic"
       ],
-      "id": "9d1617f5-29f3-4fe9-9a4f-cd5af7fb5328"
+      "id": "9d1617f5-29f3-4fe9-9a4f-cd5af7fb5328",
+      "breakdown": [
+        {
+          "fa": "دانشگاه جدیدت",
+          "translit": "dânešgâh-e jadidet",
+          "en": "your new university",
+          "pos": "noun"
+        },
+        {
+          "fa": "چطوره؟",
+          "translit": "četore?",
+          "en": "how is it?",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [
+        "دانشگاه جدیدت چطوریه؟",
+        "اوضاع دانشگاه جدیدت چطوره؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I didn't pass my math exam yesterday.",
@@ -12444,7 +14551,38 @@
         "pronoun-clitic",
         "compound-verb"
       ],
-      "id": "0f22c9f6-e44a-451e-a316-3c89d32715e4"
+      "id": "0f22c9f6-e44a-451e-a316-3c89d32715e4",
+      "breakdown": [
+        {
+          "fa": "دیروز",
+          "translit": "diruz",
+          "en": "yesterday",
+          "pos": "adverb"
+        },
+        {
+          "fa": "امتحان ریاضی‌ام",
+          "translit": "emtehân-e riyâzi-am",
+          "en": "my math exam",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "پاس نکردم",
+          "translit": "pâs nakardam",
+          "en": "I didn't pass",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "دیروز تو امتحان ریاضی رد شدم.",
+        "دیروز امتحان ریاضی رو افتادم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Let's drink a cup of coffee together tomorrow.",
@@ -12567,7 +14705,44 @@
         "pronoun-clitic",
         "preposition"
       ],
-      "id": "c53e9606-b4d2-4cb9-bbf3-6bd6b1ace810"
+      "id": "c53e9606-b4d2-4cb9-bbf3-6bd6b1ace810",
+      "breakdown": [
+        {
+          "fa": "واسه",
+          "translit": "vâse",
+          "en": "for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خواهرت",
+          "translit": "xâhar-et",
+          "en": "your sister",
+          "pos": "noun"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "کادوی کوچیک",
+          "translit": "kâdo-ye kučik",
+          "en": "small gift",
+          "pos": "noun"
+        },
+        {
+          "fa": "خریدم",
+          "translit": "xaridam",
+          "en": "I bought",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "برای خواهرت یه هدیه کوچیک خریدم.",
+        "یه کادوی کوچیک واسه خواهرت خریدم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "My brother changed his job last week.",
@@ -12582,7 +14757,43 @@
         "pronoun-clitic",
         "compound-verb"
       ],
-      "id": "fece6c5d-8a08-4a6c-8d76-cf8484b1c048"
+      "id": "fece6c5d-8a08-4a6c-8d76-cf8484b1c048",
+      "breakdown": [
+        {
+          "fa": "برادرم",
+          "translit": "barâdaram",
+          "en": "my brother",
+          "pos": "noun"
+        },
+        {
+          "fa": "هفته‌ی پیش",
+          "translit": "hafte-ye pish",
+          "en": "last week",
+          "pos": "adverb"
+        },
+        {
+          "fa": "شغلش",
+          "translit": "shoghlesh",
+          "en": "his job",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "عوض کرد",
+          "translit": "avaz kard",
+          "en": "changed",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "داداشم هفته‌ی پیش کارش رو عوض کرد."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Are you coming to the park with us on Friday?",
@@ -12950,7 +15161,62 @@
         "pronoun-clitic",
         "preposition"
       ],
-      "id": "e7092659-bc93-4844-b0e5-1a5fea1f1c44"
+      "id": "e7092659-bc93-4844-b0e5-1a5fea1f1c44",
+      "breakdown": [
+        {
+          "fa": "خیلی ممنون",
+          "translit": "kheyli mamnun",
+          "en": "thanks a lot",
+          "pos": "expression"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "for / that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "کتاب",
+          "translit": "ketâb",
+          "en": "the book",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "این‌قدر",
+          "translit": "in-ghadr",
+          "en": "so / this much",
+          "pos": "adverb"
+        },
+        {
+          "fa": "زود",
+          "translit": "zud",
+          "en": "quickly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "برام",
+          "translit": "barâm",
+          "en": "for me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "فرستادی",
+          "translit": "ferestâdi",
+          "en": "you sent",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "خیلی مرسی که کتاب رو این‌همه سریع برام فرستادی.",
+        "دمت گرم که کتاب رو این‌قدر زود واسم فرستادی."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "If my exam results are good, my father has promised to buy me a new laptop.",
@@ -12967,7 +15233,73 @@
         "preposition",
         "compound-verb"
       ],
-      "id": "a853c681-b4c1-4ff2-9438-03a923b795e5"
+      "id": "a853c681-b4c1-4ff2-9438-03a923b795e5",
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "نتیجه‌ی امتحانم",
+          "translit": "natije-ye emtehânam",
+          "en": "my exam result",
+          "pos": "noun"
+        },
+        {
+          "fa": "خوب بشه",
+          "translit": "khub beshe",
+          "en": "is good / becomes good",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "بابام",
+          "translit": "bâbâm",
+          "en": "my dad",
+          "pos": "noun"
+        },
+        {
+          "fa": "قول داده",
+          "translit": "ghol dâde",
+          "en": "has promised",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "واسم",
+          "translit": "vâsam",
+          "en": "for me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "لپ‌تاپ جدید",
+          "translit": "lap-tâp-e jadid",
+          "en": "new laptop",
+          "pos": "noun"
+        },
+        {
+          "fa": "بخره",
+          "translit": "bekhare",
+          "en": "to buy / buys",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اگه نمره‌های امتحانم خوب بشه، پدرم قول داده برام یه لپ‌تاپ نو بخره."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Since you helped me with my homework, I want to invite you to lunch tomorrow.",
@@ -13069,7 +15401,73 @@
         "verb-tense",
         "plural"
       ],
-      "id": "f5f79c54-0439-49b3-b6b7-918db77a0d7b"
+      "id": "f5f79c54-0439-49b3-b6b7-918db77a0d7b",
+      "breakdown": [
+        {
+          "fa": "دوستم",
+          "translit": "dustam",
+          "en": "my friend",
+          "pos": "noun"
+        },
+        {
+          "fa": "بهم",
+          "translit": "behem",
+          "en": "to me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "گفت",
+          "translit": "goft",
+          "en": "said / told",
+          "pos": "verb"
+        },
+        {
+          "fa": "اون",
+          "translit": "un",
+          "en": "that",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "رستورانی",
+          "translit": "resturâni",
+          "en": "restaurant (that)",
+          "pos": "noun"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "which / that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "می‌خواستیم",
+          "translit": "mikhâstim",
+          "en": "we wanted",
+          "pos": "verb"
+        },
+        {
+          "fa": "بریم",
+          "translit": "berim",
+          "en": "to go",
+          "pos": "verb"
+        },
+        {
+          "fa": "دوشنبه‌ها",
+          "translit": "doshanbe-hâ",
+          "en": "Mondays",
+          "pos": "noun"
+        },
+        {
+          "fa": "بسته‌ست",
+          "translit": "baste-st",
+          "en": "is closed",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "رفیقم بهم گفت اون رستورانی که می‌خواستیم بریم دوشنبه‌ها تعطیله."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I think if we discuss this project with the boss tomorrow, we might find a better solution.",
@@ -13085,7 +15483,85 @@
         "compound-verb",
         "subjunctive"
       ],
-      "id": "d2f8b58c-86bb-4434-ac30-c41494e8739d"
+      "id": "d2f8b58c-86bb-4434-ac30-c41494e8739d",
+      "breakdown": [
+        {
+          "fa": "فکر کنم",
+          "translit": "fekr konam",
+          "en": "I think",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "فردا",
+          "translit": "fardâ",
+          "en": "tomorrow",
+          "pos": "adverb"
+        },
+        {
+          "fa": "در مورد",
+          "translit": "dar mored-e",
+          "en": "about",
+          "pos": "preposition"
+        },
+        {
+          "fa": "این پروژه",
+          "translit": "in prože",
+          "en": "this project",
+          "pos": "noun"
+        },
+        {
+          "fa": "با",
+          "translit": "bâ",
+          "en": "with",
+          "pos": "preposition"
+        },
+        {
+          "fa": "رئیس",
+          "translit": "ra'is",
+          "en": "the boss",
+          "pos": "noun"
+        },
+        {
+          "fa": "صحبت کنیم",
+          "translit": "sohbat konim",
+          "en": "we talk / discuss",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "شاید",
+          "translit": "shâyad",
+          "en": "maybe",
+          "pos": "adverb"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "راه حل بهتر",
+          "translit": "râh-e hal-e behtar",
+          "en": "better solution",
+          "pos": "noun"
+        },
+        {
+          "fa": "پیدا کنیم",
+          "translit": "peydâ konim",
+          "en": "we find",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "به نظرم اگه فردا با رئیس درباره‌ی این پروژه حرف بزنیم، ممکنه یه راه حل بهتر پیدا کنیم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "You really shouldn't have made yourself so much trouble; your presence alone was enough for us.",
@@ -13213,7 +15689,79 @@
         "ezafe",
         "plural"
       ],
-      "id": "12c952c6-7c44-4440-b34a-cb38dc52bf03"
+      "id": "12c952c6-7c44-4440-b34a-cb38dc52bf03",
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "واسه",
+          "translit": "vâse",
+          "en": "for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "درس دادن",
+          "translit": "dars dâdan",
+          "en": "teaching",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "من",
+          "translit": "man",
+          "en": "me",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "این‌همه",
+          "translit": "in-hame",
+          "en": "this much / so much",
+          "pos": "adverb"
+        },
+        {
+          "fa": "زحمت نکشیده بودی",
+          "translit": "zahmat nakeshide budi",
+          "en": "hadn't put effort / taken trouble",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "حتما",
+          "translit": "hatman",
+          "en": "definitely",
+          "pos": "adverb"
+        },
+        {
+          "fa": "توی",
+          "translit": "tuy-e",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "امتحانای دانشگاه این ترم",
+          "translit": "emtehânâ-ye dâneshgâh-e in term",
+          "en": "this semester's university exams",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌افتادم",
+          "translit": "mi-oftâdam",
+          "en": "I would have failed",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اگه واسه یاد دادن به من این‌قدر زحمت نمی‌کشیدی، حتما توی امتحانات دانشگاه این ترم رد می‌شدم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Let's go out tomorrow.",
@@ -14530,7 +17078,38 @@
         "colloquial",
         "ezafe"
       ],
-      "id": "8d365d84-1706-435e-9036-47d7d2456464"
+      "id": "8d365d84-1706-435e-9036-47d7d2456464",
+      "breakdown": [
+        {
+          "fa": "ترافیک",
+          "translit": "terâfik",
+          "en": "traffic",
+          "pos": "noun"
+        },
+        {
+          "fa": "امشب",
+          "translit": "emshab",
+          "en": "tonight",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "really",
+          "pos": "adverb"
+        },
+        {
+          "fa": "سنگینه",
+          "translit": "sangine",
+          "en": "is heavy",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [
+        "امشب ترافیک خیلی بده.",
+        "امشب ترافیک وحشتناکه."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "It looks like it's going to rain.",
@@ -15320,7 +17899,73 @@
         "ezafe",
         "vocab-wrong"
       ],
-      "id": "ca46a411-c843-405c-88de-cda5dc6f9d32"
+      "id": "ca46a411-c843-405c-88de-cda5dc6f9d32",
+      "breakdown": [
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very much",
+          "pos": "adverb"
+        },
+        {
+          "fa": "باعث افتخاره",
+          "translit": "bâ'ese eftekhâre",
+          "en": "it would be an honor",
+          "pos": "expression"
+        },
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "آخر هفته‌ی دیگه",
+          "translit": "âkhare hafte-ye dige",
+          "en": "next weekend",
+          "pos": "noun"
+        },
+        {
+          "fa": "با",
+          "translit": "bâ",
+          "en": "with",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خانواده",
+          "translit": "khânevâde",
+          "en": "family",
+          "pos": "noun"
+        },
+        {
+          "fa": "تشریف بیارین",
+          "translit": "tashrif biyârin",
+          "en": "you come",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "خونه‌ی ما",
+          "translit": "khune-ye mâ",
+          "en": "our house",
+          "pos": "noun"
+        },
+        {
+          "fa": "واسه",
+          "translit": "vâse",
+          "en": "for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "شام",
+          "translit": "shâm",
+          "en": "dinner",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [
+        "خوشحال می‌شیم اگه آخر هفته‌ی بعد با خونواده برای شام بیاین پیش ما."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "This hot and humid weather makes me feel so lazy that I don't want to do anything.",
@@ -15336,7 +17981,61 @@
         "pronoun-clitic",
         "ra-marker"
       ],
-      "id": "13566ab5-7bdd-4a08-8a7b-44341f17f16b"
+      "id": "13566ab5-7bdd-4a08-8a7b-44341f17f16b",
+      "breakdown": [
+        {
+          "fa": "این هوای گرم و شرجی",
+          "translit": "in havâ-ye garm o sharji",
+          "en": "this hot and humid weather",
+          "pos": "noun"
+        },
+        {
+          "fa": "انقدر",
+          "translit": "enqadr",
+          "en": "so much",
+          "pos": "adverb"
+        },
+        {
+          "fa": "منو",
+          "translit": "mano",
+          "en": "me",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "کسل می‌کنه",
+          "translit": "kesel mikone",
+          "en": "makes sluggish",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "دلم نمیخواد",
+          "translit": "delam nemikhâd",
+          "en": "I don't feel like",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "هیچ کاری",
+          "translit": "hich kâri",
+          "en": "any work",
+          "pos": "noun"
+        },
+        {
+          "fa": "بکنم",
+          "translit": "bokonam",
+          "en": "doing",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "از بس هوا گرم و شرجیه، حس و حال هیچ کاری رو ندارم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Are you at home right now?",
@@ -16182,7 +18881,43 @@
         "colloquial",
         "ezafe"
       ],
-      "id": "9358a0b2-503e-4d8d-9593-4170cd66e625"
+      "id": "9358a0b2-503e-4d8d-9593-4170cd66e625",
+      "breakdown": [
+        {
+          "fa": "داروخونه",
+          "translit": "dârukhune",
+          "en": "the pharmacy",
+          "pos": "noun"
+        },
+        {
+          "fa": "اون‌طرف خیابونه",
+          "translit": "un-taraf-e khiyâbune",
+          "en": "is across the street",
+          "pos": "noun"
+        },
+        {
+          "fa": "درست",
+          "translit": "dorost",
+          "en": "right / exactly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بغل",
+          "translit": "baqale",
+          "en": "next to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "گل‌فروشی",
+          "translit": "gol-forushi",
+          "en": "the florist",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [
+        "داروخونه اون‌ور خیابونه، چسبیده به گل‌فروشی."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "If you buy two of these jackets, I can give you a twenty percent discount.",
@@ -16497,7 +19232,79 @@
         "subjunctive",
         "ezafe"
       ],
-      "id": "af945f9d-5869-424f-b31f-c5915e24b6ad"
+      "id": "af945f9d-5869-424f-b31f-c5915e24b6ad",
+      "breakdown": [
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "really",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ممنون می‌شم",
+          "translit": "mamnun misham",
+          "en": "I'd appreciate it",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "تا",
+          "translit": "tâ",
+          "en": "until",
+          "pos": "preposition"
+        },
+        {
+          "fa": "فردا",
+          "translit": "fardâ",
+          "en": "tomorrow",
+          "pos": "noun"
+        },
+        {
+          "fa": "درباره",
+          "translit": "darbâre-ye",
+          "en": "about",
+          "pos": "preposition"
+        },
+        {
+          "fa": "حرفامون",
+          "translit": "harfâmun",
+          "en": "our conversation",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "هیچ‌کس",
+          "translit": "hich-kas",
+          "en": "anyone",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "چیزی",
+          "translit": "chizi",
+          "en": "anything",
+          "pos": "noun"
+        },
+        {
+          "fa": "نگی",
+          "translit": "nagi",
+          "en": "you don't tell",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "ممنون می‌شم تا فردا به کسی در مورد حرفامون چیزی نگی."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Don't worry about it at all, you are always a crown on our heads and we are at your service.",
@@ -16973,7 +19780,32 @@
         "pronoun-clitic",
         "colloquial"
       ],
-      "id": "b3e38286-2060-4fd6-8f2a-c25f016a9cd9"
+      "id": "b3e38286-2060-4fd6-8f2a-c25f016a9cd9",
+      "breakdown": [
+        {
+          "fa": "آخر این هفته",
+          "translit": "âkhare in hafte",
+          "en": "this weekend",
+          "pos": "noun"
+        },
+        {
+          "fa": "وقتت",
+          "translit": "vaqtat",
+          "en": "your time",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "آزاده",
+          "translit": "âzâde",
+          "en": "is free",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [
+        "این آخر هفته وقت داری؟",
+        "این آخر هفته سرت خلوته؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "If you ask me, we shouldn't buy this laptop because it's too old.",
@@ -16987,7 +19819,79 @@
         "ra-marker",
         "colloquial"
       ],
-      "id": "6e2baa94-71dd-4c56-86b8-92ebaa5d59fb"
+      "id": "6e2baa94-71dd-4c56-86b8-92ebaa5d59fb",
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "من",
+          "translit": "man",
+          "en": "me",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "بپرسی",
+          "translit": "boporsi",
+          "en": "you ask",
+          "pos": "verb"
+        },
+        {
+          "fa": "نباید",
+          "translit": "nabâyad",
+          "en": "we shouldn't",
+          "pos": "verb"
+        },
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "adjective"
+        },
+        {
+          "fa": "لپ‌تاپ رو",
+          "translit": "lap-tâp ro",
+          "en": "laptop (object)",
+          "pos": "noun"
+        },
+        {
+          "fa": "بخریم",
+          "translit": "bekharim",
+          "en": "we buy",
+          "pos": "verb"
+        },
+        {
+          "fa": "چون",
+          "translit": "chun",
+          "en": "because",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "too / very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "قدیمیه",
+          "translit": "ghadimie",
+          "en": "is old",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [
+        "به نظر من، نباید این لپ‌تاپ رو بخریم چون خیلی قدیمی شده."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "If you have time tonight, let's go out for a little walk together.",
@@ -17001,7 +19905,55 @@
         "compound-verb",
         "colloquial"
       ],
-      "id": "87714b7c-9241-4ed7-a23a-3fa00d4041d1"
+      "id": "87714b7c-9241-4ed7-a23a-3fa00d4041d1",
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "امشب",
+          "translit": "emshab",
+          "en": "tonight",
+          "pos": "noun"
+        },
+        {
+          "fa": "وقت داری",
+          "translit": "vaght dâri",
+          "en": "you have time",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "بریم",
+          "translit": "berim",
+          "en": "let's go",
+          "pos": "verb"
+        },
+        {
+          "fa": "با هم",
+          "translit": "bâ ham",
+          "en": "together",
+          "pos": "adverb"
+        },
+        {
+          "fa": "یه کم",
+          "translit": "ye kam",
+          "en": "a little",
+          "pos": "adverb"
+        },
+        {
+          "fa": "پیاده‌روی کنیم",
+          "translit": "piâde-ravi konim",
+          "en": "let's walk / do walking",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "اگه امشب وقت داری، بیا با هم یه کم قدم بزنیم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Sorry I'm late, I searched the whole street for a parking spot.",
@@ -17015,7 +19967,55 @@
         "preposition",
         "colloquial"
       ],
-      "id": "fdec0c6d-01ae-4dcf-831e-281f60e06300"
+      "id": "fdec0c6d-01ae-4dcf-831e-281f60e06300",
+      "breakdown": [
+        {
+          "fa": "ببخشید",
+          "translit": "bebakhshid",
+          "en": "sorry / forgive me",
+          "pos": "expression"
+        },
+        {
+          "fa": "دیر شد",
+          "translit": "dir shod",
+          "en": "it became late / I'm late",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "کل",
+          "translit": "kol-e",
+          "en": "the whole",
+          "pos": "adjective"
+        },
+        {
+          "fa": "خیابون رو",
+          "translit": "khiâbun ro",
+          "en": "street (object)",
+          "pos": "noun"
+        },
+        {
+          "fa": "دنبال",
+          "translit": "dombâl-e",
+          "en": "looking for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "جای پارک",
+          "translit": "jâ-ye pârk",
+          "en": "parking spot",
+          "pos": "noun"
+        },
+        {
+          "fa": "گشتم",
+          "translit": "gashtam",
+          "en": "I searched",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "شرمنده دیر کردم، همه خیابون رو واسه جای پارک گشتم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Can you please tell me what the soup of the day is?",
@@ -17029,7 +20029,43 @@
         "subjunctive",
         "colloquial"
       ],
-      "id": "dd72e5a8-5894-46e0-b9f0-6f4e7dbca210"
+      "id": "dd72e5a8-5894-46e0-b9f0-6f4e7dbca210",
+      "breakdown": [
+        {
+          "fa": "می‌شه",
+          "translit": "mishe",
+          "en": "is it possible / can you",
+          "pos": "verb"
+        },
+        {
+          "fa": "لطفا",
+          "translit": "lotfan",
+          "en": "please",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بگید",
+          "translit": "begid",
+          "en": "you say / tell",
+          "pos": "verb"
+        },
+        {
+          "fa": "سوپ امروز",
+          "translit": "sup-e emruz",
+          "en": "today's soup",
+          "pos": "noun"
+        },
+        {
+          "fa": "چیه",
+          "translit": "chie",
+          "en": "what is it",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [
+        "می‌شه لطفا بگین سوپ امروز چیه؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I don't think he will agree with our suggestion.",
@@ -17043,7 +20079,43 @@
         "compound-verb",
         "colloquial"
       ],
-      "id": "876166b6-3c7a-463f-ad5d-fc9d65e16d91"
+      "id": "876166b6-3c7a-463f-ad5d-fc9d65e16d91",
+      "breakdown": [
+        {
+          "fa": "فکر نمی‌کنم",
+          "translit": "fekr nemikonam",
+          "en": "I don't think",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "اون",
+          "translit": "un",
+          "en": "he/she",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "با",
+          "translit": "bâ",
+          "en": "with",
+          "pos": "preposition"
+        },
+        {
+          "fa": "پیشنهاد ما",
+          "translit": "pishnahâd-e mâ",
+          "en": "our suggestion",
+          "pos": "noun"
+        },
+        {
+          "fa": "موافقت کنه",
+          "translit": "movâfeghat kone",
+          "en": "he/she agrees",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "فکر نکنم اون پیشنهاد ما رو قبول کنه."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Let's meet at the same cafe we went to last week.",
@@ -17057,7 +20129,67 @@
         "ra-marker",
         "colloquial"
       ],
-      "id": "4f6ca1eb-3fff-4ddb-b731-56f2ecb972e1"
+      "id": "4f6ca1eb-3fff-4ddb-b731-56f2ecb972e1",
+      "breakdown": [
+        {
+          "fa": "بیا",
+          "translit": "biâ",
+          "en": "let's / come",
+          "pos": "verb"
+        },
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "in / at",
+          "pos": "preposition"
+        },
+        {
+          "fa": "همون",
+          "translit": "hamun",
+          "en": "that same",
+          "pos": "adjective"
+        },
+        {
+          "fa": "کافه‌ای",
+          "translit": "kâfe-i",
+          "en": "cafe (that)",
+          "pos": "noun"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "هفته پیش",
+          "translit": "hafte-ye pish",
+          "en": "last week",
+          "pos": "noun"
+        },
+        {
+          "fa": "رفتیم",
+          "translit": "raftim",
+          "en": "we went",
+          "pos": "verb"
+        },
+        {
+          "fa": "همدیگه رو",
+          "translit": "hamdige ro",
+          "en": "each other (object)",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "ببینیم",
+          "translit": "bebinim",
+          "en": "we see / meet",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "بیا همون کافه‌ای که هفته قبل رفتیم همدیگه رو ببینیم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I forgot to set my phone alarm last night, so I woke up late.",
@@ -17072,7 +20204,61 @@
         "subjunctive",
         "compound-verb"
       ],
-      "id": "d84f55a1-996e-4e99-8d26-1a50f07cf858"
+      "id": "d84f55a1-996e-4e99-8d26-1a50f07cf858",
+      "breakdown": [
+        {
+          "fa": "دیشب",
+          "translit": "dishab",
+          "en": "last night",
+          "pos": "adverb"
+        },
+        {
+          "fa": "یادم رفت",
+          "translit": "yâdam raft",
+          "en": "I forgot",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "آلارم گوشیم",
+          "translit": "âlârme gushim",
+          "en": "my phone's alarm",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "کوک کنم",
+          "translit": "kuk konam",
+          "en": "[that] I set",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "واسه همین",
+          "translit": "vâse hamin",
+          "en": "that's why / so",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "دیر",
+          "translit": "dir",
+          "en": "late",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بیدار شدم",
+          "translit": "bidâr shodam",
+          "en": "I woke up",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "دیشب فراموش کردم آلارم گوشیم رو بذارم، واسه همین دیر بیدار شدم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I want a pizza, but please don't put mushrooms on it because I have an allergy.",
@@ -17177,7 +20363,61 @@
         "verb-tense",
         "colloquial"
       ],
-      "id": "040217f8-0f02-4791-834a-505cd0c4cb1c"
+      "id": "040217f8-0f02-4791-834a-505cd0c4cb1c",
+      "breakdown": [
+        {
+          "fa": "به نظر من",
+          "translit": "be nazare man",
+          "en": "in my opinion",
+          "pos": "expression"
+        },
+        {
+          "fa": "نباید",
+          "translit": "nabâyad",
+          "en": "you shouldn't",
+          "pos": "verb"
+        },
+        {
+          "fa": "ماشینت",
+          "translit": "mâshinet",
+          "en": "your car",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "بفروشی",
+          "translit": "befrooshi",
+          "en": "you sell",
+          "pos": "verb"
+        },
+        {
+          "fa": "چون",
+          "translit": "chun",
+          "en": "because",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "قیمت‌ها",
+          "translit": "gheymat-hâ",
+          "en": "the prices",
+          "pos": "noun"
+        },
+        {
+          "fa": "داره می‌ره بالا",
+          "translit": "dâre mire bâlâ",
+          "en": "are going up",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "به نظرم نباید ماشینت رو بفروشی چون قیمت‌ها داره گرون‌تر می‌شه."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I got stuck behind a bad accident on the highway, otherwise I would have been here half an hour ago.",
@@ -17294,7 +20534,79 @@
         "ra-marker",
         "compound-verb"
       ],
-      "id": "90ae65b0-d397-4e6f-9a28-39d73e383485"
+      "id": "90ae65b0-d397-4e6f-9a28-39d73e383485",
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "بتونی",
+          "translit": "betuni",
+          "en": "you can",
+          "pos": "verb"
+        },
+        {
+          "fa": "تا",
+          "translit": "tâ",
+          "en": "by",
+          "pos": "preposition"
+        },
+        {
+          "fa": "ساعت هفت",
+          "translit": "sâ'ate haft",
+          "en": "seven o'clock",
+          "pos": "noun"
+        },
+        {
+          "fa": "خودت",
+          "translit": "khodet",
+          "en": "yourself",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "برسونی",
+          "translit": "beresuni",
+          "en": "make it / arrive",
+          "pos": "verb"
+        },
+        {
+          "fa": "می‌تونیم",
+          "translit": "mitunim",
+          "en": "we can",
+          "pos": "verb"
+        },
+        {
+          "fa": "سانس اول فیلم",
+          "translit": "sânse avvale film",
+          "en": "the movie's first show",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "ببینیم",
+          "translit": "bebinim",
+          "en": "we watch",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اگه تا ساعت هفت برسی، می‌تونیم سانس اول فیلم رو تماشا کنیم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "We have been waiting for our food for forty minutes; could you please check what happened to our order?",
@@ -17309,7 +20621,67 @@
         "subjunctive",
         "compound-verb"
       ],
-      "id": "f1f87a8a-7243-4094-9cf5-92af53748f62"
+      "id": "f1f87a8a-7243-4094-9cf5-92af53748f62",
+      "breakdown": [
+        {
+          "fa": "الان",
+          "translit": "alân",
+          "en": "now",
+          "pos": "adverb"
+        },
+        {
+          "fa": "چهل دقیقه‌ست",
+          "translit": "chehel daghighe-st",
+          "en": "it's forty minutes",
+          "pos": "expression"
+        },
+        {
+          "fa": "منتظر غذامونیم",
+          "translit": "montazere ghazâ-mun-im",
+          "en": "we are waiting for our food",
+          "pos": "expression"
+        },
+        {
+          "fa": "می‌شه",
+          "translit": "mishe",
+          "en": "could you / is it possible",
+          "pos": "verb"
+        },
+        {
+          "fa": "لطفا",
+          "translit": "lotfan",
+          "en": "please",
+          "pos": "adverb"
+        },
+        {
+          "fa": "پیگیری کنید",
+          "translit": "peygiri konid",
+          "en": "check / follow up",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "ببینید",
+          "translit": "bebinid",
+          "en": "[to] see",
+          "pos": "verb"
+        },
+        {
+          "fa": "سفارش ما",
+          "translit": "sefâreshe mâ",
+          "en": "our order",
+          "pos": "noun"
+        },
+        {
+          "fa": "چی شد",
+          "translit": "chi shod",
+          "en": "what happened to",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "الان چهل دقیقه‌ست که منتظر غذامون هستیم، می‌شه لطفا بپرسید سفارش ما چی شد؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I'm not sure if we should rent this apartment or not, because it doesn't get any sunlight at all.",
@@ -19145,7 +22517,55 @@
         "compound-verb",
         "colloquial"
       ],
-      "id": "719d47ec-78ce-4fd6-9a80-235ecd1a576a"
+      "id": "719d47ec-78ce-4fd6-9a80-235ecd1a576a",
+      "breakdown": [
+        {
+          "fa": "درست",
+          "translit": "dorost",
+          "en": "quite / properly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "متوجه نشدم",
+          "translit": "motevajjeh nashodam",
+          "en": "I didn't catch / understand",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "می‌تونی",
+          "translit": "mituni",
+          "en": "can you",
+          "pos": "verb"
+        },
+        {
+          "fa": "آدرس",
+          "translit": "âdres",
+          "en": "the address",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "دوباره",
+          "translit": "dobâre",
+          "en": "again",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بگی",
+          "translit": "begi",
+          "en": "say / repeat",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "متوجه حرفت نشدم، می‌شه آدرس رو یه بار دیگه بگی؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I have to take this antibiotic every eight hours.",
@@ -19160,7 +22580,55 @@
         "vocab-wrong",
         "colloquial"
       ],
-      "id": "80669aaa-1584-46f5-9a93-b56715f13260"
+      "id": "80669aaa-1584-46f5-9a93-b56715f13260",
+      "breakdown": [
+        {
+          "fa": "باید",
+          "translit": "bâyad",
+          "en": "I have to",
+          "pos": "verb"
+        },
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "چرک‌خشک‌کن",
+          "translit": "cherk-khoshk-kon",
+          "en": "antibiotic",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "هر",
+          "translit": "har",
+          "en": "every",
+          "pos": "adjective"
+        },
+        {
+          "fa": "هشت ساعت",
+          "translit": "hasht sâ'at",
+          "en": "eight hours",
+          "pos": "noun"
+        },
+        {
+          "fa": "بخورم",
+          "translit": "bokhoram",
+          "en": "[that] I take",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "هر هشت ساعت باید این آنتی‌بیوتیک رو مصرف کنم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I feel you're rushing this decision way too much.",
@@ -19315,7 +22783,44 @@
         "pronoun-clitic",
         "colloquial"
       ],
-      "id": "c6cdd57d-c400-4683-b06d-ad64897c9f33"
+      "id": "c6cdd57d-c400-4683-b06d-ad64897c9f33",
+      "breakdown": [
+        {
+          "fa": "منظورت",
+          "translit": "manzuret",
+          "en": "your meaning / you mean",
+          "pos": "noun"
+        },
+        {
+          "fa": "اینه که",
+          "translit": "ine ke",
+          "en": "is that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "کلا",
+          "translit": "kollan",
+          "en": "totally / whole",
+          "pos": "adverb"
+        },
+        {
+          "fa": "برنامه رو",
+          "translit": "barnâme ro",
+          "en": "the plan",
+          "pos": "noun"
+        },
+        {
+          "fa": "کنسل کنیم؟",
+          "translit": "kankel konim?",
+          "en": "should we cancel?",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "یعنی کل برنامه رو به هم بزنیم؟",
+        "یعنی می‌گی کلا برنامه‌رو لغو کنیم؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "She believes it's much better to travel by train.",
@@ -19821,7 +23326,67 @@
         "pronoun-clitic",
         "colloquial"
       ],
-      "id": "24d3994e-5f56-4fa2-8962-62491637a018"
+      "id": "24d3994e-5f56-4fa2-8962-62491637a018",
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "هنوز",
+          "translit": "hanuz",
+          "en": "still",
+          "pos": "adverb"
+        },
+        {
+          "fa": "امکانش هست،",
+          "translit": "emkânesh hast,",
+          "en": "it's possible,",
+          "pos": "expression"
+        },
+        {
+          "fa": "می‌خوایم",
+          "translit": "mikhâym",
+          "en": "we would like",
+          "pos": "verb"
+        },
+        {
+          "fa": "قبل از اینکه",
+          "translit": "ghabl az inke",
+          "en": "before",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "آشپز",
+          "translit": "âshpaz",
+          "en": "the chef",
+          "pos": "noun"
+        },
+        {
+          "fa": "شروع کنه",
+          "translit": "shoru' kone",
+          "en": "starts (cooking)",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "سفارشمون رو",
+          "translit": "sefâreshemun ro",
+          "en": "our order",
+          "pos": "noun"
+        },
+        {
+          "fa": "عوض کنیم.",
+          "translit": "avaz konim.",
+          "en": "to change.",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "اگه هنوز می‌شه، می‌خواستیم قبل اینکه آشپز دست به کار بشه سفارشمون رو تغییر بدیم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "The coffee is too sweet.",
@@ -21861,7 +25426,79 @@
         "pronoun-clitic",
         "word-order"
       ],
-      "id": "2e0433c4-278a-4f3e-936e-2fe0f723314b"
+      "id": "2e0433c4-278a-4f3e-936e-2fe0f723314b",
+      "breakdown": [
+        {
+          "fa": "این چند وقته",
+          "translit": "in chand vaghte",
+          "en": "lately",
+          "pos": "adverb"
+        },
+        {
+          "fa": "اون‌قدر",
+          "translit": "un-ghadr",
+          "en": "so much",
+          "pos": "adverb"
+        },
+        {
+          "fa": "سر کار",
+          "translit": "sare kâr",
+          "en": "at work",
+          "pos": "noun"
+        },
+        {
+          "fa": "تحت فشار بودم",
+          "translit": "tahte feshâr budam",
+          "en": "I've been under pressure",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "آخر هفته‌ها",
+          "translit": "âkhare hafte-hâ",
+          "en": "on weekends",
+          "pos": "noun"
+        },
+        {
+          "fa": "اصلا",
+          "translit": "aslan",
+          "en": "at all / completely",
+          "pos": "adverb"
+        },
+        {
+          "fa": "حس و حال",
+          "translit": "hes-o-hâl",
+          "en": "energy / mood",
+          "pos": "noun"
+        },
+        {
+          "fa": "بیرون رفتن",
+          "translit": "birun raftan",
+          "en": "going out",
+          "pos": "noun"
+        },
+        {
+          "fa": "با دوستام رو",
+          "translit": "bâ dustâm ro",
+          "en": "with my friends",
+          "pos": "noun"
+        },
+        {
+          "fa": "ندارم.",
+          "translit": "nadâram.",
+          "en": "I don't have.",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "تازگیا اینقدر سر کار روم فشار بوده که آخر هفته‌ها رمق بیرون رفتن با بچه‌ها رو ندارم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Don't worry about tidying up; just relax on the sofa while I set the dinner table.",
@@ -22865,7 +26502,32 @@
         "colloquial",
         "ezafe"
       ],
-      "id": "3afc58a6-92a9-461a-99e0-8ce196c3791a"
+      "id": "3afc58a6-92a9-461a-99e0-8ce196c3791a",
+      "breakdown": [
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "قهوه تلخ",
+          "translit": "ghahve-ye talkh",
+          "en": "black coffee",
+          "pos": "noun"
+        },
+        {
+          "fa": "لطفا.",
+          "translit": "lotfan.",
+          "en": "please.",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [
+        "یه دونه قهوه سیاه لطفا.",
+        "بی‌زحمت یه قهوه تلخ."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Do you have fresh juice?",
@@ -22879,7 +26541,26 @@
         "formality",
         "verb-agreement"
       ],
-      "id": "3d66f2de-1b27-42ad-a696-fbda9f9fb414"
+      "id": "3d66f2de-1b27-42ad-a696-fbda9f9fb414",
+      "breakdown": [
+        {
+          "fa": "آب‌میوه تازه",
+          "translit": "âb-mive-ye tâze",
+          "en": "fresh juice",
+          "pos": "noun"
+        },
+        {
+          "fa": "دارین؟",
+          "translit": "dârin?",
+          "en": "do you have?",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "آب‌میوه تازه داری؟",
+        "آب‌میوه طبیعی دارین؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Is this soup spicy?",
@@ -23010,7 +26691,31 @@
         "ezafe",
         "word-order"
       ],
-      "id": "1c4c8f63-75e6-4bd7-b7bd-abb144ea7f3c"
+      "id": "1c4c8f63-75e6-4bd7-b7bd-abb144ea7f3c",
+      "breakdown": [
+        {
+          "fa": "نزدیک‌ترین",
+          "translit": "nazdiktarin",
+          "en": "the nearest",
+          "pos": "adjective"
+        },
+        {
+          "fa": "ایستگاه مترو",
+          "translit": "istgâh-e metro",
+          "en": "metro station",
+          "pos": "noun"
+        },
+        {
+          "fa": "کجاس؟",
+          "translit": "kojâs?",
+          "en": "where is?",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [
+        "نزدیک‌ترین ایستگاه مترو کجاست؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Please turn right here.",
@@ -23319,7 +27024,31 @@
         "ezafe",
         "preposition"
       ],
-      "id": "b943245f-b5fe-4778-8620-e1e45b9d010f"
+      "id": "b943245f-b5fe-4778-8620-e1e45b9d010f",
+      "breakdown": [
+        {
+          "fa": "بابا",
+          "translit": "bâbâ",
+          "en": "Dad",
+          "pos": "noun"
+        },
+        {
+          "fa": "هنوز",
+          "translit": "hanuz",
+          "en": "still",
+          "pos": "adverb"
+        },
+        {
+          "fa": "سر کاره؟",
+          "translit": "sar-e kâre?",
+          "en": "is at work?",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [
+        "بابا هنوز اداره‌ست؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I am coming home now.",
@@ -24116,7 +27845,25 @@
         "verb-tense",
         "spelling"
       ],
-      "id": "31836eed-7e37-455f-b211-7f89318ff495"
+      "id": "31836eed-7e37-455f-b211-7f89318ff495",
+      "breakdown": [
+        {
+          "fa": "امروز",
+          "translit": "emruz",
+          "en": "today",
+          "pos": "adverb"
+        },
+        {
+          "fa": "پیاده‌روی کردیم",
+          "translit": "piyâderavi kardim",
+          "en": "we walked",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "امروز پیاده رفتیم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I cleaned the room.",
@@ -25316,7 +29063,32 @@
         "compound-verb",
         "colloquial"
       ],
-      "id": "946788f5-5757-4096-a1b7-2873e3224c4d"
+      "id": "946788f5-5757-4096-a1b7-2873e3224c4d",
+      "breakdown": [
+        {
+          "fa": "من",
+          "translit": "man",
+          "en": "I",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "این‌طور",
+          "translit": "intowr",
+          "en": "like that",
+          "pos": "adverb"
+        },
+        {
+          "fa": "فکر نمی‌کنم",
+          "translit": "fekr nemikonam",
+          "en": "do not think",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "من اینجوری فکر نمی‌کنم.",
+        "این‌طوری فکر نمی‌کنم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "This is not a good idea.",
@@ -26686,7 +30458,38 @@
         "colloquial",
         "ezafe"
       ],
-      "id": "1136a5d5-cda5-4f2b-9d2d-bc58ad04639e"
+      "id": "1136a5d5-cda5-4f2b-9d2d-bc58ad04639e",
+      "breakdown": [
+        {
+          "fa": "من",
+          "translit": "man",
+          "en": "I",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "نوشیدنی خنک",
+          "translit": "nushidani-ye khonak",
+          "en": "cold drink",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "یه نوشیدنی خنک می‌خوام.",
+        "یه چیز خنک می‌خوام بنوشم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Do you want this hot soup?",
@@ -26700,7 +30503,32 @@
         "ra-marker",
         "ezafe"
       ],
-      "id": "e40c5199-e1e9-4334-9ca0-2729d67a3db5"
+      "id": "e40c5199-e1e9-4334-9ca0-2729d67a3db5",
+      "breakdown": [
+        {
+          "fa": "این سوپ داغ",
+          "translit": "in sup-e dâgh",
+          "en": "this hot soup",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[direct object marker]",
+          "pos": "particle"
+        },
+        {
+          "fa": "می‌خوای",
+          "translit": "mikhây",
+          "en": "do you want",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "این سوپ داغو می‌خوای؟",
+        "از این سوپ داغ می‌خوای؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "We want warm weather.",
@@ -26713,7 +30541,31 @@
         "colloquial",
         "ezafe"
       ],
-      "id": "cce4e90a-34e3-4529-a38d-2f7f37b5e19e"
+      "id": "cce4e90a-34e3-4529-a38d-2f7f37b5e19e",
+      "breakdown": [
+        {
+          "fa": "ما",
+          "translit": "mâ",
+          "en": "we",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "هوای گرم",
+          "translit": "havâ-ye garm",
+          "en": "warm weather",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌خوایم",
+          "translit": "mikhâym",
+          "en": "want",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "هوای گرم می‌خوایم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Pick up your fork!",
@@ -26763,7 +30615,44 @@
         "ra-marker",
         "ezafe"
       ],
-      "id": "b4d15e7a-d0ce-4d28-afb7-54841144c73d"
+      "id": "b4d15e7a-d0ce-4d28-afb7-54841144c73d",
+      "breakdown": [
+        {
+          "fa": "من",
+          "translit": "man",
+          "en": "I",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "اون",
+          "translit": "un",
+          "en": "that",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "جعبه سنگین",
+          "translit": "ja'be-ye sangin",
+          "en": "heavy box",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "برنداشتم",
+          "translit": "barnadâshtam",
+          "en": "didn't pick up",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اون جعبه سنگین رو من برنداشتم.",
+        "جعبه سنگینه رو برنداشتم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Should I take this big apple?",
@@ -26778,7 +30667,37 @@
         "ezafe",
         "subjunctive"
       ],
-      "id": "758b2d8b-aae0-4988-8460-d74a1964fd8a"
+      "id": "758b2d8b-aae0-4988-8460-d74a1964fd8a",
+      "breakdown": [
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "سیب بزرگ",
+          "translit": "sib-e bozorg",
+          "en": "big apple",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "بردارم؟",
+          "translit": "bardâram?",
+          "en": "should I take?",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "این سیب بزرگه رو بردارم؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Does he sell sour cherries?",
@@ -26827,7 +30746,31 @@
         "ezafe",
         "verb-agreement"
       ],
-      "id": "38ea4049-268a-4e16-b068-8f72747dee2c"
+      "id": "38ea4049-268a-4e16-b068-8f72747dee2c",
+      "breakdown": [
+        {
+          "fa": "اینجا",
+          "translit": "injâ",
+          "en": "here",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ماهی تازه",
+          "translit": "mâhi-ye tâze",
+          "en": "fresh fish",
+          "pos": "noun"
+        },
+        {
+          "fa": "نمی‌فروشن",
+          "translit": "nemifrushan",
+          "en": "they don't sell",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "ماهی تازه اینجا نمی‌فروشن."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I sold my old bicycle.",
@@ -26842,7 +30785,32 @@
         "ezafe",
         "pronoun-clitic"
       ],
-      "id": "c2ecaa8c-d5a6-4ec7-8cc1-bff2d823f67e"
+      "id": "c2ecaa8c-d5a6-4ec7-8cc1-bff2d823f67e",
+      "breakdown": [
+        {
+          "fa": "دوچرخه قدیمیم",
+          "translit": "docharkhe-ye ghadimim",
+          "en": "my old bicycle",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "فروختم",
+          "translit": "forukhtam",
+          "en": "I sold",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "من دوچرخه قدیمیمو فروختم.",
+        "دوچرخه کهنه‌مو فروختم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Write the food order.",
@@ -26856,7 +30824,32 @@
         "ra-marker",
         "ezafe"
       ],
-      "id": "dec090f3-311f-4786-a2ed-b6d6b4442b73"
+      "id": "dec090f3-311f-4786-a2ed-b6d6b4442b73",
+      "breakdown": [
+        {
+          "fa": "سفارش غذا",
+          "translit": "sefaresh-e ghaza",
+          "en": "the food order",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "بنویس",
+          "translit": "benevis",
+          "en": "write",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "سفارش غذا رو یادداشت کن.",
+        "سفارش غذارو بنویس."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Write the name of this beautiful season.",
@@ -26870,7 +30863,32 @@
         "ra-marker",
         "ezafe"
       ],
-      "id": "6d3a5867-d9cd-4ecc-9c4f-debdb05e3e4c"
+      "id": "6d3a5867-d9cd-4ecc-9c4f-debdb05e3e4c",
+      "breakdown": [
+        {
+          "fa": "اسم این فصل قشنگ",
+          "translit": "esm-e in fasl-e ghashang",
+          "en": "the name of this beautiful season",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "بنویس",
+          "translit": "benevis",
+          "en": "write",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اسم این فصل قشنگو بنویس.",
+        "اسم این فصل قشنگ رو یادداشت کن."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "I didn't write the restaurant's name.",
@@ -26884,7 +30902,32 @@
         "ra-marker",
         "ezafe"
       ],
-      "id": "6545968e-1372-4a06-86cd-823e2aa073fb"
+      "id": "6545968e-1372-4a06-86cd-823e2aa073fb",
+      "breakdown": [
+        {
+          "fa": "اسم رستوران",
+          "translit": "esm-e restorân",
+          "en": "the restaurant's name",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "ننوشتم",
+          "translit": "naneveshtam",
+          "en": "I didn't write",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "اسم رستورانو ننوشتم.",
+        "اسم رستوران رو یادداشت نکردم."
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Do you understand his difficult language?",
@@ -26899,7 +30942,32 @@
         "ezafe",
         "pronoun-clitic"
       ],
-      "id": "0d88dd33-d9e9-496a-bd39-45c4c39f67fe"
+      "id": "0d88dd33-d9e9-496a-bd39-45c4c39f67fe",
+      "breakdown": [
+        {
+          "fa": "زبون سختش",
+          "translit": "zabun-e sakhtesh",
+          "en": "his difficult language",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "می‌فهمی",
+          "translit": "mifahmi",
+          "en": "do you understand",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [
+        "زبون سختشو می‌فهمی؟",
+        "متوجه زبون سختش می‌شی؟"
+      ],
+      "breakdownSource": "model"
     },
     {
       "englishText": "Did you understand the weather report?",
