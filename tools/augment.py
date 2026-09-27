@@ -31,6 +31,7 @@ import time
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import gemini, prompts
+from core.gloss import tidy
 from core.bank import ensure_ids, load, save
 
 
@@ -130,8 +131,18 @@ def main() -> int:
                 rejected += 1
                 print(f"    rejected: {problems[0]} :: {sentence['farsiText'][:34]}")
                 continue
+            # The same tidying derive_breakdown applies. The model produces
+            # the same ezâfe artefact — صفحه glossed "the screen of" — and a
+            # gloss that reaches a chip should read as English either way.
+            for unit in entry["breakdown"]:
+                unit["en"] = tidy(unit.get("fa", ""), unit.get("en", ""))
             sentence["breakdown"] = entry["breakdown"]
             sentence["alternatives"] = entry.get("alternatives", [])
+            # Provenance matters beyond bookkeeping: core/vocab.py learns its
+            # part-of-speech lexicon from hand-written maps only, and treats a
+            # missing breakdownSource as hand-written. Leaving this unset would
+            # quietly feed model output back in as ground truth.
+            sentence["breakdownSource"] = "model"
             done += 1
 
         save(data)

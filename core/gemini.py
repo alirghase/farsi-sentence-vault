@@ -181,6 +181,13 @@ def _attempt_model(
             # another model may work.
             if exc.code == 404:
                 raise _ModelUnavailable(last_error) from exc
+            # 403 means this key cannot reach this model at all — the API is not
+            # enabled for its project. Permanent for that model, fine for the
+            # next one, so fall through instead of failing the whole batch. This
+            # was aborting runs after the default model's transient 503s pushed
+            # them onto a fallback the key has no access to.
+            if exc.code == 403:
+                raise _ModelUnavailable(last_error) from exc
             # A daily quota exhaustion is not transient: retrying this model
             # wastes a minute of backoff before failing anyway. Fall through to
             # the next model immediately, which lives in a different bucket.
