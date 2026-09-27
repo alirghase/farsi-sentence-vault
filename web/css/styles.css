@@ -260,13 +260,16 @@ kbd {
 .card-scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 22px var(--gutter) 24px; }
 
 .badge {
-  margin: 0 0 20px; font-family: var(--mono); font-size: 11px;
+  margin: 0 0 18px; font-family: var(--mono); font-size: 10px;
   letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint);
 }
 .prompt {
-  margin: 0; font-family: var(--serif); font-size: 29px; line-height: 1.32;
+  margin: 0; font-family: var(--serif); font-size: 31px; line-height: 1.3;
   letter-spacing: -.01em;
 }
+/* Before the reveal there is nothing else on the card, so the prompt sits in
+   the upper third rather than jammed under the header. */
+#card-view:not(.is-revealed) .prompt { margin-top: 12vh; }
 
 .typed {
   width: 100%; margin-top: 22px; background: transparent;
@@ -283,14 +286,13 @@ kbd {
   text-decoration-color: var(--rule);
 }
 .typed-echo.is-match { color: var(--ink-soft); text-decoration: none; }
-.answer-text { flex: 1; margin: 0; font-family: var(--serif); font-size: 26px; line-height: 1.4; }
+.answer-text { flex: 1; margin: 0; font-family: var(--serif); font-size: 30px; line-height: 1.38; }
 #btn-speak {
   font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
   color: var(--ink-soft); border: 1px solid var(--rule); padding: 5px 9px; flex: none;
 }
 .finglish { margin: 12px 0 0; color: var(--ink-soft); font-size: 14px; font-family: var(--mono); }
 .gloss { margin: 9px 0 0; color: var(--ink-faint); font-size: 13px; }
-.tags { margin: 14px 0 0; }
 
 /* Fixed height so revealing does not reflow the footer under the thumb that is
    about to tap it. */
@@ -428,7 +430,7 @@ kbd {
 .pair.on .pair-en { color: rgba(251, 250, 248, .75); }
 
 .map-detail {
-  margin: 10px 0 0; min-height: 34px;
+  margin: 6px 0 0; min-height: 30px;
   display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
   font-size: 13px; color: var(--ink-faint);
 }

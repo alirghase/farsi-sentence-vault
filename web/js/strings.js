@@ -35,7 +35,6 @@ export const STRINGS = {
   'card.type': 'تایپ',
   'card.play': 'پخش',
   'card.alsoCorrect': 'این هم درسته',
-  'card.tapWord': 'روی هر کلمه بزن',
   'card.unit': 'این کلمه‌ها با هم یک واحدن',
   'card.done': 'تموم شد',
   'card.practised': 'کارت تمرین شد',
@@ -110,8 +109,6 @@ export const STRINGS = {
   // Card badge and directions
   'dir.enToFa': 'انگلیسی ← فارسی',
   'dir.faToEn': 'فارسی ← انگلیسی',
-  'card.newBadge': 'جدید',
-  'card.lapse': 'لغزش',
 
   // Level panel
   'today.passedHead': 'رد شدی',
@@ -136,7 +133,6 @@ export const STRINGS = {
   'bank.add': 'اضافه کن',
   'bank.hint': 'هر جمله‌ای که اضافه کنی مثل بقیه وارد مرور می‌شه، با به‌روز شدن بسته پاک نمی‌شه و توی پشتیبان هم میاد.',
   'bank.none': 'هنوز جمله‌ای اضافه نکردی.',
-  'bank.count': 'جملهٔ خودت',
   'bank.added': 'اضافه شد',
   'bank.removed': 'پاک شد',
   'bank.remove': 'پاک کردن',

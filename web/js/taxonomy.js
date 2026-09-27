@@ -103,3 +103,28 @@ export const SITUATIONS = [
   "hosting or visiting someone's home",
   'negotiating or asking for a favour',
 ];
+
+/**
+ * Parts of speech, for display. The stored value stays English — it is a closed
+ * vocabulary shared with core/prompts.py and checked against it — so this maps
+ * for reading only, the same way tagTitle does.
+ */
+export const POS_TITLES = {
+  'noun': 'اسم',
+  'verb': 'فعل',
+  'compound verb': 'فعل مرکب',
+  'adjective': 'صفت',
+  'adverb': 'قید',
+  'pronoun': 'ضمیر',
+  'attached pronoun': 'ضمیر متصل',
+  'preposition': 'حرف اضافه',
+  'conjunction': 'حرف ربط',
+  'particle': 'نشانه',
+  'number': 'عدد',
+  'question word': 'کلمهٔ پرسشی',
+  'expression': 'اصطلاح',
+};
+
+export function posTitle(pos) {
+  return POS_TITLES[pos] ?? pos;
+}

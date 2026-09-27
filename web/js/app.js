@@ -9,7 +9,7 @@ import * as speech from './speech.js';
 import * as levels from './levels.js';
 import * as sound from './sound.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
-import { tagTitle } from './taxonomy.js';
+import { tagTitle, posTitle } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
 
@@ -295,15 +295,15 @@ function renderCard() {
   state.shownAt = performance.now();
 
   $('card-view').hidden = false;
+  $('card-view').classList.remove('is-revealed');
   $('done-view').hidden = true;
   $('done-row').hidden = true;
   document.querySelector('.card-scroll').scrollTop = 0;
 
   $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.queue.length)}`;
-  $('card-badge').textContent =
-    `${text(`dir.${card.direction}`)} · ${levels.levelForDifficulty(card.sentence.difficulty)}` +
-    (card.isNew ? ` · ${text('card.newBadge')}` : '') +
-    (card.review.lapses > 0 ? ` · ${faDigits(card.review.lapses)} ${text('card.lapse')}` : '');
+  // Which way to translate is the only thing here you act on. Level, new and
+  // lapse count are the scheduler describing itself, and this is a flashcard.
+  $('card-badge').textContent = text(`dir.${card.direction}`);
 
   const prompt = $('card-prompt');
   prompt.textContent = session.promptFor(card.sentence, card.direction);
@@ -336,6 +336,7 @@ function reveal() {
   if (!card || state.revealed) return;
   $('card-typed').blur();
   state.revealed = true;
+  $('card-view').classList.add('is-revealed');
   // Still recorded, but nothing is shown and nothing gates on it. It is the
   // one measurement a better scheduler would need later.
   state.msToReveal = Math.round(performance.now() - state.shownAt);
@@ -350,10 +351,6 @@ function reveal() {
   $('card-typed').hidden = true;
   $('answer-finglish').textContent = card.sentence.finglish ?? '';
   renderBreakdown(card.sentence);
-  const tags = (card.sentence.grammarTags ?? []).map(tagTitle);
-  $('answer-tags').className = 'taglist';
-  $('answer-tags').textContent = tags.join(' · ');
-
   $('btn-speak').hidden = !state.speechOK;
   $('card-answer').hidden = false;
   $('btn-reveal').hidden = true;
@@ -416,7 +413,7 @@ function renderBreakdown(sentence) {
 
     host.innerHTML = `
       <div class="map-row">${columns}</div>
-      <p class="map-detail" id="map-detail">${escapeHtml(text('card.tapWord'))}</p>`;
+      <p class="map-detail" id="map-detail"></p>`;
 
     const detail = host.querySelector('#map-detail');
     const all = [...host.querySelectorAll('.pair')];
@@ -428,7 +425,7 @@ function renderBreakdown(sentence) {
       detail.innerHTML =
         `<span class="map-translit">${escapeHtml(u.translit)}</span>` +
         `<span class="map-means">${escapeHtml(u.en)}</span>` +
-        `<span class="map-pos">${escapeHtml(u.pos)}</span>` +
+        `<span class="map-pos">${escapeHtml(posTitle(u.pos))}</span>` +
         (multi ? `<span class="map-note">${escapeHtml(text('card.unit'))}</span>` : '');
     };
 
