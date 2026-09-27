@@ -48,7 +48,6 @@
     <header class="screen-head"><h1 data-t="tab.progress">Progress</h1></header>
     <div class="list">
       <div class="ledger" id="today-stats">
-        <div class="ledger-row"><span data-t="today.target">Target</span><b id="target-progress">0 / 40</b></div>
         <div class="ledger-row"><span data-t="today.streak">Streak</span><b id="streak">0 days</b></div>
         <div class="ledger-row"><span data-t="today.held">Sentences</span><b id="count-held">0</b></div>
       </div>
@@ -79,10 +78,6 @@
           <input type="range" id="set-round" min="5" max="60" step="5">
         </label>
         <p class="hint" data-t="settings.perRoundHint"></p>
-        <label><span data-t="settings.dailyTarget">Daily target</span> <b id="target-value">40</b>
-          <input type="range" id="set-target" min="10" max="150" step="5">
-        </label>
-        <p class="hint" data-t="settings.dailyTargetHint"></p>
       </div>
 
       <div class="group">
@@ -99,10 +94,6 @@
         <label class="row">
           <span data-t="settings.speak">Read answers aloud</span>
           <input type="checkbox" id="set-speak">
-        </label>
-        <label class="row">
-          <span data-t="settings.sound">Sound when a card advances</span>
-          <input type="checkbox" id="set-sound">
         </label>
         <p class="hint" id="voice-report" data-t="settings.voiceChecking"></p>
       </div>
@@ -136,11 +127,6 @@
         <p class="hint" data-t="bank.hint"></p>
       </div>
 
-      <div class="group" id="keys-group">
-        <h2 data-t="settings.keyboard">Keyboard</h2>
-        <p class="hint" data-t="settings.keyboardHint"></p>
-      </div>
-
       <div class="group">
         <h2 data-t="settings.privacy">What leaves this device</h2>
         <p class="hint" data-t="settings.privacyHint"></p>
@@ -171,16 +157,8 @@
     <p class="badge" id="card-badge"></p>
     <p class="prompt" id="card-prompt"></p>
 
-    <textarea id="card-typed" class="typed" rows="2" hidden
-              autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
-
-
     <div id="card-answer" class="answer" hidden>
-      <p class="typed-echo" id="typed-echo" hidden></p>
-      <div class="answer-row">
-        <p class="answer-text" id="answer-text"></p>
-        <button id="btn-speak" hidden aria-label="Play aloud" data-t="card.play">Play</button>
-      </div>
+      <p class="answer-text" id="answer-text"></p>
       <p class="finglish" id="answer-finglish"></p>
       <p class="gloss" id="answer-gloss"></p>
       <div class="breakdown" id="answer-breakdown" hidden></div>
@@ -196,9 +174,6 @@
   </div>
 
   <div class="controls">
-    <div id="input-row" class="input-row">
-      <button id="btn-type" data-t="card.type">Type</button>
-    </div>
     <button id="btn-reveal"><span data-t="card.reveal">Reveal</span> &rarr;</button>
     <div id="rating-row" class="rating-row" hidden></div>
     <div id="done-row" class="done-row" hidden>

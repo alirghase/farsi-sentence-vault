@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "count": 1224,
+  "count": 1223,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
       "farsiText": "یه قهوه سرد می‌خوام.",
-      "finglish": "ye ghahve ye sard mikham.",
+      "finglish": "ye ghahveye sard mikhâm.",
       "literalGloss": "one coffee-of cold I-want.",
       "difficulty": 1,
       "situation": "ordering food or coffee",
@@ -113,9 +113,9 @@
     },
     {
       "englishText": "Can I get a cup of tea with milk?",
-      "farsiText": "می‌تونم یه استکان چای با شیر داشته باشم؟",
-      "finglish": "mitunam ye estekan chay ba shir dashte basham?",
-      "literalGloss": "can-I one glass tea with milk have I-be?",
+      "farsiText": "میشه یه استکان چای با شیر برام بیارین؟",
+      "finglish": "mishe ye estekân chây bâ shir barâm biyârin?",
+      "literalGloss": "is-possible a glass tea with milk for-me you-bring?",
       "difficulty": 2,
       "situation": "ordering food or coffee",
       "grammarTags": [
@@ -125,32 +125,32 @@
       ],
       "breakdown": [
         {
-          "fa": "می‌تونم",
-          "translit": "mitunam",
-          "en": "can I",
+          "fa": "میشه",
+          "translit": "mishe",
+          "en": "could you",
           "pos": "verb"
         },
         {
           "fa": "یه",
           "translit": "ye",
-          "en": "one",
-          "pos": "number"
+          "en": "a",
+          "pos": "determiner"
         },
         {
           "fa": "استکان",
-          "translit": "estekan",
+          "translit": "estekân",
           "en": "glass",
           "pos": "noun"
         },
         {
           "fa": "چای",
-          "translit": "chay",
+          "translit": "chây",
           "en": "tea",
           "pos": "noun"
         },
         {
           "fa": "با",
-          "translit": "ba",
+          "translit": "bâ",
           "en": "with",
           "pos": "preposition"
         },
@@ -161,9 +161,15 @@
           "pos": "noun"
         },
         {
-          "fa": "داشته باشم",
-          "translit": "dashte basham",
-          "en": "have",
+          "fa": "برام",
+          "translit": "barâm",
+          "en": "for me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "بیارین",
+          "translit": "biyârin",
+          "en": "bring",
           "pos": "verb"
         }
       ],
@@ -215,7 +221,7 @@
       "id": "e9bdd24b-d0bc-478a-9543-87819a64c0ce"
     },
     {
-      "englishText": "Please speak a bit slower.",
+      "englishText": "Could you please speak a bit slower?",
       "farsiText": "میشه لطفا یه ذره آروم‌تر حرف بزنی؟",
       "finglish": "mishe lotfan ye zarre arumtar harf bezani?",
       "literalGloss": "it-becomes please a bit slower word you-hit?",
@@ -319,7 +325,7 @@
     {
       "englishText": "My phone screen broke yesterday.",
       "farsiText": "صفحه گوشیم دیروز شکست.",
-      "finglish": "safhe ye gushim diruz shekast.",
+      "finglish": "safheye gushim diruz shekast.",
       "literalGloss": "screen-of phone-my yesterday broke.",
       "difficulty": 2,
       "situation": "complaining about something not working",
@@ -1186,7 +1192,7 @@
     {
       "englishText": "Please don't go to any trouble for me, a simple coffee will be more than enough!",
       "farsiText": "تورو خدا زحمت نکشین، یه قهوه ساده هم بذارین جلوم کاملا کافیه!",
-      "finglish": "to ro khoda zahmat nakeshin, ye ghahve ye sade ham bezarin jolom kamelan kafiye!",
+      "finglish": "to ro khoda zahmat nakeshin, ye ghahveye sade ham bezarin jolom kamelan kafiye!",
       "literalGloss": "you [obj] God trouble not-pull, a coffee-of simple also put in-front-of-me completely enough-is!",
       "difficulty": 5,
       "situation": "ordering food or coffee",
@@ -2177,9 +2183,9 @@
     },
     {
       "englishText": "Last week I bought a jacket online, but because the size was too big, I had to return it.",
-      "farsiText": "هفته پیش یه کاپشن اینترنتی خریدم، ولی چون سایزش خیلی بزرگ بود، مجبور شدم پسش بدم.",
-      "finglish": "hafteye pish ye kâpshen interneti kharidim vali chun sâyazesh kheyli bozorg bud majbur shodam pasesh bedam",
-      "literalGloss": "week ago a jacket internet I-bought but because size-its very big was forced I-became back-it I-give",
+      "farsiText": "هفته پیش اینترنتی یه کاپشن خریدم، ولی چون سایزش خیلی بزرگ بود، مجبور شدم پسش بدم.",
+      "finglish": "hafteye pish interneti ye kâpshen kharidam, vali chun sâyzesh kheyli bozorg bud, majbur shodam pasesh bedam",
+      "literalGloss": "week ago online a jacket I-bought but because size-its very big was forced I-became back-it I-give",
       "difficulty": 4,
       "situation": "talking about the past (what you did)",
       "grammarTags": [
@@ -2191,7 +2197,7 @@
       "breakdown": [
         {
           "fa": "هفته",
-          "translit": "hafteye",
+          "translit": "hafte",
           "en": "week",
           "pos": "noun"
         },
@@ -2199,13 +2205,19 @@
           "fa": "پیش",
           "translit": "pish",
           "en": "ago",
-          "pos": "noun"
+          "pos": "adverb"
+        },
+        {
+          "fa": "اینترنتی",
+          "translit": "interneti",
+          "en": "online",
+          "pos": "adverb"
         },
         {
           "fa": "یه",
           "translit": "ye",
           "en": "a",
-          "pos": "number"
+          "pos": "determiner"
         },
         {
           "fa": "کاپشن",
@@ -2214,14 +2226,8 @@
           "pos": "noun"
         },
         {
-          "fa": "اینترنتی",
-          "translit": "interneti",
-          "en": "internet",
-          "pos": "noun"
-        },
-        {
           "fa": "خریدم",
-          "translit": "kharidim",
+          "translit": "kharidam",
           "en": "I bought",
           "pos": "verb"
         },
@@ -2239,9 +2245,9 @@
         },
         {
           "fa": "سایزش",
-          "translit": "sâyazesh",
+          "translit": "sâyzesh",
           "en": "its size",
-          "pos": "attached pronoun"
+          "pos": "noun"
         },
         {
           "fa": "خیلی",
@@ -2253,7 +2259,7 @@
           "fa": "بزرگ",
           "translit": "bozorg",
           "en": "big",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "بود",
@@ -2265,7 +2271,7 @@
           "fa": "مجبور",
           "translit": "majbur",
           "en": "forced",
-          "pos": "noun"
+          "pos": "adjective"
         },
         {
           "fa": "شدم",
@@ -2277,7 +2283,7 @@
           "fa": "پسش",
           "translit": "pasesh",
           "en": "back it",
-          "pos": "verb"
+          "pos": "adverb"
         },
         {
           "fa": "بدم",
@@ -2836,9 +2842,9 @@
     },
     {
       "englishText": "Are you free this weekend to meet up?",
-      "farsiText": "این آخر هفته واسه دیدن وقت داری؟",
-      "finglish": "in âkhare hafte vâse didan vaght dâri?",
-      "literalGloss": "this end of week for seeing time you-have?",
+      "farsiText": "این آخر هفته وقت داری همدیگه رو ببینیم؟",
+      "finglish": "in âkhare hafte vaght dâri hamdige ro bebinim?",
+      "literalGloss": "this end of week time you-have each-other [object] we-see?",
       "difficulty": 2,
       "situation": "making plans with a friend",
       "grammarTags": [
@@ -2851,7 +2857,7 @@
           "fa": "این",
           "translit": "in",
           "en": "this",
-          "pos": "pronoun"
+          "pos": "determiner"
         },
         {
           "fa": "آخر هفته",
@@ -2860,26 +2866,31 @@
           "pos": "noun"
         },
         {
-          "fa": "واسه",
-          "translit": "vâse",
-          "en": "for",
-          "pos": "preposition"
-        },
-        {
-          "fa": "دیدن",
-          "translit": "didan",
-          "en": "meeting up",
-          "pos": "noun"
-        },
-        {
           "fa": "وقت داری",
-          "translit": "vaqt dâri",
+          "translit": "vaght dâri",
           "en": "do you have time",
           "pos": "compound verb"
+        },
+        {
+          "fa": "همدیگه",
+          "translit": "hamdige",
+          "en": "each other",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "[object]",
+          "pos": "particle"
+        },
+        {
+          "fa": "ببینیم",
+          "translit": "bebinim",
+          "en": "we see",
+          "pos": "verb"
         }
       ],
       "alternatives": [
-        "این آخر هفته وقت داری همدیگرو ببینیم؟",
         "این آخر هفته واسه قرار وقت داری؟"
       ],
       "breakdownSource": "model"
@@ -2940,7 +2951,7 @@
     {
       "englishText": "Can you give me a small discount on this?",
       "farsiText": "روی این بهم یه تخفیف کوچیک میدی؟",
-      "finglish": "ruye in behem ye takhfif e kuchik midi?",
+      "finglish": "ruye in behem ye takhfife kuchik midi?",
       "literalGloss": "on this to-me a discount small you-give?",
       "difficulty": 2,
       "situation": "negotiating or asking for a favour",
@@ -2996,7 +3007,7 @@
     {
       "englishText": "Could you lend me your charger for an hour?",
       "farsiText": "شارژرت رو یک ساعت بهم قرض میدی؟",
-      "finglish": "shârjr et ro yek sâ'at behem gharz midi?",
+      "finglish": "shârjret ro yek sâ'at behem gharz midi?",
       "literalGloss": "your-charger OBJ one hour to-me lend you-give?",
       "difficulty": 2,
       "situation": "negotiating or asking for a favour",
@@ -3263,7 +3274,7 @@
     {
       "englishText": "Although the price is high, the quality of this service is excellent.",
       "farsiText": "با اینکه قیمتش بالاست، ولی کیفیت این خدمات واقعا عالیه.",
-      "finglish": "bâ inke gheymat esh bâlâst, vali keyfiyate in khadamât vâghe'an âliye",
+      "finglish": "bâ inke gheymatesh bâlâst, vali keyfiyate in khadamât vâghe'an âliye",
       "literalGloss": "with this-that its-price high-is, but quality of this services really excellent-is",
       "difficulty": 3,
       "situation": "expressing an opinion",
@@ -3402,7 +3413,7 @@
     {
       "englishText": "Whenever you finish your class, text me so I can come get you.",
       "farsiText": "هر وقت کلاست تموم شد، بهم پیام بده تا بیام دنبالت.",
-      "finglish": "har vaght kelâs et tamum shod, behem payâm bede tâ biyâm donbâlet",
+      "finglish": "har vaght kelâset tamum shod, behem payâm bede tâ biyâm donbâlet",
       "literalGloss": "every time your-class finished became, to-me message give so I-come after-you",
       "difficulty": 3,
       "situation": "making plans with a friend",
@@ -3819,7 +3830,7 @@
     {
       "englishText": "I know you are very busy, but if it is not too much trouble, could you take a look at my CV?",
       "farsiText": "می‌دونم خیلی سرتون شلوغه، اما اگه زحمتی نیست، میشه یه نگاهی به رزومه من بندازین؟",
-      "finglish": "midunam kheyli sar etun shologhe, ammâ age zahmati nist, mishe ye negâhi be rozomeye man bendâzin?",
+      "finglish": "midunam kheyli saretun shologhe, ammâ age zahmati nist, mishe ye negâhi be rozomeye man bendâzin?",
       "literalGloss": "I-know very your-head busy-is, but if trouble-a is-not, becomes a look to resume of me you-throw?",
       "difficulty": 5,
       "situation": "negotiating or asking for a favour",
@@ -3915,46 +3926,6 @@
         "می‌دونم خیلی گرفتاری دارین، اما اگه امکانش هست یه نگاهی به رزومه من بندازین."
       ],
       "breakdownSource": "model"
-    },
-    {
-      "englishText": "Today the weather is super hot.",
-      "farsiText": "امروز هوا خیلی داغه.",
-      "finglish": "emruz havâ kheyli dâghe.",
-      "literalGloss": "today weather very hot-is",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial"
-      ],
-      "breakdown": [
-        {
-          "fa": "امروز",
-          "translit": "emruz",
-          "en": "today",
-          "pos": "adverb"
-        },
-        {
-          "fa": "هوا",
-          "translit": "havâ",
-          "en": "weather",
-          "pos": "noun"
-        },
-        {
-          "fa": "خیلی",
-          "translit": "kheyli",
-          "en": "very",
-          "pos": "adverb"
-        },
-        {
-          "fa": "داغه",
-          "translit": "dâghe",
-          "en": "hot is",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "d81a6595-c6b6-44f5-8735-ee63e4ff90c8"
     },
     {
       "englishText": "It was raining heavily yesterday morning.",
@@ -4751,9 +4722,9 @@
     },
     {
       "englishText": "I'm buying some fruit on my way back home.",
-      "farsiText": "موقع برگشتن دارم یکم میوه می‌خرم.",
-      "finglish": "moghe-ye bargashtan dâram yekam mive mikharam.",
-      "literalGloss": "time-of returning I-am a-little fruit buying",
+      "farsiText": "سر راه دارم یه کم میوه می‌خرم.",
+      "finglish": "sare râh dâram ye kam mive mikharam.",
+      "literalGloss": "on-the-way I-am a-little fruit buying",
       "difficulty": 2,
       "situation": "phone call with family",
       "grammarTags": [
@@ -4762,16 +4733,10 @@
       ],
       "breakdown": [
         {
-          "fa": "موقع",
-          "translit": "moghe-ye",
-          "en": "time",
-          "pos": "noun"
-        },
-        {
-          "fa": "برگشتن",
-          "translit": "bargashtan",
-          "en": "returning",
-          "pos": "noun"
+          "fa": "سر راه",
+          "translit": "sare râh",
+          "en": "on the way",
+          "pos": "preposition"
         },
         {
           "fa": "دارم",
@@ -4780,8 +4745,8 @@
           "pos": "verb"
         },
         {
-          "fa": "یکم",
-          "translit": "yekam",
+          "fa": "یه کم",
+          "translit": "ye kam",
           "en": "a little",
           "pos": "adverb"
         },
@@ -9543,7 +9508,7 @@
       "id": "b07d8bae-4957-4c2c-b8ba-477eb916ff25"
     },
     {
-      "englishText": "I don't think so.",
+      "englishText": "I don't think that's right.",
       "farsiText": "من این‌جوری فکر نمی‌کنم.",
       "finglish": "man injuri fekr nemikonam",
       "literalGloss": "I this-way thought not-I-do",
@@ -9574,7 +9539,9 @@
         }
       ],
       "breakdownSource": "derived",
-      "alternatives": [],
+      "alternatives": [
+        "فکر نکنم."
+      ],
       "id": "e97370e6-6a59-424e-bcaf-95321c597db5"
     },
     {
@@ -13072,7 +13039,7 @@
     {
       "englishText": "I am very tired.",
       "farsiText": "خیلی خسته‌ام.",
-      "finglish": "kheyli khaste am",
+      "finglish": "kheyli khaste-am",
       "literalGloss": "very tired-I-am",
       "difficulty": 1,
       "situation": "describing how you feel",
@@ -13175,7 +13142,7 @@
     {
       "englishText": "We are going to Shiraz next week.",
       "farsiText": "هفته دیگه می‌ریم شیراز.",
-      "finglish": "hafte ye dige mirim shirâz",
+      "finglish": "hafteye dige mirim shirâz",
       "literalGloss": "week other we-go Shiraz",
       "difficulty": 2,
       "situation": "talking about future plans",
@@ -13214,7 +13181,7 @@
     {
       "englishText": "Are you buying a new car tomorrow?",
       "farsiText": "فردا ماشین جدید می‌خری؟",
-      "finglish": "fardâ mâshin e jadid mikhari?",
+      "finglish": "fardâ mâshine jadid mikhari?",
       "literalGloss": "tomorrow car of new you-buy?",
       "difficulty": 2,
       "situation": "talking about future plans",
@@ -13302,7 +13269,7 @@
     {
       "englishText": "Go straight until you reach the red light, then turn right.",
       "farsiText": "مستقیم برو تا برسی به چراغ قرمز، بعد بپیچ راست.",
-      "finglish": "mostaghim boro tâ berasi be cherâgh e ghermez, ba'd bepich râst",
+      "finglish": "mostaghim boro tâ berasi be cherâghe ghermez, ba'd bepich râst",
       "literalGloss": "straight go until you-reach to light of red, then turn right",
       "difficulty": 3,
       "situation": "giving or following directions",
@@ -14050,7 +14017,7 @@
     {
       "englishText": "When I heard that they accepted my article, I was so excited that I couldn't sleep all night.",
       "farsiText": "وقتی شنیدم مقاله‌ام رو قبول کردن، اون‌قدر هیجان‌زده بودم که کل شب نتونستم بخوابم.",
-      "finglish": "vaghti shenidam maghâle am ro ghabul kardan, unghadr hayajân zade budam ke kole shab natonestam bekhâbam",
+      "finglish": "vaghti shenidam maghâle-am ro ghabul kardan, unghadr hayajân zade budam ke kole shab natonestam bekhâbam",
       "literalGloss": "when I-heard article-my [ra] acceptance they-did, that-much excited I-was that whole of night I-could-not I-sleep",
       "difficulty": 4,
       "situation": "describing how you feel",
@@ -14507,7 +14474,7 @@
     {
       "englishText": "How is your new university?",
       "farsiText": "دانشگاه جدیدت چطوره؟",
-      "finglish": "dâneshgâh e jadidet chetore",
+      "finglish": "dâneshgâhe jadidet chetore",
       "literalGloss": "university of your-new how-is",
       "difficulty": 1,
       "situation": "talking about work or study",
@@ -14540,7 +14507,7 @@
     {
       "englishText": "I didn't pass my math exam yesterday.",
       "farsiText": "دیروز امتحان ریاضی‌ام رو پاس نکردم.",
-      "finglish": "diruz emtehân e riâzi am ro pâs nakardam",
+      "finglish": "diruz emtehâne riâzi-am ro pâs nakardam",
       "literalGloss": "yesterday exam of my-math [object-marker] pass I-did-not-do",
       "difficulty": 2,
       "situation": "talking about work or study",
@@ -14695,7 +14662,7 @@
     {
       "englishText": "I bought a small gift for your sister.",
       "farsiText": "واسه خواهرت یه کادوی کوچیک خریدم.",
-      "finglish": "vâse khâharet ye kâdoy e kuchik kharidam",
+      "finglish": "vâse khâharet ye kâdoye kuchik kharidam",
       "literalGloss": "for your-sister one gift of small I-bought",
       "difficulty": 2,
       "situation": "compliments and thanking (taarof)",
@@ -14747,7 +14714,7 @@
     {
       "englishText": "My brother changed his job last week.",
       "farsiText": "برادرم هفته‌ی پیش شغلش رو عوض کرد.",
-      "finglish": "barâdaram hafte ye pish shoghlesh ro avaz kard",
+      "finglish": "barâdaram hafteye pish shoghlesh ro avaz kard",
       "literalGloss": "my-brother week of last his-job [object-marker] change did",
       "difficulty": 2,
       "situation": "talking about work or study",
@@ -15221,7 +15188,7 @@
     {
       "englishText": "If my exam results are good, my father has promised to buy me a new laptop.",
       "farsiText": "اگه نتیجه‌ی امتحانم خوب بشه، بابام قول داده که واسم یه لپ‌تاپ جدید بخره.",
-      "finglish": "age natije ye emtehânam khub beshe bâbâm ghol dâde ke vâsam ye lap tâp e jadid bakhare",
+      "finglish": "age natijeye emtehânam khub beshe bâbâm ghol dâde ke vâsam ye lap tâpe jadid bakhare",
       "literalGloss": "if result of my-exam good becomes my-dad promise has-given that for-me one laptop of new buys",
       "difficulty": 4,
       "situation": "talking about work or study",
@@ -15472,7 +15439,7 @@
     {
       "englishText": "I think if we discuss this project with the boss tomorrow, we might find a better solution.",
       "farsiText": "فکر کنم اگه فردا در مورد این پروژه با رئیس صحبت کنیم، شاید یه راه حل بهتر پیدا کنیم.",
-      "finglish": "fekr konam age fardâ dar mored e in proozhe bâ ra'is sohbat konim shâyad ye râh e hal e behtar peydâ konim",
+      "finglish": "fekr konam age fardâ dar morede in proozhe bâ ra'is sohbat konim shâyad ye râhe hale behtar peydâ konim",
       "literalGloss": "thought I-do if tomorrow about of this project with boss talk we-do maybe one way of solution of better find we-do",
       "difficulty": 4,
       "situation": "expressing an opinion",
@@ -15677,7 +15644,7 @@
     {
       "englishText": "If you hadn't put so much effort into teaching me, I would have definitely failed this semester's university exams.",
       "farsiText": "اگه واسه درس دادن به من این‌همه زحمت نکشیده بودی، حتما توی امتحانای دانشگاه این ترم می‌افتادم.",
-      "finglish": "age vâse dars dâdan be man in hame zahmat nakeshide budi hatman tuye emtehânây e dâneshgâh e in term mioftâdam",
+      "finglish": "age vâse dars dâdan be man in hame zahmat nakeshide budi hatman tuye emtehânâye dâneshgâhe in term mioftâdam",
       "literalGloss": "if for lesson giving to me this-much trouble you-had-not-pulled definitely in exams of university of this term I-was-falling",
       "difficulty": 5,
       "situation": "talking about work or study",
@@ -16970,7 +16937,7 @@
     {
       "englishText": "I'm really tired today.",
       "farsiText": "امروز خیلی خسته‌ام.",
-      "finglish": "emruz kheyli khasteam.",
+      "finglish": "emruz kheyli khaste-am.",
       "literalGloss": "today very tired-I-am.",
       "difficulty": 1,
       "situation": "describing how you feel",
@@ -26494,7 +26461,7 @@
     {
       "englishText": "A black coffee, please.",
       "farsiText": "یه قهوه تلخ لطفا.",
-      "finglish": "ye ghahve ye talkh lotfan",
+      "finglish": "ye ghahveye talkh lotfan",
       "literalGloss": "one coffee-of black please",
       "difficulty": 1,
       "situation": "ordering food or coffee",
@@ -26532,7 +26499,7 @@
     {
       "englishText": "Do you have fresh juice?",
       "farsiText": "آب‌میوه تازه دارین؟",
-      "finglish": "âbmive ye tâze dârin?",
+      "finglish": "âbmiveye tâze dârin?",
       "literalGloss": "fruit-water-of fresh you-have?",
       "difficulty": 1,
       "situation": "ordering food or coffee",
@@ -26682,7 +26649,7 @@
     {
       "englishText": "Where is the nearest metro station?",
       "farsiText": "نزدیک‌ترین ایستگاه مترو کجاس؟",
-      "finglish": "nazdiktarin istgâh e metro kojâs?",
+      "finglish": "nazdiktarin istgâhe metro kojâs?",
       "literalGloss": "nearest station-of metro where-is?",
       "difficulty": 1,
       "situation": "taxi, metro, and travel",
@@ -27015,7 +26982,7 @@
     {
       "englishText": "Is Dad still at work?",
       "farsiText": "بابا هنوز سر کاره؟",
-      "finglish": "bâbâ hanoz sar e kâre?",
+      "finglish": "bâbâ hanoz sare kâre?",
       "literalGloss": "dad still head-of work-is?",
       "difficulty": 1,
       "situation": "phone call with family",
@@ -32863,9 +32830,9 @@
           "pos": "preposition"
         },
         {
-          "fa": "مادرم",
-          "translit": "mâdaram",
-          "en": "my mother",
+          "fa": "مامانم",
+          "translit": "mâmânam",
+          "en": "my mum",
           "pos": "attached pronoun"
         },
         {
@@ -32915,18 +32882,43 @@
       "id": "0c61e098-8a4a-46c3-9d8f-895149e0f330"
     },
     {
-      "englishText": "We don't know the spring weather.",
-      "farsiText": "ما هوای بهار رو نمی‌دونیم.",
-      "finglish": "mâ havâye bahâr ro nemidunim",
-      "literalGloss": "we weather of spring [object marker] do-not-know",
+      "englishText": "There's no telling with spring weather.",
+      "farsiText": "هوای بهار معلوم نیست.",
+      "finglish": "havâye bahâr ma'lum nist.",
+      "literalGloss": "weather of spring clear is-not",
       "difficulty": 1,
       "situation": "small talk about weather or traffic",
       "grammarTags": [
         "colloquial",
-        "ra-marker",
         "ezafe"
       ],
-      "id": "0047c1cd-546a-4fff-aa97-40bb3b4d9223"
+      "id": "0047c1cd-546a-4fff-aa97-40bb3b4d9223",
+      "breakdown": [
+        {
+          "fa": "هوای",
+          "translit": "havâye",
+          "en": "weather of",
+          "pos": "noun"
+        },
+        {
+          "fa": "بهار",
+          "translit": "bahâr",
+          "en": "spring",
+          "pos": "noun"
+        },
+        {
+          "fa": "معلوم",
+          "translit": "ma'lum",
+          "en": "clear",
+          "pos": "adjective"
+        },
+        {
+          "fa": "نیست",
+          "translit": "nist",
+          "en": "is not",
+          "pos": "verb"
+        }
+      ]
     },
     {
       "englishText": "My sister sings well.",
@@ -34391,7 +34383,7 @@
     {
       "englishText": "I sleep at ten o'clock.",
       "farsiText": "من ساعت ده می‌خوابم.",
-      "finglish": "man sâ'at e dah mikhâbam.",
+      "finglish": "man sâ'ate dah mikhâbam.",
       "literalGloss": "I hour of ten I-sleep.",
       "difficulty": 1,
       "situation": "talking about work or study",
@@ -34451,7 +34443,7 @@
     {
       "englishText": "Why do you search for your book?",
       "farsiText": "چرا دنبال کتابت می‌گردی؟",
-      "finglish": "cherâ donbâl e ketâbet migardi?",
+      "finglish": "cherâ donbâle ketâbet migardi?",
       "literalGloss": "why after book-your you-search?",
       "difficulty": 1,
       "situation": "talking about work or study",
@@ -34587,7 +34579,7 @@
     {
       "englishText": "Why don't you come to work?",
       "farsiText": "چرا سر کار نمی‌آی؟",
-      "finglish": "cherâ sar e kâr nemiây?",
+      "finglish": "cherâ sare kâr nemiây?",
       "literalGloss": "why head of work you-not-come?",
       "difficulty": 1,
       "situation": "talking about work or study",
@@ -34893,7 +34885,7 @@
     {
       "englishText": "They are looking for a job.",
       "farsiText": "اونا دنبال کار می‌گردن.",
-      "finglish": "unâ donbâl e kâr migardan.",
+      "finglish": "unâ donbâle kâr migardan.",
       "literalGloss": "they after of work they-look.",
       "difficulty": 1,
       "situation": "talking about work or study",
@@ -38148,7 +38140,7 @@
       ],
       "breakdown": [
         {
-          "fa": "قبلاً",
+          "fa": "قبلا",
           "translit": "ghablan",
           "en": "before",
           "pos": "adverb"
@@ -38978,7 +38970,7 @@
       ],
       "breakdown": [
         {
-          "fa": "اصلاً",
+          "fa": "اصلا",
           "translit": "aslan",
           "en": "at all",
           "pos": "adverb"
@@ -39295,7 +39287,7 @@
       ],
       "breakdown": [
         {
-          "fa": "لطفاً",
+          "fa": "لطفا",
           "translit": "lotfan",
           "en": "please",
           "pos": "adverb"
@@ -41003,12 +40995,12 @@
     },
     {
       "id": "fcf22f25-7d0b-4f1d-9c71-820d6cf6d721",
-      "englishText": "Where do you work?",
+      "englishText": "Where do you work? (formal)",
       "farsiText": "شما کجا کار می‌کنید؟",
       "finglish": "shomâ kojâ kâr mikonid?",
       "literalGloss": "you where you work",
       "difficulty": 2,
-      "situation": "making plans with a friend",
+      "situation": "talking about work or study",
       "grammarTags": [
         "formality",
         "verb-agreement"
@@ -41392,12 +41384,12 @@
     },
     {
       "id": "c8a1b615-5680-423e-894a-4429613acbdc",
-      "englishText": "Please speak a bit slower.",
+      "englishText": "Please speak a bit slower. (formal)",
       "farsiText": "لطفا یکم آروم‌تر صحبت کنید.",
       "finglish": "lotfan yekam ârumtar sohbat konid.",
       "literalGloss": "please a bit slower speak",
       "difficulty": 2,
-      "situation": "expressing an opinion",
+      "situation": "asking someone to repeat or clarify",
       "grammarTags": [
         "formality"
       ],
@@ -41786,7 +41778,7 @@
     },
     {
       "id": "f4b7ecc2-76d1-4e84-a3f2-54ce8ae5ad3b",
-      "englishText": "Do you know this street?",
+      "englishText": "Do you know this street? (formal)",
       "farsiText": "شما این خیابون رو بلدید؟",
       "finglish": "shomâ in khiyâbun ro baladid?",
       "literalGloss": "you this street [object] you know",
@@ -42475,12 +42467,12 @@
     },
     {
       "id": "54212342-27d9-45f7-bfb7-b6398fd2b5f2",
-      "englishText": "Did you sleep well?",
+      "englishText": "Did you sleep well? (formal)",
       "farsiText": "شما خوب خوابیدید؟",
       "finglish": "shomâ khub khâbidid?",
       "literalGloss": "you well you slept",
       "difficulty": 2,
-      "situation": "compliments and thanking (taarof)",
+      "situation": "talking about the past (what you did)",
       "grammarTags": [
         "formality",
         "verb-agreement"
@@ -47354,7 +47346,9 @@
           "pos": "verb"
         }
       ],
-      "alternatives": [],
+      "alternatives": [
+        "زیاد خوردم."
+      ],
       "source": "handwritten"
     },
     {
@@ -47816,6 +47810,12 @@
           "translit": "ham",
           "en": "either",
           "pos": "particle"
+        },
+        {
+          "fa": "نیست",
+          "translit": "nist",
+          "en": "is not",
+          "pos": "verb"
         }
       ],
       "alternatives": [],
@@ -49750,7 +49750,9 @@
           "pos": "adjective"
         }
       ],
-      "alternatives": [],
+      "alternatives": [
+        "منم موافقم."
+      ],
       "source": "handwritten"
     },
     {
@@ -50273,12 +50275,12 @@
     },
     {
       "id": "2299f8d8-38e0-46f6-900d-5878ab0c376f",
-      "englishText": "Nothing much.",
+      "englishText": "Nothing much. (answering “what's new?”)",
       "farsiText": "سلامتی.",
       "finglish": "salâmati.",
-      "literalGloss": "health — nothing much",
+      "literalGloss": "health",
       "difficulty": 1,
-      "situation": "expressing an opinion",
+      "situation": "small talk about weather or traffic",
       "grammarTags": [
         "colloquial"
       ],
@@ -50286,7 +50288,7 @@
         {
           "fa": "سلامتی",
           "translit": "salâmati",
-          "en": "health — nothing much",
+          "en": "nothing much",
           "pos": "expression"
         }
       ],
@@ -50617,10 +50619,10 @@
     },
     {
       "id": "57ce3c50-8cda-42ed-8901-1e734ce588b1",
-      "englishText": "Certainly, of course.",
+      "englishText": "Will do. (accepting a request)",
       "farsiText": "چشم.",
       "finglish": "cheshm.",
-      "literalGloss": "eye — certainly",
+      "literalGloss": "eye",
       "difficulty": 1,
       "situation": "negotiating or asking for a favour",
       "grammarTags": [
@@ -50630,7 +50632,7 @@
         {
           "fa": "چشم",
           "translit": "cheshm",
-          "en": "eye — certainly",
+          "en": "will do",
           "pos": "expression"
         }
       ],
@@ -50799,7 +50801,7 @@
     },
     {
       "id": "c19b1a39-2b8a-489f-96cc-9b4392676d2c",
-      "englishText": "I agree with you.",
+      "englishText": "I agree too.",
       "farsiText": "منم موافقم.",
       "finglish": "manam movâfegham.",
       "literalGloss": "me too I agree",
@@ -50822,7 +50824,9 @@
           "pos": "adjective"
         }
       ],
-      "alternatives": [],
+      "alternatives": [
+        "باهات موافقم."
+      ],
       "source": "handwritten"
     },
     {
@@ -50830,7 +50834,7 @@
       "englishText": "Really?",
       "farsiText": "جدی؟",
       "finglish": "jedi?",
-      "literalGloss": "serious — really",
+      "literalGloss": "serious",
       "difficulty": 1,
       "situation": "asking someone to repeat or clarify",
       "grammarTags": [
@@ -50839,9 +50843,9 @@
       "breakdown": [
         {
           "fa": "جدی",
-          "translit": "jedi",
-          "en": "serious — really",
-          "pos": "adjective"
+          "translit": "jeddi",
+          "en": "really?",
+          "pos": "expression"
         }
       ],
       "alternatives": [],
@@ -50852,7 +50856,7 @@
       "englishText": "No way!",
       "farsiText": "نه بابا!",
       "finglish": "na bâbâ!",
-      "literalGloss": "no dad — come on",
+      "literalGloss": "no dad",
       "difficulty": 1,
       "situation": "expressing an opinion",
       "grammarTags": [
@@ -50860,15 +50864,9 @@
       ],
       "breakdown": [
         {
-          "fa": "نه",
-          "translit": "na",
-          "en": "no",
-          "pos": "particle"
-        },
-        {
-          "fa": "بابا",
-          "translit": "bâbâ",
-          "en": "dad — come on",
+          "fa": "نه بابا",
+          "translit": "na bâbâ",
+          "en": "no way",
           "pos": "expression"
         }
       ],
@@ -51078,7 +51076,9 @@
           "pos": "compound verb"
         }
       ],
-      "alternatives": [],
+      "alternatives": [
+        "من این‌جوری فکر نمی‌کنم."
+      ],
       "source": "handwritten"
     },
     {
@@ -51120,7 +51120,7 @@
       "englishText": "To be honest, I'm tired.",
       "farsiText": "راستش خسته‌ام.",
       "finglish": "râstesh khastam.",
-      "literalGloss": "its truth — honestly I am tired",
+      "literalGloss": "its truth I am tired",
       "difficulty": 1,
       "situation": "expressing an opinion",
       "grammarTags": [
@@ -51130,7 +51130,7 @@
         {
           "fa": "راستش",
           "translit": "râstesh",
-          "en": "its truth — honestly",
+          "en": "to be honest",
           "pos": "expression"
         },
         {
@@ -53625,7 +53625,7 @@
     },
     {
       "id": "c0e6d4ed-d46f-467e-a264-ca8fbfb45e78",
-      "englishText": "I ate too much.",
+      "englishText": "I ate a lot.",
       "farsiText": "زیاد خوردم.",
       "finglish": "ziyâd khordam.",
       "literalGloss": "too much I ate",
@@ -53648,7 +53648,9 @@
           "pos": "verb"
         }
       ],
-      "alternatives": [],
+      "alternatives": [
+        "زیادی خوردم."
+      ],
       "source": "handwritten"
     },
     {

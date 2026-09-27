@@ -322,7 +322,7 @@ export function targetMs(sentence, direction) {
  * Returns what `undoAttempt` needs to put everything back: the review as it was
  * before (null for a card never rated until now) and the attempt written.
  */
-export async function recordAttempt({ card, rating, typedAnswer, msToReveal = null }) {
+export async function recordAttempt({ card, rating, msToReveal = null }) {
   const now = Date.now();
   const quality = SM2.RATING_QUALITY[rating];
   const advanced = SM2.next(card.review, quality);
@@ -336,14 +336,15 @@ export async function recordAttempt({ card, rating, typedAnswer, msToReveal = nu
     dueDate: SM2.dueDate(advanced, now),
   };
 
-  const mode = typedAnswer ? 'typed' : 'speakSelfRate';
   const attempt = {
     id: crypto.randomUUID(),
     sentenceId: card.sentence.id,
     direction: card.direction,
-    mode,
+    // Kept on every attempt although there is now only one mode: older
+    // attempts in a backup carry 'typed', and the field is what tells them
+    // apart if a graded mode ever returns.
+    mode: 'speakSelfRate',
     selfRating: rating,
-    typedAnswer: typedAnswer || null,
     // Speed is the gap the app previously could not see at all.
     msToReveal,
     targetMs: targetMs(card.sentence, card.direction),
@@ -390,37 +391,4 @@ export async function bumpTagStats(tags, failed, delta = 1) {
     existing.lastSeen = Date.now();
     await db.put(db.STORE.tagStats, existing);
   }
-}
-
-/**
- * Does a typed answer match the reference, or one of the listed alternatives?
- *
- * Deliberately forgiving about what a phone keyboard varies and strict about
- * everything else. Arabic ي/ك for Persian ی/ک, short-vowel marks, punctuation,
- * and whether می‌ was joined with a half-space, a space or nothing are all
- * noise. A different word is not. The verdict is still yours to give: this
- * only says whether what you wrote is one of the answers on the card.
- */
-export function matchesAnswer(typed, sentence, direction) {
-  const candidates = direction === 'enToFa'
-    ? [sentence.farsiText, ...(sentence.alternatives ?? [])]
-    : [sentence.englishText];
-  const mine = normaliseAnswer(typed, direction);
-  if (!mine) return false;
-  return candidates.some((c) => normaliseAnswer(c, direction) === mine);
-}
-
-export function normaliseAnswer(value, direction) {
-  let s = String(value ?? '').toLowerCase();
-  if (direction === 'enToFa') {
-    s = s
-      .replace(/ي/g, 'ی').replace(/ى/g, 'ی').replace(/ك/g, 'ک')
-      .replace(/[\u064B-\u0652\u0670]/g, '')       // harakat
-      .replace(/[\u200C\u200D\s]+/g, '');           // ZWNJ, ZWJ, spaces
-  } else {
-    // Apostrophes go entirely: "dont" and "don't" are the same answer typed
-    // on a phone.
-    s = s.replace(/['’‘]/g, '').replace(/\s+/g, ' ');
-  }
-  return s.replace(/[.,!?؟،؛:;«»"“”()\-–—]/g, '').trim();
 }

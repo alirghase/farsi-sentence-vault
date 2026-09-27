@@ -17,7 +17,6 @@ export const STRINGS = {
   // Today
   'today.due': 'مرور',
   'today.new': 'جدید',
-  'today.target': 'هدف امروز',
   'today.held': 'جمله‌ها',
   'today.level': 'سطح',
   'today.streak': 'پیاپی',
@@ -32,8 +31,6 @@ export const STRINGS = {
   // Practice
   'card.exit': 'خروج',
   'card.reveal': 'جواب',
-  'card.type': 'تایپ',
-  'card.play': 'پخش',
   'card.alsoCorrect': 'این هم درسته',
   'card.unit': 'این کلمه‌ها با هم یک واحدن',
   'card.done': 'تموم شد',
@@ -57,8 +54,6 @@ export const STRINGS = {
   'settings.practice': 'تمرین',
   'settings.audio': 'صدا',
   'settings.level': 'سطح',
-  'settings.dailyTarget': 'هدف روزانه',
-  'settings.sound': 'صدا موقع رد شدن',
   'settings.currentLevel': 'سطح فعلی',
   'settings.backup': 'پشتیبان',
 
@@ -67,7 +62,6 @@ export const STRINGS = {
   'settings.newPerDayHint': 'هر کارت جدید هفته‌ها مرور می‌سازه، پس این بیشتر بارِ فرداست تا امروز. فقط وقتی ببرش بالا که مرورها دارن تموم می‌شن.',
   'settings.perRound': 'کارت در هر دور',
   'settings.perRoundHint': 'هر دور یعنی یه بار زدنِ شروع. وقتی تموم شد می‌تونی همون‌جا دوباره بری.',
-  'settings.dailyTargetHint': 'چند کارت در روز یعنی تموم. هدفی که بیشتر روزها بهش می‌رسی عادت می‌سازه؛ هدفی که ازش جا می‌مونی عادت رو خراب می‌کنه.',
   'settings.levelHint': 'کارت جدید فقط از این سطح میاد؛ مرور از همه‌جا. معمولاً وقتی از دروازهٔ پیشرفت رد بشی خودش جلو می‌ره — دستی عوضش کن اگه نمی‌خوای صبر کنی، یا می‌خوای برگردی عقب.',
 
   // Settings — audio
@@ -87,16 +81,10 @@ export const STRINGS = {
   'settings.scheduled': 'کارت زمان‌بندی‌شده',
   'settings.reviews': 'مرور',
 
-  // Settings — keyboard and privacy
-  'settings.keyboard': 'صفحه‌کلید',
-  'settings.keyboardHint': 'فاصله جواب · ۱ غلط · ۲ درست · T تایپ · P پخش · U برگرد · Esc خروج. موقع تایپ، Enter جواب رو نشون می‌ده.',
+  // Settings — privacy
   'settings.privacy': 'چی از این دستگاه بیرون می‌ره',
   'settings.privacyHint': 'هیچی. نه سروری هست نه حسابی. هر جمله، هر نمره و کل برنامهٔ مرور توی همین مرورگر می‌مونه، و پشتیبان فقط جایی می‌ره که خودت می‌فرستیش.',
   'settings.levelNow': 'کارت‌های جدید حالا از این سطح میان:',
-
-  // Card
-  'card.typeFarsi': 'بنویس…',
-  'card.typeEnglish': 'انگلیسی‌شو بنویس…',
 
   // Today and progress
   'today.unlock': 'باز کردن',

@@ -43,6 +43,8 @@ jobs:
         run: node --test tools/test_js.mjs
       - name: Check JS and Python tag vocabularies match
         run: python3 tools/check_mirror.py
+      - name: Check the deck for card-level mistakes
+        run: python3 tools/check_deck.py --quiet
       - name: Check the seed bank is present and parses
         run: |
           python3 -c "

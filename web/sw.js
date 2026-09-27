@@ -6,7 +6,7 @@
 
 // Bump to purge every cached entry. Without a change here the cache name stays
 // constant, so a stale entry can win on cache-first forever.
-const VERSION = 'v10';
+const VERSION = 'v11';
 const SHELL_CACHE = `farsi-shell-${VERSION}`;
 
 const SHELL = [
@@ -19,7 +19,6 @@ const SHELL = [
   './js/db.js',
   './js/deck.js',
   './js/levels.js',
-  './js/sound.js',
   './js/strings.js',
   './js/session.js',
   './js/sm2.js',

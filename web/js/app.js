@@ -7,7 +7,6 @@ import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as speech from './speech.js';
 import * as levels from './levels.js';
-import * as sound from './sound.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
 import { tagTitle, posTitle } from './taxonomy.js';
 
@@ -20,7 +19,6 @@ const state = {
   completed: 0,
   passes: 0,
   revealed: false,
-  typedOpen: false,
   speechOK: false,
   // A rating is async (IndexedDB), and a second tap landing before it resolves
   // used to record the same card twice and skip the next one.
@@ -41,7 +39,6 @@ async function boot() {
 
   await deck.loadBundled();
   state.speechOK = await speech.isSpeechAvailable();
-  sound.setEnabled(state.settings.soundEnabled !== false);
 
   applyStrings();
 
@@ -171,10 +168,6 @@ async function renderProgressStats() {
   $('streak').textContent = `${faDigits(streak.days)} ${text('today.day')}`;
   $('streak').classList.toggle('is-zero', streak.days === 0);
 
-  const target = state.settings.dailyTarget;
-  $('target-progress').textContent = `${faDigits(counts.reviewedToday)} / ${faDigits(target)}`;
-  $('target-progress').classList.toggle('is-hit', counts.reviewedToday >= target);
-
   $('count-held').textContent = faDigits(counts.sentenceCount);
 
   await renderRegister();
@@ -206,24 +199,12 @@ async function renderRegister() {
 function bindPractice() {
   $('btn-quit').addEventListener('click', endSession);
   $('btn-reveal').addEventListener('click', reveal);
-  $('btn-type').addEventListener('click', toggleTyping);
   $('btn-undo').addEventListener('click', undo);
   $('btn-finish').addEventListener('click', endSession);
   $('btn-again').addEventListener('click', startSession);
-  $('btn-speak').addEventListener('click', () => {
-    const card = currentCard() ?? state.last?.card;
-    if (card) speech.speak(card.sentence.farsiText);
-  });
   $('rating-row').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-r]');
     if (button) rate(button.dataset.r);
-  });
-  $('card-typed').addEventListener('keydown', (event) => {
-    // Enter submits; Shift+Enter is still a newline for anyone who wants one.
-    if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
-      event.preventDefault();
-      reveal();
-    }
   });
 }
 
@@ -234,11 +215,6 @@ function bindPractice() {
 function bindKeys() {
   document.addEventListener('keydown', (event) => {
     if ($('practice').hidden || event.metaKey || event.ctrlKey || event.altKey) return;
-    if (event.target === $('card-typed')) {
-      if (event.key === 'Escape') $('card-typed').blur();
-      return;
-    }
-
     const done = !$('done-view').hidden;
     const key = event.key.toLowerCase();
     const act = (fn) => { event.preventDefault(); fn(); };
@@ -253,14 +229,12 @@ function bindKeys() {
     }
     if (!state.revealed) {
       if (key === ' ' || key === 'enter') return act(reveal);
-      if (key === 't') return act(toggleTyping);
       return undefined;
     }
     if (key === '1' || key === 'f' || key === 'arrowleft') return act(() => rate('fail'));
     if (key === '2' || key === 'j' || key === 'arrowright' || key === ' ' || key === 'enter') {
       return act(() => rate('pass'));
     }
-    if (key === 'p' && state.speechOK) return act(() => $('btn-speak').click());
     return undefined;
   });
 }
@@ -291,7 +265,6 @@ function renderCard() {
   if (!card) return renderDone();
 
   state.revealed = false;
-  state.typedOpen = false;
   state.shownAt = performance.now();
 
   $('card-view').hidden = false;
@@ -309,32 +282,14 @@ function renderCard() {
   prompt.textContent = session.promptFor(card.sentence, card.direction);
   prompt.classList.toggle('rtl', card.direction === 'faToEn');
 
-  const typed = $('card-typed');
-  typed.value = '';
-  typed.hidden = true;
-  typed.classList.toggle('rtl', card.direction === 'enToFa');
-  typed.placeholder = text(card.direction === 'enToFa' ? 'card.typeFarsi' : 'card.typeEnglish');
-
   $('card-answer').hidden = true;
   $('btn-reveal').hidden = false;
-  $('input-row').hidden = false;
   $('rating-row').hidden = true;
-  $('btn-type').classList.remove('on');
-}
-
-function toggleTyping() {
-  if (state.revealed) return;
-  state.typedOpen = !state.typedOpen;
-  const typed = $('card-typed');
-  typed.hidden = !state.typedOpen;
-  $('btn-type').classList.toggle('on', state.typedOpen);
-  if (state.typedOpen) typed.focus();
 }
 
 function reveal() {
   const card = currentCard();
   if (!card || state.revealed) return;
-  $('card-typed').blur();
   state.revealed = true;
   $('card-view').classList.add('is-revealed');
   // Still recorded, but nothing is shown and nothing gates on it. It is the
@@ -345,38 +300,17 @@ function reveal() {
   answer.textContent = session.answerFor(card.sentence, card.direction);
   answer.classList.toggle('rtl', card.direction === 'enToFa');
 
-  renderTypedEcho(card);
-  // The echo above the answer now shows what was typed; leaving the box open
-  // invites editing an answer after seeing the key.
-  $('card-typed').hidden = true;
   $('answer-finglish').textContent = card.sentence.finglish ?? '';
   renderBreakdown(card.sentence);
-  $('btn-speak').hidden = !state.speechOK;
   $('card-answer').hidden = false;
   $('btn-reveal').hidden = true;
-  $('input-row').hidden = true;
 
   renderRatings(card);
 
-  // The setting existed and did nothing. Hearing the sentence at the moment
-  // you check it is the cheapest shadowing there is.
+  // Hearing the sentence at the moment you check it is the cheapest
+  // shadowing there is, and it is the only audio left: a Play button next to
+  // an answer you are already looking at was a second way to do one thing.
   if (state.speechOK && state.settings.speakEnabled) speech.speak(card.sentence.farsiText);
-}
-
-/**
- * What you typed, next to the answer. A match is marked, a miss is only shown:
- * the verdict stays yours, because a correct paraphrase will not match.
- */
-function renderTypedEcho(card) {
-  const echo = $('typed-echo');
-  const typed = $('card-typed').value.trim();
-  echo.hidden = !typed;
-  if (!typed) return;
-
-  const match = session.matchesAnswer(typed, card.sentence, card.direction);
-  echo.className = `typed-echo${match ? ' is-match' : ''}`;
-  echo.classList.toggle('rtl', card.direction === 'enToFa');
-  echo.textContent = match ? `${typed}  ✓` : typed;
 }
 
 /**
@@ -473,13 +407,11 @@ async function rate(rating) {
   state.busy = true;
 
   try {
-    const typed = $('card-typed').value.trim();
     const before = card.review;
     const wasNew = card.isNew;
     const result = await session.recordAttempt({
       card,
       rating,
-      typedAnswer: typed || null,
       msToReveal: state.msToReveal,
     });
 
@@ -498,11 +430,6 @@ async function rate(rating) {
     if (requeued) state.queue.push(card);
 
     state.last = { card, before, wasNew, rating, requeued, ...result };
-
-    // A distinct tone for a miss, so you register it without reading anything.
-    if (state.index + 1 >= state.queue.length) sound.complete();
-    else if (requeued) sound.again();
-    else sound.next();
 
     speech.stopSpeaking();
     state.index += 1;
@@ -537,7 +464,6 @@ async function renderDone() {
   state.revealed = false;
   $('card-view').hidden = true;
   $('done-view').hidden = false;
-  $('input-row').hidden = true;
   $('btn-reveal').hidden = true;
   $('rating-row').hidden = true;
   $('done-row').hidden = false;
@@ -661,15 +587,9 @@ function bindSettings() {
   };
   slider('set-new', 'new-value', 'newPerDay');
   slider('set-round', 'round-value', 'sessionSize');
-  slider('set-target', 'target-value', 'dailyTarget');
 
   $('set-speak').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
-  });
-  $('set-sound').addEventListener('change', async (e) => {
-    state.settings = await db.saveSettings({ soundEnabled: e.target.checked });
-    sound.setEnabled(e.target.checked);
-    if (e.target.checked) sound.next();   // so you hear what you just enabled
   });
 
   $('btn-bank-add').addEventListener('click', addOwnSentence);
@@ -708,7 +628,6 @@ function bindSettings() {
       if (!confirm(`${text('settings.confirmRestore')}\n${when}`)) return;
       const result = await backup.importData(data);
       state.settings = result.settings;
-      sound.setEnabled(state.settings.soundEnabled !== false);
       toast(`${text('settings.backupRestored')} — ${faDigits(result.reviews)} `
         + `${text('settings.scheduled')}، ${faDigits(result.attempts)} ${text('settings.reviews')}`
         + (result.skipped
@@ -782,10 +701,7 @@ async function renderSettings() {
   $('new-value').textContent = faDigits(s.newPerDay);
   $('set-round').value = s.sessionSize;
   $('round-value').textContent = faDigits(s.sessionSize);
-  $('set-target').value = s.dailyTarget;
-  $('target-value').textContent = faDigits(s.dailyTarget);
   $('set-speak').checked = s.speakEnabled;
-  $('set-sound').checked = s.soundEnabled !== false;
 
   $('set-level').innerHTML = levels.LEVELS
     .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
@@ -798,8 +714,6 @@ async function renderSettings() {
     : text('settings.backupHint');
 
   await renderOwnSentences();
-
-  $('keys-group').hidden = !matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   const voices = await speech.voiceReport();
   $('voice-report').textContent = voices.persian.length

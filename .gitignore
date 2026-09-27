@@ -27,3 +27,4 @@ build/
 
 # Serena's local index
 .serena/
+review_cache.json

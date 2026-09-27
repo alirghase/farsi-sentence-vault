@@ -144,8 +144,6 @@ const SETTING_DEFAULTS = {
   levelsPassed: [],
   // Cards per day that counts as done: a target you clear most days builds the
   // habit; one you miss erodes it.
-  dailyTarget: 40,
-  soundEnabled: true,
 };
 
 export async function getSettings() {
