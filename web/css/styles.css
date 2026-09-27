@@ -163,6 +163,22 @@ input, textarea { font: inherit; color: inherit; }
   font-variant-numeric: tabular-nums; font-weight: 600;
 }
 .settings input:focus { outline: 0; }
+.settings input[type="text"] {
+  display: block; width: 100%; margin-top: 6px; padding: 8px 0;
+  border: 0; border-bottom: 1px solid var(--rule); background: none;
+  font-size: 15px; color: var(--ink);
+}
+.settings input[type="text"].rtl { direction: rtl; text-align: right; }
+/* The list of your own sentences: the Persian reads right-to-left, the remove
+   control sits at the opposite edge like every other figure in a ledger. */
+.bank-row { display: flex; align-items: center; gap: 12px; }
+.bank-row > span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bank-remove {
+  flex: none; width: 28px; height: 28px; font-size: 18px; line-height: 1;
+  color: var(--ink-faint);
+}
+.bank-remove:active { color: var(--alarm); }
+#btn-bank-add { margin-top: 14px; }
 /* The default range and checkbox are rounded pills and a system tick — the two
    most prominent controls in Settings contradicting a design that forbids
    rounded containers. Rebuilt square, from rules. */

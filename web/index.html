@@ -117,6 +117,25 @@
         <p class="hint" id="backup-report" data-t="settings.backupHint"></p>
       </div>
 
+      <div class="group">
+        <h2 data-t="bank.title">My sentences</h2>
+        <label><span data-t="bank.english">English</span>
+          <input type="text" id="bank-en" autocomplete="off">
+        </label>
+        <label><span data-t="bank.farsi">Farsi</span>
+          <input type="text" id="bank-fa" class="rtl" autocomplete="off"
+                 autocapitalize="off" spellcheck="false">
+        </label>
+        <label><span data-t="bank.finglish">Pronunciation</span>
+          <input type="text" id="bank-tr" autocomplete="off"
+                 autocapitalize="off" spellcheck="false">
+        </label>
+        <button id="btn-bank-add" data-t="bank.add">Add</button>
+        <p class="hint" id="bank-status"></p>
+        <div id="bank-list"></div>
+        <p class="hint" data-t="bank.hint"></p>
+      </div>
+
       <div class="group" id="keys-group">
         <h2 data-t="settings.keyboard">Keyboard</h2>
         <p class="hint" data-t="settings.keyboardHint"></p>

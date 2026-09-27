@@ -202,6 +202,11 @@ export async function build({
 
   due.sort((a, b) => a.review.dueDate - b.review.dueDate);
   shuffle(fresh);
+  // A sentence you added yourself goes to the front of the new pile. You wrote
+  // it down because you wanted it; waiting for it to surface by chance among
+  // several hundred bundled cards is the same as it never arriving. Once it has
+  // been seen it is an ordinary review and gets no further favour.
+  fresh.sort((a, b) => (b.sentence.source === 'custom') - (a.sentence.source === 'custom'));
 
   const chosen = select(due, fresh, limit, weights, directions, maxNew);
   // A session that front-loads every review and back-loads every new card feels

@@ -101,3 +101,64 @@ export async function loadBundled(url = 'data/seed_sentences.json') {
     return null;
   }
 }
+
+// --- your own sentences -----------------------------------------------------
+//
+// A sentence you add is an ordinary row with source: 'custom'. That one field
+// is what keeps it safe: syncBundled only ever prunes rows marked 'seed', and
+// backup.js exports everything that is not 'seed' as customSentences. So your
+// own material survives a deck update and travels with a backup, without
+// either of those needing to know it exists.
+
+/** Normalise for comparison: ZWNJ and spacing vary, meaning does not. */
+function sameText(a, b) {
+  const clean = (s) => (s || '').replace(/‌/g, '').replace(/\s+/g, ' ').trim();
+  return clean(a) === clean(b);
+}
+
+export async function listCustom() {
+  const all = await db.getAll(db.STORE.sentences);
+  return all
+    .filter((s) => s.source === 'custom')
+    .sort((a, b) => (b.addedAt ?? 0) - (a.addedAt ?? 0));
+}
+
+/**
+ * Add one pair. Returns the row, or throws with a reason the caller can show.
+ *
+ * Difficulty defaults to the learner's current level so the sentence enters
+ * the rotation they are actually working through rather than sitting unseen
+ * behind a gate.
+ */
+export async function addCustom({ english, farsi, finglish = '', difficulty = 1 }) {
+  const englishText = (english || '').trim();
+  const farsiText = (farsi || '').trim();
+  if (!englishText || !farsiText) throw new Error('empty');
+  if (!/[؀-ۿ]/.test(farsiText)) throw new Error('notPersian');
+
+  const all = await db.getAll(db.STORE.sentences);
+  if (all.some((s) => sameText(s.farsiText, farsiText))) throw new Error('duplicate');
+
+  const row = {
+    id: crypto.randomUUID(),
+    englishText,
+    farsiText,
+    finglish: (finglish || '').trim(),
+    literalGloss: '',
+    difficulty,
+    situation: 'expressing an opinion',
+    grammarTags: [],
+    kind: 'sentence',
+    source: 'custom',
+    addedAt: Date.now(),
+  };
+  await db.put(db.STORE.sentences, row);
+  return row;
+}
+
+/** Remove a sentence you added, and any scheduling attached to it. */
+export async function removeCustom(id) {
+  const reviews = await db.getAll(db.STORE.reviews);
+  await db.removeMany(db.STORE.reviews, reviews.filter((r) => r.sentenceId === id).map((r) => r.key));
+  await db.remove(db.STORE.sentences, id);
+}

@@ -675,6 +675,11 @@ function bindSettings() {
     if (e.target.checked) sound.next();   // so you hear what you just enabled
   });
 
+  $('btn-bank-add').addEventListener('click', addOwnSentence);
+  $('bank-fa').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') addOwnSentence();
+  });
+
   $('set-level').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ currentLevel: e.target.value });
     toast(`${text('settings.levelNow')} ${e.target.value}`);
@@ -718,6 +723,62 @@ function bindSettings() {
   });
 }
 
+/**
+ * Add a sentence of your own. It becomes an ordinary card: scheduled by SM-2,
+ * counted by the level gate, carried in a backup, and left alone when the
+ * bundled deck updates.
+ */
+async function addOwnSentence() {
+  const status = $('bank-status');
+  try {
+    await deck.addCustom({
+      english: $('bank-en').value,
+      farsi: $('bank-fa').value,
+      finglish: $('bank-tr').value,
+      // The learner's own level, so it enters the rotation they are working
+      // through instead of sitting behind a gate.
+      difficulty: levels.LEVEL_META[state.settings.currentLevel].difficulty,
+    });
+    for (const id of ['bank-en', 'bank-fa', 'bank-tr']) $(id).value = '';
+    status.textContent = text('bank.added');
+    $('bank-en').focus();
+    await renderOwnSentences();
+    await refreshToday();
+  } catch (error) {
+    const reasons = {
+      empty: 'bank.errEmpty',
+      notPersian: 'bank.errPersian',
+      duplicate: 'bank.errDuplicate',
+    };
+    status.textContent = text(reasons[error.message] ?? 'bank.errEmpty');
+  }
+}
+
+async function renderOwnSentences() {
+  const rows = await deck.listCustom();
+  const list = $('bank-list');
+  if (!rows.length) {
+    list.innerHTML = `<p class="hint">${escapeHtml(text('bank.none'))}</p>`;
+    return;
+  }
+  list.className = 'ledger';
+  list.innerHTML = rows.map((row) => `
+    <div class="ledger-row bank-row">
+      <span class="rtl">${escapeHtml(row.farsiText)}</span>
+      <button class="bank-remove" data-id="${row.id}"
+              aria-label="${escapeHtml(text('bank.remove'))}">&times;</button>
+    </div>`).join('');
+
+  for (const button of list.querySelectorAll('.bank-remove')) {
+    button.addEventListener('click', async () => {
+      await deck.removeCustom(button.dataset.id);
+      $('bank-status').textContent = text('bank.removed');
+      await renderOwnSentences();
+      await refreshToday();
+    });
+  }
+}
+
 async function renderSettings() {
   const s = state.settings;
   $('set-new').value = s.newPerDay;
@@ -738,6 +799,8 @@ async function renderSettings() {
         .toLocaleDateString('fa-IR', { day: 'numeric', month: 'long', year: 'numeric' }))}`
       + ` — ${text('settings.backupReplace')}`
     : text('settings.backupHint');
+
+  await renderOwnSentences();
 
   $('keys-group').hidden = !matchMedia('(hover: hover) and (pointer: fine)').matches;
 

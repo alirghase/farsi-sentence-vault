@@ -127,6 +127,23 @@ export const STRINGS = {
   'settings.newerBackup': 'این پشتیبان مال نسخهٔ جدیدتریه.',
   'settings.goneFromDeck': 'دیگه توی بسته نیستن',
 
+
+  // Your own sentences
+  'bank.title': 'جمله‌های خودم',
+  'bank.english': 'انگلیسی',
+  'bank.farsi': 'فارسی',
+  'bank.finglish': 'تلفظ (اختیاری)',
+  'bank.add': 'اضافه کن',
+  'bank.hint': 'هر جمله‌ای که اضافه کنی مثل بقیه وارد مرور می‌شه، با به‌روز شدن بسته پاک نمی‌شه و توی پشتیبان هم میاد.',
+  'bank.none': 'هنوز جمله‌ای اضافه نکردی.',
+  'bank.count': 'جملهٔ خودت',
+  'bank.added': 'اضافه شد',
+  'bank.removed': 'پاک شد',
+  'bank.remove': 'پاک کردن',
+  'bank.errEmpty': 'هر دو طرف رو بنویس.',
+  'bank.errPersian': 'طرف فارسی باید فارسی باشه.',
+  'bank.errDuplicate': 'این جمله از قبل هست.',
+
 };
 
 /**
