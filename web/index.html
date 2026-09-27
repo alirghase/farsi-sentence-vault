@@ -127,6 +127,11 @@
         <p class="hint" data-t="bank.hint"></p>
       </div>
 
+      <div class="group" id="keys-group">
+        <h2 data-t="settings.keyboard">Keyboard</h2>
+        <p class="hint" data-t="settings.keyboardHint"></p>
+      </div>
+
       <div class="group">
         <h2 data-t="settings.privacy">What leaves this device</h2>
         <p class="hint" data-t="settings.privacyHint"></p>
@@ -157,7 +162,11 @@
     <p class="badge" id="card-badge"></p>
     <p class="prompt" id="card-prompt"></p>
 
+    <textarea id="card-typed" class="typed" rows="2" hidden
+              autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
+
     <div id="card-answer" class="answer" hidden>
+      <p class="typed-echo" id="typed-echo" hidden></p>
       <p class="answer-text" id="answer-text"></p>
       <p class="finglish" id="answer-finglish"></p>
       <p class="gloss" id="answer-gloss"></p>
@@ -174,6 +183,9 @@
   </div>
 
   <div class="controls">
+    <div id="input-row" class="input-row">
+      <button id="btn-type" data-t="card.type">Type</button>
+    </div>
     <button id="btn-reveal"><span data-t="card.reveal">Reveal</span> &rarr;</button>
     <div id="rating-row" class="rating-row" hidden></div>
     <div id="done-row" class="done-row" hidden>

@@ -199,12 +199,20 @@ async function renderRegister() {
 function bindPractice() {
   $('btn-quit').addEventListener('click', endSession);
   $('btn-reveal').addEventListener('click', reveal);
+  $('btn-type').addEventListener('click', toggleTyping);
   $('btn-undo').addEventListener('click', undo);
   $('btn-finish').addEventListener('click', endSession);
   $('btn-again').addEventListener('click', startSession);
   $('rating-row').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-r]');
     if (button) rate(button.dataset.r);
+  });
+  $('card-typed').addEventListener('keydown', (event) => {
+    // Enter submits; Shift+Enter is still a newline for anyone who wants one.
+    if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
+      event.preventDefault();
+      reveal();
+    }
   });
 }
 
@@ -215,6 +223,11 @@ function bindPractice() {
 function bindKeys() {
   document.addEventListener('keydown', (event) => {
     if ($('practice').hidden || event.metaKey || event.ctrlKey || event.altKey) return;
+    if (event.target === $('card-typed')) {
+      if (event.key === 'Escape') $('card-typed').blur();
+      return;
+    }
+
     const done = !$('done-view').hidden;
     const key = event.key.toLowerCase();
     const act = (fn) => { event.preventDefault(); fn(); };
@@ -229,6 +242,7 @@ function bindKeys() {
     }
     if (!state.revealed) {
       if (key === ' ' || key === 'enter') return act(reveal);
+      if (key === 't') return act(toggleTyping);
       return undefined;
     }
     if (key === '1' || key === 'f' || key === 'arrowleft') return act(() => rate('fail'));
@@ -282,14 +296,36 @@ function renderCard() {
   prompt.textContent = session.promptFor(card.sentence, card.direction);
   prompt.classList.toggle('rtl', card.direction === 'faToEn');
 
+  // Typing is remembered between cards. It used to reset on every one, so
+  // drilling a whole round by typing meant tapping Type twenty times.
+  const typed = $('card-typed');
+  typed.value = '';
+  typed.hidden = !state.settings.typingEnabled;
+  typed.classList.toggle('rtl', card.direction === 'enToFa');
+  typed.placeholder = text(card.direction === 'enToFa' ? 'card.typeFarsi' : 'card.typeEnglish');
+
   $('card-answer').hidden = true;
   $('btn-reveal').hidden = false;
+  $('input-row').hidden = false;
   $('rating-row').hidden = true;
+  $('btn-type').classList.toggle('on', state.settings.typingEnabled);
+}
+
+/** Type or speak, remembered until you change it back. */
+async function toggleTyping() {
+  if (state.revealed) return;
+  const on = !state.settings.typingEnabled;
+  state.settings = await db.saveSettings({ typingEnabled: on });
+  const typed = $('card-typed');
+  typed.hidden = !on;
+  $('btn-type').classList.toggle('on', on);
+  if (on) typed.focus();
 }
 
 function reveal() {
   const card = currentCard();
   if (!card || state.revealed) return;
+  $('card-typed').blur();
   state.revealed = true;
   $('card-view').classList.add('is-revealed');
   // Still recorded, but nothing is shown and nothing gates on it. It is the
@@ -300,10 +336,15 @@ function reveal() {
   answer.textContent = session.answerFor(card.sentence, card.direction);
   answer.classList.toggle('rtl', card.direction === 'enToFa');
 
+  renderTypedEcho(card);
+  // The echo above the answer now shows what was typed; leaving the box open
+  // invites editing an answer after seeing the key.
+  $('card-typed').hidden = true;
   $('answer-finglish').textContent = card.sentence.finglish ?? '';
   renderBreakdown(card.sentence);
   $('card-answer').hidden = false;
   $('btn-reveal').hidden = true;
+  $('input-row').hidden = true;
 
   renderRatings(card);
 
@@ -311,6 +352,22 @@ function reveal() {
   // shadowing there is, and it is the only audio left: a Play button next to
   // an answer you are already looking at was a second way to do one thing.
   if (state.speechOK && state.settings.speakEnabled) speech.speak(card.sentence.farsiText);
+}
+
+/**
+ * What you typed, next to the answer. A match is marked, a miss is only shown:
+ * the verdict stays yours, because a correct paraphrase will not match.
+ */
+function renderTypedEcho(card) {
+  const echo = $('typed-echo');
+  const typed = $('card-typed').value.trim();
+  echo.hidden = !typed;
+  if (!typed) return;
+
+  const match = session.matchesAnswer(typed, card.sentence, card.direction);
+  echo.className = `typed-echo${match ? ' is-match' : ''}`;
+  echo.classList.toggle('rtl', card.direction === 'enToFa');
+  echo.textContent = match ? `${typed}  ✓` : typed;
 }
 
 /**
@@ -407,11 +464,13 @@ async function rate(rating) {
   state.busy = true;
 
   try {
+    const typed = $('card-typed').value.trim();
     const before = card.review;
     const wasNew = card.isNew;
     const result = await session.recordAttempt({
       card,
       rating,
+      typedAnswer: typed || null,
       msToReveal: state.msToReveal,
     });
 
@@ -464,6 +523,7 @@ async function renderDone() {
   state.revealed = false;
   $('card-view').hidden = true;
   $('done-view').hidden = false;
+  $('input-row').hidden = true;
   $('btn-reveal').hidden = true;
   $('rating-row').hidden = true;
   $('done-row').hidden = false;
@@ -659,6 +719,8 @@ async function addOwnSentence() {
     status.textContent = text('bank.added');
     $('bank-en').focus();
     await renderOwnSentences();
+
+  $('keys-group').hidden = !matchMedia('(hover: hover) and (pointer: fine)').matches;
     await refreshToday();
   } catch (error) {
     const reasons = {

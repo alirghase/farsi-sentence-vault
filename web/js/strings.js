@@ -30,6 +30,7 @@ export const STRINGS = {
 
   // Practice
   'card.exit': 'خروج',
+  'card.type': 'تایپ',
   'card.reveal': 'جواب',
   'card.alsoCorrect': 'این هم درسته',
   'card.unit': 'این کلمه‌ها با هم یک واحدن',
@@ -81,10 +82,16 @@ export const STRINGS = {
   'settings.scheduled': 'کارت زمان‌بندی‌شده',
   'settings.reviews': 'مرور',
 
-  // Settings — privacy
+  // Settings — keyboard and privacy
+  'settings.keyboard': 'صفحه‌کلید',
+  'settings.keyboardHint': 'فاصله جواب · ۱ غلط · ۲ درست · T تایپ · U برگرد · Esc خروج. موقع تایپ، Enter جواب رو نشون می‌ده.',
   'settings.privacy': 'چی از این دستگاه بیرون می‌ره',
   'settings.privacyHint': 'هیچی. نه سروری هست نه حسابی. هر جمله، هر نمره و کل برنامهٔ مرور توی همین مرورگر می‌مونه، و پشتیبان فقط جایی می‌ره که خودت می‌فرستیش.',
   'settings.levelNow': 'کارت‌های جدید حالا از این سطح میان:',
+
+  // Card
+  'card.typeFarsi': 'بنویس…',
+  'card.typeEnglish': 'انگلیسی‌شو بنویس…',
 
   // Today and progress
   'today.unlock': 'باز کردن',

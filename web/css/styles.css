@@ -271,7 +271,20 @@ kbd {
    the upper third rather than jammed under the header. */
 #card-view:not(.is-revealed) .prompt { margin-top: 12vh; }
 
+.typed {
+  width: 100%; margin-top: 22px; background: transparent;
+  border: 0; border-bottom: 1px solid var(--ink); border-radius: 0;
+  padding: 8px 0; font-size: 20px; font-family: var(--serif); resize: none;
+}
+.typed:focus { outline: 0; }
+
 .answer { border-left: 2px solid var(--ink); padding: 4px 0 4px 14px; margin-top: 26px; }
+.typed-echo {
+  margin: 0 0 12px; font-family: var(--serif); font-size: 18px;
+  color: var(--ink-faint); text-decoration: line-through;
+  text-decoration-color: var(--rule);
+}
+.typed-echo.is-match { color: var(--ink-soft); text-decoration: none; }
 .answer-text { margin: 0; font-family: var(--serif); font-size: 30px; line-height: 1.38; }
 .finglish { margin: 12px 0 0; color: var(--ink-soft); font-size: 14px; font-family: var(--mono); }
 .gloss { margin: 9px 0 0; color: var(--ink-faint); font-size: 13px; }
@@ -279,11 +292,21 @@ kbd {
 /* Fixed height so revealing does not reflow the footer under the thumb that is
    about to tap it. */
 .controls {
-  flex: none; min-height: 92px;
+  flex: none; min-height: 116px;
   padding: 12px var(--gutter) calc(12px + env(safe-area-inset-bottom, 0px));
   border-top: 1px solid var(--rule-strong);
   display: flex; flex-direction: column; justify-content: center; gap: 10px;
 }
+/* The Type control. Filled when typing is on, because the setting persists
+   between cards and the button is the only thing that says so. */
+.input-row { display: flex; gap: 10px; }
+.input-row button {
+  flex: 1; font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-soft); padding: 9px 0;
+  border: 1px solid var(--rule);
+}
+.input-row button.on { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+
 
 /* --- verdict buttons --- */
 /* No colour and no gloss: these are two more cells in the ledger, distinguished

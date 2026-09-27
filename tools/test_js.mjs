@@ -8,7 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 import * as SM2 from '../web/js/sm2.js';
-import { select, introducedSince, eligibleAsNew } from '../web/js/session.js';
+import { select, matchesAnswer, introducedSince, eligibleAsNew } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -126,3 +126,20 @@ test('introducedSince prefers introducedAt and falls back for old rows', () => {
   assert.equal(introducedSince(reviews, day), 2);
 });
 
+// --- answer matching ---
+
+test('Persian matching ignores half-spaces, Arabic letter forms and punctuation', () => {
+  const sentence = { farsiText: 'یه قهوه سرد می‌خوام.', alternatives: ['یه قهوه‌ی سرد می‌خوام.'] };
+  assert.ok(matchesAnswer('یه قهوه سرد میخوام', sentence, 'enToFa'));
+  assert.ok(matchesAnswer('يه قهوه سرد مي خوام', sentence, 'enToFa'));
+  assert.ok(matchesAnswer('یه قهوه‌ی سرد می‌خوام', sentence, 'enToFa'));
+  assert.ok(!matchesAnswer('یه چای سرد می‌خوام', sentence, 'enToFa'));
+  assert.ok(!matchesAnswer('', sentence, 'enToFa'));
+});
+
+test('English matching ignores case and punctuation but not words', () => {
+  const sentence = { englishText: "I don't know." };
+  assert.ok(matchesAnswer('i dont know', sentence, 'faToEn'));
+  assert.ok(matchesAnswer("I don’t know", sentence, 'faToEn'));
+  assert.ok(!matchesAnswer('I know', sentence, 'faToEn'));
+});
