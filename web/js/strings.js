@@ -79,6 +79,11 @@ export const STRINGS = {
   'card.typeFarsi': 'بنویس…',
   'card.typeEnglish': 'انگلیسی‌شو بنویس…',
 
+  // Boot failure
+  'boot.blocked': 'برنامه یه جای دیگه هم بازه. اون یکی رو ببند و دوباره باز کن.',
+  'boot.stale': 'یه نسخهٔ تازه‌تر باز شده. این صفحه رو دوباره باز کن.',
+  'boot.failed': 'برنامه بالا نیومد. یه بار ببند و دوباره باز کن.',
+
   // Today and progress
   'today.unlock': 'باز کردن',
 

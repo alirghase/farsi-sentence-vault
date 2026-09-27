@@ -31,6 +31,11 @@ const state = {
 // --- boot ------------------------------------------------------------------
 
 async function boot() {
+  // Before anything that can fail. Every string on the screen is Persian, and
+  // a boot that dies early used to leave the English placeholder markup
+  // looking like a finished screen with nothing in it.
+  applyStrings();
+
   state.settings = await db.getSettings();
 
   // Ask the browser to keep our data. iOS can evict storage for web apps, and
@@ -40,8 +45,7 @@ async function boot() {
   await deck.loadBundled();
   state.speechOK = await speech.isSpeechAvailable();
 
-  applyStrings();
-
+  watchForLostDatabase();
   bindTabs();
   bindToday();
   bindPractice();
@@ -56,6 +60,44 @@ async function boot() {
 
   await refreshToday();
   registerServiceWorker();
+}
+
+/**
+ * Boot failed. Say so, rather than leaving a screen that looks finished.
+ *
+ * The one failure that actually happens is a schema upgrade blocked by the app
+ * being open somewhere else — a Home Screen icon and a Safari tab, which is
+ * the normal way to end up with two. Closing the other one and reloading is
+ * the whole fix, so that is what it says.
+ */
+function bootFailed(error) {
+  const key = { [db.BLOCKED]: 'boot.blocked', [db.STALE]: 'boot.stale' }[error?.message]
+    ?? 'boot.failed';
+  $('practice').hidden = true;
+  $('counts').hidden = true;
+  $('btn-start').hidden = true;
+  $('passed-panel').hidden = true;
+  const note = $('today-empty');
+  note.hidden = false;
+  note.textContent = text(key);
+  // Nothing below is usable without the database.
+  document.querySelector('.tabs').hidden = true;
+}
+
+/**
+ * The database can also go away *after* boot: a newer copy of the app in
+ * another tab upgrades the schema and closes this one's connection. Every
+ * later call then rejects, and without this the screen simply stops responding
+ * with nothing said. Rare, but a dead UI is the worst way to find out.
+ */
+function watchForLostDatabase() {
+  window.addEventListener('unhandledrejection', (event) => {
+    const message = event.reason?.message;
+    if (message === db.STALE || message === db.BLOCKED) {
+      event.preventDefault();
+      bootFailed(event.reason);
+    }
+  });
 }
 
 function registerServiceWorker() {
@@ -662,4 +704,7 @@ function escapeHtml(value) {
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }
 
-boot();
+boot().catch((error) => {
+  bootFailed(error);
+  throw error;
+});

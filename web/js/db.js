@@ -18,6 +18,17 @@ export const STORE = {
 
 let dbPromise = null;
 
+/** Another copy of the app is holding the old schema open. */
+export const BLOCKED = 'db-blocked';
+
+/**
+ * This copy is older than the database on disk. It happens the other way round
+ * from BLOCKED: a newer copy upgraded the schema and closed this connection,
+ * and this one cannot reopen because it asks for a version that no longer
+ * exists. Reloading picks up the new code and fixes it.
+ */
+export const STALE = 'db-stale';
+
 export function open() {
   if (dbPromise) return dbPromise;
   dbPromise = new Promise((resolve, reject) => {
@@ -51,8 +62,35 @@ export function open() {
       }
     };
 
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error);
+    request.onsuccess = () => {
+      const db = request.result;
+      // Another copy of the app wants to upgrade the schema. Hold the
+      // connection open and that copy blocks forever, exactly as this one did.
+      // Close and forget it instead; the next call reopens at the new version.
+      db.onversionchange = () => {
+        db.close();
+        dbPromise = null;
+      };
+      resolve(db);
+    };
+
+    // An open connection at the old version blocks the upgrade. Without this
+    // handler the promise never settles, and because boot() awaits it the app
+    // stops dead — the untranslated fallback markup, no deck, no error. That
+    // is what shipping DB_VERSION 2 did to a browser that still had the app
+    // open in another tab.
+    request.onblocked = () => reject(new Error(BLOCKED));
+
+    request.onerror = () => {
+      const error = request.error;
+      reject(error?.name === 'VersionError' ? new Error(STALE) : error);
+    };
+  });
+  // A failed open must not be cached, or one blocked attempt poisons every
+  // later one in the same page.
+  dbPromise = dbPromise.catch((error) => {
+    dbPromise = null;
+    throw error;
   });
   return dbPromise;
 }

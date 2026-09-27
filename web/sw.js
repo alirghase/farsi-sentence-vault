@@ -6,7 +6,7 @@
 
 // Bump to purge every cached entry. Without a change here the cache name stays
 // constant, so a stale entry can win on cache-first forever.
-const VERSION = 'v15';
+const VERSION = 'v17';
 const SHELL_CACHE = `farsi-shell-${VERSION}`;
 
 const SHELL = [
