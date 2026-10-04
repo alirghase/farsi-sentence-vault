@@ -21,7 +21,6 @@
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 
   --gutter: 22px;
-  --tabs-h: 52px;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -47,26 +46,23 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 button, input, textarea, select { border-radius: 0; -webkit-appearance: none; appearance: none; }
 input, textarea { font: inherit; color: inherit; }
 
-/* --- screens --- */
-#screens { height: 100%; }
-.screen {
-  display: none; flex-direction: column; height: 100%; min-height: 0;
-  padding-bottom: calc(var(--tabs-h) + env(safe-area-inset-bottom, 0px));
+/* --- the settings detour --- */
+.settings-screen {
+  position: fixed; inset: 0; z-index: 50; background: var(--paper);
+  display: flex; flex-direction: column; height: 100%; min-height: 0;
 }
-.screen.is-active { display: flex; }
 
 .screen-head {
   padding: calc(env(safe-area-inset-top, 0px) + 20px) var(--gutter) 11px;
   border-bottom: 1px solid var(--rule-strong);
   flex: none;
+  display: flex; align-items: baseline; gap: 14px;
 }
 .screen-head h1 {
   margin: 0; font-size: 15px; font-weight: 600;
   letter-spacing: .14em; text-transform: uppercase;
 }
-
-/* --- today --- */
-.today-body { flex: none; display: flex; flex-direction: column; }
+#btn-settings-back { font-size: 18px; color: var(--ink-soft); min-width: 32px; }
 
 /* The single row geometry in the product: label left, tabular figure right,
    hairline beneath, full-bleed rule, content inset by the gutter. Today, Weak
@@ -91,21 +87,14 @@ input, textarea { font: inherit; color: inherit; }
   font-family: var(--mono); font-variant-numeric: tabular-nums;
   font-weight: 600; font-size: 15px; text-align: right;
 }
-.ledger-row > b.is-zero { color: var(--ink-faint); font-weight: 400; }
+/* The one ledger left is the list of sentences you added yourself. */
 
-/* The two figures the session actually turns on get one size step up. They
-   stay in the same column, same weight rules, as a ledger requires. */
-.ledger-row.lead > span { color: var(--ink); font-size: 15px; }
-.ledger-row.lead > b { font-size: 20px; }
-
-/* One primary idiom, used by Start and Reveal alike. */
-#btn-start, #btn-reveal {
+/* The primary idiom: full width, the action on the reading edge. */
+#btn-reveal {
   display: block; width: 100%; text-align: right;
   font-size: 19px; font-weight: 600; letter-spacing: -.01em;
   padding: 15px var(--gutter);
 }
-#btn-start { border-bottom: 1px solid var(--rule); }
-#btn-start:disabled { color: var(--ink-faint); }
 
 
 /* --- ledger lists --- */
@@ -117,9 +106,6 @@ input, textarea { font: inherit; color: inherit; }
 
 .note { color: var(--ink-soft); font-size: 13px; margin: 0; }
 .note-faint { color: var(--ink-faint); font-size: 12px; margin: 6px 0 0; }
-.empty { color: var(--ink-faint); padding: 22px var(--gutter);
-  border-bottom: 1px solid var(--rule); max-width: 34ch; font-size: 14px; }
-
 /* --- settings --- */
 .settings .group { padding: 18px var(--gutter); border-bottom: 1px solid var(--rule); }
 /* A ledger inside a padded group would inherit the gutter twice and end with a
@@ -205,19 +191,6 @@ kbd {
 .settings .hint + label { margin-top: 22px; }
 .settings .button-row + input + .hint { margin-top: 12px; }
 
-/* --- tabs --- */
-.tabs {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  background: var(--paper); border-top: 1px solid var(--rule-strong);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-.tabs button {
-  height: var(--tabs-h); font-size: 10px; letter-spacing: .08em; white-space: nowrap;
-  text-transform: uppercase; color: var(--ink-faint);
-}
-.tabs button.is-active { color: var(--ink); font-weight: 600; }
-
 /* --- practice --- */
 .practice { position: fixed; inset: 0; z-index: 40; background: var(--paper);
   display: flex; flex-direction: column; }
@@ -227,8 +200,10 @@ kbd {
   padding: calc(env(safe-area-inset-top, 0px) + 14px) var(--gutter) 12px;
   border-bottom: 1px solid var(--rule-strong);
 }
-#btn-quit, #btn-undo { font-size: 13px; color: var(--ink-soft); min-width: 44px; }
-#btn-undo { text-align: right; }
+#btn-undo { font-size: 13px; color: var(--ink-soft); min-width: 44px; text-align: right; }
+/* The header holds the round counter and, once there is something to take
+   back, Undo. With nothing else in it, the counter sits on the right alone. */
+.practice-head { justify-content: flex-end; gap: 14px; }
 .progress {
   font-family: var(--mono); font-variant-numeric: tabular-nums;
   font-size: 12px; color: var(--ink-faint);
@@ -246,7 +221,7 @@ kbd {
 }
 /* Before the reveal there is nothing else on the card, so the prompt sits in
    the upper third rather than jammed under the header. */
-#card-view:not(.is-revealed) .prompt { margin-top: 12vh; }
+#card-view:not(.is-revealed) .prompt { margin-top: 6vh; }
 
 .typed {
   width: 100%; margin-top: 22px; background: transparent;
@@ -274,16 +249,6 @@ kbd {
   border-top: 1px solid var(--rule-strong);
   display: flex; flex-direction: column; justify-content: center; gap: 10px;
 }
-/* The Type control. Filled when typing is on, because the setting persists
-   between cards and the button is the only thing that says so. */
-.input-row { display: flex; gap: 10px; }
-.input-row button {
-  flex: 1; font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--ink-soft); padding: 9px 0;
-  border: 1px solid var(--rule);
-}
-.input-row button.on { color: var(--paper); background: var(--ink); border-color: var(--ink); }
-
 
 /* --- verdict buttons --- */
 /* No colour and no gloss: these are two more cells in the ledger, distinguished
@@ -321,31 +286,48 @@ kbd {
 .done-panel .note-faint { margin-top: 10px; }
 .done-row { display: flex; justify-content: space-between; align-items: center; }
 .done-row button { font-size: 17px; padding: 8px 0; }
-#btn-finish { color: var(--ink-soft); }
+#btn-settings { color: var(--ink-soft); }
 #btn-again { font-size: 19px; font-weight: 600; }
 .done-panel h2 { margin: 0 0 6px; font-family: var(--serif); font-size: 24px; font-weight: 500; }
 
 /* --- toast --- */
 .toast {
   position: fixed; left: var(--gutter); right: var(--gutter);
-  bottom: calc(var(--tabs-h) + 18px); z-index: 60;
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 60;
   background: var(--ink); color: var(--paper);
   padding: 11px 14px; font-size: 13px; line-height: 1.4;
 }
 
-/* --- level progression --- */
-
-/* The moment a level is cleared. Inverted so it reads as an event, not a row. */
-.passed-panel {
-  background: var(--ink); color: var(--paper);
-  padding: 16px var(--gutter) 14px;
-  border-bottom: 1px solid var(--rule);
+/* --- verdict buttons --- */
+/* No colour and no gloss: these are two more cells in the ledger, distinguished
+   by position rather than decoration — destructive on the left, as everywhere
+   else in the app. Pressing inverts to ink, which is the only feedback needed
+   and matches how every other control here behaves. */
+.rating-row {
+  display: grid; grid-template-columns: 1fr 1fr;
+  margin: 0 calc(-1 * var(--gutter)) calc(-12px - env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid var(--rule-strong);
 }
-.passed-head { margin: 0 0 4px; font-size: 17px; font-weight: 600; }
-.passed-panel .hint { color: rgba(251, 250, 248, .66); margin: 0 0 12px; }
-#btn-advance {
-  display: block; width: 100%; text-align: right;
-  font-size: 17px; font-weight: 600; color: var(--paper); padding: 4px 0;
+
+.verdict {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; padding: 18px 0 calc(16px + env(safe-area-inset-bottom, 0px));
+  color: var(--ink); background: var(--paper);
+  transition: background .1s, color .1s;
+}
+.verdict + .verdict { border-left: 1px solid var(--rule); }
+
+.verdict-word {
+  font-size: 24px; line-height: 1; font-weight: 500;
+  direction: rtl;
+}
+
+/* --- toast --- */
+.toast {
+  position: fixed; left: var(--gutter); right: var(--gutter);
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 60;
+  background: var(--ink); color: var(--paper);
+  padding: 11px 14px; font-size: 13px; line-height: 1.4;
 }
 
 .settings select {

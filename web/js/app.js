@@ -5,7 +5,6 @@ import * as deck from './deck.js';
 import * as backup from './backup.js';
 import * as session from './session.js';
 import * as SM2 from './sm2.js';
-import * as speech from './speech.js';
 import * as levels from './levels.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
 import { posTitle } from './taxonomy.js';
@@ -19,7 +18,6 @@ const state = {
   completed: 0,
   passes: 0,
   revealed: false,
-  speechOK: false,
   // A rating is async (IndexedDB), and a second tap landing before it resolves
   // used to record the same card twice and skip the next one.
   busy: false,
@@ -43,22 +41,21 @@ async function boot() {
   db.requestPersistence();
 
   await deck.loadBundled();
-  state.speechOK = await speech.isSpeechAvailable();
 
   watchForLostDatabase();
-  bindTabs();
-  bindToday();
   bindPractice();
   bindKeys();
   bindSettings();
 
-  // An installed app is resumed, not reopened, so without this the counts on
-  // Today are yesterday's the next morning.
+  // An installed app is resumed, not reopened. Coming back the next morning
+  // used to leave yesterday's round on screen; now the end-of-round panel
+  // recounts itself, which is the only place a stale count would show.
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible' && $('practice').hidden) refreshActive();
+    if (document.visibilityState === 'visible' && !$('done-view').hidden) renderDone();
   });
 
-  await refreshToday();
+  // Straight onto a card. There is no home screen to pass through.
+  await startSession();
   registerServiceWorker();
 }
 
@@ -73,22 +70,27 @@ async function boot() {
 function bootFailed(error) {
   const key = { [db.BLOCKED]: 'boot.blocked', [db.STALE]: 'boot.stale' }[error?.message]
     ?? 'boot.failed';
-  $('practice').hidden = true;
-  $('counts').hidden = true;
-  $('passed-panel').hidden = true;
-  const note = $('today-empty');
-  note.hidden = false;
-  note.textContent = text(key);
-  // Nothing below is usable without the database.
-  document.querySelector('.tabs').hidden = true;
+  $('screen-settings').hidden = true;
+  $('practice').hidden = false;
+  $('card-view').hidden = true;
+  $('done-view').hidden = false;
+  $('practice-progress').textContent = '';
+  $('btn-undo').hidden = true;
+  $('done-view').querySelector('h2').textContent = text(key);
+  $('done-summary').textContent = '';
+  $('done-next').textContent = '';
+
+  $('btn-reveal').hidden = true;
+  $('rating-row').hidden = true;
+  $('done-row').hidden = false;
+  $('btn-settings').hidden = true;
 
   // Every one of these causes is something that can stop being true a moment
   // later — the other copy gets closed, the upgrade finishes. Leaving the only
   // way forward as "know to reload a page inside a Home Screen app" is not
   // much of a way forward.
-  const retry = $('btn-start');
+  const retry = $('btn-again');
   retry.hidden = false;
-  retry.disabled = false;
   retry.textContent = text('boot.retry');
   retry.onclick = () => location.reload();
 }
@@ -118,26 +120,18 @@ function registerServiceWorker() {
 
 // --- navigation ------------------------------------------------------------
 
-function bindTabs() {
-  for (const button of document.querySelectorAll('.tabs button')) {
-    button.addEventListener('click', () => showScreen(button.dataset.screen));
-  }
+/** Settings is a detour off the end of a round, not a destination. */
+async function showSettings() {
+  $('practice').hidden = true;
+  $('screen-settings').hidden = false;
+  await renderSettings();
 }
 
-async function showScreen(name) {
-  for (const section of document.querySelectorAll('.screen')) {
-    section.classList.toggle('is-active', section.id === `screen-${name}`);
-  }
-  for (const button of document.querySelectorAll('.tabs button')) {
-    button.classList.toggle('is-active', button.dataset.screen === name);
-  }
-  if (name === 'today') await refreshToday();
-  if (name === 'settings') await renderSettings();
-}
-
-function refreshActive() {
-  const active = document.querySelector('.tabs button.is-active')?.dataset.screen ?? 'today';
-  return showScreen(active);
+async function hideSettings() {
+  $('screen-settings').hidden = true;
+  $('practice').hidden = false;
+  // A sentence added, or a level changed, changes what should be practised.
+  await renderDone();
 }
 
 function toast(message, ms = 2600) {
@@ -148,74 +142,36 @@ function toast(message, ms = 2600) {
   toast._timer = setTimeout(() => { element.hidden = true; }, ms);
 }
 
-// --- today -----------------------------------------------------------------
-
-function bindToday() {
-  $('btn-start').addEventListener('click', startSession);
-  $('btn-advance').addEventListener('click', async () => {
-    const next = levels.nextLevel(state.settings.currentLevel);
-    if (!next) return;
-    state.settings = await db.saveSettings({
-      currentLevel: next,
-      levelsPassed: [...state.settings.levelsPassed, state.settings.currentLevel],
-    });
-    toast(`${text('today.nowOn')} ${next}`);
-    await refreshToday();
-  });
-}
-
 const todayCounts = () => session.counts(
   Date.now(), state.settings.newPerDay, state.settings.currentLevel,
 );
 
-async function refreshToday() {
-  const level = state.settings.currentLevel;
-  const counts = await todayCounts();
-  const gate = await levels.progress(level);
-
-  $('level-now').textContent = level;
-  renderPassPanel(gate);
-
-  $('count-due').textContent = faDigits(counts.due);
-  $('count-new').textContent = faDigits(counts.new);
-
-  for (const [id, value] of [['count-due', counts.due], ['count-new', counts.new]]) {
-    $(id).classList.toggle('is-zero', value === 0);
-  }
-
-  const empty = counts.sentenceCount === 0;
-  $('today-empty').hidden = !empty;
-  $('counts').hidden = empty;
-
-  const startable = counts.total > 0;
-  $('btn-start').disabled = !startable;
-  $('btn-start').innerHTML = startable
-    ? `${text('today.start')} &rarr;`
-    : text('today.nothing');
-}
-
-/** The moment a level is cleared. Advancing is a deliberate tap, not automatic. */
-function renderPassPanel(gate) {
-  const panel = $('passed-panel');
+/**
+ * Move up a level the moment the gate is cleared.
+ *
+ * It used to be a panel with a button, on a home screen that no longer exists.
+ * Nothing was being decided by that tap — you cannot fail the gate by passing
+ * it — so it happens on its own now, between rounds, and says so once.
+ */
+async function advanceLevelIfPassed() {
+  const gate = await levels.progress(state.settings.currentLevel);
   const next = levels.nextLevel(gate.level);
-  panel.hidden = !gate.passed || !next;
-  if (panel.hidden) return;
-
-  $('passed-head').textContent = `${gate.level} — ${text('today.passedHead')}`;
-  $('passed-note').textContent =
-    `${levels.LEVEL_META[next].summary} ${text('today.passedNote')}`;
-  $('btn-advance').innerHTML = `${text('today.unlock')} ${next} &rarr;`;
+  if (!gate.passed || !next) return;
+  state.settings = await db.saveSettings({
+    currentLevel: next,
+    levelsPassed: [...state.settings.levelsPassed, gate.level],
+  });
+  toast(`${gate.level} — ${text('today.passedHead')} · ${text('today.nowOn')} ${next}`, 5000);
 }
 
 // --- practice --------------------------------------------------------------
 
 function bindPractice() {
-  $('btn-quit').addEventListener('click', endSession);
   $('btn-reveal').addEventListener('click', reveal);
-  $('btn-type').addEventListener('click', toggleTyping);
   $('btn-undo').addEventListener('click', undo);
-  $('btn-finish').addEventListener('click', endSession);
   $('btn-again').addEventListener('click', startSession);
+  $('btn-settings').addEventListener('click', showSettings);
+  $('btn-settings-back').addEventListener('click', hideSettings);
   $('rating-row').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-r]');
     if (button) rate(button.dataset.r);
@@ -245,17 +201,13 @@ function bindKeys() {
     const key = event.key.toLowerCase();
     const act = (fn) => { event.preventDefault(); fn(); };
 
-    if (key === 'escape') return act(endSession);
     if (key === 'u' || key === 'backspace') return state.last && act(undo);
     if (done) {
-      if (key === ' ' || key === 'enter') {
-        return act(() => (!$('btn-again').hidden ? startSession() : endSession()));
-      }
+      if ((key === ' ' || key === 'enter') && !$('btn-again').hidden) return act(startSession);
       return undefined;
     }
     if (!state.revealed) {
       if (key === ' ' || key === 'enter') return act(reveal);
-      if (key === 't') return act(toggleTyping);
       return undefined;
     }
     if (key === '1' || key === 'f' || key === 'arrowleft') return act(() => rate('fail'));
@@ -267,6 +219,10 @@ function bindKeys() {
 }
 
 async function startSession() {
+  // Between rounds is the only moment nothing is half-answered, so it is where
+  // a cleared level takes effect.
+  await advanceLevelIfPassed();
+
   const counts = await todayCounts();
   const queue = await session.build({
     limit: state.settings.sessionSize,
@@ -274,13 +230,12 @@ async function startSession() {
     weights: session.DEFAULT_WEIGHTS,
     level: state.settings.currentLevel,
   });
-  if (!queue.length) {
-    toast(text('today.nothing'));
-    return;
-  }
 
   Object.assign(state, { queue, index: 0, completed: 0, passes: 0, last: null, busy: false });
   $('practice').hidden = false;
+  $('screen-settings').hidden = true;
+  // An empty queue is not an error — it is the day finished. renderCard shows
+  // the end-of-round panel for it, which is the same screen either way.
   renderCard();
 }
 
@@ -309,32 +264,20 @@ function renderCard() {
   prompt.textContent = session.promptFor(card.sentence, card.direction);
   prompt.classList.toggle('rtl', card.direction === 'faToEn');
 
-  // Typing is remembered between cards. It used to reset on every one, so
-  // drilling a whole round by typing meant tapping Type twenty times.
+  // Typing is the whole app now, so the box is simply always there. It used
+  // to be behind a button that reset on every card.
   const typed = $('card-typed');
   typed.value = '';
-  typed.hidden = !state.settings.typingEnabled;
+  typed.hidden = false;
   typed.classList.toggle('rtl', card.direction === 'enToFa');
   typed.placeholder = text(card.direction === 'enToFa' ? 'card.typeFarsi' : 'card.typeEnglish');
 
   $('card-answer').hidden = true;
   $('btn-reveal').hidden = false;
-  $('input-row').hidden = false;
   $('rating-row').hidden = true;
-  $('btn-type').classList.toggle('on', state.settings.typingEnabled);
 }
 
 /** Type or speak, remembered until you change it back. */
-async function toggleTyping() {
-  if (state.revealed) return;
-  const on = !state.settings.typingEnabled;
-  state.settings = await db.saveSettings({ typingEnabled: on });
-  const typed = $('card-typed');
-  typed.hidden = !on;
-  $('btn-type').classList.toggle('on', on);
-  if (on) typed.focus();
-}
-
 function reveal() {
   const card = currentCard();
   if (!card || state.revealed) return;
@@ -357,14 +300,8 @@ function reveal() {
   renderBreakdown(card.sentence);
   $('card-answer').hidden = false;
   $('btn-reveal').hidden = true;
-  $('input-row').hidden = true;
 
   renderRatings(card);
-
-  // Hearing the sentence at the moment you check it is the cheapest
-  // shadowing there is, and it is the only audio left: a Play button next to
-  // an answer you are already looking at was a second way to do one thing.
-  if (state.speechOK && state.settings.speakEnabled) speech.speak(card.sentence.farsiText);
 }
 
 /**
@@ -503,7 +440,6 @@ async function rate(rating) {
 
     state.last = { card, before, wasNew, rating, requeued, ...result };
 
-    speech.stopSpeaking();
     state.index += 1;
     renderCard();
   } finally {
@@ -536,49 +472,36 @@ async function renderDone() {
   state.revealed = false;
   $('card-view').hidden = true;
   $('done-view').hidden = false;
-  $('input-row').hidden = true;
+  $('btn-undo').hidden = true;
   $('btn-reveal').hidden = true;
   $('rating-row').hidden = true;
   $('done-row').hidden = false;
-  $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.queue.length)}`;
+  $('btn-settings').hidden = false;
+  $('practice-progress').textContent = '';
+  $('done-view').querySelector('h2').textContent = text('card.done');
 
   // Distinct cards, not ratings: a card missed twice then passed is one card.
   const cards = new Set(state.queue.map(session.cardId)).size;
-  $('done-summary').textContent =
-    `${faDigits(cards)} ${text('card.practised')} · ${faDigits(state.passes)}/${faDigits(state.completed)} ${text('today.right')}`;
+  $('done-summary').textContent = state.completed
+    ? `${faDigits(cards)} ${text('card.practised')} · ${faDigits(state.passes)}/${faDigits(state.completed)} ${text('today.right')}`
+    : '';
 
   const counts = await todayCounts();
   const more = counts.total > 0;
-  $('btn-again').hidden = !more;
-  $('btn-again').innerHTML = `${escapeHtml(text('card.again'))} &rarr;`;
+  const again = $('btn-again');
+  again.hidden = !more;
+  again.onclick = startSession;
+  again.innerHTML = `${escapeHtml(text('card.again'))} &rarr;`;
   $('done-next').textContent = more
     ? `${faDigits(counts.due)} ${text('today.due')} · ${faDigits(counts.new)} ${text('today.new')}`
     : text('card.allDone');
 }
 
-async function endSession() {
-  speech.stopSpeaking();
-  $('practice').hidden = true;
-  state.queue = [];
-  state.last = null;
-  await refreshActive();
-}
+
 
 // --- settings --------------------------------------------------------------
 
 function bindSettings() {
-  const slider = (id, labelId, key) => {
-    $(id).addEventListener('input', (e) => { $(labelId).textContent = faDigits(e.target.value); });
-    $(id).addEventListener('change', async (e) => {
-      state.settings = await db.saveSettings({ [key]: Number(e.target.value) });
-    });
-  };
-  slider('set-new', 'new-value', 'newPerDay');
-
-  $('set-speak').addEventListener('change', async (e) => {
-    state.settings = await db.saveSettings({ speakEnabled: e.target.checked });
-  });
-
   $('btn-bank-add').addEventListener('click', addOwnSentence);
   $('bank-fa').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') addOwnSentence();
@@ -646,9 +569,6 @@ async function addOwnSentence() {
     status.textContent = text('bank.added');
     $('bank-en').focus();
     await renderOwnSentences();
-
-  $('keys-group').hidden = !matchMedia('(hover: hover) and (pointer: fine)').matches;
-    await refreshToday();
   } catch (error) {
     const reasons = {
       empty: 'bank.errEmpty',
@@ -679,17 +599,12 @@ async function renderOwnSentences() {
       await deck.removeCustom(button.dataset.id);
       $('bank-status').textContent = text('bank.removed');
       await renderOwnSentences();
-      await refreshToday();
     });
   }
 }
 
 async function renderSettings() {
   const s = state.settings;
-  $('set-new').value = s.newPerDay;
-  $('new-value').textContent = faDigits(s.newPerDay);
-  $('set-speak').checked = s.speakEnabled;
-
   $('set-level').innerHTML = levels.LEVELS
     .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
     .join('');
@@ -701,11 +616,6 @@ async function renderSettings() {
     : text('settings.backupHint');
 
   await renderOwnSentences();
-
-  const voices = await speech.voiceReport();
-  $('voice-report').textContent = voices.persian.length
-    ? `${text('settings.voiceFound')} ${voices.persian.join('، ')}`
-    : `${text('settings.voiceMissing')} — ${text('settings.voiceHow')}`;
 }
 
 function escapeHtml(value) {

@@ -8,7 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 import * as SM2 from '../web/js/sm2.js';
-import { select, matchesAnswer, introducedSince, eligibleAsNew } from '../web/js/session.js';
+import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -142,4 +142,30 @@ test('English matching ignores case and punctuation but not words', () => {
   assert.ok(matchesAnswer('i dont know', sentence, 'faToEn'));
   assert.ok(matchesAnswer("I don’t know", sentence, 'faToEn'));
   assert.ok(!matchesAnswer('I know', sentence, 'faToEn'));
+});
+
+// --- your own sentences are not rationed ---
+
+test('the daily new-card cap spends only on bundled sentences', () => {
+  const card = (id, source) => ({
+    sentence: { id, source }, direction: 'enToFa', isNew: true, review: {},
+  });
+  const fresh = [
+    card('own-1', 'custom'), card('own-2', 'custom'),
+    card('seed-1', 'seed'), card('seed-2', 'seed'), card('seed-3', 'seed'),
+  ];
+  // Budget of one bundled card, in a round with room for everything.
+  const chosen = select([], fresh, 10, { enToFa: 1, faToEn: 0 }, ['enToFa'], 1);
+  const ids = chosen.map((c) => c.sentence.id);
+
+  assert.ok(ids.includes('own-1') && ids.includes('own-2'),
+    'a sentence you wrote is never held back for tomorrow');
+  assert.equal(ids.filter((id) => id.startsWith('seed')).length, 1,
+    'bundled cards still stop at the cap');
+});
+
+test('isOwn is the one place "mine" is decided', () => {
+  assert.ok(isOwn({ source: 'custom' }));
+  assert.ok(!isOwn({ source: 'seed' }));
+  assert.ok(!isOwn({}));
 });

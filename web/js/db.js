@@ -234,8 +234,6 @@ const SETTING_DEFAULTS = {
   // Cards in one round. A round fits a stop or two on the Tube; "another
   // round" is one tap, so a small number costs nothing when there is time.
   sessionSize: 20,
-  speakEnabled: true,
-  typingEnabled: false,
   // CEFR progression. New cards come only from here; reviews come from
   // everywhere. Advanced by passing the gate, or manually from Settings.
   currentLevel: 'A1',

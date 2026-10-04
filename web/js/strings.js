@@ -10,20 +10,14 @@
 
 export const STRINGS = {
   // Tabs and screen titles
-  'tab.today': 'امروز',
   'tab.settings': 'تنظیمات',
 
   // Today
   'today.due': 'مرور',
   'today.new': 'جدید',
-  'today.level': 'سطح',
-  'today.start': 'شروع',
-  'today.nothing': 'چیزی نمونده',
-  'today.empty': 'هنوز جمله‌ای نیست.',
   'today.right': 'درست',
 
   // Practice
-  'card.exit': 'خروج',
   'card.type': 'تایپ',
   'card.reveal': 'جواب',
   'card.alsoCorrect': 'این هم درسته',
@@ -38,23 +32,14 @@ export const STRINGS = {
   // Progress
 
   // Settings
-  'settings.practice': 'تمرین',
-  'settings.audio': 'صدا',
   'settings.level': 'سطح',
   'settings.currentLevel': 'سطح فعلی',
   'settings.backup': 'پشتیبان',
 
   // Settings — practice
   'settings.newPerDay': 'کارت جدید در روز',
-  'settings.newPerDayHint': 'هر کارت جدید هفته‌ها مرور می‌سازه، پس این بیشتر بارِ فرداست تا امروز. فقط وقتی ببرش بالا که مرورها دارن تموم می‌شن.',
-  'settings.levelHint': 'کارت جدید فقط از این سطح میاد؛ مرور از همه‌جا. معمولاً وقتی از دروازهٔ پیشرفت رد بشی خودش جلو می‌ره — دستی عوضش کن اگه نمی‌خوای صبر کنی، یا می‌خوای برگردی عقب.',
 
   // Settings — audio
-  'settings.speak': 'خوندن جواب با صدا',
-  'settings.voiceChecking': 'دنبال صدای فارسی…',
-  'settings.voiceFound': 'صدای فارسی هست:',
-  'settings.voiceMissing': 'صدای فارسی روی این دستگاه نیست',
-  'settings.voiceHow': 'از Settings → Accessibility → Spoken Content → Voices → Farsi اضافه‌ش کن، بعد برنامه رو دوباره باز کن.',
 
   // Settings — backup
   'settings.exportBackup': 'ذخیرهٔ پشتیبان',
@@ -69,14 +54,12 @@ export const STRINGS = {
   'settings.reviews': 'مرور',
 
   // Settings — keyboard and privacy
-  'settings.keyboard': 'صفحه‌کلید',
-  'settings.keyboardHint': 'فاصله جواب · ۱ غلط · ۲ درست · T تایپ · U برگرد · Esc خروج. موقع تایپ، Enter جواب رو نشون می‌ده.',
-  'settings.privacy': 'چی از این دستگاه بیرون می‌ره',
-  'settings.privacyHint': 'هیچی. نه سروری هست نه حسابی. هر جمله، هر نمره و کل برنامهٔ مرور توی همین مرورگر می‌مونه، و پشتیبان فقط جایی می‌ره که خودت می‌فرستیش.',
   'settings.levelNow': 'کارت‌های جدید حالا از این سطح میان:',
 
   // Card
   'card.typeFarsi': 'بنویس…',
+  'card.typeFarsi': 'بنویس…',
+  'card.typeEnglish': 'انگلیسی‌شو بنویس…',
   'card.typeEnglish': 'انگلیسی‌شو بنویس…',
 
   // Boot failure
@@ -86,7 +69,6 @@ export const STRINGS = {
   'boot.failed': 'برنامه بالا نیومد. یه بار ببند و دوباره باز کن.',
 
   // Today and progress
-  'today.unlock': 'باز کردن',
 
 
   // Card badge and directions
@@ -95,7 +77,6 @@ export const STRINGS = {
 
   // Level panel
   'today.passedHead': 'رد شدی',
-  'today.passedNote': 'سطح‌های قبلی سر وقت خودشون برمی‌گردن.',
   'today.nowOn': 'حالا روی سطح',
 
   // Backup detail
@@ -112,7 +93,6 @@ export const STRINGS = {
   'bank.farsi': 'فارسی',
   'bank.finglish': 'تلفظ (اختیاری)',
   'bank.add': 'اضافه کن',
-  'bank.hint': 'هر جمله‌ای که اضافه کنی مثل بقیه وارد مرور می‌شه، با به‌روز شدن بسته پاک نمی‌شه و توی پشتیبان هم میاد.',
   'bank.none': 'هنوز جمله‌ای اضافه نکردی.',
   'bank.added': 'اضافه شد',
   'bank.removed': 'پاک شد',

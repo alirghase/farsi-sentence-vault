@@ -12,33 +12,34 @@ tap, a miss comes straight back, and the whole loop runs with no network.
 
 ## Using it
 
-1. **Today → شروع (Start).** A round is 20 cards: reviews that are due first,
-   then new sentences from your current level.
-2. **Say the sentence out loud**, or tap **تایپ (Type)** and write it.
-3. **جواب (Reveal).** You get the answer, the transliteration, and a word map —
+Opening the app puts you on a card. There is no home screen and no tab bar,
+because there is nowhere else to be.
+
+1. **A sentence appears**, with a box under it. Type the translation.
+2. **جواب (Check).** You get the answer, the transliteration, and a word map —
    each Persian word over its English gloss. Tap a word for its part of speech.
-   If you typed, your answer is shown above the key with a ✓ when it matches
-   the reference or a listed alternative.
-4. **غلط (wrong)** or **درست (right)**. Wrong comes back later in the same round.
+   What you typed sits above the answer with a ✓ when it matches the reference
+   or a listed alternative.
+3. **غلط (wrong)** or **درست (right)**. Wrong comes back later in the same round.
    Right shows how many days until you see it again. Mis-tapped? **برگرد (Undo)**
    in the top corner.
-5. At the end, **یه دور دیگه (Another round)** or Exit.
+4. At the end of a round, **یه دور دیگه (Another round)**, or **تنظیمات**.
 
-Do the due reviews every day before anything else; new cards are what create
-tomorrow's reviews.
+A round is 20 cards: reviews that are due first, then new sentences from your
+current level. 20 new cards a day is the cap, and it is deliberate — new cards
+are what create tomorrow's reviews, so taking a hundred today buries you for a
+week. **Sentences you add yourself are exempt**: you wrote it down because you
+wanted it now.
 
-There is no progress screen. The level gate, the streak, the register and the
-per-tag weak spots were all removed: they were things to read rather than
-things to do, and this is a drilling app. The gate still runs, unwatched — when
-a level clears, an unlock panel appears on Today and nowhere else.
+There is no progress screen and no level screen. The gate still runs, unwatched;
+clearing it moves you up between rounds and says so once.
 
-**Settings** has new cards a day (default 20), level, audio, your own sentence
-bank, and **Save a backup** — do that now and then, because iOS can clear a web
-app's storage and nothing else holds a copy.
+**تنظیمات**, reached only from the end of a round, holds three things: your own
+sentences, **Save a backup** — do that now and then, because iOS can clear a web
+app's storage and nothing else holds a copy — and your level.
 
-On a keyboard: <kbd>Space</kbd> reveals, <kbd>1</kbd> wrong, <kbd>2</kbd> right,
-<kbd>T</kbd> type, <kbd>U</kbd> undo, <kbd>Esc</kbd> exit. While typing,
-<kbd>Enter</kbd> reveals.
+On a keyboard: <kbd>Enter</kbd> checks, <kbd>1</kbd> wrong, <kbd>2</kbd> right,
+<kbd>U</kbd> undo.
 
 ## How it works
 
@@ -50,7 +51,7 @@ BUILD TIME (on the Mac, no network needed at run time)
 RUN TIME
   ┌──────────────── PWA on the phone, fully offline ────────────────┐
   │  IndexedDB · SM-2 scheduler · CEFR level gate · service worker   │
-  │  word map · answer check · TTS · backup file                     │
+  │  word map · answer check · backup file                           │
   └──────────────────────────────────────────────────────────────────┘
 ```
 
@@ -124,9 +125,10 @@ publishes `web/`.
 
 ## Things that will bite you
 
-- **Apple has no Persian dictation.** There is no free on-device Persian speech
-  recognition anywhere on iOS. Text-to-speech works if a Farsi voice is
-  installed; the app detects this and hides the play button when it is not.
+- **Apple has no Persian dictation**, and there is no free on-device Persian
+  speech recognition anywhere on iOS. That is why the app checks typing rather
+  than speech. Text-to-speech was there and is gone: it needed a Farsi voice
+  installed by hand, so on the one device that matters it read nothing aloud.
 - **Gemini retires models aggressively** and the free tier has a hard daily
   request ceiling shared across models. The client falls back through
   `gemini-3.6-flash` → `gemini-3.5-flash` → `gemini-flash-latest`.

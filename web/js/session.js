@@ -23,6 +23,16 @@ export const DEFAULT_WEIGHTS = { enToFa: 0.7, faToEn: 0.3 };
  * it, so Today would promise new cards a session then refused to serve. Nothing
  * passes `kinds` today, which is why it never showed.
  */
+/**
+ * A sentence you wrote yourself.
+ *
+ * These are exempt from the daily new-card cap. The cap exists so you cannot
+ * bury yourself under unfamiliar material; a sentence you just typed in is
+ * neither unfamiliar nor accidental, and telling someone who added one to come
+ * back tomorrow is the opposite of why the bank exists.
+ */
+export const isOwn = (sentence) => sentence.source === 'custom';
+
 export function eligibleAsNew(sentence, levelIds, kinds = null) {
   if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) return false;
   return !levelIds || levelIds.has(sentence.id);
@@ -65,27 +75,32 @@ export async function counts(now = Date.now(), newPerDay = 20, level = null, kin
 
   // Unseen counts only what is actually reachable at the current level.
   const scheduled = new Set(reviews.map((r) => r.key));
-  let unseen = 0;
+  let unseenSeed = 0;
+  let unseenOwn = 0;
   for (const s of sentences) {
     if (!eligibleAsNew(s, levelIds, kinds)) continue;
     for (const d of DIRECTIONS) {
-      if (!scheduled.has(reviewKey(s.id, d))) unseen += 1;
+      if (scheduled.has(reviewKey(s.id, d))) continue;
+      if (isOwn(s)) unseenOwn += 1; else unseenSeed += 1;
     }
   }
+  const unseen = unseenSeed + unseenOwn;
 
   const newToday = introducedSince(reviews, dayStart);
   const reviewedToday = attempts.filter((a) => a.createdAt >= dayStart).length;
 
+  // The cap governs bundled cards only; your own are always available.
   const allowance = Math.max(0, newPerDay - newToday);
+  const introducible = unseenOwn + Math.min(unseenSeed, allowance);
   return {
     due,
-    new: Math.min(unseen, allowance),
+    new: introducible,
     unseen,
     newToday,
     allowance,
     reviewedToday,
     sentenceCount,
-    total: due + Math.min(unseen, allowance),
+    total: due + introducible,
   };
 }
 
@@ -205,10 +220,13 @@ export function select(due, fresh, limit, weights, directions = DIRECTIONS, maxN
 
   const take = (card) => {
     if (sentences.has(card.sentence.id)) return false;
-    if (card.isNew && newTaken >= maxNew) return false;
+    // maxNew is the day's budget for bundled cards. Your own sentences are
+    // spent from nobody's budget — see isOwn.
+    const budgeted = card.isNew && !isOwn(card.sentence);
+    if (budgeted && newTaken >= maxNew) return false;
     chosen.push(card);
     sentences.add(card.sentence.id);
-    if (card.isNew) newTaken += 1;
+    if (budgeted) newTaken += 1;
     return true;
   };
 
