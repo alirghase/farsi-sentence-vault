@@ -36,12 +36,14 @@ from __future__ import annotations
 
 import argparse
 import collections
+import json
 import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import bank
+from core.taxonomy import TRANSFORM_KEYS
 
 PUNCT = '.،؟!؛:«»"\'()'
 
@@ -57,6 +59,47 @@ ATTACHING = {"e", "et", "esh", "etun", "eshun", "em", "emun", "am", "at", "ash"}
 
 def words(text: str) -> list[str]:
     return [w.strip(PUNCT) for w in text.split() if w.strip(PUNCT)]
+
+
+TRANSFORMS_FILE = pathlib.Path(__file__).resolve().parent.parent / "web" / "data" / "transforms.json"
+
+
+def check_transforms(sentences: list[dict]) -> tuple[list[str], int]:
+    """The transformation drills that ship beside the deck.
+
+    They land in the same IndexedDB store as the sentences, so their ids share
+    one space with them: a collision would make one card overwrite the other on
+    the device. This check lived as inline Python inside the CI YAML and broke
+    on its own quoting, which is the argument for it being here.
+    """
+    if not TRANSFORMS_FILE.exists():
+        return [], 0
+
+    rows = json.loads(TRANSFORMS_FILE.read_text())["transforms"]
+    failures: list[str] = []
+    sentence_ids = {s.get("id") for s in sentences}
+    seen: set[str] = set()
+
+    for row in rows:
+        row_id = row.get("id")
+        if not row_id:
+            failures.append(f"transform with no id: {row.get('farsiText')}")
+        elif row_id in seen or row_id in sentence_ids:
+            failures.append(f"transform id collides with another card: {row_id}")
+        else:
+            seen.add(row_id)
+
+        if not row.get("stem"):
+            failures.append(f"transform with no stem: {row.get('farsiText')}")
+        if row.get("transform") not in TRANSFORM_KEYS:
+            failures.append(f"unknown transformation {row.get('transform')!r}: {row.get('farsiText')}")
+        if not row.get("stemEn"):
+            # Without it the drill is also a comprehension test.
+            failures.append(f"transform with no English for its stem: {row.get('stem')}")
+        if row.get("farsiText", "").strip() == row.get("stem", "").strip():
+            failures.append(f"transform whose answer is its own stem: {row.get('stem')}")
+
+    return failures, len(rows)
 
 
 def check(sentences: list[dict]) -> tuple[list[str], int]:
@@ -121,13 +164,16 @@ def main() -> int:
     deck = bank.load()
     sentences = deck["sentences"]
     failures, unmapped = check(sentences)
+    transform_failures, transform_count = check_transforms(sentences)
+    failures += transform_failures
 
     for failure in failures:
         print(f"  FAIL  {failure}")
 
     if not args.quiet or failures:
         print(f"\n{len(sentences)} sentences · {len(sentences) - unmapped} word maps "
-              f"({unmapped} still to annotate) · {len(failures)} failures")
+              f"({unmapped} still to annotate) · {transform_count} transformation drills "
+              f"· {len(failures)} failures")
     return 1 if failures else 0
 
 

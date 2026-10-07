@@ -58,19 +58,6 @@ jobs:
           ids = [s.get('id') for s in d['sentences']]
           if not all(ids) or len(set(ids)) != len(ids):
               sys.exit('every sentence needs a unique id - save through core/bank.py')
-          # Transformation drills ship beside the sentences and share the id
-          # space, because on the device they land in the same store.
-          tp = pathlib.Path('web/data/transforms.json')
-          if tp.exists():
-              td = json.loads(tp.read_text())
-              tids = [r.get('id') for r in td['transforms']]
-              if not all(tids) or len(set(tids) | set(ids)) != len(tids) + len(ids):
-                  sys.exit('transform ids must exist and not collide with sentence ids')
-              missing = [r for r in td['transforms']
-                         if not r.get('stem') or not r.get('transform')]
-              if missing:
-                  sys.exit('a transform needs a stem and a transformation name')
-              print(f"{td['count']} transformation drills")
           "
 
   deploy:
