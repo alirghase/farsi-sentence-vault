@@ -16,6 +16,20 @@ export const DIRECTIONS = ['enToFa', 'faToEn'];
 export const DEFAULT_WEIGHTS = { enToFa: 0.7, faToEn: 0.3 };
 
 /**
+ * How many NEW sentences may be introduced in a day.
+ *
+ * Not a limit on practice — the round is endless, see extraCards. This is the
+ * rate at which unseen material enters, and it is capped because every new card
+ * becomes several reviews over the following fortnight. Take three hundred
+ * tonight and next week is unplayable; the cap is what keeps tomorrow finite.
+ *
+ * A number in the source rather than a setting: there is no screen to put a
+ * slider on, and one number that is the same on every device is easier to
+ * reason about than a stored one that silently differs from the default.
+ */
+export const NEW_PER_DAY = 40;
+
+/**
  * Whether an unseen sentence may be introduced as a new card.
  *
  * One rule, used by both counts() and build(). They each had their own copy and
@@ -58,7 +72,7 @@ export function answerFor(sentence, direction) {
  * pinned at the batch size and never moves as you work — a number that cannot
  * change is useless on a screen whose job is accounting.
  */
-export async function counts(now = Date.now(), newPerDay = 20, level = null, kinds = null) {
+export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = null, kinds = null) {
   const [sentences, reviews, attempts] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
@@ -250,6 +264,39 @@ export function select(due, fresh, limit, weights, directions = DIRECTIONS, maxN
   return chosen;
 }
 
+/**
+ * Cards for drilling past the day's plan.
+ *
+ * The scheduled queue is finite on purpose: due reviews plus a capped number of
+ * new sentences. Practice is not. Once the plan runs out the round keeps going
+ * with cards you have already met, least-recently-practised first.
+ *
+ * These deliberately do NOT touch the schedule — see `extra` in recordAttempt.
+ * `exclude` is the set of cardIds already dealt this round, so a top-up works
+ * through everything you know before coming round again.
+ */
+export async function extraCards(limit, { exclude = new Set(), now = Date.now() } = {}) {
+  const [sentences, reviews] = await Promise.all([
+    db.getAll(db.STORE.sentences),
+    db.getAll(db.STORE.reviews),
+  ]);
+  const byId = new Map(sentences.map((s) => [s.id, s]));
+
+  const pool = reviews
+    .filter((r) => byId.has(r.sentenceId))
+    .filter((r) => !exclude.has(`${r.sentenceId}::${r.direction}`))
+    .sort((a, b) => (a.lastReviewed ?? 0) - (b.lastReviewed ?? 0));
+
+  return pool.slice(0, limit).map((review) => ({
+    sentence: byId.get(review.sentenceId),
+    direction: review.direction,
+    review,
+    isNew: false,
+    // The flag the rest of the app reads to leave the schedule alone.
+    extra: true,
+  }));
+}
+
 export function cardId(card) {
   return reviewKey(card.sentence.id, card.direction);
 }
@@ -310,12 +357,17 @@ export async function recordAttempt({ card, rating, typedAnswer = null, msToReve
     createdAt: now,
   };
 
-  await Promise.all([
-    db.put(db.STORE.reviews, review),
-    db.put(db.STORE.attempts, attempt),
-  ]);
+  // Extra practice records that it happened and nothing else.
+  //
+  // Massed repetition carries no information about how long you will remember
+  // something — you saw it a minute ago — so letting it move a due date would
+  // feed the scheduler the one input it must not have. The card you drilled
+  // five times tonight is still due when it was due.
+  const writes = [db.put(db.STORE.attempts, attempt)];
+  if (!card.extra) writes.push(db.put(db.STORE.reviews, review));
+  await Promise.all(writes);
 
-  return { attempt, review, previous: previous ?? null };
+  return { attempt, review: card.extra ? card.review : review, previous: previous ?? null };
 }
 
 /**
@@ -324,12 +376,15 @@ export async function recordAttempt({ card, rating, typedAnswer = null, msToReve
  * it silently resets a card that was fine.
  */
 export async function undoAttempt({ card, attempt, previous }) {
-  await Promise.all([
-    previous
+  const writes = [db.remove(db.STORE.attempts, attempt.id)];
+  // An extra-practice attempt never wrote a review, so there is none to put
+  // back — and removing one here would delete a real schedule.
+  if (!card.extra) {
+    writes.push(previous
       ? db.put(db.STORE.reviews, previous)
-      : db.remove(db.STORE.reviews, card.review.key),
-    db.remove(db.STORE.attempts, attempt.id),
-  ]);
+      : db.remove(db.STORE.reviews, card.review.key));
+  }
+  await Promise.all(writes);
 }
 
 

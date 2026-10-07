@@ -25,11 +25,19 @@ because there is nowhere else to be.
    in the top corner.
 4. At the end of a round, **یه دور دیگه (Another round)**, or **تنظیمات**.
 
-A round is 20 cards: reviews that are due first, then new sentences from your
-current level. 20 new cards a day is the cap, and it is deliberate — new cards
-are what create tomorrow's reviews, so taking a hundred today buries you for a
-week. **Sentences you add yourself are exempt**: you wrote it down because you
-wanted it now.
+**The round does not end.** Due reviews come first, then new sentences from
+your current level, and after that it keeps dealing cards you already know,
+least-recently-practised first, for as long as you want to sit there.
+
+Those extra cards record that you practised and nothing else. Drilling a card
+five times tonight says nothing about whether you will know it in a fortnight —
+you saw it a minute ago — so letting it move a due date would feed the scheduler
+the one input it must not have.
+
+**40 new sentences a day** (`NEW_PER_DAY` in `web/js/session.js`) is the cap,
+and it caps introduction, not practice: every new card becomes several reviews
+over the next fortnight, so the rate is what keeps tomorrow finite. **Sentences
+you add yourself are exempt** — you wrote it down because you wanted it now.
 
 There is no progress screen and no level screen. The gate still runs, unwatched;
 clearing it moves you up between rounds and says so once.

@@ -8,7 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 import * as SM2 from '../web/js/sm2.js';
-import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn } from '../web/js/session.js';
+import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn, NEW_PER_DAY } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -168,4 +168,18 @@ test('isOwn is the one place "mine" is decided', () => {
   assert.ok(isOwn({ source: 'custom' }));
   assert.ok(!isOwn({ source: 'seed' }));
   assert.ok(!isOwn({}));
+});
+
+// --- practice past the day's plan ---
+
+test('the new-card rate is a cap on introduction, not on practice', () => {
+  // The round is endless; this number only governs how fast unseen material
+  // enters, because each new card becomes several reviews later.
+  assert.ok(Number.isInteger(NEW_PER_DAY) && NEW_PER_DAY > 0);
+  const fresh = Array.from({ length: NEW_PER_DAY + 25 }, (_, i) => ({
+    sentence: { id: `seed-${i}`, source: 'seed' }, direction: 'enToFa', isNew: true, review: {},
+  }));
+  const chosen = select([], fresh, 500, { enToFa: 1, faToEn: 0 }, ['enToFa'], NEW_PER_DAY);
+  assert.equal(chosen.length, NEW_PER_DAY,
+    'a round cannot introduce more than the day allows, however long it runs');
 });

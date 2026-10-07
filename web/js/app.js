@@ -143,7 +143,7 @@ function toast(message, ms = 2600) {
 }
 
 const todayCounts = () => session.counts(
-  Date.now(), state.settings.newPerDay, state.settings.currentLevel,
+  Date.now(), session.NEW_PER_DAY, state.settings.currentLevel,
 );
 
 /**
@@ -219,13 +219,11 @@ function bindKeys() {
 }
 
 async function startSession() {
-  // Between rounds is the only moment nothing is half-answered, so it is where
-  // a cleared level takes effect.
   await advanceLevelIfPassed();
 
   const counts = await todayCounts();
   const queue = await session.build({
-    limit: state.settings.sessionSize,
+    limit: session.NEW_PER_DAY,
     maxNew: counts.allowance,
     weights: session.DEFAULT_WEIGHTS,
     level: state.settings.currentLevel,
@@ -234,16 +232,47 @@ async function startSession() {
   Object.assign(state, { queue, index: 0, completed: 0, passes: 0, last: null, busy: false });
   $('practice').hidden = false;
   $('screen-settings').hidden = true;
-  // An empty queue is not an error — it is the day finished. renderCard shows
-  // the end-of-round panel for it, which is the same screen either way.
-  renderCard();
+  // An empty queue is not the end: renderCard tops it up with cards you already
+  // know. The done panel is only for a device with nothing on it at all.
+  await renderCard();
 }
 
 const currentCard = () => state.queue[state.index];
 
-function renderCard() {
-  const card = currentCard();
+/** How many cards to fetch each time the round needs topping up. */
+const EXTRA_BATCH = 20;
+
+/**
+ * Keep the round going.
+ *
+ * The day's plan — due reviews plus the new-card allowance — runs out. Practice
+ * should not, so when the queue is spent it is refilled with cards you already
+ * know. Only a device with nothing on it at all reaches the end.
+ */
+async function topUp() {
+  const dealt = new Set(state.queue.map(session.cardId));
+  let more = await session.extraCards(EXTRA_BATCH, { exclude: dealt });
+  if (!more.length && dealt.size) {
+    // Everything known has been dealt once this round. Go round again.
+    state.queue = state.queue.slice(state.index);
+    state.index = 0;
+    more = await session.extraCards(EXTRA_BATCH, {
+      exclude: new Set(state.queue.map(session.cardId)),
+    });
+  }
+  if (more.length) state.queue.push(...more);
+  return more.length > 0;
+}
+
+async function renderCard() {
   $('btn-undo').hidden = !state.last;
+  if (state.index >= state.queue.length) {
+    // Finishing the plan is the moment a cleared level takes effect: it is the
+    // only point in an endless round where nothing is half-answered.
+    await advanceLevelIfPassed();
+    if (!(await topUp())) return renderDone();
+  }
+  const card = currentCard();
   if (!card) return renderDone();
 
   state.revealed = false;
@@ -255,7 +284,8 @@ function renderCard() {
   $('done-row').hidden = true;
   document.querySelector('.card-scroll').scrollTop = 0;
 
-  $('practice-progress').textContent = `${faDigits(state.completed)} / ${faDigits(state.queue.length)}`;
+  // A count, not a fraction: the round has no end to be a fraction of.
+  $('practice-progress').textContent = state.completed ? faDigits(state.completed) : '';
   // Which way to translate is the only thing here you act on. Level, new and
   // lapse count are the scheduler describing itself, and this is a flashcard.
   $('card-badge').textContent = text(`dir.${card.direction}`);
@@ -441,7 +471,7 @@ async function rate(rating) {
     state.last = { card, before, wasNew, rating, requeued, ...result };
 
     state.index += 1;
-    renderCard();
+    await renderCard();
   } finally {
     state.busy = false;
   }
@@ -461,7 +491,7 @@ async function undo() {
     state.completed -= 1;
     if (last.rating === 'pass') state.passes -= 1;
     state.last = null;
-    renderCard();
+    await renderCard();
     toast(text('card.undone'), 1400);
   } finally {
     state.busy = false;

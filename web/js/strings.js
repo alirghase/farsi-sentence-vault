@@ -37,7 +37,6 @@ export const STRINGS = {
   'settings.backup': 'پشتیبان',
 
   // Settings — practice
-  'settings.newPerDay': 'کارت جدید در روز',
 
   // Settings — audio
 
