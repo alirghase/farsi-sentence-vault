@@ -46,6 +46,27 @@ REJECTED = {
         "معذرت می‌خوام is a fixed apology, not a verb phrase to put in the past",
     "گلوهامون خیلی درد می‌کنه.":
         "گلوهامون — Persian keeps the body part singular here: گلومون درد می‌کنه",
+
+    # Second run. The pool was widened to longer, less basic sentences, which
+    # brought in set phrases and compound verbs; most of these are the cost of
+    # that and are filtered at source now.
+    "بشقباب لازم نداری؟":
+        "بشقباب — a typo for بشقاب",
+    "داروت رو نبرداشتی؟":
+        "نبرداشتی — برداشتن negates inside the preverb: برنداشتی, which the "
+        "model itself got right twice elsewhere",
+    "خدا حفظت نکنه.":
+        "negating a blessing gives a curse",
+    "خیلی لطف نداری.":
+        "لطف داری is a set thanks; negated it is an insult, not an exercise",
+    "ببخشید مزاحم نشدم.":
+        "ببخشید مزاحم شدم is a fixed apology — negated it means nothing",
+    "ببخشید، معذرت نمی‌خوام.":
+        "the same fixed apology as the first run, from a different stem",
+    "کتاب نمی‌خوندم.":
+        "dropped داشتم from داشتم کتاب می‌خوندم — a different sentence",
+    "بارون نمیاد.":
+        "dropped داره from داره بارون میاد",
 }
 
 
@@ -58,10 +79,15 @@ def main() -> int:
     proposed = json.loads(SOURCE.read_text())["transforms"]
     deck_text = {key(s["farsiText"]) for s in bank.load()["sentences"]}
 
-    kept: list[dict] = []
+    # Additive. A generation run is capped by quota and by the model being
+    # busy, so the file is built up over several of them — and merging used to
+    # write only the current proposal, which would have silently dropped every
+    # drill merged before it.
+    existing = json.loads(OUT.read_text())["transforms"] if OUT.exists() else []
+    kept: list[dict] = list(existing)
     dropped: collections.Counter = collections.Counter()
-    seen_target: set[str] = set()
-    seen_pair: set[tuple[str, str]] = set()
+    seen_target: set[str] = {key(r["farsiText"]) for r in existing}
+    seen_pair: set[tuple[str, str]] = {(key(r["stem"]), r["transform"]) for r in existing}
 
     for row in proposed:
         target = key(row["farsiText"])
@@ -106,7 +132,8 @@ def main() -> int:
         })
 
     by = collections.Counter(k["transform"] for k in kept)
-    print(f"{len(proposed)} proposed -> {len(kept)} kept")
+    print(f"{len(existing)} already merged + {len(proposed)} proposed "
+          f"-> {len(kept)} total")
     for reason, n in dropped.most_common():
         print(f"  {n:4}  dropped: {reason}")
     print("\n  " + " · ".join(f"{k} {v}" for k, v in sorted(by.items())))

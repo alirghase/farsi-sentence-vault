@@ -29,6 +29,7 @@ import argparse
 import collections
 import json
 import pathlib
+import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
@@ -37,6 +38,7 @@ from core import bank, gemini, tenses, validate
 from core.taxonomy import TRANSFORMS, TRANSFORM_KEYS, transform_reference
 
 OUT = pathlib.Path(__file__).resolve().parent / "transforms_out.json"
+MERGED = pathlib.Path(__file__).resolve().parent.parent / "web" / "data" / "transforms.json"
 
 BATCH = 12
 
@@ -87,6 +89,24 @@ def _has(sentence: dict, pattern: str) -> bool:
     return bool(tenses.COMPILED[pattern].search(sentence["farsiText"]))
 
 
+# Addressing someone is a precondition for "say it to شما". A sentence with no
+# second person in it has nothing to make formal, and the first run spent 26 of
+# 45 toFormal requests being told so.
+#
+# Permissive on purpose: it is cheaper to send a few that get refused than to
+# hand-roll Persian agreement and wrongly drop good stems. Any of a standalone
+# تو, a word ending in the 2nd-person ی or the ـت clitic, or an imperative.
+_SECOND_PERSON = re.compile(
+    r"(?<![\u0600-\u06FF])تو(?![\u0600-\u06FF])"
+    r"|[\u0600-\u06FF](?:ی|ت)(?![\u0600-\u06FF])"
+)
+
+
+def addresses_someone(sentence: dict) -> bool:
+    text = sentence["farsiText"]
+    return bool(_SECOND_PERSON.search(text)) or _has(sentence, "imperative")
+
+
 def suits(sentence: dict, transform: str) -> bool:
     """Is this stem worth spending a request on for this transformation?
 
@@ -98,15 +118,41 @@ def suits(sentence: dict, transform: str) -> bool:
     exercise.
     """
     if transform == "negate":
-        return not _has(sentence, "negative")
+        if _has(sentence, "negative"):
+            return False
+        # خدا حفظت کنه, خیلی لطف داری, ببخشید مزاحم شدم. Negating a blessing or
+        # an apology gives you a curse or a nonsense, and the model will produce
+        # it rather than refuse, because the grammar is fine.
+        if sentence.get("situation") == "compliments and thanking (taarof)":
+            return False
+        if sentence.get("situation") == "apologising or explaining lateness":
+            return False
+        # داشتم می‌خوندم. Persian does not really negate the progressive, and the
+        # model answered by quietly dropping داشتم.
+        return not _has(sentence, "past-progressive")
     if transform == "toPast":
         return not _has(sentence, "imperative") and not _has(sentence, "past-simple")
     if transform == "toPlural":
         return not _has(sentence, "imperative")
+    if transform == "toFormal":
+        return addresses_someone(sentence)
     return True
 
 
-def candidates(sentences: list[dict], per_transform: int) -> list[tuple[dict, str]]:
+def already_done() -> set[tuple[str, str]]:
+    """(stem id, transformation) pairs that are already in the shipped file.
+
+    Without this a second run re-proposes everything the first run produced and
+    spends the day's quota regenerating cards that exist.
+    """
+    if not MERGED.exists():
+        return set()
+    rows = json.loads(MERGED.read_text())["transforms"]
+    return {(r["stemId"], r["transform"]) for r in rows}
+
+
+def candidates(sentences: list[dict], per_transform: int,
+               only: list[str] | None = None) -> list[tuple[dict, str]]:
     """Pick stems worth transforming, and which transformation to ask for.
 
     Short, low-level sentences with a hand-checked word map make the best
@@ -117,19 +163,25 @@ def candidates(sentences: list[dict], per_transform: int) -> list[tuple[dict, st
         s for s in sentences
         if s.get("source") != "custom"
         and s.get("breakdown")
-        and s.get("difficulty", 9) <= 2
-        and 3 <= len(s["farsiText"].split()) <= 8
+        and s.get("difficulty", 9) <= 3
+        and 3 <= len(s["farsiText"].split()) <= 10
     ]
     pool.sort(key=lambda s: (s.get("difficulty", 9), len(s["farsiText"].split())))
 
+    done = already_done()
     chosen: list[tuple[dict, str]] = []
     used: set[str] = set()
-    for transform in TRANSFORM_KEYS:
+    # A run cut short by quota or a busy model leaves the later transformations
+    # untouched, because the plan is built in order. --only is how the next run
+    # picks up the ones that were starved rather than redoing the first.
+    for transform in (only or TRANSFORM_KEYS):
         taken = 0
         for s in pool:
             if taken >= per_transform:
                 break
-            if s["id"] in used or not suits(s, transform):
+            if s["id"] in used or (s["id"], transform) in done:
+                continue
+            if not suits(s, transform):
                 continue
             used.add(s["id"])
             chosen.append((s, transform))
@@ -179,6 +231,12 @@ def acceptable(stem: dict, transform: str, result: dict) -> str | None:
     problems = validate.check_sentence(row) or []
     if problems:
         return "; ".join(str(p) for p in problems)[:80]
+
+    # A transformation changes a word; it does not remove one. "داشتم کتاب
+    # می‌خوندم" came back as "کتاب نمی‌خوندم" — grammatical, and not the
+    # sentence that was asked for.
+    if len(farsi.split()) < len(stem["farsiText"].split()):
+        return "lost a word from the stem"
     return None
 
 
@@ -188,11 +246,19 @@ def main() -> int:
     ap.add_argument("--per-transform", type=int, default=40,
                     help="stems to try for each transformation")
     ap.add_argument("--limit", type=int, default=0, help="stop after N API calls")
+    ap.add_argument("--only", help="comma-separated transformations to generate")
     ap.add_argument("--verbose", action="store_true")
     args = ap.parse_args()
 
+    only = None
+    if args.only:
+        only = [k.strip() for k in args.only.split(",")]
+        unknown = [k for k in only if k not in TRANSFORM_KEYS]
+        if unknown:
+            sys.exit(f"unknown transformation(s): {', '.join(unknown)}")
+
     deck = bank.load()
-    plan = candidates(deck["sentences"], args.per_transform)
+    plan = candidates(deck["sentences"], args.per_transform, only)
     print(f"{len(plan)} stems planned across {len(TRANSFORM_KEYS)} transformations")
 
     kept: list[dict] = []
