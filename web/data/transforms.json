@@ -1,0 +1,2221 @@
+{
+  "count": 123,
+  "transforms": [
+    {
+      "id": "7026cae7-d352-5780-90d1-103227742cc0",
+      "kind": "transform",
+      "stemId": "635651a0-2278-41ac-986a-5e807fe1d82b",
+      "stem": "فردا می‌رم خونه.",
+      "stemEn": "I'm going home tomorrow.",
+      "transform": "negate",
+      "farsiText": "فردا نمی‌رم خونه.",
+      "finglish": "fardâ nemiram khune.",
+      "englishText": "I'm not going home tomorrow.",
+      "difficulty": 1,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "f47d6070-15f9-558a-8a3b-e41391a4acca",
+      "kind": "transform",
+      "stemId": "0a68101b-d614-4640-be85-940f5abbe91e",
+      "stem": "امشب وقت داری؟",
+      "stemEn": "Are you free tonight?",
+      "transform": "negate",
+      "farsiText": "امشب وقت نداری؟",
+      "finglish": "emshab vaght nadâri?",
+      "englishText": "Aren't you free tonight?",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "naturalness"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "48c539ec-36a8-5456-9cb8-8f20f3be11c8",
+      "kind": "transform",
+      "stemId": "b07d8bae-4957-4c2c-b8ba-477eb916ff25",
+      "stem": "فردا می‌ریم شمال.",
+      "stemEn": "We are going north tomorrow.",
+      "transform": "negate",
+      "farsiText": "فردا نمی‌ریم شمال.",
+      "finglish": "fardâ nemirim shomâl.",
+      "englishText": "We aren't going north tomorrow.",
+      "difficulty": 1,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "3380fb62-37e9-5e4e-868c-c9733191ab9f",
+      "kind": "transform",
+      "stemId": "c31556c3-5cee-494e-8eba-a959e42ef32d",
+      "stem": "بهم تخفیف بده.",
+      "stemEn": "Give me a discount.",
+      "transform": "negate",
+      "farsiText": "بهم تخفیف نده.",
+      "finglish": "behem takhfif nade.",
+      "englishText": "Don't give me a discount.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "46baa6bd-06d5-50b3-93af-a3cc04fb5192",
+      "kind": "transform",
+      "stemId": "0e75c956-bc7f-4217-979c-0cd77b78611c",
+      "stem": "ببخشید، دیر کردم.",
+      "stemEn": "Excuse me, I'm late.",
+      "transform": "negate",
+      "farsiText": "ببخشید، دیر نکردم.",
+      "finglish": "bebakhshid, dir nakardam.",
+      "englishText": "Excuse me, I'm not late.",
+      "difficulty": 1,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "compound-verb",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "42306ff4-6142-5dac-8379-e11cb1e9cbc1",
+      "kind": "transform",
+      "stemId": "903ee4ca-adc7-47f6-a668-843c6e4df341",
+      "stem": "سرم درد می‌کنه.",
+      "stemEn": "My head hurts.",
+      "transform": "negate",
+      "farsiText": "سرم درد نمی‌کنه.",
+      "finglish": "saram dard nemikone.",
+      "englishText": "My head doesn't hurt.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "8725c3e5-3793-51a0-acb1-02561a64ed84",
+      "kind": "transform",
+      "stemId": "084fdd7c-4713-4a7a-beaf-c065a04a1c7e",
+      "stem": "امروز خیلی خوشحالم!",
+      "stemEn": "I'm so happy today!",
+      "transform": "negate",
+      "farsiText": "امروز خیلی خوشحال نیستم!",
+      "finglish": "emruz kheyli khoshhâl nistam!",
+      "englishText": "I'm not very happy today!",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "fbe89dc0-d790-55f0-b13d-264e72902c99",
+      "kind": "transform",
+      "stemId": "d224ef62-77dd-4d16-a456-e5f4af273b6d",
+      "stem": "امشب می‌ریم سینما.",
+      "stemEn": "We are going to the cinema tonight.",
+      "transform": "negate",
+      "farsiText": "امشب نمی‌ریم سینما.",
+      "finglish": "emshab nemirim sinemâ.",
+      "englishText": "We aren't going to the cinema tonight.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense",
+        "word-order"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "4e492af5-589d-5624-9d46-55d5530c5607",
+      "kind": "transform",
+      "stemId": "0392a3bb-3943-4c66-91a1-aae0825f9377",
+      "stem": "گلوم درد می‌کنه.",
+      "stemEn": "My throat is sore.",
+      "transform": "negate",
+      "farsiText": "گلوم درد نمی‌کنه.",
+      "finglish": "golum dard nemikone.",
+      "englishText": "My throat doesn't hurt.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "7dd8b383-a6ec-54cb-b893-3c26cefd2531",
+      "kind": "transform",
+      "stemId": "297dc0dc-cef5-44d2-9e51-7804bf4a3554",
+      "stem": "امروز خیلی خسته‌ام.",
+      "stemEn": "I'm really tired today.",
+      "transform": "negate",
+      "farsiText": "امروز خیلی خسته نیستم.",
+      "finglish": "emruz kheyli khaste nistam.",
+      "englishText": "I'm not very tired today.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "251ada59-261b-5e55-9acc-44c02dd89fd0",
+      "kind": "transform",
+      "stemId": "e710f2f4-3cf2-4d19-af3b-a39f8c553572",
+      "stem": "گوشم درد می‌کنه.",
+      "stemEn": "I have an earache.",
+      "transform": "negate",
+      "farsiText": "گوشم درد نمی‌کنه.",
+      "finglish": "gusham dard nemikone.",
+      "englishText": "My ear doesn't hurt.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "compound-verb",
+        "pronoun-clitic",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c1f5666b-57ec-56d6-a452-ea9cb70867ff",
+      "kind": "transform",
+      "stemId": "3d66f2de-1b27-42ad-a696-fbda9f9fb414",
+      "stem": "آب‌میوه تازه دارین؟",
+      "stemEn": "Do you have fresh juice?",
+      "transform": "negate",
+      "farsiText": "آب‌میوه تازه ندارین؟",
+      "finglish": "âbmiyeye tâze nadârin?",
+      "englishText": "Don't you have fresh juice?",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "ezafe",
+        "formality",
+        "verb-agreement"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b1f1d2ae-faba-57ec-9af9-f81c7a26c077",
+      "kind": "transform",
+      "stemId": "821c77a2-3888-424a-8f8f-8adf3b4ac71b",
+      "stem": "این سوپ تنده؟",
+      "stemEn": "Is this soup spicy?",
+      "transform": "negate",
+      "farsiText": "این سوپ تند نیست؟",
+      "finglish": "in sup tond nist?",
+      "englishText": "Isn't this soup spicy?",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "naturalness"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "781478e6-c735-59d3-b23a-bec9ab4417d4",
+      "kind": "transform",
+      "stemId": "35d6cb7b-a132-4613-8668-16a6f46567b7",
+      "stem": "خیلی سردرد دارم.",
+      "stemEn": "I have a severe headache.",
+      "transform": "negate",
+      "farsiText": "خیلی سردرد ندارم.",
+      "finglish": "kheyli sardard nadâram.",
+      "englishText": "I don't have much of a headache.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "compound-verb",
+        "naturalness"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "a65d0665-755a-5fbf-a279-4481dcc4fa2c",
+      "kind": "transform",
+      "stemId": "588cb205-9691-40f3-9807-4d7e47e47e92",
+      "stem": "الان می‌آم خونه.",
+      "stemEn": "I am coming home now.",
+      "transform": "negate",
+      "farsiText": "الان نمی‌آم خونه.",
+      "finglish": "alân nemiâm khune.",
+      "englishText": "I am not coming home now.",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "802abce9-d574-5bf1-aee5-464b6c65341d",
+      "kind": "transform",
+      "stemId": "1421a064-02a4-4f18-b52c-37e9fa67782d",
+      "stem": "این پیراهن گرونه؟",
+      "stemEn": "Is this shirt expensive?",
+      "transform": "negate",
+      "farsiText": "این پیراهن گرون نیست؟",
+      "finglish": "in pirâhan gerun nist?",
+      "englishText": "Isn't this shirt expensive?",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "naturalness"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "291759ce-f16f-5dcf-ae11-4f2ea34aefee",
+      "kind": "transform",
+      "stemId": "fc69c4cb-0fe6-4bf9-b9da-927e2c1f4ed0",
+      "stem": "مستقیم برو جلو.",
+      "stemEn": "Go straight ahead.",
+      "transform": "negate",
+      "farsiText": "مستقیم نرو جلو.",
+      "finglish": "mostaghim naro jolo.",
+      "englishText": "Don't go straight ahead.",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "word-order",
+        "naturalness"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "effb1a67-eba8-5b38-a6fc-d25442afc81f",
+      "kind": "transform",
+      "stemId": "80b4518f-c8c5-4efc-8492-2678ad7973d5",
+      "stem": "اینجا بپیچ چپ.",
+      "stemEn": "Turn left here.",
+      "transform": "negate",
+      "farsiText": "اینجا نپیچ چپ.",
+      "finglish": "injâ napeech chap.",
+      "englishText": "Don't turn left here.",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "word-order",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "ee952930-427e-5944-9dc9-97f8270d7a64",
+      "kind": "transform",
+      "stemId": "18d94a19-7ec9-4b82-a76f-cdde89675c33",
+      "stem": "بانک اون‌ور خیابونه.",
+      "stemEn": "The bank is across the street.",
+      "transform": "negate",
+      "farsiText": "بانک اون‌ور خیابون نیست.",
+      "finglish": "bânk unvare kheyâbun nist.",
+      "englishText": "The bank isn't across the street.",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "ezafe"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "5ce39574-5935-5aa5-8d55-975c6d12e021",
+      "kind": "transform",
+      "stemId": "25aa6a6d-820e-4fa6-a822-be5f860359d3",
+      "stem": "بفرما اینجا بشین.",
+      "stemEn": "Please sit down here.",
+      "transform": "negate",
+      "farsiText": "بفرما اینجا نشین.",
+      "finglish": "bafarmâ injâ nashin.",
+      "englishText": "Please don't sit here.",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "formality",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "4482d892-e207-5fe3-bc54-55857423944a",
+      "kind": "transform",
+      "stemId": "c92f0c84-f572-45e3-8c8d-6a609682f6ee",
+      "stem": "خونه‌تون خیلی قشنگه.",
+      "stemEn": "Your house is very pretty.",
+      "transform": "negate",
+      "farsiText": "خونه‌تون خیلی قشنگ نیست.",
+      "finglish": "khunetun kheyly ghashang nist.",
+      "englishText": "Your house isn't very pretty.",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c2cf1f1d-9052-51b0-bf36-b260bfeaac96",
+      "kind": "transform",
+      "stemId": "6afbb169-d1c3-4fc1-823c-35f390958b79",
+      "stem": "مرسی، من سیرم.",
+      "stemEn": "Thank you, I am full.",
+      "transform": "negate",
+      "farsiText": "مرسی، من سیر نیستم.",
+      "finglish": "mersi, man sir nistam.",
+      "englishText": "Thanks, I am not full.",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "pronoun-clitic",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "8763c4ed-a42d-5ae2-bf02-9af14c6bd265",
+      "kind": "transform",
+      "stemId": "e19a6338-e2ab-4d5f-b4be-3cf184d8436c",
+      "stem": "امروز میوه خریدم.",
+      "stemEn": "I bought fruit today.",
+      "transform": "negate",
+      "farsiText": "امروز میوه نخریدم.",
+      "finglish": "emruz mive nakharidam.",
+      "englishText": "I didn't buy fruit today.",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "verb-tense",
+        "word-order"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "8d2fb2a9-aa3d-54b3-9d64-e719d1039989",
+      "kind": "transform",
+      "stemId": "eab9f298-6dd1-4ece-a9e0-37bcab7d583f",
+      "stem": "بازی رو دیدی؟",
+      "stemEn": "Did you watch the game?",
+      "transform": "negate",
+      "farsiText": "بازی رو ندیدی؟",
+      "finglish": "bâzi ro nadidi?",
+      "englishText": "Didn't you watch the game?",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "ra-marker",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "4b1e3d63-649b-5a5d-af25-909599b2a7d9",
+      "kind": "transform",
+      "stemId": "8f8e4250-3620-4ed3-9855-f30cf230abf1",
+      "stem": "دستام رو شستم.",
+      "stemEn": "I washed my hands.",
+      "transform": "negate",
+      "farsiText": "دستام رو نشستم.",
+      "finglish": "dastâm ro nashostam.",
+      "englishText": "I didn't wash my hands.",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "977eecab-79a2-5d2b-8829-400db32dbabc",
+      "kind": "transform",
+      "stemId": "125cd443-a70a-4527-afa2-7a83b3339c35",
+      "stem": "شام درست کردم.",
+      "stemEn": "I cooked dinner.",
+      "transform": "negate",
+      "farsiText": "شام درست نکردم.",
+      "finglish": "shâm dorost nakardam.",
+      "englishText": "I didn't cook dinner.",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "compound-verb",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "93ab149b-c4b1-5a72-bffc-2143a54223fb",
+      "kind": "transform",
+      "stemId": "31836eed-7e37-455f-b211-7f89318ff495",
+      "stem": "امروز پیاده‌روی کردیم.",
+      "stemEn": "We walked today.",
+      "transform": "negate",
+      "farsiText": "امروز پیاده‌روی نکردیم.",
+      "finglish": "emruz piyâderavi nakardim.",
+      "englishText": "We didn't walk today.",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "compound-verb",
+        "verb-tense",
+        "spelling"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9dbbf59e-e2fe-570c-b2fb-8a3b5c088e5f",
+      "kind": "transform",
+      "stemId": "cc67edb1-2e5a-4772-845d-733b10d4ee6e",
+      "stem": "تخفیف هم دارید؟",
+      "stemEn": "Do you offer a discount?",
+      "transform": "negate",
+      "farsiText": "تخفیف هم ندارید؟",
+      "finglish": "takhfif ham nadârid?",
+      "englishText": "Don't you have a discount?",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c9b1116d-032f-53bc-b0dd-9c5f5354d8a6",
+      "kind": "transform",
+      "stemId": "70ae6a75-926b-4ca5-89d2-86b29882fb7c",
+      "stem": "این خیلی گرونه.",
+      "stemEn": "This is too expensive.",
+      "transform": "negate",
+      "farsiText": "این خیلی گرون نیست.",
+      "finglish": "in kheyly garun nist.",
+      "englishText": "This isn't very expensive.",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "048b243f-6b73-5de0-a0ac-ca766b282ba3",
+      "kind": "transform",
+      "stemId": "66c016fb-13e8-43cb-9c05-285a3dbfabda",
+      "stem": "این رو می‌خرم.",
+      "stemEn": "I will buy this one.",
+      "transform": "negate",
+      "farsiText": "این رو نمی‌خرم.",
+      "finglish": "in ro nemikharam.",
+      "englishText": "I won't buy this one.",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "ra-marker",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "76e161b5-36e0-5ee0-b056-a421086f403c",
+      "kind": "transform",
+      "stemId": "8399faa3-435e-4982-9225-995e713e4a01",
+      "stem": "من فارسی می‌خونم.",
+      "stemEn": "I study Persian.",
+      "transform": "negate",
+      "farsiText": "من فارسی نمی‌خونم.",
+      "finglish": "man fârsi nemikhunam.",
+      "englishText": "I don't study Persian.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "27d886b1-5c67-5226-8211-5337d239dc61",
+      "kind": "transform",
+      "stemId": "66dfff4e-e58e-4185-a6da-f3d13d5e5282",
+      "stem": "کجا کار می‌کنی؟",
+      "stemEn": "Where do you work?",
+      "transform": "negate",
+      "farsiText": "کجا کار نمی‌کنی؟",
+      "finglish": "kojâ kâr nemikoni?",
+      "englishText": "Where don't you work?",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "69e99805-fc2d-542c-93ef-06a1ee5a5e30",
+      "kind": "transform",
+      "stemId": "200fdbf3-5627-4cc3-8cd0-d7f04aaa0618",
+      "stem": "خیلی کار دارم.",
+      "stemEn": "I have a lot of work.",
+      "transform": "negate",
+      "farsiText": "خیلی کار ندارم.",
+      "finglish": "kheyli kâr nadâram.",
+      "englishText": "I don't have a lot of work.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "93ca4066-40ad-54a5-be68-be5758b75ca0",
+      "kind": "transform",
+      "stemId": "0dfa6344-9cca-4fc5-91ec-316df683cdf8",
+      "stem": "دلم درد می‌کنه.",
+      "stemEn": "My stomach hurts.",
+      "transform": "negate",
+      "farsiText": "دلم درد نمی‌کنه.",
+      "finglish": "delam dard nemikone.",
+      "englishText": "My stomach doesn't hurt.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "8da1381c-e4c4-5be3-b8cf-8c203c68bbfb",
+      "kind": "transform",
+      "stemId": "14790ed3-083a-47ef-921b-63ad4f933be7",
+      "stem": "تب بالا دارم.",
+      "stemEn": "I have a high fever.",
+      "transform": "negate",
+      "farsiText": "تب بالا ندارم.",
+      "finglish": "tabe bâlâ nadâram.",
+      "englishText": "I don't have a high fever.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "ezafe"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "87f77098-e967-5145-b75f-ecc7519ca7f2",
+      "kind": "transform",
+      "stemId": "9f311b7d-c62c-4f39-a767-b8abc25d7009",
+      "stem": "خیابون خیلی شلوغه.",
+      "stemEn": "The street is very crowded.",
+      "transform": "negate",
+      "farsiText": "خیابون خیلی شلوغ نیست.",
+      "finglish": "khiâbun kheyli sholugh nist.",
+      "englishText": "The street is not very crowded.",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "68d92092-1ceb-5882-8c31-768208efabf6",
+      "kind": "transform",
+      "stemId": "1a9eb719-7c87-4ae7-9871-5c33ee37330a",
+      "stem": "بیرون بارون میاد؟",
+      "stemEn": "Is it raining outside?",
+      "transform": "negate",
+      "farsiText": "بیرون بارون نمیاد؟",
+      "finglish": "birun bârun nemiâd?",
+      "englishText": "Is it not raining outside?",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "1bba1d8a-e103-5f6b-9816-bb9fbf08190e",
+      "kind": "transform",
+      "stemId": "89363d6c-97df-4654-b998-98994e6fb61c",
+      "stem": "ترافیک خیلی سنگینه.",
+      "stemEn": "The traffic is very heavy.",
+      "transform": "negate",
+      "farsiText": "ترافیک خیلی سنگین نیست.",
+      "finglish": "terâfik kheyli sangin nist.",
+      "englishText": "The traffic is not very heavy.",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "4e24b7dd-5833-5ee4-9d3a-4ed9585ca48d",
+      "kind": "transform",
+      "stemId": "a12cc812-d060-4414-929e-2ffbf399826e",
+      "stem": "دستت درد نکنه.",
+      "stemEn": "Thanks a lot for your help!",
+      "transform": "toFormal",
+      "farsiText": "دستتون درد نکنه.",
+      "finglish": "dastetun dard nakone.",
+      "englishText": "Thank you very much for your help!",
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "pronoun-clitic",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "5cc6020a-1274-52a5-b866-28ac5b31a8f0",
+      "kind": "transform",
+      "stemId": "51f7df9b-4852-4693-9302-30d120d05416",
+      "stem": "چرا این‌قدر ناراحتی؟",
+      "stemEn": "Why are you so sad?",
+      "transform": "toFormal",
+      "farsiText": "چرا این‌قدر ناراحتین؟",
+      "finglish": "cherâ inghadr nârâhatin?",
+      "englishText": "Why are you so sad?",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "bf22367d-5bb0-5bd4-8843-4c4b92af5153",
+      "kind": "transform",
+      "stemId": "7583a252-4ca0-4a77-b5c2-e5272f4f30ae",
+      "stem": "الان حالت چطوره؟",
+      "stemEn": "How are you doing right now?",
+      "transform": "toFormal",
+      "farsiText": "الان حالتون چطوره؟",
+      "finglish": "alân hâletun chetore?",
+      "englishText": "How are you doing right now?",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "pronoun-clitic",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "26499f80-3658-5892-bc9d-038c7051fa4d",
+      "kind": "transform",
+      "stemId": "40b85f0b-0e5a-4dc9-9a2e-1ca2c7530ae9",
+      "stem": "الان دقیقا کجایی؟",
+      "stemEn": "Where are you right now?",
+      "transform": "toFormal",
+      "farsiText": "الان دقیقا کجایین؟",
+      "finglish": "alân daghighan kojâyin?",
+      "englishText": "Where exactly are you right now?",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c37815f3-10fc-559c-a90d-06408d066f62",
+      "kind": "transform",
+      "stemId": "568f891f-f057-449e-981d-215048635c79",
+      "stem": "صداتو خوب می‌شنوم.",
+      "stemEn": "I hear your voice clearly.",
+      "transform": "toFormal",
+      "farsiText": "صداتونو خوب می‌شنوم.",
+      "finglish": "sedâtuno khub mishnavam.",
+      "englishText": "I hear your voice clearly.",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "pronoun-clitic",
+        "colloquial",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "1ebb57d1-6af4-5aec-a1c0-f3080e8a8f12",
+      "kind": "transform",
+      "stemId": "83d3df41-a819-48eb-84fd-32c290047f3e",
+      "stem": "شیر تازه داری؟",
+      "stemEn": "Do you have fresh milk?",
+      "transform": "toFormal",
+      "farsiText": "شیر تازه دارین؟",
+      "finglish": "shir-e tâze dârin?",
+      "englishText": "Do you have fresh milk?",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "ezafe"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "43b00efc-30c5-5826-acbc-7385878253b9",
+      "kind": "transform",
+      "stemId": "30556759-09f6-4579-8306-c1c5c45e7882",
+      "stem": "خیلی لطف داری.",
+      "stemEn": "You are very kind.",
+      "transform": "toFormal",
+      "farsiText": "خیلی لطف دارین.",
+      "finglish": "kheyli lotf dârin.",
+      "englishText": "You are very kind.",
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "93ecf577-e849-5ed4-b2e8-bd7a82a68d87",
+      "kind": "transform",
+      "stemId": "159b3738-051e-48cf-9b7d-267a5ca12df7",
+      "stem": "آقا مستقیم می‌ری؟",
+      "stemEn": "Are you going straight, sir?",
+      "transform": "toFormal",
+      "farsiText": "آقا مستقیم می‌رین؟",
+      "finglish": "âghâ mostaghim mirin?",
+      "englishText": "Are you going straight, sir?",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9cf5fc60-ceb9-5e6d-9316-62b67aab09d4",
+      "kind": "transform",
+      "stemId": "32962717-1457-48d6-90d9-73e50262ba36",
+      "stem": "الان تاکسی می‌خوای؟",
+      "stemEn": "Do you want a taxi now?",
+      "transform": "toFormal",
+      "farsiText": "الان تاکسی می‌خواین؟",
+      "finglish": "alân tâksi mikhâyn?",
+      "englishText": "Do you want a taxi now?",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "1388cea3-d335-589c-82c8-260e05c1368f",
+      "kind": "transform",
+      "stemId": "dd9707e6-d933-436f-b4eb-e18796fa0e6f",
+      "stem": "می‌تونی مستقیم بری؟",
+      "stemEn": "Can you go straight?",
+      "transform": "toFormal",
+      "farsiText": "می‌تونین مستقیم برین؟",
+      "finglish": "mitunin mostaghim berin?",
+      "englishText": "Can you go straight?",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "0d21a94d-a46a-5d0d-84ed-297c31a781f8",
+      "kind": "transform",
+      "stemId": "819fd03d-baf9-48ab-84f7-e1b4ce574842",
+      "stem": "راه رو می‌دونی؟",
+      "stemEn": "Do you know the way?",
+      "transform": "toFormal",
+      "farsiText": "راه رو می‌دونین؟",
+      "finglish": "râh ro midunin?",
+      "englishText": "Do you know the way?",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "62ff0087-3d70-5a1e-bf3e-53e16c3d4f46",
+      "kind": "transform",
+      "stemId": "ebb1c03e-18f5-4732-a63c-92e5760452b3",
+      "stem": "ماشینت رو می‌آری؟",
+      "stemEn": "Will you bring your car?",
+      "transform": "toFormal",
+      "farsiText": "ماشینتون رو می‌آرین؟",
+      "finglish": "mâshintun ro miârin?",
+      "englishText": "Will you bring your car?",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "e537d76e-e676-570a-a90b-2481afe54993",
+      "kind": "transform",
+      "stemId": "c6fd7880-5af1-4ee4-bc5a-bd1dbca15107",
+      "stem": "تونستی کارت بخری؟",
+      "stemEn": "Could you buy a card?",
+      "transform": "toFormal",
+      "farsiText": "تونستین کارت بخرین؟",
+      "finglish": "tunestin kârt bokharin?",
+      "englishText": "Could you buy a card?",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "2cc9555c-913b-5029-be21-a29ae6b20d48",
+      "kind": "transform",
+      "stemId": "e227d79a-fc96-490f-b324-e5d15951cc06",
+      "stem": "چنگالت رو بردار!",
+      "stemEn": "Pick up your fork!",
+      "transform": "toFormal",
+      "farsiText": "چنگالتون رو بردارین!",
+      "finglish": "changâletun ro bardârin!",
+      "englishText": "Pick up your fork!",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "ee600702-4d10-5b3e-a712-11b9afc904cd",
+      "kind": "transform",
+      "stemId": "5f787322-de56-41b2-be33-8d8c48adb544",
+      "stem": "درباره هوا پرسیدی؟",
+      "stemEn": "Did you ask about the weather?",
+      "transform": "toFormal",
+      "farsiText": "درباره هوا پرسیدین؟",
+      "finglish": "darbâreye havâ porsidin?",
+      "englishText": "Did you ask about the weather?",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial",
+        "ezafe"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "2eb0eab9-e992-599e-b255-e00da2a7dc55",
+      "kind": "transform",
+      "stemId": "0f51084a-2fee-4c23-ac28-51920eedb8a9",
+      "stem": "روی صندلی نشستی؟",
+      "stemEn": "Did you sit on the seat?",
+      "transform": "toFormal",
+      "farsiText": "روی صندلی نشستین؟",
+      "finglish": "ruye sandali neshestin?",
+      "englishText": "Did you sit on the seat?",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "preposition",
+        "ezafe"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b17134f8-ed6f-5322-8b23-27328e9439af",
+      "kind": "transform",
+      "stemId": "2eb6d7c9-1fe4-4b89-a2c9-8caaa4708f40",
+      "stem": "منتظر مترو موندی؟",
+      "stemEn": "Did you wait for the metro?",
+      "transform": "toFormal",
+      "farsiText": "منتظر مترو موندین؟",
+      "finglish": "montazere metro moundin?",
+      "englishText": "Did you wait for the metro?",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "ezafe",
+        "colloquial",
+        "compound-verb",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "e19ff4fe-3a0a-547f-826f-3e4251af80b9",
+      "kind": "transform",
+      "stemId": "ec8b7448-8725-46d3-9f0e-1ce719184044",
+      "stem": "پول رو برندار!",
+      "stemEn": "Don't take the money!",
+      "transform": "toFormal",
+      "farsiText": "پول رو برندارین!",
+      "finglish": "pul ro bar-nadârin!",
+      "englishText": "Don't take the money!",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "fe0ea13f-461a-5a90-880e-9fd030139c9f",
+      "kind": "transform",
+      "stemId": "c5c841b9-7290-4bfc-aac9-8fdd5101ddaa",
+      "stem": "به راننده بگو!",
+      "stemEn": "Tell the driver!",
+      "transform": "toFormal",
+      "farsiText": "به راننده بگین!",
+      "finglish": "be rânande begin!",
+      "englishText": "Tell the driver!",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "preposition",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "3def0dda-930b-579e-980f-138a23d9d843",
+      "kind": "transform",
+      "stemId": "7116d607-376e-497b-8d78-b8919e1f9d97",
+      "stem": "اون چتر می‌آره.",
+      "stemEn": "He is bringing an umbrella.",
+      "transform": "toPast",
+      "farsiText": "اون چتر آورد.",
+      "finglish": "un chatr âvard.",
+      "englishText": "He brought an umbrella.",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c7561354-9596-5d01-8ff8-a8a0a8b488f4",
+      "kind": "transform",
+      "stemId": "951aa6a1-5e78-4487-882d-1f8a8823beae",
+      "stem": "زمستون بستنی نمی‌فروشن.",
+      "stemEn": "They don't sell ice cream in winter.",
+      "transform": "toPast",
+      "farsiText": "زمستون بستنی نمی‌فروختن.",
+      "finglish": "zemestun bastani nemifrukhtan.",
+      "englishText": "They didn't sell ice cream in winter.",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "70492b8c-61cf-5a2a-a311-9a9c7033b68c",
+      "kind": "transform",
+      "stemId": "c8e403cf-4da5-42ed-a3dc-ab150f8f50ac",
+      "stem": "چی می‌خوای عزیزم؟",
+      "stemEn": "What do you want, dear?",
+      "transform": "toPast",
+      "farsiText": "چی می‌خواستی عزیزم؟",
+      "finglish": "chi mikhâsti azizam?",
+      "englishText": "What did you want, dear?",
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "124ae015-4946-5d36-b604-e92341b2e8fd",
+      "kind": "transform",
+      "stemId": "43c8e334-864d-42da-ae48-1ec5406c0fad",
+      "stem": "امروز ماهی نمی‌خوام.",
+      "stemEn": "I don't want fish today.",
+      "transform": "toPast",
+      "farsiText": "امروز ماهی نمی‌خواستم.",
+      "finglish": "emruz mâhi nemikhâstam.",
+      "englishText": "I didn't want fish today.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "d7ed0a4c-63ba-55c1-97a4-fa0d68051f84",
+      "kind": "transform",
+      "stemId": "9f344611-dadc-466a-8177-11c77c266c20",
+      "stem": "خواهرم خوب می‌خونه.",
+      "stemEn": "My sister sings well.",
+      "transform": "toPast",
+      "farsiText": "خواهرم خوب می‌خوند.",
+      "finglish": "khâharam khub mikhund.",
+      "englishText": "My sister used to sing well.",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "899852a9-9652-531c-998b-eb778e578753",
+      "kind": "transform",
+      "stemId": "3764df65-ff64-4d63-aab0-a17564da7ef4",
+      "stem": "می‌خوام ناهار بخورم.",
+      "stemEn": "I want to eat lunch.",
+      "transform": "toPast",
+      "farsiText": "می‌خواستم ناهار بخورم.",
+      "finglish": "mikhâstam nâhâr bokhoram.",
+      "englishText": "I wanted to eat lunch.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "5dd264ad-b9c3-523a-a189-f0c5a9692b9f",
+      "kind": "transform",
+      "stemId": "58c5fbc3-fcb6-4e81-9c4c-1c285c576cbd",
+      "stem": "یه تاکسی می‌گیرم.",
+      "stemEn": "I will get a taxi.",
+      "transform": "toPast",
+      "farsiText": "یه تاکسی گرفتم.",
+      "finglish": "ye tâksi gereftam.",
+      "englishText": "I got a taxi.",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c7d198c8-0ada-59bf-b361-ecb1840568f1",
+      "kind": "transform",
+      "stemId": "97cb710b-f194-4f2c-8c3b-76ce037be5ef",
+      "stem": "بشقاب لازم داری؟",
+      "stemEn": "Do you need a plate?",
+      "transform": "toPast",
+      "farsiText": "بشقاب لازم داشتی؟",
+      "finglish": "boshghâb lâzem dâshti?",
+      "englishText": "Did you need a plate?",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "compound-verb",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "93b44ae3-5f29-5762-9d5a-2fca6d4c5e1f",
+      "kind": "transform",
+      "stemId": "b4bc69a9-8eb9-4777-8302-0b83bbfa610d",
+      "stem": "اون جمعه‌ها می‌آد؟",
+      "stemEn": "Does he come on Fridays?",
+      "transform": "toPast",
+      "farsiText": "اون جمعه‌ها می‌اومد؟",
+      "finglish": "un jomehâ miumad?",
+      "englishText": "Did he use to come on Fridays?",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "plural",
+        "verb-agreement"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c41d9823-0903-567d-82bc-1cfc86c11339",
+      "kind": "transform",
+      "stemId": "51854276-65b1-4e93-9ac6-497dce63b2d8",
+      "stem": "می‌خوام الان بخوابم.",
+      "stemEn": "I want to sleep now.",
+      "transform": "toPast",
+      "farsiText": "می‌خواستم الان بخوابم.",
+      "finglish": "mikhâstam alân bekhâbam.",
+      "englishText": "I wanted to sleep now.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "fd0ab09e-e6bc-56d3-8c6f-5a0a48a603cb",
+      "kind": "transform",
+      "stemId": "a586ea37-9dac-4a6f-8c28-193742b403da",
+      "stem": "اون کی می‌آد؟",
+      "stemEn": "When does he come?",
+      "transform": "toPast",
+      "farsiText": "اون کی اومد؟",
+      "finglish": "un key umad?",
+      "englishText": "When did he come?",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "word-order"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "50e7fea9-a445-5804-aec9-d14f55500624",
+      "kind": "transform",
+      "stemId": "c905f9b2-a252-4fba-9251-7d53f94bb8ad",
+      "stem": "چشمام دنبالت می‌گردن.",
+      "stemEn": "My eyes are looking for you.",
+      "transform": "toPast",
+      "farsiText": "چشمام دنبالت می‌گشتن.",
+      "finglish": "cheshmâm donbâlet migashtan.",
+      "englishText": "My eyes were looking for you.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "verb-agreement"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "e810539f-7374-58ba-a91f-98c36283fad5",
+      "kind": "transform",
+      "stemId": "f21f7c8f-e9d0-47cf-81d9-f0d0f5532136",
+      "stem": "تو دارو می‌گیری؟",
+      "stemEn": "Do you take medicine?",
+      "transform": "toPast",
+      "farsiText": "تو دارو گرفتی؟",
+      "finglish": "to dâru gerefti?",
+      "englishText": "Did you take medicine?",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "cabf8c9d-9f50-59f3-b57c-6564c7921379",
+      "kind": "transform",
+      "stemId": "b61cf0b6-622f-46fc-b3a7-9315995fec9a",
+      "stem": "می‌خوایم شنبه بیایم.",
+      "stemEn": "We want to come on Saturday.",
+      "transform": "toPast",
+      "farsiText": "می‌خواستیم شنبه بیایم.",
+      "finglish": "mikhâstim shanbe biyâym.",
+      "englishText": "We wanted to come on Saturday.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "ac4099ad-391b-5912-a3f7-f26b37eeae44",
+      "kind": "transform",
+      "stemId": "b620e8c4-8f8a-4b49-9a79-30c629ad1387",
+      "stem": "ظهر کجا بشینیم؟",
+      "stemEn": "Where do we sit at noon?",
+      "transform": "toPast",
+      "farsiText": "ظهر کجا نشستیم؟",
+      "finglish": "zohr kojâ neshastim?",
+      "englishText": "Where did we sit at noon?",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "fdcb0ee1-76f0-5416-aa14-46cdda5bbb0e",
+      "kind": "transform",
+      "stemId": "481d0a39-cf6f-4330-aed3-8f2ffe5f2133",
+      "stem": "امروز میای اینجا؟",
+      "stemEn": "Are you coming here today?",
+      "transform": "toPast",
+      "farsiText": "امروز اومدی اینجا؟",
+      "finglish": "emruz umadi injâ?",
+      "englishText": "Did you come here today?",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "205e913f-4ed0-5488-bcfa-a4fbc92d8371",
+      "kind": "transform",
+      "stemId": "53a456c0-6b00-4792-a0c4-ee412aa39cef",
+      "stem": "اینجا خوب می‌خوابم.",
+      "stemEn": "I sleep well here.",
+      "transform": "toPast",
+      "farsiText": "اینجا خوب خوابیدم.",
+      "finglish": "injâ khub khâbidam.",
+      "englishText": "I slept well here.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "96a0aabc-b5c2-57bb-a766-32690203a8c2",
+      "kind": "transform",
+      "stemId": "9c53541f-07ef-497c-979f-8fa05b883ce5",
+      "stem": "تو سایه می‌شینیم.",
+      "stemEn": "We are sitting in the shade.",
+      "transform": "toPast",
+      "farsiText": "تو سایه نشستیم.",
+      "finglish": "tu sâye neshastim.",
+      "englishText": "We sat in the shade.",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "1b24ae46-24e2-5567-a151-ddc4cf6305ac",
+      "kind": "transform",
+      "stemId": "7b027c82-c899-4e23-b363-261576724971",
+      "stem": "داره بارون میاد.",
+      "stemEn": "It is raining.",
+      "transform": "toPast",
+      "farsiText": "داشت بارون میومد.",
+      "finglish": "dâsht bârun miyumad.",
+      "englishText": "It was raining.",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "7783cfb4-4448-5686-99e2-68535c73ef5d",
+      "kind": "transform",
+      "stemId": "e56d6af4-f98a-4f8c-9730-0d55b6739bc2",
+      "stem": "چرا الان نمی‌خوابی؟",
+      "stemEn": "Why aren't you sleeping now?",
+      "transform": "toPast",
+      "farsiText": "چرا الان نخوابیدی؟",
+      "finglish": "cherâ alân nakhâbidi?",
+      "englishText": "Why didn't you sleep just now?",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "1b4f1fc4-e546-5fb0-9833-233fb60dada9",
+      "kind": "transform",
+      "stemId": "b1e2264a-f59e-4d31-9696-a532a4388c4c",
+      "stem": "واسه شنبه نمی‌خوام.",
+      "stemEn": "I don't want it for Saturday.",
+      "transform": "toPast",
+      "farsiText": "واسه شنبه نمی‌خواستم.",
+      "finglish": "vâse shanbe nemikhâstam.",
+      "englishText": "I didn't want it for Saturday.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "fcb3807b-3ba5-5432-9af9-cda87687b9cb",
+      "kind": "transform",
+      "stemId": "3b630a62-6584-42f5-bde9-7ebffa8e7023",
+      "stem": "برادرت رو نمی‌شناسم.",
+      "stemEn": "I don't know your brother.",
+      "transform": "toPast",
+      "farsiText": "برادرت رو نمی‌شناختم.",
+      "finglish": "barâdaret ro nemishenâkhtam.",
+      "englishText": "I didn't know your brother.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "3d70b96f-0cca-56ef-b8f4-0a7bfa02d291",
+      "kind": "transform",
+      "stemId": "f51d2c42-ac76-4adf-bbc4-6b1478abda84",
+      "stem": "قیمت رو نمی‌دونم.",
+      "stemEn": "I don't know the price.",
+      "transform": "toPast",
+      "farsiText": "قیمت رو نمی‌دونستم.",
+      "finglish": "gheymat ro nemidunestam.",
+      "englishText": "I didn't know the price.",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9b47d0ba-e835-55a2-82f4-09074be3308f",
+      "kind": "transform",
+      "stemId": "2d2fe771-d9d2-40e4-ba36-ab22cf9ae38e",
+      "stem": "الان چی می‌خوای؟",
+      "stemEn": "What do you want now?",
+      "transform": "toPast",
+      "farsiText": "الان چی می‌خواستی؟",
+      "finglish": "alân chi mikhâsti?",
+      "englishText": "What did you want just now?",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "8866bb5f-d971-592e-b636-fd5b511bb677",
+      "kind": "transform",
+      "stemId": "c80b0a46-4bc6-4152-8741-598b0ade24f9",
+      "stem": "سایز رو می‌دونی؟",
+      "stemEn": "Do you know the size?",
+      "transform": "toPast",
+      "farsiText": "سایز رو می‌دونستی؟",
+      "finglish": "sâyz ro midunesti?",
+      "englishText": "Did you know the size?",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "a5adc155-94b3-5987-a458-5a143a8f68fc",
+      "kind": "transform",
+      "stemId": "4186fa0c-43a6-44a6-b289-7d4efd3661ed",
+      "stem": "فروشنده رو می‌شناسی؟",
+      "stemEn": "Do you know the seller?",
+      "transform": "toPast",
+      "farsiText": "فروشنده رو می‌شناختی؟",
+      "finglish": "forushande ro mishnâkhti?",
+      "englishText": "Did you know the seller?",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "99432d14-4693-55fa-b10f-297a09b486f5",
+      "kind": "transform",
+      "stemId": "89eb9f41-9575-4474-aeb2-6a5d390145e1",
+      "stem": "این پیامو نمی‌فهمم.",
+      "stemEn": "I don't understand this message.",
+      "transform": "toPast",
+      "farsiText": "این پیامو نمی‌فهمیدم.",
+      "finglish": "in payâmo nemifahmidam.",
+      "englishText": "I didn't understand this message.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c62670df-b8cb-52c9-bca4-716d428d37f0",
+      "kind": "transform",
+      "stemId": "fa1b439d-dcff-4d91-91e1-3a0049c81a57",
+      "stem": "شاید، مطمئن نیستم.",
+      "stemEn": "Maybe, I'm not sure.",
+      "transform": "toPast",
+      "farsiText": "شاید، مطمئن نبودم.",
+      "finglish": "shâyad, motma'en nabudam.",
+      "englishText": "Maybe, I wasn't sure.",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "6a79e289-b77f-5e24-bdd2-37ee07cc3ed9",
+      "kind": "transform",
+      "stemId": "d3a6db5a-61d9-40ef-8aee-a18dac63f55e",
+      "stem": "به نظرم بهتره.",
+      "stemEn": "In my opinion, it's better.",
+      "transform": "toPast",
+      "farsiText": "به نظرم بهتر بود.",
+      "finglish": "be nazaram behtar bud.",
+      "englishText": "In my opinion, it was better.",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "ed1ab79c-a8ae-5a1b-86b4-16f848d0a3e0",
+      "kind": "transform",
+      "stemId": "4b05c7bd-d232-4f02-8e8a-2e2fe8544c60",
+      "stem": "یعنی دور نیست.",
+      "stemEn": "I mean, it's not far.",
+      "transform": "toPast",
+      "farsiText": "یعنی دور نبود.",
+      "finglish": "ya'ni dur nabud.",
+      "englishText": "I mean, it wasn't far.",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b7447b48-9359-59cd-a52d-cc35bdc18608",
+      "kind": "transform",
+      "stemId": "1f20f0e0-79d0-4d6a-b072-c078d6fa7ae2",
+      "stem": "می‌شه کمکم کنی؟",
+      "stemEn": "Could you help me?",
+      "transform": "toPast",
+      "farsiText": "می‌شد کمکم کنی؟",
+      "finglish": "mishod komakam koni?",
+      "englishText": "Could you have helped me?",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b08ec40b-9aed-5cd1-b733-8d9b44272209",
+      "kind": "transform",
+      "stemId": "c685a4fd-13d8-4bb3-88fc-a41d53e91ce3",
+      "stem": "یکم دیر می‌رسم.",
+      "stemEn": "I'm a bit late.",
+      "transform": "toPast",
+      "farsiText": "یکم دیر رسیدم.",
+      "finglish": "yekam dir rasidam.",
+      "englishText": "I arrived a bit late.",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "af7c475e-a3c4-5943-ae20-c017cf630fbf",
+      "kind": "transform",
+      "stemId": "3923e73e-bcc7-455a-8495-91b89d95e6ba",
+      "stem": "کوچیک‌ترش رو دارین؟",
+      "stemEn": "Do you have a smaller one?",
+      "transform": "toPast",
+      "farsiText": "کوچیک‌ترش رو داشتین؟",
+      "finglish": "kuchiktareš ro dâštin?",
+      "englishText": "Did you have a smaller one?",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "77c0dab2-82d5-5637-9cbf-9479e4b54c56",
+      "kind": "transform",
+      "stemId": "73ec9800-8964-441f-8f09-576774c58b0c",
+      "stem": "سفارش رو نوشتم.",
+      "stemEn": "I wrote the order.",
+      "transform": "toPlural",
+      "farsiText": "سفارش رو نوشتیم.",
+      "finglish": "sefâreš ro neveštim.",
+      "englishText": "We wrote the order.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "0917b6d5-7a0e-5cd1-843c-6682dae514c4",
+      "kind": "transform",
+      "stemId": "0c61e098-8a4a-46c3-9d8f-895149e0f330",
+      "stem": "پسرم بستنی خواست.",
+      "stemEn": "My son wanted ice cream.",
+      "transform": "toPlural",
+      "farsiText": "پسرامون بستنی خواستن.",
+      "finglish": "pesarâmun bastani xâstan.",
+      "englishText": "Our sons wanted ice cream.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "pronoun-clitic",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "7e9b5b89-60bc-5f6e-a635-2aa111ad0717",
+      "kind": "transform",
+      "stemId": "c3a68e07-4609-4ef6-9692-d4a1dad44f87",
+      "stem": "جواب رو ندونستم.",
+      "stemEn": "I didn't know the answer.",
+      "transform": "toPlural",
+      "farsiText": "جواب رو ندونستیم.",
+      "finglish": "javâb ro nadunestim.",
+      "englishText": "We didn't know the answer.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "ra-marker",
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "a68bbe9b-09bf-5d12-b162-0da70cbfd587",
+      "kind": "transform",
+      "stemId": "55b71730-e5c4-4fda-ad63-36196fb43d11",
+      "stem": "مدیرت رو نشناختم.",
+      "stemEn": "I didn't recognize your manager.",
+      "transform": "toPlural",
+      "farsiText": "مدیرت رو نشناختیم.",
+      "finglish": "modiret ro našnâxtim.",
+      "englishText": "We didn't recognize your manager.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "pronoun-clitic",
+        "ra-marker",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "1b871290-3e0a-5fc8-9eee-598ad76f89a1",
+      "kind": "transform",
+      "stemId": "5433d66a-8992-4ccc-8e58-992431bdf9dc",
+      "stem": "پیامک رو نخوندم.",
+      "stemEn": "I didn't read the text message.",
+      "transform": "toPlural",
+      "farsiText": "پیامک رو نخوندیم.",
+      "finglish": "payâmak ro naxundim.",
+      "englishText": "We didn't read the text message.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "ra-marker",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "d923b810-5a32-5edb-b003-c6dd23af8168",
+      "kind": "transform",
+      "stemId": "0bee3405-7965-4c60-8d49-89c9cc9ab9fd",
+      "stem": "داشتم کتاب می‌خوندم.",
+      "stemEn": "I was reading a book.",
+      "transform": "toPlural",
+      "farsiText": "داشتیم کتاب می‌خوندیم.",
+      "finglish": "dâštim ketâb mixundim.",
+      "englishText": "We were reading a book.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "verb-tense",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "e9405f36-c9fb-5f6c-a100-bccc2d573b99",
+      "kind": "transform",
+      "stemId": "c95f1844-48e0-4fff-a82d-668596ebdd6b",
+      "stem": "پیامت رو نفهمیدم.",
+      "stemEn": "I didn't understand your message.",
+      "transform": "toPlural",
+      "farsiText": "پیامت رو نفهمیدیم.",
+      "finglish": "payâmat ro nafahmidim.",
+      "englishText": "We didn't understand your message.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "pronoun-clitic",
+        "ra-marker",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "87704d78-c2f3-5a45-b3bf-4b61f37ab15f",
+      "kind": "transform",
+      "stemId": "580c9ec0-18ac-4ad2-b124-8b717c3f95f6",
+      "stem": "قیمت رو نپرسیدم.",
+      "stemEn": "I didn't ask the price.",
+      "transform": "toPlural",
+      "farsiText": "قیمت رو نپرسیدیم.",
+      "finglish": "gheymat ro naparsidim.",
+      "englishText": "We didn't ask the price.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "ra-marker",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "cbee29e0-992f-59eb-97ed-3d16fd575e08",
+      "kind": "transform",
+      "stemId": "d5dd7d15-a028-4fa3-8b04-d9fb916bcc99",
+      "stem": "دلم خیلی گرفت.",
+      "stemEn": "I felt very sad.",
+      "transform": "toPlural",
+      "farsiText": "دلمون خیلی گرفت.",
+      "finglish": "delemun kheyli gereft.",
+      "englishText": "We felt very sad.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "090491bb-77da-54fc-a49c-86ca41037e0a",
+      "kind": "transform",
+      "stemId": "501bc325-aa21-4111-85e6-ed99bd305b62",
+      "stem": "دیشب زود خوابیدم.",
+      "stemEn": "I slept early last night.",
+      "transform": "toPlural",
+      "farsiText": "دیشب زود خوابیدیم.",
+      "finglish": "dishab zud khâbidim.",
+      "englishText": "We slept early last night.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "45a59254-c32c-5098-8eaa-403b749eb341",
+      "kind": "transform",
+      "stemId": "06e6a85f-e595-457b-860f-282e65eb66c8",
+      "stem": "سیب رو نخوردم.",
+      "stemEn": "I did not eat the apple.",
+      "transform": "toPlural",
+      "farsiText": "سیب رو نخوردیم.",
+      "finglish": "sib ro nakhordim.",
+      "englishText": "We did not eat the apple.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "a2192a59-eb13-561b-b499-1e858ec94853",
+      "kind": "transform",
+      "stemId": "2768042a-cd75-496c-8833-92340a1cd499",
+      "stem": "می‌تونم اینجا بشینم؟",
+      "stemEn": "Can I sit here?",
+      "transform": "toPlural",
+      "farsiText": "می‌تونیم اینجا بشینیم؟",
+      "finglish": "mitunim injâ beshinim?",
+      "englishText": "Can we sit here?",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "d80c69ad-4726-5fe9-9e5f-d13ce5476b8f",
+      "kind": "transform",
+      "stemId": "45775330-98c3-4649-ad07-4e05cbd15a44",
+      "stem": "زود یاد می‌گیری.",
+      "stemEn": "You'll learn quickly.",
+      "transform": "toPlural",
+      "farsiText": "زود یاد می‌گیرین.",
+      "finglish": "zud yâd migirin.",
+      "englishText": "You will learn quickly.",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "3634d2bd-6017-577a-b015-3cefc56926d1",
+      "kind": "transform",
+      "stemId": "d60a133d-f0a3-4cd6-a399-82633af3fe30",
+      "stem": "می‌تونی درستش کنی؟",
+      "stemEn": "Can you fix it?",
+      "transform": "toPlural",
+      "farsiText": "می‌تونین درستش کنین؟",
+      "finglish": "mitunin dorostesh konin?",
+      "englishText": "Can you fix it?",
+      "difficulty": 1,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "36a397ad-9f14-5ee6-9f30-98fb6ab50b87",
+      "kind": "transform",
+      "stemId": "62942bf0-368a-48a5-9e42-273eb6a837c7",
+      "stem": "چای درست کنم؟",
+      "stemEn": "Shall I make some tea?",
+      "transform": "toPlural",
+      "farsiText": "چای درست کنیم؟",
+      "finglish": "chây dorost konim?",
+      "englishText": "Shall we make some tea?",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "44a5e557-1b7d-5018-b89a-060a1f4ed2a6",
+      "kind": "transform",
+      "stemId": "23bfcad1-042a-42ff-bf11-890f5f1c2569",
+      "stem": "یه قهوه سرد می‌خوام.",
+      "stemEn": "I want a cold coffee.",
+      "transform": "toPlural",
+      "farsiText": "یه قهوه سرد می‌خوایم.",
+      "finglish": "ye ghahveye sard mikhâym.",
+      "englishText": "We want a cold coffee.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "ezafe",
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "69d4e4aa-e311-5b7e-8282-8486ea232f5e",
+      "kind": "transform",
+      "stemId": "c2ff30b2-4c52-403a-8813-d5992d14f147",
+      "stem": "سرم خیلی درد می‌کنه.",
+      "stemEn": "My head hurts a lot.",
+      "transform": "toPlural",
+      "farsiText": "سرمون خیلی درد می‌کنه.",
+      "finglish": "saremun kheyli dard mikone.",
+      "englishText": "Our heads hurt a lot.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "pronoun-clitic",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "51622afc-5b9e-5e30-9dea-174d72a246fb",
+      "kind": "transform",
+      "stemId": "05028260-213f-4df6-82f3-1ac97db9d74c",
+      "stem": "این هندونه کیلویی چنده؟",
+      "stemEn": "How much is this watermelon per kilo?",
+      "transform": "toPlural",
+      "farsiText": "این هندونه‌ها کیلویی چندن؟",
+      "finglish": "in hendunehâ kiloyi chandan?",
+      "englishText": "How much are these watermelons per kilo?",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "dea45496-dcb7-5a1b-824f-18880a6fed7d",
+      "kind": "transform",
+      "stemId": "b232b2fa-21ca-456e-b7b4-fb44a46d683d",
+      "stem": "امروز سردرد شدید دارم.",
+      "stemEn": "I have a terrible headache today.",
+      "transform": "toPlural",
+      "farsiText": "امروز سردرد شدید داریم.",
+      "finglish": "emruz sardarde shadid dârim",
+      "englishText": "We have a terrible headache today.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "ezafe",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "75371bf1-d92e-5fbb-9176-bfa38c5ca119",
+      "kind": "transform",
+      "stemId": "b17ab17e-453b-419c-809e-f70b80349b4d",
+      "stem": "دیروز تا ظهر خوابیدم.",
+      "stemEn": "I slept until noon yesterday.",
+      "transform": "toPlural",
+      "farsiText": "دیروز تا ظهر خوابیدیم.",
+      "finglish": "diruz tâ zohr khâbidim",
+      "englishText": "We slept until noon yesterday.",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "verb-tense",
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "32c08238-da4a-533a-98ff-dc5b603c9d8a",
+      "kind": "transform",
+      "stemId": "e97370e6-6a59-424e-bcaf-95321c597db5",
+      "stem": "من این‌جوری فکر نمی‌کنم.",
+      "stemEn": "I don't think that's right.",
+      "transform": "toPlural",
+      "farsiText": "ما این‌جوری فکر نمی‌کنیم.",
+      "finglish": "mâ injuri fekr nemikonim",
+      "englishText": "We don't think that's right.",
+      "difficulty": 1,
+      "situation": "disagreeing politely",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "7308115f-62ac-5392-a6f4-44a9733a955c",
+      "kind": "transform",
+      "stemId": "4c0a2355-a5d2-496d-bb39-09cccdc0b3b2",
+      "stem": "امروز خیلی کار دارم.",
+      "stemEn": "I have a lot of work today.",
+      "transform": "toPlural",
+      "farsiText": "امروز خیلی کار داریم.",
+      "finglish": "emruz kheyli kâr dârim",
+      "englishText": "We have a lot of work today.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "word-order"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "1a59527f-e32a-55ec-b6e9-06c53005c1cf",
+      "kind": "transform",
+      "stemId": "4394b6d6-40da-4f81-92a3-8868b806e52a",
+      "stem": "این غذا خیلی خوشمزه‌ست.",
+      "stemEn": "This food is very delicious.",
+      "transform": "toPlural",
+      "farsiText": "این غذاها خیلی خوشمزه‌ان.",
+      "finglish": "in ghazâhâ kheyli khoshmaze-an",
+      "englishText": "These foods are very delicious.",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "5da9dc56-01f6-59b9-be26-df8f7e3768a7",
+      "kind": "transform",
+      "stemId": "3165adb2-f6cd-42c1-b4e4-0dbbe9317e16",
+      "stem": "این فیلم خیلی کسل‌کننده‌ست.",
+      "stemEn": "This movie is very boring.",
+      "transform": "toPlural",
+      "farsiText": "این فیلم‌ها خیلی کسل‌کننده‌ان.",
+      "finglish": "in filmhâ kheyli keselkonande-an",
+      "englishText": "These movies are very boring.",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "0643bbf1-7555-5552-a59e-70b7673a0ff0",
+      "kind": "transform",
+      "stemId": "755cab87-4ef7-4568-ab39-b529fcdd9a68",
+      "stem": "دیروز یه پیرهن خریدم.",
+      "stemEn": "Yesterday I bought a shirt.",
+      "transform": "toPlural",
+      "farsiText": "دیروز یه پیرهن خریدیم.",
+      "finglish": "diruz ye pirhan kharidim",
+      "englishText": "Yesterday we bought a shirt.",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "692d4a29-e955-56dc-80ce-3cc00a7fa320",
+      "kind": "transform",
+      "stemId": "b4e7506e-1d5d-40a6-a16a-2d647819de77",
+      "stem": "این قهوه خیلی شیرینه.",
+      "stemEn": "The coffee is too sweet.",
+      "transform": "toPlural",
+      "farsiText": "این قهوه‌ها خیلی شیرینن.",
+      "finglish": "in ghahvehâ kheyli shirinan",
+      "englishText": "These coffees are very sweet.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "1de1a3fa-125e-5ac5-87ee-a3042e80c4ef",
+      "kind": "transform",
+      "stemId": "c3d37ba3-759e-433b-919b-aeb8bd490316",
+      "stem": "دو تا ساندویچ می‌خوام.",
+      "stemEn": "I want two sandwiches.",
+      "transform": "toPlural",
+      "farsiText": "دو تا ساندویچ می‌خوایم.",
+      "finglish": "do tâ sândevich mikhâym.",
+      "englishText": "We want two sandwiches.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "plural"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b4ed7d0c-2202-5814-8a60-005af315881d",
+      "kind": "transform",
+      "stemId": "01d6afdf-46ef-4ed5-9431-a2bbcde8dc1e",
+      "stem": "این قطار می‌ره فرودگاه؟",
+      "stemEn": "Does this train go to the airport?",
+      "transform": "toPlural",
+      "farsiText": "این قطارا می‌رن فرودگاه؟",
+      "finglish": "in ghatârâ miran forudgâh?",
+      "englishText": "Do these trains go to the airport?",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "preposition",
+        "verb-tense"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "49059de4-0685-5649-b07c-06f3cbbe04bd",
+      "kind": "transform",
+      "stemId": "f10df981-9a64-47ab-8b97-c883f0351a88",
+      "stem": "کجا باید پیاده بشم؟",
+      "stemEn": "Where should I get off?",
+      "transform": "toPlural",
+      "farsiText": "کجا باید پیاده بشیم؟",
+      "finglish": "kojâ bâyad piyâde beshim?",
+      "englishText": "Where should we get off?",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "99000a5d-c0b6-58f1-ae16-77518689e034",
+      "kind": "transform",
+      "stemId": "1c55d4a5-5585-4f5c-a949-cefeed3e62b9",
+      "stem": "امروز حالم خیلی خوبه.",
+      "stemEn": "I feel great today.",
+      "transform": "toPlural",
+      "farsiText": "امروز حالمون خیلی خوبه.",
+      "finglish": "emruz hâlemun kheyli khube.",
+      "englishText": "We feel great today.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "615ee72a-9d72-5d9b-873e-3c68bc9ebc54",
+      "kind": "transform",
+      "stemId": "bcf8433c-06b4-42d9-a36a-730660a73888",
+      "stem": "یه کیلو گوجه می‌خوام.",
+      "stemEn": "I want a kilo of tomatoes.",
+      "transform": "toPlural",
+      "farsiText": "یه کیلو گوجه می‌خوایم.",
+      "finglish": "ye kilo goje mikhâym.",
+      "englishText": "We want a kilo of tomatoes.",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "57f7dd5c-76e6-5fd9-8543-2beaf65c38cb",
+      "kind": "transform",
+      "stemId": "70f54a17-2efd-43ff-b930-ba3685ebbc86",
+      "stem": "خوش اومدی به خونه‌مون!",
+      "stemEn": "Welcome to our home!",
+      "transform": "toPlural",
+      "farsiText": "خوش اومدین به خونه‌مون!",
+      "finglish": "khosh omadin be khunemun!",
+      "englishText": "Welcome to our home!",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "a5fb93ce-3c77-5ef5-9b7c-60fa8ef25b4c",
+      "kind": "transform",
+      "stemId": "a9f96ee5-412f-4aad-a870-ae361f69a0f3",
+      "stem": "دیروز یه کتاب خوندم.",
+      "stemEn": "I read a book yesterday.",
+      "transform": "toPlural",
+      "farsiText": "دیروز یه کتاب خوندیم.",
+      "finglish": "diruz ye ketâb khundim.",
+      "englishText": "We read a book yesterday.",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial",
+        "verb-tense"
+      ],
+      "alternatives": []
+    }
+  ]
+}

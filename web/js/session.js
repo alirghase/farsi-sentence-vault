@@ -7,13 +7,25 @@ import { idsForLevel } from './levels.js';
 // enToFa is production — the skill that freezes. faToEn is reading.
 // A sentence schedules independently per direction, which ReviewState's
 // sentenceId::direction key already supports.
-export const DIRECTIONS = ['enToFa', 'faToEn'];
+export const DIRECTIONS = ['enToFa', 'faToEn', 'transform'];
+
+/**
+ * A translation card has two directions and they schedule separately, because
+ * producing Persian and reading it are different skills. A transformation card
+ * has one: you are always producing Persian, from Persian.
+ */
+export function directionsFor(sentence) {
+  return sentence.kind === 'transform' ? ['transform'] : ['enToFa', 'faToEn'];
+}
 
 /**
  * Share of new cards per direction. Weighted to production because producing
  * Farsi is the skill that freezes; reading is easier.
  */
-export const DEFAULT_WEIGHTS = { enToFa: 0.7, faToEn: 0.3 };
+// Producing Persian is the gap, so it gets most of the round: translating into
+// Persian plus transformations is 75% of it. Reading Persian back is the
+// easier direction and is there to keep the mapping honest, not to fill time.
+export const DEFAULT_WEIGHTS = { enToFa: 0.5, faToEn: 0.25, transform: 0.25 };
 
 /**
  * How many NEW sentences may be introduced in a day.
@@ -57,10 +69,12 @@ export function reviewKey(sentenceId, direction) {
 }
 
 export function promptFor(sentence, direction) {
+  if (direction === 'transform') return sentence.stem;
   return direction === 'enToFa' ? sentence.englishText : sentence.farsiText;
 }
 
 export function answerFor(sentence, direction) {
+  if (direction === 'transform') return sentence.farsiText;
   return direction === 'enToFa' ? sentence.farsiText : sentence.englishText;
 }
 
@@ -93,7 +107,7 @@ export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = 
   let unseenOwn = 0;
   for (const s of sentences) {
     if (!eligibleAsNew(s, levelIds, kinds)) continue;
-    for (const d of DIRECTIONS) {
+    for (const d of directionsFor(s)) {
       if (scheduled.has(reviewKey(s.id, d))) continue;
       if (isOwn(s)) unseenOwn += 1; else unseenSeed += 1;
     }
@@ -156,7 +170,6 @@ export async function build({
   // New cards are restricted to the current level; due reviews are not, so
   // earlier levels keep resurfacing on their own schedule.
   const levelIds = level ? idsForLevel(sentences, level) : null;
-  const directions = DIRECTIONS;
 
   const due = [];
   const fresh = [];
@@ -167,7 +180,7 @@ export async function build({
     // `kinds` restricts the whole session, due cards included — eligibleAsNew
     // below only governs what may be introduced.
     if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) continue;
-    for (const direction of directions) {
+    for (const direction of directionsFor(sentence)) {
       const key = reviewKey(sentence.id, direction);
       const existing = byKey.get(key);
       if (existing) {
@@ -195,7 +208,7 @@ export async function build({
   // been seen it is an ordinary review and gets no further favour.
   fresh.sort((a, b) => (b.sentence.source === 'custom') - (a.sentence.source === 'custom'));
 
-  const chosen = select(due, fresh, limit, weights, directions, maxNew);
+  const chosen = select(due, fresh, limit, weights, DIRECTIONS, maxNew);
   // A session that front-loads every review and back-loads every new card feels
   // like two different activities.
   shuffle(chosen);
@@ -319,8 +332,9 @@ function shuffle(array) {
 export function targetMs(sentence, direction) {
   const words = (sentence.farsiText ?? '').trim().split(/\s+/).length;
   const base = 4000 + words * 500;
-  // Producing Farsi is slower than reading it; hearing needs the audio to play.
-  const multiplier = direction === 'enToFa' ? 1.15 : 1;
+  // Producing Farsi is slower than reading it, and transforming is slower
+  // still — you have to parse the stem before you can change it.
+  const multiplier = { enToFa: 1.15, transform: 1.3 }[direction] ?? 1;
   return Math.round(base * multiplier);
 }
 
@@ -398,7 +412,7 @@ export async function undoAttempt({ card, attempt, previous }) {
  * only says whether what you wrote is one of the answers on the card.
  */
 export function matchesAnswer(typed, sentence, direction) {
-  const candidates = direction === 'enToFa'
+  const candidates = expectsFarsi(direction)
     ? [sentence.farsiText, ...(sentence.alternatives ?? [])]
     : [sentence.englishText];
   const mine = normaliseAnswer(typed, direction);
@@ -406,9 +420,15 @@ export function matchesAnswer(typed, sentence, direction) {
   return candidates.some((c) => normaliseAnswer(c, direction) === mine);
 }
 
+/**
+ * Which script the answer is in. Two of the three directions want Persian —
+ * translating into it and transforming it — so the test is which one does not.
+ */
+export const expectsFarsi = (direction) => direction !== 'faToEn';
+
 export function normaliseAnswer(value, direction) {
   let s = String(value ?? '').toLowerCase();
-  if (direction === 'enToFa') {
+  if (expectsFarsi(direction)) {
     s = s
       .replace(/ي/g, 'ی').replace(/ى/g, 'ی').replace(/ك/g, 'ک')
       .replace(/[\u064B-\u0652\u0670]/g, '')       // harakat

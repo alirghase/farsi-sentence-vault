@@ -7,7 +7,7 @@ import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as levels from './levels.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
-import { posTitle } from './taxonomy.js';
+import { posTitle, transformTitle } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
 
@@ -314,21 +314,32 @@ async function renderCard() {
 
   // A count, not a fraction: the round has no end to be a fraction of.
   $('practice-progress').textContent = state.completed ? faDigits(state.completed) : '';
-  // Which way to translate is the only thing here you act on. Level, new and
-  // lapse count are the scheduler describing itself, and this is a flashcard.
-  $('card-badge').textContent = text(`dir.${card.direction}`);
+  // On a translation card the badge says which way. On a transformation it
+  // says what to do, which is the whole exercise — the stem alone is not a
+  // question.
+  const isTransform = card.direction === 'transform';
+  $('card-badge').textContent = isTransform
+    ? transformTitle(card.sentence.transform)
+    : text(`dir.${card.direction}`);
+  $('card-badge').classList.toggle('is-instruction', isTransform);
 
   const prompt = $('card-prompt');
   prompt.textContent = session.promptFor(card.sentence, card.direction);
-  prompt.classList.toggle('rtl', card.direction === 'faToEn');
+  prompt.classList.toggle('rtl', isTransform || card.direction === 'faToEn');
+
+  // The stem's meaning, so a transformation is not also a vocabulary test.
+  const stemEn = $('card-stem-en');
+  stemEn.hidden = !isTransform;
+  stemEn.textContent = isTransform ? (card.sentence.stemEn ?? '') : '';
 
   // Typing is the whole app now, so the box is simply always there. It used
   // to be behind a button that reset on every card.
   const typed = $('card-typed');
   typed.value = '';
   typed.hidden = false;
-  typed.classList.toggle('rtl', card.direction === 'enToFa');
-  typed.placeholder = text(card.direction === 'enToFa' ? 'card.typeFarsi' : 'card.typeEnglish');
+  const wantsFarsi = card.direction !== 'faToEn';
+  typed.classList.toggle('rtl', wantsFarsi);
+  typed.placeholder = text(wantsFarsi ? 'card.typeFarsi' : 'card.typeEnglish');
 
   $('card-answer').hidden = true;
   $('btn-reveal').hidden = false;
@@ -348,7 +359,7 @@ function reveal() {
 
   const answer = $('answer-text');
   answer.textContent = session.answerFor(card.sentence, card.direction);
-  answer.classList.toggle('rtl', card.direction === 'enToFa');
+  answer.classList.toggle('rtl', card.direction !== 'faToEn');
 
   renderTypedEcho(card);
   // The echo above the answer now shows what was typed; leaving the box open

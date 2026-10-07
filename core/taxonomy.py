@@ -184,3 +184,46 @@ def tag_reference() -> str:
 
 def difficulty_reference() -> str:
     return "\n".join(f"- Level {k}: {v}" for k, v in DIFFICULTY.items())
+
+
+# --- Transformations --------------------------------------------------------
+#
+# A transformation card gives you a sentence you already know and asks you to
+# change one thing about it. The point is production under a grammatical
+# constraint, which translation drilling never reaches: you can know 1,200
+# sentences by heart and still not be able to make the 1,201st.
+#
+# The set is closed and deliberately small. Each one had to be unambiguous —
+# exactly one right answer in spoken Tehrani — or it teaches a coin flip.
+#
+# Deliberately NOT included:
+#   question    a yes/no question in spoken Persian is intonation. Written down
+#               it is the same sentence with ؟, so the card would be free.
+#   future      خواهم رفت is bookish; spoken Persian uses the present for the
+#               future, so the "transformation" is usually no change at all.
+TRANSFORMS = {
+    "negate": {
+        "title": "منفی‌ش کن",
+        "detail": "Make it negative. The verb takes نـ / نمی, است becomes نیست.",
+    },
+    "toPast": {
+        "title": "بذارش گذشته",
+        "detail": "Put it in the past tense, keeping the same subject.",
+    },
+    "toFormal": {
+        "title": "به شما بگو",
+        "detail": "Say it to someone you would address as شما: the verb ending "
+                  "and any second-person pronoun change with it.",
+    },
+    "toPlural": {
+        "title": "جمعش کن",
+        "detail": "Change the subject from singular to plural (من→ما, اون→اونا) "
+                  "and agree the verb.",
+    },
+}
+
+TRANSFORM_KEYS = sorted(TRANSFORMS)
+
+
+def transform_reference() -> str:
+    return "\n".join(f"- {k}: {v['detail']}" for k, v in TRANSFORMS.items())

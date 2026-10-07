@@ -25,3 +25,15 @@ export const POS_TITLES = {
 export function posTitle(pos) {
   return POS_TITLES[pos] ?? pos;
 }
+
+// Persian labels for the transformation drills. The set itself lives in
+// core/taxonomy.py, which is what generation and validation use; these are the
+// four words shown on the card.
+export const TRANSFORM_TITLES = {
+  negate: 'منفی‌ش کن',
+  toPast: 'بذارش گذشته',
+  toFormal: 'به شما بگو',
+  toPlural: 'جمعش کن',
+};
+
+export const transformTitle = (key) => TRANSFORM_TITLES[key] ?? key;

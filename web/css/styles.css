@@ -230,6 +230,17 @@ kbd {
    the upper third rather than jammed under the header. */
 #card-view:not(.is-revealed) .prompt { margin-top: 6vh; }
 
+/* A transformation card's badge is an instruction, not a label: it is the
+   question, so it is set in ink rather than the faint grey of a direction. */
+.badge.is-instruction {
+  color: var(--paper); background: var(--ink);
+  display: inline-block; padding: 4px 9px; letter-spacing: 0;
+  font-size: 12px; font-weight: 600; direction: rtl;
+}
+/* What the stem means, under it, small. Present so the drill tests grammar
+   and not whether you remember the sentence. */
+.stem-en { margin: 10px 0 0; color: var(--ink-faint); font-size: 13px; }
+
 .typed {
   width: 100%; margin-top: 22px; background: transparent;
   border: 0; border-bottom: 1px solid var(--ink); border-radius: 0;

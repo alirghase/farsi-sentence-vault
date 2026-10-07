@@ -15,7 +15,21 @@ tap, a miss comes straight back, and the whole loop runs with no network.
 Opening the app puts you on a card. There is no home screen and no tab bar,
 because there is nowhere else to be.
 
-1. **A sentence appears**, with a box under it. Type the translation.
+The deck deals two kinds of card.
+
+**Translation**, which is most of it: a sentence appears, you type it in the
+other language.
+
+**Transformation**, which is the part that makes you build rather than recall:
+a sentence you already know appears with an instruction over it — **منفی‌ش کن**
+(make it negative), **بذارش گذشته** (put it in the past), **به شما بگو** (say it
+to شما), **جمعش کن** (make the subject plural). You type the changed sentence.
+You can know a thousand sentences by heart and still not be able to make the
+thousand-and-first; this is the only exercise here that asks for one that is not
+in the deck.
+
+1. **A sentence appears**, with a box under it. Type the translation, or the
+   transformation the badge asks for.
 2. **جواب (Check).** You get the answer, the transliteration, and a word map —
    each Persian word over its English gloss. Tap a word for its part of speech.
    What you typed sits above the answer with a ✓ when it matches the reference
@@ -96,6 +110,8 @@ anything else.
 | `tenses.py` | Which tenses and constructions the deck actually contains |
 | `check_deck.py` | Card-level mistakes: word maps that do not reconstruct their sentence, two meanings in one chip, two cards answering one prompt, split clitics |
 | `review_deck.py` | Asks the model whether a native would say the sentence. Caches and resumes — the free tier is a daily ceiling |
+| `transforms.py` | Writes transformation drills from existing sentences. Proposes only — output goes to a file for review |
+| `merge_transforms.py` | The gate. Nothing reaches the app without passing through it, and its rejection list records what was read and thrown out, with reasons |
 | `prompt_harness.py` | Iterate prompts without a rebuild |
 | `check_js.mjs` | Modules import, cross-module calls resolve, every `$('id')` and string key exists |
 | `test_js.mjs` | Unit tests: scheduler, session selection, answer matching |

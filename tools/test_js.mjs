@@ -8,7 +8,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 import * as SM2 from '../web/js/sm2.js';
-import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn, NEW_PER_DAY } from '../web/js/session.js';
+import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn, NEW_PER_DAY,
+         directionsFor, promptFor, answerFor, expectsFarsi } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -182,4 +183,34 @@ test('the new-card rate is a cap on introduction, not on practice', () => {
   const chosen = select([], fresh, 500, { enToFa: 1, faToEn: 0 }, ['enToFa'], NEW_PER_DAY);
   assert.equal(chosen.length, NEW_PER_DAY,
     'a round cannot introduce more than the day allows, however long it runs');
+});
+
+// --- transformation drills ---
+
+const drill = {
+  kind: 'transform', transform: 'negate',
+  stem: 'فردا می‌رم خونه.', stemEn: "I'm going home tomorrow.",
+  farsiText: 'فردا نمی‌رم خونه.', englishText: "I'm not going home tomorrow.",
+  alternatives: [],
+};
+
+test('a transformation card is one direction, a translation card is two', () => {
+  assert.deepEqual(directionsFor(drill), ['transform']);
+  assert.deepEqual(directionsFor({ farsiText: 'x' }), ['enToFa', 'faToEn']);
+});
+
+test('a transformation asks for the stem and wants the changed sentence', () => {
+  // The prompt is the sentence you know; the instruction is on the badge.
+  assert.equal(promptFor(drill, 'transform'), drill.stem);
+  assert.equal(answerFor(drill, 'transform'), drill.farsiText);
+  // Answering the stem back is the commonest way to get it wrong, and must not
+  // be accepted.
+  assert.ok(matchesAnswer('فردا نمیرم خونه', drill, 'transform'));
+  assert.ok(!matchesAnswer(drill.stem, drill, 'transform'));
+});
+
+test('two of the three directions are answered in Persian', () => {
+  assert.ok(expectsFarsi('enToFa'));
+  assert.ok(expectsFarsi('transform'));
+  assert.ok(!expectsFarsi('faToEn'));
 });
