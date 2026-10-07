@@ -71,6 +71,7 @@ function bootFailed(error) {
   const key = { [db.BLOCKED]: 'boot.blocked', [db.STALE]: 'boot.stale' }[error?.message]
     ?? 'boot.failed';
   $('screen-settings').hidden = true;
+  $('screen-compose').hidden = true;
   $('practice').hidden = false;
   $('card-view').hidden = true;
   $('done-view').hidden = false;
@@ -130,8 +131,32 @@ async function showSettings() {
 async function hideSettings() {
   $('screen-settings').hidden = true;
   $('practice').hidden = false;
-  // A sentence added, or a level changed, changes what should be practised.
   await renderDone();
+}
+
+/**
+ * Writing a sentence down, from wherever you are.
+ *
+ * It used to live inside Settings, behind the end of a round — so capturing the
+ * thing you just wished you could say meant finishing twenty cards first. It is
+ * the point of the app, so it opens from the card.
+ */
+async function showCompose() {
+  state.resumeTo = $('done-view').hidden ? 'card' : 'done';
+  $('practice').hidden = true;
+  $('screen-compose').hidden = false;
+  await renderOwnSentences();
+  $('bank-status').textContent = '';
+  $('bank-en').focus();
+}
+
+async function hideCompose() {
+  $('screen-compose').hidden = true;
+  $('practice').hidden = false;
+  // A sentence you just wrote is drillable now, not tomorrow — it is exempt
+  // from the daily cap — so the round takes it straight away.
+  if (state.resumeTo === 'done') await renderDone();
+  else if (state.index >= state.queue.length) await renderCard();
 }
 
 function toast(message, ms = 2600) {
@@ -172,6 +197,8 @@ function bindPractice() {
   $('btn-again').addEventListener('click', startSession);
   $('btn-settings').addEventListener('click', showSettings);
   $('btn-settings-back').addEventListener('click', hideSettings);
+  $('btn-compose').addEventListener('click', showCompose);
+  $('btn-compose-close').addEventListener('click', hideCompose);
   $('rating-row').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-r]');
     if (button) rate(button.dataset.r);
@@ -232,6 +259,7 @@ async function startSession() {
   Object.assign(state, { queue, index: 0, completed: 0, passes: 0, last: null, busy: false });
   $('practice').hidden = false;
   $('screen-settings').hidden = true;
+  $('screen-compose').hidden = true;
   // An empty queue is not the end: renderCard tops it up with cards you already
   // know. The done panel is only for a device with nothing on it at all.
   await renderCard();
@@ -645,7 +673,6 @@ async function renderSettings() {
       + ` — ${text('settings.backupReplace')}`
     : text('settings.backupHint');
 
-  await renderOwnSentences();
 }
 
 function escapeHtml(value) {

@@ -42,9 +42,15 @@ you add yourself are exempt** — you wrote it down because you wanted it now.
 There is no progress screen and no level screen. The gate still runs, unwatched;
 clearing it moves you up between rounds and says so once.
 
-**تنظیمات**, reached only from the end of a round, holds three things: your own
-sentences, **Save a backup** — do that now and then, because iOS can clear a web
-app's storage and nothing else holds a copy — and your level.
+**+** in the top corner of the card writes a sentence of your own. It is on the
+card rather than in Settings because writing one down is the point of the app,
+and the thought you want to capture arrives mid-round, not after it. Anything
+you add is drillable immediately — your own sentences are exempt from the daily
+cap.
+
+**تنظیمات**, reached from the end of a round, holds two things: **Save a
+backup** — do that now and then, because iOS can clear a web app's storage and
+nothing else holds a copy — and your level.
 
 On a keyboard: <kbd>Enter</kbd> checks, <kbd>1</kbd> wrong, <kbd>2</kbd> right,
 <kbd>U</kbd> undo.

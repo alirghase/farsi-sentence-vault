@@ -91,6 +91,7 @@ export const STRINGS = {
   'bank.english': 'انگلیسی',
   'bank.farsi': 'فارسی',
   'bank.finglish': 'تلفظ (اختیاری)',
+  'bank.straightIn': 'هر جمله‌ای که بنویسی همون موقع میاد تو تمرین — سهمیهٔ کارت جدید روزانه شاملش نمی‌شه.',
   'bank.add': 'اضافه کن',
   'bank.none': 'هنوز جمله‌ای اضافه نکردی.',
   'bank.added': 'اضافه شد',
