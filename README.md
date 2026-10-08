@@ -15,7 +15,8 @@ tap, a miss comes straight back, and the whole loop runs with no network.
 Opening the app puts you on a card. There is no home screen and no tab bar,
 because there is nowhere else to be.
 
-The deck deals two kinds of card.
+The deck deals four kinds of card: translation (60% of a round, in both
+directions), transformations and swaps (25%), and replies (15%).
 
 **Translation**, which is most of it: a sentence appears, you type it in the
 other language.
@@ -35,6 +36,18 @@ sentence and a cue, and produce another. **با «ما» بگو** (say it with *
 or object, so the verb ending or the clitic moves with it), a different
 **verb** or modal, and a different **phrase** (a question word, a time word, how
 you open a request). Writing *ما* in front of the answer is accepted too.
+
+**Replies** are the immersive one. Something is said to you in Persian —
+*چای میل دارین؟*, *ببخشید که زحمت دادم*, *کجایی؟ دیر کردی!* — nothing on the front is
+English, and you answer in Persian. They cover the moment before translation:
+somebody has just spoken and you have to find a sentence at all. There are many
+right replies, so a model answer and a few others are shown and the verdict is
+yours; a miss is not struck through.
+
+**Immersion** (on by default, Settings → غوطه‌وری): the English meaning of a
+drill and the transliteration under every answer stay behind a small tap
+(**معنی**, **تلفظ**) instead of being printed next to the Persian. They are one
+tap away, not gone.
 
 On a drill card the answer's English is shown after you check, so you can tell
 whether the sentence you made means what you meant.
@@ -123,6 +136,7 @@ anything else.
 | `review_deck.py` | Asks the model whether a native would say the sentence. Caches and resumes — the free tier is a daily ceiling |
 | `transforms.py` | Writes transformation drills from existing sentences. Proposes only — output goes to a file for review |
 | `merge_transforms.py` | The gate. Nothing reaches the app without passing through it, and its rejection list records what was read and thrown out, with reasons |
+| `build_replies.py` | Builds the reply drills from `tools/handwritten/replies.json` into `web/data/replies.json` |
 | `build_swaps.py` | Builds the swap drills from `tools/handwritten/swaps.json` — hand-written frames, no model. Rewrites only the swap rows of `transforms.json`, deterministically |
 | `prompt_harness.py` | Iterate prompts without a rebuild |
 | `check_js.mjs` | Modules import, cross-module calls resolve, every `$('id')` and string key exists |

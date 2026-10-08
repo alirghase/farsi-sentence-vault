@@ -318,23 +318,21 @@ async function renderCard() {
 
   // A count, not a fraction: the round has no end to be a fraction of.
   $('practice-progress').textContent = state.completed ? faDigits(state.completed) : '';
-  // On a translation card the badge says which way. On a transformation it
-  // says what to do, which is the whole exercise — the stem alone is not a
-  // question.
-  const isTransform = card.direction === 'transform';
-  $('card-badge').textContent = isTransform
+  // On a translation card the badge says which way. On a drill it says what to
+  // do, which is the whole exercise — the stem alone is not a question.
+  const drill = session.isDrill(card.direction);
+  $('card-badge').textContent = drill
     ? instruction(card.sentence)
     : text(`dir.${card.direction}`);
-  $('card-badge').classList.toggle('is-instruction', isTransform);
+  $('card-badge').classList.toggle('is-instruction', drill);
 
   const prompt = $('card-prompt');
   prompt.textContent = session.promptFor(card.sentence, card.direction);
-  prompt.classList.toggle('rtl', isTransform || card.direction === 'faToEn');
+  prompt.classList.toggle('rtl', drill || card.direction === 'faToEn');
 
-  // The stem's meaning, so a transformation is not also a vocabulary test.
-  const stemEn = $('card-stem-en');
-  stemEn.hidden = !isTransform;
-  stemEn.textContent = isTransform ? stemHint(card.sentence) : '';
+  // What the stem means, so a drill is the grammar and not a vocabulary test —
+  // behind a tap when immersive, so the Persian is what you work from.
+  peek($('card-stem-en'), drill ? stemHint(card.sentence) : '', 'card.meaning');
 
   // Typing is the whole app now, so the box is simply always there. It used
   // to be behind a button that reset on every card.
@@ -343,7 +341,10 @@ async function renderCard() {
   typed.hidden = false;
   const wantsFarsi = card.direction !== 'faToEn';
   typed.classList.toggle('rtl', wantsFarsi);
-  typed.placeholder = text(wantsFarsi ? 'card.typeFarsi' : 'card.typeEnglish');
+  typed.placeholder = text(
+    card.direction === 'reply' ? 'card.typeReply'
+      : wantsFarsi ? 'card.typeFarsi' : 'card.typeEnglish',
+  );
 
   $('card-answer').hidden = true;
   $('btn-reveal').hidden = false;
@@ -369,18 +370,43 @@ function reveal() {
   // The echo above the answer now shows what was typed; leaving the box open
   // invites editing an answer after seeing the key.
   $('card-typed').hidden = true;
-  $('answer-finglish').textContent = card.sentence.finglish ?? '';
+  peek($('answer-finglish'), card.sentence.finglish ?? '', 'card.pronunciation');
   renderBreakdown(card.sentence);
-  // A transformation's answer is a sentence you were never shown in English,
-  // so say what it means.
-  if (card.direction === 'transform') {
-    $('answer-gloss').textContent = card.sentence.englishText;
-    $('answer-gloss').hidden = false;
+  // A drill's answer is a sentence you were never shown in English, so say
+  // what it means.
+  if (session.isDrill(card.direction)) {
+    peek($('answer-gloss'), card.sentence.englishText, 'card.meaning');
   }
   $('card-answer').hidden = false;
   $('btn-reveal').hidden = true;
 
   renderRatings(card);
+}
+
+/**
+ * Put `full` in `element`, or — when immersive — a small label that turns into
+ * it on a tap and back on the next. English and transliteration are crutches;
+ * they stay one tap away rather than gone, because sometimes you need one.
+ */
+function peek(element, full, labelKey) {
+  element.hidden = !full;
+  element.onclick = null;
+  element.classList.remove('is-peek');
+  if (!full) {
+    element.textContent = '';
+    return;
+  }
+  if (!state.settings.immersive) {
+    element.textContent = full;
+    return;
+  }
+  const label = text(labelKey);
+  const show = (open) => {
+    element.textContent = open ? full : label;
+    element.classList.toggle('is-peek', !open);
+  };
+  show(false);
+  element.onclick = () => show(element.textContent === label);
 }
 
 /**
@@ -395,7 +421,9 @@ function renderTypedEcho(card) {
 
   const match = session.matchesAnswer(typed, card.sentence, card.direction);
   echo.className = `typed-echo${match ? ' is-match' : ''}`;
-  echo.classList.toggle('rtl', card.direction === 'enToFa');
+  // A reply has many right answers, so a miss is not struck through.
+  echo.classList.toggle('is-open', card.direction === 'reply');
+  echo.classList.toggle('rtl', card.direction !== 'faToEn');
   echo.textContent = match ? `${typed}  ✓` : typed;
 }
 
@@ -584,6 +612,10 @@ function bindSettings() {
     if (e.key === 'Enter') addOwnSentence();
   });
 
+  $('set-immersive').addEventListener('change', async (e) => {
+    state.settings = await db.saveSettings({ immersive: e.target.checked });
+  });
+
   $('set-level').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ currentLevel: e.target.value });
     toast(`${text('settings.levelNow')} ${e.target.value}`);
@@ -682,6 +714,7 @@ async function renderOwnSentences() {
 
 async function renderSettings() {
   const s = state.settings;
+  $('set-immersive').checked = s.immersive;
   $('set-level').innerHTML = levels.LEVELS
     .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
     .join('');

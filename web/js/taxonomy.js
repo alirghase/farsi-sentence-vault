@@ -38,6 +38,7 @@ export const TRANSFORM_TITLES = {
 
 /** The Persian line over a drill card. */
 export function instruction(sentence) {
+  if (sentence.kind === 'reply') return 'جواب بده';
   return sentence.cue
     ? `با «${sentence.cue}» بگو`
     : TRANSFORM_TITLES[sentence.transform] ?? sentence.transform;

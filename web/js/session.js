@@ -7,25 +7,31 @@ import { idsForLevel } from './levels.js';
 // enToFa is production — the skill that freezes. faToEn is reading.
 // A sentence schedules independently per direction, which ReviewState's
 // sentenceId::direction key already supports.
-export const DIRECTIONS = ['enToFa', 'faToEn', 'transform'];
+export const DIRECTIONS = ['enToFa', 'faToEn', 'transform', 'reply'];
 
 /**
  * A translation card has two directions and they schedule separately, because
- * producing Persian and reading it are different skills. A transformation card
- * has one: you are always producing Persian, from Persian.
+ * producing Persian and reading it are different skills. A transformation or a
+ * reply has one: you are always producing Persian, from Persian.
  */
 export function directionsFor(sentence) {
-  return sentence.kind === 'transform' ? ['transform'] : ['enToFa', 'faToEn'];
+  if (sentence.kind === 'transform') return ['transform'];
+  if (sentence.kind === 'reply') return ['reply'];
+  return ['enToFa', 'faToEn'];
 }
+
+/** Cards whose prompt is a Persian sentence in `stem` rather than a translation. */
+export const isDrill = (direction) => direction === 'transform' || direction === 'reply';
 
 /**
  * Share of new cards per direction. Weighted to production because producing
  * Farsi is the skill that freezes; reading is easier.
  */
 // Producing Persian is the gap, so it gets most of the round: translating into
-// Persian plus transformations is 75% of it. Reading Persian back is the
-// easier direction and is there to keep the mapping honest, not to fill time.
-export const DEFAULT_WEIGHTS = { enToFa: 0.5, faToEn: 0.25, transform: 0.25 };
+// Persian, transforming it and replying to it are 80% of it. Reading Persian
+// back is the easier direction and is there to keep the mapping honest, not to
+// fill time.
+export const DEFAULT_WEIGHTS = { enToFa: 0.4, faToEn: 0.2, transform: 0.25, reply: 0.15 };
 
 /**
  * How many NEW sentences may be introduced in a day.
@@ -67,12 +73,12 @@ export function reviewKey(sentenceId, direction) {
 }
 
 export function promptFor(sentence, direction) {
-  if (direction === 'transform') return sentence.stem;
+  if (isDrill(direction)) return sentence.stem;
   return direction === 'enToFa' ? sentence.englishText : sentence.farsiText;
 }
 
 export function answerFor(sentence, direction) {
-  if (direction === 'transform') return sentence.farsiText;
+  if (isDrill(direction)) return sentence.farsiText;
   return direction === 'enToFa' ? sentence.farsiText : sentence.englishText;
 }
 
@@ -324,8 +330,9 @@ export function targetMs(sentence, direction) {
   const words = (sentence.farsiText ?? '').trim().split(/\s+/).length;
   const base = 4000 + words * 500;
   // Producing Farsi is slower than reading it, and transforming is slower
-  // still — you have to parse the stem before you can change it.
-  const multiplier = { enToFa: 1.15, transform: 1.3 }[direction] ?? 1;
+  // still — you have to parse the stem before you can change it. Replying
+  // means finding a sentence of your own, which is slower again.
+  const multiplier = { enToFa: 1.15, transform: 1.3, reply: 1.5 }[direction] ?? 1;
   return Math.round(base * multiplier);
 }
 
@@ -412,8 +419,8 @@ export function matchesAnswer(typed, sentence, direction) {
 }
 
 /**
- * Which script the answer is in. Two of the three directions want Persian —
- * translating into it and transforming it — so the test is which one does not.
+ * Which script the answer is in. Every direction but reading Persian back wants
+ * Persian, so the test is the one that does not.
  */
 export const expectsFarsi = (direction) => direction !== 'faToEn';
 

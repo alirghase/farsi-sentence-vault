@@ -12,7 +12,7 @@ import { readFileSync } from 'node:fs';
 import * as SM2 from '../web/js/sm2.js';
 import { instruction, stemHint } from '../web/js/taxonomy.js';
 import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn, NEW_PER_DAY,
-         directionsFor, promptFor, answerFor, expectsFarsi } from '../web/js/session.js';
+         directionsFor, promptFor, answerFor, expectsFarsi, isDrill, targetMs } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -243,5 +243,42 @@ test('every shipped drill can be asked and answered', () => {
     assert.ok(instruction(row), row.id);
     assert.ok(matchesAnswer(row.farsiText, row, 'transform'), row.id);
     assert.ok(!matchesAnswer(row.stem, row, 'transform'), `${row.id}: the stem is the answer`);
+  }
+});
+
+// --- replies ---
+
+const reply = {
+  kind: 'reply', stem: 'چای میل دارین؟', stemEn: 'Would you like some tea?',
+  farsiText: 'بله، ممنون.', englishText: 'Yes, thank you.',
+  alternatives: ['نه، زحمت نکشین.'],
+};
+
+test('a reply is one direction, prompted by what was said to you', () => {
+  assert.deepEqual(directionsFor(reply), ['reply']);
+  assert.ok(isDrill('reply') && isDrill('transform') && !isDrill('enToFa'));
+  assert.equal(promptFor(reply, 'reply'), reply.stem);
+  assert.equal(answerFor(reply, 'reply'), reply.farsiText);
+  assert.ok(expectsFarsi('reply'));
+});
+
+test('a reply accepts the model answer or a listed alternative, and not an echo', () => {
+  assert.ok(matchesAnswer('بله ممنون', reply, 'reply'));
+  assert.ok(matchesAnswer('نه زحمت نکشین', reply, 'reply'));
+  assert.ok(!matchesAnswer(reply.stem, reply, 'reply'));
+});
+
+test('finding a sentence of your own is given longer than changing one', () => {
+  assert.ok(targetMs(reply, 'reply') > targetMs(reply, 'transform'));
+});
+
+test('every shipped reply can be asked and answered', () => {
+  const { replies } = JSON.parse(readFileSync(
+    new URL('../web/data/replies.json', import.meta.url), 'utf8'));
+  assert.ok(replies.length > 50);
+  for (const row of replies) {
+    assert.equal(row.kind, 'reply');
+    assert.ok(matchesAnswer(row.farsiText, row, 'reply'), row.id);
+    assert.equal(instruction(row), 'جواب بده');
   }
 });

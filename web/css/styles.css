@@ -241,6 +241,14 @@ kbd {
    and not whether you remember the sentence. */
 .stem-en { margin: 10px 0 0; color: var(--ink-faint); font-size: 13px; }
 
+/* English and pronunciation when immersive: a small label that opens on a tap.
+   Underlined so it reads as something to press, not as a caption. */
+.is-peek {
+  display: inline-block; cursor: pointer; direction: rtl;
+  border-bottom: 1px dashed var(--ink-faint); padding-bottom: 1px;
+  font-family: inherit; font-size: 12px;
+}
+
 .typed {
   width: 100%; margin-top: 22px; background: transparent;
   border: 0; border-bottom: 1px solid var(--ink); border-radius: 0;
@@ -255,6 +263,8 @@ kbd {
   text-decoration-color: var(--rule);
 }
 .typed-echo.is-match { color: var(--ink-soft); text-decoration: none; }
+/* A reply has many right answers; a miss is not a mistake to strike out. */
+.typed-echo.is-open { text-decoration: none; }
 .answer-text { margin: 0; font-family: var(--serif); font-size: 30px; line-height: 1.38; }
 .finglish { margin: 12px 0 0; color: var(--ink-soft); font-size: 14px; font-family: var(--mono); }
 .gloss { margin: 9px 0 0; color: var(--ink-faint); font-size: 13px; }
@@ -307,38 +317,6 @@ kbd {
 #btn-settings { color: var(--ink-soft); }
 #btn-again { font-size: 19px; font-weight: 600; }
 .done-panel h2 { margin: 0 0 6px; font-family: var(--serif); font-size: 24px; font-weight: 500; }
-
-/* --- toast --- */
-.toast {
-  position: fixed; left: var(--gutter); right: var(--gutter);
-  bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 60;
-  background: var(--ink); color: var(--paper);
-  padding: 11px 14px; font-size: 13px; line-height: 1.4;
-}
-
-/* --- verdict buttons --- */
-/* No colour and no gloss: these are two more cells in the ledger, distinguished
-   by position rather than decoration — destructive on the left, as everywhere
-   else in the app. Pressing inverts to ink, which is the only feedback needed
-   and matches how every other control here behaves. */
-.rating-row {
-  display: grid; grid-template-columns: 1fr 1fr;
-  margin: 0 calc(-1 * var(--gutter)) calc(-12px - env(safe-area-inset-bottom, 0px));
-  border-top: 1px solid var(--rule-strong);
-}
-
-.verdict {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 4px; padding: 18px 0 calc(16px + env(safe-area-inset-bottom, 0px));
-  color: var(--ink); background: var(--paper);
-  transition: background .1s, color .1s;
-}
-.verdict + .verdict { border-left: 1px solid var(--rule); }
-
-.verdict-word {
-  font-size: 24px; line-height: 1; font-weight: 500;
-  direction: rtl;
-}
 
 /* --- toast --- */
 .toast {
