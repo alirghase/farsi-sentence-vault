@@ -230,7 +230,7 @@ TRANSFORM_KEYS = sorted(TRANSFORMS)
 # gives you one version of a frame and a cue, and asks for another version:
 # the same sentence with ما, the same sentence with لازم داشتن. Nothing here is
 # model-written — the versions are hand-written minimal pairs in
-# tools/handwritten/swaps.json, and tools/build_swaps.py turns them into cards.
+# tools/handwritten/drills/swaps.json, and tools/build_swaps.py turns them into cards.
 #
 # The card shows its cue, so unlike a transformation it has no fixed title.
 SWAPS = {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the reply drills from tools/handwritten/replies.json.
+"""Build the reply drills from tools/handwritten/drills/replies.json.
 
 A reply card says something to you in Persian — a question, a thank-you, an
 offer of tea — and you answer in Persian. Nothing on the front is English. It
@@ -24,7 +24,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from core import validate
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "tools" / "handwritten" / "replies.json"
+SOURCE = ROOT / "tools" / "handwritten" / "drills" / "replies.json"
 OUT = ROOT / "web" / "data" / "replies.json"
 ZWNJ = "‌"
 

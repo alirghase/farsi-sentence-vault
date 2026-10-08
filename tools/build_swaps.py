@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the swap drills from tools/handwritten/swaps.json.
+"""Build the swap drills from tools/handwritten/drills/swaps.json.
 
 A swap card shows one version of a frame and a cue — "say it with ما", "say it
 with لازم داشتن" — and asks for another version. It is the drill for being able
@@ -33,7 +33,7 @@ from core import validate
 from core.taxonomy import SWAP_KEYS
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "tools" / "handwritten" / "swaps.json"
+SOURCE = ROOT / "tools" / "handwritten" / "drills" / "swaps.json"
 OUT = ROOT / "web" / "data" / "transforms.json"
 
 PER_FRAME = 4

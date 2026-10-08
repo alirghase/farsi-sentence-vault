@@ -136,8 +136,8 @@ anything else.
 | `review_deck.py` | Asks the model whether a native would say the sentence. Caches and resumes — the free tier is a daily ceiling |
 | `transforms.py` | Writes transformation drills from existing sentences. Proposes only — output goes to a file for review |
 | `merge_transforms.py` | The gate. Nothing reaches the app without passing through it, and its rejection list records what was read and thrown out, with reasons |
-| `build_replies.py` | Builds the reply drills from `tools/handwritten/replies.json` into `web/data/replies.json` |
-| `build_swaps.py` | Builds the swap drills from `tools/handwritten/swaps.json` — hand-written frames, no model. Rewrites only the swap rows of `transforms.json`, deterministically |
+| `build_replies.py` | Builds the reply drills from `tools/handwritten/drills/replies.json` into `web/data/replies.json` |
+| `build_swaps.py` | Builds the swap drills from `tools/handwritten/drills/swaps.json` — hand-written frames, no model. Rewrites only the swap rows of `transforms.json`, deterministically |
 | `prompt_harness.py` | Iterate prompts without a rebuild |
 | `check_js.mjs` | Modules import, cross-module calls resolve, every `$('id')` and string key exists |
 | `test_js.mjs` | Unit tests: scheduler, session selection, answer matching |
@@ -176,7 +176,7 @@ python3 tools/derive_breakdown.py
 git diff --stat web/data     # the diff is the review
 ```
 
-To add swaps, add a frame to `tools/handwritten/swaps.json` — the versions of one
+To add swaps, add a frame to `tools/handwritten/drills/swaps.json` — the versions of one
 sentence, written out — then `python3 tools/build_swaps.py --write`. It refuses
 a frame with a bookish form, a repeated version or a shared cue.
 
