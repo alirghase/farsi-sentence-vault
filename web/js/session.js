@@ -42,14 +42,6 @@ export const DEFAULT_WEIGHTS = { enToFa: 0.5, faToEn: 0.25, transform: 0.25 };
 export const NEW_PER_DAY = 40;
 
 /**
- * Whether an unseen sentence may be introduced as a new card.
- *
- * One rule, used by both counts() and build(). They each had their own copy and
- * the copies already disagreed: build() honoured `kinds` and counts() ignored
- * it, so Today would promise new cards a session then refused to serve. Nothing
- * passes `kinds` today, which is why it never showed.
- */
-/**
  * A sentence you wrote yourself.
  *
  * These are exempt from the daily new-card cap. The cap exists so you cannot
@@ -59,8 +51,14 @@ export const NEW_PER_DAY = 40;
  */
 export const isOwn = (sentence) => sentence.source === 'custom';
 
-export function eligibleAsNew(sentence, levelIds, kinds = null) {
-  if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) return false;
+/**
+ * Whether an unseen sentence may be introduced as a new card.
+ *
+ * One rule, used by both counts() and build(): they each had their own copy once
+ * and the copies drifted, so the end-of-round count promised new cards a
+ * session then refused to serve.
+ */
+export function eligibleAsNew(sentence, levelIds) {
   return !levelIds || levelIds.has(sentence.id);
 }
 
@@ -79,14 +77,13 @@ export function answerFor(sentence, direction) {
 }
 
 /**
- * The day's ledger figures.
+ * What is waiting: reviews due, and new cards that may still be introduced.
  *
- * `fresh` is the NEW ALLOWANCE REMAINING today, not the raw count of unseen
- * cards. With 400 sentences there are 800 unseen cards, so a raw count sits
- * pinned at the batch size and never moves as you work — a number that cannot
- * change is useless on a screen whose job is accounting.
+ * `new` is bounded by the day's remaining allowance, not the raw count of unseen
+ * cards — with a thousand sentences that count would sit pinned and never move
+ * as you work.
  */
-export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = null, kinds = null) {
+export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = null) {
   const [sentences, reviews, attempts] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
@@ -106,7 +103,7 @@ export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = 
   let unseenSeed = 0;
   let unseenOwn = 0;
   for (const s of sentences) {
-    if (!eligibleAsNew(s, levelIds, kinds)) continue;
+    if (!eligibleAsNew(s, levelIds)) continue;
     for (const d of directionsFor(s)) {
       if (scheduled.has(reviewKey(s.id, d))) continue;
       if (isOwn(s)) unseenOwn += 1; else unseenSeed += 1;
@@ -157,7 +154,6 @@ export async function build({
   maxNew = limit,
   weights = DEFAULT_WEIGHTS,
   level = null,
-  kinds = null,
   now = Date.now(),
 }) {
   const [sentences, reviews] = await Promise.all([
@@ -175,11 +171,6 @@ export async function build({
   const fresh = [];
 
   for (const sentence of sentences) {
-    // A word card and a sentence card are both rows here; `kinds` lets a
-    // session be restricted to one without a second store.
-    // `kinds` restricts the whole session, due cards included — eligibleAsNew
-    // below only governs what may be introduced.
-    if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) continue;
     for (const direction of directionsFor(sentence)) {
       const key = reviewKey(sentence.id, direction);
       const existing = byKey.get(key);
@@ -187,7 +178,7 @@ export async function build({
         if (existing.dueDate <= now) {
           due.push({ sentence, direction, review: existing, isNew: false });
         }
-      } else if (eligibleAsNew(sentence, levelIds, kinds)) {
+      } else if (eligibleAsNew(sentence, levelIds)) {
         // New cards are gated to the current level. Due reviews above are not,
         // so levels already passed keep resurfacing on their own schedule.
         fresh.push({

@@ -35,7 +35,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import bank, gemini, tenses, validate
-from core.taxonomy import TRANSFORMS, TRANSFORM_KEYS, transform_reference
+from core.taxonomy import TRANSFORM_KEYS, transform_reference
 
 OUT = pathlib.Path(__file__).resolve().parent / "transforms_out.json"
 MERGED = pathlib.Path(__file__).resolve().parent.parent / "web" / "data" / "transforms.json"

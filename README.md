@@ -28,6 +28,17 @@ You can know a thousand sentences by heart and still not be able to make the
 thousand-and-first; this is the only exercise here that asks for one that is not
 in the deck.
 
+**Swaps** are the same idea without a rule to apply: you get one version of a
+sentence and a cue, and produce another. **با «ما» بگو** (say it with *we*) turns
+*یه قهوه می‌خوام* into *یه قهوه می‌خوایم*; **با «لازم داشتن» بگو** turns it into
+*یه قهوه لازم دارم*. Three kinds — a different **pronoun** (subject, possessive
+or object, so the verb ending or the clitic moves with it), a different
+**verb** or modal, and a different **phrase** (a question word, a time word, how
+you open a request). Writing *ما* in front of the answer is accepted too.
+
+On a drill card the answer's English is shown after you check, so you can tell
+whether the sentence you made means what you meant.
+
 1. **A sentence appears**, with a box under it. Type the translation, or the
    transformation the badge asks for.
 2. **جواب (Check).** You get the answer, the transliteration, and a word map —
@@ -112,6 +123,7 @@ anything else.
 | `review_deck.py` | Asks the model whether a native would say the sentence. Caches and resumes — the free tier is a daily ceiling |
 | `transforms.py` | Writes transformation drills from existing sentences. Proposes only — output goes to a file for review |
 | `merge_transforms.py` | The gate. Nothing reaches the app without passing through it, and its rejection list records what was read and thrown out, with reasons |
+| `build_swaps.py` | Builds the swap drills from `tools/handwritten/swaps.json` — hand-written frames, no model. Rewrites only the swap rows of `transforms.json`, deterministically |
 | `prompt_harness.py` | Iterate prompts without a rebuild |
 | `check_js.mjs` | Modules import, cross-module calls resolve, every `$('id')` and string key exists |
 | `test_js.mjs` | Unit tests: scheduler, session selection, answer matching |
@@ -142,13 +154,17 @@ each is the other's answer.
 python3 -m http.server 8000 --directory web    # then open localhost:8000
 ```
 
-To add content, write a batch into `tools/handwritten/`, then:
+To add sentences, write a batch into `tools/handwritten/`, then:
 
 ```bash
 python3 tools/merge_handwritten.py
 python3 tools/derive_breakdown.py
 git diff --stat web/data     # the diff is the review
 ```
+
+To add swaps, add a frame to `tools/handwritten/swaps.json` — the versions of one
+sentence, written out — then `python3 tools/build_swaps.py --write`. It refuses
+a frame with a bookish form, a repeated version or a shared cue.
 
 Deploys happen on push — `.github/workflows/pages.yml` runs the checks and
 publishes `web/`.

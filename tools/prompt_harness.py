@@ -13,7 +13,6 @@ deck, so it is safe to run against anything.
 from __future__ import annotations
 
 import argparse
-import json
 import pathlib
 import sys
 

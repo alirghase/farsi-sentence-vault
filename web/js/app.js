@@ -7,7 +7,7 @@ import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as levels from './levels.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
-import { posTitle, transformTitle } from './taxonomy.js';
+import { posTitle, instruction, stemHint } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
 
@@ -24,6 +24,10 @@ const state = {
   // The most recent rating, for undo. One level deep on purpose: undo is for a
   // mis-tap, not for re-litigating a session.
   last: null,
+  // Set per card / per visit to compose; here so the shape is all in one place.
+  shownAt: 0,
+  msToReveal: null,
+  resumeTo: 'card',
 };
 
 // --- boot ------------------------------------------------------------------
@@ -319,7 +323,7 @@ async function renderCard() {
   // question.
   const isTransform = card.direction === 'transform';
   $('card-badge').textContent = isTransform
-    ? transformTitle(card.sentence.transform)
+    ? instruction(card.sentence)
     : text(`dir.${card.direction}`);
   $('card-badge').classList.toggle('is-instruction', isTransform);
 
@@ -330,7 +334,7 @@ async function renderCard() {
   // The stem's meaning, so a transformation is not also a vocabulary test.
   const stemEn = $('card-stem-en');
   stemEn.hidden = !isTransform;
-  stemEn.textContent = isTransform ? (card.sentence.stemEn ?? '') : '';
+  stemEn.textContent = isTransform ? stemHint(card.sentence) : '';
 
   // Typing is the whole app now, so the box is simply always there. It used
   // to be behind a button that reset on every card.
@@ -346,7 +350,7 @@ async function renderCard() {
   $('rating-row').hidden = true;
 }
 
-/** Type or speak, remembered until you change it back. */
+/** Show the answer, and what you typed beside it. */
 function reveal() {
   const card = currentCard();
   if (!card || state.revealed) return;
@@ -367,6 +371,12 @@ function reveal() {
   $('card-typed').hidden = true;
   $('answer-finglish').textContent = card.sentence.finglish ?? '';
   renderBreakdown(card.sentence);
+  // A transformation's answer is a sentence you were never shown in English,
+  // so say what it means.
+  if (card.direction === 'transform') {
+    $('answer-gloss').textContent = card.sentence.englishText;
+    $('answer-gloss').hidden = false;
+  }
   $('card-answer').hidden = false;
   $('btn-reveal').hidden = true;
 
@@ -516,7 +526,7 @@ async function rate(rating) {
   }
 }
 
-/** Take back the last rating: schedule, attempt, tag counts and queue position. */
+/** Take back the last rating: schedule, attempt and queue position. */
 async function undo() {
   const last = state.last;
   if (!last || state.busy) return;
@@ -565,8 +575,6 @@ async function renderDone() {
     ? `${faDigits(counts.due)} ${text('today.due')} · ${faDigits(counts.new)} ${text('today.new')}`
     : text('card.allDone');
 }
-
-
 
 // --- settings --------------------------------------------------------------
 
@@ -683,7 +691,6 @@ async function renderSettings() {
         .toLocaleDateString('fa-IR', { day: 'numeric', month: 'long', year: 'numeric' }))}`
       + ` — ${text('settings.backupReplace')}`
     : text('settings.backupHint');
-
 }
 
 function escapeHtml(value) {

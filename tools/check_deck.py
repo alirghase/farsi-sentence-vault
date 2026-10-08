@@ -43,7 +43,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import bank
-from core.taxonomy import TRANSFORM_KEYS
+from core.taxonomy import DRILL_KEYS, SWAP_KEYS
 
 PUNCT = '.،؟!؛:«»"\'()'
 
@@ -65,7 +65,7 @@ TRANSFORMS_FILE = pathlib.Path(__file__).resolve().parent.parent / "web" / "data
 
 
 def check_transforms(sentences: list[dict]) -> tuple[list[str], int]:
-    """The transformation drills that ship beside the deck.
+    """The transformation and swap drills that ship beside the deck.
 
     They land in the same IndexedDB store as the sentences, so their ids share
     one space with them: a collision would make one card overwrite the other on
@@ -91,8 +91,11 @@ def check_transforms(sentences: list[dict]) -> tuple[list[str], int]:
 
         if not row.get("stem"):
             failures.append(f"transform with no stem: {row.get('farsiText')}")
-        if row.get("transform") not in TRANSFORM_KEYS:
+        if row.get("transform") not in DRILL_KEYS:
             failures.append(f"unknown transformation {row.get('transform')!r}: {row.get('farsiText')}")
+        if row.get("transform") in SWAP_KEYS and not row.get("cue"):
+            # A swap with no cue is a sentence and nothing to do with it.
+            failures.append(f"swap with no cue: {row.get('farsiText')}")
         if not row.get("stemEn"):
             # Without it the drill is also a comprehension test.
             failures.append(f"transform with no English for its stem: {row.get('stem')}")

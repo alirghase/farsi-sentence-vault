@@ -23,7 +23,6 @@ becomes دس, because a final ت is also the possessive clitic.
 from __future__ import annotations
 
 import collections
-import itertools
 
 ZWNJ = "‌"
 CONTENT_POS = {"noun", "adjective", "adverb"}

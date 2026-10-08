@@ -26,9 +26,9 @@ export function posTitle(pos) {
   return POS_TITLES[pos] ?? pos;
 }
 
-// Persian labels for the transformation drills. The set itself lives in
-// core/taxonomy.py, which is what generation and validation use; these are the
-// four words shown on the card.
+// What a drill card asks you to do, in Persian. A transformation has a fixed
+// instruction; a swap carries its own cue ("say it with ما"), because the cue
+// is the whole exercise. The sets themselves live in core/taxonomy.py.
 export const TRANSFORM_TITLES = {
   negate: 'منفی‌ش کن',
   toPast: 'بذارش گذشته',
@@ -36,4 +36,18 @@ export const TRANSFORM_TITLES = {
   toPlural: 'جمعش کن',
 };
 
-export const transformTitle = (key) => TRANSFORM_TITLES[key] ?? key;
+/** The Persian line over a drill card. */
+export function instruction(sentence) {
+  return sentence.cue
+    ? `با «${sentence.cue}» بگو`
+    : TRANSFORM_TITLES[sentence.transform] ?? sentence.transform;
+}
+
+/**
+ * The English under a drill's sentence: what the stem means, and on a swap what
+ * the cue means, so the exercise is the grammar rather than a vocabulary test.
+ */
+export function stemHint(sentence) {
+  const meaning = sentence.stemEn ?? '';
+  return sentence.cueEn ? `${meaning}  →  ${sentence.cueEn}` : meaning;
+}

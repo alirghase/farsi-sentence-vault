@@ -224,6 +224,27 @@ TRANSFORMS = {
 
 TRANSFORM_KEYS = sorted(TRANSFORMS)
 
+# --- Swaps ------------------------------------------------------------------
+#
+# The other kind of drill. A transformation applies a rule to a sentence; a swap
+# gives you one version of a frame and a cue, and asks for another version:
+# the same sentence with ما, the same sentence with لازم داشتن. Nothing here is
+# model-written — the versions are hand-written minimal pairs in
+# tools/handwritten/swaps.json, and tools/build_swaps.py turns them into cards.
+#
+# The card shows its cue, so unlike a transformation it has no fixed title.
+SWAPS = {
+    "pronoun": "Same sentence, different person: the verb ending and any "
+               "possessive or object clitic change with it.",
+    "verb": "Same frame, different verb or modal.",
+    "phrase": "Same content, different opening phrase, question word or time word.",
+}
+
+SWAP_KEYS = sorted(SWAPS)
+
+# Everything a drill card may be.
+DRILL_KEYS = sorted(set(TRANSFORM_KEYS) | set(SWAP_KEYS))
+
 
 def transform_reference() -> str:
     return "\n".join(f"- {k}: {v['detail']}" for k, v in TRANSFORMS.items())

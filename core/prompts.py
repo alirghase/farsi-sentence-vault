@@ -7,9 +7,7 @@ data in seconds.
 from __future__ import annotations
 
 from core.taxonomy import (
-    DIFFICULTY,
     ERROR_TAG_KEYS,
-    SITUATIONS,
     difficulty_reference,
     tag_reference,
 )
