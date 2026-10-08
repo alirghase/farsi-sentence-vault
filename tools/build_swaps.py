@@ -33,7 +33,7 @@ from core import validate
 from core.taxonomy import SWAP_KEYS
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "tools" / "handwritten" / "drills" / "swaps.json"
+SOURCE = ROOT / "tools" / "handwritten" / "drills" / "swaps.json"  # and swaps_*.json beside it
 OUT = ROOT / "web" / "data" / "transforms.json"
 
 PER_FRAME = 4
@@ -42,10 +42,12 @@ ZWNJ = "‌"
 
 def load_frames() -> list[dict]:
     """Frames with every version spelled out as {cue, cueEn, fa, tr, en}."""
-    raw = json.loads(SOURCE.read_text())
-    presets = raw["presets"]
+    # swaps.json carries the presets; swaps_*.json add frames after it, so the
+    # first file's frames keep their positions and their cards never move.
+    sources = [json.loads(p.read_text()) for p in sorted(SOURCE.parent.glob("swaps*.json"))]
+    presets = sources[0]["presets"]
     frames = []
-    for frame in raw["frames"]:
+    for frame in (f for source in sources for f in source["frames"]):
         kind = frame["kind"]
         if kind not in SWAP_KEYS:
             sys.exit(f"{frame['id']}: unknown kind {kind!r}")

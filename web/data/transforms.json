@@ -1,5 +1,5 @@
 {
-  "count": 433,
+  "count": 537,
   "transforms": [
     {
       "id": "7026cae7-d352-5780-90d1-103227742cc0",
@@ -8416,6 +8416,2194 @@
       "grammarTags": [
         "colloquial",
         "word-order"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c2f615c4-bc3e-5080-8b12-938bb42f6a1d",
+      "kind": "transform",
+      "stemId": "im-late",
+      "stem": "دیر کردی.",
+      "stemEn": "You're late.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "دیر کردم.",
+      "finglish": "dir kardam.",
+      "englishText": "I'm late.",
+      "difficulty": 1,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "compound-verb"
+      ],
+      "alternatives": [
+        "من دیر کردم."
+      ]
+    },
+    {
+      "id": "c91a6b66-48a1-5038-b13c-1d5fec3ba024",
+      "kind": "transform",
+      "stemId": "im-late",
+      "stem": "دیر کرد.",
+      "stemEn": "She's late.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "دیر کردین.",
+      "finglish": "dir kardin.",
+      "englishText": "You're late.",
+      "difficulty": 1,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "compound-verb"
+      ],
+      "alternatives": [
+        "شما دیر کردین."
+      ]
+    },
+    {
+      "id": "330dd18b-4c0b-535e-91ca-9d3d6b93c7a6",
+      "kind": "transform",
+      "stemId": "im-late",
+      "stem": "دیر کردیم.",
+      "stemEn": "We're late.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "دیر کردی.",
+      "finglish": "dir kardi.",
+      "englishText": "You're late.",
+      "difficulty": 1,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "compound-verb"
+      ],
+      "alternatives": [
+        "تو دیر کردی."
+      ]
+    },
+    {
+      "id": "a9bf72db-0d11-5ab0-b723-22c2acbd4a1c",
+      "kind": "transform",
+      "stemId": "im-late",
+      "stem": "دیر کردین.",
+      "stemEn": "You're late.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "they",
+      "farsiText": "دیر کردن.",
+      "finglish": "dir kardan.",
+      "englishText": "They're late.",
+      "difficulty": 1,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "compound-verb"
+      ],
+      "alternatives": [
+        "اونا دیر کردن."
+      ]
+    },
+    {
+      "id": "edbc5387-04ea-5fd1-ab9c-5b01b3b43da0",
+      "kind": "transform",
+      "stemId": "thirsty",
+      "stem": "تشنه‌ست.",
+      "stemEn": "He's thirsty.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "تشنه‌ایم.",
+      "finglish": "teshneim.",
+      "englishText": "We're thirsty.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما تشنه‌ایم."
+      ]
+    },
+    {
+      "id": "cee8731a-d6fa-55a0-8b4c-1cec055e7e05",
+      "kind": "transform",
+      "stemId": "thirsty",
+      "stem": "تشنه‌ایم.",
+      "stemEn": "We're thirsty.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "تشنه‌م.",
+      "finglish": "teshnam.",
+      "englishText": "I'm thirsty.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من تشنه‌م."
+      ]
+    },
+    {
+      "id": "a092385c-5b54-5c4d-aeb7-68546a1e23a8",
+      "kind": "transform",
+      "stemId": "thirsty",
+      "stem": "تشنه‌این.",
+      "stemEn": "You're thirsty.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "تشنه‌ایم.",
+      "finglish": "teshneim.",
+      "englishText": "We're thirsty.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما تشنه‌ایم."
+      ]
+    },
+    {
+      "id": "fb7c5d21-5336-5bbb-b136-e4ecd929e243",
+      "kind": "transform",
+      "stemId": "thirsty",
+      "stem": "تشنه‌ن.",
+      "stemEn": "They're thirsty.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "تشنه‌ای.",
+      "finglish": "teshne'i.",
+      "englishText": "You're thirsty.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو تشنه‌ای."
+      ]
+    },
+    {
+      "id": "b3d49e18-dfea-582e-9114-a3f2674fe4b5",
+      "kind": "transform",
+      "stemId": "happy",
+      "stem": "خوشحالیم.",
+      "stemEn": "We're happy.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "they",
+      "farsiText": "خوشحالن.",
+      "finglish": "khoshhâlan.",
+      "englishText": "They're happy.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اونا خوشحالن."
+      ]
+    },
+    {
+      "id": "befc6633-178e-5435-8cf3-8f61c64399ee",
+      "kind": "transform",
+      "stemId": "happy",
+      "stem": "خوشحالین.",
+      "stemEn": "You're happy.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "خوشحاله.",
+      "finglish": "khoshhâle.",
+      "englishText": "She's happy.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اون خوشحاله."
+      ]
+    },
+    {
+      "id": "35d9c6b7-b6e4-593f-8737-455494c80c91",
+      "kind": "transform",
+      "stemId": "happy",
+      "stem": "خوشحالن.",
+      "stemEn": "They're happy.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "خوشحالم.",
+      "finglish": "khoshhâlam.",
+      "englishText": "I'm happy.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من خوشحالم."
+      ]
+    },
+    {
+      "id": "08ead5d2-a725-5623-a98e-25f27ff1e51c",
+      "kind": "transform",
+      "stemId": "happy",
+      "stem": "خوشحالم.",
+      "stemEn": "I'm happy.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "خوشحالیم.",
+      "finglish": "khoshhâlim.",
+      "englishText": "We're happy.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما خوشحالیم."
+      ]
+    },
+    {
+      "id": "516454ff-48ae-58c4-bada-a6dd4a5e5bdb",
+      "kind": "transform",
+      "stemId": "no-money",
+      "stem": "پول ندارین.",
+      "stemEn": "You have no money.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "پول نداری.",
+      "finglish": "pul nadâri.",
+      "englishText": "You have no money.",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو پول نداری."
+      ]
+    },
+    {
+      "id": "699e96ae-8700-531c-bed8-6b5315f4fbd9",
+      "kind": "transform",
+      "stemId": "no-money",
+      "stem": "پول ندارن.",
+      "stemEn": "They have no money.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "پول ندارین.",
+      "finglish": "pul nadârin.",
+      "englishText": "You have no money.",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما پول ندارین."
+      ]
+    },
+    {
+      "id": "dbe8df30-f480-50ee-ae86-e23daab6be06",
+      "kind": "transform",
+      "stemId": "no-money",
+      "stem": "پول ندارم.",
+      "stemEn": "I have no money.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "پول نداره.",
+      "finglish": "pul nadâre.",
+      "englishText": "He has no money.",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اون پول نداره."
+      ]
+    },
+    {
+      "id": "1ce077cd-869a-5f8b-9361-b89b7cda7f75",
+      "kind": "transform",
+      "stemId": "no-money",
+      "stem": "پول نداری.",
+      "stemEn": "You have no money.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "they",
+      "farsiText": "پول ندارن.",
+      "finglish": "pul nadâran.",
+      "englishText": "They have no money.",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اونا پول ندارن."
+      ]
+    },
+    {
+      "id": "fdc49baf-9d6f-5c34-945d-4673aa538258",
+      "kind": "transform",
+      "stemId": "worked-today",
+      "stem": "امروز کار کردن.",
+      "stemEn": "They worked today.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "امروز کار کردیم.",
+      "finglish": "emruz kâr kardim.",
+      "englishText": "We worked today.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما امروز کار کردیم."
+      ]
+    },
+    {
+      "id": "f055222e-b5a8-5fd1-abec-6b8474372f12",
+      "kind": "transform",
+      "stemId": "worked-today",
+      "stem": "امروز کار کردم.",
+      "stemEn": "I worked today.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "امروز کار کردی.",
+      "finglish": "emruz kâr kardi.",
+      "englishText": "You worked today.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو امروز کار کردی."
+      ]
+    },
+    {
+      "id": "8c5300ab-70e8-59c3-8fb3-b48726d98c6b",
+      "kind": "transform",
+      "stemId": "worked-today",
+      "stem": "امروز کار کردی.",
+      "stemEn": "You worked today.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "امروز کار کردین.",
+      "finglish": "emruz kâr kardin.",
+      "englishText": "You worked today.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما امروز کار کردین."
+      ]
+    },
+    {
+      "id": "32f2dd84-8eb1-5ffe-af42-05be3fe4b5c0",
+      "kind": "transform",
+      "stemId": "worked-today",
+      "stem": "امروز کار کرد.",
+      "stemEn": "She worked today.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "امروز کار کردی.",
+      "finglish": "emruz kâr kardi.",
+      "englishText": "You worked today.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو امروز کار کردی."
+      ]
+    },
+    {
+      "id": "6eecf292-4250-5c09-b904-653f5d83ca6c",
+      "kind": "transform",
+      "stemId": "study-every-night",
+      "stem": "هر شب درس می‌خونم.",
+      "stemEn": "I study every night.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "they",
+      "farsiText": "هر شب درس می‌خونن.",
+      "finglish": "har shab dars mikhunan.",
+      "englishText": "They study every night.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اونا هر شب درس می‌خونن."
+      ]
+    },
+    {
+      "id": "b1693899-68e4-58b1-91c3-8adad45e94fe",
+      "kind": "transform",
+      "stemId": "study-every-night",
+      "stem": "هر شب درس می‌خونی.",
+      "stemEn": "You study every night.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "هر شب درس می‌خونیم.",
+      "finglish": "har shab dars mikhunim.",
+      "englishText": "We study every night.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما هر شب درس می‌خونیم."
+      ]
+    },
+    {
+      "id": "107d38c4-c90e-5def-ad01-a7b910b89d18",
+      "kind": "transform",
+      "stemId": "study-every-night",
+      "stem": "هر شب درس می‌خونه.",
+      "stemEn": "She studies every night.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "هر شب درس می‌خونم.",
+      "finglish": "har shab dars mikhunam.",
+      "englishText": "I study every night.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من هر شب درس می‌خونم."
+      ]
+    },
+    {
+      "id": "0b8aaa01-1fc3-506d-9a5d-07186e6948f5",
+      "kind": "transform",
+      "stemId": "study-every-night",
+      "stem": "هر شب درس می‌خونیم.",
+      "stemEn": "We study every night.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "هر شب درس می‌خونین.",
+      "finglish": "har shab dars mikhunin.",
+      "englishText": "You study every night.",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما هر شب درس می‌خونین."
+      ]
+    },
+    {
+      "id": "e1becc15-fc01-511f-9019-18bf8283a4a5",
+      "kind": "transform",
+      "stemId": "coming-tomorrow",
+      "stem": "فردا میای.",
+      "stemEn": "You're coming tomorrow.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "فردا میاد.",
+      "finglish": "fardâ miyâd.",
+      "englishText": "She's coming tomorrow.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اون فردا میاد."
+      ]
+    },
+    {
+      "id": "369a016b-cb66-594f-8a86-a6fb074f5a38",
+      "kind": "transform",
+      "stemId": "coming-tomorrow",
+      "stem": "فردا میاد.",
+      "stemEn": "She's coming tomorrow.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "they",
+      "farsiText": "فردا میان.",
+      "finglish": "fardâ miyân.",
+      "englishText": "They're coming tomorrow.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اونا فردا میان."
+      ]
+    },
+    {
+      "id": "670d2f1e-f102-5774-87b3-2a948c929c2a",
+      "kind": "transform",
+      "stemId": "coming-tomorrow",
+      "stem": "فردا میایم.",
+      "stemEn": "We're coming tomorrow.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "فردا میاد.",
+      "finglish": "fardâ miyâd.",
+      "englishText": "She's coming tomorrow.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اون فردا میاد."
+      ]
+    },
+    {
+      "id": "679893c0-aea9-5bd0-97c9-dd9d15b2eb7e",
+      "kind": "transform",
+      "stemId": "coming-tomorrow",
+      "stem": "فردا میاین.",
+      "stemEn": "You're coming tomorrow.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "فردا میام.",
+      "finglish": "fardâ miyâm.",
+      "englishText": "I'm coming tomorrow.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من فردا میام."
+      ]
+    },
+    {
+      "id": "0c56bf4e-fff1-559b-b243-e205dc8daf49",
+      "kind": "transform",
+      "stemId": "cooked-dinner",
+      "stem": "شام درست کرد.",
+      "stemEn": "She cooked dinner.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "شام درست کردین.",
+      "finglish": "shâm dorost kardin.",
+      "englishText": "You cooked dinner.",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "compound-verb"
+      ],
+      "alternatives": [
+        "شما شام درست کردین."
+      ]
+    },
+    {
+      "id": "d4197df0-2bce-52c3-8ba4-60fe746d97a2",
+      "kind": "transform",
+      "stemId": "cooked-dinner",
+      "stem": "شام درست کردیم.",
+      "stemEn": "We cooked dinner.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "شام درست کردی.",
+      "finglish": "shâm dorost kardi.",
+      "englishText": "You cooked dinner.",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "compound-verb"
+      ],
+      "alternatives": [
+        "تو شام درست کردی."
+      ]
+    },
+    {
+      "id": "cbe0530d-6e1d-51ff-8aea-13caa333669a",
+      "kind": "transform",
+      "stemId": "cooked-dinner",
+      "stem": "شام درست کردین.",
+      "stemEn": "You cooked dinner.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "they",
+      "farsiText": "شام درست کردن.",
+      "finglish": "shâm dorost kardan.",
+      "englishText": "They cooked dinner.",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "compound-verb"
+      ],
+      "alternatives": [
+        "اونا شام درست کردن."
+      ]
+    },
+    {
+      "id": "e2932dc4-5cfe-5707-a7fa-c97a39e51c78",
+      "kind": "transform",
+      "stemId": "cooked-dinner",
+      "stem": "شام درست کردن.",
+      "stemEn": "They cooked dinner.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "شام درست کرد.",
+      "finglish": "shâm dorost kard.",
+      "englishText": "She cooked dinner.",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "compound-verb"
+      ],
+      "alternatives": [
+        "اون شام درست کرد."
+      ]
+    },
+    {
+      "id": "2111a759-a330-540c-ab4f-2bf93f8f4a35",
+      "kind": "transform",
+      "stemId": "bought-tickets",
+      "stem": "بلیت خریدیم.",
+      "stemEn": "We bought tickets.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "بلیت خریدم.",
+      "finglish": "belit kharidam.",
+      "englishText": "I bought tickets.",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من بلیت خریدم."
+      ]
+    },
+    {
+      "id": "ca9347ff-0e96-55ba-8d68-5df8663c3861",
+      "kind": "transform",
+      "stemId": "bought-tickets",
+      "stem": "بلیت خریدین.",
+      "stemEn": "You bought tickets.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "بلیت خریدیم.",
+      "finglish": "belit kharidim.",
+      "englishText": "We bought tickets.",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما بلیت خریدیم."
+      ]
+    },
+    {
+      "id": "860e2317-fbef-5f61-9aa2-50226b358f01",
+      "kind": "transform",
+      "stemId": "bought-tickets",
+      "stem": "بلیت خریدن.",
+      "stemEn": "They bought tickets.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "بلیت خریدی.",
+      "finglish": "belit kharidi.",
+      "englishText": "You bought tickets.",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو بلیت خریدی."
+      ]
+    },
+    {
+      "id": "70a22184-bf03-5586-ad08-f23d640dd5a0",
+      "kind": "transform",
+      "stemId": "bought-tickets",
+      "stem": "بلیت خریدم.",
+      "stemEn": "I bought tickets.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "بلیت خریدین.",
+      "finglish": "belit kharidin.",
+      "englishText": "You bought tickets.",
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما بلیت خریدین."
+      ]
+    },
+    {
+      "id": "6e4cda62-ca01-542f-b7bd-81d110638c79",
+      "kind": "transform",
+      "stemId": "didnt-know-this",
+      "stem": "اینو نمی‌دونستین.",
+      "stemEn": "You didn't know this.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "اینو نمی‌دونست.",
+      "finglish": "ino nemidunest.",
+      "englishText": "She didn't know this.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "verb-tense"
+      ],
+      "alternatives": [
+        "اون اینو نمی‌دونست."
+      ]
+    },
+    {
+      "id": "88cc8c6d-6bd7-5548-a386-f55b817218f7",
+      "kind": "transform",
+      "stemId": "didnt-know-this",
+      "stem": "اینو نمی‌دونستن.",
+      "stemEn": "They didn't know this.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "اینو نمی‌دونستم.",
+      "finglish": "ino nemidunestam.",
+      "englishText": "I didn't know this.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "verb-tense"
+      ],
+      "alternatives": [
+        "من اینو نمی‌دونستم."
+      ]
+    },
+    {
+      "id": "6bb1fceb-17d1-55d2-9210-fef0caa3508f",
+      "kind": "transform",
+      "stemId": "didnt-know-this",
+      "stem": "اینو نمی‌دونستم.",
+      "stemEn": "I didn't know this.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "اینو نمی‌دونستیم.",
+      "finglish": "ino nemidunestim.",
+      "englishText": "We didn't know this.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "verb-tense"
+      ],
+      "alternatives": [
+        "ما اینو نمی‌دونستیم."
+      ]
+    },
+    {
+      "id": "221370b5-c04d-5dfb-b5be-1e089da759ca",
+      "kind": "transform",
+      "stemId": "didnt-know-this",
+      "stem": "اینو نمی‌دونستی.",
+      "stemEn": "You didn't know this.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "اینو نمی‌دونستم.",
+      "finglish": "ino nemidunestam.",
+      "englishText": "I didn't know this.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "verb-agreement",
+        "verb-tense"
+      ],
+      "alternatives": [
+        "من اینو نمی‌دونستم."
+      ]
+    },
+    {
+      "id": "4e5f1111-b2ed-5831-8888-0f19a01d6753",
+      "kind": "transform",
+      "stemId": "my-car-is-broken",
+      "stem": "ماشینشون خرابه.",
+      "stemEn": "Their car is broken.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "your (formal)",
+      "farsiText": "ماشینتون خرابه.",
+      "finglish": "mâshinetun kharâbe.",
+      "englishText": "Your car is broken.",
+      "difficulty": 1,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "d1b1f24f-23cd-5910-ba79-ae15bc42e796",
+      "kind": "transform",
+      "stemId": "my-car-is-broken",
+      "stem": "ماشینم خرابه.",
+      "stemEn": "My car is broken.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "his / her",
+      "farsiText": "ماشینش خرابه.",
+      "finglish": "mâshinesh kharâbe.",
+      "englishText": "His car is broken.",
+      "difficulty": 1,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "326382e2-27f9-543c-adc1-66812ade34c2",
+      "kind": "transform",
+      "stemId": "my-car-is-broken",
+      "stem": "ماشینت خرابه.",
+      "stemEn": "Your car is broken.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "their",
+      "farsiText": "ماشینشون خرابه.",
+      "finglish": "mâshineshun kharâbe.",
+      "englishText": "Their car is broken.",
+      "difficulty": 1,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "0289a065-d284-5bee-8832-13f522e9d4e2",
+      "kind": "transform",
+      "stemId": "my-car-is-broken",
+      "stem": "ماشینش خرابه.",
+      "stemEn": "His car is broken.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "our",
+      "farsiText": "ماشینمون خرابه.",
+      "finglish": "mâshinemun kharâbe.",
+      "englishText": "Our car is broken.",
+      "difficulty": 1,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "45f6deee-37b5-547e-bd6e-b1c74e5674fb",
+      "kind": "transform",
+      "stemId": "my-house-is-near",
+      "stem": "خونه‌م نزدیکه.",
+      "stemEn": "My house is near.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "your",
+      "farsiText": "خونه‌ت نزدیکه.",
+      "finglish": "khunat nazdike.",
+      "englishText": "Your house is near.",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "5668e8df-a007-596f-b4b0-3af18481c143",
+      "kind": "transform",
+      "stemId": "my-house-is-near",
+      "stem": "خونه‌ت نزدیکه.",
+      "stemEn": "Your house is near.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "your (formal)",
+      "farsiText": "خونه‌تون نزدیکه.",
+      "finglish": "khunetun nazdike.",
+      "englishText": "Your house is near.",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "a828de79-87cc-59d1-b69d-5f0181e1594e",
+      "kind": "transform",
+      "stemId": "my-house-is-near",
+      "stem": "خونه‌ش نزدیکه.",
+      "stemEn": "His house is near.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "your",
+      "farsiText": "خونه‌ت نزدیکه.",
+      "finglish": "khunat nazdike.",
+      "englishText": "Your house is near.",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "0f074d65-dacb-5326-8390-b9ba8c48ddaa",
+      "kind": "transform",
+      "stemId": "my-house-is-near",
+      "stem": "خونه‌مون نزدیکه.",
+      "stemEn": "Our house is near.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "their",
+      "farsiText": "خونه‌شون نزدیکه.",
+      "finglish": "khuneshun nazdike.",
+      "englishText": "Their house is near.",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b35b32fc-23cb-5e85-bc11-90c61e43b07c",
+      "kind": "transform",
+      "stemId": "my-hand-hurts",
+      "stem": "دستت درد می‌کنه.",
+      "stemEn": "Your hand hurts.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "دستمون درد می‌کنه.",
+      "finglish": "dastemun dard mikone.",
+      "englishText": "Our hands hurt.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "46e0dfab-46ab-5aa1-9609-92b6c46e63e9",
+      "kind": "transform",
+      "stemId": "my-hand-hurts",
+      "stem": "دستش درد می‌کنه.",
+      "stemEn": "His hand hurts.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "دستم درد می‌کنه.",
+      "finglish": "dastam dard mikone.",
+      "englishText": "My hand hurts.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9d0ede90-2057-5e3f-af70-9f4bce79c52c",
+      "kind": "transform",
+      "stemId": "my-hand-hurts",
+      "stem": "دستمون درد می‌کنه.",
+      "stemEn": "Our hands hurt.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "دستتون درد می‌کنه.",
+      "finglish": "dastetun dard mikone.",
+      "englishText": "Your hand hurts.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "27adb3da-cfb3-5d99-ae32-129e71b785c2",
+      "kind": "transform",
+      "stemId": "my-hand-hurts",
+      "stem": "دستتون درد می‌کنه.",
+      "stemEn": "Your hand hurts.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "دستت درد می‌کنه.",
+      "finglish": "dastet dard mikone.",
+      "englishText": "Your hand hurts.",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "0324e3e4-42e1-5e0c-a62a-eb98d1e2999e",
+      "kind": "transform",
+      "stemId": "my-friend-is-here",
+      "stem": "دوستش اینجاست.",
+      "stemEn": "His friend is here.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "their",
+      "farsiText": "دوستشون اینجاست.",
+      "finglish": "dusteshun injâst.",
+      "englishText": "Their friend is here.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "cddbc3a0-0bf9-598e-9add-31b8131285d7",
+      "kind": "transform",
+      "stemId": "my-friend-is-here",
+      "stem": "دوستمون اینجاست.",
+      "stemEn": "Our friend is here.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "his / her",
+      "farsiText": "دوستش اینجاست.",
+      "finglish": "dustesh injâst.",
+      "englishText": "His friend is here.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "87141dc3-2705-547f-92b5-b25336ba2141",
+      "kind": "transform",
+      "stemId": "my-friend-is-here",
+      "stem": "دوستتون اینجاست.",
+      "stemEn": "Your friend is here.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "my",
+      "farsiText": "دوستم اینجاست.",
+      "finglish": "dustam injâst.",
+      "englishText": "My friend is here.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "043b51b4-20cf-50a2-b3eb-16550806d7d5",
+      "kind": "transform",
+      "stemId": "my-friend-is-here",
+      "stem": "دوستشون اینجاست.",
+      "stemEn": "Their friend is here.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "our",
+      "farsiText": "دوستمون اینجاست.",
+      "finglish": "dustemun injâst.",
+      "englishText": "Our friend is here.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "26a9c63f-8bca-571c-b7e9-dc1773b20a7c",
+      "kind": "transform",
+      "stemId": "it-matters-to",
+      "stem": "برامون مهمه.",
+      "stemEn": "It matters to us.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you",
+      "farsiText": "برات مهمه.",
+      "finglish": "barât moheme.",
+      "englishText": "It matters to you.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "17c4fa7a-7ea8-5f35-bcab-d06f3de64b5c",
+      "kind": "transform",
+      "stemId": "it-matters-to",
+      "stem": "براتون مهمه.",
+      "stemEn": "It matters to you.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "them",
+      "farsiText": "براشون مهمه.",
+      "finglish": "barâshun moheme.",
+      "englishText": "It matters to them.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "45669a9a-60e0-5218-8820-6e8f5fc81c52",
+      "kind": "transform",
+      "stemId": "it-matters-to",
+      "stem": "براشون مهمه.",
+      "stemEn": "It matters to them.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "him / her",
+      "farsiText": "براش مهمه.",
+      "finglish": "barâsh moheme.",
+      "englishText": "It matters to him.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "ed33dba4-a660-5970-8f1e-e29da003bfae",
+      "kind": "transform",
+      "stemId": "it-matters-to",
+      "stem": "برام مهمه.",
+      "stemEn": "It matters to me.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "them",
+      "farsiText": "براشون مهمه.",
+      "finglish": "barâshun moheme.",
+      "englishText": "It matters to them.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "85e50aef-b847-58fc-af3a-ba377dbe74eb",
+      "kind": "transform",
+      "stemId": "feel-like-sleeping",
+      "stem": "دلتون می‌خواد بخوابین.",
+      "stemEn": "You feel like sleeping.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "دلمون می‌خواد بخوابیم.",
+      "finglish": "delemun mikhâd bekhâbim.",
+      "englishText": "We feel like sleeping.",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "f8502eba-d04f-5f65-a6ff-36612e9f3d1d",
+      "kind": "transform",
+      "stemId": "feel-like-sleeping",
+      "stem": "دلشون می‌خواد بخوابن.",
+      "stemEn": "They feel like sleeping.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "دلت می‌خواد بخوابی.",
+      "finglish": "delet mikhâd bekhâbi.",
+      "englishText": "You feel like sleeping.",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9c45e478-d66f-5d22-aec7-7be322085890",
+      "kind": "transform",
+      "stemId": "feel-like-sleeping",
+      "stem": "دلم می‌خواد بخوابم.",
+      "stemEn": "I feel like sleeping.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "دلتون می‌خواد بخوابین.",
+      "finglish": "deletun mikhâd bekhâbin.",
+      "englishText": "You feel like sleeping.",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "59500a69-1ccd-56e5-b3be-9ad910896d82",
+      "kind": "transform",
+      "stemId": "feel-like-sleeping",
+      "stem": "دلت می‌خواد بخوابی.",
+      "stemEn": "You feel like sleeping.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "دلش می‌خواد بخوابه.",
+      "finglish": "delesh mikhâd bekhâbe.",
+      "englishText": "He feels like sleeping.",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "cb85157f-1430-5ea8-8902-04320ff899ef",
+      "kind": "transform",
+      "stemId": "help-me",
+      "stem": "کمکش کن.",
+      "stemEn": "Help him.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "me",
+      "farsiText": "کمکم کن.",
+      "finglish": "komakam kon.",
+      "englishText": "Help me.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "aa1d5d5c-ff8b-54e6-8757-b3e54a6f7b33",
+      "kind": "transform",
+      "stemId": "help-me",
+      "stem": "کمکمون کن.",
+      "stemEn": "Help us.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "me",
+      "farsiText": "کمکم کن.",
+      "finglish": "komakam kon.",
+      "englishText": "Help me.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "488851e5-921a-507e-b785-5948ddc421d9",
+      "kind": "transform",
+      "stemId": "help-me",
+      "stem": "کمکشون کن.",
+      "stemEn": "Help them.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "me",
+      "farsiText": "کمکم کن.",
+      "finglish": "komakam kon.",
+      "englishText": "Help me.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "d46bfac6-bed5-5e4d-a3b7-04f88a1db8ae",
+      "kind": "transform",
+      "stemId": "help-me",
+      "stem": "کمکم کن.",
+      "stemEn": "Help me.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "them",
+      "farsiText": "کمکشون کن.",
+      "finglish": "komakeshun kon.",
+      "englishText": "Help them.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "21c0c1f7-68bd-5797-b833-a96e9a9a6e7f",
+      "kind": "transform",
+      "stemId": "tell-him",
+      "stem": "بهمون بگو.",
+      "stemEn": "Tell us.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "them",
+      "farsiText": "بهشون بگو.",
+      "finglish": "beheshun begu.",
+      "englishText": "Tell them.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "87adf531-22c8-5c95-aff1-cb357b89a78e",
+      "kind": "transform",
+      "stemId": "tell-him",
+      "stem": "بهشون بگو.",
+      "stemEn": "Tell them.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "us",
+      "farsiText": "بهمون بگو.",
+      "finglish": "behemun begu.",
+      "englishText": "Tell us.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "2cc5ea26-f8b9-589a-b720-ff28917f64c6",
+      "kind": "transform",
+      "stemId": "tell-him",
+      "stem": "بهم بگو.",
+      "stemEn": "Tell me.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "us",
+      "farsiText": "بهمون بگو.",
+      "finglish": "behemun begu.",
+      "englishText": "Tell us.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "66c20df5-3769-533a-9322-fff59e1d45bc",
+      "kind": "transform",
+      "stemId": "tell-him",
+      "stem": "بهش بگو.",
+      "stemEn": "Tell him.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "us",
+      "farsiText": "بهمون بگو.",
+      "finglish": "behemun begu.",
+      "englishText": "Tell us.",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "pronoun-clitic",
+        "preposition"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "a77a59ed-80bd-5791-a191-2552256754d1",
+      "kind": "transform",
+      "stemId": "bread",
+      "stem": "نون می‌پزم.",
+      "stemEn": "I'm baking bread.",
+      "transform": "verb",
+      "cue": "فروختن",
+      "cueEn": "to sell",
+      "farsiText": "نون می‌فروشم.",
+      "finglish": "nun miforusham.",
+      "englishText": "I'm selling bread.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "2da79c00-5b83-51ab-9d35-0a77cbd9ed5b",
+      "kind": "transform",
+      "stemId": "bread",
+      "stem": "نون می‌خورم.",
+      "stemEn": "I'm eating bread.",
+      "transform": "verb",
+      "cue": "پختن",
+      "cueEn": "to bake",
+      "farsiText": "نون می‌پزم.",
+      "finglish": "nun mipazam.",
+      "englishText": "I'm baking bread.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "fdbaf251-4138-5f65-a1b9-275376ff8927",
+      "kind": "transform",
+      "stemId": "bread",
+      "stem": "نون میارم.",
+      "stemEn": "I'll bring bread.",
+      "transform": "verb",
+      "cue": "دادن",
+      "cueEn": "to give",
+      "farsiText": "نون می‌دم.",
+      "finglish": "nun midam.",
+      "englishText": "I'm giving bread.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "85502f23-a839-55af-89a2-af0f661ba0a6",
+      "kind": "transform",
+      "stemId": "bread",
+      "stem": "نون می‌فروشم.",
+      "stemEn": "I'm selling bread.",
+      "transform": "verb",
+      "cue": "خوردن",
+      "cueEn": "to eat",
+      "farsiText": "نون می‌خورم.",
+      "finglish": "nun mikhoram.",
+      "englishText": "I'm eating bread.",
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b8c667d1-adb9-51ea-8e79-830f65567c3c",
+      "kind": "transform",
+      "stemId": "my-phone-past",
+      "stem": "گوشیم رو شارژ کردم.",
+      "stemEn": "I charged my phone.",
+      "transform": "verb",
+      "cue": "پیدا کردن",
+      "cueEn": "to find",
+      "farsiText": "گوشیم رو پیدا کردم.",
+      "finglish": "gushim ro peydâ kardam.",
+      "englishText": "I found my phone.",
+      "difficulty": 2,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "241aa609-a292-536c-a5f1-c4b7415585ef",
+      "kind": "transform",
+      "stemId": "my-phone-past",
+      "stem": "گوشیم رو خاموش کردم.",
+      "stemEn": "I switched off my phone.",
+      "transform": "verb",
+      "cue": "فروختن",
+      "cueEn": "to sell",
+      "farsiText": "گوشیم رو فروختم.",
+      "finglish": "gushim ro forukhtam.",
+      "englishText": "I sold my phone.",
+      "difficulty": 2,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "158c0d63-e08c-5ad4-bf8f-c47ea4becf84",
+      "kind": "transform",
+      "stemId": "my-phone-past",
+      "stem": "گوشیم رو فروختم.",
+      "stemEn": "I sold my phone.",
+      "transform": "verb",
+      "cue": "گم کردن",
+      "cueEn": "to lose",
+      "farsiText": "گوشیم رو گم کردم.",
+      "finglish": "gushim ro gom kardam.",
+      "englishText": "I lost my phone.",
+      "difficulty": 2,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "a107afcf-e71b-587d-8cd3-b94a0f86ef56",
+      "kind": "transform",
+      "stemId": "my-phone-past",
+      "stem": "گوشیم رو شکوندم.",
+      "stemEn": "I broke my phone.",
+      "transform": "verb",
+      "cue": "فروختن",
+      "cueEn": "to sell",
+      "farsiText": "گوشیم رو فروختم.",
+      "finglish": "gushim ro forukhtam.",
+      "englishText": "I sold my phone.",
+      "difficulty": 2,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "ra-marker"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "f79fe7a0-401c-5ab8-8772-27ba14e2149e",
+      "kind": "transform",
+      "stemId": "come-modal-question",
+      "stem": "بهتره بیای.",
+      "stemEn": "You'd better come.",
+      "transform": "verb",
+      "cue": "باید",
+      "cueEn": "must",
+      "farsiText": "باید بیای؟",
+      "finglish": "bâyad biyây?",
+      "englishText": "Do you have to come?",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "303fc1ac-1fc1-5f18-8bc1-a3c70749ae69",
+      "kind": "transform",
+      "stemId": "come-modal-question",
+      "stem": "لازمه بیای؟",
+      "stemEn": "Is it necessary for you to come?",
+      "transform": "verb",
+      "cue": "تونستن",
+      "cueEn": "can",
+      "farsiText": "می‌تونی بیای؟",
+      "finglish": "mituni biyây?",
+      "englishText": "Can you come?",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "55c8af95-c5dd-52f1-8527-0141ffc69826",
+      "kind": "transform",
+      "stemId": "come-modal-question",
+      "stem": "مجبوری بیای؟",
+      "stemEn": "Are you forced to come?",
+      "transform": "verb",
+      "cue": "بهتره",
+      "cueEn": "had better",
+      "farsiText": "بهتره بیای.",
+      "finglish": "behtare biyây.",
+      "englishText": "You'd better come.",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "4e50ef2b-40cd-573e-b1fd-2afa2145bb28",
+      "kind": "transform",
+      "stemId": "come-modal-question",
+      "stem": "می‌تونی بیای؟",
+      "stemEn": "Can you come?",
+      "transform": "verb",
+      "cue": "خواستن",
+      "cueEn": "to want",
+      "farsiText": "می‌خوای بیای؟",
+      "finglish": "mikhây biyây?",
+      "englishText": "Do you want to come?",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9ce144d8-0016-5a30-902b-e77438d5a9bd",
+      "kind": "transform",
+      "stemId": "with-my-friends",
+      "stem": "دیروز با دوستام فیلم دیدم.",
+      "stemEn": "I watched a film with my friends yesterday.",
+      "transform": "verb",
+      "cue": "قدم زدن",
+      "cueEn": "to go for a walk",
+      "farsiText": "دیروز با دوستام قدم زدم.",
+      "finglish": "dirooz bâ dustâm ghadam zadam.",
+      "englishText": "I went for a walk with my friends yesterday.",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "54ad03c5-069a-50e5-b2f7-43603dc8c4da",
+      "kind": "transform",
+      "stemId": "with-my-friends",
+      "stem": "دیروز با دوستام قدم زدم.",
+      "stemEn": "I went for a walk with my friends yesterday.",
+      "transform": "verb",
+      "cue": "ناهار خوردن",
+      "cueEn": "to have lunch",
+      "farsiText": "دیروز با دوستام ناهار خوردم.",
+      "finglish": "dirooz bâ dustâm nâhâr khordam.",
+      "englishText": "I had lunch with my friends yesterday.",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "7e20ba59-f893-5f29-8960-d1bc8623b594",
+      "kind": "transform",
+      "stemId": "with-my-friends",
+      "stem": "دیروز با دوستام رفتم بیرون.",
+      "stemEn": "I went out with my friends yesterday.",
+      "transform": "verb",
+      "cue": "قدم زدن",
+      "cueEn": "to go for a walk",
+      "farsiText": "دیروز با دوستام قدم زدم.",
+      "finglish": "dirooz bâ dustâm ghadam zadam.",
+      "englishText": "I went for a walk with my friends yesterday.",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "db3759db-19ec-5487-a18f-13bc3f9af3bb",
+      "kind": "transform",
+      "stemId": "with-my-friends",
+      "stem": "دیروز با دوستام حرف زدم.",
+      "stemEn": "I talked with my friends yesterday.",
+      "transform": "verb",
+      "cue": "فوتبال بازی کردن",
+      "cueEn": "to play football",
+      "farsiText": "دیروز با دوستام فوتبال بازی کردم.",
+      "finglish": "dirooz bâ dustâm futbâl bâzi kardam.",
+      "englishText": "I played football with my friends yesterday.",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "da49e605-f830-5f72-8e2b-0893d0b2232a",
+      "kind": "transform",
+      "stemId": "feeling-today",
+      "stem": "امروز حالم بده.",
+      "stemEn": "I'm feeling bad today.",
+      "transform": "phrase",
+      "cue": "خوب",
+      "cueEn": "good",
+      "farsiText": "امروز حالم خوبه.",
+      "finglish": "emruz hâlam khube.",
+      "englishText": "I'm feeling good today.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "ffc37cf8-a597-52e3-a1ea-3e74d7f1f1aa",
+      "kind": "transform",
+      "stemId": "feeling-today",
+      "stem": "امروز حالم بهتره.",
+      "stemEn": "I'm feeling better today.",
+      "transform": "phrase",
+      "cue": "افتضاح",
+      "cueEn": "awful",
+      "farsiText": "امروز حالم افتضاحه.",
+      "finglish": "emruz hâlam aftezâhe.",
+      "englishText": "I'm feeling awful today.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "92d7ea87-c591-55ea-95aa-b4d420cd8182",
+      "kind": "transform",
+      "stemId": "feeling-today",
+      "stem": "امروز حالم عالیه.",
+      "stemEn": "I'm feeling great today.",
+      "transform": "phrase",
+      "cue": "بهتر",
+      "cueEn": "better",
+      "farsiText": "امروز حالم بهتره.",
+      "finglish": "emruz hâlam behtare.",
+      "englishText": "I'm feeling better today.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9c8709c0-df66-5805-b2c7-08a00a518b11",
+      "kind": "transform",
+      "stemId": "feeling-today",
+      "stem": "امروز حالم افتضاحه.",
+      "stemEn": "I'm feeling awful today.",
+      "transform": "phrase",
+      "cue": "بد",
+      "cueEn": "bad",
+      "farsiText": "امروز حالم بده.",
+      "finglish": "emruz hâlam bade.",
+      "englishText": "I'm feeling bad today.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "vocab-wrong"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "e4f7c288-bfc6-5437-b00c-1ffb52a51183",
+      "kind": "transform",
+      "stemId": "where-is-the",
+      "stem": "ایستگاه کجاست؟",
+      "stemEn": "Where's the station?",
+      "transform": "phrase",
+      "cue": "داروخونه",
+      "cueEn": "pharmacy",
+      "farsiText": "داروخونه کجاست؟",
+      "finglish": "dârukhune kojâst?",
+      "englishText": "Where's the pharmacy?",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "f141787b-0297-5722-bb3a-623ccf6752ec",
+      "kind": "transform",
+      "stemId": "where-is-the",
+      "stem": "دستشویی کجاست؟",
+      "stemEn": "Where's the toilet?",
+      "transform": "phrase",
+      "cue": "ایستگاه",
+      "cueEn": "station",
+      "farsiText": "ایستگاه کجاست؟",
+      "finglish": "istgâh kojâst?",
+      "englishText": "Where's the station?",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "ac01a46a-6bad-5283-bd60-bf13701561f3",
+      "kind": "transform",
+      "stemId": "where-is-the",
+      "stem": "بانک کجاست؟",
+      "stemEn": "Where's the bank?",
+      "transform": "phrase",
+      "cue": "مترو",
+      "cueEn": "metro",
+      "farsiText": "مترو کجاست؟",
+      "finglish": "metro kojâst?",
+      "englishText": "Where's the metro?",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "142d58f2-963f-5ff2-8d7f-244f5c232889",
+      "kind": "transform",
+      "stemId": "where-is-the",
+      "stem": "داروخونه کجاست؟",
+      "stemEn": "Where's the pharmacy?",
+      "transform": "phrase",
+      "cue": "دستشویی",
+      "cueEn": "toilet",
+      "farsiText": "دستشویی کجاست؟",
+      "finglish": "dastshui kojâst?",
+      "englishText": "Where's the toilet?",
+      "difficulty": 1,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial",
+        "vocab-gap"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "7ec99a3c-02ed-5e04-9c2f-ce6372c737b3",
+      "kind": "transform",
+      "stemId": "what-time-is-it",
+      "stem": "لطفا بگین ساعت چنده.",
+      "stemEn": "Please tell me what time it is.",
+      "transform": "phrase",
+      "cue": "ببخشید",
+      "cueEn": "excuse me",
+      "farsiText": "ببخشید، ساعت چنده؟",
+      "finglish": "bebakhshid, sâ'at chande?",
+      "englishText": "Excuse me, what time is it?",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial",
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "7f6e1d49-7f8a-5f06-9441-f392c325827a",
+      "kind": "transform",
+      "stemId": "what-time-is-it",
+      "stem": "فقط می‌خواستم بپرسم ساعت چنده.",
+      "stemEn": "I just wanted to ask what time it is.",
+      "transform": "phrase",
+      "cue": "لطفا بگین",
+      "cueEn": "please tell me",
+      "farsiText": "لطفا بگین ساعت چنده.",
+      "finglish": "lotfan begin sâ'at chande.",
+      "englishText": "Please tell me what time it is.",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial",
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "18d3c12c-fb82-5c7c-a367-693a8807d26f",
+      "kind": "transform",
+      "stemId": "what-time-is-it",
+      "stem": "ببخشید، ساعت چنده؟",
+      "stemEn": "Excuse me, what time is it?",
+      "transform": "phrase",
+      "cue": "می‌دونین",
+      "cueEn": "do you know",
+      "farsiText": "می‌دونین ساعت چنده؟",
+      "finglish": "midunin sâ'at chande?",
+      "englishText": "Do you know what time it is?",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial",
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "4d4da3f2-d92d-5cd6-bbfc-d922620d7a74",
+      "kind": "transform",
+      "stemId": "what-time-is-it",
+      "stem": "می‌شه بگین ساعت چنده؟",
+      "stemEn": "Could you tell me what time it is?",
+      "transform": "phrase",
+      "cue": "ببخشید",
+      "cueEn": "excuse me",
+      "farsiText": "ببخشید، ساعت چنده؟",
+      "finglish": "bebakhshid, sâ'at chande?",
+      "englishText": "Excuse me, what time is it?",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial",
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "5eb8205f-a5ff-5ab8-9df7-250312835ee6",
+      "kind": "transform",
+      "stemId": "shut-the-door",
+      "stem": "در رو ببند.",
+      "stemEn": "Shut the door.",
+      "transform": "phrase",
+      "cue": "ببخشید",
+      "cueEn": "excuse me",
+      "farsiText": "ببخشید، در رو می‌بندین؟",
+      "finglish": "bebakhshid, dar ro mibandin?",
+      "englishText": "Excuse me, would you shut the door?",
+      "difficulty": 2,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "0c2d3f65-2fed-59d3-a317-c9ebc2c17837",
+      "kind": "transform",
+      "stemId": "shut-the-door",
+      "stem": "لطفا در رو ببندین.",
+      "stemEn": "Please shut the door.",
+      "transform": "phrase",
+      "cue": "می‌شه",
+      "cueEn": "could you",
+      "farsiText": "می‌شه در رو ببندین؟",
+      "finglish": "mishe dar ro bebandin?",
+      "englishText": "Could you shut the door?",
+      "difficulty": 2,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b6e7a532-2030-579c-bdd2-b902e35bd344",
+      "kind": "transform",
+      "stemId": "shut-the-door",
+      "stem": "می‌شه در رو ببندین؟",
+      "stemEn": "Could you shut the door?",
+      "transform": "phrase",
+      "cue": "تو",
+      "cueEn": "to a friend",
+      "farsiText": "در رو ببند.",
+      "finglish": "dar ro beband.",
+      "englishText": "Shut the door.",
+      "difficulty": 2,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "62534516-677c-5f44-9bc7-9254c24ae71d",
+      "kind": "transform",
+      "stemId": "shut-the-door",
+      "stem": "ببخشید، در رو می‌بندین؟",
+      "stemEn": "Excuse me, would you shut the door?",
+      "transform": "phrase",
+      "cue": "اشکالی نداره",
+      "cueEn": "would you mind",
+      "farsiText": "اشکالی نداره در رو ببندین؟",
+      "finglish": "eshkâli nadâre dar ro bebandin?",
+      "englishText": "Would you mind shutting the door?",
+      "difficulty": 2,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial",
+        "formality"
       ],
       "alternatives": []
     }

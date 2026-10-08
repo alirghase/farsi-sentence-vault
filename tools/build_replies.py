@@ -69,7 +69,8 @@ def main() -> int:
     ap.add_argument("--write", action="store_true", help="save to web/data/")
     args = ap.parse_args()
 
-    rows = [row_for(item) for item in json.loads(SOURCE.read_text())["replies"]]
+    rows = [row_for(item) for path in sorted(SOURCE.parent.glob("replies*.json"))
+            for item in json.loads(path.read_text())["replies"]]
     failed = False
     seen: set[str] = set()
     for row in rows:
