@@ -11,7 +11,7 @@ import { readFileSync } from 'node:fs';
 
 import * as SM2 from '../web/js/sm2.js';
 import { instruction, stemHint } from '../web/js/taxonomy.js';
-import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn, NEW_PER_DAY,
+import { select, matchesAnswer, introducedSince, eligibleAsNew, unseenSentences, isOwn, NEW_PER_DAY,
          directionsFor, promptFor, answerFor, expectsFarsi, isDrill, targetMs,
          newCardOrder } from '../web/js/session.js';
 
@@ -294,4 +294,16 @@ test('new cards: your own first, then the most common words, ties left shuffled'
   ];
   assert.deepEqual(cards.sort(newCardOrder).map((c) => c.sentence.id),
     ['mine', 'common-a', 'common-b', 'rare', 'drill']);
+});
+
+test('a transformation waits until its stem sentence has been seen', () => {
+  const stem = { id: 's1' };
+  const other = { id: 's2' };
+  const drill = { id: 't1', kind: 'transform', stemId: 's1' };
+  const swap = { id: 't2', kind: 'transform', stemId: 'a-frame' };
+  let unseen = unseenSentences([stem, other], []);
+  assert.equal(eligibleAsNew(drill, null, unseen), false, 'stem never met');
+  assert.equal(eligibleAsNew(swap, null, unseen), true, 'a swap has no stem sentence to wait for');
+  unseen = unseenSentences([stem, other], [{ sentenceId: 's1', direction: 'enToFa' }]);
+  assert.equal(eligibleAsNew(drill, null, unseen), true, 'stem met once, in either direction');
 });

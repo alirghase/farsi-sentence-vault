@@ -63,9 +63,19 @@ export const isOwn = (sentence) => sentence.source === 'custom';
  * One rule, used by both counts() and build(): they each had their own copy once
  * and the copies drifted, so the end-of-round count promised new cards a
  * session then refused to serve.
+ *
+ * A transformation works on a sentence you already know, so it waits until its
+ * stem has been seen. `unseen` is the set of deck sentences you have not met.
  */
-export function eligibleAsNew(sentence, levelIds) {
+export function eligibleAsNew(sentence, levelIds, unseen = new Set()) {
+  if (sentence.kind === 'transform' && unseen.has(sentence.stemId)) return false;
   return !levelIds || levelIds.has(sentence.id);
+}
+
+/** Bundle ids of the sentences with no review yet, in either direction. */
+export function unseenSentences(sentences, reviews) {
+  const met = new Set(reviews.map((r) => r.sentenceId));
+  return new Set(sentences.filter((s) => !met.has(s.id)).map((s) => s.seedId ?? s.id));
 }
 
 /**
@@ -118,10 +128,11 @@ export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = 
 
   // Unseen counts only what is actually reachable at the current level.
   const scheduled = new Set(reviews.map((r) => r.key));
+  const unmet = unseenSentences(sentences, reviews);
   let unseenSeed = 0;
   let unseenOwn = 0;
   for (const s of sentences) {
-    if (!eligibleAsNew(s, levelIds)) continue;
+    if (!eligibleAsNew(s, levelIds, unmet)) continue;
     for (const d of directionsFor(s)) {
       if (scheduled.has(reviewKey(s.id, d))) continue;
       if (isOwn(s)) unseenOwn += 1; else unseenSeed += 1;
@@ -184,6 +195,7 @@ export async function build({
   // New cards are restricted to the current level; due reviews are not, so
   // earlier levels keep resurfacing on their own schedule.
   const levelIds = level ? idsForLevel(sentences, level) : null;
+  const unseen = unseenSentences(sentences, reviews);
 
   const due = [];
   const fresh = [];
@@ -196,7 +208,7 @@ export async function build({
         if (existing.dueDate <= now) {
           due.push({ sentence, direction, review: existing, isNew: false });
         }
-      } else if (eligibleAsNew(sentence, levelIds)) {
+      } else if (eligibleAsNew(sentence, levelIds, unseen)) {
         // New cards are gated to the current level. Due reviews above are not,
         // so levels already passed keep resurfacing on their own schedule.
         fresh.push({
