@@ -316,3 +316,16 @@ test('extra practice reaches for the hardest cards first, then the longest unsee
   ];
   assert.deepEqual(reviews.sort(extraOrder).map((r) => r.key), ['hard', 'easy-old', 'easy-new']);
 });
+
+test('the answer check accepts what a phone or a speaker varies, and nothing more', () => {
+  const card = (farsiText) => ({ farsiText, alternatives: [] });
+  const ok = (typed, ref) => matchesAnswer(typed, card(ref), 'enToFa');
+  assert.ok(ok('من یه قهوه می‌خوام', 'یه قهوه می‌خوام.'), 'a subject pronoun added');
+  assert.ok(ok('یه قهوه میخوام', 'من یه قهوه می‌خوام.'), 'or left out');
+  assert.ok(ok('این رو می‌دونم', 'اینو می‌دونم.'), 'این رو / اینو');
+  assert.ok(ok('کتاب را خوندم', 'کتاب رو خوندم.'), 'را / رو');
+  assert.ok(ok('یه چایی می‌خوام', 'یه چای می‌خوام.'), 'چایی / چای');
+  assert.ok(ok('یکم خسته‌م', 'یه کم خسته‌م.'), 'یکم / یه کم');
+  assert.ok(!ok('یه قهوه نمی‌خوام', 'یه قهوه می‌خوام.'), 'a negation is a different answer');
+  assert.ok(!ok('ما یه قهوه می‌خوام', 'یه قهوه می‌خوایم.'), 'the verb ending still has to agree');
+});

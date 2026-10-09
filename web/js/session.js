@@ -461,7 +461,15 @@ export function normaliseAnswer(value, direction) {
     s = s
       .replace(/ي/g, 'ی').replace(/ى/g, 'ی').replace(/ك/g, 'ک')
       .replace(/[\u064B-\u0652\u0670]/g, '')       // harakat
-      .replace(/[\u200C\u200D\s]+/g, '');           // ZWNJ, ZWJ, spaces
+      // Spoken Persian drops the subject; من یه قهوه می‌خوام is not wrong.
+      .trim().replace(/^(من|ما|شما)\s+(?=\S)/, '')
+      .replace(/(^|\s)را(?=\s|$)/g, '$1رو')          // the written object marker
+      .replace(/[\u200C\u200D\s]+/g, '')            // ZWNJ, ZWJ, spaces
+      // Contractions and twins that are the same answer: این رو / اینو,
+      // چایی / چای, یه کم / یکم.
+      .replace(/(این|اون|من)رو/g, '$1و')
+      .replace(/چایی/g, 'چای')
+      .replace(/یهکم/g, 'یکم');
   } else {
     // Apostrophes go entirely: "dont" and "don't" are the same answer typed
     // on a phone.
