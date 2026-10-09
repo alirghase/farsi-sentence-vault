@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 1744,
+  "count": 1775,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -72731,6 +72731,1073 @@
           "translit": "kard",
           "en": "done",
           "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "55eac3c7-1b84-429c-ad44-80f6e48d9451",
+      "englishText": "My name is Ali.",
+      "farsiText": "اسمم علیه.",
+      "finglish": "esmam alie.",
+      "literalGloss": "my name is Ali",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اسمم",
+          "translit": "esmam",
+          "en": "my name",
+          "pos": "noun"
+        },
+        {
+          "fa": "علیه",
+          "translit": "alie",
+          "en": "is Ali",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "decfc6df-b9e3-40cc-8238-e9d8847c5be5",
+      "englishText": "I'm from London.",
+      "farsiText": "اهل لندنم.",
+      "finglish": "ahle landanam.",
+      "literalGloss": "from London I am",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اهل",
+          "translit": "ahle",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "لندنم",
+          "translit": "landanam",
+          "en": "London I am",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "b0249698-bea9-44f8-b33a-b7d77aaf9041",
+      "englishText": "I was born in London.",
+      "farsiText": "تو لندن به دنیا اومدم.",
+      "finglish": "tu landan be donyâ umadam.",
+      "literalGloss": "in London I was born",
+      "difficulty": 1,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "لندن",
+          "translit": "landan",
+          "en": "London",
+          "pos": "noun"
+        },
+        {
+          "fa": "به دنیا اومدم",
+          "translit": "be donyâ umadam",
+          "en": "I was born",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "8cc4d5ab-523c-41a3-b9d1-9c2f71da92f2",
+      "englishText": "My parents are Iranian.",
+      "farsiText": "بابا مامانم ایرانی‌ان.",
+      "finglish": "bâbâ mâmânam irâniyan.",
+      "literalGloss": "dad my mum are Iranian",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بابا",
+          "translit": "bâbâ",
+          "en": "dad",
+          "pos": "noun"
+        },
+        {
+          "fa": "مامانم",
+          "translit": "mâmânam",
+          "en": "my mum",
+          "pos": "noun"
+        },
+        {
+          "fa": "ایرانی‌ان",
+          "translit": "irâniyan",
+          "en": "are Iranian",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "23052ae2-c547-49f7-a55a-668fd80b2d9b",
+      "englishText": "My dad is from Shiraz.",
+      "farsiText": "بابام اهل شیرازه.",
+      "finglish": "bâbâm ahle shirâze.",
+      "literalGloss": "my dad from is Shiraz",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بابام",
+          "translit": "bâbâm",
+          "en": "my dad",
+          "pos": "noun"
+        },
+        {
+          "fa": "اهل",
+          "translit": "ahle",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "شیرازه",
+          "translit": "shirâze",
+          "en": "is Shiraz",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "f6c99fd9-dcb5-468b-a3d5-d0953128fcda",
+      "englishText": "My mum is from Tehran.",
+      "farsiText": "مامانم اهل تهرانه.",
+      "finglish": "mâmânam ahle tehrâne.",
+      "literalGloss": "my mum from is Tehran",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "مامانم",
+          "translit": "mâmânam",
+          "en": "my mum",
+          "pos": "noun"
+        },
+        {
+          "fa": "اهل",
+          "translit": "ahle",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "تهرانه",
+          "translit": "tehrâne",
+          "en": "is Tehran",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "f2166025-3cae-477e-ab7d-e13fda361eac",
+      "englishText": "I live in London.",
+      "farsiText": "لندن زندگی می‌کنم.",
+      "finglish": "landan zendegi mikonam.",
+      "literalGloss": "London I live",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "لندن",
+          "translit": "landan",
+          "en": "London",
+          "pos": "noun"
+        },
+        {
+          "fa": "زندگی می‌کنم",
+          "translit": "zendegi mikonam",
+          "en": "I live",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "518bb3dc-995d-431a-a500-4a55dacbf0a5",
+      "englishText": "I live with my parents.",
+      "farsiText": "با بابا مامانم زندگی می‌کنم.",
+      "finglish": "bâ bâbâ mâmânam zendegi mikonam.",
+      "literalGloss": "with dad my mum I live",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "با",
+          "translit": "bâ",
+          "en": "with",
+          "pos": "preposition"
+        },
+        {
+          "fa": "بابا",
+          "translit": "bâbâ",
+          "en": "dad",
+          "pos": "noun"
+        },
+        {
+          "fa": "مامانم",
+          "translit": "mâmânam",
+          "en": "my mum",
+          "pos": "noun"
+        },
+        {
+          "fa": "زندگی می‌کنم",
+          "translit": "zendegi mikonam",
+          "en": "I live",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "a27e9556-89c0-4e06-9955-3b3ec7b8bd11",
+      "englishText": "I'm thirty.",
+      "farsiText": "سی سالمه.",
+      "finglish": "si sâlame.",
+      "literalGloss": "thirty years I have",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "سی",
+          "translit": "si",
+          "en": "thirty",
+          "pos": "number"
+        },
+        {
+          "fa": "سالمه",
+          "translit": "sâlame",
+          "en": "years I have",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "571315e6-1a4d-404c-a760-50127ceac123",
+      "englishText": "I'm a student.",
+      "farsiText": "دانشجوام.",
+      "finglish": "dâneshjuam.",
+      "literalGloss": "I'm a student",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دانشجوام",
+          "translit": "dâneshjuam",
+          "en": "I'm a student",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "106c6057-0bbf-4def-a22f-30304876c529",
+      "englishText": "I'm an engineer.",
+      "farsiText": "مهندسم.",
+      "finglish": "mohandesam.",
+      "literalGloss": "I'm an engineer",
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "مهندسم",
+          "translit": "mohandesam",
+          "en": "I'm an engineer",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "67abe82a-3b28-4c9f-b7df-cf43e5ba52cd",
+      "englishText": "I'm married.",
+      "farsiText": "ازدواج کردم.",
+      "finglish": "ezdevâj kardam.",
+      "literalGloss": "I got married",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "ازدواج کردم",
+          "translit": "ezdevâj kardam",
+          "en": "I got married",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "4879df21-c02f-4261-a0f7-1d055b910edb",
+      "englishText": "I'm single.",
+      "farsiText": "مجردم.",
+      "finglish": "mojarradam.",
+      "literalGloss": "I'm single",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "مجردم",
+          "translit": "mojarradam",
+          "en": "I'm single",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "5a1a4106-44f5-46b9-8328-dfbd1672c29e",
+      "englishText": "I have a son and a daughter.",
+      "farsiText": "یه پسر و یه دختر دارم.",
+      "finglish": "ye pesar o ye dokhtar dâram.",
+      "literalGloss": "a son and a daughter I have",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "پسر",
+          "translit": "pesar",
+          "en": "son",
+          "pos": "noun"
+        },
+        {
+          "fa": "و",
+          "translit": "o",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "دختر",
+          "translit": "dokhtar",
+          "en": "daughter",
+          "pos": "noun"
+        },
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I have",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "2ad977f2-6604-4146-8a98-f76a88dd14e1",
+      "englishText": "I don't have children.",
+      "farsiText": "بچه ندارم.",
+      "finglish": "bache nadâram.",
+      "literalGloss": "child I don't have",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بچه",
+          "translit": "bache",
+          "en": "child",
+          "pos": "noun"
+        },
+        {
+          "fa": "ندارم",
+          "translit": "nadâram",
+          "en": "I don't have",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "8e69fc23-a57b-405a-8726-399e28f721f2",
+      "englishText": "I speak a little Persian.",
+      "farsiText": "یه کم فارسی بلدم.",
+      "finglish": "ye kam fârsi baladam.",
+      "literalGloss": "a little Persian I know",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یه کم",
+          "translit": "ye kam",
+          "en": "a little",
+          "pos": "adverb"
+        },
+        {
+          "fa": "فارسی",
+          "translit": "fârsi",
+          "en": "Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "بلدم",
+          "translit": "baladam",
+          "en": "I know",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "2b1af224-06e3-426b-b5c6-d5ddd0f750ae",
+      "englishText": "I like cooking.",
+      "farsiText": "آشپزی دوست دارم.",
+      "finglish": "âshpazi dust dâram.",
+      "literalGloss": "cooking I like",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "آشپزی",
+          "translit": "âshpazi",
+          "en": "cooking",
+          "pos": "noun"
+        },
+        {
+          "fa": "دوست دارم",
+          "translit": "dust dâram",
+          "en": "I like",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "6196e79d-bcb6-4d18-9562-93df5e5ec19f",
+      "englishText": "I like reading.",
+      "farsiText": "کتاب خوندن دوست دارم.",
+      "finglish": "ketâb khundan dust dâram.",
+      "literalGloss": "reading books I like",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "کتاب خوندن",
+          "translit": "ketâb khundan",
+          "en": "reading books",
+          "pos": "noun"
+        },
+        {
+          "fa": "دوست دارم",
+          "translit": "dust dâram",
+          "en": "I like",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "316bede6-6de3-434a-a4d4-d9af30852abe",
+      "englishText": "Nice to meet you.",
+      "farsiText": "خوشبختم.",
+      "finglish": "khoshbakhtam.",
+      "literalGloss": "nice to meet you",
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خوشبختم",
+          "translit": "khoshbakhtam",
+          "en": "nice to meet you",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "6853c043-cf00-4980-93df-c7776e5970ab",
+      "englishText": "I grew up in England.",
+      "farsiText": "تو انگلیس بزرگ شدم.",
+      "finglish": "tu engelis bozorg shodam.",
+      "literalGloss": "in England I grew up",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "انگلیس",
+          "translit": "engelis",
+          "en": "England",
+          "pos": "noun"
+        },
+        {
+          "fa": "بزرگ شدم",
+          "translit": "bozorg shodam",
+          "en": "I grew up",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "5baf9b3d-0372-41b9-8eb7-8664365c6f34",
+      "englishText": "My mum is English and my dad is Iranian.",
+      "farsiText": "مامانم انگلیسیه و بابام ایرانیه.",
+      "finglish": "mâmânam engelisie o bâbâm irânie.",
+      "literalGloss": "my mum is English and my dad is Iranian",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "مامانم",
+          "translit": "mâmânam",
+          "en": "my mum",
+          "pos": "noun"
+        },
+        {
+          "fa": "انگلیسیه",
+          "translit": "engelisie",
+          "en": "is English",
+          "pos": "adjective"
+        },
+        {
+          "fa": "و",
+          "translit": "o",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "بابام",
+          "translit": "bâbâm",
+          "en": "my dad",
+          "pos": "noun"
+        },
+        {
+          "fa": "ایرانیه",
+          "translit": "irânie",
+          "en": "is Iranian",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "366cb42b-1861-4906-89c5-76740f5f6f6a",
+      "englishText": "I work in an office.",
+      "farsiText": "تو یه دفتر کار می‌کنم.",
+      "finglish": "tu ye daftar kâr mikonam.",
+      "literalGloss": "in an office I work",
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "an",
+          "pos": "number"
+        },
+        {
+          "fa": "دفتر",
+          "translit": "daftar",
+          "en": "office",
+          "pos": "noun"
+        },
+        {
+          "fa": "کار می‌کنم",
+          "translit": "kâr mikonam",
+          "en": "I work",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "08141781-d281-4307-a2f0-ff6ef051662b",
+      "englishText": "I work from home.",
+      "farsiText": "از خونه کار می‌کنم.",
+      "finglish": "az khune kâr mikonam.",
+      "literalGloss": "from home I work",
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خونه",
+          "translit": "khune",
+          "en": "home",
+          "pos": "noun"
+        },
+        {
+          "fa": "کار می‌کنم",
+          "translit": "kâr mikonam",
+          "en": "I work",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "110814a4-8c8b-4b3f-8fea-e72f35b16eb8",
+      "englishText": "I've been to Iran twice.",
+      "farsiText": "دو بار رفتم ایران.",
+      "finglish": "do bâr raftam irân.",
+      "literalGloss": "two times I went Iran",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دو",
+          "translit": "do",
+          "en": "two",
+          "pos": "number"
+        },
+        {
+          "fa": "بار",
+          "translit": "bâr",
+          "en": "times",
+          "pos": "noun"
+        },
+        {
+          "fa": "رفتم",
+          "translit": "raftam",
+          "en": "I went",
+          "pos": "verb"
+        },
+        {
+          "fa": "ایران",
+          "translit": "irân",
+          "en": "Iran",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "f4a4b1cc-5184-43a2-aad4-8de351553ba8",
+      "englishText": "I haven't been to Iran yet.",
+      "farsiText": "هنوز ایران نرفتم.",
+      "finglish": "hanuz irân naraftam.",
+      "literalGloss": "yet Iran I haven't gone",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هنوز",
+          "translit": "hanuz",
+          "en": "yet",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ایران",
+          "translit": "irân",
+          "en": "Iran",
+          "pos": "noun"
+        },
+        {
+          "fa": "نرفتم",
+          "translit": "naraftam",
+          "en": "I haven't gone",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "f472d9f5-4d21-4f08-935b-002acaa04f3f",
+      "englishText": "I want to go to Iran next year.",
+      "farsiText": "سال دیگه می‌خوام برم ایران.",
+      "finglish": "sâle dige mikhâm beram irân.",
+      "literalGloss": "next year I want to go Iran",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "سال دیگه",
+          "translit": "sâle dige",
+          "en": "next year",
+          "pos": "expression"
+        },
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "برم",
+          "translit": "beram",
+          "en": "to go",
+          "pos": "verb"
+        },
+        {
+          "fa": "ایران",
+          "translit": "irân",
+          "en": "Iran",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "2765f21d-6746-4984-96ff-2ed6a65d144d",
+      "englishText": "I understand Persian, but at home I speak English.",
+      "farsiText": "فارسی می‌فهمم، ولی تو خونه انگلیسی حرف می‌زنم.",
+      "finglish": "fârsi mifahmam, vali tu khune engelisi harf mizanam.",
+      "literalGloss": "Persian I understand but at home English I speak",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "فارسی",
+          "translit": "fârsi",
+          "en": "Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌فهمم",
+          "translit": "mifahmam",
+          "en": "I understand",
+          "pos": "verb"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "at",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خونه",
+          "translit": "khune",
+          "en": "home",
+          "pos": "noun"
+        },
+        {
+          "fa": "انگلیسی",
+          "translit": "engelisi",
+          "en": "English",
+          "pos": "noun"
+        },
+        {
+          "fa": "حرف می‌زنم",
+          "translit": "harf mizanam",
+          "en": "I speak",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "0b2e9380-5ac6-420f-8199-a04593585d7f",
+      "englishText": "In my free time I play football.",
+      "farsiText": "تو وقت آزادم فوتبال بازی می‌کنم.",
+      "finglish": "tu vaghte âzâdam futbâl bâzi mikonam.",
+      "literalGloss": "in my free time football I play",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "وقت آزادم",
+          "translit": "vaghte âzâdam",
+          "en": "my free time",
+          "pos": "noun"
+        },
+        {
+          "fa": "فوتبال",
+          "translit": "futbâl",
+          "en": "football",
+          "pos": "noun"
+        },
+        {
+          "fa": "بازی می‌کنم",
+          "translit": "bâzi mikonam",
+          "en": "I play",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "5057842d-478b-4d1b-ad2f-b027ec75cd71",
+      "englishText": "I have a big family.",
+      "farsiText": "خانواده‌ی بزرگی دارم.",
+      "finglish": "khânevâdeye bozorgi dâram.",
+      "literalGloss": "family a big I have",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خانواده‌ی",
+          "translit": "khânevâdeye",
+          "en": "family",
+          "pos": "noun"
+        },
+        {
+          "fa": "بزرگی",
+          "translit": "bozorgi",
+          "en": "a big",
+          "pos": "adjective"
+        },
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I have",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "e3197e21-aae7-4313-90c6-49dcd6433506",
+      "englishText": "All my family are in Iran.",
+      "farsiText": "همه‌ی خانواده‌م ایرانن.",
+      "finglish": "hameye khânevâdam irânan.",
+      "literalGloss": "all of my family are in Iran",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "همه‌ی",
+          "translit": "hameye",
+          "en": "all of",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "خانواده‌م",
+          "translit": "khânevâdam",
+          "en": "my family",
+          "pos": "noun"
+        },
+        {
+          "fa": "ایرانن",
+          "translit": "irânan",
+          "en": "are in Iran",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "ad5c1a11-41a6-4931-aa36-cdb7fa1066e7",
+      "englishText": "I'm the eldest in my family.",
+      "farsiText": "بچه‌ی بزرگ خانواده‌م.",
+      "finglish": "bacheye bozorge khânevâdam.",
+      "literalGloss": "child eldest of my family",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بچه‌ی",
+          "translit": "bacheye",
+          "en": "child",
+          "pos": "noun"
+        },
+        {
+          "fa": "بزرگ",
+          "translit": "bozorge",
+          "en": "eldest",
+          "pos": "adjective"
+        },
+        {
+          "fa": "خانواده‌م",
+          "translit": "khânevâdam",
+          "en": "of my family",
+          "pos": "noun"
         }
       ],
       "alternatives": [],

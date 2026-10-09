@@ -1,0 +1,11 @@
+{
+  "note": "Questions about you, the ones a new Persian speaker always asks, and a natural answer. Same format as replies.json.",
+  "replies": [
+    ["کجا به دنیا اومدی؟", "Where were you born?", "تو لندن به دنیا اومدم.", "tu landan be donyâ umadam.", "I was born in London.", ["اینجا به دنیا اومدم."], 1, "small talk about weather or traffic"],
+    ["بابا مامانت ایرانی~ان؟", "Are your parents Iranian?", "آره، هر دوشون.", "âre, har dosheshun.", "Yes, both of them.", ["فقط بابام ایرانیه."], 1, "phone call with family"],
+    ["ازدواج کردی؟", "Are you married?", "نه، هنوز مجردم.", "na, hanuz mojarradam.", "No, I'm still single.", ["آره، دو ساله."], 1, "small talk about weather or traffic"],
+    ["بچه داری؟", "Do you have children?", "آره، دو تا.", "âre, do tâ.", "Yes, two.", ["نه، ندارم."], 1, "phone call with family"],
+    ["تا حالا ایران رفتی؟", "Have you ever been to Iran?", "آره، دو بار رفتم.", "âre, do bâr raftam.", "Yes, I've been twice.", ["نه، هنوز نرفتم."], 2, "talking about the past (what you did)"],
+    ["تو خونه فارسی حرف می~زنین؟", "Do you speak Persian at home?", "یه کم، بیشتر انگلیسی.", "ye kam, bishtar engelisi.", "A little, mostly English.", ["آره، همیشه."], 2, "phone call with family"]
+  ]
+}

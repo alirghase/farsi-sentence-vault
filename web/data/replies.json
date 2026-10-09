@@ -1,5 +1,5 @@
 {
-  "count": 145,
+  "count": 151,
   "replies": [
     {
       "id": "f2f5344a-aac5-5802-9d77-6088a61329ec",
@@ -1124,6 +1124,108 @@
       ],
       "difficulty": 2,
       "situation": "disagreeing politely",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "11ec1769-07f3-5b7c-8a15-8042bc366edd",
+      "kind": "reply",
+      "stem": "کجا به دنیا اومدی؟",
+      "stemEn": "Where were you born?",
+      "farsiText": "تو لندن به دنیا اومدم.",
+      "finglish": "tu landan be donyâ umadam.",
+      "englishText": "I was born in London.",
+      "alternatives": [
+        "اینجا به دنیا اومدم."
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "7899c726-5aba-5dc2-a999-38e3a8f44d95",
+      "kind": "reply",
+      "stem": "بابا مامانت ایرانی‌ان؟",
+      "stemEn": "Are your parents Iranian?",
+      "farsiText": "آره، هر دوشون.",
+      "finglish": "âre, har dosheshun.",
+      "englishText": "Yes, both of them.",
+      "alternatives": [
+        "فقط بابام ایرانیه."
+      ],
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "efe613bf-6b87-539c-a1a7-17a0820f4a36",
+      "kind": "reply",
+      "stem": "ازدواج کردی؟",
+      "stemEn": "Are you married?",
+      "farsiText": "نه، هنوز مجردم.",
+      "finglish": "na, hanuz mojarradam.",
+      "englishText": "No, I'm still single.",
+      "alternatives": [
+        "آره، دو ساله."
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "41a6b925-07e9-5559-b341-54bf3a441565",
+      "kind": "reply",
+      "stem": "بچه داری؟",
+      "stemEn": "Do you have children?",
+      "farsiText": "آره، دو تا.",
+      "finglish": "âre, do tâ.",
+      "englishText": "Yes, two.",
+      "alternatives": [
+        "نه، ندارم."
+      ],
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "250e1f76-471d-5a20-8ce9-c90f7af8017d",
+      "kind": "reply",
+      "stem": "تا حالا ایران رفتی؟",
+      "stemEn": "Have you ever been to Iran?",
+      "farsiText": "آره، دو بار رفتم.",
+      "finglish": "âre, do bâr raftam.",
+      "englishText": "Yes, I've been twice.",
+      "alternatives": [
+        "نه، هنوز نرفتم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "f23c7211-f83e-536f-9ca3-b9966cfe41ec",
+      "kind": "reply",
+      "stem": "تو خونه فارسی حرف می‌زنین؟",
+      "stemEn": "Do you speak Persian at home?",
+      "farsiText": "یه کم، بیشتر انگلیسی.",
+      "finglish": "ye kam, bishtar engelisi.",
+      "englishText": "A little, mostly English.",
+      "alternatives": [
+        "آره، همیشه."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
       "grammarTags": [
         "colloquial"
       ]
