@@ -106,8 +106,8 @@ stands for the half-space (ZWNJ), so they can be read and diffed.
 
 Everything is hand-written and goes through `core/validate.py` — spoken Tehrani
 (*می‌رم*, not *می‌روم*), a closed set of tags and situations, a word map that
-rebuilds its sentence. The 238 transformation drills were model-written and read
-line by line before they went in; the tools that wrote them are in history.
+rebuilds its sentence. The 238 transformation drills were machine-written and
+read line by line before they went in.
 
 ### Checks
 
@@ -140,11 +140,8 @@ checks and publishes `web/`.
 
 ## History
 
-Things removed to keep this small are in git history. A Cloud Run backend with
-its Terraform, and the model-driven generation tools:
+The parked Cloud Run backend, its Terraform and design notes are in git history:
 
 ```bash
-git checkout a64e723 -- backend infra docs       # the backend and its design notes
-git checkout 5193fea -- tools core               # the Gemini generation pipeline
-git checkout f7f9bb7 -- FarsiVault FarsiVaultTests   # the first, native SwiftUI client
+git checkout a64e723 -- backend infra docs
 ```
