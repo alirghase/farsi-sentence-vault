@@ -18,7 +18,10 @@ because there is nowhere else to be.
 1. **A prompt appears**, with a box under it. Type your answer.
 2. **جواب (check)** shows the answer, the transliteration and a word map — each
    Persian word over its English gloss; tap a word for its part of speech. A ✓
-   appears if what you typed matches the answer or a listed alternative.
+   appears if what you typed matches the answer or a listed alternative. What a
+   phone keyboard or a speaker varies does not count against you: half-spaces,
+   Arabic letter forms, a subject pronoun added or dropped (*من یه قهوه می‌خوام*),
+   *این رو* / *اینو*, *را* / *رو*, *چایی* / *چای*, *یه کم* / *یکم*.
 3. **غلط (wrong)** or **درست (right)**. Wrong comes back later in the same round.
    Right shows how many days until you see it again. **برگرد** undoes a mis-tap.
 
@@ -34,7 +37,9 @@ On a keyboard: <kbd>Enter</kbd> checks, <kbd>1</kbd> wrong, <kbd>2</kbd> right,
 | **Swap** | Keep the frame, change one piece: *با «ما» بگو* turns *یه قهوه می‌خوام* into *یه قهوه می‌خوایم*. The piece is a pronoun (subject, possessive or object), a verb or modal, or a phrase (question word, time word, how a request opens) |
 | **Reply** | Something is said to you in Persian and you answer in Persian. Nothing on the front is English. Many replies are right, so a model answer and a few others are shown and the verdict is yours |
 
-Transformations and swaps together are a quarter of a round, replies 15%.
+Transformations and swaps together are a quarter of a round, replies 15%. A
+transformation is only dealt once you have met its sentence: it changes something
+you know, so on day one the drills are swaps.
 
 **Immersion** (Settings, on by default): the English meaning of a drill and the
 transliteration under each answer stay behind a small tap — **معنی**, **تلفظ** —
