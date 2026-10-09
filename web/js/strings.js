@@ -9,38 +9,46 @@
 // one place.
 
 export const STRINGS = {
-  // Tabs and screen titles
-  'tab.settings': 'تنظیمات',
-
-  // Today
-  'today.due': 'مرور',
-  'today.new': 'جدید',
-  'today.right': 'درست',
-
-  // Practice
-  'card.type': 'تایپ',
+  // The card
   'card.reveal': 'جواب',
+  'card.typeFarsi': 'بنویس…',
+  'card.typeEnglish': 'انگلیسی‌شو بنویس…',
   'card.alsoCorrect': 'این هم درسته',
   'card.unit': 'این کلمه‌ها با هم یک واحدن',
+  'card.undo': 'برگرد',
+  'card.undone': 'لغو شد',
+  'dir.enToFa': 'انگلیسی ← فارسی',
+  'dir.faToEn': 'فارسی ← انگلیسی',
+
+  // End of a round
   'card.done': 'تموم شد',
   'card.practised': 'کارت تمرین شد',
   'card.again': 'یه دور دیگه',
   'card.allDone': 'برای امروز همه‌ش تموم شد.',
-  'card.undo': 'برگرد',
-  'card.undone': 'لغو شد',
+  'today.due': 'مرور',
+  'today.new': 'جدید',
+  'today.right': 'درست',
+  'today.passedHead': 'رد شدی',
+  'today.nowOn': 'حالا روی سطح',
 
-  // Progress
+  // Boot failure
+  'boot.blocked': 'برنامه یه جای دیگه هم بازه. همهٔ نسخه‌ها رو ببند و دوباره باز کن.',
+  'boot.retry': 'دوباره امتحان کن',
+  'boot.stale': 'یه نسخهٔ تازه‌تر باز شده. این صفحه رو دوباره باز کن.',
+  'boot.failed': 'برنامه بالا نیومد. یه بار ببند و دوباره باز کن.',
 
   // Settings
+  'tab.settings': 'تنظیمات',
   'settings.level': 'سطح',
   'settings.currentLevel': 'سطح فعلی',
+  'settings.immersion': 'غوطه‌وری',
+  'settings.immersive': 'انگلیسی و تلفظ پنهون باشه',
+  'settings.immersiveHint': 'معنی و تلفظ فقط با یه ضربه نشون داده می‌شن. خاموشش کنی، همیشه دیده می‌شن.',
+  'card.meaning': 'معنی',
+  'card.pronunciation': 'تلفظ',
+  'card.typeReply': 'جوابت رو بنویس…',
+  'settings.levelNow': 'کارت‌های جدید حالا از این سطح میان:',
   'settings.backup': 'پشتیبان',
-
-  // Settings — practice
-
-  // Settings — audio
-
-  // Settings — backup
   'settings.exportBackup': 'ذخیرهٔ پشتیبان',
   'settings.importBackup': 'بازگردانی…',
   'settings.backupHint': 'برنامهٔ مرور و تاریخچه‌ات فقط توی همین مرورگره، و iOS می‌تونه پاکش کنه. هر از گاهی یه پشتیبان توی Files ذخیره کن؛ بازگردانی چیزی رو که اینجاست جایگزین می‌کنه.',
@@ -51,40 +59,11 @@ export const STRINGS = {
   'settings.backupFailed': 'این فایل خونده نشد.',
   'settings.scheduled': 'کارت زمان‌بندی‌شده',
   'settings.reviews': 'مرور',
-
-  // Settings — keyboard and privacy
-  'settings.levelNow': 'کارت‌های جدید حالا از این سطح میان:',
-
-  // Card
-  'card.typeFarsi': 'بنویس…',
-  'card.typeFarsi': 'بنویس…',
-  'card.typeEnglish': 'انگلیسی‌شو بنویس…',
-  'card.typeEnglish': 'انگلیسی‌شو بنویس…',
-
-  // Boot failure
-  'boot.blocked': 'برنامه یه جای دیگه هم بازه. همهٔ نسخه‌ها رو ببند و دوباره باز کن.',
-  'boot.retry': 'دوباره امتحان کن',
-  'boot.stale': 'یه نسخهٔ تازه‌تر باز شده. این صفحه رو دوباره باز کن.',
-  'boot.failed': 'برنامه بالا نیومد. یه بار ببند و دوباره باز کن.',
-
-  // Today and progress
-
-
-  // Card badge and directions
-  'dir.enToFa': 'انگلیسی ← فارسی',
-  'dir.faToEn': 'فارسی ← انگلیسی',
-
-  // Level panel
-  'today.passedHead': 'رد شدی',
-  'today.nowOn': 'حالا روی سطح',
-
-  // Backup detail
   'settings.lastBackup': 'آخرین پشتیبان',
   'settings.backupReplace': 'بازگردانی چیزی رو که روی این دستگاهه جایگزین می‌کنه.',
   'settings.unknownDate': 'تاریخ نامشخص',
   'settings.confirmRestore': 'پیشرفت این دستگاه با پشتیبانِ این تاریخ جایگزین بشه؟',
   'settings.goneFromDeck': 'دیگه توی بسته نیستن',
-
 
   // Your own sentences
   'bank.title': 'جمله‌های خودم',
@@ -100,7 +79,6 @@ export const STRINGS = {
   'bank.errEmpty': 'هر دو طرف رو بنویس.',
   'bank.errPersian': 'طرف فارسی باید فارسی باشه.',
   'bank.errDuplicate': 'این جمله از قبل هست.',
-
 };
 
 /**

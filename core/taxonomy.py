@@ -1,15 +1,8 @@
-"""Shared vocabulary for sentence generation and attempt grading.
+"""The closed vocabularies a sentence is checked against.
 
-This module is the single source of truth for the closed sets the model is
-constrained to. It used to be mirrored in web/js/taxonomy.js, guarded by
-tools/check_mirror.py; the app stopped displaying tags and situations when the
-progress screen was removed, so both the copy and the guard are gone. Nothing
-outside Python reads these now.
-
-Why closed sets: free-form tags from an LLM fragment across runs
-("ezafe" / "ezāfe" / "missing ezafe" / "incorrect ezafe construction"). Once
-they fragment, every count and coverage report built on them splits across
-near-duplicates and quietly measures noise.
+Closed because free-form labels fragment ("ezafe" / "ezāfe" / "missing ezafe"),
+and once they do every count built on them splits across near-duplicates. Only
+Python reads these; the app does not display tags or situations.
 """
 
 # --- Error tags -------------------------------------------------------------
@@ -36,6 +29,14 @@ ERROR_TAGS = {
 }
 
 ERROR_TAG_KEYS = sorted(ERROR_TAGS)
+
+# --- Parts of speech -------------------------------------------------------
+# Closed for the same reason: free-form labels stop being groupable or stylable.
+PARTS_OF_SPEECH = [
+    "noun", "verb", "compound verb", "adjective", "adverb", "pronoun",
+    "attached pronoun", "preposition", "question word", "conjunction", "number",
+    "particle", "expression",
+]
 
 # --- Situations -------------------------------------------------------------
 # Everyday contexts where an intermediate speaker actually freezes. Deliberately
@@ -164,66 +165,22 @@ def canonical_situation(label: str) -> str:
     return DEFAULT_SITUATION
 
 
-# --- Difficulty -------------------------------------------------------------
-
-DIFFICULTY = {
-    1: "One clause, present tense, high-frequency vocabulary. 3-6 words.",
-    2: "One clause, past or future tense, or a simple compound verb. 5-9 words.",
-    3: "Two clauses joined by که/اگر/وقتی, or a subjunctive after a modal. 8-14 words.",
-    4: "Multiple clauses, conditionals, reported speech, or nuanced register. 12-20 words.",
-    5: "Idiomatic, abstract, or emotionally nuanced; needs taarof awareness or fixed expressions. 12-25 words.",
-}
-
-DIRECTIONS = ["enToFa", "faToEn"]
-
-
-def tag_reference() -> str:
-    """Render the tag vocabulary for inclusion in a prompt."""
-    return "\n".join(f"- {k}: {v}" for k, v in ERROR_TAGS.items())
-
-
-def difficulty_reference() -> str:
-    return "\n".join(f"- Level {k}: {v}" for k, v in DIFFICULTY.items())
-
-
-# --- Transformations --------------------------------------------------------
+# --- Drills -------------------------------------------------------------------
 #
-# A transformation card gives you a sentence you already know and asks you to
-# change one thing about it. The point is production under a grammatical
-# constraint, which translation drilling never reaches: you can know 1,200
-# sentences by heart and still not be able to make the 1,201st.
+# Besides translation there are three kinds of drill card, all in the app as
+# kind "transform" or "reply" rows with a Persian stem to work from.
 #
-# The set is closed and deliberately small. Each one had to be unambiguous —
-# exactly one right answer in spoken Tehrani — or it teaches a coin flip.
-#
-# Deliberately NOT included:
-#   question    a yes/no question in spoken Persian is intonation. Written down
-#               it is the same sentence with ؟, so the card would be free.
-#   future      خواهم رفت is bookish; spoken Persian uses the present for the
-#               future, so the "transformation" is usually no change at all.
-TRANSFORMS = {
-    "negate": {
-        "title": "منفی‌ش کن",
-        "detail": "Make it negative. The verb takes نـ / نمی, است becomes نیست.",
-    },
-    "toPast": {
-        "title": "بذارش گذشته",
-        "detail": "Put it in the past tense, keeping the same subject.",
-    },
-    "toFormal": {
-        "title": "به شما بگو",
-        "detail": "Say it to someone you would address as شما: the verb ending "
-                  "and any second-person pronoun change with it.",
-    },
-    "toPlural": {
-        "title": "جمعش کن",
-        "detail": "Change the subject from singular to plural (من→ما, اون→اونا) "
-                  "and agree the verb.",
-    },
-}
+# Transformations: change one thing about a sentence you know — negate it, put it
+# in the past, say it to شما, make the subject plural. These 238 were written by a
+# model and read line by line before they went in; the Persian titles are in
+# web/js/taxonomy.js. Not offered: a yes/no question (in speech it is intonation,
+# so the card would be free) and the future (spoken Persian uses the present, so
+# the "transformation" is usually no change at all).
+TRANSFORM_KEYS = ["negate", "toFormal", "toPast", "toPlural"]
 
-TRANSFORM_KEYS = sorted(TRANSFORMS)
+# Swaps: one version of a frame and a cue, asked to produce another — the same
+# sentence with ما, with لازم داشتن. Hand-written in tools/handwritten/drills/,
+# built into cards by tools/build_swaps.py.
+SWAP_KEYS = ["phrase", "pronoun", "verb"]
 
-
-def transform_reference() -> str:
-    return "\n".join(f"- {k}: {v['detail']}" for k, v in TRANSFORMS.items())
+DRILL_KEYS = sorted(TRANSFORM_KEYS + SWAP_KEYS)

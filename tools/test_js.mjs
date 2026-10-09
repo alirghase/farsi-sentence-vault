@@ -7,9 +7,12 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
+import { readFileSync } from 'node:fs';
+
 import * as SM2 from '../web/js/sm2.js';
+import { instruction, stemHint } from '../web/js/taxonomy.js';
 import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn, NEW_PER_DAY,
-         directionsFor, promptFor, answerFor, expectsFarsi } from '../web/js/session.js';
+         directionsFor, promptFor, answerFor, expectsFarsi, isDrill, targetMs } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -74,22 +77,15 @@ test('never more new cards than the allowance, even when backfilling', () => {
 });
 
 // counts() and build() each decided what may be introduced, and the copies had
-// already drifted — build() honoured `kinds`, counts() did not, so Today would
-// promise new cards a session then refuse to serve them. One rule now, pinned
-// here so the copies cannot come back.
+// already drifted. One rule now, pinned here so the copies cannot come back.
 test('eligibility is the same rule for the counter and the builder', () => {
   const atLevel = new Set(['a']);
-  const sentence = { id: 'a', kind: 'sentence' };
-  const other = { id: 'b', kind: 'sentence' };
-  const word = { id: 'a', kind: 'word' };
+  const sentence = { id: 'a' };
+  const other = { id: 'b' };
 
   assert.equal(eligibleAsNew(sentence, atLevel), true);
   assert.equal(eligibleAsNew(other, atLevel), false, 'outside the level');
   assert.equal(eligibleAsNew(other, null), true, 'no level gate means no filter');
-  assert.equal(eligibleAsNew(word, atLevel, ['sentence']), false, 'wrong kind');
-  assert.equal(eligibleAsNew(sentence, atLevel, ['sentence']), true);
-  assert.equal(eligibleAsNew({ id: 'a' }, atLevel, ['sentence']), true,
-    'a row with no kind counts as a sentence');
 });
 
 test('both directions of one sentence never share a session', () => {
@@ -213,4 +209,76 @@ test('two of the three directions are answered in Persian', () => {
   assert.ok(expectsFarsi('enToFa'));
   assert.ok(expectsFarsi('transform'));
   assert.ok(!expectsFarsi('faToEn'));
+});
+
+// --- swap drills ---
+
+const swap = {
+  kind: 'transform', transform: 'pronoun', cue: 'ما', cueEn: 'we',
+  stem: 'یه قهوه می‌خوام.', stemEn: 'I want a coffee.',
+  farsiText: 'یه قهوه می‌خوایم.', englishText: 'We want a coffee.',
+  alternatives: ['ما یه قهوه می‌خوایم.'],
+};
+
+test('a swap names its cue on the badge and glosses it under the stem', () => {
+  assert.equal(instruction(swap), 'با «ما» بگو');
+  assert.equal(stemHint(swap), 'I want a coffee.  →  we');
+  // A transformation has no cue: a fixed instruction, and just the stem meaning.
+  assert.equal(instruction(drill), 'منفی‌ش کن');
+  assert.equal(stemHint(drill), "I'm going home tomorrow.");
+});
+
+test('a swap accepts the answer with or without the pronoun, but not the stem', () => {
+  assert.ok(matchesAnswer('یه قهوه می‌خوایم', swap, 'transform'));
+  assert.ok(matchesAnswer('ما یه قهوه میخوایم.', swap, 'transform'));
+  assert.ok(!matchesAnswer(swap.stem, swap, 'transform'));
+});
+
+test('every shipped drill can be asked and answered', () => {
+  const { transforms } = JSON.parse(readFileSync(
+    new URL('../web/data/transforms.json', import.meta.url), 'utf8'));
+  assert.ok(transforms.length > 400);
+  for (const row of transforms) {
+    assert.ok(row.stem && row.stemEn && row.farsiText && row.englishText, row.id);
+    assert.ok(instruction(row), row.id);
+    assert.ok(matchesAnswer(row.farsiText, row, 'transform'), row.id);
+    assert.ok(!matchesAnswer(row.stem, row, 'transform'), `${row.id}: the stem is the answer`);
+  }
+});
+
+// --- replies ---
+
+const reply = {
+  kind: 'reply', stem: 'چای میل دارین؟', stemEn: 'Would you like some tea?',
+  farsiText: 'بله، ممنون.', englishText: 'Yes, thank you.',
+  alternatives: ['نه، زحمت نکشین.'],
+};
+
+test('a reply is one direction, prompted by what was said to you', () => {
+  assert.deepEqual(directionsFor(reply), ['reply']);
+  assert.ok(isDrill('reply') && isDrill('transform') && !isDrill('enToFa'));
+  assert.equal(promptFor(reply, 'reply'), reply.stem);
+  assert.equal(answerFor(reply, 'reply'), reply.farsiText);
+  assert.ok(expectsFarsi('reply'));
+});
+
+test('a reply accepts the model answer or a listed alternative, and not an echo', () => {
+  assert.ok(matchesAnswer('بله ممنون', reply, 'reply'));
+  assert.ok(matchesAnswer('نه زحمت نکشین', reply, 'reply'));
+  assert.ok(!matchesAnswer(reply.stem, reply, 'reply'));
+});
+
+test('finding a sentence of your own is given longer than changing one', () => {
+  assert.ok(targetMs(reply, 'reply') > targetMs(reply, 'transform'));
+});
+
+test('every shipped reply can be asked and answered', () => {
+  const { replies } = JSON.parse(readFileSync(
+    new URL('../web/data/replies.json', import.meta.url), 'utf8'));
+  assert.ok(replies.length > 50);
+  for (const row of replies) {
+    assert.equal(row.kind, 'reply');
+    assert.ok(matchesAnswer(row.farsiText, row, 'reply'), row.id);
+    assert.equal(instruction(row), 'جواب بده');
+  }
 });

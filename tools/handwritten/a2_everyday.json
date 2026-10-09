@@ -1,0 +1,666 @@
+{
+  "note": "The same everyday topics at A2 — a clause more, a comparison, a past or future.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "I'll send you a photo.",
+      "fa": "یه عکس برات می‌فرستم.",
+      "tr": "ye aks barât mifrestam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "عکس",
+          "aks",
+          "photo",
+          "noun"
+        ],
+        [
+          "برات",
+          "barât",
+          "for you",
+          "preposition"
+        ],
+        [
+          "می‌فرستم",
+          "mifrestam",
+          "I'll send",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll call you again later.",
+      "fa": "بعدا دوباره بهت زنگ می‌زنم.",
+      "tr": "ba'dan dobâre behet zang mizanam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بعدا",
+          "ba'dan",
+          "later",
+          "adverb"
+        ],
+        [
+          "دوباره",
+          "dobâre",
+          "again",
+          "adverb"
+        ],
+        [
+          "بهت",
+          "behet",
+          "to you",
+          "preposition"
+        ],
+        [
+          "زنگ می‌زنم",
+          "zang mizanam",
+          "I'll call",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My sister is older than me.",
+      "fa": "خواهرم از من بزرگ‌تره.",
+      "tr": "khâharam az man bozorgtare.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خواهرم",
+          "khâharam",
+          "my sister",
+          "noun"
+        ],
+        [
+          "از",
+          "az",
+          "than",
+          "preposition"
+        ],
+        [
+          "من",
+          "man",
+          "me",
+          "pronoun"
+        ],
+        [
+          "بزرگ‌تره",
+          "bozorgtare",
+          "is older",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He's my best friend.",
+      "fa": "اون بهترین دوستمه.",
+      "tr": "un behtarin dustame.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "he",
+          "pronoun"
+        ],
+        [
+          "بهترین",
+          "behtarin",
+          "best",
+          "adjective"
+        ],
+        [
+          "دوستمه",
+          "dustame",
+          "is my friend",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I miss my family.",
+      "fa": "دلم برای خانواده‌م تنگ شده.",
+      "tr": "delam barâye khânevâdam tang shode.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دلم",
+          "delam",
+          "my heart",
+          "noun"
+        ],
+        [
+          "برای",
+          "barâye",
+          "for",
+          "preposition"
+        ],
+        [
+          "خانواده‌م",
+          "khânevâdam",
+          "my family",
+          "noun"
+        ],
+        [
+          "تنگ شده",
+          "tang shode",
+          "has become tight",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He's getting married.",
+      "fa": "داره ازدواج می‌کنه.",
+      "tr": "dâre ezdevâj mikone.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "داره",
+          "dâre",
+          "he is",
+          "verb"
+        ],
+        [
+          "ازدواج می‌کنه",
+          "ezdevâj mikone",
+          "marrying",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "They got married last year.",
+      "fa": "پارسال ازدواج کردن.",
+      "tr": "pârsâl ezdevâj kardan.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پارسال",
+          "pârsâl",
+          "last year",
+          "adverb"
+        ],
+        [
+          "ازدواج کردن",
+          "ezdevâj kardan",
+          "got married",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I run every morning.",
+      "fa": "هر صبح می‌دوم.",
+      "tr": "har sobh midavam.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هر",
+          "har",
+          "every",
+          "adjective"
+        ],
+        [
+          "صبح",
+          "sobh",
+          "morning",
+          "noun"
+        ],
+        [
+          "می‌دوم",
+          "midavam",
+          "I run",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm learning to cook.",
+      "fa": "دارم آشپزی یاد می‌گیرم.",
+      "tr": "dâram âshpazi yâd migiram.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دارم",
+          "dâram",
+          "I am",
+          "verb"
+        ],
+        [
+          "آشپزی",
+          "âshpazi",
+          "cooking",
+          "noun"
+        ],
+        [
+          "یاد می‌گیرم",
+          "yâd migiram",
+          "learning",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What's your favourite film?",
+      "fa": "فیلم مورد علاقه‌ت چیه؟",
+      "tr": "film mored-e alâghet chie?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فیلم",
+          "film",
+          "film",
+          "noun"
+        ],
+        [
+          "مورد علاقه‌ت",
+          "mored-e alâghet",
+          "your favourite",
+          "adjective"
+        ],
+        [
+          "چیه",
+          "chie",
+          "what is it",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm going to Isfahan next week.",
+      "fa": "هفته‌ی بعد می‌رم اصفهان.",
+      "tr": "hafte~ye ba'd miram esfahân.",
+      "sit": "talking about future plans",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هفته‌ی بعد",
+          "hafte~ye ba'd",
+          "next week",
+          "expression"
+        ],
+        [
+          "می‌رم",
+          "miram",
+          "I'm going",
+          "verb"
+        ],
+        [
+          "اصفهان",
+          "esfahân",
+          "Isfahan",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We want to travel in the summer.",
+      "fa": "تابستون می‌خوایم سفر کنیم.",
+      "tr": "tâbestun mikhâym safar konim.",
+      "sit": "talking about future plans",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تابستون",
+          "tâbestun",
+          "summer",
+          "noun"
+        ],
+        [
+          "می‌خوایم",
+          "mikhâym",
+          "we want",
+          "verb"
+        ],
+        [
+          "سفر کنیم",
+          "safar konim",
+          "to travel",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll do it tomorrow.",
+      "fa": "فردا انجامش می‌دم.",
+      "tr": "fardâ anjâmesh midam.",
+      "sit": "talking about future plans",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "انجامش می‌دم",
+          "anjâmesh midam",
+          "I'll do it",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I haven't decided yet.",
+      "fa": "هنوز تصمیم نگرفتم.",
+      "tr": "hanuz tasmim nagereftam.",
+      "sit": "talking about future plans",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هنوز",
+          "hanuz",
+          "yet",
+          "adverb"
+        ],
+        [
+          "تصمیم",
+          "tasmim",
+          "decision",
+          "noun"
+        ],
+        [
+          "نگرفتم",
+          "nagereftam",
+          "I haven't made",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm planning to move house.",
+      "fa": "می‌خوام اسباب‌کشی کنم.",
+      "tr": "mikhâm asbâb~keshi konam.",
+      "sit": "talking about future plans",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "اسباب‌کشی",
+          "asbâb~keshi",
+          "moving house",
+          "noun"
+        ],
+        [
+          "کنم",
+          "konam",
+          "to do",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I met an old friend.",
+      "fa": "یه دوست قدیمی رو دیدم.",
+      "tr": "ye dust ghadimi ro didam.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "دوست",
+          "dust",
+          "friend",
+          "noun"
+        ],
+        [
+          "قدیمی",
+          "ghadimi",
+          "old",
+          "adjective"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "دیدم",
+          "didam",
+          "I saw",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I missed the bus.",
+      "fa": "اتوبوس رو از دست دادم.",
+      "tr": "otobus ro az dast dâdam.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اتوبوس",
+          "otobus",
+          "bus",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "از دست دادم",
+          "az dast dâdam",
+          "I missed",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "This isn't what I ordered.",
+      "fa": "این چیزی که سفارش دادم نیست.",
+      "tr": "in chizi ke sefâresh dâdam nist.",
+      "sit": "complaining about something not working",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "چیزی",
+          "chizi",
+          "the thing",
+          "noun"
+        ],
+        [
+          "که",
+          "ke",
+          "that",
+          "conjunction"
+        ],
+        [
+          "سفارش دادم",
+          "sefâresh dâdam",
+          "I ordered",
+          "compound verb"
+        ],
+        [
+          "نیست",
+          "nist",
+          "isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Can you show me on the map?",
+      "fa": "رو نقشه نشونم می‌دین؟",
+      "tr": "ru naghshe neshunam midin?",
+      "sit": "giving or following directions",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "رو",
+          "ru",
+          "on",
+          "preposition"
+        ],
+        [
+          "نقشه",
+          "naghshe",
+          "map",
+          "noun"
+        ],
+        [
+          "نشونم",
+          "neshunam",
+          "show me",
+          "verb"
+        ],
+        [
+          "می‌دین",
+          "midin",
+          "do you give",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "At weekends I sleep late.",
+      "fa": "آخر هفته‌ها دیر می‌خوابم.",
+      "tr": "âkhar-e hafte~hâ dir mikhâbam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آخر هفته‌ها",
+          "âkhar-e hafte~hâ",
+          "at weekends",
+          "expression"
+        ],
+        [
+          "دیر",
+          "dir",
+          "late",
+          "adverb"
+        ],
+        [
+          "می‌خوابم",
+          "mikhâbam",
+          "I sleep",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm proud of you.",
+      "fa": "بهت افتخار می‌کنم.",
+      "tr": "behet eftekhâr mikonam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بهت",
+          "behet",
+          "of you",
+          "preposition"
+        ],
+        [
+          "افتخار می‌کنم",
+          "eftekhâr mikonam",
+          "I'm proud",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

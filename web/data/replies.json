@@ -1,0 +1,1983 @@
+{
+  "count": 115,
+  "replies": [
+    {
+      "id": "f2f5344a-aac5-5802-9d77-6088a61329ec",
+      "kind": "reply",
+      "stem": "چطوری؟",
+      "stemEn": "How are you?",
+      "farsiText": "خوبم، تو چطوری؟",
+      "finglish": "khubam, to chetori?",
+      "englishText": "I'm good, how are you?",
+      "alternatives": [
+        "خوبم مرسی، تو چطوری؟",
+        "بد نیستم، تو چطوری؟"
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b549209b-0d09-543a-a8d2-9ea6bfd9f159",
+      "kind": "reply",
+      "stem": "چه خبر؟",
+      "stemEn": "What's new?",
+      "farsiText": "سلامتی، تو چه خبر؟",
+      "finglish": "salâmati, to che khabar?",
+      "englishText": "Nothing much, what's new with you?",
+      "alternatives": [
+        "هیچی، تو چه خبر؟",
+        "همون همیشگی، تو چه خبر؟"
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "87a0a712-05fd-58df-aa03-efd3a4cd04ce",
+      "kind": "reply",
+      "stem": "اسمت چیه؟",
+      "stemEn": "What's your name?",
+      "farsiText": "اسمم علیه.",
+      "finglish": "esmam alie.",
+      "englishText": "My name is Ali.",
+      "alternatives": [
+        "اسمم علیه، خوشبختم."
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "469aa724-53ac-5076-b2fe-87afd7806e07",
+      "kind": "reply",
+      "stem": "اهل کجایی؟",
+      "stemEn": "Where are you from?",
+      "farsiText": "اهل تهرانم.",
+      "finglish": "ahle tehrânam.",
+      "englishText": "I'm from Tehran.",
+      "alternatives": [
+        "من اهل تهرانم."
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "f0217b4e-7767-5513-831c-7bfcd9a0f3d4",
+      "kind": "reply",
+      "stem": "کجا زندگی می‌کنی؟",
+      "stemEn": "Where do you live?",
+      "farsiText": "تو تهران زندگی می‌کنم.",
+      "finglish": "tu tehrân zendegi mikonam.",
+      "englishText": "I live in Tehran.",
+      "alternatives": [
+        "من تو تهران زندگی می‌کنم.",
+        "تهران می‌مونم."
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "52f43534-5850-5f5f-842d-60c031b7427b",
+      "kind": "reply",
+      "stem": "چند سالته؟",
+      "stemEn": "How old are you?",
+      "farsiText": "سی سالمه.",
+      "finglish": "si sâlame.",
+      "englishText": "I'm thirty.",
+      "alternatives": [
+        "من سی سالمه."
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "0cd2180e-1a8f-5f2d-b86d-4558803531ae",
+      "kind": "reply",
+      "stem": "چی کار می‌کنی؟",
+      "stemEn": "What do you do for work?",
+      "farsiText": "تو یه شرکت کار می‌کنم.",
+      "finglish": "tu ye sherkat kâr mikonam.",
+      "englishText": "I work at a company.",
+      "alternatives": [
+        "مهندسم.",
+        "دانشجوم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "23ce30e3-9699-5eb5-9846-38c61860ffa5",
+      "kind": "reply",
+      "stem": "فارسی رو کجا یاد گرفتی؟",
+      "stemEn": "Where did you learn Persian?",
+      "farsiText": "از خانواده‌م یاد گرفتم.",
+      "finglish": "az khânevâdam yâd gereftam.",
+      "englishText": "I learned it from my family.",
+      "alternatives": [
+        "تو خونه یاد گرفتم.",
+        "از مامانم یاد گرفتم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "fbc5ef6f-c984-5c41-891b-fa2268cc054b",
+      "kind": "reply",
+      "stem": "فارسی‌ت خیلی خوبه!",
+      "stemEn": "Your Persian is very good!",
+      "farsiText": "ممنون، ولی هنوز باید خیلی یاد بگیرم.",
+      "finglish": "mamnun, vali hanuz bâyad kheyli yâd begiram.",
+      "englishText": "Thanks, but I still have a lot to learn.",
+      "alternatives": [
+        "لطف داری.",
+        "مرسی، دارم تمرین می‌کنم."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "54d0d042-23f4-51f4-bd15-266c12b159f6",
+      "kind": "reply",
+      "stem": "امروز چی کار کردی؟",
+      "stemEn": "What did you do today?",
+      "farsiText": "رفتم سر کار، بعدش رفتم باشگاه.",
+      "finglish": "raftam sar-e kâr, ba'desh raftam bâshgâh.",
+      "englishText": "I went to work, then I went to the gym.",
+      "alternatives": [
+        "صبح رفتم سر کار و عصر رفتم خرید.",
+        "هیچی، تو خونه بودم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "5a83db84-fe50-59e3-85f4-f5bf8c656114",
+      "kind": "reply",
+      "stem": "آخر هفته چی کار می‌کنی؟",
+      "stemEn": "What are you doing this weekend?",
+      "farsiText": "هنوز نمی‌دونم، شاید برم کوه.",
+      "finglish": "hanuz nemidunam, shâyad beram kuh.",
+      "englishText": "I don't know yet, maybe I'll go hiking.",
+      "alternatives": [
+        "می‌خوام برم خرید.",
+        "هیچ برنامه‌ای ندارم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "9ffefde1-2345-56b3-a0e0-3d0e0a8273d8",
+      "kind": "reply",
+      "stem": "هوا چطوره؟",
+      "stemEn": "How's the weather?",
+      "farsiText": "خیلی سرده.",
+      "finglish": "kheyli sarde.",
+      "englishText": "It's very cold.",
+      "alternatives": [
+        "خیلی گرمه.",
+        "آفتابیه.",
+        "بارون میاد."
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "4c340f8d-1302-5fe8-9fe9-25458c39d85b",
+      "kind": "reply",
+      "stem": "ناهار خوردی؟",
+      "stemEn": "Have you had lunch?",
+      "farsiText": "آره، تازه خوردم. تو چی؟",
+      "finglish": "âre, tâze khordam. to chi?",
+      "englishText": "Yes, I just did. And you?",
+      "alternatives": [
+        "نه هنوز، گشنمه."
+      ],
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "3b3535c0-123a-5ca4-b2f1-3ddc193fd0e2",
+      "kind": "reply",
+      "stem": "خوابت میاد؟",
+      "stemEn": "Are you sleepy?",
+      "farsiText": "آره، دیشب دیر خوابیدم.",
+      "finglish": "âre, dishab dir khâbidam.",
+      "englishText": "Yes, I went to bed late last night.",
+      "alternatives": [
+        "نه، خوبم."
+      ],
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "7ac8330a-f770-5a7d-9665-ead630e9f624",
+      "kind": "reply",
+      "stem": "چرا ناراحتی؟",
+      "stemEn": "Why are you upset?",
+      "farsiText": "هیچی، فقط یه کم خسته‌م.",
+      "finglish": "hichi, faghat ye kam khastam.",
+      "englishText": "Nothing, I'm just a bit tired.",
+      "alternatives": [
+        "از دست کارم کلافه‌م."
+      ],
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "95cc5625-3f30-55bc-a52a-3798d51056a4",
+      "kind": "reply",
+      "stem": "حالت بهتره؟",
+      "stemEn": "Are you feeling better?",
+      "farsiText": "آره، خیلی بهترم، مرسی.",
+      "finglish": "âre, kheyli behtaram, mersi.",
+      "englishText": "Yes, much better, thanks.",
+      "alternatives": [
+        "یه کم بهترم."
+      ],
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b1f6c260-16d2-53f7-9569-251f548e4604",
+      "kind": "reply",
+      "stem": "چی میل دارین؟",
+      "stemEn": "What would you like?",
+      "farsiText": "یه چای و یه کیک لطفا.",
+      "finglish": "ye châi o ye keyk lotfan.",
+      "englishText": "A tea and a cake, please.",
+      "alternatives": [
+        "یه قهوه می‌خوام.",
+        "یه آب می‌خوام لطفا."
+      ],
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "2d5cf623-8cf2-55ce-a48e-04e916f87a1f",
+      "kind": "reply",
+      "stem": "چیز دیگه‌ای نمی‌خواین؟",
+      "stemEn": "Would you like anything else?",
+      "farsiText": "نه مرسی، همینه.",
+      "finglish": "na mersi, hamine.",
+      "englishText": "No thanks, that's all.",
+      "alternatives": [
+        "نه، فقط همین."
+      ],
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "e6cbb8ec-9337-5ef0-ba7c-817f899c2dda",
+      "kind": "reply",
+      "stem": "بیرون‌بر می‌خواین یا همین‌جا می‌خورین؟",
+      "stemEn": "Takeaway, or eating here?",
+      "farsiText": "همین‌جا می‌خوریم.",
+      "finglish": "hamin-jâ mikhorim.",
+      "englishText": "We'll eat here.",
+      "alternatives": [
+        "بیرون‌بر لطفا."
+      ],
+      "difficulty": 2,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "56bb2770-5b0f-5460-9d29-aa7233c4d206",
+      "kind": "reply",
+      "stem": "دوست داری چی بخوری؟",
+      "stemEn": "What do you feel like eating?",
+      "farsiText": "هر چی تو بخوای.",
+      "finglish": "har chi to bekhây.",
+      "englishText": "Whatever you want.",
+      "alternatives": [
+        "پیتزا چطوره؟",
+        "فرقی نمی‌کنه."
+      ],
+      "difficulty": 2,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b7a22909-6e1d-5d45-b619-0a0cb995f8ba",
+      "kind": "reply",
+      "stem": "این غذا چطوره؟",
+      "stemEn": "How's this food?",
+      "farsiText": "عالیه، دستپختت خیلی خوبه.",
+      "finglish": "âliye, dastpokhtet kheyli khube.",
+      "englishText": "It's great, you're a very good cook.",
+      "alternatives": [
+        "خوشمزه‌ست.",
+        "یه کم شوره."
+      ],
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "793b370d-8aa5-5384-92fc-2a1121732bec",
+      "kind": "reply",
+      "stem": "نقد می‌دین یا کارت؟",
+      "stemEn": "Cash or card?",
+      "farsiText": "کارت می‌دم.",
+      "finglish": "kârt midam.",
+      "englishText": "I'll pay by card.",
+      "alternatives": [
+        "نقد می‌دم.",
+        "با کارت."
+      ],
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "6492ddf4-bab1-5cd9-b7a7-3592c28957f9",
+      "kind": "reply",
+      "stem": "بفرمایین، کمکی از دستم برمیاد؟",
+      "stemEn": "Can I help you?",
+      "farsiText": "بله، دنبال یه کیف می‌گردم.",
+      "finglish": "bale, donbâle ye kif migardam.",
+      "englishText": "Yes, I'm looking for a bag.",
+      "alternatives": [
+        "نه مرسی، فقط دارم نگاه می‌کنم."
+      ],
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "84961fbe-dd30-57d8-85a7-ee1ce2d81c10",
+      "kind": "reply",
+      "stem": "این پیرهن رو می‌خواین امتحان کنین؟",
+      "stemEn": "Would you like to try this shirt on?",
+      "farsiText": "بله، اتاق پرو کجاست؟",
+      "finglish": "bale, otâghe pro kojâst?",
+      "englishText": "Yes, where's the fitting room?",
+      "alternatives": [
+        "آره، یه سایز بزرگ‌تر دارین؟"
+      ],
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "907ab196-c0b2-587a-8c95-974267c0e5ec",
+      "kind": "reply",
+      "stem": "سایزتون چنده؟",
+      "stemEn": "What size are you?",
+      "farsiText": "مدیوم می‌پوشم.",
+      "finglish": "midiyom mipusham.",
+      "englishText": "I wear a medium.",
+      "alternatives": [
+        "سایزم مدیومه."
+      ],
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "ab9781d3-8818-505a-9484-8f3bc21bd26f",
+      "kind": "reply",
+      "stem": "کجا می‌رین؟",
+      "stemEn": "Where to?",
+      "farsiText": "میدون آزادی لطفا.",
+      "finglish": "meydune âzâdi lotfan.",
+      "englishText": "Azadi Square, please.",
+      "alternatives": [
+        "بریم فرودگاه.",
+        "همین‌جا نگه دارین."
+      ],
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b40301e7-33b7-5046-a116-79c3b52719c6",
+      "kind": "reply",
+      "stem": "تا فرودگاه چقدر راهه؟",
+      "stemEn": "How far is it to the airport?",
+      "farsiText": "حدود چهل دقیقه‌ست.",
+      "finglish": "haddud-e chehel daghighast.",
+      "englishText": "About forty minutes.",
+      "alternatives": [
+        "نزدیکه، ده دقیقه‌ست."
+      ],
+      "difficulty": 2,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b9dec3cd-cc36-5776-80af-d5d8c29526b9",
+      "kind": "reply",
+      "stem": "ببخشید، ایستگاه مترو کجاست؟",
+      "stemEn": "Excuse me, where's the metro station?",
+      "farsiText": "مستقیم برین، سر چهارراه بپیچین دست راست.",
+      "finglish": "mostaghim berin, sare chahârrâh bepichin daste râst.",
+      "englishText": "Go straight, turn right at the crossroads.",
+      "alternatives": [
+        "همین‌جا سر کوچه‌ست."
+      ],
+      "difficulty": 2,
+      "situation": "giving or following directions",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "737560bc-3484-5858-9d5a-bde49345983b",
+      "kind": "reply",
+      "stem": "امشب وقت داری؟",
+      "stemEn": "Are you free tonight?",
+      "farsiText": "آره، چطور مگه؟",
+      "finglish": "âre, chetor mage?",
+      "englishText": "Yes, why?",
+      "alternatives": [
+        "نه متاسفانه، کار دارم.",
+        "آره، آزادم."
+      ],
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "6a537ae3-1474-59e5-96a5-7f6c61266325",
+      "kind": "reply",
+      "stem": "می‌خوای بریم یه چیزی بخوریم؟",
+      "stemEn": "Do you want to go and get something to eat?",
+      "farsiText": "آره، بریم.",
+      "finglish": "âre, berim.",
+      "englishText": "Yeah, let's go.",
+      "alternatives": [
+        "آره، چه ایده‌ی خوبی!",
+        "نه، تازه ناهار خوردم."
+      ],
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "869be6ce-82f1-5378-9ca9-50f037126df3",
+      "kind": "reply",
+      "stem": "کجا همدیگه رو ببینیم؟",
+      "stemEn": "Where shall we meet?",
+      "farsiText": "جلوی مترو، خوبه؟",
+      "finglish": "jeloye metro, khube?",
+      "englishText": "In front of the metro, is that good?",
+      "alternatives": [
+        "نزدیک خونه‌ی تو بهتره."
+      ],
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "51fab169-0182-5a39-9524-b3841bf0ac46",
+      "kind": "reply",
+      "stem": "ساعت چند بیام دنبالت؟",
+      "stemEn": "What time shall I pick you up?",
+      "farsiText": "ساعت هفت خوبه.",
+      "finglish": "sâ'at-e haft khube.",
+      "englishText": "Seven is good.",
+      "alternatives": [
+        "حدود هفت بیا."
+      ],
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "323a9960-e9b6-5529-be54-2454b81da53c",
+      "kind": "reply",
+      "stem": "الو، سلام، می‌تونم با علی صحبت کنم؟",
+      "stemEn": "Hello, can I speak to Ali?",
+      "farsiText": "بله، خودمم.",
+      "finglish": "bale, khodam.",
+      "englishText": "Yes, speaking.",
+      "alternatives": [
+        "یه لحظه صبر کنین.",
+        "علی خونه نیست."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "eae89003-b9cc-56be-a5a1-23d3f6d40f94",
+      "kind": "reply",
+      "stem": "مامانت چطوره؟",
+      "stemEn": "How's your mum?",
+      "farsiText": "خوبه، سلام می‌رسونه.",
+      "finglish": "khube, salâm miresune.",
+      "englishText": "She's well, she sends her regards.",
+      "alternatives": [
+        "مرسی، خوبه."
+      ],
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "be8f4be1-0c89-5661-82c2-78a76878f633",
+      "kind": "reply",
+      "stem": "سلام برسون.",
+      "stemEn": "Say hello to your family.",
+      "farsiText": "حتما می‌رسونم.",
+      "finglish": "hatman miresunam.",
+      "englishText": "I definitely will.",
+      "alternatives": [
+        "چشم، می‌رسونم."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "929d65f4-861f-5e71-8c05-8f08ca9f01f6",
+      "kind": "reply",
+      "stem": "چند تا خواهر و برادر داری؟",
+      "stemEn": "How many brothers and sisters do you have?",
+      "farsiText": "یه خواهر و دو تا برادر دارم.",
+      "finglish": "ye khâhar o do tâ barâdar dâram.",
+      "englishText": "I have a sister and two brothers.",
+      "alternatives": [
+        "تک‌فرزندم."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "65e5ddb0-afe0-5a6a-8eaf-4e645335f87f",
+      "kind": "reply",
+      "stem": "کجایی؟ دیر کردی!",
+      "stemEn": "Where are you? You're late!",
+      "farsiText": "ببخشید، تو ترافیک گیر کردم، پنج دقیقه دیگه می‌رسم.",
+      "finglish": "bebakhshid, tu terâfik gir kardam, panj daghighe dige miresam.",
+      "englishText": "Sorry, I'm stuck in traffic, I'll be there in five minutes.",
+      "alternatives": [
+        "الان می‌رسم، ببخشید."
+      ],
+      "difficulty": 2,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "e9422088-5468-59dc-975e-8a504c6d50c0",
+      "kind": "reply",
+      "stem": "دیروز چرا نیومدی؟",
+      "stemEn": "Why didn't you come yesterday?",
+      "farsiText": "ببخشید، حالم خوب نبود.",
+      "finglish": "bebakhshid, hâlam khub nabud.",
+      "englishText": "Sorry, I wasn't feeling well.",
+      "alternatives": [
+        "کار داشتم."
+      ],
+      "difficulty": 2,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "0a565909-881c-582e-bd7e-c0e956f0cf26",
+      "kind": "reply",
+      "stem": "چرا جواب تلفنت رو نمی‌دی؟",
+      "stemEn": "Why don't you answer your phone?",
+      "farsiText": "ببخشید، صداش بسته بود.",
+      "finglish": "bebakhshid, sedâsh baste bud.",
+      "englishText": "Sorry, it was on silent.",
+      "alternatives": [
+        "گوشیم شارژ نداشت."
+      ],
+      "difficulty": 2,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "37bf2cad-25e0-51e1-b917-f1ac183668db",
+      "kind": "reply",
+      "stem": "تعطیلات کجا رفتی؟",
+      "stemEn": "Where did you go on holiday?",
+      "farsiText": "رفتم شمال پیش خانواده.",
+      "finglish": "raftam shomâl pishe khânevâde.",
+      "englishText": "I went to the north to be with my family.",
+      "alternatives": [
+        "هیچ جا نرفتم، تو خونه بودم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "20a43244-6cd6-57fb-96c1-938ee9466415",
+      "kind": "reply",
+      "stem": "بچه که بودی کجا زندگی می‌کردی؟",
+      "stemEn": "Where did you live when you were a child?",
+      "farsiText": "تو یه شهر کوچیک زندگی می‌کردم.",
+      "finglish": "tu ye shahre kuchik zendegi mikardam.",
+      "englishText": "I lived in a small town.",
+      "alternatives": [
+        "تو یه روستا بودیم."
+      ],
+      "difficulty": 3,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "7e8e87e6-b549-576c-94ea-b3c25b383657",
+      "kind": "reply",
+      "stem": "اگه فردا بارون بیاد چی کار می‌کنی؟",
+      "stemEn": "If it rains tomorrow, what will you do?",
+      "farsiText": "تو خونه می‌مونم و کتاب می‌خونم.",
+      "finglish": "tu khune mimunam o ketâb mikhunam.",
+      "englishText": "I'll stay home and read.",
+      "alternatives": [
+        "می‌رم سینما."
+      ],
+      "difficulty": 3,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "037be4e7-f221-51b3-bed3-e66304a2351b",
+      "kind": "reply",
+      "stem": "چی شده؟ چه مشکلی دارین؟",
+      "stemEn": "What's wrong? What's the problem?",
+      "farsiText": "از دیشب سرم خیلی درد می‌کنه.",
+      "finglish": "az dishab saram kheyli dard mikone.",
+      "englishText": "My head has hurt a lot since last night.",
+      "alternatives": [
+        "تب دارم و گلوم درد می‌کنه."
+      ],
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "e53f891c-1df8-58c6-b973-33656aa227c5",
+      "kind": "reply",
+      "stem": "از کی این مشکل رو دارین؟",
+      "stemEn": "How long have you had this problem?",
+      "farsiText": "از سه روز پیش.",
+      "finglish": "az se ruz pish.",
+      "englishText": "Since three days ago.",
+      "alternatives": [
+        "از دیروز."
+      ],
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "842f2606-a93e-53da-9203-9c3509e0aa1a",
+      "kind": "reply",
+      "stem": "به چیزی حساسیت دارین؟",
+      "stemEn": "Are you allergic to anything?",
+      "farsiText": "نه، حساسیت ندارم.",
+      "finglish": "na, hassâsiyat nadâram.",
+      "englishText": "No, I'm not allergic to anything.",
+      "alternatives": [
+        "آره، به پنی‌سیلین حساسیت دارم."
+      ],
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "da9f7256-1246-56da-b417-ee16abc917c0",
+      "kind": "reply",
+      "stem": "این قرص رو روزی دو بار بخورین.",
+      "stemEn": "Take this pill twice a day.",
+      "farsiText": "باشه، قبل غذا یا بعد غذا؟",
+      "finglish": "bâshe, ghabl-e ghazâ yâ ba'd-e ghazâ?",
+      "englishText": "Okay, before food or after?",
+      "alternatives": [
+        "چشم، ممنون."
+      ],
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "78d7aaab-62e9-58e6-a776-63c36110a8e3",
+      "kind": "reply",
+      "stem": "بفرمایین بشینین.",
+      "stemEn": "Please, sit down.",
+      "farsiText": "ممنون.",
+      "finglish": "mamnun.",
+      "englishText": "Thank you.",
+      "alternatives": [
+        "مرسی، مزاحم نیستم؟",
+        "دستتون درد نکنه."
+      ],
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "0bc3337d-d419-5ba2-8afb-56eb1479332b",
+      "kind": "reply",
+      "stem": "چای میل دارین؟",
+      "stemEn": "Would you like some tea?",
+      "farsiText": "بله، ممنون.",
+      "finglish": "bale, mamnun.",
+      "englishText": "Yes, thank you.",
+      "alternatives": [
+        "نه، زحمت نکشین.",
+        "اگه زحمت نیست."
+      ],
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "e1660e7e-6d0b-513a-bdb6-e76109268e92",
+      "kind": "reply",
+      "stem": "بفرمایین شام.",
+      "stemEn": "Please, have some dinner.",
+      "farsiText": "دستتون درد نکنه، خیلی خوشمزه‌ست.",
+      "finglish": "dastetun dard nakone, kheyli khoshmazast.",
+      "englishText": "Thank you, it's delicious.",
+      "alternatives": [
+        "ممنون، من سیر شدم."
+      ],
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "44169b36-b171-5c37-b248-f691c6f8f546",
+      "kind": "reply",
+      "stem": "شام می‌مونین؟",
+      "stemEn": "Will you stay for dinner?",
+      "farsiText": "نه ممنون، باید برم.",
+      "finglish": "na mamnun, bâyad beram.",
+      "englishText": "No thanks, I have to go.",
+      "alternatives": [
+        "مزاحم نمی‌شم، یه وقت دیگه."
+      ],
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "42f5d968-0dec-5be9-adc1-819fa13e5a1a",
+      "kind": "reply",
+      "stem": "نوش جان!",
+      "stemEn": "Enjoy your meal!",
+      "farsiText": "ممنون، شما هم بفرمایین.",
+      "finglish": "mamnun, shomâ ham befarmâyin.",
+      "englishText": "Thanks, please join me.",
+      "alternatives": [
+        "مرسی، نوش جان‌تون."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "cf631ad3-81e9-5641-8290-5b47f3ea52da",
+      "kind": "reply",
+      "stem": "ببخشید که زحمت دادم.",
+      "stemEn": "Sorry to trouble you.",
+      "farsiText": "این چه حرفیه، خواهش می‌کنم.",
+      "finglish": "in che harfie, khâhesh mikonam.",
+      "englishText": "Don't mention it, please.",
+      "alternatives": [
+        "زحمتی نبود.",
+        "قابلی نداشت."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "9f5eb515-c968-5b3e-ac0e-d7d3a116887f",
+      "kind": "reply",
+      "stem": "ممنون از کمکتون.",
+      "stemEn": "Thank you for your help.",
+      "farsiText": "قابلی نداشت.",
+      "finglish": "ghâbeli nadâsht.",
+      "englishText": "It was nothing.",
+      "alternatives": [
+        "خواهش می‌کنم."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b4b31c39-ff10-5788-9396-6abd1432e86b",
+      "kind": "reply",
+      "stem": "خسته نباشین.",
+      "stemEn": "(To someone who has been working) Don't be tired.",
+      "farsiText": "سلامت باشین.",
+      "finglish": "salâmat bâshin.",
+      "englishText": "May you be well.",
+      "alternatives": [
+        "ممنون، شما هم."
+      ],
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b5c5af29-cc91-5dd9-b79f-af9d136ccf19",
+      "kind": "reply",
+      "stem": "سال نو مبارک!",
+      "stemEn": "Happy New Year!",
+      "farsiText": "مبارکه، شما هم همین‌طور.",
+      "finglish": "mobârake, shomâ ham hamintor.",
+      "englishText": "Thank you, and the same to you.",
+      "alternatives": [
+        "سال نو شما هم مبارک."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "1d81635d-4b5c-5c09-8473-d82d6aecd003",
+      "kind": "reply",
+      "stem": "تولدت مبارک!",
+      "stemEn": "Happy birthday!",
+      "farsiText": "مرسی، خیلی لطف کردی.",
+      "finglish": "mersi, kheyli lotf kardi.",
+      "englishText": "Thanks, that's very kind of you.",
+      "alternatives": [
+        "ممنون، قربونت."
+      ],
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "3bc6feef-c253-5c85-80e2-cd342d8fa2f6",
+      "kind": "reply",
+      "stem": "ببخشید، مزاحم شدم.",
+      "stemEn": "Sorry, I've disturbed you.",
+      "farsiText": "نه، اصلا مزاحم نیستین.",
+      "finglish": "na, aslan mozâhem nistin.",
+      "englishText": "No, you're not disturbing me at all.",
+      "alternatives": [
+        "خواهش می‌کنم، بفرمایین."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "d4155b14-bbc3-56cb-9fa1-7d9757885f3f",
+      "kind": "reply",
+      "stem": "دلم برات تنگ شده بود.",
+      "stemEn": "I missed you.",
+      "farsiText": "منم دلم برات تنگ شده بود.",
+      "finglish": "manam delam barât tang shode bud.",
+      "englishText": "I missed you too.",
+      "alternatives": [
+        "منم همین‌طور."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "4b46d6a6-a289-5921-abd5-ff650e0a6047",
+      "kind": "reply",
+      "stem": "خداحافظ، فردا می‌بینمت.",
+      "stemEn": "Goodbye, I'll see you tomorrow.",
+      "farsiText": "باشه، فردا می‌بینمت.",
+      "finglish": "bâshe, fardâ mibinamet.",
+      "englishText": "Okay, see you tomorrow.",
+      "alternatives": [
+        "خداحافظ، شب بخیر."
+      ],
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "8dca61dd-fa79-59d8-a903-171230ccc74f",
+      "kind": "reply",
+      "stem": "شب بخیر.",
+      "stemEn": "Good night.",
+      "farsiText": "شب‌ت بخیر، خوب بخوابی.",
+      "finglish": "shabet bekheyr, khub bekhâbi.",
+      "englishText": "Good night, sleep well.",
+      "alternatives": [
+        "شب بخیر."
+      ],
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "234841e0-850c-5da1-8a74-85706b319614",
+      "kind": "reply",
+      "stem": "می‌تونی بهم کمک کنی؟",
+      "stemEn": "Can you help me?",
+      "farsiText": "آره، چی شده؟",
+      "finglish": "âre, chi shode?",
+      "englishText": "Sure, what's happened?",
+      "alternatives": [
+        "حتما، چی لازم داری؟",
+        "الان یه کم کار دارم، بعدا می‌شه؟"
+      ],
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "0701bea0-3856-5fef-b31a-9a57dbd1e991",
+      "kind": "reply",
+      "stem": "می‌شه یه لحظه صبر کنی؟",
+      "stemEn": "Can you wait a moment?",
+      "farsiText": "آره، عجله‌ای نیست.",
+      "finglish": "âre, ajale'i nist.",
+      "englishText": "Yes, there's no rush.",
+      "alternatives": [
+        "باشه، مشکلی نیست."
+      ],
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b486a4fb-b642-5d46-99e1-e9155f14f005",
+      "kind": "reply",
+      "stem": "ببخشید، متوجه نشدم.",
+      "stemEn": "Sorry, I didn't catch that.",
+      "farsiText": "مشکلی نیست، دوباره می‌گم.",
+      "finglish": "moshkeli nist, dobâre migam.",
+      "englishText": "No problem, I'll say it again.",
+      "alternatives": [
+        "آروم‌تر می‌گم."
+      ],
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "ad53813b-e533-5e72-a0d3-ba9aab5456c2",
+      "kind": "reply",
+      "stem": "نظرت درباره این فیلم چیه؟",
+      "stemEn": "What do you think of this film?",
+      "farsiText": "به نظرم خیلی قشنگ بود.",
+      "finglish": "be nazaram kheyli ghashang bud.",
+      "englishText": "I thought it was really good.",
+      "alternatives": [
+        "زیاد خوشم نیومد."
+      ],
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "db4177e6-b853-56a8-a1e2-e232eaac2ad0",
+      "kind": "reply",
+      "stem": "فکر می‌کنم باید بریم.",
+      "stemEn": "I think we should go.",
+      "farsiText": "موافقم، دیر شده.",
+      "finglish": "movâfegham, dir shode.",
+      "englishText": "Agreed, it's late.",
+      "alternatives": [
+        "نه، بذار یه کم دیگه بمونیم."
+      ],
+      "difficulty": 2,
+      "situation": "disagreeing politely",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "271c61f7-8fe1-575b-bb1e-0017e10a07ed",
+      "kind": "reply",
+      "stem": "پنجاه هزار تومنه.",
+      "stemEn": "It's fifty thousand tomans.",
+      "farsiText": "یه کم گرونه، تخفیف نمی‌دین؟",
+      "finglish": "ye kam gerune, takhfif nemidin?",
+      "englishText": "It's a bit expensive, won't you give a discount?",
+      "alternatives": [
+        "کمتر نمی‌شه؟",
+        "باشه، می‌خرم."
+      ],
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "64f466c5-cffd-5f35-b98d-cf2f719aef7c",
+      "kind": "reply",
+      "stem": "کارت قبول نمی‌کنیم، فقط نقد.",
+      "stemEn": "We don't take cards, only cash.",
+      "farsiText": "باشه، نقد می‌دم.",
+      "finglish": "bâshe, naghd midam.",
+      "englishText": "Okay, I'll pay cash.",
+      "alternatives": [
+        "اینجا دستگاه خودپرداز هست؟"
+      ],
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "3bc35212-c672-5513-8712-f85df94406d3",
+      "kind": "reply",
+      "stem": "بسته‌بندی کنم؟",
+      "stemEn": "Shall I wrap it?",
+      "farsiText": "بله لطفا، برای هدیه‌ست.",
+      "finglish": "bale lotfan, barâye hadiyeast.",
+      "englishText": "Yes please, it's a gift.",
+      "alternatives": [
+        "نه، لازم نیست."
+      ],
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "f6aa3c93-e5c7-57a0-a841-bc4675c1f4ac",
+      "kind": "reply",
+      "stem": "این مدل تموم شده.",
+      "stemEn": "This model has sold out.",
+      "farsiText": "پس چه مدل دیگه‌ای دارین؟",
+      "finglish": "pas che model-e dige'i dârin?",
+      "englishText": "Then what other models do you have?",
+      "alternatives": [
+        "کی می‌رسه؟"
+      ],
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "ba075b41-6c62-5d13-84ca-a948e865696a",
+      "kind": "reply",
+      "stem": "بیست درصد تخفیف داریم.",
+      "stemEn": "We have twenty percent off.",
+      "farsiText": "عالیه، همین رو می‌گیرم.",
+      "finglish": "âliye, hamin ro migiram.",
+      "englishText": "Great, I'll take this one.",
+      "alternatives": [
+        "پس این یکی رو می‌خوام."
+      ],
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "ddafb0cb-fd7e-59a2-b1fc-e3d8e574fb11",
+      "kind": "reply",
+      "stem": "گوشیت رو شارژ کردی؟",
+      "stemEn": "Have you charged your phone?",
+      "farsiText": "نه، یادم رفت.",
+      "finglish": "na, yâdam raft.",
+      "englishText": "No, I forgot.",
+      "alternatives": [
+        "آره، صد در صد شارژه."
+      ],
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "87695efb-5a10-5014-a6fb-6c278291d91d",
+      "kind": "reply",
+      "stem": "وای‌فای وصل شد؟",
+      "stemEn": "Did the Wi-Fi connect?",
+      "farsiText": "نه، رمز رو اشتباه زدم.",
+      "finglish": "na, ramz ro eshtebâh zadam.",
+      "englishText": "No, I typed the password wrong.",
+      "alternatives": [
+        "آره، وصل شد."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "5067af2a-1067-5458-916d-e697a0ed4ed9",
+      "kind": "reply",
+      "stem": "پیامم رو دیدی؟",
+      "stemEn": "Did you see my message?",
+      "farsiText": "ببخشید، هنوز ندیدم.",
+      "finglish": "bebakhshid, hanuz nadidam.",
+      "englishText": "Sorry, I haven't seen it yet.",
+      "alternatives": [
+        "آره، الان جواب می‌دم."
+      ],
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "93d9ac5b-7ee2-5c40-9105-63232bfed144",
+      "kind": "reply",
+      "stem": "صدات قطع و وصل می‌شه.",
+      "stemEn": "Your voice keeps cutting out.",
+      "farsiText": "الان بهتر شد؟",
+      "finglish": "alân behtar shod?",
+      "englishText": "Is it better now?",
+      "alternatives": [
+        "دوباره زنگ می‌زنم."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "95a6d396-fa8b-52b7-b49d-105a957909ba",
+      "kind": "reply",
+      "stem": "بچه‌ها چطورن؟",
+      "stemEn": "How are the kids?",
+      "farsiText": "خوبن، مدرسه‌ن.",
+      "finglish": "khuban, madresan.",
+      "englishText": "They're fine, they're at school.",
+      "alternatives": [
+        "همه خوبن، سلام می‌رسونن."
+      ],
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "f2adf503-d994-50c9-967a-c2c69da99b94",
+      "kind": "reply",
+      "stem": "پدربزرگت چطوره؟",
+      "stemEn": "How's your grandfather?",
+      "farsiText": "بهتره، مرسی که پرسیدی.",
+      "finglish": "behtare, mersi ke porsidi.",
+      "englishText": "He's better, thanks for asking.",
+      "alternatives": [
+        "خوبه، سلامتی."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "60139491-d4cb-5278-916e-448926d7d941",
+      "kind": "reply",
+      "stem": "عروسی کیه؟",
+      "stemEn": "When's the wedding?",
+      "farsiText": "ماه دیگه، حتما بیا.",
+      "finglish": "mâhe dige, hatman biyâ.",
+      "englishText": "Next month, you must come.",
+      "alternatives": [
+        "هنوز معلوم نیست."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "de5a4e15-57cb-5fb8-8325-7a62b6b84691",
+      "kind": "reply",
+      "stem": "دلت برای خونه تنگ نشده؟",
+      "stemEn": "Don't you miss home?",
+      "farsiText": "چرا، خیلی.",
+      "finglish": "cherâ, kheyli.",
+      "englishText": "I do, a lot.",
+      "alternatives": [
+        "یه کم."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "a817bafb-3f97-54af-9ac2-914a568b7c8d",
+      "kind": "reply",
+      "stem": "رنگت پریده، حالت خوبه؟",
+      "stemEn": "You look pale, are you okay?",
+      "farsiText": "یه کم سرم گیج می‌ره.",
+      "finglish": "ye kam saram gij mire.",
+      "englishText": "I'm a bit dizzy.",
+      "alternatives": [
+        "خوبم، فقط خسته‌م."
+      ],
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "bcba6d50-97c7-58ff-8561-1e91203a81bf",
+      "kind": "reply",
+      "stem": "دردت کجاست؟",
+      "stemEn": "Where does it hurt?",
+      "farsiText": "شکمم درد می‌کنه.",
+      "finglish": "shekamam dard mikone.",
+      "englishText": "My stomach hurts.",
+      "alternatives": [
+        "پشتم درد می‌کنه."
+      ],
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "18dfe83a-dc5c-5958-809a-8983072e6aa8",
+      "kind": "reply",
+      "stem": "تب داری؟",
+      "stemEn": "Do you have a fever?",
+      "farsiText": "آره، دیشب سی و هشت بود.",
+      "finglish": "âre, dishab si o hasht bud.",
+      "englishText": "Yes, it was thirty-eight last night.",
+      "alternatives": [
+        "نه، تب ندارم."
+      ],
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "349aeb50-9318-5190-a489-c7c71ec1d5f9",
+      "kind": "reply",
+      "stem": "چند وقته سرفه می‌کنی؟",
+      "stemEn": "How long have you been coughing?",
+      "farsiText": "از دیروز.",
+      "finglish": "az dirooz.",
+      "englishText": "Since yesterday.",
+      "alternatives": [
+        "یه هفته‌ست."
+      ],
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "86179d96-ded7-5f45-b86d-8e81be1fe4da",
+      "kind": "reply",
+      "stem": "ببخشید، این اتوبوس به میدون می‌ره؟",
+      "stemEn": "Excuse me, does this bus go to the square?",
+      "farsiText": "نه، باید یه ایستگاه برگردین.",
+      "finglish": "na, bâyad ye istgâh bargardin.",
+      "englishText": "No, you need to go back one stop.",
+      "alternatives": [
+        "بله، سوار شین."
+      ],
+      "difficulty": 2,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "9a5fa270-4252-58b4-a474-dcea968bef32",
+      "kind": "reply",
+      "stem": "بلیت می‌خواین؟",
+      "stemEn": "Do you want a ticket?",
+      "farsiText": "بله، دو تا لطفا.",
+      "finglish": "bale, do tâ lotfan.",
+      "englishText": "Yes, two please.",
+      "alternatives": [
+        "نه، دارم."
+      ],
+      "difficulty": 1,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "1dfec7c6-e3dd-5ddf-9a6e-21036129a239",
+      "kind": "reply",
+      "stem": "پروازتون کی هست؟",
+      "stemEn": "When is your flight?",
+      "farsiText": "ساعت هشت شبه.",
+      "finglish": "sâ'ate hashte shabe.",
+      "englishText": "It's at eight in the evening.",
+      "alternatives": [
+        "فردا صبحه."
+      ],
+      "difficulty": 2,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "d94b5911-0ecb-5e16-8c5b-57fe67a24f58",
+      "kind": "reply",
+      "stem": "چمدون دارین؟",
+      "stemEn": "Do you have any luggage?",
+      "farsiText": "فقط یه کیف دستی.",
+      "finglish": "faghat ye kife dasti.",
+      "englishText": "Just one hand bag.",
+      "alternatives": [
+        "بله، یه چمدون."
+      ],
+      "difficulty": 2,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "fe2032ad-5ea3-5e21-920c-2ffb1a92016f",
+      "kind": "reply",
+      "stem": "آخر هفته فیلم خوبی دیدی؟",
+      "stemEn": "Did you see a good film at the weekend?",
+      "farsiText": "آره، یه فیلم ایرانی دیدم.",
+      "finglish": "âre, ye filme irâni didam.",
+      "englishText": "Yes, I saw an Iranian film.",
+      "alternatives": [
+        "نه، وقت نکردم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "7606db85-0651-54da-b21f-04dba7bf7fe9",
+      "kind": "reply",
+      "stem": "ورزش می‌کنی؟",
+      "stemEn": "Do you exercise?",
+      "farsiText": "آره، هفته‌ای سه بار می‌رم باشگاه.",
+      "finglish": "âre, hafte'i se bâr miram bâshgâh.",
+      "englishText": "Yes, I go to the gym three times a week.",
+      "alternatives": [
+        "نه، متاسفانه وقت ندارم."
+      ],
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "8663d674-4197-5fe5-aee3-02d0e410738a",
+      "kind": "reply",
+      "stem": "تابستون کجا می‌ری؟",
+      "stemEn": "Where are you going in the summer?",
+      "farsiText": "هنوز نمی‌دونم، شاید شمال.",
+      "finglish": "hanuz nemidunam, shâyad shomâl.",
+      "englishText": "I don't know yet, maybe the north.",
+      "alternatives": [
+        "می‌رم پیش خانواده."
+      ],
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "cf3b9e13-50a6-5e9d-b740-1271a1cf4520",
+      "kind": "reply",
+      "stem": "برنامه‌ت برای فردا چیه؟",
+      "stemEn": "What's your plan for tomorrow?",
+      "farsiText": "صبح کار دارم، عصر آزادم.",
+      "finglish": "sobh kâr dâram, asr âzâdam.",
+      "englishText": "I have work in the morning, I'm free in the evening.",
+      "alternatives": [
+        "هیچ برنامه‌ای ندارم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "0ea900d0-0682-5173-a0fd-dce727a34fab",
+      "kind": "reply",
+      "stem": "می‌خوای شنبه بریم کوه؟",
+      "stemEn": "Do you want to go hiking on Saturday?",
+      "farsiText": "آره، چه ساعتی؟",
+      "finglish": "âre, che sâ'ati?",
+      "englishText": "Yes, what time?",
+      "alternatives": [
+        "نه، شنبه کار دارم."
+      ],
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "90ec5b57-b5d9-5304-9a7b-747c5a6f17a7",
+      "kind": "reply",
+      "stem": "نظرت چیه شام بیرون بخوریم؟",
+      "stemEn": "How about we eat out tonight?",
+      "farsiText": "فکر خوبیه، کجا بریم؟",
+      "finglish": "fekre khubie, kojâ berim?",
+      "englishText": "Good idea, where shall we go?",
+      "alternatives": [
+        "من که حال ندارم."
+      ],
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "06e2ace4-8627-502f-82b3-800d7f208fc9",
+      "kind": "reply",
+      "stem": "امتحانت چطور بود؟",
+      "stemEn": "How was your exam?",
+      "farsiText": "بد نبود، ولی سخت بود.",
+      "finglish": "bad nabud, vali sakht bud.",
+      "englishText": "It wasn't bad, but it was hard.",
+      "alternatives": [
+        "خوب بود، فکر کنم قبول می‌شم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "caf52771-0068-5e81-a317-af19cc33b45f",
+      "kind": "reply",
+      "stem": "چقدر کار داری؟",
+      "stemEn": "How much work do you have?",
+      "farsiText": "خیلی، تا شب مشغولم.",
+      "finglish": "kheyli, tâ shab mashghulam.",
+      "englishText": "A lot, I'm busy until night.",
+      "alternatives": [
+        "زیاد نیست."
+      ],
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "dd32e324-6f18-5c08-8c05-18e3a2b98229",
+      "kind": "reply",
+      "stem": "جلسه ساعت چنده؟",
+      "stemEn": "What time is the meeting?",
+      "farsiText": "ساعت ده، اتاق دو.",
+      "finglish": "sâ'ate dah, otâghe do.",
+      "englishText": "At ten, room two.",
+      "alternatives": [
+        "هنوز نمی‌دونم."
+      ],
+      "difficulty": 1,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "23813fe2-0099-5e6e-8987-2e3b0281ae5a",
+      "kind": "reply",
+      "stem": "می‌شه فایل رو برام بفرستی؟",
+      "stemEn": "Could you send me the file?",
+      "farsiText": "حتما، همین الان می‌فرستم.",
+      "finglish": "hatman, hamin alân mifrestam.",
+      "englishText": "Sure, I'll send it right now.",
+      "alternatives": [
+        "بعدا می‌فرستم."
+      ],
+      "difficulty": 2,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "9b3040a4-f8e9-5dd0-b047-95b3dc9bca30",
+      "kind": "reply",
+      "stem": "کارت تموم شد؟",
+      "stemEn": "Have you finished your work?",
+      "farsiText": "تقریبا، نیم ساعت دیگه.",
+      "finglish": "taghriban, nim sâ'at dige.",
+      "englishText": "Almost, half an hour more.",
+      "alternatives": [
+        "آره، تموم شد."
+      ],
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "ffa173ec-0a6f-5ec5-bca1-11ef9b148968",
+      "kind": "reply",
+      "stem": "چرا اینقدر دیر کردی؟",
+      "stemEn": "Why were you so late?",
+      "farsiText": "ببخشید، اتوبوس نیومد.",
+      "finglish": "bebakhshid, otobus nayumad.",
+      "englishText": "Sorry, the bus didn't come.",
+      "alternatives": [
+        "ببخشید، ترافیک بود."
+      ],
+      "difficulty": 2,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "e10cc924-2869-5c4e-be52-ac473376f2f3",
+      "kind": "reply",
+      "stem": "اینجا چرا اینقدر شلوغه؟",
+      "stemEn": "Why is it so crowded here?",
+      "farsiText": "امروز تعطیلیه، همه اومدن.",
+      "finglish": "emruz ta'tilie, hame umadan.",
+      "englishText": "It's a holiday today, everyone has come.",
+      "alternatives": [
+        "نمی‌دونم."
+      ],
+      "difficulty": 2,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "add7f3c3-2e39-509f-8673-0754bc34b6d2",
+      "kind": "reply",
+      "stem": "چرا غذا سرد شده؟",
+      "stemEn": "Why has the food gone cold?",
+      "farsiText": "ببخشید، الان گرمش می‌کنم.",
+      "finglish": "bebakhshid, alân garmesh mikonam.",
+      "englishText": "Sorry, I'll warm it up now.",
+      "alternatives": [
+        "الان یکی دیگه میارم."
+      ],
+      "difficulty": 2,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "d86b9222-c4a3-5f10-ad88-1c4a07ef2711",
+      "kind": "reply",
+      "stem": "کولر کار نمی‌کنه.",
+      "stemEn": "The air conditioner isn't working.",
+      "farsiText": "الان یه نفر رو می‌فرستم.",
+      "finglish": "alân ye nafar ro miferestam.",
+      "englishText": "I'll send someone right now.",
+      "alternatives": [
+        "ببخشید، الان درستش می‌کنیم."
+      ],
+      "difficulty": 2,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "cf7280a9-5e3a-5fdd-9910-8dba584a3844",
+      "kind": "reply",
+      "stem": "اشتباه حساب کردین.",
+      "stemEn": "You've added it up wrong.",
+      "farsiText": "ببخشید، الان درستش می‌کنم.",
+      "finglish": "bebakhshid, alân dorostesh mikonam.",
+      "englishText": "Sorry, I'll fix it now.",
+      "alternatives": [
+        "بذارین دوباره حساب کنم."
+      ],
+      "difficulty": 2,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "9d0c5dff-e636-5857-bf66-fb79e12f77aa",
+      "kind": "reply",
+      "stem": "بفرمایین میوه.",
+      "stemEn": "Please, have some fruit.",
+      "farsiText": "ممنون، سیرم.",
+      "finglish": "mamnun, sirram.",
+      "englishText": "Thank you, I'm full.",
+      "alternatives": [
+        "یه دونه می‌خورم، ممنون."
+      ],
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "dec8bc0b-be9f-560b-a43b-2f54431d0fe4",
+      "kind": "reply",
+      "stem": "شب اینجا بمونین.",
+      "stemEn": "Stay here tonight.",
+      "farsiText": "مزاحم نمی‌شم، ممنون.",
+      "finglish": "mozâhem nemisham, mamnun.",
+      "englishText": "I won't impose, thank you.",
+      "alternatives": [
+        "لطف دارین، ولی باید برم."
+      ],
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "f5b39e4f-9f5a-5c3e-88c5-a63fa38e33f7",
+      "kind": "reply",
+      "stem": "این هدیه برای شماست.",
+      "stemEn": "This gift is for you.",
+      "farsiText": "وای، لطف کردین، نباید زحمت می‌کشیدین.",
+      "finglish": "vây, lotf kardin, nabâyad zahmat mikeshidin.",
+      "englishText": "Oh, how kind, you shouldn't have gone to the trouble.",
+      "alternatives": [
+        "مرسی، خیلی قشنگه."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "c652d87f-4a22-59a3-a78c-7f8773677393",
+      "kind": "reply",
+      "stem": "خیلی خوش اومدین.",
+      "stemEn": "You're very welcome here.",
+      "farsiText": "ممنون، خیلی لطف دارین.",
+      "finglish": "mamnun, kheyli lotf dârin.",
+      "englishText": "Thank you, you're very kind.",
+      "alternatives": [
+        "مرسی، خوشحالم که اینجام."
+      ],
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "67a28b94-37f2-5606-967d-42648891750e",
+      "kind": "reply",
+      "stem": "ببخشید، پذیرایی خوبی نبود.",
+      "stemEn": "Sorry, the hospitality wasn't up to much.",
+      "farsiText": "این چه حرفیه، عالی بود.",
+      "finglish": "in che harfie, âli bud.",
+      "englishText": "What are you saying, it was wonderful.",
+      "alternatives": [
+        "اصلا، خیلی خوش گذشت."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "0c73dc1f-2a3c-583c-8a95-0e3ba42f19c0",
+      "kind": "reply",
+      "stem": "دست پختتون عالی بود.",
+      "stemEn": "Your cooking was excellent.",
+      "farsiText": "نوش جان، قابل نداشت.",
+      "finglish": "nushe jân, ghâbel nadâsht.",
+      "englishText": "Enjoy, it was nothing.",
+      "alternatives": [
+        "ممنون، لطف دارین."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "500a1926-5dd4-545c-ba5a-190c3f0e4740",
+      "kind": "reply",
+      "stem": "مبارکه! شنیدم قبول شدی.",
+      "stemEn": "Congratulations! I heard you passed.",
+      "farsiText": "ممنون، خیلی خوشحالم.",
+      "finglish": "mamnun, kheyli khoshhâlam.",
+      "englishText": "Thank you, I'm very happy.",
+      "alternatives": [
+        "مرسی، هنوز باورم نمی‌شه."
+      ],
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "07ea2265-403a-5e25-a032-95e7c2d61199",
+      "kind": "reply",
+      "stem": "ناراحت نباش، درست می‌شه.",
+      "stemEn": "Don't be upset, it'll be sorted.",
+      "farsiText": "ممنون، امیدوارم.",
+      "finglish": "mamnun, omidvaram.",
+      "englishText": "Thanks, I hope so.",
+      "alternatives": [
+        "آره، می‌دونم."
+      ],
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "5492b127-875e-5a2c-bf35-dc5743bd858a",
+      "kind": "reply",
+      "stem": "از چی ناراحتی؟",
+      "stemEn": "What are you upset about?",
+      "farsiText": "از کارم، خیلی استرس دارم.",
+      "finglish": "az kâram, kheyli estres dâram.",
+      "englishText": "About my work, I'm very stressed.",
+      "alternatives": [
+        "هیچی، حوصله‌م سر رفته."
+      ],
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "0fad4274-033c-51ec-a62a-d8837511c32d",
+      "kind": "reply",
+      "stem": "مواظب خودت باش.",
+      "stemEn": "Look after yourself.",
+      "farsiText": "تو هم همین‌طور.",
+      "finglish": "to ham hamintor.",
+      "englishText": "You too.",
+      "alternatives": [
+        "چشم، ممنون."
+      ],
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "6b5d8abd-4cc6-5b89-8f7c-ecc3b489e366",
+      "kind": "reply",
+      "stem": "به سلامتی!",
+      "stemEn": "Cheers!",
+      "farsiText": "به سلامتی، نوش.",
+      "finglish": "be salâmati, nush.",
+      "englishText": "Cheers, drink up.",
+      "alternatives": [
+        "به سلامتی همه."
+      ],
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b47d1f1c-2697-53fb-887e-1c5f57b800cd",
+      "kind": "reply",
+      "stem": "موفق باشی!",
+      "stemEn": "Good luck!",
+      "farsiText": "ممنون، ان‌شاءالله.",
+      "finglish": "mamnun, inshâllâh.",
+      "englishText": "Thanks, God willing.",
+      "alternatives": [
+        "مرسی، لازم دارم."
+      ],
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "864f9a96-7ddb-5f7b-98d0-163f0ce5c1c1",
+      "kind": "reply",
+      "stem": "ببخشید، شما؟",
+      "stemEn": "Sorry, who are you?",
+      "farsiText": "من دوست علیم.",
+      "finglish": "man duste alim.",
+      "englishText": "I'm Ali's friend.",
+      "alternatives": [
+        "من همسایه‌تونم."
+      ],
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ]
+    }
+  ]
+}

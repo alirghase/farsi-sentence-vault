@@ -43,7 +43,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import bank
-from core.taxonomy import TRANSFORM_KEYS
+from core.taxonomy import DRILL_KEYS, SWAP_KEYS
 
 PUNCT = '.،؟!؛:«»"\'()'
 
@@ -65,7 +65,7 @@ TRANSFORMS_FILE = pathlib.Path(__file__).resolve().parent.parent / "web" / "data
 
 
 def check_transforms(sentences: list[dict]) -> tuple[list[str], int]:
-    """The transformation drills that ship beside the deck.
+    """The transformation and swap drills that ship beside the deck.
 
     They land in the same IndexedDB store as the sentences, so their ids share
     one space with them: a collision would make one card overwrite the other on
@@ -91,14 +91,43 @@ def check_transforms(sentences: list[dict]) -> tuple[list[str], int]:
 
         if not row.get("stem"):
             failures.append(f"transform with no stem: {row.get('farsiText')}")
-        if row.get("transform") not in TRANSFORM_KEYS:
+        if row.get("transform") not in DRILL_KEYS:
             failures.append(f"unknown transformation {row.get('transform')!r}: {row.get('farsiText')}")
+        if row.get("transform") in SWAP_KEYS and not row.get("cue"):
+            # A swap with no cue is a sentence and nothing to do with it.
+            failures.append(f"swap with no cue: {row.get('farsiText')}")
         if not row.get("stemEn"):
             # Without it the drill is also a comprehension test.
             failures.append(f"transform with no English for its stem: {row.get('stem')}")
         if row.get("farsiText", "").strip() == row.get("stem", "").strip():
             failures.append(f"transform whose answer is its own stem: {row.get('stem')}")
 
+    return failures, len(rows)
+
+
+REPLIES_FILE = pathlib.Path(__file__).resolve().parent.parent / "web" / "data" / "replies.json"
+
+
+def check_replies(sentences: list[dict]) -> tuple[list[str], int]:
+    """The reply drills. Same store, same id space as everything else."""
+    if not REPLIES_FILE.exists():
+        return [], 0
+
+    rows = json.loads(REPLIES_FILE.read_text())["replies"]
+    taken = {s.get("id") for s in sentences}
+    if TRANSFORMS_FILE.exists():
+        taken |= {r.get("id") for r in json.loads(TRANSFORMS_FILE.read_text())["transforms"]}
+
+    failures: list[str] = []
+    for row in rows:
+        if not row.get("id") or row["id"] in taken:
+            failures.append(f"reply with a missing or colliding id: {row.get('stem')}")
+        taken.add(row.get("id"))
+        for field in ("stem", "stemEn", "farsiText", "englishText"):
+            if not row.get(field):
+                failures.append(f"reply with no {field}: {row.get('stem')}")
+        if row.get("farsiText", "").strip() == row.get("stem", "").strip():
+            failures.append(f"reply that repeats what was said: {row.get('stem')}")
     return failures, len(rows)
 
 
@@ -166,6 +195,8 @@ def main() -> int:
     failures, unmapped = check(sentences)
     transform_failures, transform_count = check_transforms(sentences)
     failures += transform_failures
+    reply_failures, reply_count = check_replies(sentences)
+    failures += reply_failures
 
     for failure in failures:
         print(f"  FAIL  {failure}")
@@ -173,7 +204,7 @@ def main() -> int:
     if not args.quiet or failures:
         print(f"\n{len(sentences)} sentences · {len(sentences) - unmapped} word maps "
               f"({unmapped} still to annotate) · {transform_count} transformation drills "
-              f"· {len(failures)} failures")
+              f"· {reply_count} replies · {len(failures)} failures")
     return 1 if failures else 0
 
 

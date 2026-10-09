@@ -1,10 +1,5 @@
-// Persian names for the parts of speech shown under a tapped word.
-//
-// The error-tag and situation vocabularies used to be mirrored here from
-// core/taxonomy.py, guarded by tools/check_mirror.py. The app no longer
-// displays either — the weak-spots view that ranked tags is gone — so the
-// copies were deleted along with the guard. Python keeps the authoritative
-// set, where generation and validation actually use it.
+// Persian names for the parts of speech shown under a tapped word, and for what a
+// drill card asks you to do. The closed sets themselves live in core/taxonomy.py.
 
 export const POS_TITLES = {
   'noun': 'اسم',
@@ -26,9 +21,8 @@ export function posTitle(pos) {
   return POS_TITLES[pos] ?? pos;
 }
 
-// Persian labels for the transformation drills. The set itself lives in
-// core/taxonomy.py, which is what generation and validation use; these are the
-// four words shown on the card.
+// A transformation has a fixed instruction; a swap carries its own cue ("say it
+// with ما"), because the cue is the whole exercise.
 export const TRANSFORM_TITLES = {
   negate: 'منفی‌ش کن',
   toPast: 'بذارش گذشته',
@@ -36,4 +30,19 @@ export const TRANSFORM_TITLES = {
   toPlural: 'جمعش کن',
 };
 
-export const transformTitle = (key) => TRANSFORM_TITLES[key] ?? key;
+/** The Persian line over a drill card. */
+export function instruction(sentence) {
+  if (sentence.kind === 'reply') return 'جواب بده';
+  return sentence.cue
+    ? `با «${sentence.cue}» بگو`
+    : TRANSFORM_TITLES[sentence.transform] ?? sentence.transform;
+}
+
+/**
+ * The English under a drill's sentence: what the stem means, and on a swap what
+ * the cue means, so the exercise is the grammar rather than a vocabulary test.
+ */
+export function stemHint(sentence) {
+  const meaning = sentence.stemEn ?? '';
+  return sentence.cueEn ? `${meaning}  →  ${sentence.cueEn}` : meaning;
+}

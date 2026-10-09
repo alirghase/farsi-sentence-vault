@@ -7,7 +7,7 @@ import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as levels from './levels.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
-import { posTitle, transformTitle } from './taxonomy.js';
+import { posTitle, instruction, stemHint } from './taxonomy.js';
 
 const $ = (id) => document.getElementById(id);
 
@@ -18,20 +18,23 @@ const state = {
   completed: 0,
   passes: 0,
   revealed: false,
-  // A rating is async (IndexedDB), and a second tap landing before it resolves
-  // used to record the same card twice and skip the next one.
+  // A rating is async (IndexedDB); a second tap before it resolves would record
+  // the same card twice and skip the next one.
   busy: false,
   // The most recent rating, for undo. One level deep on purpose: undo is for a
   // mis-tap, not for re-litigating a session.
   last: null,
+  // Set per card / per visit to compose; here so the shape is all in one place.
+  shownAt: 0,
+  msToReveal: null,
+  resumeTo: 'card',
 };
 
 // --- boot ------------------------------------------------------------------
 
 async function boot() {
-  // Before anything that can fail. Every string on the screen is Persian, and
-  // a boot that dies early used to leave the English placeholder markup
-  // looking like a finished screen with nothing in it.
+  // Before anything that can fail, so a boot that dies early does not leave the
+  // English placeholder markup looking like a finished screen.
   applyStrings();
 
   state.settings = await db.getSettings();
@@ -47,9 +50,8 @@ async function boot() {
   bindKeys();
   bindSettings();
 
-  // An installed app is resumed, not reopened. Coming back the next morning
-  // used to leave yesterday's round on screen; now the end-of-round panel
-  // recounts itself, which is the only place a stale count would show.
+  // An installed app is resumed, not reopened, so the end-of-round panel
+  // recounts when you come back — the only place a stale count would show.
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible' && !$('done-view').hidden) renderDone();
   });
@@ -134,13 +136,7 @@ async function hideSettings() {
   await renderDone();
 }
 
-/**
- * Writing a sentence down, from wherever you are.
- *
- * It used to live inside Settings, behind the end of a round — so capturing the
- * thing you just wished you could say meant finishing twenty cards first. It is
- * the point of the app, so it opens from the card.
- */
+/** Writing a sentence down, from wherever you are: the thought arrives mid-round. */
 async function showCompose() {
   state.resumeTo = $('done-view').hidden ? 'card' : 'done';
   $('practice').hidden = true;
@@ -171,13 +167,7 @@ const todayCounts = () => session.counts(
   Date.now(), session.NEW_PER_DAY, state.settings.currentLevel,
 );
 
-/**
- * Move up a level the moment the gate is cleared.
- *
- * It used to be a panel with a button, on a home screen that no longer exists.
- * Nothing was being decided by that tap — you cannot fail the gate by passing
- * it — so it happens on its own now, between rounds, and says so once.
- */
+/** Move up a level when the gate is cleared — between rounds, saying so once. */
 async function advanceLevelIfPassed() {
   const gate = await levels.progress(state.settings.currentLevel);
   const next = levels.nextLevel(gate.level);
@@ -314,23 +304,21 @@ async function renderCard() {
 
   // A count, not a fraction: the round has no end to be a fraction of.
   $('practice-progress').textContent = state.completed ? faDigits(state.completed) : '';
-  // On a translation card the badge says which way. On a transformation it
-  // says what to do, which is the whole exercise — the stem alone is not a
-  // question.
-  const isTransform = card.direction === 'transform';
-  $('card-badge').textContent = isTransform
-    ? transformTitle(card.sentence.transform)
+  // On a translation card the badge says which way. On a drill it says what to
+  // do, which is the whole exercise — the stem alone is not a question.
+  const drill = session.isDrill(card.direction);
+  $('card-badge').textContent = drill
+    ? instruction(card.sentence)
     : text(`dir.${card.direction}`);
-  $('card-badge').classList.toggle('is-instruction', isTransform);
+  $('card-badge').classList.toggle('is-instruction', drill);
 
   const prompt = $('card-prompt');
   prompt.textContent = session.promptFor(card.sentence, card.direction);
-  prompt.classList.toggle('rtl', isTransform || card.direction === 'faToEn');
+  prompt.classList.toggle('rtl', drill || card.direction === 'faToEn');
 
-  // The stem's meaning, so a transformation is not also a vocabulary test.
-  const stemEn = $('card-stem-en');
-  stemEn.hidden = !isTransform;
-  stemEn.textContent = isTransform ? (card.sentence.stemEn ?? '') : '';
+  // What the stem means, so a drill is the grammar and not a vocabulary test —
+  // behind a tap when immersive, so the Persian is what you work from.
+  peek($('card-stem-en'), drill ? stemHint(card.sentence) : '', 'card.meaning');
 
   // Typing is the whole app now, so the box is simply always there. It used
   // to be behind a button that reset on every card.
@@ -339,14 +327,17 @@ async function renderCard() {
   typed.hidden = false;
   const wantsFarsi = card.direction !== 'faToEn';
   typed.classList.toggle('rtl', wantsFarsi);
-  typed.placeholder = text(wantsFarsi ? 'card.typeFarsi' : 'card.typeEnglish');
+  typed.placeholder = text(
+    card.direction === 'reply' ? 'card.typeReply'
+      : wantsFarsi ? 'card.typeFarsi' : 'card.typeEnglish',
+  );
 
   $('card-answer').hidden = true;
   $('btn-reveal').hidden = false;
   $('rating-row').hidden = true;
 }
 
-/** Type or speak, remembered until you change it back. */
+/** Show the answer, and what you typed beside it. */
 function reveal() {
   const card = currentCard();
   if (!card || state.revealed) return;
@@ -365,12 +356,43 @@ function reveal() {
   // The echo above the answer now shows what was typed; leaving the box open
   // invites editing an answer after seeing the key.
   $('card-typed').hidden = true;
-  $('answer-finglish').textContent = card.sentence.finglish ?? '';
+  peek($('answer-finglish'), card.sentence.finglish ?? '', 'card.pronunciation');
   renderBreakdown(card.sentence);
+  // A drill's answer is a sentence you were never shown in English, so say
+  // what it means.
+  if (session.isDrill(card.direction)) {
+    peek($('answer-gloss'), card.sentence.englishText, 'card.meaning');
+  }
   $('card-answer').hidden = false;
   $('btn-reveal').hidden = true;
 
   renderRatings(card);
+}
+
+/**
+ * Put `full` in `element`, or — when immersive — a small label that turns into
+ * it on a tap and back on the next. English and transliteration are crutches;
+ * they stay one tap away rather than gone, because sometimes you need one.
+ */
+function peek(element, full, labelKey) {
+  element.hidden = !full;
+  element.onclick = null;
+  element.classList.remove('is-peek');
+  if (!full) {
+    element.textContent = '';
+    return;
+  }
+  if (!state.settings.immersive) {
+    element.textContent = full;
+    return;
+  }
+  const label = text(labelKey);
+  const show = (open) => {
+    element.textContent = open ? full : label;
+    element.classList.toggle('is-peek', !open);
+  };
+  show(false);
+  element.onclick = () => show(element.textContent === label);
 }
 
 /**
@@ -385,7 +407,9 @@ function renderTypedEcho(card) {
 
   const match = session.matchesAnswer(typed, card.sentence, card.direction);
   echo.className = `typed-echo${match ? ' is-match' : ''}`;
-  echo.classList.toggle('rtl', card.direction === 'enToFa');
+  // A reply has many right answers, so a miss is not struck through.
+  echo.classList.toggle('is-open', card.direction === 'reply');
+  echo.classList.toggle('rtl', card.direction !== 'faToEn');
   echo.textContent = match ? `${typed}  ✓` : typed;
 }
 
@@ -407,7 +431,7 @@ function renderBreakdown(sentence) {
   const units = sentence.breakdown ?? [];
   const alts = sentence.alternatives ?? [];
 
-  // Sentences not yet annotated fall back to the old flat gloss.
+  // Sentences without a word map fall back to the flat gloss.
   $('answer-gloss').textContent = units.length ? '' : (sentence.literalGloss ?? '');
   $('answer-gloss').hidden = units.length > 0;
 
@@ -516,7 +540,7 @@ async function rate(rating) {
   }
 }
 
-/** Take back the last rating: schedule, attempt, tag counts and queue position. */
+/** Take back the last rating: schedule, attempt and queue position. */
 async function undo() {
   const last = state.last;
   if (!last || state.busy) return;
@@ -566,14 +590,16 @@ async function renderDone() {
     : text('card.allDone');
 }
 
-
-
 // --- settings --------------------------------------------------------------
 
 function bindSettings() {
   $('btn-bank-add').addEventListener('click', addOwnSentence);
   $('bank-fa').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') addOwnSentence();
+  });
+
+  $('set-immersive').addEventListener('change', async (e) => {
+    state.settings = await db.saveSettings({ immersive: e.target.checked });
   });
 
   $('set-level').addEventListener('change', async (e) => {
@@ -674,6 +700,7 @@ async function renderOwnSentences() {
 
 async function renderSettings() {
   const s = state.settings;
+  $('set-immersive').checked = s.immersive;
   $('set-level').innerHTML = levels.LEVELS
     .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
     .join('');
@@ -683,7 +710,6 @@ async function renderSettings() {
         .toLocaleDateString('fa-IR', { day: 'numeric', month: 'long', year: 'numeric' }))}`
       + ` — ${text('settings.backupReplace')}`
     : text('settings.backupHint');
-
 }
 
 function escapeHtml(value) {

@@ -16,8 +16,7 @@ import uuid
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import validate
-from core.prompts import PARTS_OF_SPEECH
-from core.taxonomy import ERROR_TAG_KEYS, canonical_situation
+from core.taxonomy import ERROR_TAG_KEYS, PARTS_OF_SPEECH, canonical_situation
 
 from core import bank
 HANDWRITTEN = pathlib.Path(__file__).parent / "handwritten"

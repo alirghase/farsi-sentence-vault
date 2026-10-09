@@ -19,7 +19,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core.bank import BANK
-from core.syllabus import CORE_VERBS, TENSES, coverage
+from core.syllabus import CORE_VERBS, coverage
 
 CEFR = {1: "A1", 2: "A2", 3: "B1", 4: "B2", 5: "C1"}
 

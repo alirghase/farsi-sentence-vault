@@ -5,8 +5,7 @@
 // static files with no build step, and this is about 150 lines of the IDB API.
 
 const DB_NAME = 'farsi-vault';
-// 2: tagStats dropped. It counted which grammar features your misses landed
-// on, for a weak-spots view that no longer exists.
+// 2: tagStats dropped.
 const DB_VERSION = 2;
 
 export const STORE = {
@@ -55,7 +54,6 @@ export function open() {
 
       if (!db.objectStoreNames.contains(STORE.sentences)) {
         const s = db.createObjectStore(STORE.sentences, { keyPath: 'id' });
-        // Used to dedupe incoming generated batches against what we already hold.
         s.createIndex('farsiText', 'farsiText', { unique: false });
       }
       if (!db.objectStoreNames.contains(STORE.reviews)) {
@@ -71,8 +69,7 @@ export function open() {
       if (!db.objectStoreNames.contains(STORE.meta)) {
         db.createObjectStore(STORE.meta, { keyPath: 'key' });
       }
-      // Upgrading from 1. Reviews and attempts are untouched — this only
-      // removes the store that fed the weak-spots view.
+      // Upgrading from 1: reviews and attempts are untouched.
       if (db.objectStoreNames.contains('tagStats')) {
         db.deleteObjectStore('tagStats');
       }
@@ -183,15 +180,9 @@ export async function removeMany(store, keys) {
 
 
 /**
- * Replace the whole contents of several stores in ONE transaction.
- *
- * A restore used to clear each store and then write it, as separate
- * transactions. Anything that threw in between — a corrupt file, a store that
- * no longer exists, a quota error — left the device with its history already
- * deleted and nothing put back. For the one feature whose entire job is not
- * losing data, that is the wrong failure. IndexedDB aborts a transaction on
- * error and rolls the whole thing back, so clearing and writing together means
- * a failed restore leaves you exactly where you started.
+ * Replace the whole contents of several stores in ONE transaction, so a failed
+ * restore (a corrupt file, a quota error) rolls back and leaves you exactly
+ * where you started rather than with your history cleared and nothing put back.
  */
 export async function replaceAll(entries) {
   const stores = entries.map(([store]) => store);
@@ -218,26 +209,15 @@ export async function replaceAll(entries) {
   await done;
 }
 
-export async function clear(store) {
-  const db = await open();
-  const { transaction, done } = tx(db, [store], 'readwrite');
-  transaction.objectStore(store).clear();
-  await done;
-}
-
 // --- meta / settings -------------------------------------------------------
 
 const SETTING_DEFAULTS = {
-  // New cards introduced per day. Every new card becomes a stream of reviews,
-  // so this is the dial that sets tomorrow's workload, not today's.
-  // Cards in one round. A round fits a stop or two on the Tube; "another
-  // round" is one tap, so a small number costs nothing when there is time.
   // CEFR progression. New cards come only from here; reviews come from
   // everywhere. Advanced by passing the gate, or manually from Settings.
   currentLevel: 'A1',
   levelsPassed: [],
-  // Cards per day that counts as done: a target you clear most days builds the
-  // habit; one you miss erodes it.
+  // English and pronunciation stay hidden until you tap for them.
+  immersive: true,
 };
 
 export async function getSettings() {

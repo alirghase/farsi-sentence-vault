@@ -1,10 +1,7 @@
-"""A systematic syllabus for the lower tiers.
+"""The core verbs, and a count of how well the deck covers them.
 
-Situation-driven generation gives variety but not coverage: sampling "ordering
-food" fifty times will never guarantee you have met the past progressive, and
-leaves whole verbs untouched. This module defines the matrix that A1 and A2
-generation walks deliberately — core verbs x core tenses, plus core vocabulary
-domains — so "zero to hero" means something checkable rather than hopeful.
+Situations give variety but not coverage: a deck full of "ordering food" can
+leave whole verbs untouched. tools/coverage.py reports from here.
 """
 
 from __future__ import annotations
@@ -67,64 +64,6 @@ CORE_VERBS = [
     ("شروع کردن", "to start"),
     ("تموم کردن", "to finish"),
 ]
-
-# --- Core tenses and moods ------------------------------------------------
-# Each entry carries an instruction the prompt can use directly.
-
-TENSES = [
-    ("present", "Simple present with mi- (می‌رم، می‌خورم). Everyday habitual or current action."),
-    ("present-negative", "Negated present (نمی‌رم، نمی‌خوام)."),
-    ("past-simple", "Simple past (رفتم، خوردم)."),
-    ("past-negative", "Negated past (نرفتم، نخوردم)."),
-    ("past-progressive", "Past progressive with mi- (می‌رفتم، می‌خوردم) — was doing, used to do."),
-    ("present-perfect", "Present perfect (رفتم/رفته‌ام -> spoken رفتم، خورده‌ام -> خوردم), 'have done'."),
-    ("future-intent", "Future or intention, usually spoken as present or with می‌خوام."),
-    ("subjunctive", "Subjunctive after باید / می‌خوام / می‌تونم / شاید (باید برم، می‌خوام بخورم)."),
-    ("imperative", "Command, informal and formal (برو / برید، بخور / بخورید)."),
-    ("question", "A question using کی، کجا، چی، چرا، چطور، چند or a yes/no question."),
-]
-
-# --- Core vocabulary domains ----------------------------------------------
-
-DOMAINS = [
-    "family and relationships",
-    "food, drink and eating out",
-    "numbers, prices and money",
-    "time, days and dates",
-    "places, directions and the city",
-    "body, health and feeling unwell",
-    "clothes, sizes and shopping",
-    "transport: taxi, metro, driving",
-    "the home and household objects",
-    "work, study and daily routine",
-    "weather and seasons",
-    "feelings, opinions and reactions",
-    "describing people and things",
-    "greetings, politeness and taarof",
-    "phone, messages and making plans",
-]
-
-
-def matrix(levels_per_cell: int = 1) -> list[dict]:
-    """Every (verb, tense) cell, for deterministic coverage.
-
-    Walking this guarantees each core verb is met in each core tense, which
-    random situational sampling cannot promise.
-    """
-    cells = []
-    for verb, gloss in CORE_VERBS:
-        for tense, description in TENSES:
-            cells.append(
-                {
-                    "verb": verb,
-                    "gloss": gloss,
-                    "tense": tense,
-                    "tense_detail": description,
-                    "count": levels_per_cell,
-                }
-            )
-    return cells
-
 
 # Present stems, which are irregular and cannot be derived from the infinitive:
 # رفتن -> می‌رم, اومدن -> میام. Without these the count sees only the past tense

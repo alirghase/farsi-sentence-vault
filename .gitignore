@@ -3,29 +3,5 @@ __pycache__/
 *.pyc
 .venv/
 
-# The deck itself is tracked: web/data/seed_sentences.json is the one bank and
-# its diff is the review of what changed. There used to be a working copy here
-# plus a cp step to publish it, which is how a stale deck got shipped.
-
-# Secrets. Never commit these.
 .env
-*.tfvars
-!example.tfvars
-
-# Terraform
-infra/.terraform/
-infra/*.tfstate
-infra/*.tfstate.*
-infra/.terraform.lock.hcl
-
-# Xcode
-*.xcodeproj/
-*.xcworkspace/
-DerivedData/
-build/
 .DS_Store
-
-# Serena's local index
-.serena/
-review_cache.json
-transforms_out.json

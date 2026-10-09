@@ -7,25 +7,31 @@ import { idsForLevel } from './levels.js';
 // enToFa is production — the skill that freezes. faToEn is reading.
 // A sentence schedules independently per direction, which ReviewState's
 // sentenceId::direction key already supports.
-export const DIRECTIONS = ['enToFa', 'faToEn', 'transform'];
+export const DIRECTIONS = ['enToFa', 'faToEn', 'transform', 'reply'];
 
 /**
  * A translation card has two directions and they schedule separately, because
- * producing Persian and reading it are different skills. A transformation card
- * has one: you are always producing Persian, from Persian.
+ * producing Persian and reading it are different skills. A transformation or a
+ * reply has one: you are always producing Persian, from Persian.
  */
 export function directionsFor(sentence) {
-  return sentence.kind === 'transform' ? ['transform'] : ['enToFa', 'faToEn'];
+  if (sentence.kind === 'transform') return ['transform'];
+  if (sentence.kind === 'reply') return ['reply'];
+  return ['enToFa', 'faToEn'];
 }
+
+/** Cards whose prompt is a Persian sentence in `stem` rather than a translation. */
+export const isDrill = (direction) => direction === 'transform' || direction === 'reply';
 
 /**
  * Share of new cards per direction. Weighted to production because producing
  * Farsi is the skill that freezes; reading is easier.
  */
 // Producing Persian is the gap, so it gets most of the round: translating into
-// Persian plus transformations is 75% of it. Reading Persian back is the
-// easier direction and is there to keep the mapping honest, not to fill time.
-export const DEFAULT_WEIGHTS = { enToFa: 0.5, faToEn: 0.25, transform: 0.25 };
+// Persian, transforming it and replying to it are 80% of it. Reading Persian
+// back is the easier direction and is there to keep the mapping honest, not to
+// fill time.
+export const DEFAULT_WEIGHTS = { enToFa: 0.4, faToEn: 0.2, transform: 0.25, reply: 0.15 };
 
 /**
  * How many NEW sentences may be introduced in a day.
@@ -42,14 +48,6 @@ export const DEFAULT_WEIGHTS = { enToFa: 0.5, faToEn: 0.25, transform: 0.25 };
 export const NEW_PER_DAY = 40;
 
 /**
- * Whether an unseen sentence may be introduced as a new card.
- *
- * One rule, used by both counts() and build(). They each had their own copy and
- * the copies already disagreed: build() honoured `kinds` and counts() ignored
- * it, so Today would promise new cards a session then refused to serve. Nothing
- * passes `kinds` today, which is why it never showed.
- */
-/**
  * A sentence you wrote yourself.
  *
  * These are exempt from the daily new-card cap. The cap exists so you cannot
@@ -59,8 +57,14 @@ export const NEW_PER_DAY = 40;
  */
 export const isOwn = (sentence) => sentence.source === 'custom';
 
-export function eligibleAsNew(sentence, levelIds, kinds = null) {
-  if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) return false;
+/**
+ * Whether an unseen sentence may be introduced as a new card.
+ *
+ * One rule, used by both counts() and build(): they each had their own copy once
+ * and the copies drifted, so the end-of-round count promised new cards a
+ * session then refused to serve.
+ */
+export function eligibleAsNew(sentence, levelIds) {
   return !levelIds || levelIds.has(sentence.id);
 }
 
@@ -69,24 +73,23 @@ export function reviewKey(sentenceId, direction) {
 }
 
 export function promptFor(sentence, direction) {
-  if (direction === 'transform') return sentence.stem;
+  if (isDrill(direction)) return sentence.stem;
   return direction === 'enToFa' ? sentence.englishText : sentence.farsiText;
 }
 
 export function answerFor(sentence, direction) {
-  if (direction === 'transform') return sentence.farsiText;
+  if (isDrill(direction)) return sentence.farsiText;
   return direction === 'enToFa' ? sentence.farsiText : sentence.englishText;
 }
 
 /**
- * The day's ledger figures.
+ * What is waiting: reviews due, and new cards that may still be introduced.
  *
- * `fresh` is the NEW ALLOWANCE REMAINING today, not the raw count of unseen
- * cards. With 400 sentences there are 800 unseen cards, so a raw count sits
- * pinned at the batch size and never moves as you work — a number that cannot
- * change is useless on a screen whose job is accounting.
+ * `new` is bounded by the day's remaining allowance, not the raw count of unseen
+ * cards — with a thousand sentences that count would sit pinned and never move
+ * as you work.
  */
-export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = null, kinds = null) {
+export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = null) {
   const [sentences, reviews, attempts] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
@@ -106,7 +109,7 @@ export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = 
   let unseenSeed = 0;
   let unseenOwn = 0;
   for (const s of sentences) {
-    if (!eligibleAsNew(s, levelIds, kinds)) continue;
+    if (!eligibleAsNew(s, levelIds)) continue;
     for (const d of directionsFor(s)) {
       if (scheduled.has(reviewKey(s.id, d))) continue;
       if (isOwn(s)) unseenOwn += 1; else unseenSeed += 1;
@@ -157,7 +160,6 @@ export async function build({
   maxNew = limit,
   weights = DEFAULT_WEIGHTS,
   level = null,
-  kinds = null,
   now = Date.now(),
 }) {
   const [sentences, reviews] = await Promise.all([
@@ -175,11 +177,6 @@ export async function build({
   const fresh = [];
 
   for (const sentence of sentences) {
-    // A word card and a sentence card are both rows here; `kinds` lets a
-    // session be restricted to one without a second store.
-    // `kinds` restricts the whole session, due cards included — eligibleAsNew
-    // below only governs what may be introduced.
-    if (kinds && !kinds.includes(sentence.kind ?? 'sentence')) continue;
     for (const direction of directionsFor(sentence)) {
       const key = reviewKey(sentence.id, direction);
       const existing = byKey.get(key);
@@ -187,7 +184,7 @@ export async function build({
         if (existing.dueDate <= now) {
           due.push({ sentence, direction, review: existing, isNew: false });
         }
-      } else if (eligibleAsNew(sentence, levelIds, kinds)) {
+      } else if (eligibleAsNew(sentence, levelIds)) {
         // New cards are gated to the current level. Due reviews above are not,
         // so levels already passed keep resurfacing on their own schedule.
         fresh.push({
@@ -333,8 +330,9 @@ export function targetMs(sentence, direction) {
   const words = (sentence.farsiText ?? '').trim().split(/\s+/).length;
   const base = 4000 + words * 500;
   // Producing Farsi is slower than reading it, and transforming is slower
-  // still — you have to parse the stem before you can change it.
-  const multiplier = { enToFa: 1.15, transform: 1.3 }[direction] ?? 1;
+  // still — you have to parse the stem before you can change it. Replying
+  // means finding a sentence of your own, which is slower again.
+  const multiplier = { enToFa: 1.15, transform: 1.3, reply: 1.5 }[direction] ?? 1;
   return Math.round(base * multiplier);
 }
 
@@ -365,7 +363,7 @@ export async function recordAttempt({ card, rating, typedAnswer = null, msToReve
     mode: typedAnswer ? 'typed' : 'speakSelfRate',
     selfRating: rating,
     typedAnswer: typedAnswer || null,
-    // Speed is the gap the app previously could not see at all.
+    // Answer speed, recorded but not yet used by anything.
     msToReveal,
     targetMs: targetMs(card.sentence, card.direction),
     createdAt: now,
@@ -421,8 +419,8 @@ export function matchesAnswer(typed, sentence, direction) {
 }
 
 /**
- * Which script the answer is in. Two of the three directions want Persian —
- * translating into it and transforming it — so the test is which one does not.
+ * Which script the answer is in. Every direction but reading Persian back wants
+ * Persian, so the test is the one that does not.
  */
 export const expectsFarsi = (direction) => direction !== 'faToEn';
 
