@@ -43,7 +43,7 @@ instead of next to the Persian.
 ### The round, and what it never does
 
 **The round does not end.** Due reviews come first, then new sentences from your
-level, then cards you already know, least recently practised first.
+level, then cards you already know, the ones you find hardest first.
 
 Those extra cards record that you practised and nothing else. Drilling a card
 five times tonight says nothing about whether you will know it in a fortnight,

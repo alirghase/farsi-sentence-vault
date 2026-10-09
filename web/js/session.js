@@ -299,7 +299,7 @@ export function select(due, fresh, limit, weights, directions = DIRECTIONS, maxN
  *
  * The scheduled queue is finite on purpose: due reviews plus a capped number of
  * new sentences. Practice is not. Once the plan runs out the round keeps going
- * with cards you have already met, least-recently-practised first.
+ * with cards you have already met, hardest first.
  *
  * These deliberately do NOT touch the schedule — see `extra` in recordAttempt.
  * `exclude` is the set of cardIds already dealt this round, so a top-up works
@@ -315,9 +315,11 @@ export async function extraCards(limit, { exclude = new Set(), now = Date.now() 
   const pool = reviews
     .filter((r) => byId.has(r.sentenceId))
     .filter((r) => !exclude.has(`${r.sentenceId}::${r.direction}`))
-    .sort((a, b) => (a.lastReviewed ?? 0) - (b.lastReviewed ?? 0));
+    .sort(extraOrder);
 
-  return pool.slice(0, limit).map((review) => ({
+  // Shuffled within the batch: the order cards were first met in is not one
+  // worth replaying card for card.
+  return shuffle(pool.slice(0, limit)).map((review) => ({
     sentence: byId.get(review.sentenceId),
     direction: review.direction,
     review,
@@ -325,6 +327,15 @@ export async function extraCards(limit, { exclude = new Set(), now = Date.now() 
     // The flag the rest of the app reads to leave the schedule alone.
     extra: true,
   }));
+}
+
+/**
+ * Which known cards extra practice reaches for first: the ones you find hardest
+ * (lowest ease, which every miss lowers), then the ones you met longest ago.
+ */
+export function extraOrder(a, b) {
+  return ((a.easeFactor ?? 2.5) - (b.easeFactor ?? 2.5))
+    || ((a.lastReviewed ?? 0) - (b.lastReviewed ?? 0));
 }
 
 export function cardId(card) {

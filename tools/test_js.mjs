@@ -13,7 +13,7 @@ import * as SM2 from '../web/js/sm2.js';
 import { instruction, stemHint } from '../web/js/taxonomy.js';
 import { select, matchesAnswer, introducedSince, eligibleAsNew, unseenSentences, isOwn, NEW_PER_DAY,
          directionsFor, promptFor, answerFor, expectsFarsi, isDrill, targetMs,
-         newCardOrder } from '../web/js/session.js';
+         newCardOrder, extraOrder } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -306,4 +306,13 @@ test('a transformation waits until its stem sentence has been seen', () => {
   assert.equal(eligibleAsNew(swap, null, unseen), true, 'a swap has no stem sentence to wait for');
   unseen = unseenSentences([stem, other], [{ sentenceId: 's1', direction: 'enToFa' }]);
   assert.equal(eligibleAsNew(drill, null, unseen), true, 'stem met once, in either direction');
+});
+
+test('extra practice reaches for the hardest cards first, then the longest unseen', () => {
+  const reviews = [
+    { key: 'easy-old', easeFactor: 2.5, lastReviewed: 1 },
+    { key: 'hard', easeFactor: 1.7, lastReviewed: 50 },
+    { key: 'easy-new', easeFactor: 2.5, lastReviewed: 9 },
+  ];
+  assert.deepEqual(reviews.sort(extraOrder).map((r) => r.key), ['hard', 'easy-old', 'easy-new']);
 });
