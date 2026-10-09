@@ -4,8 +4,8 @@
 Share → Add to Home Screen.
 
 Translation drilling for someone who knows the words but freezes when they have
-to produce a sentence. Prompt → say it → reveal → Fail or Pass. Hundreds of reps
-a week, offline, on a commute.
+to produce a sentence. Prompt → type it → check → wrong or right. Hundreds of
+reps a week, offline, on a commute.
 
 The problem is retrieval under pressure, not vocabulary — so the rating is one
 tap, a miss comes straight back, and the whole loop runs with no network.
@@ -15,210 +15,136 @@ tap, a miss comes straight back, and the whole loop runs with no network.
 Opening the app puts you on a card. There is no home screen and no tab bar,
 because there is nowhere else to be.
 
-The deck deals four kinds of card: translation (60% of a round, in both
-directions), transformations and swaps (25%), and replies (15%).
-
-**Translation**, which is most of it: a sentence appears, you type it in the
-other language.
-
-**Transformation**, which is the part that makes you build rather than recall:
-a sentence you already know appears with an instruction over it — **منفی‌ش کن**
-(make it negative), **بذارش گذشته** (put it in the past), **به شما بگو** (say it
-to شما), **جمعش کن** (make the subject plural). You type the changed sentence.
-You can know a thousand sentences by heart and still not be able to make the
-thousand-and-first; this is the only exercise here that asks for one that is not
-in the deck.
-
-**Swaps** are the same idea without a rule to apply: you get one version of a
-sentence and a cue, and produce another. **با «ما» بگو** (say it with *we*) turns
-*یه قهوه می‌خوام* into *یه قهوه می‌خوایم*; **با «لازم داشتن» بگو** turns it into
-*یه قهوه لازم دارم*. Three kinds — a different **pronoun** (subject, possessive
-or object, so the verb ending or the clitic moves with it), a different
-**verb** or modal, and a different **phrase** (a question word, a time word, how
-you open a request). Writing *ما* in front of the answer is accepted too.
-
-**Replies** are the immersive one. Something is said to you in Persian —
-*چای میل دارین؟*, *ببخشید که زحمت دادم*, *کجایی؟ دیر کردی!* — nothing on the front is
-English, and you answer in Persian. They cover the moment before translation:
-somebody has just spoken and you have to find a sentence at all. There are many
-right replies, so a model answer and a few others are shown and the verdict is
-yours; a miss is not struck through.
-
-**Immersion** (on by default, Settings → غوطه‌وری): the English meaning of a
-drill and the transliteration under every answer stay behind a small tap
-(**معنی**, **تلفظ**) instead of being printed next to the Persian. They are one
-tap away, not gone.
-
-On a drill card the answer's English is shown after you check, so you can tell
-whether the sentence you made means what you meant.
-
-1. **A sentence appears**, with a box under it. Type the translation, or the
-   transformation the badge asks for.
-2. **جواب (Check).** You get the answer, the transliteration, and a word map —
-   each Persian word over its English gloss. Tap a word for its part of speech.
-   What you typed sits above the answer with a ✓ when it matches the reference
-   or a listed alternative.
+1. **A prompt appears**, with a box under it. Type your answer.
+2. **جواب (check)** shows the answer, the transliteration and a word map — each
+   Persian word over its English gloss; tap a word for its part of speech. A ✓
+   appears if what you typed matches the answer or a listed alternative.
 3. **غلط (wrong)** or **درست (right)**. Wrong comes back later in the same round.
-   Right shows how many days until you see it again. Mis-tapped? **برگرد (Undo)**
-   in the top corner.
-4. At the end of a round, **یه دور دیگه (Another round)**, or **تنظیمات**.
-
-**The round does not end.** Due reviews come first, then new sentences from
-your current level, and after that it keeps dealing cards you already know,
-least-recently-practised first, for as long as you want to sit there.
-
-Those extra cards record that you practised and nothing else. Drilling a card
-five times tonight says nothing about whether you will know it in a fortnight —
-you saw it a minute ago — so letting it move a due date would feed the scheduler
-the one input it must not have.
-
-**40 new sentences a day** (`NEW_PER_DAY` in `web/js/session.js`) is the cap,
-and it caps introduction, not practice: every new card becomes several reviews
-over the next fortnight, so the rate is what keeps tomorrow finite. **Sentences
-you add yourself are exempt** — you wrote it down because you wanted it now.
-
-There is no progress screen and no level screen. The gate still runs, unwatched;
-clearing it moves you up between rounds and says so once.
-
-**+** in the top corner of the card writes a sentence of your own. It is on the
-card rather than in Settings because writing one down is the point of the app,
-and the thought you want to capture arrives mid-round, not after it. Anything
-you add is drillable immediately — your own sentences are exempt from the daily
-cap.
-
-**تنظیمات**, reached from the end of a round, holds two things: **Save a
-backup** — do that now and then, because iOS can clear a web app's storage and
-nothing else holds a copy — and your level.
+   Right shows how many days until you see it again. **برگرد** undoes a mis-tap.
 
 On a keyboard: <kbd>Enter</kbd> checks, <kbd>1</kbd> wrong, <kbd>2</kbd> right,
 <kbd>U</kbd> undo.
 
-## How it works
+### The four kinds of card
+
+| Kind | What you do |
+|---|---|
+| **Translation** (60% of a round) | English → Persian, or Persian → English. Each direction is scheduled separately |
+| **Transformation** | Change a sentence you know by a rule: *منفی‌ش کن* (negate), *بذارش گذشته* (past), *به شما بگو*, *جمعش کن* (plural) |
+| **Swap** | Keep the frame, change one piece: *با «ما» بگو* turns *یه قهوه می‌خوام* into *یه قهوه می‌خوایم*. The piece is a pronoun (subject, possessive or object), a verb or modal, or a phrase (question word, time word, how a request opens) |
+| **Reply** | Something is said to you in Persian and you answer in Persian. Nothing on the front is English. Many replies are right, so a model answer and a few others are shown and the verdict is yours |
+
+Transformations and swaps together are a quarter of a round, replies 15%.
+
+**Immersion** (Settings, on by default): the English meaning of a drill and the
+transliteration under each answer stay behind a small tap — **معنی**, **تلفظ** —
+instead of next to the Persian.
+
+### The round, and what it never does
+
+**The round does not end.** Due reviews come first, then new sentences from your
+level, then cards you already know, least recently practised first.
+
+Those extra cards record that you practised and nothing else. Drilling a card
+five times tonight says nothing about whether you will know it in a fortnight,
+so letting it move a due date would feed the scheduler the one input it must not
+have.
+
+**40 new cards a day** (`NEW_PER_DAY` in `web/js/session.js`) caps introduction,
+not practice: every new card becomes several reviews over the next fortnight.
+Sentences you add yourself are exempt.
+
+**Scheduling** is SM-2: a fail is a lapse and returns the card this round; a pass
+follows 1, 6, 15, 38, 95, 238 days.
+
+**Levels** run A1 → C1. New cards come from your current level only; due reviews
+come from every level. The gate runs unwatched between rounds and moves you up
+when three things hold: 60 distinct cards seen, 85% accuracy over the last 40
+reviews, and 30 cards past a 7-day interval.
+
+**+** on the card writes a sentence of your own, drillable at once. **تنظیمات**
+(from the end of a round) holds immersion, your level, and **Save a backup** —
+do that now and then: iOS can clear a web app's storage and nothing else holds a
+copy. Restoring maps through the Persian text, so it works on a new device.
+
+## Repository
 
 ```
-BUILD TIME (on the Mac, no network needed at run time)
-  tools/         write, validate and annotate sentences
-                 └─> web/data/seed_sentences.json, bundled into the app
-
-RUN TIME
-  ┌──────────────── PWA on the phone, fully offline ────────────────┐
-  │  IndexedDB · SM-2 scheduler · CEFR level gate · service worker   │
-  │  word map · answer check · backup file                           │
-  └──────────────────────────────────────────────────────────────────┘
+web/    the app: static PWA, ES modules, no build step, no node_modules
+        data/  seed_sentences.json (the deck), transforms.json (transformation
+               and swap drills), replies.json
+core/   the checks a sentence must pass, and where the deck lives
+tools/  adding content and checking it
+        handwritten/          batches of sentences, each with a word map
+        handwritten/drills/   the sources of the swaps and the replies
 ```
 
-Everything the practice loop needs is local. There is no runtime dependency on
-anything else.
+Run it locally: `python3 -m http.server 8000 --directory web`.
 
-## Repository layout
+### Adding content
 
-| Path | What it is |
-|---|---|
-| `web/` | The app. Static PWA, ES modules, no build step, no `node_modules` |
-| `core/` | Shared Python: taxonomy, prompts, validation, Gemini client |
-| `tools/` | Content pipeline — see below |
-| `backend/`, `infra/` | **Parked.** A Cloud Run service and its Terraform, built then set aside when the GCP route was dropped. Nothing references them at run time |
-
-## The content pipeline
-
-| Tool | What it does |
-|---|---|
-| `generate_seed.py` | Adds model-generated sentences, optionally `--syllabus` to target core-verb gaps |
-| `merge_handwritten.py` | Merges hand-written batches, through the same validation |
-| `check_handwritten.py` | Checks a batch before it is merged: parts of speech, tags, register, and that the word map covers every word |
-| `derive_breakdown.py` | Builds word mappings from the gloss already in the deck — no API |
-| `augment.py` | Model-written breakdowns and alternatives for what cannot be derived |
-| `fix_glosses.py` | Repairs word maps written before the gloss and part-of-speech rules existed |
-| `coverage.py` | Reports core-verb coverage and what is still missing |
-| `vocabulary.py` | Content-lemma exposure: what is met once and never again |
-| `tenses.py` | Which tenses and constructions the deck actually contains |
-| `check_deck.py` | Card-level mistakes: word maps that do not reconstruct their sentence, two meanings in one chip, two cards answering one prompt, split clitics |
-| `review_deck.py` | Asks the model whether a native would say the sentence. Caches and resumes — the free tier is a daily ceiling |
-| `transforms.py` | Writes transformation drills from existing sentences. Proposes only — output goes to a file for review |
-| `merge_transforms.py` | The gate. Nothing reaches the app without passing through it, and its rejection list records what was read and thrown out, with reasons |
-| `build_replies.py` | Builds the reply drills from `tools/handwritten/drills/replies.json` into `web/data/replies.json` |
-| `build_swaps.py` | Builds the swap drills from `tools/handwritten/drills/swaps.json` — hand-written frames, no model. Rewrites only the swap rows of `transforms.json`, deterministically |
-| `prompt_harness.py` | Iterate prompts without a rebuild |
-| `check_js.mjs` | Modules import, cross-module calls resolve, every `$('id')` and string key exists |
-| `test_js.mjs` | Unit tests: scheduler, session selection, answer matching |
-
-Every tool reads and writes `web/data/seed_sentences.json` — the file the app
-ships — through `core/bank.py`, which also gives each sentence a stable id. The
-app uses that id to land a corrected sentence on the row that already holds its
-review history, so fixes to the deck reach existing devices.
-
-## How the app decides what to show you
-
-**Levels.** A1 → C1. New cards come only from your current level; due reviews
-come from every level, so passing A1 does not mean forgetting it.
-
-**The gate.** Three things must all hold: 60 distinct cards seen, 85% accuracy
-over the last 40 reviews, and 30 cards past a 7-day interval. Retention is the
-one that stops a level being crammed. Answer time is recorded on every review
-but gates nothing yet.
-
-**Scheduling.** SM-2. Fail is a lapse and returns the card this session; pass
-follows the standard 1, 6, 15, 38, 95, 238-day progression. New cards are
-capped per day, and the two directions of one sentence never share a round —
-each is the other's answer.
-
-## Getting it running
+Sentences — write a batch into `tools/handwritten/` (see any existing file for
+the shape; every sentence carries its word map), then:
 
 ```bash
-python3 -m http.server 8000 --directory web    # then open localhost:8000
+python3 tools/check_handwritten.py   # does the word map cover every word?
+python3 tools/merge_handwritten.py   # validates, skips duplicates, adds
+git diff --stat web/data             # the diff is the review
 ```
 
-To add sentences, write a batch into `tools/handwritten/`, then:
+Swaps and replies — add a frame to `tools/handwritten/drills/swaps*.json`, or an
+exchange to `replies*.json`, then:
 
 ```bash
-python3 tools/merge_handwritten.py
-python3 tools/derive_breakdown.py
-git diff --stat web/data     # the diff is the review
+python3 tools/build_swaps.py --write
+python3 tools/build_replies.py --write
 ```
 
-To add swaps, add a frame to `tools/handwritten/drills/swaps.json` — the versions of one
-sentence, written out — then `python3 tools/build_swaps.py --write`. It refuses
-a frame with a bookish form, a repeated version or a shared cue.
+A frame is the versions of one sentence written out; the builder refuses one
+with a bookish form, a repeated version or a shared cue. In both files `~`
+stands for the half-space (ZWNJ), so they can be read and diffed.
 
-Deploys happen on push — `.github/workflows/pages.yml` runs the checks and
-publishes `web/`.
+Everything is hand-written and goes through `core/validate.py` — spoken Tehrani
+(*می‌رم*, not *می‌روم*), a closed set of tags and situations, a word map that
+rebuilds its sentence. The 238 transformation drills were model-written and read
+line by line before they went in; the tools that wrote them are in history.
+
+### Checks
+
+```bash
+node tools/check_js.mjs              # modules import, calls resolve, every $('id') and string key exists
+node --test tools/test_js.mjs        # scheduler, session selection, answer matching, every shipped drill
+python3 tools/check_deck.py          # card-level mistakes: word maps that do not rebuild their
+                                     # sentence, two cards answering one prompt, colliding ids
+python3 tools/coverage.py            # core-verb coverage and what is missing
+python3 tools/tenses.py              # which tenses the deck actually contains
+python3 tools/vocabulary.py          # what is met once and never again
+```
+
+Deploys happen on push to `master`: `.github/workflows/pages.yml` runs the
+checks and publishes `web/`.
 
 ## Things that will bite you
 
-- **Apple has no Persian dictation**, and there is no free on-device Persian
-  speech recognition anywhere on iOS. That is why the app checks typing rather
-  than speech. Text-to-speech was there and is gone: it needed a Farsi voice
-  installed by hand, so on the one device that matters it read nothing aloud.
-- **Gemini retires models aggressively** and the free tier has a hard daily
-  request ceiling shared across models. The client falls back through
-  `gemini-3.6-flash` → `gemini-3.5-flash` → `gemini-flash-latest`.
-- **Deleting a function by matching braces has eaten its neighbour three
-  times** — walking backwards from `{` runs into the doc comment above the
-  function before it. Every time the module still imported and the failure
-  waited for a button press. `check_js.mjs` now resolves every cross-module
-  call, so it fails in CI instead.
+- **Apple has no Persian dictation**, and no free on-device Persian speech
+  recognition on iOS, so the app checks typing rather than speech. Text-to-speech
+  was there and is gone: it needed a Farsi voice installed by hand.
 - **A sentence can pass every check and still be wrong.** `ما هوای بهار رو
-  نمی‌دونیم` parses, validates and is not something anyone says. That is what
-  `review_deck.py` is for; `check_deck.py` cannot see it.
+  نمی‌دونیم` parses, validates, and is not something anyone says. Nothing here can
+  see that; a native speaker can.
 - **iOS can evict web-app storage.** Install to the Home Screen rather than
-  leaving it a browser tab, and save a backup from Settings now and then.
-  Restoring maps through the Persian text, so it works on a new device too.
-
-## Checks
-
-```bash
-node tools/check_js.mjs
-node --test tools/test_js.mjs
-python3 tools/check_deck.py
-python3 tools/coverage.py
-python3 tools/review_deck.py                 # model review, resumes on quota
-```
+  leaving it a tab, and save a backup from Settings now and then.
+- **Deleting a function by matching braces has eaten its neighbour three times.**
+  `check_js.mjs` resolves every cross-module call so it fails in CI, not on a
+  button press.
 
 ## History
 
-A native SwiftUI client was built first and removed in favour of the PWA,
-because building for iOS requires Xcode. It is preserved in history:
+Things removed to keep this small are in git history. A Cloud Run backend with
+its Terraform, and the model-driven generation tools:
 
 ```bash
-git checkout f7f9bb7 -- FarsiVault FarsiVaultTests
+git checkout a64e723 -- backend infra docs       # the backend and its design notes
+git checkout 5193fea -- tools core               # the Gemini generation pipeline
+git checkout f7f9bb7 -- FarsiVault FarsiVaultTests   # the first, native SwiftUI client
 ```

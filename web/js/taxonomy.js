@@ -21,9 +21,8 @@ export function posTitle(pos) {
   return POS_TITLES[pos] ?? pos;
 }
 
-
-// instruction; a swap carries its own cue ("say it with ما"), because the cue
-// is the whole exercise. The sets themselves live in core/taxonomy.py.
+// A transformation has a fixed instruction; a swap carries its own cue ("say it
+// with ما"), because the cue is the whole exercise.
 export const TRANSFORM_TITLES = {
   negate: 'منفی‌ش کن',
   toPast: 'بذارش گذشته',
