@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 1775,
+  "count": 1799,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -73803,6 +73803,822 @@
       "alternatives": [],
       "source": "handwritten",
       "core": 1.0
+    },
+    {
+      "id": "331e16ea-b868-427e-948f-aa14bbaf3f5d",
+      "englishText": "I'm home!",
+      "farsiText": "اومدم خونه!",
+      "finglish": "umadam khune!",
+      "literalGloss": "I've come home",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اومدم",
+          "translit": "umadam",
+          "en": "I've come",
+          "pos": "verb"
+        },
+        {
+          "fa": "خونه",
+          "translit": "khune",
+          "en": "home",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "33118493-5d62-4bc6-afe4-5b7e1f8972dd",
+      "englishText": "Wake up, it's late.",
+      "farsiText": "پاشو، دیر شد.",
+      "finglish": "pâsho, dir shod.",
+      "literalGloss": "get up it's got late",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "پاشو",
+          "translit": "pâsho",
+          "en": "get up",
+          "pos": "verb"
+        },
+        {
+          "fa": "دیر شد",
+          "translit": "dir shod",
+          "en": "it's got late",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "7d00afb6-aba5-402b-a7c2-72fe7522d541",
+      "englishText": "I'm going to bed.",
+      "farsiText": "می‌رم بخوابم.",
+      "finglish": "miram bekhâbam.",
+      "literalGloss": "I'm going to sleep",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌رم",
+          "translit": "miram",
+          "en": "I'm going",
+          "pos": "verb"
+        },
+        {
+          "fa": "بخوابم",
+          "translit": "bekhâbam",
+          "en": "to sleep",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "fe282564-b5e3-4ef8-ae6d-fe9d91295591",
+      "englishText": "Dinner's ready.",
+      "farsiText": "شام حاضره.",
+      "finglish": "shâm hâzere.",
+      "literalGloss": "dinner is ready",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "شام",
+          "translit": "shâm",
+          "en": "dinner",
+          "pos": "noun"
+        },
+        {
+          "fa": "حاضره",
+          "translit": "hâzere",
+          "en": "is ready",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "82fd9064-e840-4cae-8722-ad7350fefa57",
+      "englishText": "Come and eat.",
+      "farsiText": "بیا غذا بخور.",
+      "finglish": "biyâ ghazâ bokhor.",
+      "literalGloss": "come food eat",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بیا",
+          "translit": "biyâ",
+          "en": "come",
+          "pos": "verb"
+        },
+        {
+          "fa": "غذا",
+          "translit": "ghazâ",
+          "en": "food",
+          "pos": "noun"
+        },
+        {
+          "fa": "بخور",
+          "translit": "bokhor",
+          "en": "eat",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "9a3ee406-cf33-44bb-b7c9-8ca8200973fd",
+      "englishText": "Mum, what's for dinner?",
+      "farsiText": "مامان، شام چی داریم؟",
+      "finglish": "mâmân, shâm chi dârim?",
+      "literalGloss": "mum dinner what do we have",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "مامان",
+          "translit": "mâmân",
+          "en": "mum",
+          "pos": "noun"
+        },
+        {
+          "fa": "شام",
+          "translit": "shâm",
+          "en": "dinner",
+          "pos": "noun"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "داریم",
+          "translit": "dârim",
+          "en": "do we have",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "438faa22-d9e6-492d-9298-2c9d3e1f052b",
+      "englishText": "I'm going out.",
+      "farsiText": "دارم می‌رم بیرون.",
+      "finglish": "dâram miram birun.",
+      "literalGloss": "I am going out",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I am",
+          "pos": "verb"
+        },
+        {
+          "fa": "می‌رم",
+          "translit": "miram",
+          "en": "going",
+          "pos": "verb"
+        },
+        {
+          "fa": "بیرون",
+          "translit": "birun",
+          "en": "out",
+          "pos": "adverb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "82bc2439-5311-47b1-8e35-17761f4beb17",
+      "englishText": "Wash your hands.",
+      "farsiText": "دستات رو بشور.",
+      "finglish": "dastât ro beshur.",
+      "literalGloss": "your hands object marker wash",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دستات",
+          "translit": "dastât",
+          "en": "your hands",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "بشور",
+          "translit": "beshur",
+          "en": "wash",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "7182be1a-c857-458f-90ae-cc936edfa7c1",
+      "englishText": "Open the window.",
+      "farsiText": "پنجره رو باز کن.",
+      "finglish": "panjere ro bâz kon.",
+      "literalGloss": "window object marker open",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "پنجره",
+          "translit": "panjere",
+          "en": "window",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "باز کن",
+          "translit": "bâz kon",
+          "en": "open",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "ec8acdb6-144b-4d25-b920-5e2fbcfba20a",
+      "englishText": "Close the window.",
+      "farsiText": "پنجره رو ببند.",
+      "finglish": "panjere ro beband.",
+      "literalGloss": "window object marker close",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "پنجره",
+          "translit": "panjere",
+          "en": "window",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "ببند",
+          "translit": "beband",
+          "en": "close",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "484cc160-5b03-44cb-8a92-5d406d1e1124",
+      "englishText": "Do you want anything?",
+      "farsiText": "چیزی نمی‌خوای؟",
+      "finglish": "chizi nemikhây?",
+      "literalGloss": "anything don't you want",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چیزی",
+          "translit": "chizi",
+          "en": "anything",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "نمی‌خوای",
+          "translit": "nemikhây",
+          "en": "don't you want",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "05d3e85b-19fd-45b4-8b2b-7deb29349656",
+      "englishText": "Who is it?",
+      "farsiText": "کیه؟",
+      "finglish": "kie?",
+      "literalGloss": "who is it",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "کیه",
+          "translit": "kie",
+          "en": "who is it",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "5a627258-52e9-49c0-8a64-5e8632e8c72f",
+      "englishText": "I love you.",
+      "farsiText": "دوستت دارم.",
+      "finglish": "dustet dâram.",
+      "literalGloss": "you I love",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دوستت",
+          "translit": "dustet",
+          "en": "you",
+          "pos": "noun"
+        },
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I love",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "25337b2c-6384-4566-b1e2-e8fe1696ced8",
+      "englishText": "I miss you.",
+      "farsiText": "دلم برات تنگ شده.",
+      "finglish": "delam barât tang shode.",
+      "literalGloss": "my heart for you has become tight",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دلم",
+          "translit": "delam",
+          "en": "my heart",
+          "pos": "noun"
+        },
+        {
+          "fa": "برات",
+          "translit": "barât",
+          "en": "for you",
+          "pos": "preposition"
+        },
+        {
+          "fa": "تنگ شده",
+          "translit": "tang shode",
+          "en": "has become tight",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "d9d2e0ef-722d-4963-867b-0290cee0ed61",
+      "englishText": "Hurry up, we're late.",
+      "farsiText": "زود باش، دیرمون شد.",
+      "finglish": "zud bâsh, diremun shod.",
+      "literalGloss": "quickly be we're late",
+      "difficulty": 1,
+      "situation": "apologising or explaining lateness",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "زود",
+          "translit": "zud",
+          "en": "quickly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "باش",
+          "translit": "bâsh",
+          "en": "be",
+          "pos": "verb"
+        },
+        {
+          "fa": "دیرمون شد",
+          "translit": "diremun shod",
+          "en": "we're late",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "bee0d420-9053-440a-893c-69fc47575e40",
+      "englishText": "Turn the light off when you go.",
+      "farsiText": "رفتی چراغ رو خاموش کن.",
+      "finglish": "rafti cherâgh ro khâmush kon.",
+      "literalGloss": "you went light object marker turn off",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "رفتی",
+          "translit": "rafti",
+          "en": "you went",
+          "pos": "verb"
+        },
+        {
+          "fa": "چراغ",
+          "translit": "cherâgh",
+          "en": "light",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "خاموش کن",
+          "translit": "khâmush kon",
+          "en": "turn off",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "edeb1365-730d-4fa0-81ef-dc95e1324461",
+      "englishText": "Sleep well.",
+      "farsiText": "خوب بخوابی.",
+      "finglish": "khub bekhâbi.",
+      "literalGloss": "well may you sleep",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خوب",
+          "translit": "khub",
+          "en": "well",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بخوابی",
+          "translit": "bekhâbi",
+          "en": "may you sleep",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "d5b85e64-8108-457e-9701-7ae78451025a",
+      "englishText": "I'll be back late tonight.",
+      "farsiText": "امشب دیر میام خونه.",
+      "finglish": "emshab dir miyâm khune.",
+      "literalGloss": "tonight late I'll come home",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "امشب",
+          "translit": "emshab",
+          "en": "tonight",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دیر",
+          "translit": "dir",
+          "en": "late",
+          "pos": "adverb"
+        },
+        {
+          "fa": "میام",
+          "translit": "miyâm",
+          "en": "I'll come",
+          "pos": "verb"
+        },
+        {
+          "fa": "خونه",
+          "translit": "khune",
+          "en": "home",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "6a481f66-fe84-4873-bdfb-ec77d42fdd9f",
+      "englishText": "I'll call you when I get there.",
+      "farsiText": "رسیدم بهت زنگ می‌زنم.",
+      "finglish": "residam behet zang mizanam.",
+      "literalGloss": "I arrived to you I'll call",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "رسیدم",
+          "translit": "residam",
+          "en": "I arrived",
+          "pos": "verb"
+        },
+        {
+          "fa": "بهت",
+          "translit": "behet",
+          "en": "to you",
+          "pos": "preposition"
+        },
+        {
+          "fa": "زنگ می‌زنم",
+          "translit": "zang mizanam",
+          "en": "I'll call",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "5deb99de-8197-452a-bfbe-29b66217544a",
+      "englishText": "Have you eaten anything?",
+      "farsiText": "چیزی خوردی؟",
+      "finglish": "chizi khordi?",
+      "literalGloss": "anything have you eaten",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چیزی",
+          "translit": "chizi",
+          "en": "anything",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "خوردی",
+          "translit": "khordi",
+          "en": "have you eaten",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "d90606e2-dfb7-4dfe-9c60-acf45b74e57f",
+      "englishText": "Shall I make you some tea?",
+      "farsiText": "برات چای بریزم؟",
+      "finglish": "barât châi berizam?",
+      "literalGloss": "for you tea shall I pour",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "برات",
+          "translit": "barât",
+          "en": "for you",
+          "pos": "preposition"
+        },
+        {
+          "fa": "چای",
+          "translit": "châi",
+          "en": "tea",
+          "pos": "noun"
+        },
+        {
+          "fa": "بریزم",
+          "translit": "berizam",
+          "en": "shall I pour",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "cafba4fb-dbf0-46c1-94b2-65e39d4855e2",
+      "englishText": "Where did you put my keys?",
+      "farsiText": "کلیدام رو کجا گذاشتی؟",
+      "finglish": "kelidâm ro kojâ gozâshti?",
+      "literalGloss": "my keys object marker where did you put",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "کلیدام",
+          "translit": "kelidâm",
+          "en": "my keys",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "کجا",
+          "translit": "kojâ",
+          "en": "where",
+          "pos": "question word"
+        },
+        {
+          "fa": "گذاشتی",
+          "translit": "gozâshti",
+          "en": "did you put",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "cb102fb5-86ca-4ffe-a725-fd09c5d79912",
+      "englishText": "I'm cooking, come and help.",
+      "farsiText": "دارم غذا درست می‌کنم، بیا کمک.",
+      "finglish": "dâram ghazâ dorost mikonam, biyâ komak.",
+      "literalGloss": "I am food making come help",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I am",
+          "pos": "verb"
+        },
+        {
+          "fa": "غذا",
+          "translit": "ghazâ",
+          "en": "food",
+          "pos": "noun"
+        },
+        {
+          "fa": "درست می‌کنم",
+          "translit": "dorost mikonam",
+          "en": "making",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "بیا",
+          "translit": "biyâ",
+          "en": "come",
+          "pos": "verb"
+        },
+        {
+          "fa": "کمک",
+          "translit": "komak",
+          "en": "help",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "5e63d028-cb7a-4c2c-ba76-dfbd2460f526",
+      "englishText": "Has anyone seen my phone?",
+      "farsiText": "کسی گوشیمو ندیده؟",
+      "finglish": "kasi gushimo nadide?",
+      "literalGloss": "anyone my phone hasn't seen",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "کسی",
+          "translit": "kasi",
+          "en": "anyone",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "گوشیمو",
+          "translit": "gushimo",
+          "en": "my phone",
+          "pos": "noun"
+        },
+        {
+          "fa": "ندیده",
+          "translit": "nadide",
+          "en": "hasn't seen",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
     }
   ]
 }
