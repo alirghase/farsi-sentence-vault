@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 1728,
+  "count": 1744,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -72231,6 +72231,506 @@
           "translit": "harf bezanam",
           "en": "to speak",
           "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "1cb1957b-a986-4a19-8d90-2a3d11136ec6",
+      "englishText": "Ah, I see.",
+      "farsiText": "آهان، که این‌طور.",
+      "finglish": "âhân, ke intor.",
+      "literalGloss": "ah so that's how it is",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "آهان",
+          "translit": "âhân",
+          "en": "ah",
+          "pos": "expression"
+        },
+        {
+          "fa": "که این‌طور",
+          "translit": "ke intor",
+          "en": "so that's how it is",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "27de2e47-b456-4a20-8971-babe7b82df40",
+      "englishText": "Ah, now I understand.",
+      "farsiText": "آهان، حالا فهمیدم.",
+      "finglish": "âhân, hâlâ fahmidam.",
+      "literalGloss": "ah now I understood",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "آهان",
+          "translit": "âhân",
+          "en": "ah",
+          "pos": "expression"
+        },
+        {
+          "fa": "حالا",
+          "translit": "hâlâ",
+          "en": "now",
+          "pos": "adverb"
+        },
+        {
+          "fa": "فهمیدم",
+          "translit": "fahmidam",
+          "en": "I understood",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "6ea964f4-7310-4a55-9ba3-c5feb723f030",
+      "englishText": "Yeah, exactly.",
+      "farsiText": "آره دیگه.",
+      "finglish": "âre dige.",
+      "literalGloss": "yeah exactly",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "آره",
+          "translit": "âre",
+          "en": "yeah",
+          "pos": "expression"
+        },
+        {
+          "fa": "دیگه",
+          "translit": "dige",
+          "en": "exactly",
+          "pos": "particle"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "19fa197b-d78a-4cec-af02-267c0f7f1f43",
+      "englishText": "Okay then.",
+      "farsiText": "باشه پس.",
+      "finglish": "bâshe pas.",
+      "literalGloss": "okay then",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "باشه",
+          "translit": "bâshe",
+          "en": "okay",
+          "pos": "expression"
+        },
+        {
+          "fa": "پس",
+          "translit": "pas",
+          "en": "then",
+          "pos": "conjunction"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "cb9b65c9-36c5-40af-afcd-5f30657051e2",
+      "englishText": "Don't worry about it.",
+      "farsiText": "بی‌خیال.",
+      "finglish": "bikhiyâl.",
+      "literalGloss": "never mind",
+      "difficulty": 1,
+      "situation": "disagreeing politely",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بی‌خیال",
+          "translit": "bikhiyâl",
+          "en": "never mind",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "161ce795-b5f2-4190-8749-46ac8d507941",
+      "englishText": "Forget it.",
+      "farsiText": "ولش کن.",
+      "finglish": "velesh kon.",
+      "literalGloss": "let it go",
+      "difficulty": 1,
+      "situation": "disagreeing politely",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "ولش کن",
+          "translit": "velesh kon",
+          "en": "let it go",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "617c1f0a-c1b1-45fc-996e-7ec5315c1fb8",
+      "englishText": "That's all right.",
+      "farsiText": "اشکال نداره.",
+      "finglish": "eshkâl nadâre.",
+      "literalGloss": "problem there isn't",
+      "difficulty": 1,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اشکال",
+          "translit": "eshkâl",
+          "en": "problem",
+          "pos": "noun"
+        },
+        {
+          "fa": "نداره",
+          "translit": "nadâre",
+          "en": "there isn't",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "abdb5c61-7e4d-4617-a2b9-7db8a21a5da0",
+      "englishText": "Brilliant!",
+      "farsiText": "ایول!",
+      "finglish": "eyval!",
+      "literalGloss": "brilliant",
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "ایول",
+          "translit": "eyval",
+          "en": "brilliant",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "503b491c-8ea1-422e-aae6-126568114754",
+      "englishText": "Lucky you!",
+      "farsiText": "خوش به حالت!",
+      "finglish": "khosh be hâlet!",
+      "literalGloss": "happy to your state",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خوش",
+          "translit": "khosh",
+          "en": "happy",
+          "pos": "adjective"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "حالت",
+          "translit": "hâlet",
+          "en": "your state",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "e7366d47-6eec-4389-bea7-af55b504467a",
+      "englishText": "Poor thing!",
+      "farsiText": "طفلکی!",
+      "finglish": "tefleki!",
+      "literalGloss": "poor thing",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "طفلکی",
+          "translit": "tefleki",
+          "en": "poor thing",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "29e8f513-ac16-4932-a27a-a1bce70cf187",
+      "englishText": "Same here.",
+      "farsiText": "منم همین‌طور.",
+      "finglish": "manam hamintor.",
+      "literalGloss": "me too the same",
+      "difficulty": 1,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "منم",
+          "translit": "manam",
+          "en": "me too",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "همین‌طور",
+          "translit": "hamintor",
+          "en": "the same",
+          "pos": "adverb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "e744aaf5-36d9-4f3b-8e19-58d303663b00",
+      "englishText": "So, what happened next?",
+      "farsiText": "خب، بعدش چی شد؟",
+      "finglish": "khob, ba'desh chi shod?",
+      "literalGloss": "well after it what happened",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خب",
+          "translit": "khob",
+          "en": "well",
+          "pos": "particle"
+        },
+        {
+          "fa": "بعدش",
+          "translit": "ba'desh",
+          "en": "after it",
+          "pos": "adverb"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "شد",
+          "translit": "shod",
+          "en": "happened",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "8ec445f1-bfba-4c96-8dbb-73ac1ef73b95",
+      "englishText": "Yes, go on.",
+      "farsiText": "آره، بگو.",
+      "finglish": "âre, begu.",
+      "literalGloss": "yes say",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "آره",
+          "translit": "âre",
+          "en": "yes",
+          "pos": "expression"
+        },
+        {
+          "fa": "بگو",
+          "translit": "begu",
+          "en": "say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "ea560181-a2b1-4258-948c-11029ab3a4d3",
+      "englishText": "What a shame!",
+      "farsiText": "حیف شد!",
+      "finglish": "heyf shod!",
+      "literalGloss": "a pity it became",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "حیف",
+          "translit": "heyf",
+          "en": "a pity",
+          "pos": "noun"
+        },
+        {
+          "fa": "شد",
+          "translit": "shod",
+          "en": "it became",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "3372b410-cfe5-4405-a0f8-60bf4c5a2c35",
+      "englishText": "Remind me to call my mum.",
+      "farsiText": "یادم بنداز به مامانم زنگ بزنم.",
+      "finglish": "yâdam bendâz be mâmânam zang bezanam.",
+      "literalGloss": "my memory throw to my mum I call",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یادم",
+          "translit": "yâdam",
+          "en": "my memory",
+          "pos": "noun"
+        },
+        {
+          "fa": "بنداز",
+          "translit": "bendâz",
+          "en": "throw",
+          "pos": "verb"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "مامانم",
+          "translit": "mâmânam",
+          "en": "my mum",
+          "pos": "noun"
+        },
+        {
+          "fa": "زنگ بزنم",
+          "translit": "zang bezanam",
+          "en": "I call",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "b39df020-a90d-4b92-80b7-b4f26e86b754",
+      "englishText": "Yeah, what can you do.",
+      "farsiText": "آره دیگه، چی کار می‌شه کرد.",
+      "finglish": "âre dige, chi kâr mishe kard.",
+      "literalGloss": "yeah well what can be done",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "آره",
+          "translit": "âre",
+          "en": "yeah",
+          "pos": "expression"
+        },
+        {
+          "fa": "دیگه",
+          "translit": "dige",
+          "en": "well",
+          "pos": "particle"
+        },
+        {
+          "fa": "چی کار",
+          "translit": "chi kâr",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌شه",
+          "translit": "mishe",
+          "en": "can be",
+          "pos": "verb"
+        },
+        {
+          "fa": "کرد",
+          "translit": "kard",
+          "en": "done",
+          "pos": "verb"
         }
       ],
       "alternatives": [],

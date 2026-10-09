@@ -1,0 +1,342 @@
+{
+  "note": "Reacting in conversation: ah I see, okay then, never mind, lucky you, poor thing, go on, what happened next.",
+  "difficulty": 1,
+  "sentences": [
+    {
+      "en": "Ah, I see.",
+      "fa": "آهان، که این‌طور.",
+      "tr": "âhân, ke intor.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آهان",
+          "âhân",
+          "ah",
+          "expression"
+        ],
+        [
+          "که این‌طور",
+          "ke intor",
+          "so that's how it is",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Ah, now I understand.",
+      "fa": "آهان، حالا فهمیدم.",
+      "tr": "âhân, hâlâ fahmidam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آهان",
+          "âhân",
+          "ah",
+          "expression"
+        ],
+        [
+          "حالا",
+          "hâlâ",
+          "now",
+          "adverb"
+        ],
+        [
+          "فهمیدم",
+          "fahmidam",
+          "I understood",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Yeah, exactly.",
+      "fa": "آره دیگه.",
+      "tr": "âre dige.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آره",
+          "âre",
+          "yeah",
+          "expression"
+        ],
+        [
+          "دیگه",
+          "dige",
+          "exactly",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Okay then.",
+      "fa": "باشه پس.",
+      "tr": "bâshe pas.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باشه",
+          "bâshe",
+          "okay",
+          "expression"
+        ],
+        [
+          "پس",
+          "pas",
+          "then",
+          "conjunction"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't worry about it.",
+      "fa": "بی‌خیال.",
+      "tr": "bikhiyâl.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بی‌خیال",
+          "bikhiyâl",
+          "never mind",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Forget it.",
+      "fa": "ولش کن.",
+      "tr": "velesh kon.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ولش کن",
+          "velesh kon",
+          "let it go",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's all right.",
+      "fa": "اشکال نداره.",
+      "tr": "eshkâl nadâre.",
+      "sit": "negotiating or asking for a favour",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اشکال",
+          "eshkâl",
+          "problem",
+          "noun"
+        ],
+        [
+          "نداره",
+          "nadâre",
+          "there isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Brilliant!",
+      "fa": "ایول!",
+      "tr": "eyval!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ایول",
+          "eyval",
+          "brilliant",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Lucky you!",
+      "fa": "خوش به حالت!",
+      "tr": "khosh be hâlet!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خوش",
+          "khosh",
+          "happy",
+          "adjective"
+        ],
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "حالت",
+          "hâlet",
+          "your state",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Poor thing!",
+      "fa": "طفلکی!",
+      "tr": "tefleki!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "طفلکی",
+          "tefleki",
+          "poor thing",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Same here.",
+      "fa": "منم همین‌طور.",
+      "tr": "manam hamintor.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "منم",
+          "manam",
+          "me too",
+          "pronoun"
+        ],
+        [
+          "همین‌طور",
+          "hamintor",
+          "the same",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "So, what happened next?",
+      "fa": "خب، بعدش چی شد؟",
+      "tr": "khob, ba'desh chi shod?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خب",
+          "khob",
+          "well",
+          "particle"
+        ],
+        [
+          "بعدش",
+          "ba'desh",
+          "after it",
+          "adverb"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "شد",
+          "shod",
+          "happened",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Yes, go on.",
+      "fa": "آره، بگو.",
+      "tr": "âre, begu.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آره",
+          "âre",
+          "yes",
+          "expression"
+        ],
+        [
+          "بگو",
+          "begu",
+          "say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What a shame!",
+      "fa": "حیف شد!",
+      "tr": "heyf shod!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "حیف",
+          "heyf",
+          "a pity",
+          "noun"
+        ],
+        [
+          "شد",
+          "shod",
+          "it became",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}
