@@ -1,5 +1,5 @@
 {
-  "count": 523,
+  "count": 502,
   "transforms": [
     {
       "id": "7026cae7-d352-5780-90d1-103227742cc0",
@@ -52,43 +52,6 @@
       "grammarTags": [
         "colloquial",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "3380fb62-37e9-5e4e-868c-c9733191ab9f",
-      "kind": "transform",
-      "stemId": "c31556c3-5cee-494e-8eba-a959e42ef32d",
-      "stem": "بهم تخفیف بده.",
-      "stemEn": "Give me a discount.",
-      "transform": "negate",
-      "farsiText": "بهم تخفیف نده.",
-      "finglish": "behem takhfif nade.",
-      "englishText": "Don't give me a discount.",
-      "difficulty": 1,
-      "situation": "negotiating or asking for a favour",
-      "grammarTags": [
-        "compound-verb",
-        "pronoun-clitic",
-        "colloquial"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "46baa6bd-06d5-50b3-93af-a3cc04fb5192",
-      "kind": "transform",
-      "stemId": "0e75c956-bc7f-4217-979c-0cd77b78611c",
-      "stem": "ببخشید، دیر کردم.",
-      "stemEn": "Excuse me, I'm late.",
-      "transform": "negate",
-      "farsiText": "ببخشید، دیر نکردم.",
-      "finglish": "bebakhshid, dir nakardam.",
-      "englishText": "Excuse me, I'm not late.",
-      "difficulty": 1,
-      "situation": "apologising or explaining lateness",
-      "grammarTags": [
-        "compound-verb",
-        "colloquial"
       ],
       "alternatives": []
     },
@@ -350,24 +313,6 @@
       "alternatives": []
     },
     {
-      "id": "5ce39574-5935-5aa5-8d55-975c6d12e021",
-      "kind": "transform",
-      "stemId": "25aa6a6d-820e-4fa6-a822-be5f860359d3",
-      "stem": "بفرما اینجا بشین.",
-      "stemEn": "Please sit down here.",
-      "transform": "negate",
-      "farsiText": "بفرما اینجا نشین.",
-      "finglish": "bafarmâ injâ nashin.",
-      "englishText": "Please don't sit here.",
-      "difficulty": 1,
-      "situation": "hosting or visiting someone's home",
-      "grammarTags": [
-        "formality",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "4482d892-e207-5fe3-bc54-55857423944a",
       "kind": "transform",
       "stemId": "c92f0c84-f572-45e3-8c8d-6a609682f6ee",
@@ -382,24 +327,6 @@
       "grammarTags": [
         "colloquial",
         "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "c2cf1f1d-9052-51b0-bf36-b260bfeaac96",
-      "kind": "transform",
-      "stemId": "6afbb169-d1c3-4fc1-823c-35f390958b79",
-      "stem": "مرسی، من سیرم.",
-      "stemEn": "Thank you, I am full.",
-      "transform": "negate",
-      "farsiText": "مرسی، من سیر نیستم.",
-      "finglish": "mersi, man sir nistam.",
-      "englishText": "Thanks, I am not full.",
-      "difficulty": 1,
-      "situation": "hosting or visiting someone's home",
-      "grammarTags": [
-        "pronoun-clitic",
-        "colloquial"
       ],
       "alternatives": []
     },
@@ -561,23 +488,6 @@
       "situation": "talking about work or study",
       "grammarTags": [
         "colloquial"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "27d886b1-5c67-5226-8211-5337d239dc61",
-      "kind": "transform",
-      "stemId": "66dfff4e-e58e-4185-a6da-f3d13d5e5282",
-      "stem": "کجا کار می‌کنی؟",
-      "stemEn": "Where do you work?",
-      "transform": "negate",
-      "farsiText": "کجا کار نمی‌کنی؟",
-      "finglish": "kojâ kâr nemikoni?",
-      "englishText": "Where don't you work?",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "compound-verb"
       ],
       "alternatives": []
     },
@@ -1141,24 +1051,6 @@
       "alternatives": []
     },
     {
-      "id": "c41d9823-0903-567d-82bc-1cfc86c11339",
-      "kind": "transform",
-      "stemId": "51854276-65b1-4e93-9ac6-497dce63b2d8",
-      "stem": "می‌خوام الان بخوابم.",
-      "stemEn": "I want to sleep now.",
-      "transform": "toPast",
-      "farsiText": "می‌خواستم الان بخوابم.",
-      "finglish": "mikhâstam alân bekhâbam.",
-      "englishText": "I wanted to sleep now.",
-      "difficulty": 1,
-      "situation": "at the doctor or pharmacy",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "fd0ab09e-e6bc-56d3-8c6f-5a0a48a603cb",
       "kind": "transform",
       "stemId": "a586ea37-9dac-4a6f-8c28-193742b403da",
@@ -1298,24 +1190,6 @@
       "grammarTags": [
         "colloquial",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "1b4f1fc4-e546-5fb0-9833-233fb60dada9",
-      "kind": "transform",
-      "stemId": "b1e2264a-f59e-4d31-9696-a532a4388c4c",
-      "stem": "واسه شنبه نمی‌خوام.",
-      "stemEn": "I don't want it for Saturday.",
-      "transform": "toPast",
-      "farsiText": "واسه شنبه نمی‌خواستم.",
-      "finglish": "vâse shanbe nemikhâstam.",
-      "englishText": "I didn't want it for Saturday.",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "preposition"
       ],
       "alternatives": []
     },
@@ -1487,7 +1361,7 @@
       "transform": "toPast",
       "farsiText": "می‌شد کمکم کنی؟",
       "finglish": "mishod komakam koni?",
-      "englishText": "Could you have helped me?",
+      "englishText": "Could you possibly help me?",
       "difficulty": 1,
       "situation": "negotiating or asking for a favour",
       "grammarTags": [
@@ -2108,24 +1982,6 @@
       "alternatives": []
     },
     {
-      "id": "d71947f4-faeb-5130-aade-f79c3ef77e7b",
-      "kind": "transform",
-      "stemId": "6ea12aa4-fcfb-4e38-8949-e371bd014da6",
-      "stem": "امروز چی می‌پزی؟",
-      "stemEn": "What are you cooking today?",
-      "transform": "negate",
-      "farsiText": "امروز چی نمی‌پزی؟",
-      "finglish": "emruz chi nemipazi?",
-      "englishText": "What aren't you cooking today?",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "verb-tense",
-        "word-order"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "962d4f54-9b0b-543a-9a40-df7595ba2329",
       "kind": "transform",
       "stemId": "050dbc1e-7483-4ea9-be90-828ed5b14223",
@@ -2414,25 +2270,6 @@
       "alternatives": []
     },
     {
-      "id": "7a81ee4a-f909-50ab-9407-6c7ff92e2210",
-      "kind": "transform",
-      "stemId": "e227d79a-fc96-490f-b324-e5d15951cc06",
-      "stem": "چنگالت رو بردار!",
-      "stemEn": "Pick up your fork!",
-      "transform": "negate",
-      "farsiText": "چنگالت رو برندار!",
-      "finglish": "changâlet ro barnadâr!",
-      "englishText": "Don't pick up your fork!",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "6676884b-3bb7-5b8d-b339-e7bc2a716983",
       "kind": "transform",
       "stemId": "eedaae40-7f44-4408-ada3-98be84a8dbaa",
@@ -2565,24 +2402,6 @@
       "alternatives": []
     },
     {
-      "id": "b12b9ff6-5b02-5d01-98e1-9fb8a9bc0b51",
-      "kind": "transform",
-      "stemId": "c8e403cf-4da5-42ed-a3dc-ab150f8f50ac",
-      "stem": "چی می‌خوای عزیزم؟",
-      "stemEn": "What do you want, dear?",
-      "transform": "negate",
-      "farsiText": "چی نمی‌خوای عزیزم؟",
-      "finglish": "chi nemikhây azizam?",
-      "englishText": "What don't you want, dear?",
-      "difficulty": 1,
-      "situation": "compliments and thanking (taarof)",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "a7207158-219e-51a9-bf30-7c09bf7913ea",
       "kind": "transform",
       "stemId": "0c61e098-8a4a-46c3-9d8f-895149e0f330",
@@ -2674,24 +2493,6 @@
       "alternatives": []
     },
     {
-      "id": "f21c83a6-a642-5ea2-90e2-9d171ff47f03",
-      "kind": "transform",
-      "stemId": "a586ea37-9dac-4a6f-8c28-193742b403da",
-      "stem": "اون کی می‌آد؟",
-      "stemEn": "When does he come?",
-      "transform": "negate",
-      "farsiText": "اون کی نمیاد؟",
-      "finglish": "un key nemiâd?",
-      "englishText": "When does he not come?",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "word-order"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "f456e8c0-2fa3-543a-a860-8a1ba3de2abe",
       "kind": "transform",
       "stemId": "f21f7c8f-e9d0-47cf-81d9-f0d0f5532136",
@@ -2741,25 +2542,6 @@
       "grammarTags": [
         "colloquial",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "f5f0ab2d-acfd-538b-85a2-117e1c1cd5d4",
-      "kind": "transform",
-      "stemId": "b96186a2-a4be-4cc7-a421-cb4eba789082",
-      "stem": "شماره‌م رو بگیر.",
-      "stemEn": "Take my number.",
-      "transform": "negate",
-      "farsiText": "شماره‌م رو نگیر.",
-      "finglish": "shomâram ro nagir.",
-      "englishText": "Don't take my number.",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "pronoun-clitic"
       ],
       "alternatives": []
     },
@@ -2818,25 +2600,6 @@
       "alternatives": []
     },
     {
-      "id": "b09e3b67-56c0-550d-b559-90a55215e4e7",
-      "kind": "transform",
-      "stemId": "d5dd7d15-a028-4fa3-8b04-d9fb916bcc99",
-      "stem": "دلم خیلی گرفت.",
-      "stemEn": "I felt very sad.",
-      "transform": "negate",
-      "farsiText": "دلم خیلی نگرفت.",
-      "finglish": "delam kheyli nagereft.",
-      "englishText": "I didn't feel very sad.",
-      "difficulty": 1,
-      "situation": "describing how you feel",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "compound-verb"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "ee52eab6-28e8-5c96-b409-a25c5ae4716d",
       "kind": "transform",
       "stemId": "082c2dc9-b100-494b-ac8c-ca688c7e2cf1",
@@ -2886,23 +2649,6 @@
       "grammarTags": [
         "colloquial",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "47d83ed7-d4b5-51f8-a759-a8b20062d466",
-      "kind": "transform",
-      "stemId": "2d2fe771-d9d2-40e4-ba36-ab22cf9ae38e",
-      "stem": "الان چی می‌خوای؟",
-      "stemEn": "What do you want now?",
-      "transform": "negate",
-      "farsiText": "الان چی نمی‌خوای؟",
-      "finglish": "alân chi nemikhây?",
-      "englishText": "What don't you want now?",
-      "difficulty": 1,
-      "situation": "describing how you feel",
-      "grammarTags": [
-        "colloquial"
       ],
       "alternatives": []
     },
@@ -2960,23 +2706,6 @@
       "alternatives": []
     },
     {
-      "id": "86610107-0d13-5d1e-9d3f-60b20b319c76",
-      "kind": "transform",
-      "stemId": "c685a4fd-13d8-4bb3-88fc-a41d53e91ce3",
-      "stem": "یکم دیر می‌رسم.",
-      "stemEn": "I'm a bit late.",
-      "transform": "negate",
-      "farsiText": "یکم دیر نمی‌رسم.",
-      "finglish": "yekam dir nemirasam.",
-      "englishText": "I won't arrive a bit late.",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "colloquial"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "3d0b257d-ff9c-53c3-87e7-a1d6e2e8a9ad",
       "kind": "transform",
       "stemId": "3923e73e-bcc7-455a-8495-91b89d95e6ba",
@@ -3011,23 +2740,6 @@
       "alternatives": []
     },
     {
-      "id": "726fee44-05dc-57fb-931a-e4bc982e5e5b",
-      "kind": "transform",
-      "stemId": "45775330-98c3-4649-ad07-4e05cbd15a44",
-      "stem": "زود یاد می‌گیری.",
-      "stemEn": "You'll learn quickly.",
-      "transform": "negate",
-      "farsiText": "زود یاد نمی‌گیری.",
-      "finglish": "zud yâd nemigiri.",
-      "englishText": "You won't learn quickly.",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "compound-verb"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "0ad81cdf-e652-54e4-9da6-a43a9dddbea9",
       "kind": "transform",
       "stemId": "d60a133d-f0a3-4cd6-a399-82633af3fe30",
@@ -3041,23 +2753,6 @@
       "situation": "complaining about something not working",
       "grammarTags": [
         "compound-verb"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "8a5a839c-5185-5108-910f-011ce8db6509",
-      "kind": "transform",
-      "stemId": "62942bf0-368a-48a5-9e42-273eb6a837c7",
-      "stem": "چای درست کنم؟",
-      "stemEn": "Shall I make some tea?",
-      "transform": "negate",
-      "farsiText": "چای درست نکنم؟",
-      "finglish": "chây dorost nakonam?",
-      "englishText": "Shall I not make some tea?",
-      "difficulty": 1,
-      "situation": "hosting or visiting someone's home",
-      "grammarTags": [
-        "subjunctive"
       ],
       "alternatives": []
     },
@@ -3388,25 +3083,6 @@
       "alternatives": []
     },
     {
-      "id": "a6017f34-b892-5809-ae81-698aeb22e981",
-      "kind": "transform",
-      "stemId": "f10df981-9a64-47ab-8b97-c883f0351a88",
-      "stem": "کجا باید پیاده بشم؟",
-      "stemEn": "Where should I get off?",
-      "transform": "negate",
-      "farsiText": "کجا نباید پیاده بشم؟",
-      "finglish": "kojâ nabâyad piyâde besham?",
-      "englishText": "Where should I not get off?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "compound-verb",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "63cd9356-8853-58c3-915f-b0f80a7a81c8",
       "kind": "transform",
       "stemId": "1c55d4a5-5585-4f5c-a949-cefeed3e62b9",
@@ -3604,24 +3280,6 @@
       "alternatives": []
     },
     {
-      "id": "014028dc-66ca-5706-811a-8bea718cc09c",
-      "kind": "transform",
-      "stemId": "49d2cc26-8b6e-4ee5-ba57-4d949286d56e",
-      "stem": "دلم برات خیلی تنگه.",
-      "stemEn": "I miss you a lot.",
-      "transform": "negate",
-      "farsiText": "دلم برات خیلی تنگ نیست.",
-      "finglish": "delam barât kheyli tang nist.",
-      "englishText": "I don't miss you very much.",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "pronoun-clitic",
-        "colloquial"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "ca7ee0f3-9ec1-515a-953e-1088ddbb1519",
       "kind": "transform",
       "stemId": "d1912036-61d4-4fa8-bf42-bbabc3995643",
@@ -3694,24 +3352,6 @@
       "alternatives": []
     },
     {
-      "id": "2a39908c-9ce8-5906-9301-1a89bc853339",
-      "kind": "transform",
-      "stemId": "a11b956f-4e13-4b7f-a161-01140b0b1b00",
-      "stem": "من رو کجا می‌بری؟",
-      "stemEn": "Where are you taking me?",
-      "transform": "negate",
-      "farsiText": "من رو کجا نمی‌بری؟",
-      "finglish": "man ro kojâ nemibari?",
-      "englishText": "Where aren't you taking me?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "a28d4f10-8891-5bd6-bd70-d40b97910b88",
       "kind": "transform",
       "stemId": "c2ecaa8c-d5a6-4ec7-8cc1-bff2d823f67e",
@@ -3728,25 +3368,6 @@
         "ra-marker",
         "ezafe",
         "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "2e5a2f55-6e7a-573c-8498-6edf9ccb07a1",
-      "kind": "transform",
-      "stemId": "dec090f3-311f-4786-a2ed-b6d6b4442b73",
-      "stem": "سفارش غذا رو بنویس.",
-      "stemEn": "Write the food order.",
-      "transform": "negate",
-      "farsiText": "سفارش غذا رو ننویس.",
-      "finglish": "sefâreshe ghazâ ro nanevis.",
-      "englishText": "Don't write the food order.",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "ezafe"
       ],
       "alternatives": []
     },
