@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Report how well the deck covers the core syllabus.
+"""Report how well the deck covers the core verbs and the core words.
 
-"Zero to hero" is only meaningful if it is checkable. This prints which of the
-core verbs the lower tiers actually exercise, so gaps are visible before they
+A word met in one sentence is a word the scheduler never reinforces, so the
+target is three. This prints what falls short, so gaps are visible before they
 become gaps in your speech.
 
     python3 tools/coverage.py
@@ -19,7 +19,9 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core.bank import BANK
-from core.syllabus import CORE_VERBS, coverage
+from core.syllabus import CORE_VERBS, CORE_WORD_LIST, coverage, word_counts
+
+DATA = BANK.parent
 
 CEFR = {1: "A1", 2: "A2", 3: "B1", 4: "B2", 5: "C1"}
 
@@ -69,11 +71,21 @@ def main() -> int:
 
     total = len(CORE_VERBS)
     print(f"  {len(good)}/{total} well covered   {len(thin)} thin   {len(absent)} absent")
-    if absent or thin:
-        print("\n  Fill the gaps with:")
-        print("    python3 tools/generate_seed.py --syllabus --difficulty 1 --count 60")
-    else:
+    if not (absent or thin):
         print("\n  Every core verb is covered at this level.")
+
+    # Core words count every card you can be dealt, drills and replies included.
+    texts = [s["farsiText"] for s in pool]
+    for name, field in (("transforms.json", "transforms"), ("replies.json", "replies")):
+        rows = json.loads((DATA / name).read_text())[field]
+        texts += [t for r in rows if r.get("difficulty", 1) <= args.max_difficulty
+                  for t in (r["farsiText"], r["stem"])]
+    words = word_counts(texts)
+    gloss = dict(CORE_WORD_LIST)
+    short = sorted((n, w) for w, n in words.items() if n < 3)
+    print(f"\n  Core words — {len(words) - len(short)}/{len(words)} in 3+ cards")
+    for n, w in short:
+        print(f"    {w:<12} {n}   {gloss[w]}")
 
     by_level: dict[str, int] = {}
     for s in data["sentences"]:

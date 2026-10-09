@@ -1,0 +1,2736 @@
+{
+  "note": "The everyday words most speech is made of, each brought up to three sentences or more: connectors (اگه، وقتی، چون، حتی), family (عمو، خاله، دایی، عمه), colours, small words (کسی، کدوم، همون، گاهی). tools/coverage.py lists what is still short.",
+  "difficulty": 1,
+  "sentences": [
+    {
+      "en": "So what shall we do?",
+      "fa": "پس چی کار کنیم؟",
+      "tr": "pas chi kâr konim?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پس",
+          "pas",
+          "so",
+          "conjunction"
+        ],
+        [
+          "چی کار",
+          "chi kâr",
+          "what",
+          "question word"
+        ],
+        [
+          "کنیم",
+          "konim",
+          "shall we do",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "So you're coming too?",
+      "fa": "پس تو هم میای؟",
+      "tr": "pas to ham miyây?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پس",
+          "pas",
+          "so",
+          "conjunction"
+        ],
+        [
+          "تو",
+          "to",
+          "you",
+          "pronoun"
+        ],
+        [
+          "هم",
+          "ham",
+          "also",
+          "particle"
+        ],
+        [
+          "میای",
+          "miyây",
+          "are coming",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "So when are you coming?",
+      "fa": "پس کی میای؟",
+      "tr": "pas key miyây?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پس",
+          "pas",
+          "so",
+          "conjunction"
+        ],
+        [
+          "کی",
+          "key",
+          "when",
+          "question word"
+        ],
+        [
+          "میای",
+          "miyây",
+          "are you coming",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Like me.",
+      "fa": "مثل من.",
+      "tr": "mesle man.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مثل",
+          "mesle",
+          "like",
+          "preposition"
+        ],
+        [
+          "من",
+          "man",
+          "me",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "As always.",
+      "fa": "مثل همیشه.",
+      "tr": "mesle hamishe.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مثل",
+          "mesle",
+          "like",
+          "preposition"
+        ],
+        [
+          "همیشه",
+          "hamishe",
+          "always",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Tea without sugar, please.",
+      "fa": "چای بدون شکر لطفا.",
+      "tr": "châye bedune shekar lotfan.",
+      "sit": "ordering food or coffee",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چای",
+          "châye",
+          "tea",
+          "noun"
+        ],
+        [
+          "بدون",
+          "bedune",
+          "without",
+          "preposition"
+        ],
+        [
+          "شکر",
+          "shekar",
+          "sugar",
+          "noun"
+        ],
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Without you.",
+      "fa": "بدون تو.",
+      "tr": "bedune to.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بدون",
+          "bedune",
+          "without",
+          "preposition"
+        ],
+        [
+          "تو",
+          "to",
+          "you",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "But why not?",
+      "fa": "آخه چرا نه؟",
+      "tr": "âkhe cherâ na?",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آخه",
+          "âkhe",
+          "but",
+          "particle"
+        ],
+        [
+          "چرا",
+          "cherâ",
+          "why",
+          "question word"
+        ],
+        [
+          "نه",
+          "na",
+          "not",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "But I'm tired!",
+      "fa": "آخه من خسته‌م!",
+      "tr": "âkhe man khastam!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آخه",
+          "âkhe",
+          "but",
+          "particle"
+        ],
+        [
+          "من",
+          "man",
+          "I",
+          "pronoun"
+        ],
+        [
+          "خسته‌م",
+          "khastam",
+          "I'm tired",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "But what's happened?",
+      "fa": "آخه چی شده؟",
+      "tr": "âkhe chi shode?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آخه",
+          "âkhe",
+          "but",
+          "particle"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "شده",
+          "shode",
+          "has happened",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Well, okay.",
+      "fa": "خب، باشه.",
+      "tr": "khob, bâshe.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خب",
+          "khob",
+          "well",
+          "particle"
+        ],
+        [
+          "باشه",
+          "bâshe",
+          "okay",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Well, what happened?",
+      "fa": "خب، چی شد؟",
+      "tr": "khob, chi shod?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خب",
+          "khob",
+          "well",
+          "particle"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "شد",
+          "shod",
+          "happened",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Which one?",
+      "fa": "کدوم؟",
+      "tr": "kodum?",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کدوم",
+          "kodum",
+          "which",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Which one do you want?",
+      "fa": "کدوم رو می‌خوای؟",
+      "tr": "kodum ro mikhây?",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کدوم",
+          "kodum",
+          "which",
+          "question word"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "می‌خوای",
+          "mikhây",
+          "do you want",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is anyone here?",
+      "fa": "کسی اینجا هست؟",
+      "tr": "kasi injâ hast?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کسی",
+          "kasi",
+          "anyone",
+          "pronoun"
+        ],
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "هست",
+          "hast",
+          "is",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did anyone call?",
+      "fa": "کسی زنگ زد؟",
+      "tr": "kasi zang zad?",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کسی",
+          "kasi",
+          "anyone",
+          "pronoun"
+        ],
+        [
+          "زنگ زد",
+          "zang zad",
+          "called",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Nobody is at home.",
+      "fa": "هیچکس خونه نیست.",
+      "tr": "hichkas khune nist.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هیچکس",
+          "hichkas",
+          "nobody",
+          "pronoun"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ],
+        [
+          "نیست",
+          "nist",
+          "isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Someone is at the door.",
+      "fa": "یکی دم دره.",
+      "tr": "yeki dame dare.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یکی",
+          "yeki",
+          "someone",
+          "pronoun"
+        ],
+        [
+          "دم",
+          "dame",
+          "at",
+          "preposition"
+        ],
+        [
+          "دره",
+          "dare",
+          "is the door",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Give me one.",
+      "fa": "یکی بهم بده.",
+      "tr": "yeki behem bede.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یکی",
+          "yeki",
+          "one",
+          "pronoun"
+        ],
+        [
+          "بهم",
+          "behem",
+          "to me",
+          "preposition"
+        ],
+        [
+          "بده",
+          "bede",
+          "give",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want that same one.",
+      "fa": "همون یکی رو می‌خوام.",
+      "tr": "hamun yeki ro mikhâm.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "همون",
+          "hamun",
+          "that very",
+          "pronoun"
+        ],
+        [
+          "یکی",
+          "yeki",
+          "one",
+          "pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The usual.",
+      "fa": "همون همیشگی.",
+      "tr": "hamun hamishegi.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "همون",
+          "hamun",
+          "the same",
+          "pronoun"
+        ],
+        [
+          "همیشگی",
+          "hamishegi",
+          "as always",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "These are mine.",
+      "fa": "اینا مال منه.",
+      "tr": "inâ mâle mane.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینا",
+          "inâ",
+          "these",
+          "pronoun"
+        ],
+        [
+          "مال",
+          "mâle",
+          "belonging to",
+          "noun"
+        ],
+        [
+          "منه",
+          "mane",
+          "is me",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How much are these?",
+      "fa": "اینا چندن؟",
+      "tr": "inâ chandan?",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینا",
+          "inâ",
+          "these",
+          "pronoun"
+        ],
+        [
+          "چندن",
+          "chandan",
+          "how much are they",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Who are these people?",
+      "fa": "اینا کی‌ان؟",
+      "tr": "inâ kiyan?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینا",
+          "inâ",
+          "these",
+          "pronoun"
+        ],
+        [
+          "کی‌ان",
+          "kiyan",
+          "who are they",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Sometimes I go to the park.",
+      "fa": "گاهی می‌رم پارک.",
+      "tr": "gâhi miram pârk.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "گاهی",
+          "gâhi",
+          "sometimes",
+          "adverb"
+        ],
+        [
+          "می‌رم",
+          "miram",
+          "I go",
+          "verb"
+        ],
+        [
+          "پارک",
+          "pârk",
+          "park",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I usually get up early.",
+      "fa": "معمولا زود پا می‌شم.",
+      "tr": "ma'mulan zud pâ misham.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "معمولا",
+          "ma'mulan",
+          "usually",
+          "adverb"
+        ],
+        [
+          "زود",
+          "zud",
+          "early",
+          "adverb"
+        ],
+        [
+          "پا می‌شم",
+          "pâ misham",
+          "I get up",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I've never been to Iran.",
+      "fa": "هیچ‌وقت ایران نرفتم.",
+      "tr": "hichvaght irân naraftam.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هیچ‌وقت",
+          "hichvaght",
+          "never",
+          "adverb"
+        ],
+        [
+          "ایران",
+          "irân",
+          "Iran",
+          "noun"
+        ],
+        [
+          "نرفتم",
+          "naraftam",
+          "I haven't gone",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Speak slowly, please.",
+      "fa": "لطفا آروم حرف بزن.",
+      "tr": "lotfan ârum harf bezan.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "آروم",
+          "ârum",
+          "slowly",
+          "adverb"
+        ],
+        [
+          "حرف بزن",
+          "harf bezan",
+          "speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Close the door quietly.",
+      "fa": "در رو آروم ببند.",
+      "tr": "dar ro ârum beband.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "در",
+          "dar",
+          "door",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "آروم",
+          "ârum",
+          "quietly",
+          "adverb"
+        ],
+        [
+          "ببند",
+          "beband",
+          "close",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I live alone.",
+      "fa": "تنها زندگی می‌کنم.",
+      "tr": "tanhâ zendegi mikonam.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تنها",
+          "tanhâ",
+          "alone",
+          "adverb"
+        ],
+        [
+          "زندگی می‌کنم",
+          "zendegi mikonam",
+          "I live",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Under the bed.",
+      "fa": "زیر تخت.",
+      "tr": "zire takht.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "زیر",
+          "zire",
+          "under",
+          "preposition"
+        ],
+        [
+          "تخت",
+          "takht",
+          "bed",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My uncle lives in Tehran.",
+      "fa": "عموم تهران زندگی می‌کنه.",
+      "tr": "amum tehrân zendegi mikone.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عموم",
+          "amum",
+          "my uncle",
+          "noun"
+        ],
+        [
+          "تهران",
+          "tehrân",
+          "Tehran",
+          "noun"
+        ],
+        [
+          "زندگی می‌کنه",
+          "zendegi mikone",
+          "lives",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is your uncle coming?",
+      "fa": "عموت میاد؟",
+      "tr": "amut miyâd?",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عموت",
+          "amut",
+          "your uncle",
+          "noun"
+        ],
+        [
+          "میاد",
+          "miyâd",
+          "is coming",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My aunt is a doctor.",
+      "fa": "خاله‌م دکتره.",
+      "tr": "khâlam doktore.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خاله‌م",
+          "khâlam",
+          "my aunt",
+          "noun"
+        ],
+        [
+          "دکتره",
+          "doktore",
+          "is a doctor",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "We're going to my aunt's.",
+      "fa": "داریم می‌ریم خونه‌ی خاله‌م.",
+      "tr": "dârim mirim khuneye khâlam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "داریم",
+          "dârim",
+          "we are",
+          "verb"
+        ],
+        [
+          "می‌ریم",
+          "mirim",
+          "going",
+          "verb"
+        ],
+        [
+          "خونه‌ی",
+          "khuneye",
+          "house of",
+          "noun"
+        ],
+        [
+          "خاله‌م",
+          "khâlam",
+          "my aunt",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My uncle has two children.",
+      "fa": "داییم دو تا بچه داره.",
+      "tr": "dâyim do tâ bache dâre.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "داییم",
+          "dâyim",
+          "my uncle",
+          "noun"
+        ],
+        [
+          "دو تا",
+          "do tâ",
+          "two",
+          "number"
+        ],
+        [
+          "بچه",
+          "bache",
+          "child",
+          "noun"
+        ],
+        [
+          "داره",
+          "dâre",
+          "has",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Say hello to your uncle.",
+      "fa": "به داییت سلام برسون.",
+      "tr": "be dâyit salâm beresun.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "داییت",
+          "dâyit",
+          "your uncle",
+          "noun"
+        ],
+        [
+          "سلام",
+          "salâm",
+          "hello",
+          "noun"
+        ],
+        [
+          "برسون",
+          "beresun",
+          "pass on",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My aunt lives with us.",
+      "fa": "عمه‌م پیش ما زندگی می‌کنه.",
+      "tr": "amam pishe mâ zendegi mikone.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عمه‌م",
+          "amam",
+          "my aunt",
+          "noun"
+        ],
+        [
+          "پیش",
+          "pishe",
+          "with",
+          "preposition"
+        ],
+        [
+          "ما",
+          "mâ",
+          "us",
+          "pronoun"
+        ],
+        [
+          "زندگی می‌کنه",
+          "zendegi mikone",
+          "lives",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Your aunt called.",
+      "fa": "عمه‌ت زنگ زد.",
+      "tr": "amat zang zad.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عمه‌ت",
+          "amat",
+          "your aunt",
+          "noun"
+        ],
+        [
+          "زنگ زد",
+          "zang zad",
+          "called",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My grandmother is eighty.",
+      "fa": "مادربزرگم هشتاد سالشه.",
+      "tr": "mâdarbozorgam hashtâd sâleshe.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مادربزرگم",
+          "mâdarbozorgam",
+          "my grandmother",
+          "noun"
+        ],
+        [
+          "هشتاد",
+          "hashtâd",
+          "eighty",
+          "number"
+        ],
+        [
+          "سالشه",
+          "sâleshe",
+          "years old",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's go to grandma's.",
+      "fa": "بریم خونه‌ی مادربزرگ.",
+      "tr": "berim khuneye mâdarbozorg.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ],
+        [
+          "خونه‌ی",
+          "khuneye",
+          "house of",
+          "noun"
+        ],
+        [
+          "مادربزرگ",
+          "mâdarbozorg",
+          "grandma",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My grandfather is ill.",
+      "fa": "پدربزرگم مریضه.",
+      "tr": "pedarbozorgam marize.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پدربزرگم",
+          "pedarbozorgam",
+          "my grandfather",
+          "noun"
+        ],
+        [
+          "مریضه",
+          "marize",
+          "is ill",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our neighbour is very kind.",
+      "fa": "همسایه‌مون خیلی مهربونه.",
+      "tr": "hamsâyemun kheyli mehrabune.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "همسایه‌مون",
+          "hamsâyemun",
+          "our neighbour",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "مهربونه",
+          "mehrabune",
+          "is kind",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our neighbour has a dog.",
+      "fa": "همسایه‌مون یه سگ داره.",
+      "tr": "hamsâyemun ye sag dâre.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "همسایه‌مون",
+          "hamsâyemun",
+          "our neighbour",
+          "noun"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "سگ",
+          "sag",
+          "dog",
+          "noun"
+        ],
+        [
+          "داره",
+          "dâre",
+          "has",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "This is my wife.",
+      "fa": "این همسرمه.",
+      "tr": "in hamsarame.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "همسرمه",
+          "hamsarame",
+          "is my spouse",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That woman is my teacher.",
+      "fa": "اون زن معلممه.",
+      "tr": "un zan mo'allemame.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اون",
+          "un",
+          "that",
+          "pronoun"
+        ],
+        [
+          "زن",
+          "zan",
+          "woman",
+          "noun"
+        ],
+        [
+          "معلممه",
+          "mo'allemame",
+          "is my teacher",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "A man and a woman.",
+      "fa": "یه مرد و یه زن.",
+      "tr": "ye mard o ye zan.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "مرد",
+          "mard",
+          "man",
+          "noun"
+        ],
+        [
+          "و",
+          "o",
+          "and",
+          "conjunction"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "زن",
+          "zan",
+          "woman",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My colleague is ill.",
+      "fa": "همکارم مریضه.",
+      "tr": "hamkâram marize.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "همکارم",
+          "hamkâram",
+          "my colleague",
+          "noun"
+        ],
+        [
+          "مریضه",
+          "marize",
+          "is ill",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The guests have arrived.",
+      "fa": "مهمونا اومدن.",
+      "tr": "mehmunâ umadan.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مهمونا",
+          "mehmunâ",
+          "the guests",
+          "noun"
+        ],
+        [
+          "اومدن",
+          "umadan",
+          "have come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want the red one.",
+      "fa": "قرمزه رو می‌خوام.",
+      "tr": "ghermeze ro mikhâm.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "قرمزه",
+          "ghermeze",
+          "the red one",
+          "adjective"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The light is red.",
+      "fa": "چراغ قرمزه.",
+      "tr": "cherâgh ghermeze.",
+      "sit": "taxi, metro, and travel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چراغ",
+          "cherâgh",
+          "light",
+          "noun"
+        ],
+        [
+          "قرمزه",
+          "ghermeze",
+          "is red",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you have this in black?",
+      "fa": "اینو مشکی دارین؟",
+      "tr": "ino meshki dârin?",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینو",
+          "ino",
+          "this",
+          "pronoun"
+        ],
+        [
+          "مشکی",
+          "meshki",
+          "black",
+          "adjective"
+        ],
+        [
+          "دارین",
+          "dârin",
+          "do you have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "A black cat.",
+      "fa": "یه گربه‌ی سیاه.",
+      "tr": "ye gorbeye siyâh.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "گربه‌ی",
+          "gorbeye",
+          "cat",
+          "noun"
+        ],
+        [
+          "سیاه",
+          "siyâh",
+          "black",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "A white shirt.",
+      "fa": "یه پیرهن سفید.",
+      "tr": "ye pirhane sefid.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "پیرهن",
+          "pirhane",
+          "shirt",
+          "noun"
+        ],
+        [
+          "سفید",
+          "sefid",
+          "white",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The walls are white.",
+      "fa": "دیوارا سفیدن.",
+      "tr": "divârâ sefidan.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دیوارا",
+          "divârâ",
+          "the walls",
+          "noun"
+        ],
+        [
+          "سفیدن",
+          "sefidan",
+          "are white",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Green tea, please.",
+      "fa": "چای سبز لطفا.",
+      "tr": "châye sabz lotfan.",
+      "sit": "ordering food or coffee",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چای",
+          "châye",
+          "tea",
+          "noun"
+        ],
+        [
+          "سبز",
+          "sabz",
+          "green",
+          "adjective"
+        ],
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The green one is better.",
+      "fa": "سبزه بهتره.",
+      "tr": "sabze behtare.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "سبزه",
+          "sabze",
+          "the green one",
+          "adjective"
+        ],
+        [
+          "بهتره",
+          "behtare",
+          "is better",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's ugly.",
+      "fa": "زشته.",
+      "tr": "zeshte.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "زشته",
+          "zeshte",
+          "it's ugly",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's too short.",
+      "fa": "خیلی کوتاهه.",
+      "tr": "kheyli kutâhe.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خیلی",
+          "kheyli",
+          "too",
+          "adverb"
+        ],
+        [
+          "کوتاهه",
+          "kutâhe",
+          "it's short",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's incorrect.",
+      "fa": "غلطه.",
+      "tr": "ghalate.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "غلطه",
+          "ghalate",
+          "it's wrong",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm ill.",
+      "fa": "مریضم.",
+      "tr": "marizam.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مریضم",
+          "marizam",
+          "I'm ill",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The glass is empty.",
+      "fa": "لیوان خالیه.",
+      "tr": "livân khâliye.",
+      "sit": "ordering food or coffee",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "لیوان",
+          "livân",
+          "glass",
+          "noun"
+        ],
+        [
+          "خالیه",
+          "khâliye",
+          "is empty",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is this seat free?",
+      "fa": "این جا خالیه؟",
+      "tr": "in jâ khâliye?",
+      "sit": "taxi, metro, and travel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "جا",
+          "jâ",
+          "place",
+          "noun"
+        ],
+        [
+          "خالیه",
+          "khâliye",
+          "is it empty",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The bus is full.",
+      "fa": "اتوبوس پره.",
+      "tr": "otobus pore.",
+      "sit": "taxi, metro, and travel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اتوبوس",
+          "otobus",
+          "bus",
+          "noun"
+        ],
+        [
+          "پره",
+          "pore",
+          "is full",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you hungry?",
+      "fa": "گشنه‌ای؟",
+      "tr": "goshne'i?",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "گشنه‌ای",
+          "goshne'i",
+          "are you hungry",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm not hungry.",
+      "fa": "گشنه نیستم.",
+      "tr": "goshne nistam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "گشنه",
+          "goshne",
+          "hungry",
+          "adjective"
+        ],
+        [
+          "نیستم",
+          "nistam",
+          "I'm not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My tooth hurts.",
+      "fa": "دندونم درد می‌کنه.",
+      "tr": "dandunam dard mikone.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دندونم",
+          "dandunam",
+          "my tooth",
+          "noun"
+        ],
+        [
+          "درد می‌کنه",
+          "dard mikone",
+          "hurts",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's go to the market.",
+      "fa": "بریم بازار.",
+      "tr": "berim bâzâr.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ],
+        [
+          "بازار",
+          "bâzâr",
+          "market",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm in bed.",
+      "fa": "تو تختم.",
+      "tr": "tu takhtam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "تختم",
+          "takhtam",
+          "my bed",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "This time.",
+      "fa": "این دفعه.",
+      "tr": "in daf'e.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "دفعه",
+          "daf'e",
+          "time",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I speak two languages.",
+      "fa": "دو تا زبون بلدم.",
+      "tr": "do tâ zabun baladam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دو تا",
+          "do tâ",
+          "two",
+          "number"
+        ],
+        [
+          "زبون",
+          "zabun",
+          "language",
+          "noun"
+        ],
+        [
+          "بلدم",
+          "baladam",
+          "I know",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Four people.",
+      "fa": "چهار نفر.",
+      "tr": "chahâr nafar.",
+      "sit": "ordering food or coffee",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چهار",
+          "chahâr",
+          "four",
+          "number"
+        ],
+        [
+          "نفر",
+          "nafar",
+          "people",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "A table for four, please.",
+      "fa": "یه میز برای چهار نفر لطفا.",
+      "tr": "ye miz barâye chahâr nafar lotfan.",
+      "sit": "ordering food or coffee",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "میز",
+          "miz",
+          "table",
+          "noun"
+        ],
+        [
+          "برای",
+          "barâye",
+          "for",
+          "preposition"
+        ],
+        [
+          "چهار",
+          "chahâr",
+          "four",
+          "number"
+        ],
+        [
+          "نفر",
+          "nafar",
+          "people",
+          "noun"
+        ],
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "At four o'clock.",
+      "fa": "ساعت چهار.",
+      "tr": "sâ'ate chahâr.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ساعت",
+          "sâ'ate",
+          "o'clock",
+          "noun"
+        ],
+        [
+          "چهار",
+          "chahâr",
+          "four",
+          "number"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Tehran is a big city.",
+      "fa": "تهران شهر بزرگیه.",
+      "tr": "tehrân shahre bozorgie.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تهران",
+          "tehrân",
+          "Tehran",
+          "noun"
+        ],
+        [
+          "شهر",
+          "shahre",
+          "city",
+          "noun"
+        ],
+        [
+          "بزرگیه",
+          "bozorgie",
+          "big is",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Our alley is quiet.",
+      "fa": "کوچه‌مون ساکته.",
+      "tr": "kuchemun sâkete.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کوچه‌مون",
+          "kuchemun",
+          "our alley",
+          "noun"
+        ],
+        [
+          "ساکته",
+          "sâkete",
+          "is quiet",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The shop's shut.",
+      "fa": "مغازه بسته‌ست.",
+      "tr": "maghâze bastast.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مغازه",
+          "maghâze",
+          "shop",
+          "noun"
+        ],
+        [
+          "بسته‌ست",
+          "bastast",
+          "is closed",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How old is he?",
+      "fa": "چند سالشه؟",
+      "tr": "chand sâleshe?",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چند",
+          "chand",
+          "how many",
+          "question word"
+        ],
+        [
+          "سالشه",
+          "sâleshe",
+          "years has he",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Goodbye, everyone.",
+      "fa": "خداحافظ همگی.",
+      "tr": "khodâhâfez hamegi.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خداحافظ",
+          "khodâhâfez",
+          "goodbye",
+          "expression"
+        ],
+        [
+          "همگی",
+          "hamegi",
+          "everyone",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Not at all, please go ahead.",
+      "fa": "خواهش می‌کنم، بفرمایین.",
+      "tr": "khâhesh mikonam, befarmâyin.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خواهش می‌کنم",
+          "khâhesh mikonam",
+          "please",
+          "expression"
+        ],
+        [
+          "بفرمایین",
+          "befarmâyin",
+          "go ahead",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The sky is blue.",
+      "fa": "آسمون آبیه.",
+      "tr": "âsemun âbiye.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آسمون",
+          "âsemun",
+          "sky",
+          "noun"
+        ],
+        [
+          "آبیه",
+          "âbiye",
+          "is blue",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "A blue shirt.",
+      "fa": "یه پیرهن آبی.",
+      "tr": "ye pirhane âbi.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "پیرهن",
+          "pirhane",
+          "shirt",
+          "noun"
+        ],
+        [
+          "آبی",
+          "âbi",
+          "blue",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's dark.",
+      "fa": "تاریکه.",
+      "tr": "târike.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تاریکه",
+          "târike",
+          "it's dark",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He's very young.",
+      "fa": "خیلی جوونه.",
+      "tr": "kheyli javune.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "جوونه",
+          "javune",
+          "he's young",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Excuse me, madam.",
+      "fa": "ببخشید خانم.",
+      "tr": "bebakhshid khânum.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ببخشید",
+          "bebakhshid",
+          "excuse me",
+          "expression"
+        ],
+        [
+          "خانم",
+          "khânum",
+          "madam",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Mrs Ahmadi is here.",
+      "fa": "خانم احمدی اینجاست.",
+      "tr": "khânume ahmadi injâst.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خانم",
+          "khânume",
+          "Mrs",
+          "noun"
+        ],
+        [
+          "احمدی",
+          "ahmadi",
+          "Ahmadi",
+          "noun"
+        ],
+        [
+          "اینجاست",
+          "injâst",
+          "is here",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How pretty!",
+      "fa": "چه خوشگل!",
+      "tr": "che khoshgel!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "how",
+          "question word"
+        ],
+        [
+          "خوشگل",
+          "khoshgel",
+          "pretty",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Your dress is very pretty.",
+      "fa": "لباست خیلی خوشگله.",
+      "tr": "lebâset kheyli khoshgele.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "لباست",
+          "lebâset",
+          "your dress",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "خوشگله",
+          "khoshgele",
+          "is pretty",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Happy Nowruz!",
+      "fa": "عیدت مبارک!",
+      "tr": "eydet mobârak!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عیدت",
+          "eydet",
+          "your new year",
+          "noun"
+        ],
+        [
+          "مبارک",
+          "mobârak",
+          "blessed",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I promise.",
+      "fa": "قول می‌دم.",
+      "tr": "ghol midam.",
+      "sit": "negotiating or asking for a favour",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "قول",
+          "ghol",
+          "promise",
+          "noun"
+        ],
+        [
+          "می‌دم",
+          "midam",
+          "I give",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Chicken or meat?",
+      "fa": "مرغ یا گوشت؟",
+      "tr": "morgh yâ gusht?",
+      "sit": "ordering food or coffee",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مرغ",
+          "morgh",
+          "chicken",
+          "noun"
+        ],
+        [
+          "یا",
+          "yâ",
+          "or",
+          "conjunction"
+        ],
+        [
+          "گوشت",
+          "gusht",
+          "meat",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll have chicken with rice.",
+      "fa": "مرغ با برنج می‌خوام.",
+      "tr": "morgh bâ berenj mikhâm.",
+      "sit": "ordering food or coffee",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مرغ",
+          "morgh",
+          "chicken",
+          "noun"
+        ],
+        [
+          "با",
+          "bâ",
+          "with",
+          "preposition"
+        ],
+        [
+          "برنج",
+          "berenj",
+          "rice",
+          "noun"
+        ],
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "He's old now.",
+      "fa": "دیگه پیره.",
+      "tr": "dige pire.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دیگه",
+          "dige",
+          "now",
+          "adverb"
+        ],
+        [
+          "پیره",
+          "pire",
+          "he's old",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My computer is broken.",
+      "fa": "کامپیوترم خرابه.",
+      "tr": "kâmpiyuteram kharâbe.",
+      "sit": "complaining about something not working",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کامپیوترم",
+          "kâmpiyuteram",
+          "my computer",
+          "noun"
+        ],
+        [
+          "خرابه",
+          "kharâbe",
+          "is broken",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Turn on the TV.",
+      "fa": "تلویزیون رو روشن کن.",
+      "tr": "televiziyon ro roshan kon.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تلویزیون",
+          "televiziyon",
+          "TV",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "روشن کن",
+          "roshan kon",
+          "turn on",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Pass the salt, please.",
+      "fa": "نمک رو بده لطفا.",
+      "tr": "namak ro bede lotfan.",
+      "sit": "ordering food or coffee",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نمک",
+          "namak",
+          "salt",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "بده",
+          "bede",
+          "give",
+          "verb"
+        ],
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Turn off the light.",
+      "fa": "چراغ رو خاموش کن.",
+      "tr": "cherâgh ro khâmush kon.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چراغ",
+          "cherâgh",
+          "light",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "خاموش کن",
+          "khâmush kon",
+          "turn off",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Turn on the light.",
+      "fa": "چراغ رو روشن کن.",
+      "tr": "cherâgh ro roshan kon.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چراغ",
+          "cherâgh",
+          "light",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "روشن کن",
+          "roshan kon",
+          "turn on",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How interesting!",
+      "fa": "چه جالب!",
+      "tr": "che jâleb!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "how",
+          "question word"
+        ],
+        [
+          "جالب",
+          "jâleb",
+          "interesting",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}
