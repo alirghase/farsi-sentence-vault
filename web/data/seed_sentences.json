@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 1799,
+  "count": 1780,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -23753,43 +23753,6 @@
       "core": 1.0
     },
     {
-      "englishText": "Your hands shouldn't ache, thank you!",
-      "farsiText": "دستت درد نکنه!",
-      "finglish": "dastet dard nakone!",
-      "literalGloss": "hand-your pain not-it-does",
-      "difficulty": 1,
-      "situation": "compliments and thanking (taarof)",
-      "grammarTags": [
-        "compound-verb",
-        "pronoun-clitic",
-        "subjunctive"
-      ],
-      "breakdown": [
-        {
-          "fa": "دستت",
-          "translit": "dastet",
-          "en": "your hand",
-          "pos": "attached pronoun"
-        },
-        {
-          "fa": "درد",
-          "translit": "dard",
-          "en": "pain",
-          "pos": "noun"
-        },
-        {
-          "fa": "نکنه",
-          "translit": "nakone",
-          "en": "it doesn't do",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "e0f0e527-3199-47f1-aae4-e392aedd2d8f",
-      "core": 1.0
-    },
-    {
       "englishText": "The elevator is broken.",
       "farsiText": "آسانسور خرابه.",
       "finglish": "âsânsor kharâbe.",
@@ -30728,42 +30691,6 @@
       "core": 0.75
     },
     {
-      "englishText": "Could you buy a card?",
-      "farsiText": "تونستی کارت بخری؟",
-      "finglish": "tunesti kârt bekhari?",
-      "literalGloss": "could-you card you-buy?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "breakdown": [
-        {
-          "fa": "تونستی",
-          "translit": "tunesti",
-          "en": "could you",
-          "pos": "verb"
-        },
-        {
-          "fa": "کارت",
-          "translit": "kârt",
-          "en": "card",
-          "pos": "noun"
-        },
-        {
-          "fa": "بخری",
-          "translit": "bekhari",
-          "en": "you buy",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "c6fd7880-5af1-4ee4-bc5a-bd1dbca15107",
-      "core": 1.0
-    },
-    {
       "englishText": "I don't know the exact price.",
       "farsiText": "قیمت دقیق رو نمی‌دونم.",
       "finglish": "gheymate daghigh ro nemidunam.",
@@ -30805,48 +30732,6 @@
       "alternatives": [],
       "id": "370248ed-80d5-494a-a322-510a3e7c4624",
       "core": 0.25
-    },
-    {
-      "englishText": "I didn't recognize this hotel.",
-      "farsiText": "این هتل رو نشناختم.",
-      "finglish": "in hotel ro nashnâhtam.",
-      "literalGloss": "this hotel [ra] not-I-recognized.",
-      "difficulty": 1,
-      "situation": "giving or following directions",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker"
-      ],
-      "breakdown": [
-        {
-          "fa": "این",
-          "translit": "in",
-          "en": "this",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "هتل",
-          "translit": "hotel",
-          "en": "hotel",
-          "pos": "noun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "نشناختم",
-          "translit": "nashnâhtam",
-          "en": "I didn't recognise",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "d02d92b1-1217-4c40-8de4-4ca4ae89d923",
-      "core": 0.75
     },
     {
       "englishText": "I didn't bring cash.",
@@ -31007,44 +30892,6 @@
       "core": 0.5
     },
     {
-      "englishText": "We want warm weather.",
-      "farsiText": "ما هوای گرم می‌خوایم.",
-      "finglish": "mâ havâye garm mikhâym.",
-      "literalGloss": "we weather of warm we-want.",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "id": "cce4e90a-34e3-4529-a38d-2f7f37b5e19e",
-      "breakdown": [
-        {
-          "fa": "ما",
-          "translit": "mâ",
-          "en": "we",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "هوای گرم",
-          "translit": "havâ-ye garm",
-          "en": "warm weather",
-          "pos": "noun"
-        },
-        {
-          "fa": "می‌خوایم",
-          "translit": "mikhâym",
-          "en": "want",
-          "pos": "verb"
-        }
-      ],
-      "alternatives": [
-        "هوای گرم می‌خوایم."
-      ],
-      "breakdownSource": "model",
-      "core": 1.0
-    },
-    {
       "englishText": "Pick up your fork!",
       "farsiText": "چنگالت رو بردار!",
       "finglish": "changâlet ro bardâr!",
@@ -31180,42 +31027,6 @@
       "core": 0.5
     },
     {
-      "englishText": "Does he sell sour cherries?",
-      "farsiText": "اون آلبالو می‌فروشه؟",
-      "finglish": "un âlbâlu mifrushe?",
-      "literalGloss": "s/he sour-cherry s/he-sells?",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "verb-agreement"
-      ],
-      "breakdown": [
-        {
-          "fa": "اون",
-          "translit": "un",
-          "en": "s/he",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "آلبالو",
-          "translit": "âlbâlu",
-          "en": "sour cherry",
-          "pos": "noun"
-        },
-        {
-          "fa": "می‌فروشه",
-          "translit": "mifrushe",
-          "en": "s/he sells",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "3843fa5f-9da7-4a95-bd24-3e73713de832",
-      "core": 0.75
-    },
-    {
       "englishText": "They don't sell fresh fish here.",
       "farsiText": "اینجا ماهی تازه نمی‌فروشن.",
       "finglish": "injâ mâhiye tâze nemifrushan.",
@@ -31336,46 +31147,6 @@
       "core": 0.5
     },
     {
-      "englishText": "Write the name of this beautiful season.",
-      "farsiText": "اسم این فصل قشنگ رو بنویس.",
-      "finglish": "esme in fasle ghashang ro benevis.",
-      "literalGloss": "name of this season of beautiful [obj] write.",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "ezafe"
-      ],
-      "id": "6d3a5867-d9cd-4ecc-9c4f-debdb05e3e4c",
-      "breakdown": [
-        {
-          "fa": "اسم این فصل قشنگ",
-          "translit": "esm-e in fasl-e ghashang",
-          "en": "the name of this beautiful season",
-          "pos": "noun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "بنویس",
-          "translit": "benevis",
-          "en": "write",
-          "pos": "verb"
-        }
-      ],
-      "alternatives": [
-        "اسم این فصل قشنگو بنویس.",
-        "اسم این فصل قشنگ رو یادداشت کن."
-      ],
-      "breakdownSource": "model",
-      "core": 0.75
-    },
-    {
       "englishText": "I didn't write the restaurant's name.",
       "farsiText": "اسم رستوران رو ننوشتم.",
       "finglish": "esme resturân ro naneveshtam.",
@@ -31416,47 +31187,6 @@
       "core": 0.75
     },
     {
-      "englishText": "Do you understand his difficult language?",
-      "farsiText": "زبون سختش رو می‌فهمی؟",
-      "finglish": "zabune sakhtesh ro mifahmi?",
-      "literalGloss": "tongue of hard-his [obj] you-understand?",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "ezafe",
-        "pronoun-clitic"
-      ],
-      "id": "0d88dd33-d9e9-496a-bd39-45c4c39f67fe",
-      "breakdown": [
-        {
-          "fa": "زبون سختش",
-          "translit": "zabun-e sakhtesh",
-          "en": "his difficult language",
-          "pos": "noun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "می‌فهمی",
-          "translit": "mifahmi",
-          "en": "do you understand",
-          "pos": "verb"
-        }
-      ],
-      "alternatives": [
-        "زبون سختشو می‌فهمی؟",
-        "متوجه زبون سختش می‌شی؟"
-      ],
-      "breakdownSource": "model",
-      "core": 0.75
-    },
-    {
       "englishText": "Did you understand the weather report?",
       "farsiText": "گزارش هواشناسی رو فهمیدی؟",
       "finglish": "gozâreshe havâshenâsi ro fahmidi?",
@@ -31472,21 +31202,6 @@
       "core": 0.25
     },
     {
-      "englishText": "I don't understand this strange sign.",
-      "farsiText": "من این علامت عجیب رو نمی‌فهمم.",
-      "finglish": "man in 'alâmate 'ajib ro nemifahmam.",
-      "literalGloss": "I this sign of strange [obj] I-do-not-understand.",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "ezafe"
-      ],
-      "id": "9c13ded6-e350-479f-b1db-a7df8529cd8c",
-      "core": 0.75
-    },
-    {
       "englishText": "Ask that polite waiter!",
       "farsiText": "از اون گارسون مؤدب بپرس!",
       "finglish": "az un gârsone mo'addab bepors!",
@@ -31500,42 +31215,6 @@
       ],
       "id": "e6114666-de39-48aa-8260-1c27a60f4198",
       "core": 0.5
-    },
-    {
-      "englishText": "Did you ask about the weather?",
-      "farsiText": "درباره هوا پرسیدی؟",
-      "finglish": "darbâreye havâ porsidi?",
-      "literalGloss": "about weather you-asked?",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "درباره",
-          "translit": "darbâreye",
-          "en": "about",
-          "pos": "preposition"
-        },
-        {
-          "fa": "هوا",
-          "translit": "havâ",
-          "en": "weather",
-          "pos": "noun"
-        },
-        {
-          "fa": "پرسیدی",
-          "translit": "porsidi",
-          "en": "you asked",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "5f787322-de56-41b2-be33-8d8c48adb544",
-      "core": 0.75
     },
     {
       "englishText": "They didn't ask about our dinner.",
@@ -31770,42 +31449,6 @@
       "core": 0.5
     },
     {
-      "englishText": "Did you sit on the seat?",
-      "farsiText": "روی صندلی نشستی؟",
-      "finglish": "ruye sandali neshasti",
-      "literalGloss": "on-of seat did-you-sit",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "preposition",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "روی",
-          "translit": "ruye",
-          "en": "on",
-          "pos": "preposition"
-        },
-        {
-          "fa": "صندلی",
-          "translit": "sandali",
-          "en": "seat",
-          "pos": "noun"
-        },
-        {
-          "fa": "نشستی",
-          "translit": "neshasti",
-          "en": "did you sit",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "0f51084a-2fee-4c23-ac28-51920eedb8a9",
-      "core": 1.0
-    },
-    {
       "englishText": "We walked in the park.",
       "farsiText": "تو پارک قدم زدیم.",
       "finglish": "tu pârk ghadam zadim",
@@ -31855,56 +31498,6 @@
         "colloquial"
       ],
       "id": "09c52ac2-60f6-4b39-870a-d50607b38264",
-      "core": 0.75
-    },
-    {
-      "englishText": "I don't like this cheap car.",
-      "farsiText": "این ماشین ارزون رو دوست ندارم.",
-      "finglish": "in mâshine arzun ro dust nadâram",
-      "literalGloss": "this car-of cheap [object-marker] friend I-do-not-have",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "ezafe",
-        "ra-marker",
-        "compound-verb",
-        "colloquial"
-      ],
-      "breakdown": [
-        {
-          "fa": "این",
-          "translit": "in",
-          "en": "this",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "ماشین",
-          "translit": "mâshine",
-          "en": "car",
-          "pos": "noun"
-        },
-        {
-          "fa": "ارزون",
-          "translit": "arzun",
-          "en": "cheap",
-          "pos": "noun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "دوست ندارم",
-          "translit": "dust nadâram",
-          "en": "friend I do not have",
-          "pos": "compound verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "6f2e24e6-b7b3-4f00-9929-a83f140488c8",
       "core": 0.75
     },
     {
@@ -32112,42 +31705,6 @@
       "core": 0.25
     },
     {
-      "englishText": "Did he sit in the back?",
-      "farsiText": "صندلی عقب نشست؟",
-      "finglish": "sandaliye aghab neshast",
-      "literalGloss": "seat-of back did-he-sit",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "ezafe",
-        "verb-tense"
-      ],
-      "breakdown": [
-        {
-          "fa": "صندلی",
-          "translit": "sandaliye",
-          "en": "seat",
-          "pos": "noun"
-        },
-        {
-          "fa": "عقب",
-          "translit": "aghab",
-          "en": "back",
-          "pos": "noun"
-        },
-        {
-          "fa": "نشست",
-          "translit": "neshast",
-          "en": "did he sit",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "dc7428dd-de80-4d09-a207-d271c6fcd57a",
-      "core": 0.75
-    },
-    {
       "englishText": "Why are you walking so fast?",
       "farsiText": "چرا انقدر تند قدم می‌زنی؟",
       "finglish": "cherâ inghadr tond ghadam mizani",
@@ -32269,49 +31826,6 @@
       "core": 0.5
     },
     {
-      "englishText": "I want a cheap taxi.",
-      "farsiText": "یه تاکسی ارزون می‌خوام.",
-      "finglish": "ye tâksi-ye arzun mikhâm",
-      "literalGloss": "one taxi-of cheap I-want",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "ezafe",
-        "vocab-gap"
-      ],
-      "breakdown": [
-        {
-          "fa": "یه",
-          "translit": "ye",
-          "en": "one",
-          "pos": "number"
-        },
-        {
-          "fa": "تاکسی",
-          "translit": "tâksi-ye",
-          "en": "taxi",
-          "pos": "noun"
-        },
-        {
-          "fa": "ارزون",
-          "translit": "arzun",
-          "en": "cheap",
-          "pos": "noun"
-        },
-        {
-          "fa": "می‌خوام",
-          "translit": "mikhâm",
-          "en": "I want",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "979bdb20-0de9-4522-82a2-2bfe7b63b6c3",
-      "core": 1.0
-    },
-    {
       "englishText": "Take the driver's license!",
       "farsiText": "گواهینامه رو بگیر!",
       "finglish": "govâhinâme ro begir",
@@ -32430,54 +31944,6 @@
       ],
       "id": "f2df4244-7ec0-489f-ad9d-f91299f212ad",
       "core": 0.0
-    },
-    {
-      "englishText": "She didn't want a big wedding.",
-      "farsiText": "اون یه عروسی بزرگ نخواست.",
-      "finglish": "un ye 'arusi-ye bozorg nakhâst",
-      "literalGloss": "she one wedding-of big didnt-want",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "اون",
-          "translit": "un",
-          "en": "she",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "یه",
-          "translit": "ye",
-          "en": "one",
-          "pos": "number"
-        },
-        {
-          "fa": "عروسی",
-          "translit": "arusi-ye",
-          "en": "wedding",
-          "pos": "noun"
-        },
-        {
-          "fa": "بزرگ",
-          "translit": "bozorg",
-          "en": "big",
-          "pos": "noun"
-        },
-        {
-          "fa": "نخواست",
-          "translit": "nakhâst",
-          "en": "didnt want",
-          "pos": "noun"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "dffa1818-9eb1-474c-96de-fe63aae05e66",
-      "core": 1.0
     },
     {
       "englishText": "Do you get a receipt?",
@@ -32914,20 +32380,6 @@
       "core": 0.25
     },
     {
-      "englishText": "I don't want cold weather.",
-      "farsiText": "هوای سرد نمی‌خوام.",
-      "finglish": "havâye sard nemikhâm",
-      "literalGloss": "weather [of] cold I-do-not-want",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "id": "9d5bdb2b-0db0-437d-a805-2e4306804598",
-      "core": 1.0
-    },
-    {
       "englishText": "He is bringing an umbrella.",
       "farsiText": "اون چتر می‌آره.",
       "finglish": "un chatr miyâre",
@@ -33187,48 +32639,6 @@
       "core": 0.5
     },
     {
-      "englishText": "They sold hot soup today.",
-      "farsiText": "امروز آش داغ فروختن.",
-      "finglish": "emruz âshe dâgh forukhtan",
-      "literalGloss": "today soup hot they-sold",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "امروز",
-          "translit": "emruz",
-          "en": "today",
-          "pos": "adverb"
-        },
-        {
-          "fa": "آش",
-          "translit": "âshe",
-          "en": "soup",
-          "pos": "noun"
-        },
-        {
-          "fa": "داغ",
-          "translit": "dâgh",
-          "en": "hot",
-          "pos": "noun"
-        },
-        {
-          "fa": "فروختن",
-          "translit": "forukhtan",
-          "en": "they sold",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "d4d58ea9-d1c4-41f9-a36b-fd712a59d7d6",
-      "core": 0.75
-    },
-    {
       "englishText": "I wrote a polite letter.",
       "farsiText": "یه نامه مودبانه نوشتم.",
       "finglish": "ye nâmeye mo'adabâne neveshtam",
@@ -33349,43 +32759,6 @@
       ],
       "id": "a1c9a670-7154-4664-be35-53648e324434",
       "core": 0.75
-    },
-    {
-      "englishText": "Why is your sister getting up?",
-      "farsiText": "چرا خواهرت بلند می‌شه؟",
-      "finglish": "cherâ khâharet boland mishe?",
-      "literalGloss": "why your-sister tall becomes?",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "colloquial",
-        "compound-verb",
-        "pronoun-clitic"
-      ],
-      "breakdown": [
-        {
-          "fa": "چرا",
-          "translit": "cherâ",
-          "en": "why",
-          "pos": "question word"
-        },
-        {
-          "fa": "خواهرت",
-          "translit": "khâharet",
-          "en": "your sister",
-          "pos": "attached pronoun"
-        },
-        {
-          "fa": "بلند می‌شه",
-          "translit": "boland mishe",
-          "en": "tall becomes",
-          "pos": "compound verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "1ca36ac7-7482-4462-9193-b0a4bfe76bc5",
-      "core": 1.0
     },
     {
       "englishText": "I want to talk with my mother.",
@@ -33559,49 +32932,6 @@
       "core": 0.5
     },
     {
-      "englishText": "A warm wind got up.",
-      "farsiText": "یه باد گرم بلند شد.",
-      "finglish": "ye bâde garm boland shod",
-      "literalGloss": "a wind warm tall became",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "compound-verb",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "یه",
-          "translit": "ye",
-          "en": "a",
-          "pos": "number"
-        },
-        {
-          "fa": "باد",
-          "translit": "bâde",
-          "en": "wind",
-          "pos": "noun"
-        },
-        {
-          "fa": "گرم",
-          "translit": "garm",
-          "en": "warm",
-          "pos": "adjective"
-        },
-        {
-          "fa": "بلند شد",
-          "translit": "boland shod",
-          "en": "tall became",
-          "pos": "compound verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "6d290c36-e1f0-4817-80d3-68a141c89d0d",
-      "core": 0.75
-    },
-    {
       "englishText": "I didn't talk with my brother.",
       "farsiText": "با برادرم صحبت نکردم.",
       "finglish": "bâ barâdaram sohbat nakardam",
@@ -33719,22 +33049,6 @@
         "ra-marker"
       ],
       "id": "f1b8ce91-0470-4731-9e7a-61b0c216c4fa",
-      "core": 1.0
-    },
-    {
-      "englishText": "My husband didn't get up from the table.",
-      "farsiText": "شوهرم از سر میز بلند نشد.",
-      "finglish": "shoharam az sare miz boland nashod",
-      "literalGloss": "my-husband from head of table tall did-not-become",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "compound-verb",
-        "pronoun-clitic",
-        "ezafe"
-      ],
-      "id": "aafbe73f-3095-4499-ac06-bc7e32954e06",
       "core": 1.0
     },
     {
@@ -34295,43 +33609,6 @@
       "core": 0.25
     },
     {
-      "englishText": "I didn't know the answer.",
-      "farsiText": "جواب رو ندونستم.",
-      "finglish": "javâb ro nadunestam",
-      "literalGloss": "answer ra I-did-not-know",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "ra-marker",
-        "colloquial",
-        "verb-tense"
-      ],
-      "breakdown": [
-        {
-          "fa": "جواب",
-          "translit": "javâb",
-          "en": "answer",
-          "pos": "noun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "ندونستم",
-          "translit": "nadunestam",
-          "en": "I did not know",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "c3a68e07-4609-4ef6-9692-d4a1dad44f87",
-      "core": 0.75
-    },
-    {
       "englishText": "Do you want to know?",
       "farsiText": "می‌خوای بدونی؟",
       "finglish": "mikhây beduni?",
@@ -34689,49 +33966,6 @@
       "core": 0.25
     },
     {
-      "englishText": "Should I read this menu?",
-      "farsiText": "این منو رو بخونم؟",
-      "finglish": "in menu ro bekhunam?",
-      "literalGloss": "this menu ra I-read?",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "subjunctive",
-        "ra-marker",
-        "colloquial"
-      ],
-      "breakdown": [
-        {
-          "fa": "این",
-          "translit": "in",
-          "en": "this",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "منو",
-          "translit": "menu",
-          "en": "menu",
-          "pos": "noun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "بخونم",
-          "translit": "bekhunam",
-          "en": "I read",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "5dc3d8bd-8e90-4452-b7be-2934d2820b33",
-      "core": 0.75
-    },
-    {
       "englishText": "I was reading a book.",
       "farsiText": "داشتم کتاب می‌خوندم.",
       "finglish": "dâshtam ketâb mikhundam",
@@ -35028,69 +34262,6 @@
       "core": 1.0
     },
     {
-      "englishText": "I don't sit on this chair.",
-      "farsiText": "من روی این صندلی نمی‌شینم.",
-      "finglish": "man ruye in sandali nemishinam.",
-      "literalGloss": "I on this chair I-not-sit.",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "colloquial",
-        "preposition"
-      ],
-      "breakdown": [
-        {
-          "fa": "من",
-          "translit": "man",
-          "en": "I",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "روی",
-          "translit": "ruye",
-          "en": "on",
-          "pos": "preposition"
-        },
-        {
-          "fa": "این",
-          "translit": "in",
-          "en": "this",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "صندلی",
-          "translit": "sandali",
-          "en": "chair",
-          "pos": "noun"
-        },
-        {
-          "fa": "نمی‌شینم",
-          "translit": "nemishinam",
-          "en": "I not sit",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "d6414157-0edc-4611-99fe-e506154c3a3c",
-      "core": 1.0
-    },
-    {
-      "englishText": "Why do you search for your book?",
-      "farsiText": "چرا دنبال کتابت می‌گردی؟",
-      "finglish": "cherâ donbâle ketâbet migardi?",
-      "literalGloss": "why after book-your you-search?",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "compound-verb"
-      ],
-      "id": "6123d7b6-d5d6-4168-b09e-8a30f4c37cd1",
-      "core": 0.75
-    },
-    {
       "englishText": "Does he come on Fridays?",
       "farsiText": "اون جمعه‌ها می‌آد؟",
       "finglish": "un jom'ehâ miâ?",
@@ -35266,48 +34437,6 @@
       "core": 1.0
     },
     {
-      "englishText": "We don't sit in the class.",
-      "farsiText": "ما تو کلاس نمی‌شینیم.",
-      "finglish": "mâ tu kelâs nemishinim.",
-      "literalGloss": "we in class we-not-sit.",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "colloquial",
-        "preposition"
-      ],
-      "breakdown": [
-        {
-          "fa": "ما",
-          "translit": "mâ",
-          "en": "we",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "تو",
-          "translit": "tu",
-          "en": "in",
-          "pos": "preposition"
-        },
-        {
-          "fa": "کلاس",
-          "translit": "kelâs",
-          "en": "class",
-          "pos": "noun"
-        },
-        {
-          "fa": "نمی‌شینیم",
-          "translit": "nemishinim",
-          "en": "we not sit",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "04a80f61-59de-4e19-a151-3958d209e7a0",
-      "core": 0.75
-    },
-    {
       "englishText": "When does he come?",
       "farsiText": "اون کی می‌آد؟",
       "finglish": "un key miâ?",
@@ -35341,43 +34470,6 @@
       "breakdownSource": "derived",
       "alternatives": [],
       "id": "a586ea37-9dac-4a6f-8c28-193742b403da",
-      "core": 0.75
-    },
-    {
-      "englishText": "My eyes are looking for you.",
-      "farsiText": "چشمام دنبالت می‌گردن.",
-      "finglish": "cheshmâm donbâlet migardan.",
-      "literalGloss": "eyes-my after-you they-look.",
-      "difficulty": 1,
-      "situation": "at the doctor or pharmacy",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "verb-agreement"
-      ],
-      "breakdown": [
-        {
-          "fa": "چشمام",
-          "translit": "cheshmâm",
-          "en": "my eyes",
-          "pos": "attached pronoun"
-        },
-        {
-          "fa": "دنبالت",
-          "translit": "donbâlet",
-          "en": "after you",
-          "pos": "verb"
-        },
-        {
-          "fa": "می‌گردن",
-          "translit": "migardan",
-          "en": "they look",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "c905f9b2-a252-4fba-9251-7d53f94bb8ad",
       "core": 0.75
     },
     {
@@ -35495,42 +34587,6 @@
       "core": 0.75
     },
     {
-      "englishText": "Where do we sit at noon?",
-      "farsiText": "ظهر کجا بشینیم؟",
-      "finglish": "zohr kojâ beshinim?",
-      "literalGloss": "noon where we-sit?",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "breakdown": [
-        {
-          "fa": "ظهر",
-          "translit": "zohr",
-          "en": "noon",
-          "pos": "noun"
-        },
-        {
-          "fa": "کجا",
-          "translit": "kojâ",
-          "en": "where",
-          "pos": "question word"
-        },
-        {
-          "fa": "بشینیم",
-          "translit": "beshinim",
-          "en": "we sit",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "b620e8c4-8f8a-4b49-9a79-30c629ad1387",
-      "core": 1.0
-    },
-    {
       "englishText": "They are looking for a job.",
       "farsiText": "اونا دنبال کار می‌گردن.",
       "finglish": "unâ donbâle kâr migardan.",
@@ -35543,49 +34599,6 @@
         "compound-verb"
       ],
       "id": "9e4221e1-c18b-4675-9fc1-68010bf6e84e",
-      "core": 0.75
-    },
-    {
-      "englishText": "He doesn't take his bag.",
-      "farsiText": "اون کیفش رو نمی‌گیره.",
-      "finglish": "un kifesh ro nemigire.",
-      "literalGloss": "he bag-his (ra) he-not-take.",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "pronoun-clitic"
-      ],
-      "breakdown": [
-        {
-          "fa": "اون",
-          "translit": "un",
-          "en": "he",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "کیفش",
-          "translit": "kifesh",
-          "en": "his bag",
-          "pos": "attached pronoun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "نمی‌گیره",
-          "translit": "nemigire",
-          "en": "he not take",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "aa0ac7de-8216-41bb-984c-7bee7b982a32",
       "core": 0.75
     },
     {
@@ -36588,55 +35601,6 @@
       "core": 0.5
     },
     {
-      "englishText": "I don't want this hot weather.",
-      "farsiText": "این هوای گرم رو نمی‌خوام.",
-      "finglish": "in havâ-ye garm ro nemikhâm.",
-      "literalGloss": "this weather-of warm [ra-marker] I-dont-want",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "این",
-          "translit": "in",
-          "en": "this",
-          "pos": "pronoun"
-        },
-        {
-          "fa": "هوای",
-          "translit": "havâ-ye",
-          "en": "weather",
-          "pos": "noun"
-        },
-        {
-          "fa": "گرم",
-          "translit": "garm",
-          "en": "warm",
-          "pos": "adjective"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "نمی‌خوام",
-          "translit": "nemikhâm",
-          "en": "I dont want",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "d1d2940f-e47a-4995-bb63-bd82b05f58ee",
-      "core": 0.75
-    },
-    {
       "englishText": "Yesterday we walked in the rain.",
       "farsiText": "دیروز توی بارون قدم زدیم.",
       "finglish": "diruz tuye bârun ghadam zadim.",
@@ -37081,56 +36045,6 @@
       "alternatives": [],
       "id": "c4b46e78-c1dd-439a-9a96-56446ba49ce4",
       "core": 0.25
-    },
-    {
-      "englishText": "I don't want cold water for my throat.",
-      "farsiText": "واسه گلوم آب سرد نمی‌خوام.",
-      "finglish": "vâse galum âb-e sard nemikhâm.",
-      "literalGloss": "for throat-my water-of cold I-dont-want",
-      "difficulty": 1,
-      "situation": "at the doctor or pharmacy",
-      "grammarTags": [
-        "colloquial",
-        "ezafe",
-        "preposition",
-        "pronoun-clitic"
-      ],
-      "breakdown": [
-        {
-          "fa": "واسه",
-          "translit": "vâse",
-          "en": "for",
-          "pos": "preposition"
-        },
-        {
-          "fa": "گلوم",
-          "translit": "galum",
-          "en": "my throat",
-          "pos": "attached pronoun"
-        },
-        {
-          "fa": "آب",
-          "translit": "âb-e",
-          "en": "water",
-          "pos": "noun"
-        },
-        {
-          "fa": "سرد",
-          "translit": "sard",
-          "en": "cold",
-          "pos": "noun"
-        },
-        {
-          "fa": "نمی‌خوام",
-          "translit": "nemikhâm",
-          "en": "I dont want",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "c01fcc46-be9f-495b-9316-094fa82830e3",
-      "core": 1.0
     },
     {
       "englishText": "I used to walk for my health.",
@@ -37700,49 +36614,6 @@
       "core": 0.5
     },
     {
-      "englishText": "I don't put the shoes inside.",
-      "farsiText": "کفش‌ها رو تو نمی‌ذارم.",
-      "finglish": "kafshâ ro tu nemizâram",
-      "literalGloss": "shoes ra-marker inside I-not-put",
-      "difficulty": 1,
-      "situation": "hosting or visiting someone's home",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "plural"
-      ],
-      "breakdown": [
-        {
-          "fa": "کفش‌ها",
-          "translit": "kafshâ",
-          "en": "shoes",
-          "pos": "noun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "تو",
-          "translit": "tu",
-          "en": "inside",
-          "pos": "preposition"
-        },
-        {
-          "fa": "نمی‌ذارم",
-          "translit": "nemizâram",
-          "en": "I not put",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "007415e2-1d55-422f-84a9-e6a7caabcf41",
-      "core": 0.75
-    },
-    {
       "englishText": "Why aren't you eating the soup?",
       "farsiText": "چرا سوپ رو نمی‌خوری؟",
       "finglish": "cherâ sup ro nemikhori",
@@ -38020,94 +36891,6 @@
       "core": 0.5
     },
     {
-      "englishText": "He has sold his cheap car.",
-      "farsiText": "ماشین ارزونش رو فروخته.",
-      "finglish": "mâshine arzunesh ro foruhte",
-      "literalGloss": "car-of cheap-his [ra] he-has-sold",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "ra-marker",
-        "verb-tense",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "ماشین",
-          "translit": "mâshine",
-          "en": "car",
-          "pos": "noun"
-        },
-        {
-          "fa": "ارزونش",
-          "translit": "arzunesh",
-          "en": "his cheap",
-          "pos": "attached pronoun"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "فروخته",
-          "translit": "foruhte",
-          "en": "he has sold",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "9e09597c-e5d9-43df-bd8c-123021df2a02",
-      "core": 0.75
-    },
-    {
-      "englishText": "I wanted a fast taxi.",
-      "farsiText": "یه تاکسی سریع می‌خواستم.",
-      "finglish": "ye tâksie sari' mikhâstam",
-      "literalGloss": "one taxi-of fast I-was-wanting",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "verb-tense",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "یه",
-          "translit": "ye",
-          "en": "one",
-          "pos": "number"
-        },
-        {
-          "fa": "تاکسی",
-          "translit": "tâksie",
-          "en": "taxi",
-          "pos": "noun"
-        },
-        {
-          "fa": "سریع",
-          "translit": "sari",
-          "en": "fast",
-          "pos": "noun"
-        },
-        {
-          "fa": "می‌خواستم",
-          "translit": "mikhâstam",
-          "en": "I was wanting",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "ad82289c-1b14-4324-99d6-09e8bb138e73",
-      "core": 0.75
-    },
-    {
       "englishText": "I don't know the cause of my back pain.",
       "farsiText": "علت کمردردم رو نمی‌دونم.",
       "finglish": "ellate kamardardam ro nemidunam",
@@ -38381,56 +37164,6 @@
       "alternatives": [],
       "id": "a6e4fa50-7c4c-4b26-9e23-6fd15ae10b0d",
       "core": 0.5
-    },
-    {
-      "englishText": "I want to see the beautiful room.",
-      "farsiText": "می‌خوام اتاق قشنگ رو ببینم.",
-      "finglish": "mikhâm otâge ghashang ro bebinam",
-      "literalGloss": "I-want room-of beautiful [ra] I-see",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive",
-        "ra-marker",
-        "ezafe"
-      ],
-      "breakdown": [
-        {
-          "fa": "می‌خوام",
-          "translit": "mikhâm",
-          "en": "I want",
-          "pos": "verb"
-        },
-        {
-          "fa": "اتاق",
-          "translit": "otâge",
-          "en": "room",
-          "pos": "noun"
-        },
-        {
-          "fa": "قشنگ",
-          "translit": "ghashang",
-          "en": "beautiful",
-          "pos": "adjective"
-        },
-        {
-          "fa": "رو",
-          "translit": "ro",
-          "en": "[object]",
-          "pos": "particle"
-        },
-        {
-          "fa": "ببینم",
-          "translit": "bebinam",
-          "en": "I see",
-          "pos": "verb"
-        }
-      ],
-      "breakdownSource": "derived",
-      "alternatives": [],
-      "id": "f136d087-18b3-484f-8307-6414a73de3b7",
-      "core": 0.75
     },
     {
       "englishText": "Did you pick up the car keys?",
@@ -74619,6 +73352,502 @@
       "alternatives": [],
       "source": "handwritten",
       "core": 0.75
+    },
+    {
+      "id": "5dcf32e1-6dad-44c1-ac96-135201febad2",
+      "englishText": "Get up, it's eight o'clock.",
+      "farsiText": "بلند شو، ساعت هشته.",
+      "finglish": "boland sho, sâ'at hashte.",
+      "literalGloss": "get up o'clock is eight",
+      "difficulty": 1,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بلند شو",
+          "translit": "boland sho",
+          "en": "get up",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "ساعت",
+          "translit": "sâ'at",
+          "en": "o'clock",
+          "pos": "noun"
+        },
+        {
+          "fa": "هشته",
+          "translit": "hashte",
+          "en": "is eight",
+          "pos": "number"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "1a44fea8-8cea-4583-9ff7-62b4f05e45de",
+      "englishText": "Speak louder, please.",
+      "farsiText": "لطفا بلندتر حرف بزن.",
+      "finglish": "lotfan bolandtar harf bezan.",
+      "literalGloss": "please louder speak",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "لطفا",
+          "translit": "lotfan",
+          "en": "please",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بلندتر",
+          "translit": "bolandtar",
+          "en": "louder",
+          "pos": "adverb"
+        },
+        {
+          "fa": "حرف بزن",
+          "translit": "harf bezan",
+          "en": "speak",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "44246edf-fa5f-440f-8cde-c47e8fe9334b",
+      "englishText": "My brother is very tall.",
+      "farsiText": "برادرم خیلی قدبلنده.",
+      "finglish": "barâdaram kheyli ghadbolande.",
+      "literalGloss": "my brother very is tall",
+      "difficulty": 1,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "برادرم",
+          "translit": "barâdaram",
+          "en": "my brother",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "قدبلنده",
+          "translit": "ghadbolande",
+          "en": "is tall",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "9a6da337-8627-4775-be97-fa9669f9600b",
+      "englishText": "Is there anything cheaper?",
+      "farsiText": "ارزون‌تر ندارین؟",
+      "finglish": "arzuntar nadârin?",
+      "literalGloss": "cheaper don't you have",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "ارزون‌تر",
+          "translit": "arzuntar",
+          "en": "cheaper",
+          "pos": "adjective"
+        },
+        {
+          "fa": "ندارین",
+          "translit": "nadârin",
+          "en": "don't you have",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "884d767c-b68c-4e63-9d34-024ed3148c4f",
+      "englishText": "My eyes hurt.",
+      "farsiText": "چشمام درد می‌کنه.",
+      "finglish": "cheshmâm dard mikone.",
+      "literalGloss": "my eyes hurt",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چشمام",
+          "translit": "cheshmâm",
+          "en": "my eyes",
+          "pos": "noun"
+        },
+        {
+          "fa": "درد می‌کنه",
+          "translit": "dard mikone",
+          "en": "hurt",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "d079f32b-d403-4248-b0dd-76b40ba1f7b8",
+      "englishText": "Come quickly.",
+      "farsiText": "سریع بیا.",
+      "finglish": "sari' biyâ.",
+      "literalGloss": "quickly come",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "سریع",
+          "translit": "sari'",
+          "en": "quickly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بیا",
+          "translit": "biyâ",
+          "en": "come",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "916cc0ed-d240-4741-b18c-b00ff8174bbb",
+      "englishText": "It's cheap here.",
+      "farsiText": "اینجا ارزونه.",
+      "finglish": "injâ arzune.",
+      "literalGloss": "here it's cheap",
+      "difficulty": 1,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اینجا",
+          "translit": "injâ",
+          "en": "here",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ارزونه",
+          "translit": "arzune",
+          "en": "it's cheap",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "2fbaaa65-f6ae-4cc9-acca-b9e5a281c6e2",
+      "englishText": "He got up and left.",
+      "farsiText": "بلند شد و رفت.",
+      "finglish": "boland shod o raft.",
+      "literalGloss": "he got up and left",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بلند شد",
+          "translit": "boland shod",
+          "en": "he got up",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "و",
+          "translit": "o",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "رفت",
+          "translit": "raft",
+          "en": "left",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "de164ee2-8eab-4d2c-acea-d9195111ebee",
+      "englishText": "The music is too loud.",
+      "farsiText": "صدای موسیقی خیلی بلنده.",
+      "finglish": "sedâye musighi kheyli bolande.",
+      "literalGloss": "the sound of music too is loud",
+      "difficulty": 2,
+      "situation": "complaining about something not working",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "صدای",
+          "translit": "sedâye",
+          "en": "the sound of",
+          "pos": "noun"
+        },
+        {
+          "fa": "موسیقی",
+          "translit": "musighi",
+          "en": "music",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "too",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بلنده",
+          "translit": "bolande",
+          "en": "is loud",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "c7197973-7be3-4d4d-889e-f33e8d45130b",
+      "englishText": "Fruit is cheap at the market.",
+      "farsiText": "میوه تو بازار ارزونه.",
+      "finglish": "mive tu bâzâr arzune.",
+      "literalGloss": "fruit in market is cheap",
+      "difficulty": 2,
+      "situation": "shopping and asking prices",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "میوه",
+          "translit": "mive",
+          "en": "fruit",
+          "pos": "noun"
+        },
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "بازار",
+          "translit": "bâzâr",
+          "en": "market",
+          "pos": "noun"
+        },
+        {
+          "fa": "ارزونه",
+          "translit": "arzune",
+          "en": "is cheap",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "4949ec08-a859-4633-9b87-b1f29c7d9ef9",
+      "englishText": "I've got something in my eye.",
+      "farsiText": "یه چیزی رفته تو چشمم.",
+      "finglish": "ye chizi rafte tu cheshmam.",
+      "literalGloss": "a something has gone into my eye",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "چیزی",
+          "translit": "chizi",
+          "en": "something",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "رفته",
+          "translit": "rafte",
+          "en": "has gone",
+          "pos": "verb"
+        },
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "into",
+          "pos": "preposition"
+        },
+        {
+          "fa": "چشمم",
+          "translit": "cheshmam",
+          "en": "my eye",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "b6aea0bb-bee4-4fc2-9f3f-6457bba38e43",
+      "englishText": "Her husband is very kind.",
+      "farsiText": "شوهرش خیلی مهربونه.",
+      "finglish": "shoharesh kheyli mehrabune.",
+      "literalGloss": "her husband very is kind",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "شوهرش",
+          "translit": "shoharesh",
+          "en": "her husband",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "مهربونه",
+          "translit": "mehrabune",
+          "en": "is kind",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "069a0d7a-69c5-4264-baf1-13c27e92a75d",
+      "englishText": "The wedding was very good.",
+      "farsiText": "عروسی خیلی خوب بود.",
+      "finglish": "arusi kheyli khub bud.",
+      "literalGloss": "the wedding very good was",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "عروسی",
+          "translit": "arusi",
+          "en": "the wedding",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "خوب",
+          "translit": "khub",
+          "en": "good",
+          "pos": "adjective"
+        },
+        {
+          "fa": "بود",
+          "translit": "bud",
+          "en": "was",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "d8e53c40-6385-48d5-988a-0112a837e574",
+      "englishText": "The hotel is very expensive.",
+      "farsiText": "هتل خیلی گرونه.",
+      "finglish": "hotel kheyli gerune.",
+      "literalGloss": "hotel very is expensive",
+      "difficulty": 2,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هتل",
+          "translit": "hotel",
+          "en": "hotel",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "گرونه",
+          "translit": "gerune",
+          "en": "is expensive",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
     }
   ]
 }

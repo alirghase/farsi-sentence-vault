@@ -1,5 +1,5 @@
 {
-  "count": 537,
+  "count": 523,
   "transforms": [
     {
       "id": "7026cae7-d352-5780-90d1-103227742cc0",
@@ -902,24 +902,6 @@
       "alternatives": []
     },
     {
-      "id": "e537d76e-e676-570a-a90b-2481afe54993",
-      "kind": "transform",
-      "stemId": "c6fd7880-5af1-4ee4-bc5a-bd1dbca15107",
-      "stem": "تونستی کارت بخری؟",
-      "stemEn": "Could you buy a card?",
-      "transform": "toFormal",
-      "farsiText": "تونستین کارت بخرین؟",
-      "finglish": "tunestin kârt bokharin?",
-      "englishText": "Could you buy a card?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "2cc9555c-913b-5029-be21-a29ae6b20d48",
       "kind": "transform",
       "stemId": "e227d79a-fc96-490f-b324-e5d15951cc06",
@@ -935,42 +917,6 @@
         "colloquial",
         "ra-marker",
         "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "ee600702-4d10-5b3e-a712-11b9afc904cd",
-      "kind": "transform",
-      "stemId": "5f787322-de56-41b2-be33-8d8c48adb544",
-      "stem": "درباره هوا پرسیدی؟",
-      "stemEn": "Did you ask about the weather?",
-      "transform": "toFormal",
-      "farsiText": "درباره هوا پرسیدین؟",
-      "finglish": "darbâreye havâ porsidin?",
-      "englishText": "Did you ask about the weather?",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "2eb0eab9-e992-599e-b255-e00da2a7dc55",
-      "kind": "transform",
-      "stemId": "0f51084a-2fee-4c23-ac28-51920eedb8a9",
-      "stem": "روی صندلی نشستی؟",
-      "stemEn": "Did you sit on the seat?",
-      "transform": "toFormal",
-      "farsiText": "روی صندلی نشستین؟",
-      "finglish": "ruye sandali neshestin?",
-      "englishText": "Did you sit on the seat?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "preposition",
-        "ezafe"
       ],
       "alternatives": []
     },
@@ -1231,25 +1177,6 @@
       "alternatives": []
     },
     {
-      "id": "50e7fea9-a445-5804-aec9-d14f55500624",
-      "kind": "transform",
-      "stemId": "c905f9b2-a252-4fba-9251-7d53f94bb8ad",
-      "stem": "چشمام دنبالت می‌گردن.",
-      "stemEn": "My eyes are looking for you.",
-      "transform": "toPast",
-      "farsiText": "چشمام دنبالت می‌گشتن.",
-      "finglish": "cheshmâm donbâlet migashtan.",
-      "englishText": "My eyes were looking for you.",
-      "difficulty": 1,
-      "situation": "at the doctor or pharmacy",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "verb-agreement"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "e810539f-7374-58ba-a91f-98c36283fad5",
       "kind": "transform",
       "stemId": "f21f7c8f-e9d0-47cf-81d9-f0d0f5532136",
@@ -1276,24 +1203,6 @@
       "farsiText": "می‌خواستیم شنبه بیایم.",
       "finglish": "mikhâstim shanbe biyâym.",
       "englishText": "We wanted to come on Saturday.",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "ac4099ad-391b-5912-a3f7-f26b37eeae44",
-      "kind": "transform",
-      "stemId": "b620e8c4-8f8a-4b49-9a79-30c629ad1387",
-      "stem": "ظهر کجا بشینیم؟",
-      "stemEn": "Where do we sit at noon?",
-      "transform": "toPast",
-      "farsiText": "ظهر کجا نشستیم؟",
-      "finglish": "zohr kojâ neshastim?",
-      "englishText": "Where did we sit at noon?",
       "difficulty": 1,
       "situation": "making plans with a friend",
       "grammarTags": [
@@ -1507,8 +1416,8 @@
       "stem": "این پیامو نمی‌فهمم.",
       "stemEn": "I don't understand this message.",
       "transform": "toPast",
-      "farsiText": "این پیامو نمی‌فهمیدم.",
-      "finglish": "in payâmo nemifahmidam.",
+      "farsiText": "این پیامو نفهمیدم.",
+      "finglish": "in payâmo nafahmidam.",
       "englishText": "I didn't understand this message.",
       "difficulty": 1,
       "situation": "making plans with a friend",
@@ -1653,25 +1562,6 @@
       "situation": "ordering food or coffee",
       "grammarTags": [
         "pronoun-clitic",
-        "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "7e9b5b89-60bc-5f6e-a635-2aa111ad0717",
-      "kind": "transform",
-      "stemId": "c3a68e07-4609-4ef6-9692-d4a1dad44f87",
-      "stem": "جواب رو ندونستم.",
-      "stemEn": "I didn't know the answer.",
-      "transform": "toPlural",
-      "farsiText": "جواب رو ندونستیم.",
-      "finglish": "javâb ro nadunestim.",
-      "englishText": "We didn't know the answer.",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "ra-marker",
-        "colloquial",
         "verb-tense"
       ],
       "alternatives": []
@@ -2505,24 +2395,6 @@
       "alternatives": []
     },
     {
-      "id": "6a9ffe59-d540-5ec1-9208-0ddc834ad4f2",
-      "kind": "transform",
-      "stemId": "c6fd7880-5af1-4ee4-bc5a-bd1dbca15107",
-      "stem": "تونستی کارت بخری؟",
-      "stemEn": "Could you buy a card?",
-      "transform": "negate",
-      "farsiText": "نتونستی کارت بخری؟",
-      "finglish": "natunesti kârt bekhari?",
-      "englishText": "Couldn't you buy a card?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "61b1800c-4e39-5bad-bd6a-74c7c5b37421",
       "kind": "transform",
       "stemId": "8c42aaab-0c56-441f-bb20-f927e0b8afad",
@@ -2557,42 +2429,6 @@
         "colloquial",
         "ra-marker",
         "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "88c62f66-edca-5da8-8c5e-20b57e56f3a5",
-      "kind": "transform",
-      "stemId": "3843fa5f-9da7-4a95-bd24-3e73713de832",
-      "stem": "اون آلبالو می‌فروشه؟",
-      "stemEn": "Does he sell sour cherries?",
-      "transform": "negate",
-      "farsiText": "اون آلبالو نمی‌فروشه؟",
-      "finglish": "un âlbâlu nemifrushe?",
-      "englishText": "Doesn't he sell sour cherries?",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "verb-agreement"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "9940c213-3098-5c3a-b355-a50898540f50",
-      "kind": "transform",
-      "stemId": "5f787322-de56-41b2-be33-8d8c48adb544",
-      "stem": "درباره هوا پرسیدی؟",
-      "stemEn": "Did you ask about the weather?",
-      "transform": "negate",
-      "farsiText": "درباره هوا نپرسیدی؟",
-      "finglish": "darbâreye havâ naporsidi?",
-      "englishText": "Didn't you ask about the weather?",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
       ],
       "alternatives": []
     },
@@ -2856,25 +2692,6 @@
       "alternatives": []
     },
     {
-      "id": "d572cbe9-22f1-5492-9b46-65a6efb17983",
-      "kind": "transform",
-      "stemId": "c905f9b2-a252-4fba-9251-7d53f94bb8ad",
-      "stem": "چشمام دنبالت می‌گردن.",
-      "stemEn": "My eyes are looking for you.",
-      "transform": "negate",
-      "farsiText": "چشمام دنبالت نمی‌گردن.",
-      "finglish": "cheshmâm donbâlet nemigardan.",
-      "englishText": "My eyes are not looking for you.",
-      "difficulty": 1,
-      "situation": "at the doctor or pharmacy",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "verb-agreement"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "f456e8c0-2fa3-543a-a860-8a1ba3de2abe",
       "kind": "transform",
       "stemId": "f21f7c8f-e9d0-47cf-81d9-f0d0f5532136",
@@ -2901,24 +2718,6 @@
       "farsiText": "نمی‌خوایم شنبه بیایم.",
       "finglish": "nemikhâym shanbe biyâym.",
       "englishText": "We don't want to come on Saturday.",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "251acb0c-3e8e-5898-b8de-e4b6a19d76aa",
-      "kind": "transform",
-      "stemId": "b620e8c4-8f8a-4b49-9a79-30c629ad1387",
-      "stem": "ظهر کجا بشینیم؟",
-      "stemEn": "Where do we sit at noon?",
-      "transform": "negate",
-      "farsiText": "ظهر کجا نشینیم؟",
-      "finglish": "zohr kojâ nashinim?",
-      "englishText": "Where should we not sit at noon?",
       "difficulty": 1,
       "situation": "making plans with a friend",
       "grammarTags": [
@@ -3913,24 +3712,6 @@
       "alternatives": []
     },
     {
-      "id": "daa977a3-c041-5d17-b122-83fb6ec15974",
-      "kind": "transform",
-      "stemId": "cce4e90a-34e3-4529-a38d-2f7f37b5e19e",
-      "stem": "ما هوای گرم می‌خوایم.",
-      "stemEn": "We want warm weather.",
-      "transform": "negate",
-      "farsiText": "ما هوای گرم نمی‌خوایم.",
-      "finglish": "mâ havâye garm nemikhâym.",
-      "englishText": "We don't want warm weather.",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "a28d4f10-8891-5bd6-bd70-d40b97910b88",
       "kind": "transform",
       "stemId": "c2ecaa8c-d5a6-4ec7-8cc1-bff2d823f67e",
@@ -3966,26 +3747,6 @@
         "colloquial",
         "ra-marker",
         "ezafe"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "e8c33ff6-4da2-516a-9c47-f415a32c673f",
-      "kind": "transform",
-      "stemId": "0d88dd33-d9e9-496a-bd39-45c4c39f67fe",
-      "stem": "زبون سختش رو می‌فهمی؟",
-      "stemEn": "Do you understand his difficult language?",
-      "transform": "negate",
-      "farsiText": "زبون سختش رو نمی‌فهمی؟",
-      "finglish": "zabune sakhtesh ro nemifahmi?",
-      "englishText": "Don't you understand his difficult language?",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "ezafe",
-        "pronoun-clitic"
       ],
       "alternatives": []
     },
@@ -4280,25 +4041,6 @@
       "grammarTags": [
         "colloquial",
         "ra-marker",
-        "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "78eeb33c-7539-5355-9da1-d940a2339b89",
-      "kind": "transform",
-      "stemId": "1ca36ac7-7482-4462-9193-b0a4bfe76bc5",
-      "stem": "چرا خواهرت بلند می‌شه؟",
-      "stemEn": "Why is your sister getting up?",
-      "transform": "toFormal",
-      "farsiText": "چرا خواهرتون بلند می‌شه؟",
-      "finglish": "cherâ khâharetun boland mishe?",
-      "englishText": "Why is your sister getting up?",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "colloquial",
-        "compound-verb",
         "pronoun-clitic"
       ],
       "alternatives": []
