@@ -12,7 +12,8 @@ import { readFileSync } from 'node:fs';
 import * as SM2 from '../web/js/sm2.js';
 import { instruction, stemHint } from '../web/js/taxonomy.js';
 import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn, NEW_PER_DAY,
-         directionsFor, promptFor, answerFor, expectsFarsi, isDrill, targetMs } from '../web/js/session.js';
+         directionsFor, promptFor, answerFor, expectsFarsi, isDrill, targetMs,
+         newCardOrder } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -281,4 +282,16 @@ test('every shipped reply can be asked and answered', () => {
     assert.ok(matchesAnswer(row.farsiText, row, 'reply'), row.id);
     assert.equal(instruction(row), 'جواب بده');
   }
+});
+
+// --- order of new cards ---
+
+test('new cards: your own first, then the most common words, ties left shuffled', () => {
+  const card = (id, extra) => ({ sentence: { id, source: 'seed', ...extra } });
+  const cards = [
+    card('rare', { core: 0.25 }), card('common-a', { core: 1 }), card('drill'),
+    card('mine', { source: 'custom' }), card('common-b', { core: 1 }),
+  ];
+  assert.deepEqual(cards.sort(newCardOrder).map((c) => c.sentence.id),
+    ['mine', 'common-a', 'common-b', 'rare', 'drill']);
 });

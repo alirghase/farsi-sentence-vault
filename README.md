@@ -50,6 +50,11 @@ five times tonight says nothing about whether you will know it in a fortnight,
 so letting it move a due date would feed the scheduler the one input it must not
 have.
 
+**New cards come commonest first.** Each sentence carries the share of it made
+of core words — the ~300 everyday words and 48 verbs listed in `core/syllabus.py`
+that most speech is made of — and new cards are introduced highest share first,
+so *نمی‌دونم* and *یه قهوه می‌خوام* arrive before a sentence about a dripping tap.
+
 **40 new cards a day** (`NEW_PER_DAY` in `web/js/session.js`) caps introduction,
 not practice: every new card becomes several reviews over the next fortnight.
 Sentences you add yourself are exempt.
@@ -116,7 +121,7 @@ node tools/check_js.mjs              # modules import, calls resolve, every $('i
 node --test tools/test_js.mjs        # scheduler, session selection, answer matching, every shipped drill
 python3 tools/check_deck.py          # card-level mistakes: word maps that do not rebuild their
                                      # sentence, two cards answering one prompt, colliding ids
-python3 tools/coverage.py            # core-verb coverage and what is missing
+python3 tools/coverage.py            # core verbs and core words met in fewer than 3 cards
 python3 tools/tenses.py              # which tenses the deck actually contains
 python3 tools/vocabulary.py          # what is met once and never again
 ```

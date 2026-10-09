@@ -68,6 +68,18 @@ export function eligibleAsNew(sentence, levelIds) {
   return !levelIds || levelIds.has(sentence.id);
 }
 
+/**
+ * The order new cards are introduced in; a stable sort, so ties stay shuffled.
+ *
+ * Your own sentences first: you wrote one down because you wanted it now. Then
+ * the sentences most made of core words (`core`, set by core/bank.py), so the
+ * words everyday speech is mostly made of come before the ones it rarely needs.
+ */
+export function newCardOrder(a, b) {
+  return (isOwn(b.sentence) - isOwn(a.sentence))
+    || ((b.sentence.core ?? 0) - (a.sentence.core ?? 0));
+}
+
 export function reviewKey(sentenceId, direction) {
   return `${sentenceId}::${direction}`;
 }
@@ -199,11 +211,7 @@ export async function build({
 
   due.sort((a, b) => a.review.dueDate - b.review.dueDate);
   shuffle(fresh);
-  // A sentence you added yourself goes to the front of the new pile. You wrote
-  // it down because you wanted it; waiting for it to surface by chance among
-  // several hundred bundled cards is the same as it never arriving. Once it has
-  // been seen it is an ordinary review and gets no further favour.
-  fresh.sort((a, b) => (b.sentence.source === 'custom') - (a.sentence.source === 'custom'));
+  fresh.sort(newCardOrder);
 
   const chosen = select(due, fresh, limit, weights, DIRECTIONS, maxNew);
   // A session that front-loads every review and back-loads every new card feels

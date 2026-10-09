@@ -1,9 +1,7 @@
 """The sentence bank: one file, the one the app ships.
 
-Every tool reads and writes web/data/seed_sentences.json directly. There used
-to be a gitignored working copy in tools/ plus a `cp` step to publish it, which
-meant a fresh clone could not run the pipeline at all and a forgotten copy
-shipped a stale deck. The diff on this file is now the review of what changed.
+Every tool reads and writes web/data/seed_sentences.json directly, and the diff
+on that file is the review of what changed.
 """
 
 from __future__ import annotations
@@ -11,6 +9,8 @@ from __future__ import annotations
 import json
 import pathlib
 import uuid
+
+from core.syllabus import core_share
 
 BANK = pathlib.Path(__file__).resolve().parent.parent / "web" / "data" / "seed_sentences.json"
 
@@ -38,6 +38,9 @@ def ensure_ids(data: dict) -> bool:
 
 def save(data: dict) -> None:
     ensure_ids(data)
+    # Read by the app to introduce the commonest sentences first.
+    for s in data["sentences"]:
+        s["core"] = core_share(s["farsiText"])
     data["version"] = data.get("version", 1)
     data["count"] = len(data["sentences"])
     BANK.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
