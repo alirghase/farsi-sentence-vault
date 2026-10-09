@@ -1,0 +1,13 @@
+{
+  "note": "What people say to someone learning Persian, and what to say back. Same format as replies.json.",
+  "replies": [
+    ["متوجه شدی؟", "Did you understand?", "آره، فهمیدم.", "âre, fahmidam.", "Yes, I got it.", ["نه، می~شه دوباره بگی؟", "یه کم."], 1, "asking someone to repeat or clarify"],
+    ["این کلمه رو بلدی؟", "Do you know this word?", "نه، یعنی چی؟", "na, yani chi?", "No, what does it mean?", ["آره، بلدم."], 1, "asking someone to repeat or clarify"],
+    ["انگلیسی بلدی؟", "Do you speak English?", "آره، ولی می~خوام فارسی تمرین کنم.", "âre, vali mikhâm fârsi tamrin konam.", "Yes, but I want to practise Persian.", ["یه کم."], 2, "talking about work or study"],
+    ["می~خوای انگلیسی حرف بزنیم؟", "Shall we speak English?", "نه، لطفا فارسی حرف بزنیم.", "na, lotfan fârsi harf bezanim.", "No, let's speak Persian, please.", ["نه مرسی، می~خوام تمرین کنم."], 2, "talking about work or study"],
+    ["چند وقته فارسی یاد می~گیری؟", "How long have you been learning Persian?", "تقریبا یه ساله.", "taghriban ye sâle.", "About a year.", ["تازه شروع کردم."], 2, "talking about work or study"],
+    ["مامانت باهات فارسی حرف می~زنه؟", "Does your mum speak Persian with you?", "آره، ولی من انگلیسی جواب می~دم.", "âre, vali man engelisi javâb midam.", "Yes, but I answer in English.", ["نه، همیشه انگلیسی حرف می~زنیم."], 2, "phone call with family"],
+    ["اینو به فارسی بگو.", "Say this in Persian.", "باشه، سعی می~کنم.", "bâshe, sa'y mikonam.", "Okay, I'll try.", ["بلد نیستم، کمکم کن."], 2, "asking someone to repeat or clarify"],
+    ["لهجه~ت خیلی خوبه!", "Your accent is very good!", "واقعا؟ ممنون، خیلی تمرین می~کنم.", "vâghe'an? mamnun, kheyli tamrin mikonam.", "Really? Thanks, I practise a lot.", ["لطف داری."], 2, "compliments and thanking (taarof)"]
+  ]
+}

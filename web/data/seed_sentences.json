@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 1693,
+  "count": 1728,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -70987,6 +70987,1255 @@
       "alternatives": [],
       "source": "handwritten",
       "core": 0.25
+    },
+    {
+      "id": "608704c9-3d6d-4507-9aa7-cc2c5d281d7f",
+      "englishText": "How do you say this in Persian?",
+      "farsiText": "اینو به فارسی چی می‌گن؟",
+      "finglish": "ino be fârsi chi migan?",
+      "literalGloss": "this in Persian what do they say",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اینو",
+          "translit": "ino",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "فارسی",
+          "translit": "fârsi",
+          "en": "Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌گن",
+          "translit": "migan",
+          "en": "do they say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "4d8d2510-bb7f-4eda-96e3-c70d000d6b5d",
+      "englishText": "What do you call this?",
+      "farsiText": "به این چی می‌گن؟",
+      "finglish": "be in chi migan?",
+      "literalGloss": "to this what do they say",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌گن",
+          "translit": "migan",
+          "en": "do they say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "f1fc2297-7e60-47e1-8d87-7138e2ddfd9a",
+      "englishText": "How do you say it in English?",
+      "farsiText": "به انگلیسی چی می‌شه؟",
+      "finglish": "be engelisi chi mishe?",
+      "literalGloss": "in English what does it become",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "انگلیسی",
+          "translit": "engelisi",
+          "en": "English",
+          "pos": "noun"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌شه",
+          "translit": "mishe",
+          "en": "does it become",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "c498ad9f-c9d8-4a46-8d01-d1e816c71d53",
+      "englishText": "My Persian isn't very good.",
+      "farsiText": "فارسیم زیاد خوب نیست.",
+      "finglish": "fârsim ziyâd khub nist.",
+      "literalGloss": "my Persian very good isn't",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "فارسیم",
+          "translit": "fârsim",
+          "en": "my Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "زیاد",
+          "translit": "ziyâd",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "خوب",
+          "translit": "khub",
+          "en": "good",
+          "pos": "adjective"
+        },
+        {
+          "fa": "نیست",
+          "translit": "nist",
+          "en": "isn't",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "b5875262-7423-40de-9bb6-3f3a29e41455",
+      "englishText": "My Persian is a bit weak.",
+      "farsiText": "فارسیم یه کم ضعیفه.",
+      "finglish": "fârsim ye kam za'ife.",
+      "literalGloss": "my Persian a bit is weak",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "فارسیم",
+          "translit": "fârsim",
+          "en": "my Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "یه کم",
+          "translit": "ye kam",
+          "en": "a bit",
+          "pos": "adverb"
+        },
+        {
+          "fa": "ضعیفه",
+          "translit": "za'ife",
+          "en": "is weak",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "f232de89-09b7-43ad-9bc3-bdb476ac5aa0",
+      "englishText": "I understand a little.",
+      "farsiText": "یه کم می‌فهمم.",
+      "finglish": "ye kam mifahmam.",
+      "literalGloss": "a little I understand",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یه کم",
+          "translit": "ye kam",
+          "en": "a little",
+          "pos": "adverb"
+        },
+        {
+          "fa": "می‌فهمم",
+          "translit": "mifahmam",
+          "en": "I understand",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "f3261d82-77ce-46fe-8278-38d421341653",
+      "englishText": "Got it.",
+      "farsiText": "فهمیدم.",
+      "finglish": "fahmidam.",
+      "literalGloss": "I understood",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "فهمیدم",
+          "translit": "fahmidam",
+          "en": "I understood",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "8dc205d4-816b-4b4b-b334-4a95ac9eb30b",
+      "englishText": "I didn't understand.",
+      "farsiText": "نفهمیدم.",
+      "finglish": "nafahmidam.",
+      "literalGloss": "I didn't understand",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "نفهمیدم",
+          "translit": "nafahmidam",
+          "en": "I didn't understand",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "e502bf65-e28e-4a03-8857-8e296d8d24ec",
+      "englishText": "Did I say it right?",
+      "farsiText": "درست گفتم؟",
+      "finglish": "dorost goftam?",
+      "literalGloss": "right did I say",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "درست",
+          "translit": "dorost",
+          "en": "right",
+          "pos": "adverb"
+        },
+        {
+          "fa": "گفتم",
+          "translit": "goftam",
+          "en": "did I say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "95ecd639-a030-4724-be26-c2ad2a21d344",
+      "englishText": "Did I say it wrong?",
+      "farsiText": "اشتباه گفتم؟",
+      "finglish": "eshtebâh goftam?",
+      "literalGloss": "wrong did I say",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اشتباه",
+          "translit": "eshtebâh",
+          "en": "wrong",
+          "pos": "adverb"
+        },
+        {
+          "fa": "گفتم",
+          "translit": "goftam",
+          "en": "did I say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "6d426709-12ba-4eeb-b89b-1afc5c246568",
+      "englishText": "How do you read this?",
+      "farsiText": "اینو چطوری می‌خونن؟",
+      "finglish": "ino chetori mikhunan?",
+      "literalGloss": "this how do they read",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اینو",
+          "translit": "ino",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "چطوری",
+          "translit": "chetori",
+          "en": "how",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌خونن",
+          "translit": "mikhunan",
+          "en": "do they read",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "096ff836-af88-44c3-88bf-4f0b1258b110",
+      "englishText": "Speak Persian with me.",
+      "farsiText": "باهام فارسی حرف بزن.",
+      "finglish": "bâhâm fârsi harf bezan.",
+      "literalGloss": "with me Persian speak",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "باهام",
+          "translit": "bâhâm",
+          "en": "with me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "فارسی",
+          "translit": "fârsi",
+          "en": "Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "حرف بزن",
+          "translit": "harf bezan",
+          "en": "speak",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "fb44143d-57c4-4cab-8ad3-9a250689ca24",
+      "englishText": "Please don't speak English.",
+      "farsiText": "لطفا انگلیسی حرف نزن.",
+      "finglish": "lotfan engelisi harf nazan.",
+      "literalGloss": "please English don't speak",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "لطفا",
+          "translit": "lotfan",
+          "en": "please",
+          "pos": "adverb"
+        },
+        {
+          "fa": "انگلیسی",
+          "translit": "engelisi",
+          "en": "English",
+          "pos": "noun"
+        },
+        {
+          "fa": "حرف نزن",
+          "translit": "harf nazan",
+          "en": "don't speak",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "f60afcef-7641-4add-997b-5be131cd7bc9",
+      "englishText": "Do you speak English?",
+      "farsiText": "انگلیسی بلدی؟",
+      "finglish": "engelisi baladi?",
+      "literalGloss": "English do you know",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "انگلیسی",
+          "translit": "engelisi",
+          "en": "English",
+          "pos": "noun"
+        },
+        {
+          "fa": "بلدی",
+          "translit": "baladi",
+          "en": "do you know",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "8fe10177-f515-4398-ba1d-20b4731dfeea",
+      "englishText": "I've forgotten the word for it.",
+      "farsiText": "کلمه‌ش یادم رفت.",
+      "finglish": "kalamash yâdam raft.",
+      "literalGloss": "its word I forgot",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "کلمه‌ش",
+          "translit": "kalamash",
+          "en": "its word",
+          "pos": "noun"
+        },
+        {
+          "fa": "یادم رفت",
+          "translit": "yâdam raft",
+          "en": "I forgot",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "c2839bab-2c30-491d-99db-d6d93cb3726f",
+      "englishText": "What's the word for it?",
+      "farsiText": "بهش چی می‌گن؟",
+      "finglish": "behesh chi migan?",
+      "literalGloss": "to it what do they say",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بهش",
+          "translit": "behesh",
+          "en": "to it",
+          "pos": "preposition"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌گن",
+          "translit": "migan",
+          "en": "do they say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "434b78c7-dd86-4458-8836-c7b7a7bbe5d1",
+      "englishText": "Write it down for me.",
+      "farsiText": "برام بنویسش.",
+      "finglish": "barâm benevisesh.",
+      "literalGloss": "for me write it",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "برام",
+          "translit": "barâm",
+          "en": "for me",
+          "pos": "preposition"
+        },
+        {
+          "fa": "بنویسش",
+          "translit": "benevisesh",
+          "en": "write it",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0
+    },
+    {
+      "id": "3e3fa868-28e1-4302-93e7-25dd13614b11",
+      "englishText": "Can you say it one more time?",
+      "farsiText": "می‌شه یه بار دیگه بگی؟",
+      "finglish": "mishe ye bâr dige begi?",
+      "literalGloss": "could you one more time say",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌شه",
+          "translit": "mishe",
+          "en": "could you",
+          "pos": "verb"
+        },
+        {
+          "fa": "یه بار دیگه",
+          "translit": "ye bâr dige",
+          "en": "one more time",
+          "pos": "expression"
+        },
+        {
+          "fa": "بگی",
+          "translit": "begi",
+          "en": "say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "45035d1e-aa17-484c-a9c5-ab8a44bfe1e9",
+      "englishText": "Say it slowly.",
+      "farsiText": "آروم بگو.",
+      "finglish": "ârum begu.",
+      "literalGloss": "slowly say",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "آروم",
+          "translit": "ârum",
+          "en": "slowly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بگو",
+          "translit": "begu",
+          "en": "say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "175cc698-56e3-4fd3-a354-6baaf56df74d",
+      "englishText": "What does that mean?",
+      "farsiText": "یعنی چی؟",
+      "finglish": "yani chi?",
+      "literalGloss": "it means what",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "یعنی",
+          "translit": "yani",
+          "en": "it means",
+          "pos": "expression"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "54450f76-149c-4d17-8c23-d26a2d973091",
+      "englishText": "What do you mean?",
+      "farsiText": "منظورت چیه؟",
+      "finglish": "manzuret chie?",
+      "literalGloss": "your meaning what is",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "منظورت",
+          "translit": "manzuret",
+          "en": "your meaning",
+          "pos": "noun"
+        },
+        {
+          "fa": "چیه",
+          "translit": "chie",
+          "en": "what is",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "66061e3d-37a2-445f-aad8-8793f08cd50c",
+      "englishText": "I'm still learning.",
+      "farsiText": "هنوز دارم یاد می‌گیرم.",
+      "finglish": "hanuz dâram yâd migiram.",
+      "literalGloss": "still I am learning",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هنوز",
+          "translit": "hanuz",
+          "en": "still",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I am",
+          "pos": "verb"
+        },
+        {
+          "fa": "یاد می‌گیرم",
+          "translit": "yâd migiram",
+          "en": "learning",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "e72fb788-9752-42ae-96fd-0819cb0962dc",
+      "englishText": "How do you write it?",
+      "farsiText": "چطوری می‌نویسنش؟",
+      "finglish": "chetori minevisanesh?",
+      "literalGloss": "how do they write it",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چطوری",
+          "translit": "chetori",
+          "en": "how",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌نویسنش",
+          "translit": "minevisanesh",
+          "en": "do they write it",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "5a26bb50-157d-40c6-9b6b-fb7a78b3e74c",
+      "englishText": "Thanks for waiting.",
+      "farsiText": "ممنون که صبر کردی.",
+      "finglish": "mamnun ke sabr kardi.",
+      "literalGloss": "thanks that you waited",
+      "difficulty": 1,
+      "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "ممنون",
+          "translit": "mamnun",
+          "en": "thanks",
+          "pos": "expression"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "صبر کردی",
+          "translit": "sabr kardi",
+          "en": "you waited",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "e4a702d2-b157-4a3c-b1e5-084166a2c579",
+      "englishText": "Correct me if I get it wrong.",
+      "farsiText": "اگه اشتباه گفتم، درستش کن.",
+      "finglish": "age eshtebâh goftam, dorostesh kon.",
+      "literalGloss": "if wrong I said correct it",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "اگه",
+          "translit": "age",
+          "en": "if",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "اشتباه",
+          "translit": "eshtebâh",
+          "en": "wrong",
+          "pos": "adverb"
+        },
+        {
+          "fa": "گفتم",
+          "translit": "goftam",
+          "en": "I said",
+          "pos": "verb"
+        },
+        {
+          "fa": "درستش کن",
+          "translit": "dorostesh kon",
+          "en": "correct it",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "bdd7c99e-f12b-470d-ad33-fe2b1c1aa285",
+      "englishText": "How is it pronounced?",
+      "farsiText": "تلفظش چطوریه؟",
+      "finglish": "talaffozesh chetorie?",
+      "literalGloss": "its pronunciation how is it",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "تلفظش",
+          "translit": "talaffozesh",
+          "en": "its pronunciation",
+          "pos": "noun"
+        },
+        {
+          "fa": "چطوریه",
+          "translit": "chetorie",
+          "en": "how is it",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "f511798f-feb1-4935-bff2-1ca615257821",
+      "englishText": "What I mean is, I'm coming tomorrow.",
+      "farsiText": "منظورم اینه که فردا میام.",
+      "finglish": "manzuram ine ke fardâ miyâm.",
+      "literalGloss": "my meaning is this that tomorrow I'm coming",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "منظورم",
+          "translit": "manzuram",
+          "en": "my meaning",
+          "pos": "noun"
+        },
+        {
+          "fa": "اینه",
+          "translit": "ine",
+          "en": "is this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "که",
+          "translit": "ke",
+          "en": "that",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "فردا",
+          "translit": "fardâ",
+          "en": "tomorrow",
+          "pos": "adverb"
+        },
+        {
+          "fa": "میام",
+          "translit": "miyâm",
+          "en": "I'm coming",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "24895ca6-db8b-463a-a21d-277edd7712b1",
+      "englishText": "I'm learning Persian for my family.",
+      "farsiText": "دارم برای خانواده‌م فارسی یاد می‌گیرم.",
+      "finglish": "dâram barâye khânevâdam fârsi yâd migiram.",
+      "literalGloss": "I am for my family Persian learning",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دارم",
+          "translit": "dâram",
+          "en": "I am",
+          "pos": "verb"
+        },
+        {
+          "fa": "برای",
+          "translit": "barâye",
+          "en": "for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خانواده‌م",
+          "translit": "khânevâdam",
+          "en": "my family",
+          "pos": "noun"
+        },
+        {
+          "fa": "فارسی",
+          "translit": "fârsi",
+          "en": "Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "یاد می‌گیرم",
+          "translit": "yâd migiram",
+          "en": "learning",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "b245d8ff-7ffd-48cc-9660-56e5f1030d5b",
+      "englishText": "I can read, but I can't speak well.",
+      "farsiText": "می‌تونم بخونم، ولی خوب نمی‌تونم حرف بزنم.",
+      "finglish": "mitunam bekhunam, vali khub nemitunam harf bezanam.",
+      "literalGloss": "I can read but well I can't speak",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌تونم",
+          "translit": "mitunam",
+          "en": "I can",
+          "pos": "verb"
+        },
+        {
+          "fa": "بخونم",
+          "translit": "bekhunam",
+          "en": "read",
+          "pos": "verb"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "خوب",
+          "translit": "khub",
+          "en": "well",
+          "pos": "adverb"
+        },
+        {
+          "fa": "نمی‌تونم",
+          "translit": "nemitunam",
+          "en": "I can't",
+          "pos": "verb"
+        },
+        {
+          "fa": "حرف بزنم",
+          "translit": "harf bezanam",
+          "en": "speak",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "7691c9ae-e666-4801-8723-20c72b4d2578",
+      "englishText": "I understand, but I can't answer.",
+      "farsiText": "می‌فهمم، ولی نمی‌تونم جواب بدم.",
+      "finglish": "mifahmam, vali nemitunam javâb bedam.",
+      "literalGloss": "I understand but I can't answer",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌فهمم",
+          "translit": "mifahmam",
+          "en": "I understand",
+          "pos": "verb"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "نمی‌تونم",
+          "translit": "nemitunam",
+          "en": "I can't",
+          "pos": "verb"
+        },
+        {
+          "fa": "جواب بدم",
+          "translit": "javâb bedam",
+          "en": "answer",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "6e9bf7f9-166f-4681-a67a-76e18650c888",
+      "englishText": "Is this word formal?",
+      "farsiText": "این کلمه رسمیه؟",
+      "finglish": "in kalame rasmiye?",
+      "literalGloss": "this word is formal",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "کلمه",
+          "translit": "kalame",
+          "en": "word",
+          "pos": "noun"
+        },
+        {
+          "fa": "رسمیه",
+          "translit": "rasmiye",
+          "en": "is formal",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "f2240faa-92c1-4aad-a044-f6fdd9e2bdae",
+      "englishText": "What's the difference between these two?",
+      "farsiText": "فرق این دو تا چیه؟",
+      "finglish": "farghe in do tâ chie?",
+      "literalGloss": "difference this two what is",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "فرق",
+          "translit": "farghe",
+          "en": "difference",
+          "pos": "noun"
+        },
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "دو تا",
+          "translit": "do tâ",
+          "en": "two",
+          "pos": "number"
+        },
+        {
+          "fa": "چیه",
+          "translit": "chie",
+          "en": "what is",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "c457c856-a9ff-4e79-aba5-334bacd96f70",
+      "englishText": "I want to practise my Persian.",
+      "farsiText": "می‌خوام فارسیم رو تمرین کنم.",
+      "finglish": "mikhâm fârsim ro tamrin konam.",
+      "literalGloss": "I want my Persian object marker to practise",
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "فارسیم",
+          "translit": "fârsim",
+          "en": "my Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "تمرین کنم",
+          "translit": "tamrin konam",
+          "en": "to practise",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "3cec7cdf-4986-4ff4-b207-6f61196a12d7",
+      "englishText": "I understand everything my mum says.",
+      "farsiText": "هر چی مامانم می‌گه رو می‌فهمم.",
+      "finglish": "har chi mâmânam mige ro mifahmam.",
+      "literalGloss": "whatever my mum says object marker I understand",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هر چی",
+          "translit": "har chi",
+          "en": "whatever",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "مامانم",
+          "translit": "mâmânam",
+          "en": "my mum",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌گه",
+          "translit": "mige",
+          "en": "says",
+          "pos": "verb"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "می‌فهمم",
+          "translit": "mifahmam",
+          "en": "I understand",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "e5233929-a730-4705-81f9-280c81e0ac75",
+      "englishText": "I want to speak with my grandmother.",
+      "farsiText": "می‌خوام با مادربزرگم حرف بزنم.",
+      "finglish": "mikhâm bâ mâdarbozorgam harf bezanam.",
+      "literalGloss": "I want with my grandmother to speak",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "با",
+          "translit": "bâ",
+          "en": "with",
+          "pos": "preposition"
+        },
+        {
+          "fa": "مادربزرگم",
+          "translit": "mâdarbozorgam",
+          "en": "my grandmother",
+          "pos": "noun"
+        },
+        {
+          "fa": "حرف بزنم",
+          "translit": "harf bezanam",
+          "en": "to speak",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
     }
   ]
 }

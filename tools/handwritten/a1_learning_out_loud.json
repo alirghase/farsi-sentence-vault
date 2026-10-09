@@ -1,0 +1,672 @@
+{
+  "note": "Speaking while you are still learning: asking how to say something, saying your Persian is weak, checking you said it right, asking someone to slow down or speak Persian with you.",
+  "difficulty": 1,
+  "sentences": [
+    {
+      "en": "How do you say this in Persian?",
+      "fa": "اینو به فارسی چی می‌گن؟",
+      "tr": "ino be fârsi chi migan?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینو",
+          "ino",
+          "this",
+          "pronoun"
+        ],
+        [
+          "به",
+          "be",
+          "in",
+          "preposition"
+        ],
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "می‌گن",
+          "migan",
+          "do they say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What do you call this?",
+      "fa": "به این چی می‌گن؟",
+      "tr": "be in chi migan?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "می‌گن",
+          "migan",
+          "do they say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How do you say it in English?",
+      "fa": "به انگلیسی چی می‌شه؟",
+      "tr": "be engelisi chi mishe?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "به",
+          "be",
+          "in",
+          "preposition"
+        ],
+        [
+          "انگلیسی",
+          "engelisi",
+          "English",
+          "noun"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "می‌شه",
+          "mishe",
+          "does it become",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My Persian isn't very good.",
+      "fa": "فارسیم زیاد خوب نیست.",
+      "tr": "fârsim ziyâd khub nist.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فارسیم",
+          "fârsim",
+          "my Persian",
+          "noun"
+        ],
+        [
+          "زیاد",
+          "ziyâd",
+          "very",
+          "adverb"
+        ],
+        [
+          "خوب",
+          "khub",
+          "good",
+          "adjective"
+        ],
+        [
+          "نیست",
+          "nist",
+          "isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My Persian is a bit weak.",
+      "fa": "فارسیم یه کم ضعیفه.",
+      "tr": "fârsim ye kam za'ife.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فارسیم",
+          "fârsim",
+          "my Persian",
+          "noun"
+        ],
+        [
+          "یه کم",
+          "ye kam",
+          "a bit",
+          "adverb"
+        ],
+        [
+          "ضعیفه",
+          "za'ife",
+          "is weak",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I understand a little.",
+      "fa": "یه کم می‌فهمم.",
+      "tr": "ye kam mifahmam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه کم",
+          "ye kam",
+          "a little",
+          "adverb"
+        ],
+        [
+          "می‌فهمم",
+          "mifahmam",
+          "I understand",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Got it.",
+      "fa": "فهمیدم.",
+      "tr": "fahmidam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فهمیدم",
+          "fahmidam",
+          "I understood",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I didn't understand.",
+      "fa": "نفهمیدم.",
+      "tr": "nafahmidam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نفهمیدم",
+          "nafahmidam",
+          "I didn't understand",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did I say it right?",
+      "fa": "درست گفتم؟",
+      "tr": "dorost goftam?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "درست",
+          "dorost",
+          "right",
+          "adverb"
+        ],
+        [
+          "گفتم",
+          "goftam",
+          "did I say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did I say it wrong?",
+      "fa": "اشتباه گفتم؟",
+      "tr": "eshtebâh goftam?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اشتباه",
+          "eshtebâh",
+          "wrong",
+          "adverb"
+        ],
+        [
+          "گفتم",
+          "goftam",
+          "did I say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How do you read this?",
+      "fa": "اینو چطوری می‌خونن؟",
+      "tr": "ino chetori mikhunan?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینو",
+          "ino",
+          "this",
+          "pronoun"
+        ],
+        [
+          "چطوری",
+          "chetori",
+          "how",
+          "question word"
+        ],
+        [
+          "می‌خونن",
+          "mikhunan",
+          "do they read",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Speak Persian with me.",
+      "fa": "باهام فارسی حرف بزن.",
+      "tr": "bâhâm fârsi harf bezan.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باهام",
+          "bâhâm",
+          "with me",
+          "preposition"
+        ],
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "حرف بزن",
+          "harf bezan",
+          "speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Please don't speak English.",
+      "fa": "لطفا انگلیسی حرف نزن.",
+      "tr": "lotfan engelisi harf nazan.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "انگلیسی",
+          "engelisi",
+          "English",
+          "noun"
+        ],
+        [
+          "حرف نزن",
+          "harf nazan",
+          "don't speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you speak English?",
+      "fa": "انگلیسی بلدی؟",
+      "tr": "engelisi baladi?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "انگلیسی",
+          "engelisi",
+          "English",
+          "noun"
+        ],
+        [
+          "بلدی",
+          "baladi",
+          "do you know",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I've forgotten the word for it.",
+      "fa": "کلمه‌ش یادم رفت.",
+      "tr": "kalamash yâdam raft.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کلمه‌ش",
+          "kalamash",
+          "its word",
+          "noun"
+        ],
+        [
+          "یادم رفت",
+          "yâdam raft",
+          "I forgot",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What's the word for it?",
+      "fa": "بهش چی می‌گن؟",
+      "tr": "behesh chi migan?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بهش",
+          "behesh",
+          "to it",
+          "preposition"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "می‌گن",
+          "migan",
+          "do they say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Write it down for me.",
+      "fa": "برام بنویسش.",
+      "tr": "barâm benevisesh.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "برام",
+          "barâm",
+          "for me",
+          "preposition"
+        ],
+        [
+          "بنویسش",
+          "benevisesh",
+          "write it",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Can you say it one more time?",
+      "fa": "می‌شه یه بار دیگه بگی؟",
+      "tr": "mishe ye bâr dige begi?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌شه",
+          "mishe",
+          "could you",
+          "verb"
+        ],
+        [
+          "یه بار دیگه",
+          "ye bâr dige",
+          "one more time",
+          "expression"
+        ],
+        [
+          "بگی",
+          "begi",
+          "say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Say it slowly.",
+      "fa": "آروم بگو.",
+      "tr": "ârum begu.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آروم",
+          "ârum",
+          "slowly",
+          "adverb"
+        ],
+        [
+          "بگو",
+          "begu",
+          "say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What does that mean?",
+      "fa": "یعنی چی؟",
+      "tr": "yani chi?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یعنی",
+          "yani",
+          "it means",
+          "expression"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What do you mean?",
+      "fa": "منظورت چیه؟",
+      "tr": "manzuret chie?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "منظورت",
+          "manzuret",
+          "your meaning",
+          "noun"
+        ],
+        [
+          "چیه",
+          "chie",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm still learning.",
+      "fa": "هنوز دارم یاد می‌گیرم.",
+      "tr": "hanuz dâram yâd migiram.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هنوز",
+          "hanuz",
+          "still",
+          "adverb"
+        ],
+        [
+          "دارم",
+          "dâram",
+          "I am",
+          "verb"
+        ],
+        [
+          "یاد می‌گیرم",
+          "yâd migiram",
+          "learning",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How do you write it?",
+      "fa": "چطوری می‌نویسنش؟",
+      "tr": "chetori minevisanesh?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چطوری",
+          "chetori",
+          "how",
+          "question word"
+        ],
+        [
+          "می‌نویسنش",
+          "minevisanesh",
+          "do they write it",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Thanks for waiting.",
+      "fa": "ممنون که صبر کردی.",
+      "tr": "mamnun ke sabr kardi.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ممنون",
+          "mamnun",
+          "thanks",
+          "expression"
+        ],
+        [
+          "که",
+          "ke",
+          "that",
+          "conjunction"
+        ],
+        [
+          "صبر کردی",
+          "sabr kardi",
+          "you waited",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

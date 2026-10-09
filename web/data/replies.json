@@ -1,5 +1,5 @@
 {
-  "count": 115,
+  "count": 123,
   "replies": [
     {
       "id": "f2f5344a-aac5-5802-9d77-6088a61329ec",
@@ -1124,6 +1124,143 @@
       ],
       "difficulty": 2,
       "situation": "disagreeing politely",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "63519222-2282-5f6b-bc4b-8c7931081ace",
+      "kind": "reply",
+      "stem": "متوجه شدی؟",
+      "stemEn": "Did you understand?",
+      "farsiText": "آره، فهمیدم.",
+      "finglish": "âre, fahmidam.",
+      "englishText": "Yes, I got it.",
+      "alternatives": [
+        "نه، می‌شه دوباره بگی؟",
+        "یه کم."
+      ],
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "2556d7e8-cab6-5d72-b29d-1bbb995fca87",
+      "kind": "reply",
+      "stem": "این کلمه رو بلدی؟",
+      "stemEn": "Do you know this word?",
+      "farsiText": "نه، یعنی چی؟",
+      "finglish": "na, yani chi?",
+      "englishText": "No, what does it mean?",
+      "alternatives": [
+        "آره، بلدم."
+      ],
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "547e7f86-88f7-5afd-a4a1-b55ff019c11d",
+      "kind": "reply",
+      "stem": "انگلیسی بلدی؟",
+      "stemEn": "Do you speak English?",
+      "farsiText": "آره، ولی می‌خوام فارسی تمرین کنم.",
+      "finglish": "âre, vali mikhâm fârsi tamrin konam.",
+      "englishText": "Yes, but I want to practise Persian.",
+      "alternatives": [
+        "یه کم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "ce346538-c6b7-548c-beb6-7fb0e208cc8e",
+      "kind": "reply",
+      "stem": "می‌خوای انگلیسی حرف بزنیم؟",
+      "stemEn": "Shall we speak English?",
+      "farsiText": "نه، لطفا فارسی حرف بزنیم.",
+      "finglish": "na, lotfan fârsi harf bezanim.",
+      "englishText": "No, let's speak Persian, please.",
+      "alternatives": [
+        "نه مرسی، می‌خوام تمرین کنم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "f17a8068-4c23-518f-b9e0-585becb57ecc",
+      "kind": "reply",
+      "stem": "چند وقته فارسی یاد می‌گیری؟",
+      "stemEn": "How long have you been learning Persian?",
+      "farsiText": "تقریبا یه ساله.",
+      "finglish": "taghriban ye sâle.",
+      "englishText": "About a year.",
+      "alternatives": [
+        "تازه شروع کردم."
+      ],
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "a5aa367d-c370-519f-a4c7-54f8968b82f9",
+      "kind": "reply",
+      "stem": "مامانت باهات فارسی حرف می‌زنه؟",
+      "stemEn": "Does your mum speak Persian with you?",
+      "farsiText": "آره، ولی من انگلیسی جواب می‌دم.",
+      "finglish": "âre, vali man engelisi javâb midam.",
+      "englishText": "Yes, but I answer in English.",
+      "alternatives": [
+        "نه، همیشه انگلیسی حرف می‌زنیم."
+      ],
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "02f1cbe8-2901-50e2-9f47-f251b301d04c",
+      "kind": "reply",
+      "stem": "اینو به فارسی بگو.",
+      "stemEn": "Say this in Persian.",
+      "farsiText": "باشه، سعی می‌کنم.",
+      "finglish": "bâshe, sa'y mikonam.",
+      "englishText": "Okay, I'll try.",
+      "alternatives": [
+        "بلد نیستم، کمکم کن."
+      ],
+      "difficulty": 2,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b0f75881-7cd8-51c7-8b83-567f196a36ef",
+      "kind": "reply",
+      "stem": "لهجه‌ت خیلی خوبه!",
+      "stemEn": "Your accent is very good!",
+      "farsiText": "واقعا؟ ممنون، خیلی تمرین می‌کنم.",
+      "finglish": "vâghe'an? mamnun, kheyli tamrin mikonam.",
+      "englishText": "Really? Thanks, I practise a lot.",
+      "alternatives": [
+        "لطف داری."
+      ],
+      "difficulty": 2,
+      "situation": "compliments and thanking (taarof)",
       "grammarTags": [
         "colloquial"
       ]
