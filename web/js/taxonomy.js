@@ -1,10 +1,5 @@
-// Persian names for the parts of speech shown under a tapped word.
-//
-// The error-tag and situation vocabularies used to be mirrored here from
-// core/taxonomy.py, guarded by tools/check_mirror.py. The app no longer
-// displays either — the weak-spots view that ranked tags is gone — so the
-// copies were deleted along with the guard. Python keeps the authoritative
-// set, where generation and validation actually use it.
+// Persian names for the parts of speech shown under a tapped word, and for what a
+// drill card asks you to do. The closed sets themselves live in core/taxonomy.py.
 
 export const POS_TITLES = {
   'noun': 'اسم',
@@ -26,7 +21,7 @@ export function posTitle(pos) {
   return POS_TITLES[pos] ?? pos;
 }
 
-// What a drill card asks you to do, in Persian. A transformation has a fixed
+
 // instruction; a swap carries its own cue ("say it with ما"), because the cue
 // is the whole exercise. The sets themselves live in core/taxonomy.py.
 export const TRANSFORM_TITLES = {

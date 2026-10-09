@@ -18,8 +18,8 @@ const state = {
   completed: 0,
   passes: 0,
   revealed: false,
-  // A rating is async (IndexedDB), and a second tap landing before it resolves
-  // used to record the same card twice and skip the next one.
+  // A rating is async (IndexedDB); a second tap before it resolves would record
+  // the same card twice and skip the next one.
   busy: false,
   // The most recent rating, for undo. One level deep on purpose: undo is for a
   // mis-tap, not for re-litigating a session.
@@ -33,9 +33,8 @@ const state = {
 // --- boot ------------------------------------------------------------------
 
 async function boot() {
-  // Before anything that can fail. Every string on the screen is Persian, and
-  // a boot that dies early used to leave the English placeholder markup
-  // looking like a finished screen with nothing in it.
+  // Before anything that can fail, so a boot that dies early does not leave the
+  // English placeholder markup looking like a finished screen.
   applyStrings();
 
   state.settings = await db.getSettings();
@@ -51,9 +50,8 @@ async function boot() {
   bindKeys();
   bindSettings();
 
-  // An installed app is resumed, not reopened. Coming back the next morning
-  // used to leave yesterday's round on screen; now the end-of-round panel
-  // recounts itself, which is the only place a stale count would show.
+  // An installed app is resumed, not reopened, so the end-of-round panel
+  // recounts when you come back — the only place a stale count would show.
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible' && !$('done-view').hidden) renderDone();
   });
@@ -138,13 +136,7 @@ async function hideSettings() {
   await renderDone();
 }
 
-/**
- * Writing a sentence down, from wherever you are.
- *
- * It used to live inside Settings, behind the end of a round — so capturing the
- * thing you just wished you could say meant finishing twenty cards first. It is
- * the point of the app, so it opens from the card.
- */
+/** Writing a sentence down, from wherever you are: the thought arrives mid-round. */
 async function showCompose() {
   state.resumeTo = $('done-view').hidden ? 'card' : 'done';
   $('practice').hidden = true;
@@ -175,13 +167,7 @@ const todayCounts = () => session.counts(
   Date.now(), session.NEW_PER_DAY, state.settings.currentLevel,
 );
 
-/**
- * Move up a level the moment the gate is cleared.
- *
- * It used to be a panel with a button, on a home screen that no longer exists.
- * Nothing was being decided by that tap — you cannot fail the gate by passing
- * it — so it happens on its own now, between rounds, and says so once.
- */
+/** Move up a level when the gate is cleared — between rounds, saying so once. */
 async function advanceLevelIfPassed() {
   const gate = await levels.progress(state.settings.currentLevel);
   const next = levels.nextLevel(gate.level);
@@ -445,7 +431,7 @@ function renderBreakdown(sentence) {
   const units = sentence.breakdown ?? [];
   const alts = sentence.alternatives ?? [];
 
-  // Sentences not yet annotated fall back to the old flat gloss.
+  // Sentences without a word map fall back to the flat gloss.
   $('answer-gloss').textContent = units.length ? '' : (sentence.literalGloss ?? '');
   $('answer-gloss').hidden = units.length > 0;
 

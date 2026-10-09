@@ -22,9 +22,8 @@ export const EASY_GRADUATING_DAYS = 4;
  * Quality scores for the two rating buttons.
  *
  * Binary maps onto SM-2 cleanly: below the passing threshold is a lapse, above
- * it is a standard review. The ease-factor nuance that Hard and Easy used to
- * provide is replaced by measured answer time, which is a real signal rather
- * than a judgement call made under no pressure.
+ * it is a standard review. Answer time is recorded on every attempt as the
+ * signal a Hard/Easy button would otherwise stand in for.
  */
 export const RATING_QUALITY = { fail: 2, pass: 4 };
 

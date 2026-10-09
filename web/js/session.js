@@ -363,7 +363,7 @@ export async function recordAttempt({ card, rating, typedAnswer = null, msToReve
     mode: typedAnswer ? 'typed' : 'speakSelfRate',
     selfRating: rating,
     typedAnswer: typedAnswer || null,
-    // Speed is the gap the app previously could not see at all.
+    // Answer speed, recorded but not yet used by anything.
     msToReveal,
     targetMs: targetMs(card.sentence, card.direction),
     createdAt: now,

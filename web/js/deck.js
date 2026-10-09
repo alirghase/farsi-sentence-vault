@@ -19,11 +19,8 @@ const CONTENT_FIELDS = [
 /**
  * Merge the bundled deck into IndexedDB.
  *
- * Three things the earlier version got wrong, each silently:
- * - it only ever added sentences, so a correction to one already on the device
- *   never arrived (the quote-mark fix to the word map, for one);
- * - it only copied a breakdown onto rows that had none, for the same reason;
- * - it never removed a sentence the deck had dropped.
+ * Corrections to a sentence reach the device, and a sentence the deck has
+ * dropped is removed.
  *
  * Rows are matched on the bundle's stable id first, then on the Persian text,
  * which is how rows created before the bundle carried ids are adopted. A
