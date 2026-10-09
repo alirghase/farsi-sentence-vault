@@ -17,8 +17,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import validate
-from core.prompts import PARTS_OF_SPEECH
-from core.taxonomy import ERROR_TAG_KEYS
+from core.taxonomy import ERROR_TAG_KEYS, PARTS_OF_SPEECH
 
 HANDWRITTEN = pathlib.Path(__file__).parent / "handwritten"
 

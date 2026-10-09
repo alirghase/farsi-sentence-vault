@@ -230,34 +230,3 @@ def check_sentence(s: dict) -> list[str]:
             problems.append(f"bookish form {bookish!r} (expected {spoken!r})")
 
     return problems
-
-
-def dedupe(sentences: list[dict]) -> tuple[list[dict], int]:
-    """Drop duplicates by normalised Persian and by lowercased English."""
-    seen_fa: set[str] = set()
-    seen_en: set[str] = set()
-    kept: list[dict] = []
-    dropped = 0
-    for s in sentences:
-        fa = normalise_persian(str(s.get("farsiText", "")))
-        en = str(s.get("englishText", "")).strip().lower().rstrip(".!?")
-        if not fa or fa in seen_fa or en in seen_en:
-            dropped += 1
-            continue
-        seen_fa.add(fa)
-        seen_en.add(en)
-        kept.append(s)
-    return kept, dropped
-
-
-def partition(sentences: list[dict]) -> tuple[list[dict], list[tuple[dict, list[str]]]]:
-    """Split into (clean, [(sentence, problems)])."""
-    clean, bad = [], []
-    for s in sentences:
-        problems = check_sentence(s)
-        if problems:
-            bad.append((s, problems))
-        else:
-            s["farsiText"] = normalise_persian(str(s["farsiText"]))
-            clean.append(s)
-    return clean, bad
