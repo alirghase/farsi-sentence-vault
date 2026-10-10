@@ -96,6 +96,10 @@ Run it locally: `python3 -m http.server 8000 --directory web`.
 Sentences — write a batch into `tools/handwritten/` (see any existing file for
 the shape; every sentence carries its word map), then:
 
+Add `"first": true` to a batch to put its sentences at the front of the queue of
+new cards, whatever their level — for the things you most want to be able to
+say now.
+
 ```bash
 python3 tools/check_handwritten.py   # does the word map cover every word?
 python3 tools/merge_handwritten.py   # validates, skips duplicates, adds

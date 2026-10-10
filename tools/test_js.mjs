@@ -87,6 +87,7 @@ test('eligibility is the same rule for the counter and the builder', () => {
   assert.equal(eligibleAsNew(sentence, atLevel), true);
   assert.equal(eligibleAsNew(other, atLevel), false, 'outside the level');
   assert.equal(eligibleAsNew(other, null), true, 'no level gate means no filter');
+  assert.equal(eligibleAsNew({ id: 'b', first: true }, atLevel), true, 'marked first, whatever its level');
 });
 
 test('both directions of one sentence never share a session', () => {
@@ -286,14 +287,15 @@ test('every shipped reply can be asked and answered', () => {
 
 // --- order of new cards ---
 
-test('new cards: your own first, then the most common words, ties left shuffled', () => {
+test('new cards: your own first, then batches marked first, then the most common words', () => {
   const card = (id, extra) => ({ sentence: { id, source: 'seed', ...extra } });
   const cards = [
     card('rare', { core: 0.25 }), card('common-a', { core: 1 }), card('drill'),
     card('mine', { source: 'custom' }), card('common-b', { core: 1 }),
+    card('wanted', { core: 0.25, first: true }),
   ];
   assert.deepEqual(cards.sort(newCardOrder).map((c) => c.sentence.id),
-    ['mine', 'common-a', 'common-b', 'rare', 'drill']);
+    ['mine', 'wanted', 'common-a', 'common-b', 'rare', 'drill']);
 });
 
 test('a transformation waits until its stem sentence has been seen', () => {

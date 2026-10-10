@@ -1,5 +1,5 @@
 {
-  "count": 151,
+  "count": 163,
   "replies": [
     {
       "id": "f2f5344a-aac5-5802-9d77-6088a61329ec",
@@ -1363,6 +1363,210 @@
       ],
       "difficulty": 2,
       "situation": "compliments and thanking (taarof)",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "8b3fe085-25f2-52e4-86df-f0f35758eeb5",
+      "kind": "reply",
+      "stem": "بریم باشگاه؟",
+      "stemEn": "Shall we go to the gym?",
+      "farsiText": "آره، بزن بریم!",
+      "finglish": "âre, bezan berim!",
+      "englishText": "Yes, let's do it!",
+      "alternatives": [
+        "امروز نه، خسته‌م."
+      ],
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "e5f095d5-eb00-5042-bc01-82342cf9a934",
+      "kind": "reply",
+      "stem": "چرا هر روز ورزش می‌کنی؟",
+      "stemEn": "Why do you exercise every day?",
+      "farsiText": "می‌خوام چربی بسوزونم و قوی‌تر بشم.",
+      "finglish": "mikhâm charbi besuzunam o ghavitar besham.",
+      "englishText": "I want to burn fat and get stronger.",
+      "alternatives": [
+        "حالم رو خوب می‌کنه."
+      ],
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "dee7c6ea-c486-59b4-967e-b28776d0f509",
+      "kind": "reply",
+      "stem": "رژیم داری؟",
+      "stemEn": "Are you on a diet?",
+      "farsiText": "آره، می‌خوام وزن کم کنم.",
+      "finglish": "âre, mikhâm vazn kam konam.",
+      "englishText": "Yes, I want to lose weight.",
+      "alternatives": [
+        "نه، هر چی بخوام می‌خورم."
+      ],
+      "difficulty": 1,
+      "situation": "ordering food or coffee",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "d28ce31f-ab11-5d5e-8ae2-095cf8e0062c",
+      "kind": "reply",
+      "stem": "چه خبر از باشگاه؟",
+      "stemEn": "How's the gym going?",
+      "farsiText": "عالیه، سه کیلو کم کردم!",
+      "finglish": "âliye, se kilo kam kardam!",
+      "englishText": "Great, I've lost three kilos!",
+      "alternatives": [
+        "خوبه، هر روز می‌رم."
+      ],
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "cf57f5e8-6eca-5a2c-a928-7e978d8aacd6",
+      "kind": "reply",
+      "stem": "حال داری بریم بدوییم؟",
+      "stemEn": "Are you up for a run?",
+      "farsiText": "آره، فقط بذار کفشم رو بپوشم.",
+      "finglish": "âre, faghat bezâr kafsham ro bepusham.",
+      "englishText": "Yes, just let me put my shoes on.",
+      "alternatives": [
+        "الان نه، بعدا."
+      ],
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "7b91b04e-0c10-5b71-90c9-23c58da7a58e",
+      "kind": "reply",
+      "stem": "خسته نشدی؟",
+      "stemEn": "Aren't you tired?",
+      "farsiText": "چرا، ولی تسلیم نمی‌شم.",
+      "finglish": "cherâ, vali taslim nemisham.",
+      "englishText": "I am, but I'm not giving up.",
+      "alternatives": [
+        "نه هنوز."
+      ],
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "4b930742-80b9-5c52-97a8-cc524977d36f",
+      "kind": "reply",
+      "stem": "هدفت تو زندگی چیه؟",
+      "stemEn": "What's your goal in life?",
+      "farsiText": "هنوز دارم دنبالش می‌گردم.",
+      "finglish": "hanuz dâram donbâlesh migardam.",
+      "englishText": "I'm still looking for it.",
+      "alternatives": [
+        "می‌خوام آدم بهتری بشم."
+      ],
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "1a38efd9-250a-5ae2-a422-d81e70d1b542",
+      "kind": "reply",
+      "stem": "به خدا اعتقاد داری؟",
+      "stemEn": "Do you believe in God?",
+      "farsiText": "آره، می‌خوام بیشتر بشناسمش.",
+      "finglish": "âre, mikhâm bishtar beshnâsamesh.",
+      "englishText": "Yes, I want to know Him better.",
+      "alternatives": [
+        "آره، خیلی."
+      ],
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "da2d6d16-e210-5aa0-be37-c3d5b21f0377",
+      "kind": "reply",
+      "stem": "دعا می‌کنی؟",
+      "stemEn": "Do you pray?",
+      "farsiText": "آره، هر شب.",
+      "finglish": "âre, har shab.",
+      "englishText": "Yes, every night.",
+      "alternatives": [
+        "گاهی وقتا."
+      ],
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b62a4f66-057a-55f7-8c3e-3fc2d57ae506",
+      "kind": "reply",
+      "stem": "تابستون بریم ترکیه؟",
+      "stemEn": "Shall we go to Turkey in the summer?",
+      "farsiText": "خیلی دوست دارم باهات بیام!",
+      "finglish": "kheyli dust dâram bâhât biyâm!",
+      "englishText": "I'd love to come with you!",
+      "alternatives": [
+        "آره، بزن بریم!"
+      ],
+      "difficulty": 1,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "b912a3e6-d8fd-5fb4-8240-2057ac036a42",
+      "kind": "reply",
+      "stem": "می‌فهمی چی می‌گم؟",
+      "stemEn": "Do you see what I mean?",
+      "farsiText": "آره، دقیقا می‌فهمم.",
+      "finglish": "âre, daghighan mifahmam.",
+      "englishText": "Yes, I understand exactly.",
+      "alternatives": [
+        "نه کاملا، دوباره بگو."
+      ],
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ]
+    },
+    {
+      "id": "e5a7d0b4-9e63-5f03-8dde-aca06f66bf48",
+      "kind": "reply",
+      "stem": "چرا اینقدر ساکتی؟",
+      "stemEn": "Why are you so quiet?",
+      "farsiText": "دارم به زندگیم فکر می‌کنم.",
+      "finglish": "dâram be zendegim fekr mikonam.",
+      "englishText": "I'm thinking about my life.",
+      "alternatives": [
+        "هیچی، فقط خسته‌م."
+      ],
+      "difficulty": 2,
+      "situation": "describing how you feel",
       "grammarTags": [
         "colloquial"
       ]

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 1780,
+  "count": 1830,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -49551,7 +49551,8 @@
         "منم موافقم."
       ],
       "source": "handwritten",
-      "core": 0.5
+      "core": 0.5,
+      "first": true
     },
     {
       "id": "ec11d713-0c81-4303-92c2-8ddab1c56556",
@@ -49929,7 +49930,8 @@
       ],
       "alternatives": [],
       "source": "handwritten",
-      "core": 0.75
+      "core": 0.75,
+      "first": true
     },
     {
       "id": "49690b49-06e6-4bfc-82d7-fcbde335c774",
@@ -73848,6 +73850,1842 @@
       "alternatives": [],
       "source": "handwritten",
       "core": 1.0
+    },
+    {
+      "id": "75b63afd-039d-4500-bc8c-055bd3550c02",
+      "englishText": "Let's go!",
+      "farsiText": "بریم!",
+      "finglish": "berim!",
+      "literalGloss": "let's go",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بریم",
+          "translit": "berim",
+          "en": "let's go",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "4325b9d6-2a49-4d48-a884-5eeb1ad3a11b",
+      "englishText": "Let's do it.",
+      "farsiText": "بزن بریم.",
+      "finglish": "bezan berim.",
+      "literalGloss": "let's do it",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بزن بریم",
+          "translit": "bezan berim",
+          "en": "let's do it",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "7feba4dd-37e4-4cb8-9f89-1debb849336b",
+      "englishText": "Come on, we can do it!",
+      "farsiText": "بیا، می‌تونیم!",
+      "finglish": "biyâ, mitunim!",
+      "literalGloss": "come on we can",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بیا",
+          "translit": "biyâ",
+          "en": "come on",
+          "pos": "verb"
+        },
+        {
+          "fa": "می‌تونیم",
+          "translit": "mitunim",
+          "en": "we can",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "95833df0-1b40-4b8d-b5a9-e8682c3aecc6",
+      "englishText": "I need to go to the gym.",
+      "farsiText": "باید برم باشگاه.",
+      "finglish": "bâyad beram bâshgâh.",
+      "literalGloss": "must I go gym",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "باید",
+          "translit": "bâyad",
+          "en": "must",
+          "pos": "verb"
+        },
+        {
+          "fa": "برم",
+          "translit": "beram",
+          "en": "I go",
+          "pos": "verb"
+        },
+        {
+          "fa": "باشگاه",
+          "translit": "bâshgâh",
+          "en": "gym",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "f8d87874-d2cc-4a8b-b251-47b6afd1cdfe",
+      "englishText": "I go to the gym every day.",
+      "farsiText": "هر روز می‌رم باشگاه.",
+      "finglish": "har ruz miram bâshgâh.",
+      "literalGloss": "every day I go gym",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هر روز",
+          "translit": "har ruz",
+          "en": "every day",
+          "pos": "expression"
+        },
+        {
+          "fa": "می‌رم",
+          "translit": "miram",
+          "en": "I go",
+          "pos": "verb"
+        },
+        {
+          "fa": "باشگاه",
+          "translit": "bâshgâh",
+          "en": "gym",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "6b1f9d00-e27a-4cec-94bc-26d4b339bee6",
+      "englishText": "I need to lose weight.",
+      "farsiText": "باید وزن کم کنم.",
+      "finglish": "bâyad vazn kam konam.",
+      "literalGloss": "must lose weight",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "باید",
+          "translit": "bâyad",
+          "en": "must",
+          "pos": "verb"
+        },
+        {
+          "fa": "وزن کم کنم",
+          "translit": "vazn kam konam",
+          "en": "lose weight",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "73d627fa-f5a4-4f1a-960c-53dde658d39f",
+      "englishText": "I want to burn fat.",
+      "farsiText": "می‌خوام چربی بسوزونم.",
+      "finglish": "mikhâm charbi besuzunam.",
+      "literalGloss": "I want fat to burn",
+      "difficulty": 1,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "چربی",
+          "translit": "charbi",
+          "en": "fat",
+          "pos": "noun"
+        },
+        {
+          "fa": "بسوزونم",
+          "translit": "besuzunam",
+          "en": "to burn",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "808482f3-a3d9-428e-8aaa-ee5c96b5d912",
+      "englishText": "I'm hungry, but I'm on a diet.",
+      "farsiText": "گشنمه، ولی رژیم دارم.",
+      "finglish": "goshname, vali rejim dâram.",
+      "literalGloss": "I'm hungry but I'm on a diet",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "گشنمه",
+          "translit": "goshname",
+          "en": "I'm hungry",
+          "pos": "adjective"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "رژیم دارم",
+          "translit": "rejim dâram",
+          "en": "I'm on a diet",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "8fec3d49-ff99-4327-bed8-486503ad4cb5",
+      "englishText": "I feel good after exercise.",
+      "farsiText": "بعد از ورزش حالم خوبه.",
+      "finglish": "ba'd az varzesh hâlam khube.",
+      "literalGloss": "after exercise my mood is good",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بعد از",
+          "translit": "ba'd az",
+          "en": "after",
+          "pos": "preposition"
+        },
+        {
+          "fa": "ورزش",
+          "translit": "varzesh",
+          "en": "exercise",
+          "pos": "noun"
+        },
+        {
+          "fa": "حالم",
+          "translit": "hâlam",
+          "en": "my mood",
+          "pos": "noun"
+        },
+        {
+          "fa": "خوبه",
+          "translit": "khube",
+          "en": "is good",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "27aef18a-101f-4efa-b03b-bab70ce22f8a",
+      "englishText": "I'm tired, but I'm going to the gym.",
+      "farsiText": "خسته‌م، ولی می‌رم باشگاه.",
+      "finglish": "khastam, vali miram bâshgâh.",
+      "literalGloss": "I'm tired but I go gym",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خسته‌م",
+          "translit": "khastam",
+          "en": "I'm tired",
+          "pos": "adjective"
+        },
+        {
+          "fa": "ولی",
+          "translit": "vali",
+          "en": "but",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "می‌رم",
+          "translit": "miram",
+          "en": "I go",
+          "pos": "verb"
+        },
+        {
+          "fa": "باشگاه",
+          "translit": "bâshgâh",
+          "en": "gym",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "1eaf6662-aed7-49bd-a0c9-e230a08fd8c0",
+      "englishText": "I want to find my purpose.",
+      "farsiText": "می‌خوام هدفم رو پیدا کنم.",
+      "finglish": "mikhâm hadafam ro peydâ konam.",
+      "literalGloss": "I want my purpose object marker to find",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "هدفم",
+          "translit": "hadafam",
+          "en": "my purpose",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "پیدا کنم",
+          "translit": "peydâ konam",
+          "en": "to find",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "6a94366c-5743-4276-916d-270e67099fb1",
+      "englishText": "I want to understand God.",
+      "farsiText": "می‌خوام خدا رو بشناسم.",
+      "finglish": "mikhâm khodâ ro beshnâsam.",
+      "literalGloss": "I want God object marker to know",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "خدا",
+          "translit": "khodâ",
+          "en": "God",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "بشناسم",
+          "translit": "beshnâsam",
+          "en": "to know",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "df4e0a14-3719-43c5-93c5-e448db7a1665",
+      "englishText": "I pray every night.",
+      "farsiText": "هر شب دعا می‌کنم.",
+      "finglish": "har shab do'â mikonam.",
+      "literalGloss": "every night I pray",
+      "difficulty": 1,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هر شب",
+          "translit": "har shab",
+          "en": "every night",
+          "pos": "expression"
+        },
+        {
+          "fa": "دعا می‌کنم",
+          "translit": "do'â mikonam",
+          "en": "I pray",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "b9825736-1db1-4aa3-be30-ee591f77fa49",
+      "englishText": "I'm grateful for everything.",
+      "farsiText": "بابت همه‌چی شکرگزارم.",
+      "finglish": "bâbate hamechi shokrgozâram.",
+      "literalGloss": "for everything I'm grateful",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بابت",
+          "translit": "bâbate",
+          "en": "for",
+          "pos": "preposition"
+        },
+        {
+          "fa": "همه‌چی",
+          "translit": "hamechi",
+          "en": "everything",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "شکرگزارم",
+          "translit": "shokrgozâram",
+          "en": "I'm grateful",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0,
+      "first": true
+    },
+    {
+      "id": "f86847d9-8ea9-4e49-a62d-e2c6417724d6",
+      "englishText": "I need to be patient.",
+      "farsiText": "باید صبور باشم.",
+      "finglish": "bâyad sabur bâsham.",
+      "literalGloss": "must patient be",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "باید",
+          "translit": "bâyad",
+          "en": "must",
+          "pos": "verb"
+        },
+        {
+          "fa": "صبور",
+          "translit": "sabur",
+          "en": "patient",
+          "pos": "adjective"
+        },
+        {
+          "fa": "باشم",
+          "translit": "bâsham",
+          "en": "be",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "d809b4fb-0418-4055-aad5-634724c29158",
+      "englishText": "Let's go to Turkey together.",
+      "farsiText": "بیا با هم بریم ترکیه.",
+      "finglish": "biyâ bâ ham berim torkiye.",
+      "literalGloss": "come on together let's go Turkey",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "بیا",
+          "translit": "biyâ",
+          "en": "come on",
+          "pos": "verb"
+        },
+        {
+          "fa": "با هم",
+          "translit": "bâ ham",
+          "en": "together",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بریم",
+          "translit": "berim",
+          "en": "let's go",
+          "pos": "verb"
+        },
+        {
+          "fa": "ترکیه",
+          "translit": "torkiye",
+          "en": "Turkey",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "a44e54dc-3942-40f7-ae83-4d8e2f543114",
+      "englishText": "Shall we go together?",
+      "farsiText": "با هم بریم؟",
+      "finglish": "bâ ham berim?",
+      "literalGloss": "together shall we go",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "با هم",
+          "translit": "bâ ham",
+          "en": "together",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بریم",
+          "translit": "berim",
+          "en": "shall we go",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "75abbe66-b7d6-4877-965d-6e57047245ef",
+      "englishText": "Do you see what I mean?",
+      "farsiText": "می‌فهمی چی می‌گم؟",
+      "finglish": "mifahmi chi migam?",
+      "literalGloss": "do you understand what I'm saying",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌فهمی",
+          "translit": "mifahmi",
+          "en": "do you understand",
+          "pos": "verb"
+        },
+        {
+          "fa": "چی",
+          "translit": "chi",
+          "en": "what",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌گم",
+          "translit": "migam",
+          "en": "I'm saying",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "f16e9daa-0b2d-4cf5-944e-cc620e2c8709",
+      "englishText": "You know what I mean?",
+      "farsiText": "می‌دونی منظورم چیه؟",
+      "finglish": "miduni manzuram chie?",
+      "literalGloss": "do you know my meaning what is",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌دونی",
+          "translit": "miduni",
+          "en": "do you know",
+          "pos": "verb"
+        },
+        {
+          "fa": "منظورم",
+          "translit": "manzuram",
+          "en": "my meaning",
+          "pos": "noun"
+        },
+        {
+          "fa": "چیه",
+          "translit": "chie",
+          "en": "what is",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "0561c197-2b59-48bc-a4de-cd863bd1480c",
+      "englishText": "I know what you mean.",
+      "farsiText": "می‌دونم منظورت چیه.",
+      "finglish": "midunam manzuret chie.",
+      "literalGloss": "I know your meaning what is",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌دونم",
+          "translit": "midunam",
+          "en": "I know",
+          "pos": "verb"
+        },
+        {
+          "fa": "منظورت",
+          "translit": "manzuret",
+          "en": "your meaning",
+          "pos": "noun"
+        },
+        {
+          "fa": "چیه",
+          "translit": "chie",
+          "en": "what is",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "da5129de-9caa-4e90-9e74-6d9e2affd814",
+      "englishText": "Never give up.",
+      "farsiText": "هیچ‌وقت تسلیم نشو.",
+      "finglish": "hichvaght taslim nasho.",
+      "literalGloss": "never don't give up",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هیچ‌وقت",
+          "translit": "hichvaght",
+          "en": "never",
+          "pos": "adverb"
+        },
+        {
+          "fa": "تسلیم نشو",
+          "translit": "taslim nasho",
+          "en": "don't give up",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "8bfd2ff9-b250-41a9-bd7c-4ab631849d3f",
+      "englishText": "You can do it.",
+      "farsiText": "تو می‌تونی.",
+      "finglish": "to mituni.",
+      "literalGloss": "you can",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "تو",
+          "translit": "to",
+          "en": "you",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "می‌تونی",
+          "translit": "mituni",
+          "en": "can",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "f8bd42d9-16ca-4c1d-875e-aaa2c650ea33",
+      "englishText": "Today is a new day.",
+      "farsiText": "امروز یه روز جدیده.",
+      "finglish": "emruz ye ruze jadide.",
+      "literalGloss": "today a day is new",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "امروز",
+          "translit": "emruz",
+          "en": "today",
+          "pos": "adverb"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "روز",
+          "translit": "ruze",
+          "en": "day",
+          "pos": "noun"
+        },
+        {
+          "fa": "جدیده",
+          "translit": "jadide",
+          "en": "is new",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "ae2a1c4d-20fa-445d-9f1a-9c08fd803194",
+      "englishText": "I want to lose fat and build muscle.",
+      "farsiText": "می‌خوام چربی بسوزونم و عضله بسازم.",
+      "finglish": "mikhâm charbi besuzunam o azole besâzam.",
+      "literalGloss": "I want fat burn and muscle build",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "چربی",
+          "translit": "charbi",
+          "en": "fat",
+          "pos": "noun"
+        },
+        {
+          "fa": "بسوزونم",
+          "translit": "besuzunam",
+          "en": "burn",
+          "pos": "verb"
+        },
+        {
+          "fa": "و",
+          "translit": "o",
+          "en": "and",
+          "pos": "conjunction"
+        },
+        {
+          "fa": "عضله",
+          "translit": "azole",
+          "en": "muscle",
+          "pos": "noun"
+        },
+        {
+          "fa": "بسازم",
+          "translit": "besâzam",
+          "en": "build",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "53b075ab-0302-4889-a684-76660d1274ca",
+      "englishText": "I've put on weight.",
+      "farsiText": "چاق شدم.",
+      "finglish": "châgh shodam.",
+      "literalGloss": "I've got fat",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "چاق شدم",
+          "translit": "châgh shodam",
+          "en": "I've got fat",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "471c46c1-8673-4e5b-b3ed-479251c848a1",
+      "englishText": "I don't eat sweets any more.",
+      "farsiText": "دیگه شیرینی نمی‌خورم.",
+      "finglish": "dige shirini nemikhoram.",
+      "literalGloss": "any more sweets I don't eat",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دیگه",
+          "translit": "dige",
+          "en": "any more",
+          "pos": "adverb"
+        },
+        {
+          "fa": "شیرینی",
+          "translit": "shirini",
+          "en": "sweets",
+          "pos": "noun"
+        },
+        {
+          "fa": "نمی‌خورم",
+          "translit": "nemikhoram",
+          "en": "I don't eat",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "44a857aa-e9bf-4eec-8ab6-a6401c9c547f",
+      "englishText": "I need to sleep more.",
+      "farsiText": "باید بیشتر بخوابم.",
+      "finglish": "bâyad bishtar bekhâbam.",
+      "literalGloss": "must more sleep",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "باید",
+          "translit": "bâyad",
+          "en": "must",
+          "pos": "verb"
+        },
+        {
+          "fa": "بیشتر",
+          "translit": "bishtar",
+          "en": "more",
+          "pos": "adverb"
+        },
+        {
+          "fa": "بخوابم",
+          "translit": "bekhâbam",
+          "en": "sleep",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "7273e8f6-3a1b-45ba-b9e3-aa93513cee13",
+      "englishText": "I've been going to the gym for three months.",
+      "farsiText": "سه ماهه می‌رم باشگاه.",
+      "finglish": "se mâhe miram bâshgâh.",
+      "literalGloss": "for three months I go gym",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "سه ماهه",
+          "translit": "se mâhe",
+          "en": "for three months",
+          "pos": "expression"
+        },
+        {
+          "fa": "می‌رم",
+          "translit": "miram",
+          "en": "I go",
+          "pos": "verb"
+        },
+        {
+          "fa": "باشگاه",
+          "translit": "bâshgâh",
+          "en": "gym",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "ba8cda83-3ee7-4057-907f-fe3164fce8d9",
+      "englishText": "I want to get in shape.",
+      "farsiText": "می‌خوام خوش‌هیکل بشم.",
+      "finglish": "mikhâm khosh-heykal besham.",
+      "literalGloss": "I want get in shape",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "خوش‌هیکل بشم",
+          "translit": "khosh-heykal besham",
+          "en": "get in shape",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "ff1a797c-75e6-4d68-8a49-b6b9792cbc2f",
+      "englishText": "I want to find my purpose in life.",
+      "farsiText": "می‌خوام هدف زندگیم رو پیدا کنم.",
+      "finglish": "mikhâm hadafe zendegim ro peydâ konam.",
+      "literalGloss": "I want purpose of my life object marker to find",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "هدف",
+          "translit": "hadafe",
+          "en": "purpose",
+          "pos": "noun"
+        },
+        {
+          "fa": "زندگیم",
+          "translit": "zendegim",
+          "en": "of my life",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "پیدا کنم",
+          "translit": "peydâ konam",
+          "en": "to find",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "bfe6e504-25e1-4e41-b1ba-5f5b423aa451",
+      "englishText": "I want to get closer to God.",
+      "farsiText": "می‌خوام به خدا نزدیک‌تر بشم.",
+      "finglish": "mikhâm be khodâ nazdiktar besham.",
+      "literalGloss": "I want to God closer become",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خدا",
+          "translit": "khodâ",
+          "en": "God",
+          "pos": "noun"
+        },
+        {
+          "fa": "نزدیک‌تر",
+          "translit": "nazdiktar",
+          "en": "closer",
+          "pos": "adjective"
+        },
+        {
+          "fa": "بشم",
+          "translit": "besham",
+          "en": "become",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "66f4802d-014e-4847-8aae-e9f0dfadc9b4",
+      "englishText": "I believe in God.",
+      "farsiText": "به خدا اعتقاد دارم.",
+      "finglish": "be khodâ e'teghâd dâram.",
+      "literalGloss": "in God I believe",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خدا",
+          "translit": "khodâ",
+          "en": "God",
+          "pos": "noun"
+        },
+        {
+          "fa": "اعتقاد دارم",
+          "translit": "e'teghâd dâram",
+          "en": "I believe",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "493c4875-e992-4eb9-9cd4-4bc57151329f",
+      "englishText": "What is the meaning of life?",
+      "farsiText": "معنی زندگی چیه؟",
+      "finglish": "ma'niye zendegi chie?",
+      "literalGloss": "meaning of life what is",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "معنی",
+          "translit": "ma'niye",
+          "en": "meaning of",
+          "pos": "noun"
+        },
+        {
+          "fa": "زندگی",
+          "translit": "zendegi",
+          "en": "life",
+          "pos": "noun"
+        },
+        {
+          "fa": "چیه",
+          "translit": "chie",
+          "en": "what is",
+          "pos": "question word"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "000ece39-67e1-456b-93dc-1f1464f8129e",
+      "englishText": "I'm looking for peace.",
+      "farsiText": "دنبال آرامشم.",
+      "finglish": "donbâle ârâmesham.",
+      "literalGloss": "after peace I am",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دنبال",
+          "translit": "donbâle",
+          "en": "after",
+          "pos": "preposition"
+        },
+        {
+          "fa": "آرامشم",
+          "translit": "ârâmesham",
+          "en": "peace I am",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0,
+      "first": true
+    },
+    {
+      "id": "86d911b4-7185-4de0-9c35-56ed2d5556a1",
+      "englishText": "I want to be a better person.",
+      "farsiText": "می‌خوام آدم بهتری بشم.",
+      "finglish": "mikhâm âdame behtari besham.",
+      "literalGloss": "I want person a better become",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "آدم",
+          "translit": "âdame",
+          "en": "person",
+          "pos": "noun"
+        },
+        {
+          "fa": "بهتری",
+          "translit": "behtari",
+          "en": "a better",
+          "pos": "adjective"
+        },
+        {
+          "fa": "بشم",
+          "translit": "besham",
+          "en": "become",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "17994b92-0910-41da-a0f7-a2b03ee804fb",
+      "englishText": "Everything happens for a reason.",
+      "farsiText": "هر اتفاقی یه دلیلی داره.",
+      "finglish": "har ettefâghi ye dalili dâre.",
+      "literalGloss": "every event a reason has",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "هر",
+          "translit": "har",
+          "en": "every",
+          "pos": "adjective"
+        },
+        {
+          "fa": "اتفاقی",
+          "translit": "ettefâghi",
+          "en": "event",
+          "pos": "noun"
+        },
+        {
+          "fa": "یه",
+          "translit": "ye",
+          "en": "a",
+          "pos": "number"
+        },
+        {
+          "fa": "دلیلی",
+          "translit": "dalili",
+          "en": "reason",
+          "pos": "noun"
+        },
+        {
+          "fa": "داره",
+          "translit": "dâre",
+          "en": "has",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "e025d19c-d3f2-49e6-a65d-871187c3de4c",
+      "englishText": "I want to change my life.",
+      "farsiText": "می‌خوام زندگیم رو عوض کنم.",
+      "finglish": "mikhâm zendegim ro avaz konam.",
+      "literalGloss": "I want my life object marker to change",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "زندگیم",
+          "translit": "zendegim",
+          "en": "my life",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "عوض کنم",
+          "translit": "avaz konam",
+          "en": "to change",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "401233bd-3818-44fe-b21c-f217b0e3fe1d",
+      "englishText": "I would love to go to Turkey with you.",
+      "farsiText": "خیلی دوست دارم باهات بیام ترکیه.",
+      "finglish": "kheyli dust dâram bâhât biyâm torkiye.",
+      "literalGloss": "very I'd love with you to come Turkey",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "خیلی",
+          "translit": "kheyli",
+          "en": "very",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دوست دارم",
+          "translit": "dust dâram",
+          "en": "I'd love",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "باهات",
+          "translit": "bâhât",
+          "en": "with you",
+          "pos": "preposition"
+        },
+        {
+          "fa": "بیام",
+          "translit": "biyâm",
+          "en": "to come",
+          "pos": "verb"
+        },
+        {
+          "fa": "ترکیه",
+          "translit": "torkiye",
+          "en": "Turkey",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "ce57d3f1-095b-4161-a4e8-4c7aa4df5885",
+      "englishText": "Have you ever been to Istanbul?",
+      "farsiText": "تا حالا استانبول رفتی؟",
+      "finglish": "tâ hâlâ estânbol rafti?",
+      "literalGloss": "ever Istanbul have you gone",
+      "difficulty": 2,
+      "situation": "talking about the past (what you did)",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "تا حالا",
+          "translit": "tâ hâlâ",
+          "en": "ever",
+          "pos": "adverb"
+        },
+        {
+          "fa": "استانبول",
+          "translit": "estânbol",
+          "en": "Istanbul",
+          "pos": "noun"
+        },
+        {
+          "fa": "رفتی",
+          "translit": "rafti",
+          "en": "have you gone",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "ee9513d2-257d-49fc-ba6c-372aa842ea73",
+      "englishText": "I want to travel more.",
+      "farsiText": "می‌خوام بیشتر سفر کنم.",
+      "finglish": "mikhâm bishtar safar konam.",
+      "literalGloss": "I want more to travel",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "بیشتر",
+          "translit": "bishtar",
+          "en": "more",
+          "pos": "adverb"
+        },
+        {
+          "fa": "سفر کنم",
+          "translit": "safar konam",
+          "en": "to travel",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "b0de69f1-cad4-4aa1-a775-0a8420e0b8b3",
+      "englishText": "When are we going?",
+      "farsiText": "کی می‌ریم؟",
+      "finglish": "key mirim?",
+      "literalGloss": "when are we going",
+      "difficulty": 2,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "کی",
+          "translit": "key",
+          "en": "when",
+          "pos": "question word"
+        },
+        {
+          "fa": "می‌ریم",
+          "translit": "mirim",
+          "en": "are we going",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0,
+      "first": true
+    },
+    {
+      "id": "265a963f-879c-42f5-acc4-9eb5fe86ddd8",
+      "englishText": "That makes sense.",
+      "farsiText": "منطقیه.",
+      "finglish": "manteghie.",
+      "literalGloss": "it's logical",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "منطقیه",
+          "translit": "manteghie",
+          "en": "it's logical",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0,
+      "first": true
+    },
+    {
+      "id": "cd4a7b7c-8912-4eb2-92a0-e50f5fb0ebf6",
+      "englishText": "I'm not sure about that.",
+      "farsiText": "درباره‌ش مطمئن نیستم.",
+      "finglish": "darbârash motma'en nistam.",
+      "literalGloss": "about it sure I'm not",
+      "difficulty": 2,
+      "situation": "disagreeing politely",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "درباره‌ش",
+          "translit": "darbârash",
+          "en": "about it",
+          "pos": "preposition"
+        },
+        {
+          "fa": "مطمئن",
+          "translit": "motma'en",
+          "en": "sure",
+          "pos": "adjective"
+        },
+        {
+          "fa": "نیستم",
+          "translit": "nistam",
+          "en": "I'm not",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.0,
+      "first": true
+    },
+    {
+      "id": "128865a6-e7fd-435f-82ae-f2c670bc018d",
+      "englishText": "That's a good question.",
+      "farsiText": "سوال خوبیه.",
+      "finglish": "soâle khubie.",
+      "literalGloss": "question good is",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "سوال",
+          "translit": "soâle",
+          "en": "question",
+          "pos": "noun"
+        },
+        {
+          "fa": "خوبیه",
+          "translit": "khubie",
+          "en": "good is",
+          "pos": "adjective"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "3bfb2fa1-baa4-42d5-8b45-850ccbb1570e",
+      "englishText": "That's exactly what I wanted to say.",
+      "farsiText": "دقیقا همینو می‌خواستم بگم.",
+      "finglish": "daghighan hamino mikhâstam begam.",
+      "literalGloss": "exactly this very thing I wanted to say",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "دقیقا",
+          "translit": "daghighan",
+          "en": "exactly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "همینو",
+          "translit": "hamino",
+          "en": "this very thing",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "می‌خواستم",
+          "translit": "mikhâstam",
+          "en": "I wanted",
+          "pos": "verb"
+        },
+        {
+          "fa": "بگم",
+          "translit": "begam",
+          "en": "to say",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "115a6293-2197-4542-b2d1-d449975fbbd6",
+      "englishText": "Step by step.",
+      "farsiText": "قدم به قدم.",
+      "finglish": "ghadam be ghadam.",
+      "literalGloss": "step by step",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "قدم",
+          "translit": "ghadam",
+          "en": "step",
+          "pos": "noun"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "by",
+          "pos": "preposition"
+        },
+        {
+          "fa": "قدم",
+          "translit": "ghadam",
+          "en": "step",
+          "pos": "noun"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25,
+      "first": true
+    },
+    {
+      "id": "bcd4639d-3458-4bf2-9b73-7fd9d8bc4b95",
+      "englishText": "I'm proud of myself.",
+      "farsiText": "به خودم افتخار می‌کنم.",
+      "finglish": "be khodam eftekhâr mikonam.",
+      "literalGloss": "of myself I'm proud",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "of",
+          "pos": "preposition"
+        },
+        {
+          "fa": "خودم",
+          "translit": "khodam",
+          "en": "myself",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "افتخار می‌کنم",
+          "translit": "eftekhâr mikonam",
+          "en": "I'm proud",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
+    },
+    {
+      "id": "0e3ad00b-93a9-4966-b681-5b354a55c1af",
+      "englishText": "I want to start my own business.",
+      "farsiText": "می‌خوام کار خودم رو شروع کنم.",
+      "finglish": "mikhâm kâre khodam ro shoru' konam.",
+      "literalGloss": "I want work my own object marker to start",
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "کار",
+          "translit": "kâre",
+          "en": "work",
+          "pos": "noun"
+        },
+        {
+          "fa": "خودم",
+          "translit": "khodam",
+          "en": "my own",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "شروع کنم",
+          "translit": "shoru' konam",
+          "en": "to start",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "e728d9ce-5fa3-4120-b4eb-5fe2d4b8a3a4",
+      "englishText": "I want to save money.",
+      "farsiText": "می‌خوام پول جمع کنم.",
+      "finglish": "mikhâm pul jam' konam.",
+      "literalGloss": "I want money to save",
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "پول",
+          "translit": "pul",
+          "en": "money",
+          "pos": "noun"
+        },
+        {
+          "fa": "جمع کنم",
+          "translit": "jam' konam",
+          "en": "to save",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5,
+      "first": true
+    },
+    {
+      "id": "53f4ac7f-03d4-4bfc-8ffc-9dff29950553",
+      "englishText": "I want to speak Persian fluently.",
+      "farsiText": "می‌خوام فارسی رو روون حرف بزنم.",
+      "finglish": "mikhâm fârsi ro ravun harf bezanam.",
+      "literalGloss": "I want Persian object marker fluently to speak",
+      "difficulty": 2,
+      "situation": "talking about work or study",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌خوام",
+          "translit": "mikhâm",
+          "en": "I want",
+          "pos": "verb"
+        },
+        {
+          "fa": "فارسی",
+          "translit": "fârsi",
+          "en": "Persian",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "object marker",
+          "pos": "particle"
+        },
+        {
+          "fa": "روون",
+          "translit": "ravun",
+          "en": "fluently",
+          "pos": "adverb"
+        },
+        {
+          "fa": "حرف بزنم",
+          "translit": "harf bezanam",
+          "en": "to speak",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75,
+      "first": true
     }
   ]
 }

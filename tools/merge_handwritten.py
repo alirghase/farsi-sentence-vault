@@ -62,6 +62,12 @@ def merge_one(source: dict, difficulty: int, deck: dict, existing: set[str]) -> 
         farsi = validate.normalise_persian(item["fa"])
         if farsi in existing:
             skipped += 1
+            # A batch marked "first" jumps the queue of new cards, including
+            # for sentences an earlier run of it already added.
+            if source.get("first"):
+                for row in deck["sentences"]:
+                    if row["farsiText"] == farsi:
+                        row["first"] = True
             continue
 
         # Tags outside the closed set would fragment the per-tag statistics,
@@ -94,6 +100,7 @@ def merge_one(source: dict, difficulty: int, deck: dict, existing: set[str]) -> 
             "breakdown": breakdown,
             "alternatives": [validate.normalise_persian(a) for a in item.get("alt", [])],
             "source": "handwritten",
+            **({"first": True} if source.get("first") else {}),
         }
 
         issues = validate.check_sentence(sentence)

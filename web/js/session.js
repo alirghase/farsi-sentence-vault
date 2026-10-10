@@ -66,10 +66,12 @@ export const isOwn = (sentence) => sentence.source === 'custom';
  *
  * A transformation works on a sentence you already know, so it waits until its
  * stem has been seen. `unseen` is the set of deck sentences you have not met.
+ * A sentence marked `first` is one you want to be able to say now, whatever
+ * its level.
  */
 export function eligibleAsNew(sentence, levelIds, unseen = new Set()) {
   if (sentence.kind === 'transform' && unseen.has(sentence.stemId)) return false;
-  return !levelIds || levelIds.has(sentence.id);
+  return !levelIds || levelIds.has(sentence.id) || Boolean(sentence.first);
 }
 
 /** Bundle ids of the sentences with no review yet, in either direction. */
@@ -82,11 +84,13 @@ export function unseenSentences(sentences, reviews) {
  * The order new cards are introduced in; a stable sort, so ties stay shuffled.
  *
  * Your own sentences first: you wrote one down because you wanted it now. Then
+ * any batch marked `first` (the things you most want to be able to say), then
  * the sentences most made of core words (`core`, set by core/bank.py), so the
  * words everyday speech is mostly made of come before the ones it rarely needs.
  */
 export function newCardOrder(a, b) {
   return (isOwn(b.sentence) - isOwn(a.sentence))
+    || (Boolean(b.sentence.first) - Boolean(a.sentence.first))
     || ((b.sentence.core ?? 0) - (a.sentence.core ?? 0));
 }
 

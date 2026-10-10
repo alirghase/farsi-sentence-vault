@@ -1,5 +1,5 @@
 {
-  "count": 502,
+  "count": 534,
   "transforms": [
     {
       "id": "7026cae7-d352-5780-90d1-103227742cc0",
@@ -9967,6 +9967,678 @@
       "grammarTags": [
         "colloquial",
         "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "2ac98c85-2d66-57e7-9474-7bfdede681b0",
+      "kind": "transform",
+      "stemId": "need-the-gym",
+      "stem": "باید بریم باشگاه.",
+      "stemEn": "We need to go to the gym.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "باید برین باشگاه.",
+      "finglish": "bâyad berin bâshgâh.",
+      "englishText": "You need to go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما باید برین باشگاه."
+      ]
+    },
+    {
+      "id": "38e204d5-8d08-54dd-9b9b-c96946cfbec7",
+      "kind": "transform",
+      "stemId": "need-the-gym",
+      "stem": "باید برین باشگاه.",
+      "stemEn": "You need to go to the gym.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "باید بری باشگاه.",
+      "finglish": "bâyad beri bâshgâh.",
+      "englishText": "You need to go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو باید بری باشگاه."
+      ]
+    },
+    {
+      "id": "0f8806e8-c3ac-5bdd-91b0-f65f64583d0f",
+      "kind": "transform",
+      "stemId": "need-the-gym",
+      "stem": "باید برن باشگاه.",
+      "stemEn": "They need to go to the gym.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "باید برین باشگاه.",
+      "finglish": "bâyad berin bâshgâh.",
+      "englishText": "You need to go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما باید برین باشگاه."
+      ]
+    },
+    {
+      "id": "cd451681-afb4-506f-a81c-001eff685f5a",
+      "kind": "transform",
+      "stemId": "need-the-gym",
+      "stem": "باید برم باشگاه.",
+      "stemEn": "I need to go to the gym.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "باید بره باشگاه.",
+      "finglish": "bâyad bere bâshgâh.",
+      "englishText": "He needs to go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اون باید بره باشگاه."
+      ]
+    },
+    {
+      "id": "ab7eb6a1-2285-5f2b-a362-3dddd0a012fe",
+      "kind": "transform",
+      "stemId": "want-to-lose-weight",
+      "stem": "می‌خواین وزن کم کنین.",
+      "stemEn": "You want to lose weight.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "می‌خوام وزن کم کنم.",
+      "finglish": "mikhâm vazn kam konam.",
+      "englishText": "I want to lose weight.",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من می‌خوام وزن کم کنم."
+      ]
+    },
+    {
+      "id": "72e51d10-ef33-56de-945c-73f01b295efa",
+      "kind": "transform",
+      "stemId": "want-to-lose-weight",
+      "stem": "می‌خوان وزن کم کنن.",
+      "stemEn": "They want to lose weight.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "می‌خوایم وزن کم کنیم.",
+      "finglish": "mikhâym vazn kam konim.",
+      "englishText": "We want to lose weight.",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما می‌خوایم وزن کم کنیم."
+      ]
+    },
+    {
+      "id": "1a153201-b7a5-5fd1-9c4a-aaa8f6df4edd",
+      "kind": "transform",
+      "stemId": "want-to-lose-weight",
+      "stem": "می‌خوام وزن کم کنم.",
+      "stemEn": "I want to lose weight.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "می‌خوای وزن کم کنی.",
+      "finglish": "mikhây vazn kam koni.",
+      "englishText": "You want to lose weight.",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو می‌خوای وزن کم کنی."
+      ]
+    },
+    {
+      "id": "40f34ae0-d490-551f-a288-3ae4849312b4",
+      "kind": "transform",
+      "stemId": "want-to-lose-weight",
+      "stem": "می‌خوای وزن کم کنی.",
+      "stemEn": "You want to lose weight.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "می‌خواین وزن کم کنین.",
+      "finglish": "mikhâyn vazn kam konin.",
+      "englishText": "You want to lose weight.",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما می‌خواین وزن کم کنین."
+      ]
+    },
+    {
+      "id": "e9abf1ec-aa26-53e2-9683-1690e0345a81",
+      "kind": "transform",
+      "stemId": "believe-in-god",
+      "stem": "به خدا اعتقاد دارن.",
+      "stemEn": "They believe in God.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "به خدا اعتقاد داره.",
+      "finglish": "be khodâ e'teghâd dâre.",
+      "englishText": "He believes in God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اون به خدا اعتقاد داره."
+      ]
+    },
+    {
+      "id": "86596440-6203-537a-9e10-eb7399398913",
+      "kind": "transform",
+      "stemId": "believe-in-god",
+      "stem": "به خدا اعتقاد دارم.",
+      "stemEn": "I believe in God.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "they",
+      "farsiText": "به خدا اعتقاد دارن.",
+      "finglish": "be khodâ e'teghâd dâran.",
+      "englishText": "They believe in God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اونا به خدا اعتقاد دارن."
+      ]
+    },
+    {
+      "id": "9defc7e6-b91d-5924-bf1b-b5e9273f88fd",
+      "kind": "transform",
+      "stemId": "believe-in-god",
+      "stem": "به خدا اعتقاد داری.",
+      "stemEn": "You believe in God.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "به خدا اعتقاد داریم.",
+      "finglish": "be khodâ e'teghâd dârim.",
+      "englishText": "We believe in God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما به خدا اعتقاد داریم."
+      ]
+    },
+    {
+      "id": "a86a5a0a-58f6-5d6c-a290-e2bc81dd6ed9",
+      "kind": "transform",
+      "stemId": "believe-in-god",
+      "stem": "به خدا اعتقاد داره.",
+      "stemEn": "He believes in God.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "به خدا اعتقاد دارم.",
+      "finglish": "be khodâ e'teghâd dâram.",
+      "englishText": "I believe in God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من به خدا اعتقاد دارم."
+      ]
+    },
+    {
+      "id": "71a00de6-7640-5be9-bfbf-3c4448c97ee6",
+      "kind": "transform",
+      "stemId": "i-need-to",
+      "stem": "باید ورزش کنم.",
+      "stemEn": "I need to exercise.",
+      "transform": "verb",
+      "cue": "آب خوردن",
+      "cueEn": "to drink water",
+      "farsiText": "باید آب بخورم.",
+      "finglish": "bâyad âb bokhoram.",
+      "englishText": "I need to drink water.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "61e4d8b4-4eb3-5ba8-9b42-a2924e71ff9b",
+      "kind": "transform",
+      "stemId": "i-need-to",
+      "stem": "باید بخوابم.",
+      "stemEn": "I need to sleep.",
+      "transform": "verb",
+      "cue": "استراحت کردن",
+      "cueEn": "to rest",
+      "farsiText": "باید استراحت کنم.",
+      "finglish": "bâyad esterâhat konam.",
+      "englishText": "I need to rest.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "63847632-9dd9-52a7-b7fe-16daf7c05f24",
+      "kind": "transform",
+      "stemId": "i-need-to",
+      "stem": "باید استراحت کنم.",
+      "stemEn": "I need to rest.",
+      "transform": "verb",
+      "cue": "کار کردن",
+      "cueEn": "to work",
+      "farsiText": "باید کار کنم.",
+      "finglish": "bâyad kâr konam.",
+      "englishText": "I need to work.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "5ff7d4ad-2b90-53f4-8c6d-6ecd6d6baa07",
+      "kind": "transform",
+      "stemId": "i-need-to",
+      "stem": "باید غذا بخورم.",
+      "stemEn": "I need to eat.",
+      "transform": "verb",
+      "cue": "استراحت کردن",
+      "cueEn": "to rest",
+      "farsiText": "باید استراحت کنم.",
+      "finglish": "bâyad esterâhat konam.",
+      "englishText": "I need to rest.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "974bf9aa-5f28-5357-ab2c-4d91cf13bb0c",
+      "kind": "transform",
+      "stemId": "i-want-to-in-life",
+      "stem": "می‌خوام خدا رو بشناسم.",
+      "stemEn": "I want to understand God.",
+      "transform": "verb",
+      "cue": "هدفم رو پیدا کردن",
+      "cueEn": "to find my purpose",
+      "farsiText": "می‌خوام هدفم رو پیدا کنم.",
+      "finglish": "mikhâm hadafam ro peydâ konam.",
+      "englishText": "I want to find my purpose.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "97d065d7-9966-5b3e-89aa-2963b8eefb77",
+      "kind": "transform",
+      "stemId": "i-want-to-in-life",
+      "stem": "می‌خوام آدم بهتری بشم.",
+      "stemEn": "I want to become a better person.",
+      "transform": "verb",
+      "cue": "وزن کم کردن",
+      "cueEn": "to lose weight",
+      "farsiText": "می‌خوام وزن کم کنم.",
+      "finglish": "mikhâm vazn kam konam.",
+      "englishText": "I want to lose weight.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "cb78535d-9404-5b24-b141-6a1133ec345a",
+      "kind": "transform",
+      "stemId": "i-want-to-in-life",
+      "stem": "می‌خوام زندگیم رو عوض کنم.",
+      "stemEn": "I want to change my life.",
+      "transform": "verb",
+      "cue": "خدا رو شناختن",
+      "cueEn": "to understand God",
+      "farsiText": "می‌خوام خدا رو بشناسم.",
+      "finglish": "mikhâm khodâ ro beshnâsam.",
+      "englishText": "I want to understand God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b545e6ab-3467-55ea-973a-a56063a40ea9",
+      "kind": "transform",
+      "stemId": "i-want-to-in-life",
+      "stem": "می‌خوام وزن کم کنم.",
+      "stemEn": "I want to lose weight.",
+      "transform": "verb",
+      "cue": "سفر کردن",
+      "cueEn": "to travel",
+      "farsiText": "می‌خوام سفر کنم.",
+      "finglish": "mikhâm safar konam.",
+      "englishText": "I want to travel.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "2f5d29f7-71cb-5869-8801-49f165c05617",
+      "kind": "transform",
+      "stemId": "lets-go-to",
+      "stem": "بریم بیرون.",
+      "stemEn": "Let's go out.",
+      "transform": "phrase",
+      "cue": "پارک",
+      "cueEn": "the park",
+      "farsiText": "بریم پارک.",
+      "finglish": "berim pârk.",
+      "englishText": "Let's go to the park.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "85659ea0-7ffc-59f8-9d6d-bb01f4dc1614",
+      "kind": "transform",
+      "stemId": "lets-go-to",
+      "stem": "بریم پارک.",
+      "stemEn": "Let's go to the park.",
+      "transform": "phrase",
+      "cue": "باشگاه",
+      "cueEn": "the gym",
+      "farsiText": "بریم باشگاه.",
+      "finglish": "berim bâshgâh.",
+      "englishText": "Let's go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c9168c9f-6358-5f79-9dc3-c2dbffdd6b72",
+      "kind": "transform",
+      "stemId": "lets-go-to",
+      "stem": "بریم کافه.",
+      "stemEn": "Let's go to a café.",
+      "transform": "phrase",
+      "cue": "پارک",
+      "cueEn": "the park",
+      "farsiText": "بریم پارک.",
+      "finglish": "berim pârk.",
+      "englishText": "Let's go to the park.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "01333b7c-7514-55cf-b858-9cebb6029bbe",
+      "kind": "transform",
+      "stemId": "lets-go-to",
+      "stem": "بریم خرید.",
+      "stemEn": "Let's go shopping.",
+      "transform": "phrase",
+      "cue": "خونه",
+      "cueEn": "home",
+      "farsiText": "بریم خونه.",
+      "finglish": "berim khune.",
+      "englishText": "Let's go home.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "61ec7799-73d1-515a-985b-f6406c89943c",
+      "kind": "transform",
+      "stemId": "go-with-you-to",
+      "stem": "خیلی دوست دارم باهات بیام پاریس.",
+      "stemEn": "I'd love to go to Paris with you.",
+      "transform": "phrase",
+      "cue": "استانبول",
+      "cueEn": "Istanbul",
+      "farsiText": "خیلی دوست دارم باهات بیام استانبول.",
+      "finglish": "kheyli dust dâram bâhât biyâm estânbol.",
+      "englishText": "I'd love to go to Istanbul with you.",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "6f4e2f87-0df8-54d2-a498-d24c99e3c9e1",
+      "kind": "transform",
+      "stemId": "go-with-you-to",
+      "stem": "خیلی دوست دارم باهات بیام شمال.",
+      "stemEn": "I'd love to go to the north with you.",
+      "transform": "phrase",
+      "cue": "دبی",
+      "cueEn": "Dubai",
+      "farsiText": "خیلی دوست دارم باهات بیام دبی.",
+      "finglish": "kheyli dust dâram bâhât biyâm dobey.",
+      "englishText": "I'd love to go to Dubai with you.",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "f88bb288-6d0c-501a-915a-70cbdac86e64",
+      "kind": "transform",
+      "stemId": "go-with-you-to",
+      "stem": "خیلی دوست دارم باهات بیام استانبول.",
+      "stemEn": "I'd love to go to Istanbul with you.",
+      "transform": "phrase",
+      "cue": "ترکیه",
+      "cueEn": "Turkey",
+      "farsiText": "خیلی دوست دارم باهات بیام ترکیه.",
+      "finglish": "kheyli dust dâram bâhât biyâm torkiye.",
+      "englishText": "I'd love to go to Turkey with you.",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "01feebe4-2fab-5775-b6f3-c43245dd820d",
+      "kind": "transform",
+      "stemId": "go-with-you-to",
+      "stem": "خیلی دوست دارم باهات بیام ترکیه.",
+      "stemEn": "I'd love to go to Turkey with you.",
+      "transform": "phrase",
+      "cue": "پاریس",
+      "cueEn": "Paris",
+      "farsiText": "خیلی دوست دارم باهات بیام پاریس.",
+      "finglish": "kheyli dust dâram bâhât biyâm pâris.",
+      "englishText": "I'd love to go to Paris with you.",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9b3ace03-4225-578d-b1c6-806ae8a12207",
+      "kind": "transform",
+      "stemId": "do-you-see-what-i-mean",
+      "stem": "می‌دونی منظورم چیه؟",
+      "stemEn": "You know what I mean?",
+      "transform": "phrase",
+      "cue": "فهمیدن",
+      "cueEn": "to understand",
+      "farsiText": "می‌فهمی چی می‌گم؟",
+      "finglish": "mifahmi chi migam?",
+      "englishText": "Do you see what I mean?",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "d5ad31eb-fa41-5c82-96a6-2c6338169912",
+      "kind": "transform",
+      "stemId": "do-you-see-what-i-mean",
+      "stem": "گرفتی چی گفتم؟",
+      "stemEn": "Did you get what I said?",
+      "transform": "phrase",
+      "cue": "فهمیدن",
+      "cueEn": "to understand",
+      "farsiText": "می‌فهمی چی می‌گم؟",
+      "finglish": "mifahmi chi migam?",
+      "englishText": "Do you see what I mean?",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "55134708-414a-5bd1-8472-a410e547a3b1",
+      "kind": "transform",
+      "stemId": "do-you-see-what-i-mean",
+      "stem": "می‌فهمی چی می‌گم؟",
+      "stemEn": "Do you see what I mean?",
+      "transform": "phrase",
+      "cue": "گرفتن",
+      "cueEn": "to get",
+      "farsiText": "گرفتی چی گفتم؟",
+      "finglish": "gerefti chi goftam?",
+      "englishText": "Did you get what I said?",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "cdb37bd2-7a5a-56c5-84b4-974ca4d6d1ca",
+      "kind": "transform",
+      "stemId": "do-you-see-what-i-mean",
+      "stem": "متوجهی چی می‌گم؟",
+      "stemEn": "Are you following what I'm saying?",
+      "transform": "phrase",
+      "cue": "گرفتن",
+      "cueEn": "to get",
+      "farsiText": "گرفتی چی گفتم؟",
+      "finglish": "gerefti chi goftam?",
+      "englishText": "Did you get what I said?",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
       ],
       "alternatives": []
     }
