@@ -63,20 +63,34 @@ export const isOwn = (sentence) => sentence.source === 'custom';
  * One rule, used by both counts() and build(): they each had their own copy once
  * and the copies drifted, so the end-of-round count promised new cards a
  * session then refused to serve.
+ *
+ * A transformation works on a sentence you already know, so it waits until its
+ * stem has been seen. `unseen` is the set of deck sentences you have not met.
+ * A sentence marked `first` is one you want to be able to say now, whatever
+ * its level.
  */
-export function eligibleAsNew(sentence, levelIds) {
-  return !levelIds || levelIds.has(sentence.id);
+export function eligibleAsNew(sentence, levelIds, unseen = new Set()) {
+  if (sentence.kind === 'transform' && unseen.has(sentence.stemId)) return false;
+  return !levelIds || levelIds.has(sentence.id) || Boolean(sentence.first);
+}
+
+/** Bundle ids of the sentences with no review yet, in either direction. */
+export function unseenSentences(sentences, reviews) {
+  const met = new Set(reviews.map((r) => r.sentenceId));
+  return new Set(sentences.filter((s) => !met.has(s.id)).map((s) => s.seedId ?? s.id));
 }
 
 /**
  * The order new cards are introduced in; a stable sort, so ties stay shuffled.
  *
  * Your own sentences first: you wrote one down because you wanted it now. Then
+ * any batch marked `first` (the things you most want to be able to say), then
  * the sentences most made of core words (`core`, set by core/bank.py), so the
  * words everyday speech is mostly made of come before the ones it rarely needs.
  */
 export function newCardOrder(a, b) {
   return (isOwn(b.sentence) - isOwn(a.sentence))
+    || (Boolean(b.sentence.first) - Boolean(a.sentence.first))
     || ((b.sentence.core ?? 0) - (a.sentence.core ?? 0));
 }
 
@@ -118,10 +132,11 @@ export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = 
 
   // Unseen counts only what is actually reachable at the current level.
   const scheduled = new Set(reviews.map((r) => r.key));
+  const unmet = unseenSentences(sentences, reviews);
   let unseenSeed = 0;
   let unseenOwn = 0;
   for (const s of sentences) {
-    if (!eligibleAsNew(s, levelIds)) continue;
+    if (!eligibleAsNew(s, levelIds, unmet)) continue;
     for (const d of directionsFor(s)) {
       if (scheduled.has(reviewKey(s.id, d))) continue;
       if (isOwn(s)) unseenOwn += 1; else unseenSeed += 1;
@@ -184,6 +199,7 @@ export async function build({
   // New cards are restricted to the current level; due reviews are not, so
   // earlier levels keep resurfacing on their own schedule.
   const levelIds = level ? idsForLevel(sentences, level) : null;
+  const unseen = unseenSentences(sentences, reviews);
 
   const due = [];
   const fresh = [];
@@ -196,7 +212,7 @@ export async function build({
         if (existing.dueDate <= now) {
           due.push({ sentence, direction, review: existing, isNew: false });
         }
-      } else if (eligibleAsNew(sentence, levelIds)) {
+      } else if (eligibleAsNew(sentence, levelIds, unseen)) {
         // New cards are gated to the current level. Due reviews above are not,
         // so levels already passed keep resurfacing on their own schedule.
         fresh.push({
@@ -287,7 +303,7 @@ export function select(due, fresh, limit, weights, directions = DIRECTIONS, maxN
  *
  * The scheduled queue is finite on purpose: due reviews plus a capped number of
  * new sentences. Practice is not. Once the plan runs out the round keeps going
- * with cards you have already met, least-recently-practised first.
+ * with cards you have already met, hardest first.
  *
  * These deliberately do NOT touch the schedule — see `extra` in recordAttempt.
  * `exclude` is the set of cardIds already dealt this round, so a top-up works
@@ -303,9 +319,11 @@ export async function extraCards(limit, { exclude = new Set(), now = Date.now() 
   const pool = reviews
     .filter((r) => byId.has(r.sentenceId))
     .filter((r) => !exclude.has(`${r.sentenceId}::${r.direction}`))
-    .sort((a, b) => (a.lastReviewed ?? 0) - (b.lastReviewed ?? 0));
+    .sort(extraOrder);
 
-  return pool.slice(0, limit).map((review) => ({
+  // Shuffled within the batch: the order cards were first met in is not one
+  // worth replaying card for card.
+  return shuffle(pool.slice(0, limit)).map((review) => ({
     sentence: byId.get(review.sentenceId),
     direction: review.direction,
     review,
@@ -313,6 +331,15 @@ export async function extraCards(limit, { exclude = new Set(), now = Date.now() 
     // The flag the rest of the app reads to leave the schedule alone.
     extra: true,
   }));
+}
+
+/**
+ * Which known cards extra practice reaches for first: the ones you find hardest
+ * (lowest ease, which every miss lowers), then the ones you met longest ago.
+ */
+export function extraOrder(a, b) {
+  return ((a.easeFactor ?? 2.5) - (b.easeFactor ?? 2.5))
+    || ((a.lastReviewed ?? 0) - (b.lastReviewed ?? 0));
 }
 
 export function cardId(card) {
@@ -438,7 +465,15 @@ export function normaliseAnswer(value, direction) {
     s = s
       .replace(/ي/g, 'ی').replace(/ى/g, 'ی').replace(/ك/g, 'ک')
       .replace(/[\u064B-\u0652\u0670]/g, '')       // harakat
-      .replace(/[\u200C\u200D\s]+/g, '');           // ZWNJ, ZWJ, spaces
+      // Spoken Persian drops the subject; من یه قهوه می‌خوام is not wrong.
+      .trim().replace(/^(من|ما|شما)\s+(?=\S)/, '')
+      .replace(/(^|\s)را(?=\s|$)/g, '$1رو')          // the written object marker
+      .replace(/[\u200C\u200D\s]+/g, '')            // ZWNJ, ZWJ, spaces
+      // Contractions and twins that are the same answer: این رو / اینو,
+      // چایی / چای, یه کم / یکم.
+      .replace(/(این|اون|من)رو/g, '$1و')
+      .replace(/چایی/g, 'چای')
+      .replace(/یهکم/g, 'یکم');
   } else {
     // Apostrophes go entirely: "dont" and "don't" are the same answer typed
     // on a phone.

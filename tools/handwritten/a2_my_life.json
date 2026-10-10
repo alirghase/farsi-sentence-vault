@@ -1,0 +1,901 @@
+{
+  "note": "The same, at A2.",
+  "difficulty": 2,
+  "first": true,
+  "sentences": [
+    {
+      "en": "I want to lose fat and build muscle.",
+      "fa": "می‌خوام چربی بسوزونم و عضله بسازم.",
+      "tr": "mikhâm charbi besuzunam o azole besâzam.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "چربی",
+          "charbi",
+          "fat",
+          "noun"
+        ],
+        [
+          "بسوزونم",
+          "besuzunam",
+          "burn",
+          "verb"
+        ],
+        [
+          "و",
+          "o",
+          "and",
+          "conjunction"
+        ],
+        [
+          "عضله",
+          "azole",
+          "muscle",
+          "noun"
+        ],
+        [
+          "بسازم",
+          "besâzam",
+          "build",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I've put on weight.",
+      "fa": "چاق شدم.",
+      "tr": "châgh shodam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چاق شدم",
+          "châgh shodam",
+          "I've got fat",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I don't eat sweets any more.",
+      "fa": "دیگه شیرینی نمی‌خورم.",
+      "tr": "dige shirini nemikhoram.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دیگه",
+          "dige",
+          "any more",
+          "adverb"
+        ],
+        [
+          "شیرینی",
+          "shirini",
+          "sweets",
+          "noun"
+        ],
+        [
+          "نمی‌خورم",
+          "nemikhoram",
+          "I don't eat",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I need to sleep more.",
+      "fa": "باید بیشتر بخوابم.",
+      "tr": "bâyad bishtar bekhâbam.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "verb"
+        ],
+        [
+          "بیشتر",
+          "bishtar",
+          "more",
+          "adverb"
+        ],
+        [
+          "بخوابم",
+          "bekhâbam",
+          "sleep",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I've been going to the gym for three months.",
+      "fa": "سه ماهه می‌رم باشگاه.",
+      "tr": "se mâhe miram bâshgâh.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "سه ماهه",
+          "se mâhe",
+          "for three months",
+          "expression"
+        ],
+        [
+          "می‌رم",
+          "miram",
+          "I go",
+          "verb"
+        ],
+        [
+          "باشگاه",
+          "bâshgâh",
+          "gym",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to get in shape.",
+      "fa": "می‌خوام خوش‌هیکل بشم.",
+      "tr": "mikhâm khosh-heykal besham.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "خوش‌هیکل بشم",
+          "khosh-heykal besham",
+          "get in shape",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to find my purpose in life.",
+      "fa": "می‌خوام هدف زندگیم رو پیدا کنم.",
+      "tr": "mikhâm hadafe zendegim ro peydâ konam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "هدف",
+          "hadafe",
+          "purpose",
+          "noun"
+        ],
+        [
+          "زندگیم",
+          "zendegim",
+          "of my life",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "پیدا کنم",
+          "peydâ konam",
+          "to find",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to get closer to God.",
+      "fa": "می‌خوام به خدا نزدیک‌تر بشم.",
+      "tr": "mikhâm be khodâ nazdiktar besham.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "خدا",
+          "khodâ",
+          "God",
+          "noun"
+        ],
+        [
+          "نزدیک‌تر",
+          "nazdiktar",
+          "closer",
+          "adjective"
+        ],
+        [
+          "بشم",
+          "besham",
+          "become",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I believe in God.",
+      "fa": "به خدا اعتقاد دارم.",
+      "tr": "be khodâ e'teghâd dâram.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "به",
+          "be",
+          "in",
+          "preposition"
+        ],
+        [
+          "خدا",
+          "khodâ",
+          "God",
+          "noun"
+        ],
+        [
+          "اعتقاد دارم",
+          "e'teghâd dâram",
+          "I believe",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What is the meaning of life?",
+      "fa": "معنی زندگی چیه؟",
+      "tr": "ma'niye zendegi chie?",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "معنی",
+          "ma'niye",
+          "meaning of",
+          "noun"
+        ],
+        [
+          "زندگی",
+          "zendegi",
+          "life",
+          "noun"
+        ],
+        [
+          "چیه",
+          "chie",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm looking for peace.",
+      "fa": "دنبال آرامشم.",
+      "tr": "donbâle ârâmesham.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دنبال",
+          "donbâle",
+          "after",
+          "preposition"
+        ],
+        [
+          "آرامشم",
+          "ârâmesham",
+          "peace I am",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to be a better person.",
+      "fa": "می‌خوام آدم بهتری بشم.",
+      "tr": "mikhâm âdame behtari besham.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "آدم",
+          "âdame",
+          "person",
+          "noun"
+        ],
+        [
+          "بهتری",
+          "behtari",
+          "a better",
+          "adjective"
+        ],
+        [
+          "بشم",
+          "besham",
+          "become",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Everything happens for a reason.",
+      "fa": "هر اتفاقی یه دلیلی داره.",
+      "tr": "har ettefâghi ye dalili dâre.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هر",
+          "har",
+          "every",
+          "adjective"
+        ],
+        [
+          "اتفاقی",
+          "ettefâghi",
+          "event",
+          "noun"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "دلیلی",
+          "dalili",
+          "reason",
+          "noun"
+        ],
+        [
+          "داره",
+          "dâre",
+          "has",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to change my life.",
+      "fa": "می‌خوام زندگیم رو عوض کنم.",
+      "tr": "mikhâm zendegim ro avaz konam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "زندگیم",
+          "zendegim",
+          "my life",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "عوض کنم",
+          "avaz konam",
+          "to change",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I would love to go to Turkey with you.",
+      "fa": "خیلی دوست دارم باهات بیام ترکیه.",
+      "tr": "kheyli dust dâram bâhât biyâm torkiye.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "دوست دارم",
+          "dust dâram",
+          "I'd love",
+          "compound verb"
+        ],
+        [
+          "باهات",
+          "bâhât",
+          "with you",
+          "preposition"
+        ],
+        [
+          "بیام",
+          "biyâm",
+          "to come",
+          "verb"
+        ],
+        [
+          "ترکیه",
+          "torkiye",
+          "Turkey",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Have you ever been to Istanbul?",
+      "fa": "تا حالا استانبول رفتی؟",
+      "tr": "tâ hâlâ estânbol rafti?",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تا حالا",
+          "tâ hâlâ",
+          "ever",
+          "adverb"
+        ],
+        [
+          "استانبول",
+          "estânbol",
+          "Istanbul",
+          "noun"
+        ],
+        [
+          "رفتی",
+          "rafti",
+          "have you gone",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to travel more.",
+      "fa": "می‌خوام بیشتر سفر کنم.",
+      "tr": "mikhâm bishtar safar konam.",
+      "sit": "talking about future plans",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "بیشتر",
+          "bishtar",
+          "more",
+          "adverb"
+        ],
+        [
+          "سفر کنم",
+          "safar konam",
+          "to travel",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "When are we going?",
+      "fa": "کی می‌ریم؟",
+      "tr": "key mirim?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کی",
+          "key",
+          "when",
+          "question word"
+        ],
+        [
+          "می‌ریم",
+          "mirim",
+          "are we going",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That makes sense.",
+      "fa": "منطقیه.",
+      "tr": "manteghie.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "منطقیه",
+          "manteghie",
+          "it's logical",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm not sure about that.",
+      "fa": "درباره‌ش مطمئن نیستم.",
+      "tr": "darbârash motma'en nistam.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "درباره‌ش",
+          "darbârash",
+          "about it",
+          "preposition"
+        ],
+        [
+          "مطمئن",
+          "motma'en",
+          "sure",
+          "adjective"
+        ],
+        [
+          "نیستم",
+          "nistam",
+          "I'm not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's a good question.",
+      "fa": "سوال خوبیه.",
+      "tr": "soâle khubie.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "سوال",
+          "soâle",
+          "question",
+          "noun"
+        ],
+        [
+          "خوبیه",
+          "khubie",
+          "good is",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let me explain.",
+      "fa": "بذار توضیح بدم.",
+      "tr": "bezâr tozih bedam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بذار",
+          "bezâr",
+          "let",
+          "verb"
+        ],
+        [
+          "توضیح بدم",
+          "tozih bedam",
+          "I explain",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's exactly what I wanted to say.",
+      "fa": "دقیقا همینو می‌خواستم بگم.",
+      "tr": "daghighan hamino mikhâstam begam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دقیقا",
+          "daghighan",
+          "exactly",
+          "adverb"
+        ],
+        [
+          "همینو",
+          "hamino",
+          "this very thing",
+          "pronoun"
+        ],
+        [
+          "می‌خواستم",
+          "mikhâstam",
+          "I wanted",
+          "verb"
+        ],
+        [
+          "بگم",
+          "begam",
+          "to say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Step by step.",
+      "fa": "قدم به قدم.",
+      "tr": "ghadam be ghadam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "قدم",
+          "ghadam",
+          "step",
+          "noun"
+        ],
+        [
+          "به",
+          "be",
+          "by",
+          "preposition"
+        ],
+        [
+          "قدم",
+          "ghadam",
+          "step",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm proud of myself.",
+      "fa": "به خودم افتخار می‌کنم.",
+      "tr": "be khodam eftekhâr mikonam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "به",
+          "be",
+          "of",
+          "preposition"
+        ],
+        [
+          "خودم",
+          "khodam",
+          "myself",
+          "pronoun"
+        ],
+        [
+          "افتخار می‌کنم",
+          "eftekhâr mikonam",
+          "I'm proud",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to start my own business.",
+      "fa": "می‌خوام کار خودم رو شروع کنم.",
+      "tr": "mikhâm kâre khodam ro shoru' konam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "کار",
+          "kâre",
+          "work",
+          "noun"
+        ],
+        [
+          "خودم",
+          "khodam",
+          "my own",
+          "pronoun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "شروع کنم",
+          "shoru' konam",
+          "to start",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to save money.",
+      "fa": "می‌خوام پول جمع کنم.",
+      "tr": "mikhâm pul jam' konam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "پول",
+          "pul",
+          "money",
+          "noun"
+        ],
+        [
+          "جمع کنم",
+          "jam' konam",
+          "to save",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to speak Persian fluently.",
+      "fa": "می‌خوام فارسی رو روون حرف بزنم.",
+      "tr": "mikhâm fârsi ro ravun harf bezanam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "روون",
+          "ravun",
+          "fluently",
+          "adverb"
+        ],
+        [
+          "حرف بزنم",
+          "harf bezanam",
+          "to speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

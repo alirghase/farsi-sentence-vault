@@ -1,0 +1,17 @@
+{
+  "note": "A friend asks about the gym, your goals, God, a trip; you answer straight away. Same format as replies.json.",
+  "replies": [
+    ["بریم باشگاه؟", "Shall we go to the gym?", "آره، بزن بریم!", "âre, bezan berim!", "Yes, let's do it!", ["امروز نه، خسته~م."], 1, "making plans with a friend"],
+    ["چرا هر روز ورزش می~کنی؟", "Why do you exercise every day?", "می~خوام چربی بسوزونم و قوی~تر بشم.", "mikhâm charbi besuzunam o ghavitar besham.", "I want to burn fat and get stronger.", ["حالم رو خوب می~کنه."], 2, "describing how you feel"],
+    ["رژیم داری؟", "Are you on a diet?", "آره، می~خوام وزن کم کنم.", "âre, mikhâm vazn kam konam.", "Yes, I want to lose weight.", ["نه، هر چی بخوام می~خورم."], 1, "ordering food or coffee"],
+    ["چه خبر از باشگاه؟", "How's the gym going?", "عالیه، سه کیلو کم کردم!", "âliye, se kilo kam kardam!", "Great, I've lost three kilos!", ["خوبه، هر روز می~رم."], 2, "describing how you feel"],
+    ["حال داری بریم بدوییم؟", "Are you up for a run?", "آره، فقط بذار کفشم رو بپوشم.", "âre, faghat bezâr kafsham ro bepusham.", "Yes, just let me put my shoes on.", ["الان نه، بعدا."], 2, "making plans with a friend"],
+    ["خسته نشدی؟", "Aren't you tired?", "چرا، ولی تسلیم نمی~شم.", "cherâ, vali taslim nemisham.", "I am, but I'm not giving up.", ["نه هنوز."], 2, "describing how you feel"],
+    ["هدفت تو زندگی چیه؟", "What's your goal in life?", "هنوز دارم دنبالش می~گردم.", "hanuz dâram donbâlesh migardam.", "I'm still looking for it.", ["می~خوام آدم بهتری بشم."], 2, "expressing an opinion"],
+    ["به خدا اعتقاد داری؟", "Do you believe in God?", "آره، می~خوام بیشتر بشناسمش.", "âre, mikhâm bishtar beshnâsamesh.", "Yes, I want to know Him better.", ["آره، خیلی."], 2, "expressing an opinion"],
+    ["دعا می~کنی؟", "Do you pray?", "آره، هر شب.", "âre, har shab.", "Yes, every night.", ["گاهی وقتا."], 1, "expressing an opinion"],
+    ["تابستون بریم ترکیه؟", "Shall we go to Turkey in the summer?", "خیلی دوست دارم باهات بیام!", "kheyli dust dâram bâhât biyâm!", "I'd love to come with you!", ["آره، بزن بریم!"], 1, "talking about future plans"],
+    ["می~فهمی چی می~گم؟", "Do you see what I mean?", "آره، دقیقا می~فهمم.", "âre, daghighan mifahmam.", "Yes, I understand exactly.", ["نه کاملا، دوباره بگو."], 1, "asking someone to repeat or clarify"],
+    ["چرا اینقدر ساکتی؟", "Why are you so quiet?", "دارم به زندگیم فکر می~کنم.", "dâram be zendegim fekr mikonam.", "I'm thinking about my life.", ["هیچی، فقط خسته~م."], 2, "describing how you feel"]
+  ]
+}

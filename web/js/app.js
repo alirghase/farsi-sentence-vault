@@ -529,7 +529,12 @@ async function rate(rating) {
     // A miss comes back this session, not tomorrow — the point is repetition
     // under pressure, and a day's gap wastes the miss.
     const requeued = rating === 'fail';
-    if (requeued) state.queue.push(card);
+    if (requeued) {
+      // Missing the last card in the queue would bring it straight back, a
+      // test of what you read a moment ago. Top up first so others come between.
+      if (state.index === state.queue.length - 1) await topUp();
+      state.queue.push(card);
+    }
 
     state.last = { card, before, wasNew, rating, requeued, ...result };
 

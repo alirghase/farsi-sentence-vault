@@ -10,7 +10,7 @@ import * as db from './db.js';
  */
 const CONTENT_FIELDS = [
   'englishText', 'farsiText', 'finglish', 'literalGloss', 'difficulty',
-  'situation', 'grammarTags', 'breakdown', 'alternatives', 'core',
+  'situation', 'grammarTags', 'breakdown', 'alternatives', 'core', 'first',
   // A drill's own fields. Without them a corrected drill would reach the
   // device only if its Persian answer changed.
   'stem', 'stemEn', 'transform', 'cue', 'cueEn',

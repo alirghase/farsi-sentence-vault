@@ -1,5 +1,5 @@
 {
-  "count": 537,
+  "count": 534,
   "transforms": [
     {
       "id": "7026cae7-d352-5780-90d1-103227742cc0",
@@ -52,43 +52,6 @@
       "grammarTags": [
         "colloquial",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "3380fb62-37e9-5e4e-868c-c9733191ab9f",
-      "kind": "transform",
-      "stemId": "c31556c3-5cee-494e-8eba-a959e42ef32d",
-      "stem": "بهم تخفیف بده.",
-      "stemEn": "Give me a discount.",
-      "transform": "negate",
-      "farsiText": "بهم تخفیف نده.",
-      "finglish": "behem takhfif nade.",
-      "englishText": "Don't give me a discount.",
-      "difficulty": 1,
-      "situation": "negotiating or asking for a favour",
-      "grammarTags": [
-        "compound-verb",
-        "pronoun-clitic",
-        "colloquial"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "46baa6bd-06d5-50b3-93af-a3cc04fb5192",
-      "kind": "transform",
-      "stemId": "0e75c956-bc7f-4217-979c-0cd77b78611c",
-      "stem": "ببخشید، دیر کردم.",
-      "stemEn": "Excuse me, I'm late.",
-      "transform": "negate",
-      "farsiText": "ببخشید، دیر نکردم.",
-      "finglish": "bebakhshid, dir nakardam.",
-      "englishText": "Excuse me, I'm not late.",
-      "difficulty": 1,
-      "situation": "apologising or explaining lateness",
-      "grammarTags": [
-        "compound-verb",
-        "colloquial"
       ],
       "alternatives": []
     },
@@ -350,24 +313,6 @@
       "alternatives": []
     },
     {
-      "id": "5ce39574-5935-5aa5-8d55-975c6d12e021",
-      "kind": "transform",
-      "stemId": "25aa6a6d-820e-4fa6-a822-be5f860359d3",
-      "stem": "بفرما اینجا بشین.",
-      "stemEn": "Please sit down here.",
-      "transform": "negate",
-      "farsiText": "بفرما اینجا نشین.",
-      "finglish": "bafarmâ injâ nashin.",
-      "englishText": "Please don't sit here.",
-      "difficulty": 1,
-      "situation": "hosting or visiting someone's home",
-      "grammarTags": [
-        "formality",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "4482d892-e207-5fe3-bc54-55857423944a",
       "kind": "transform",
       "stemId": "c92f0c84-f572-45e3-8c8d-6a609682f6ee",
@@ -382,24 +327,6 @@
       "grammarTags": [
         "colloquial",
         "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "c2cf1f1d-9052-51b0-bf36-b260bfeaac96",
-      "kind": "transform",
-      "stemId": "6afbb169-d1c3-4fc1-823c-35f390958b79",
-      "stem": "مرسی، من سیرم.",
-      "stemEn": "Thank you, I am full.",
-      "transform": "negate",
-      "farsiText": "مرسی، من سیر نیستم.",
-      "finglish": "mersi, man sir nistam.",
-      "englishText": "Thanks, I am not full.",
-      "difficulty": 1,
-      "situation": "hosting or visiting someone's home",
-      "grammarTags": [
-        "pronoun-clitic",
-        "colloquial"
       ],
       "alternatives": []
     },
@@ -561,23 +488,6 @@
       "situation": "talking about work or study",
       "grammarTags": [
         "colloquial"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "27d886b1-5c67-5226-8211-5337d239dc61",
-      "kind": "transform",
-      "stemId": "66dfff4e-e58e-4185-a6da-f3d13d5e5282",
-      "stem": "کجا کار می‌کنی؟",
-      "stemEn": "Where do you work?",
-      "transform": "negate",
-      "farsiText": "کجا کار نمی‌کنی؟",
-      "finglish": "kojâ kâr nemikoni?",
-      "englishText": "Where don't you work?",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "compound-verb"
       ],
       "alternatives": []
     },
@@ -902,24 +812,6 @@
       "alternatives": []
     },
     {
-      "id": "e537d76e-e676-570a-a90b-2481afe54993",
-      "kind": "transform",
-      "stemId": "c6fd7880-5af1-4ee4-bc5a-bd1dbca15107",
-      "stem": "تونستی کارت بخری؟",
-      "stemEn": "Could you buy a card?",
-      "transform": "toFormal",
-      "farsiText": "تونستین کارت بخرین؟",
-      "finglish": "tunestin kârt bokharin?",
-      "englishText": "Could you buy a card?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "2cc9555c-913b-5029-be21-a29ae6b20d48",
       "kind": "transform",
       "stemId": "e227d79a-fc96-490f-b324-e5d15951cc06",
@@ -935,42 +827,6 @@
         "colloquial",
         "ra-marker",
         "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "ee600702-4d10-5b3e-a712-11b9afc904cd",
-      "kind": "transform",
-      "stemId": "5f787322-de56-41b2-be33-8d8c48adb544",
-      "stem": "درباره هوا پرسیدی؟",
-      "stemEn": "Did you ask about the weather?",
-      "transform": "toFormal",
-      "farsiText": "درباره هوا پرسیدین؟",
-      "finglish": "darbâreye havâ porsidin?",
-      "englishText": "Did you ask about the weather?",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "2eb0eab9-e992-599e-b255-e00da2a7dc55",
-      "kind": "transform",
-      "stemId": "0f51084a-2fee-4c23-ac28-51920eedb8a9",
-      "stem": "روی صندلی نشستی؟",
-      "stemEn": "Did you sit on the seat?",
-      "transform": "toFormal",
-      "farsiText": "روی صندلی نشستین؟",
-      "finglish": "ruye sandali neshestin?",
-      "englishText": "Did you sit on the seat?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "preposition",
-        "ezafe"
       ],
       "alternatives": []
     },
@@ -1195,24 +1051,6 @@
       "alternatives": []
     },
     {
-      "id": "c41d9823-0903-567d-82bc-1cfc86c11339",
-      "kind": "transform",
-      "stemId": "51854276-65b1-4e93-9ac6-497dce63b2d8",
-      "stem": "می‌خوام الان بخوابم.",
-      "stemEn": "I want to sleep now.",
-      "transform": "toPast",
-      "farsiText": "می‌خواستم الان بخوابم.",
-      "finglish": "mikhâstam alân bekhâbam.",
-      "englishText": "I wanted to sleep now.",
-      "difficulty": 1,
-      "situation": "at the doctor or pharmacy",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "fd0ab09e-e6bc-56d3-8c6f-5a0a48a603cb",
       "kind": "transform",
       "stemId": "a586ea37-9dac-4a6f-8c28-193742b403da",
@@ -1227,25 +1065,6 @@
       "grammarTags": [
         "colloquial",
         "word-order"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "50e7fea9-a445-5804-aec9-d14f55500624",
-      "kind": "transform",
-      "stemId": "c905f9b2-a252-4fba-9251-7d53f94bb8ad",
-      "stem": "چشمام دنبالت می‌گردن.",
-      "stemEn": "My eyes are looking for you.",
-      "transform": "toPast",
-      "farsiText": "چشمام دنبالت می‌گشتن.",
-      "finglish": "cheshmâm donbâlet migashtan.",
-      "englishText": "My eyes were looking for you.",
-      "difficulty": 1,
-      "situation": "at the doctor or pharmacy",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "verb-agreement"
       ],
       "alternatives": []
     },
@@ -1276,24 +1095,6 @@
       "farsiText": "می‌خواستیم شنبه بیایم.",
       "finglish": "mikhâstim shanbe biyâym.",
       "englishText": "We wanted to come on Saturday.",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "ac4099ad-391b-5912-a3f7-f26b37eeae44",
-      "kind": "transform",
-      "stemId": "b620e8c4-8f8a-4b49-9a79-30c629ad1387",
-      "stem": "ظهر کجا بشینیم؟",
-      "stemEn": "Where do we sit at noon?",
-      "transform": "toPast",
-      "farsiText": "ظهر کجا نشستیم؟",
-      "finglish": "zohr kojâ neshastim?",
-      "englishText": "Where did we sit at noon?",
       "difficulty": 1,
       "situation": "making plans with a friend",
       "grammarTags": [
@@ -1389,24 +1190,6 @@
       "grammarTags": [
         "colloquial",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "1b4f1fc4-e546-5fb0-9833-233fb60dada9",
-      "kind": "transform",
-      "stemId": "b1e2264a-f59e-4d31-9696-a532a4388c4c",
-      "stem": "واسه شنبه نمی‌خوام.",
-      "stemEn": "I don't want it for Saturday.",
-      "transform": "toPast",
-      "farsiText": "واسه شنبه نمی‌خواستم.",
-      "finglish": "vâse shanbe nemikhâstam.",
-      "englishText": "I didn't want it for Saturday.",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "preposition"
       ],
       "alternatives": []
     },
@@ -1507,8 +1290,8 @@
       "stem": "این پیامو نمی‌فهمم.",
       "stemEn": "I don't understand this message.",
       "transform": "toPast",
-      "farsiText": "این پیامو نمی‌فهمیدم.",
-      "finglish": "in payâmo nemifahmidam.",
+      "farsiText": "این پیامو نفهمیدم.",
+      "finglish": "in payâmo nafahmidam.",
       "englishText": "I didn't understand this message.",
       "difficulty": 1,
       "situation": "making plans with a friend",
@@ -1578,7 +1361,7 @@
       "transform": "toPast",
       "farsiText": "می‌شد کمکم کنی؟",
       "finglish": "mishod komakam koni?",
-      "englishText": "Could you have helped me?",
+      "englishText": "Could you possibly help me?",
       "difficulty": 1,
       "situation": "negotiating or asking for a favour",
       "grammarTags": [
@@ -1653,25 +1436,6 @@
       "situation": "ordering food or coffee",
       "grammarTags": [
         "pronoun-clitic",
-        "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "7e9b5b89-60bc-5f6e-a635-2aa111ad0717",
-      "kind": "transform",
-      "stemId": "c3a68e07-4609-4ef6-9692-d4a1dad44f87",
-      "stem": "جواب رو ندونستم.",
-      "stemEn": "I didn't know the answer.",
-      "transform": "toPlural",
-      "farsiText": "جواب رو ندونستیم.",
-      "finglish": "javâb ro nadunestim.",
-      "englishText": "We didn't know the answer.",
-      "difficulty": 1,
-      "situation": "talking about work or study",
-      "grammarTags": [
-        "ra-marker",
-        "colloquial",
         "verb-tense"
       ],
       "alternatives": []
@@ -2218,24 +1982,6 @@
       "alternatives": []
     },
     {
-      "id": "d71947f4-faeb-5130-aade-f79c3ef77e7b",
-      "kind": "transform",
-      "stemId": "6ea12aa4-fcfb-4e38-8949-e371bd014da6",
-      "stem": "امروز چی می‌پزی؟",
-      "stemEn": "What are you cooking today?",
-      "transform": "negate",
-      "farsiText": "امروز چی نمی‌پزی؟",
-      "finglish": "emruz chi nemipazi?",
-      "englishText": "What aren't you cooking today?",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "verb-tense",
-        "word-order"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "962d4f54-9b0b-543a-9a40-df7595ba2329",
       "kind": "transform",
       "stemId": "050dbc1e-7483-4ea9-be90-828ed5b14223",
@@ -2505,24 +2251,6 @@
       "alternatives": []
     },
     {
-      "id": "6a9ffe59-d540-5ec1-9208-0ddc834ad4f2",
-      "kind": "transform",
-      "stemId": "c6fd7880-5af1-4ee4-bc5a-bd1dbca15107",
-      "stem": "تونستی کارت بخری؟",
-      "stemEn": "Could you buy a card?",
-      "transform": "negate",
-      "farsiText": "نتونستی کارت بخری؟",
-      "finglish": "natunesti kârt bekhari?",
-      "englishText": "Couldn't you buy a card?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "61b1800c-4e39-5bad-bd6a-74c7c5b37421",
       "kind": "transform",
       "stemId": "8c42aaab-0c56-441f-bb20-f927e0b8afad",
@@ -2538,61 +2266,6 @@
         "colloquial",
         "ra-marker",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "7a81ee4a-f909-50ab-9407-6c7ff92e2210",
-      "kind": "transform",
-      "stemId": "e227d79a-fc96-490f-b324-e5d15951cc06",
-      "stem": "چنگالت رو بردار!",
-      "stemEn": "Pick up your fork!",
-      "transform": "negate",
-      "farsiText": "چنگالت رو برندار!",
-      "finglish": "changâlet ro barnadâr!",
-      "englishText": "Don't pick up your fork!",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "88c62f66-edca-5da8-8c5e-20b57e56f3a5",
-      "kind": "transform",
-      "stemId": "3843fa5f-9da7-4a95-bd24-3e73713de832",
-      "stem": "اون آلبالو می‌فروشه؟",
-      "stemEn": "Does he sell sour cherries?",
-      "transform": "negate",
-      "farsiText": "اون آلبالو نمی‌فروشه؟",
-      "finglish": "un âlbâlu nemifrushe?",
-      "englishText": "Doesn't he sell sour cherries?",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "verb-agreement"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "9940c213-3098-5c3a-b355-a50898540f50",
-      "kind": "transform",
-      "stemId": "5f787322-de56-41b2-be33-8d8c48adb544",
-      "stem": "درباره هوا پرسیدی؟",
-      "stemEn": "Did you ask about the weather?",
-      "transform": "negate",
-      "farsiText": "درباره هوا نپرسیدی؟",
-      "finglish": "darbâreye havâ naporsidi?",
-      "englishText": "Didn't you ask about the weather?",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
       ],
       "alternatives": []
     },
@@ -2729,24 +2402,6 @@
       "alternatives": []
     },
     {
-      "id": "b12b9ff6-5b02-5d01-98e1-9fb8a9bc0b51",
-      "kind": "transform",
-      "stemId": "c8e403cf-4da5-42ed-a3dc-ab150f8f50ac",
-      "stem": "چی می‌خوای عزیزم؟",
-      "stemEn": "What do you want, dear?",
-      "transform": "negate",
-      "farsiText": "چی نمی‌خوای عزیزم؟",
-      "finglish": "chi nemikhây azizam?",
-      "englishText": "What don't you want, dear?",
-      "difficulty": 1,
-      "situation": "compliments and thanking (taarof)",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "a7207158-219e-51a9-bf30-7c09bf7913ea",
       "kind": "transform",
       "stemId": "0c61e098-8a4a-46c3-9d8f-895149e0f330",
@@ -2838,43 +2493,6 @@
       "alternatives": []
     },
     {
-      "id": "f21c83a6-a642-5ea2-90e2-9d171ff47f03",
-      "kind": "transform",
-      "stemId": "a586ea37-9dac-4a6f-8c28-193742b403da",
-      "stem": "اون کی می‌آد؟",
-      "stemEn": "When does he come?",
-      "transform": "negate",
-      "farsiText": "اون کی نمیاد؟",
-      "finglish": "un key nemiâd?",
-      "englishText": "When does he not come?",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "word-order"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "d572cbe9-22f1-5492-9b46-65a6efb17983",
-      "kind": "transform",
-      "stemId": "c905f9b2-a252-4fba-9251-7d53f94bb8ad",
-      "stem": "چشمام دنبالت می‌گردن.",
-      "stemEn": "My eyes are looking for you.",
-      "transform": "negate",
-      "farsiText": "چشمام دنبالت نمی‌گردن.",
-      "finglish": "cheshmâm donbâlet nemigardan.",
-      "englishText": "My eyes are not looking for you.",
-      "difficulty": 1,
-      "situation": "at the doctor or pharmacy",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "verb-agreement"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "f456e8c0-2fa3-543a-a860-8a1ba3de2abe",
       "kind": "transform",
       "stemId": "f21f7c8f-e9d0-47cf-81d9-f0d0f5532136",
@@ -2910,24 +2528,6 @@
       "alternatives": []
     },
     {
-      "id": "251acb0c-3e8e-5898-b8de-e4b6a19d76aa",
-      "kind": "transform",
-      "stemId": "b620e8c4-8f8a-4b49-9a79-30c629ad1387",
-      "stem": "ظهر کجا بشینیم؟",
-      "stemEn": "Where do we sit at noon?",
-      "transform": "negate",
-      "farsiText": "ظهر کجا نشینیم؟",
-      "finglish": "zohr kojâ nashinim?",
-      "englishText": "Where should we not sit at noon?",
-      "difficulty": 1,
-      "situation": "making plans with a friend",
-      "grammarTags": [
-        "colloquial",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "962ab3c5-693b-5c9a-b0af-cf4a243f1506",
       "kind": "transform",
       "stemId": "481d0a39-cf6f-4330-aed3-8f2ffe5f2133",
@@ -2942,25 +2542,6 @@
       "grammarTags": [
         "colloquial",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "f5f0ab2d-acfd-538b-85a2-117e1c1cd5d4",
-      "kind": "transform",
-      "stemId": "b96186a2-a4be-4cc7-a421-cb4eba789082",
-      "stem": "شماره‌م رو بگیر.",
-      "stemEn": "Take my number.",
-      "transform": "negate",
-      "farsiText": "شماره‌م رو نگیر.",
-      "finglish": "shomâram ro nagir.",
-      "englishText": "Don't take my number.",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "pronoun-clitic"
       ],
       "alternatives": []
     },
@@ -3019,25 +2600,6 @@
       "alternatives": []
     },
     {
-      "id": "b09e3b67-56c0-550d-b559-90a55215e4e7",
-      "kind": "transform",
-      "stemId": "d5dd7d15-a028-4fa3-8b04-d9fb916bcc99",
-      "stem": "دلم خیلی گرفت.",
-      "stemEn": "I felt very sad.",
-      "transform": "negate",
-      "farsiText": "دلم خیلی نگرفت.",
-      "finglish": "delam kheyli nagereft.",
-      "englishText": "I didn't feel very sad.",
-      "difficulty": 1,
-      "situation": "describing how you feel",
-      "grammarTags": [
-        "colloquial",
-        "pronoun-clitic",
-        "compound-verb"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "ee52eab6-28e8-5c96-b409-a25c5ae4716d",
       "kind": "transform",
       "stemId": "082c2dc9-b100-494b-ac8c-ca688c7e2cf1",
@@ -3087,23 +2649,6 @@
       "grammarTags": [
         "colloquial",
         "verb-tense"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "47d83ed7-d4b5-51f8-a759-a8b20062d466",
-      "kind": "transform",
-      "stemId": "2d2fe771-d9d2-40e4-ba36-ab22cf9ae38e",
-      "stem": "الان چی می‌خوای؟",
-      "stemEn": "What do you want now?",
-      "transform": "negate",
-      "farsiText": "الان چی نمی‌خوای؟",
-      "finglish": "alân chi nemikhây?",
-      "englishText": "What don't you want now?",
-      "difficulty": 1,
-      "situation": "describing how you feel",
-      "grammarTags": [
-        "colloquial"
       ],
       "alternatives": []
     },
@@ -3161,23 +2706,6 @@
       "alternatives": []
     },
     {
-      "id": "86610107-0d13-5d1e-9d3f-60b20b319c76",
-      "kind": "transform",
-      "stemId": "c685a4fd-13d8-4bb3-88fc-a41d53e91ce3",
-      "stem": "یکم دیر می‌رسم.",
-      "stemEn": "I'm a bit late.",
-      "transform": "negate",
-      "farsiText": "یکم دیر نمی‌رسم.",
-      "finglish": "yekam dir nemirasam.",
-      "englishText": "I won't arrive a bit late.",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "colloquial"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "3d0b257d-ff9c-53c3-87e7-a1d6e2e8a9ad",
       "kind": "transform",
       "stemId": "3923e73e-bcc7-455a-8495-91b89d95e6ba",
@@ -3212,23 +2740,6 @@
       "alternatives": []
     },
     {
-      "id": "726fee44-05dc-57fb-931a-e4bc982e5e5b",
-      "kind": "transform",
-      "stemId": "45775330-98c3-4649-ad07-4e05cbd15a44",
-      "stem": "زود یاد می‌گیری.",
-      "stemEn": "You'll learn quickly.",
-      "transform": "negate",
-      "farsiText": "زود یاد نمی‌گیری.",
-      "finglish": "zud yâd nemigiri.",
-      "englishText": "You won't learn quickly.",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "compound-verb"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "0ad81cdf-e652-54e4-9da6-a43a9dddbea9",
       "kind": "transform",
       "stemId": "d60a133d-f0a3-4cd6-a399-82633af3fe30",
@@ -3242,23 +2753,6 @@
       "situation": "complaining about something not working",
       "grammarTags": [
         "compound-verb"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "8a5a839c-5185-5108-910f-011ce8db6509",
-      "kind": "transform",
-      "stemId": "62942bf0-368a-48a5-9e42-273eb6a837c7",
-      "stem": "چای درست کنم؟",
-      "stemEn": "Shall I make some tea?",
-      "transform": "negate",
-      "farsiText": "چای درست نکنم؟",
-      "finglish": "chây dorost nakonam?",
-      "englishText": "Shall I not make some tea?",
-      "difficulty": 1,
-      "situation": "hosting or visiting someone's home",
-      "grammarTags": [
-        "subjunctive"
       ],
       "alternatives": []
     },
@@ -3589,25 +3083,6 @@
       "alternatives": []
     },
     {
-      "id": "a6017f34-b892-5809-ae81-698aeb22e981",
-      "kind": "transform",
-      "stemId": "f10df981-9a64-47ab-8b97-c883f0351a88",
-      "stem": "کجا باید پیاده بشم؟",
-      "stemEn": "Where should I get off?",
-      "transform": "negate",
-      "farsiText": "کجا نباید پیاده بشم؟",
-      "finglish": "kojâ nabâyad piyâde besham?",
-      "englishText": "Where should I not get off?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "compound-verb",
-        "subjunctive"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "63cd9356-8853-58c3-915f-b0f80a7a81c8",
       "kind": "transform",
       "stemId": "1c55d4a5-5585-4f5c-a949-cefeed3e62b9",
@@ -3805,24 +3280,6 @@
       "alternatives": []
     },
     {
-      "id": "014028dc-66ca-5706-811a-8bea718cc09c",
-      "kind": "transform",
-      "stemId": "49d2cc26-8b6e-4ee5-ba57-4d949286d56e",
-      "stem": "دلم برات خیلی تنگه.",
-      "stemEn": "I miss you a lot.",
-      "transform": "negate",
-      "farsiText": "دلم برات خیلی تنگ نیست.",
-      "finglish": "delam barât kheyli tang nist.",
-      "englishText": "I don't miss you very much.",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "pronoun-clitic",
-        "colloquial"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "ca7ee0f3-9ec1-515a-953e-1088ddbb1519",
       "kind": "transform",
       "stemId": "d1912036-61d4-4fa8-bf42-bbabc3995643",
@@ -3895,42 +3352,6 @@
       "alternatives": []
     },
     {
-      "id": "2a39908c-9ce8-5906-9301-1a89bc853339",
-      "kind": "transform",
-      "stemId": "a11b956f-4e13-4b7f-a161-01140b0b1b00",
-      "stem": "من رو کجا می‌بری؟",
-      "stemEn": "Where are you taking me?",
-      "transform": "negate",
-      "farsiText": "من رو کجا نمی‌بری؟",
-      "finglish": "man ro kojâ nemibari?",
-      "englishText": "Where aren't you taking me?",
-      "difficulty": 1,
-      "situation": "taxi, metro, and travel",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "daa977a3-c041-5d17-b122-83fb6ec15974",
-      "kind": "transform",
-      "stemId": "cce4e90a-34e3-4529-a38d-2f7f37b5e19e",
-      "stem": "ما هوای گرم می‌خوایم.",
-      "stemEn": "We want warm weather.",
-      "transform": "negate",
-      "farsiText": "ما هوای گرم نمی‌خوایم.",
-      "finglish": "mâ havâye garm nemikhâym.",
-      "englishText": "We don't want warm weather.",
-      "difficulty": 1,
-      "situation": "small talk about weather or traffic",
-      "grammarTags": [
-        "colloquial",
-        "ezafe"
-      ],
-      "alternatives": []
-    },
-    {
       "id": "a28d4f10-8891-5bd6-bd70-d40b97910b88",
       "kind": "transform",
       "stemId": "c2ecaa8c-d5a6-4ec7-8cc1-bff2d823f67e",
@@ -3940,45 +3361,6 @@
       "farsiText": "دوچرخه قدیمیم رو نفروختم.",
       "finglish": "docharkheye ghadimim ro naforukhtam.",
       "englishText": "I didn't sell my old bicycle.",
-      "difficulty": 1,
-      "situation": "expressing an opinion",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "ezafe",
-        "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "2e5a2f55-6e7a-573c-8498-6edf9ccb07a1",
-      "kind": "transform",
-      "stemId": "dec090f3-311f-4786-a2ed-b6d6b4442b73",
-      "stem": "سفارش غذا رو بنویس.",
-      "stemEn": "Write the food order.",
-      "transform": "negate",
-      "farsiText": "سفارش غذا رو ننویس.",
-      "finglish": "sefâreshe ghazâ ro nanevis.",
-      "englishText": "Don't write the food order.",
-      "difficulty": 1,
-      "situation": "ordering food or coffee",
-      "grammarTags": [
-        "colloquial",
-        "ra-marker",
-        "ezafe"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "e8c33ff6-4da2-516a-9c47-f415a32c673f",
-      "kind": "transform",
-      "stemId": "0d88dd33-d9e9-496a-bd39-45c4c39f67fe",
-      "stem": "زبون سختش رو می‌فهمی؟",
-      "stemEn": "Do you understand his difficult language?",
-      "transform": "negate",
-      "farsiText": "زبون سختش رو نمی‌فهمی؟",
-      "finglish": "zabune sakhtesh ro nemifahmi?",
-      "englishText": "Don't you understand his difficult language?",
       "difficulty": 1,
       "situation": "expressing an opinion",
       "grammarTags": [
@@ -4280,25 +3662,6 @@
       "grammarTags": [
         "colloquial",
         "ra-marker",
-        "pronoun-clitic"
-      ],
-      "alternatives": []
-    },
-    {
-      "id": "78eeb33c-7539-5355-9da1-d940a2339b89",
-      "kind": "transform",
-      "stemId": "1ca36ac7-7482-4462-9193-b0a4bfe76bc5",
-      "stem": "چرا خواهرت بلند می‌شه؟",
-      "stemEn": "Why is your sister getting up?",
-      "transform": "toFormal",
-      "farsiText": "چرا خواهرتون بلند می‌شه؟",
-      "finglish": "cherâ khâharetun boland mishe?",
-      "englishText": "Why is your sister getting up?",
-      "difficulty": 1,
-      "situation": "phone call with family",
-      "grammarTags": [
-        "colloquial",
-        "compound-verb",
         "pronoun-clitic"
       ],
       "alternatives": []
@@ -10604,6 +9967,678 @@
       "grammarTags": [
         "colloquial",
         "formality"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "2ac98c85-2d66-57e7-9474-7bfdede681b0",
+      "kind": "transform",
+      "stemId": "need-the-gym",
+      "stem": "باید بریم باشگاه.",
+      "stemEn": "We need to go to the gym.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "باید برین باشگاه.",
+      "finglish": "bâyad berin bâshgâh.",
+      "englishText": "You need to go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما باید برین باشگاه."
+      ]
+    },
+    {
+      "id": "38e204d5-8d08-54dd-9b9b-c96946cfbec7",
+      "kind": "transform",
+      "stemId": "need-the-gym",
+      "stem": "باید برین باشگاه.",
+      "stemEn": "You need to go to the gym.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "باید بری باشگاه.",
+      "finglish": "bâyad beri bâshgâh.",
+      "englishText": "You need to go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو باید بری باشگاه."
+      ]
+    },
+    {
+      "id": "0f8806e8-c3ac-5bdd-91b0-f65f64583d0f",
+      "kind": "transform",
+      "stemId": "need-the-gym",
+      "stem": "باید برن باشگاه.",
+      "stemEn": "They need to go to the gym.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "باید برین باشگاه.",
+      "finglish": "bâyad berin bâshgâh.",
+      "englishText": "You need to go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما باید برین باشگاه."
+      ]
+    },
+    {
+      "id": "cd451681-afb4-506f-a81c-001eff685f5a",
+      "kind": "transform",
+      "stemId": "need-the-gym",
+      "stem": "باید برم باشگاه.",
+      "stemEn": "I need to go to the gym.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "باید بره باشگاه.",
+      "finglish": "bâyad bere bâshgâh.",
+      "englishText": "He needs to go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اون باید بره باشگاه."
+      ]
+    },
+    {
+      "id": "ab7eb6a1-2285-5f2b-a362-3dddd0a012fe",
+      "kind": "transform",
+      "stemId": "want-to-lose-weight",
+      "stem": "می‌خواین وزن کم کنین.",
+      "stemEn": "You want to lose weight.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "می‌خوام وزن کم کنم.",
+      "finglish": "mikhâm vazn kam konam.",
+      "englishText": "I want to lose weight.",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من می‌خوام وزن کم کنم."
+      ]
+    },
+    {
+      "id": "72e51d10-ef33-56de-945c-73f01b295efa",
+      "kind": "transform",
+      "stemId": "want-to-lose-weight",
+      "stem": "می‌خوان وزن کم کنن.",
+      "stemEn": "They want to lose weight.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "می‌خوایم وزن کم کنیم.",
+      "finglish": "mikhâym vazn kam konim.",
+      "englishText": "We want to lose weight.",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما می‌خوایم وزن کم کنیم."
+      ]
+    },
+    {
+      "id": "1a153201-b7a5-5fd1-9c4a-aaa8f6df4edd",
+      "kind": "transform",
+      "stemId": "want-to-lose-weight",
+      "stem": "می‌خوام وزن کم کنم.",
+      "stemEn": "I want to lose weight.",
+      "transform": "pronoun",
+      "cue": "تو",
+      "cueEn": "you (informal)",
+      "farsiText": "می‌خوای وزن کم کنی.",
+      "finglish": "mikhây vazn kam koni.",
+      "englishText": "You want to lose weight.",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "تو می‌خوای وزن کم کنی."
+      ]
+    },
+    {
+      "id": "40f34ae0-d490-551f-a288-3ae4849312b4",
+      "kind": "transform",
+      "stemId": "want-to-lose-weight",
+      "stem": "می‌خوای وزن کم کنی.",
+      "stemEn": "You want to lose weight.",
+      "transform": "pronoun",
+      "cue": "شما",
+      "cueEn": "you (formal)",
+      "farsiText": "می‌خواین وزن کم کنین.",
+      "finglish": "mikhâyn vazn kam konin.",
+      "englishText": "You want to lose weight.",
+      "difficulty": 2,
+      "situation": "at the doctor or pharmacy",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "شما می‌خواین وزن کم کنین."
+      ]
+    },
+    {
+      "id": "e9abf1ec-aa26-53e2-9683-1690e0345a81",
+      "kind": "transform",
+      "stemId": "believe-in-god",
+      "stem": "به خدا اعتقاد دارن.",
+      "stemEn": "They believe in God.",
+      "transform": "pronoun",
+      "cue": "اون",
+      "cueEn": "he / she",
+      "farsiText": "به خدا اعتقاد داره.",
+      "finglish": "be khodâ e'teghâd dâre.",
+      "englishText": "He believes in God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اون به خدا اعتقاد داره."
+      ]
+    },
+    {
+      "id": "86596440-6203-537a-9e10-eb7399398913",
+      "kind": "transform",
+      "stemId": "believe-in-god",
+      "stem": "به خدا اعتقاد دارم.",
+      "stemEn": "I believe in God.",
+      "transform": "pronoun",
+      "cue": "اونا",
+      "cueEn": "they",
+      "farsiText": "به خدا اعتقاد دارن.",
+      "finglish": "be khodâ e'teghâd dâran.",
+      "englishText": "They believe in God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "اونا به خدا اعتقاد دارن."
+      ]
+    },
+    {
+      "id": "9defc7e6-b91d-5924-bf1b-b5e9273f88fd",
+      "kind": "transform",
+      "stemId": "believe-in-god",
+      "stem": "به خدا اعتقاد داری.",
+      "stemEn": "You believe in God.",
+      "transform": "pronoun",
+      "cue": "ما",
+      "cueEn": "we",
+      "farsiText": "به خدا اعتقاد داریم.",
+      "finglish": "be khodâ e'teghâd dârim.",
+      "englishText": "We believe in God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "ما به خدا اعتقاد داریم."
+      ]
+    },
+    {
+      "id": "a86a5a0a-58f6-5d6c-a290-e2bc81dd6ed9",
+      "kind": "transform",
+      "stemId": "believe-in-god",
+      "stem": "به خدا اعتقاد داره.",
+      "stemEn": "He believes in God.",
+      "transform": "pronoun",
+      "cue": "من",
+      "cueEn": "I",
+      "farsiText": "به خدا اعتقاد دارم.",
+      "finglish": "be khodâ e'teghâd dâram.",
+      "englishText": "I believe in God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "compound-verb",
+        "verb-agreement"
+      ],
+      "alternatives": [
+        "من به خدا اعتقاد دارم."
+      ]
+    },
+    {
+      "id": "71a00de6-7640-5be9-bfbf-3c4448c97ee6",
+      "kind": "transform",
+      "stemId": "i-need-to",
+      "stem": "باید ورزش کنم.",
+      "stemEn": "I need to exercise.",
+      "transform": "verb",
+      "cue": "آب خوردن",
+      "cueEn": "to drink water",
+      "farsiText": "باید آب بخورم.",
+      "finglish": "bâyad âb bokhoram.",
+      "englishText": "I need to drink water.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "61e4d8b4-4eb3-5ba8-9b42-a2924e71ff9b",
+      "kind": "transform",
+      "stemId": "i-need-to",
+      "stem": "باید بخوابم.",
+      "stemEn": "I need to sleep.",
+      "transform": "verb",
+      "cue": "استراحت کردن",
+      "cueEn": "to rest",
+      "farsiText": "باید استراحت کنم.",
+      "finglish": "bâyad esterâhat konam.",
+      "englishText": "I need to rest.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "63847632-9dd9-52a7-b7fe-16daf7c05f24",
+      "kind": "transform",
+      "stemId": "i-need-to",
+      "stem": "باید استراحت کنم.",
+      "stemEn": "I need to rest.",
+      "transform": "verb",
+      "cue": "کار کردن",
+      "cueEn": "to work",
+      "farsiText": "باید کار کنم.",
+      "finglish": "bâyad kâr konam.",
+      "englishText": "I need to work.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "5ff7d4ad-2b90-53f4-8c6d-6ecd6d6baa07",
+      "kind": "transform",
+      "stemId": "i-need-to",
+      "stem": "باید غذا بخورم.",
+      "stemEn": "I need to eat.",
+      "transform": "verb",
+      "cue": "استراحت کردن",
+      "cueEn": "to rest",
+      "farsiText": "باید استراحت کنم.",
+      "finglish": "bâyad esterâhat konam.",
+      "englishText": "I need to rest.",
+      "difficulty": 1,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "974bf9aa-5f28-5357-ab2c-4d91cf13bb0c",
+      "kind": "transform",
+      "stemId": "i-want-to-in-life",
+      "stem": "می‌خوام خدا رو بشناسم.",
+      "stemEn": "I want to understand God.",
+      "transform": "verb",
+      "cue": "هدفم رو پیدا کردن",
+      "cueEn": "to find my purpose",
+      "farsiText": "می‌خوام هدفم رو پیدا کنم.",
+      "finglish": "mikhâm hadafam ro peydâ konam.",
+      "englishText": "I want to find my purpose.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "97d065d7-9966-5b3e-89aa-2963b8eefb77",
+      "kind": "transform",
+      "stemId": "i-want-to-in-life",
+      "stem": "می‌خوام آدم بهتری بشم.",
+      "stemEn": "I want to become a better person.",
+      "transform": "verb",
+      "cue": "وزن کم کردن",
+      "cueEn": "to lose weight",
+      "farsiText": "می‌خوام وزن کم کنم.",
+      "finglish": "mikhâm vazn kam konam.",
+      "englishText": "I want to lose weight.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "cb78535d-9404-5b24-b141-6a1133ec345a",
+      "kind": "transform",
+      "stemId": "i-want-to-in-life",
+      "stem": "می‌خوام زندگیم رو عوض کنم.",
+      "stemEn": "I want to change my life.",
+      "transform": "verb",
+      "cue": "خدا رو شناختن",
+      "cueEn": "to understand God",
+      "farsiText": "می‌خوام خدا رو بشناسم.",
+      "finglish": "mikhâm khodâ ro beshnâsam.",
+      "englishText": "I want to understand God.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "b545e6ab-3467-55ea-973a-a56063a40ea9",
+      "kind": "transform",
+      "stemId": "i-want-to-in-life",
+      "stem": "می‌خوام وزن کم کنم.",
+      "stemEn": "I want to lose weight.",
+      "transform": "verb",
+      "cue": "سفر کردن",
+      "cueEn": "to travel",
+      "farsiText": "می‌خوام سفر کنم.",
+      "finglish": "mikhâm safar konam.",
+      "englishText": "I want to travel.",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "2f5d29f7-71cb-5869-8801-49f165c05617",
+      "kind": "transform",
+      "stemId": "lets-go-to",
+      "stem": "بریم بیرون.",
+      "stemEn": "Let's go out.",
+      "transform": "phrase",
+      "cue": "پارک",
+      "cueEn": "the park",
+      "farsiText": "بریم پارک.",
+      "finglish": "berim pârk.",
+      "englishText": "Let's go to the park.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "85659ea0-7ffc-59f8-9d6d-bb01f4dc1614",
+      "kind": "transform",
+      "stemId": "lets-go-to",
+      "stem": "بریم پارک.",
+      "stemEn": "Let's go to the park.",
+      "transform": "phrase",
+      "cue": "باشگاه",
+      "cueEn": "the gym",
+      "farsiText": "بریم باشگاه.",
+      "finglish": "berim bâshgâh.",
+      "englishText": "Let's go to the gym.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "c9168c9f-6358-5f79-9dc3-c2dbffdd6b72",
+      "kind": "transform",
+      "stemId": "lets-go-to",
+      "stem": "بریم کافه.",
+      "stemEn": "Let's go to a café.",
+      "transform": "phrase",
+      "cue": "پارک",
+      "cueEn": "the park",
+      "farsiText": "بریم پارک.",
+      "finglish": "berim pârk.",
+      "englishText": "Let's go to the park.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "01333b7c-7514-55cf-b858-9cebb6029bbe",
+      "kind": "transform",
+      "stemId": "lets-go-to",
+      "stem": "بریم خرید.",
+      "stemEn": "Let's go shopping.",
+      "transform": "phrase",
+      "cue": "خونه",
+      "cueEn": "home",
+      "farsiText": "بریم خونه.",
+      "finglish": "berim khune.",
+      "englishText": "Let's go home.",
+      "difficulty": 1,
+      "situation": "making plans with a friend",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "61ec7799-73d1-515a-985b-f6406c89943c",
+      "kind": "transform",
+      "stemId": "go-with-you-to",
+      "stem": "خیلی دوست دارم باهات بیام پاریس.",
+      "stemEn": "I'd love to go to Paris with you.",
+      "transform": "phrase",
+      "cue": "استانبول",
+      "cueEn": "Istanbul",
+      "farsiText": "خیلی دوست دارم باهات بیام استانبول.",
+      "finglish": "kheyli dust dâram bâhât biyâm estânbol.",
+      "englishText": "I'd love to go to Istanbul with you.",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "6f4e2f87-0df8-54d2-a498-d24c99e3c9e1",
+      "kind": "transform",
+      "stemId": "go-with-you-to",
+      "stem": "خیلی دوست دارم باهات بیام شمال.",
+      "stemEn": "I'd love to go to the north with you.",
+      "transform": "phrase",
+      "cue": "دبی",
+      "cueEn": "Dubai",
+      "farsiText": "خیلی دوست دارم باهات بیام دبی.",
+      "finglish": "kheyli dust dâram bâhât biyâm dobey.",
+      "englishText": "I'd love to go to Dubai with you.",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "f88bb288-6d0c-501a-915a-70cbdac86e64",
+      "kind": "transform",
+      "stemId": "go-with-you-to",
+      "stem": "خیلی دوست دارم باهات بیام استانبول.",
+      "stemEn": "I'd love to go to Istanbul with you.",
+      "transform": "phrase",
+      "cue": "ترکیه",
+      "cueEn": "Turkey",
+      "farsiText": "خیلی دوست دارم باهات بیام ترکیه.",
+      "finglish": "kheyli dust dâram bâhât biyâm torkiye.",
+      "englishText": "I'd love to go to Turkey with you.",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "01feebe4-2fab-5775-b6f3-c43245dd820d",
+      "kind": "transform",
+      "stemId": "go-with-you-to",
+      "stem": "خیلی دوست دارم باهات بیام ترکیه.",
+      "stemEn": "I'd love to go to Turkey with you.",
+      "transform": "phrase",
+      "cue": "پاریس",
+      "cueEn": "Paris",
+      "farsiText": "خیلی دوست دارم باهات بیام پاریس.",
+      "finglish": "kheyli dust dâram bâhât biyâm pâris.",
+      "englishText": "I'd love to go to Paris with you.",
+      "difficulty": 2,
+      "situation": "talking about future plans",
+      "grammarTags": [
+        "colloquial",
+        "subjunctive"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "9b3ace03-4225-578d-b1c6-806ae8a12207",
+      "kind": "transform",
+      "stemId": "do-you-see-what-i-mean",
+      "stem": "می‌دونی منظورم چیه؟",
+      "stemEn": "You know what I mean?",
+      "transform": "phrase",
+      "cue": "فهمیدن",
+      "cueEn": "to understand",
+      "farsiText": "می‌فهمی چی می‌گم؟",
+      "finglish": "mifahmi chi migam?",
+      "englishText": "Do you see what I mean?",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "d5ad31eb-fa41-5c82-96a6-2c6338169912",
+      "kind": "transform",
+      "stemId": "do-you-see-what-i-mean",
+      "stem": "گرفتی چی گفتم؟",
+      "stemEn": "Did you get what I said?",
+      "transform": "phrase",
+      "cue": "فهمیدن",
+      "cueEn": "to understand",
+      "farsiText": "می‌فهمی چی می‌گم؟",
+      "finglish": "mifahmi chi migam?",
+      "englishText": "Do you see what I mean?",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "55134708-414a-5bd1-8472-a410e547a3b1",
+      "kind": "transform",
+      "stemId": "do-you-see-what-i-mean",
+      "stem": "می‌فهمی چی می‌گم؟",
+      "stemEn": "Do you see what I mean?",
+      "transform": "phrase",
+      "cue": "گرفتن",
+      "cueEn": "to get",
+      "farsiText": "گرفتی چی گفتم؟",
+      "finglish": "gerefti chi goftam?",
+      "englishText": "Did you get what I said?",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "cdb37bd2-7a5a-56c5-84b4-974ca4d6d1ca",
+      "kind": "transform",
+      "stemId": "do-you-see-what-i-mean",
+      "stem": "متوجهی چی می‌گم؟",
+      "stemEn": "Are you following what I'm saying?",
+      "transform": "phrase",
+      "cue": "گرفتن",
+      "cueEn": "to get",
+      "farsiText": "گرفتی چی گفتم؟",
+      "finglish": "gerefti chi goftam?",
+      "englishText": "Did you get what I said?",
+      "difficulty": 1,
+      "situation": "asking someone to repeat or clarify",
+      "grammarTags": [
+        "colloquial"
       ],
       "alternatives": []
     }

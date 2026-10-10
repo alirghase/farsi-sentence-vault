@@ -11,9 +11,9 @@ import { readFileSync } from 'node:fs';
 
 import * as SM2 from '../web/js/sm2.js';
 import { instruction, stemHint } from '../web/js/taxonomy.js';
-import { select, matchesAnswer, introducedSince, eligibleAsNew, isOwn, NEW_PER_DAY,
+import { select, matchesAnswer, introducedSince, eligibleAsNew, unseenSentences, isOwn, NEW_PER_DAY,
          directionsFor, promptFor, answerFor, expectsFarsi, isDrill, targetMs,
-         newCardOrder } from '../web/js/session.js';
+         newCardOrder, extraOrder } from '../web/js/session.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -87,6 +87,7 @@ test('eligibility is the same rule for the counter and the builder', () => {
   assert.equal(eligibleAsNew(sentence, atLevel), true);
   assert.equal(eligibleAsNew(other, atLevel), false, 'outside the level');
   assert.equal(eligibleAsNew(other, null), true, 'no level gate means no filter');
+  assert.equal(eligibleAsNew({ id: 'b', first: true }, atLevel), true, 'marked first, whatever its level');
 });
 
 test('both directions of one sentence never share a session', () => {
@@ -286,12 +287,47 @@ test('every shipped reply can be asked and answered', () => {
 
 // --- order of new cards ---
 
-test('new cards: your own first, then the most common words, ties left shuffled', () => {
+test('new cards: your own first, then batches marked first, then the most common words', () => {
   const card = (id, extra) => ({ sentence: { id, source: 'seed', ...extra } });
   const cards = [
     card('rare', { core: 0.25 }), card('common-a', { core: 1 }), card('drill'),
     card('mine', { source: 'custom' }), card('common-b', { core: 1 }),
+    card('wanted', { core: 0.25, first: true }),
   ];
   assert.deepEqual(cards.sort(newCardOrder).map((c) => c.sentence.id),
-    ['mine', 'common-a', 'common-b', 'rare', 'drill']);
+    ['mine', 'wanted', 'common-a', 'common-b', 'rare', 'drill']);
+});
+
+test('a transformation waits until its stem sentence has been seen', () => {
+  const stem = { id: 's1' };
+  const other = { id: 's2' };
+  const drill = { id: 't1', kind: 'transform', stemId: 's1' };
+  const swap = { id: 't2', kind: 'transform', stemId: 'a-frame' };
+  let unseen = unseenSentences([stem, other], []);
+  assert.equal(eligibleAsNew(drill, null, unseen), false, 'stem never met');
+  assert.equal(eligibleAsNew(swap, null, unseen), true, 'a swap has no stem sentence to wait for');
+  unseen = unseenSentences([stem, other], [{ sentenceId: 's1', direction: 'enToFa' }]);
+  assert.equal(eligibleAsNew(drill, null, unseen), true, 'stem met once, in either direction');
+});
+
+test('extra practice reaches for the hardest cards first, then the longest unseen', () => {
+  const reviews = [
+    { key: 'easy-old', easeFactor: 2.5, lastReviewed: 1 },
+    { key: 'hard', easeFactor: 1.7, lastReviewed: 50 },
+    { key: 'easy-new', easeFactor: 2.5, lastReviewed: 9 },
+  ];
+  assert.deepEqual(reviews.sort(extraOrder).map((r) => r.key), ['hard', 'easy-old', 'easy-new']);
+});
+
+test('the answer check accepts what a phone or a speaker varies, and nothing more', () => {
+  const card = (farsiText) => ({ farsiText, alternatives: [] });
+  const ok = (typed, ref) => matchesAnswer(typed, card(ref), 'enToFa');
+  assert.ok(ok('من یه قهوه می‌خوام', 'یه قهوه می‌خوام.'), 'a subject pronoun added');
+  assert.ok(ok('یه قهوه میخوام', 'من یه قهوه می‌خوام.'), 'or left out');
+  assert.ok(ok('این رو می‌دونم', 'اینو می‌دونم.'), 'این رو / اینو');
+  assert.ok(ok('کتاب را خوندم', 'کتاب رو خوندم.'), 'را / رو');
+  assert.ok(ok('یه چایی می‌خوام', 'یه چای می‌خوام.'), 'چایی / چای');
+  assert.ok(ok('یکم خسته‌م', 'یه کم خسته‌م.'), 'یکم / یه کم');
+  assert.ok(!ok('یه قهوه نمی‌خوام', 'یه قهوه می‌خوام.'), 'a negation is a different answer');
+  assert.ok(!ok('ما یه قهوه می‌خوام', 'یه قهوه می‌خوایم.'), 'the verb ending still has to agree');
 });

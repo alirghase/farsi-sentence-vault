@@ -43,7 +43,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from core import bank
-from core.taxonomy import DRILL_KEYS, SWAP_KEYS
+from core.taxonomy import DRILL_KEYS, SWAP_KEYS, TRANSFORM_KEYS
 
 PUNCT = '.،؟!؛:«»"\'()'
 
@@ -93,6 +93,10 @@ def check_transforms(sentences: list[dict]) -> tuple[list[str], int]:
             failures.append(f"transform with no stem: {row.get('farsiText')}")
         if row.get("transform") not in DRILL_KEYS:
             failures.append(f"unknown transformation {row.get('transform')!r}: {row.get('farsiText')}")
+        if row.get("transform") in TRANSFORM_KEYS and row.get("stemId") not in sentence_ids:
+            # The app holds a transformation back until its stem has been seen,
+            # so one whose stem has left the deck would be dealt as a stranger.
+            failures.append(f"transformation whose stem is no longer in the deck: {row.get('stem')}")
         if row.get("transform") in SWAP_KEYS and not row.get("cue"):
             # A swap with no cue is a sentence and nothing to do with it.
             failures.append(f"swap with no cue: {row.get('farsiText')}")

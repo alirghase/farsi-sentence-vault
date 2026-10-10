@@ -1,0 +1,697 @@
+{
+  "note": "Things you actually want to say about your own life: the gym and losing fat, purpose and God, travelling together, getting your point across, keeping going.",
+  "difficulty": 1,
+  "first": true,
+  "sentences": [
+    {
+      "en": "Let's go!",
+      "fa": "بریم!",
+      "tr": "berim!",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's do it.",
+      "fa": "بزن بریم.",
+      "tr": "bezan berim.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بزن بریم",
+          "bezan berim",
+          "let's do it",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Come on, we can do it!",
+      "fa": "بیا، می‌تونیم!",
+      "tr": "biyâ, mitunim!",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بیا",
+          "biyâ",
+          "come on",
+          "verb"
+        ],
+        [
+          "می‌تونیم",
+          "mitunim",
+          "we can",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I need to go to the gym.",
+      "fa": "باید برم باشگاه.",
+      "tr": "bâyad beram bâshgâh.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "verb"
+        ],
+        [
+          "برم",
+          "beram",
+          "I go",
+          "verb"
+        ],
+        [
+          "باشگاه",
+          "bâshgâh",
+          "gym",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I go to the gym every day.",
+      "fa": "هر روز می‌رم باشگاه.",
+      "tr": "har ruz miram bâshgâh.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هر روز",
+          "har ruz",
+          "every day",
+          "expression"
+        ],
+        [
+          "می‌رم",
+          "miram",
+          "I go",
+          "verb"
+        ],
+        [
+          "باشگاه",
+          "bâshgâh",
+          "gym",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I need to lose weight.",
+      "fa": "باید وزن کم کنم.",
+      "tr": "bâyad vazn kam konam.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "verb"
+        ],
+        [
+          "وزن کم کنم",
+          "vazn kam konam",
+          "lose weight",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to burn fat.",
+      "fa": "می‌خوام چربی بسوزونم.",
+      "tr": "mikhâm charbi besuzunam.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "چربی",
+          "charbi",
+          "fat",
+          "noun"
+        ],
+        [
+          "بسوزونم",
+          "besuzunam",
+          "to burn",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm hungry, but I'm on a diet.",
+      "fa": "گشنمه، ولی رژیم دارم.",
+      "tr": "goshname, vali rejim dâram.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "گشنمه",
+          "goshname",
+          "I'm hungry",
+          "adjective"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "رژیم دارم",
+          "rejim dâram",
+          "I'm on a diet",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I feel good after exercise.",
+      "fa": "بعد از ورزش حالم خوبه.",
+      "tr": "ba'd az varzesh hâlam khube.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بعد از",
+          "ba'd az",
+          "after",
+          "preposition"
+        ],
+        [
+          "ورزش",
+          "varzesh",
+          "exercise",
+          "noun"
+        ],
+        [
+          "حالم",
+          "hâlam",
+          "my mood",
+          "noun"
+        ],
+        [
+          "خوبه",
+          "khube",
+          "is good",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm tired, but I'm going to the gym.",
+      "fa": "خسته‌م، ولی می‌رم باشگاه.",
+      "tr": "khastam, vali miram bâshgâh.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خسته‌م",
+          "khastam",
+          "I'm tired",
+          "adjective"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "می‌رم",
+          "miram",
+          "I go",
+          "verb"
+        ],
+        [
+          "باشگاه",
+          "bâshgâh",
+          "gym",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to find my purpose.",
+      "fa": "می‌خوام هدفم رو پیدا کنم.",
+      "tr": "mikhâm hadafam ro peydâ konam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "هدفم",
+          "hadafam",
+          "my purpose",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "پیدا کنم",
+          "peydâ konam",
+          "to find",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to understand God.",
+      "fa": "می‌خوام خدا رو بشناسم.",
+      "tr": "mikhâm khodâ ro beshnâsam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "خدا",
+          "khodâ",
+          "God",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "بشناسم",
+          "beshnâsam",
+          "to know",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I pray every night.",
+      "fa": "هر شب دعا می‌کنم.",
+      "tr": "har shab do'â mikonam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هر شب",
+          "har shab",
+          "every night",
+          "expression"
+        ],
+        [
+          "دعا می‌کنم",
+          "do'â mikonam",
+          "I pray",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm grateful for everything.",
+      "fa": "بابت همه‌چی شکرگزارم.",
+      "tr": "bâbate hamechi shokrgozâram.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بابت",
+          "bâbate",
+          "for",
+          "preposition"
+        ],
+        [
+          "همه‌چی",
+          "hamechi",
+          "everything",
+          "pronoun"
+        ],
+        [
+          "شکرگزارم",
+          "shokrgozâram",
+          "I'm grateful",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I need to be patient.",
+      "fa": "باید صبور باشم.",
+      "tr": "bâyad sabur bâsham.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باید",
+          "bâyad",
+          "must",
+          "verb"
+        ],
+        [
+          "صبور",
+          "sabur",
+          "patient",
+          "adjective"
+        ],
+        [
+          "باشم",
+          "bâsham",
+          "be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's go to Turkey together.",
+      "fa": "بیا با هم بریم ترکیه.",
+      "tr": "biyâ bâ ham berim torkiye.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بیا",
+          "biyâ",
+          "come on",
+          "verb"
+        ],
+        [
+          "با هم",
+          "bâ ham",
+          "together",
+          "adverb"
+        ],
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ],
+        [
+          "ترکیه",
+          "torkiye",
+          "Turkey",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Shall we go together?",
+      "fa": "با هم بریم؟",
+      "tr": "bâ ham berim?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "با هم",
+          "bâ ham",
+          "together",
+          "adverb"
+        ],
+        [
+          "بریم",
+          "berim",
+          "shall we go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you see what I mean?",
+      "fa": "می‌فهمی چی می‌گم؟",
+      "tr": "mifahmi chi migam?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌فهمی",
+          "mifahmi",
+          "do you understand",
+          "verb"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "می‌گم",
+          "migam",
+          "I'm saying",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You know what I mean?",
+      "fa": "می‌دونی منظورم چیه؟",
+      "tr": "miduni manzuram chie?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌دونی",
+          "miduni",
+          "do you know",
+          "verb"
+        ],
+        [
+          "منظورم",
+          "manzuram",
+          "my meaning",
+          "noun"
+        ],
+        [
+          "چیه",
+          "chie",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I know what you mean.",
+      "fa": "می‌دونم منظورت چیه.",
+      "tr": "midunam manzuret chie.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌دونم",
+          "midunam",
+          "I know",
+          "verb"
+        ],
+        [
+          "منظورت",
+          "manzuret",
+          "your meaning",
+          "noun"
+        ],
+        [
+          "چیه",
+          "chie",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I agree with you.",
+      "fa": "باهات موافقم.",
+      "tr": "bâhât movâfegham.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باهات",
+          "bâhât",
+          "with you",
+          "preposition"
+        ],
+        [
+          "موافقم",
+          "movâfegham",
+          "I agree",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Never give up.",
+      "fa": "هیچ‌وقت تسلیم نشو.",
+      "tr": "hichvaght taslim nasho.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هیچ‌وقت",
+          "hichvaght",
+          "never",
+          "adverb"
+        ],
+        [
+          "تسلیم نشو",
+          "taslim nasho",
+          "don't give up",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You can do it.",
+      "fa": "تو می‌تونی.",
+      "tr": "to mituni.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "to",
+          "you",
+          "pronoun"
+        ],
+        [
+          "می‌تونی",
+          "mituni",
+          "can",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Today is a new day.",
+      "fa": "امروز یه روز جدیده.",
+      "tr": "emruz ye ruze jadide.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "امروز",
+          "emruz",
+          "today",
+          "adverb"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "روز",
+          "ruze",
+          "day",
+          "noun"
+        ],
+        [
+          "جدیده",
+          "jadide",
+          "is new",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

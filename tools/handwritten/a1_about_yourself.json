@@ -1,0 +1,498 @@
+{
+  "note": "Talking about yourself — the first thing every conversation asks for: where you were born and grew up, your parents, where you live, work, family, why you speak some Persian.",
+  "difficulty": 1,
+  "sentences": [
+    {
+      "en": "My name is Ali.",
+      "fa": "اسمم علیه.",
+      "tr": "esmam alie.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اسمم",
+          "esmam",
+          "my name",
+          "noun"
+        ],
+        [
+          "علیه",
+          "alie",
+          "is Ali",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm from London.",
+      "fa": "اهل لندنم.",
+      "tr": "ahle landanam.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اهل",
+          "ahle",
+          "from",
+          "preposition"
+        ],
+        [
+          "لندنم",
+          "landanam",
+          "London I am",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was born in London.",
+      "fa": "تو لندن به دنیا اومدم.",
+      "tr": "tu landan be donyâ umadam.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "لندن",
+          "landan",
+          "London",
+          "noun"
+        ],
+        [
+          "به دنیا اومدم",
+          "be donyâ umadam",
+          "I was born",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My parents are Iranian.",
+      "fa": "بابا مامانم ایرانی‌ان.",
+      "tr": "bâbâ mâmânam irâniyan.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بابا",
+          "bâbâ",
+          "dad",
+          "noun"
+        ],
+        [
+          "مامانم",
+          "mâmânam",
+          "my mum",
+          "noun"
+        ],
+        [
+          "ایرانی‌ان",
+          "irâniyan",
+          "are Iranian",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My dad is from Shiraz.",
+      "fa": "بابام اهل شیرازه.",
+      "tr": "bâbâm ahle shirâze.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بابام",
+          "bâbâm",
+          "my dad",
+          "noun"
+        ],
+        [
+          "اهل",
+          "ahle",
+          "from",
+          "preposition"
+        ],
+        [
+          "شیرازه",
+          "shirâze",
+          "is Shiraz",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My mum is from Tehran.",
+      "fa": "مامانم اهل تهرانه.",
+      "tr": "mâmânam ahle tehrâne.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مامانم",
+          "mâmânam",
+          "my mum",
+          "noun"
+        ],
+        [
+          "اهل",
+          "ahle",
+          "from",
+          "preposition"
+        ],
+        [
+          "تهرانه",
+          "tehrâne",
+          "is Tehran",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I live in London.",
+      "fa": "لندن زندگی می‌کنم.",
+      "tr": "landan zendegi mikonam.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "لندن",
+          "landan",
+          "London",
+          "noun"
+        ],
+        [
+          "زندگی می‌کنم",
+          "zendegi mikonam",
+          "I live",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I live with my parents.",
+      "fa": "با بابا مامانم زندگی می‌کنم.",
+      "tr": "bâ bâbâ mâmânam zendegi mikonam.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "با",
+          "bâ",
+          "with",
+          "preposition"
+        ],
+        [
+          "بابا",
+          "bâbâ",
+          "dad",
+          "noun"
+        ],
+        [
+          "مامانم",
+          "mâmânam",
+          "my mum",
+          "noun"
+        ],
+        [
+          "زندگی می‌کنم",
+          "zendegi mikonam",
+          "I live",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm thirty.",
+      "fa": "سی سالمه.",
+      "tr": "si sâlame.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "سی",
+          "si",
+          "thirty",
+          "number"
+        ],
+        [
+          "سالمه",
+          "sâlame",
+          "years I have",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm a student.",
+      "fa": "دانشجوام.",
+      "tr": "dâneshjuam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دانشجوام",
+          "dâneshjuam",
+          "I'm a student",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm an engineer.",
+      "fa": "مهندسم.",
+      "tr": "mohandesam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مهندسم",
+          "mohandesam",
+          "I'm an engineer",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm married.",
+      "fa": "ازدواج کردم.",
+      "tr": "ezdevâj kardam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ازدواج کردم",
+          "ezdevâj kardam",
+          "I got married",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm single.",
+      "fa": "مجردم.",
+      "tr": "mojarradam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مجردم",
+          "mojarradam",
+          "I'm single",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have a son and a daughter.",
+      "fa": "یه پسر و یه دختر دارم.",
+      "tr": "ye pesar o ye dokhtar dâram.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "پسر",
+          "pesar",
+          "son",
+          "noun"
+        ],
+        [
+          "و",
+          "o",
+          "and",
+          "conjunction"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "دختر",
+          "dokhtar",
+          "daughter",
+          "noun"
+        ],
+        [
+          "دارم",
+          "dâram",
+          "I have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I don't have children.",
+      "fa": "بچه ندارم.",
+      "tr": "bache nadâram.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بچه",
+          "bache",
+          "child",
+          "noun"
+        ],
+        [
+          "ندارم",
+          "nadâram",
+          "I don't have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I speak a little Persian.",
+      "fa": "یه کم فارسی بلدم.",
+      "tr": "ye kam fârsi baladam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه کم",
+          "ye kam",
+          "a little",
+          "adverb"
+        ],
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "بلدم",
+          "baladam",
+          "I know",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I like cooking.",
+      "fa": "آشپزی دوست دارم.",
+      "tr": "âshpazi dust dâram.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آشپزی",
+          "âshpazi",
+          "cooking",
+          "noun"
+        ],
+        [
+          "دوست دارم",
+          "dust dâram",
+          "I like",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I like reading.",
+      "fa": "کتاب خوندن دوست دارم.",
+      "tr": "ketâb khundan dust dâram.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کتاب خوندن",
+          "ketâb khundan",
+          "reading books",
+          "noun"
+        ],
+        [
+          "دوست دارم",
+          "dust dâram",
+          "I like",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Nice to meet you.",
+      "fa": "خوشبختم.",
+      "tr": "khoshbakhtam.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خوشبختم",
+          "khoshbakhtam",
+          "nice to meet you",
+          "expression"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}
