@@ -28,6 +28,9 @@ const state = {
   shownAt: 0,
   msToReveal: null,
   resumeTo: 'card',
+  // Settings changed what the round was built from — the level, immersion, or
+  // the whole history on a restore — so leaving Settings deals a fresh one.
+  stale: false,
 };
 
 // --- boot ------------------------------------------------------------------
@@ -123,8 +126,10 @@ function registerServiceWorker() {
 
 // --- navigation ------------------------------------------------------------
 
-/** Settings is a detour off the end of a round, not a destination. */
+/** Settings is a detour from wherever you are, not a destination. */
 async function showSettings() {
+  state.resumeTo = $('done-view').hidden ? 'card' : 'done';
+  state.stale = false;
   $('practice').hidden = true;
   $('screen-settings').hidden = false;
   await renderSettings();
@@ -133,7 +138,10 @@ async function showSettings() {
 async function hideSettings() {
   $('screen-settings').hidden = true;
   $('practice').hidden = false;
-  await renderDone();
+  // A queue dealt before a restore holds the reviews the restore replaced;
+  // rating one would write the old schedule back over it.
+  if (state.stale) await startSession();
+  else if (state.resumeTo === 'done') await renderDone();
 }
 
 /** Writing a sentence down, from wherever you are: the thought arrives mid-round. */
@@ -574,7 +582,6 @@ async function renderDone() {
   $('btn-reveal').hidden = true;
   $('rating-row').hidden = true;
   $('done-row').hidden = false;
-  $('btn-settings').hidden = false;
   $('practice-progress').textContent = '';
   $('done-view').querySelector('h2').textContent = text('card.done');
 
@@ -605,10 +612,12 @@ function bindSettings() {
 
   $('set-immersive').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ immersive: e.target.checked });
+    state.stale = true;
   });
 
   $('set-level').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ currentLevel: e.target.value });
+    state.stale = true;
     toast(`${text('settings.levelNow')} ${e.target.value}`);
     await renderSettings();
   });
@@ -638,6 +647,7 @@ function bindSettings() {
       if (!confirm(`${text('settings.confirmRestore')}\n${when}`)) return;
       const result = await backup.importData(data);
       state.settings = result.settings;
+      state.stale = true;
       toast(`${text('settings.backupRestored')} — ${faDigits(result.reviews)} `
         + `${text('settings.scheduled')}، ${faDigits(result.attempts)} ${text('settings.reviews')}`
         + (result.skipped

@@ -19,7 +19,10 @@
      be. Opening the app puts you on a card. -->
 <div class="practice" id="practice">
   <header class="practice-head">
-    <button id="btn-compose" aria-label="New sentence">+</button>
+    <span class="head-left">
+      <button id="btn-compose" aria-label="New sentence">+</button>
+      <button id="btn-settings" data-t="tab.settings">Settings</button>
+    </span>
     <span class="head-right">
       <button id="btn-undo" hidden data-t="card.undo">Undo</button>
       <span class="progress" id="practice-progress"></span>
@@ -58,7 +61,6 @@
     <button id="btn-reveal"><span data-t="card.reveal">Reveal</span> &rarr;</button>
     <div id="rating-row" class="rating-row" hidden></div>
     <div id="done-row" class="done-row" hidden>
-      <button id="btn-settings" data-t="tab.settings">Settings</button>
       <button id="btn-again"></button>
     </div>
   </div>

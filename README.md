@@ -73,7 +73,7 @@ when three things hold: 60 distinct cards seen, 85% accuracy over the last 40
 reviews, and 30 cards past a 7-day interval.
 
 **+** on the card writes a sentence of your own, drillable at once. **تنظیمات**
-(from the end of a round) holds immersion, your level, and **Save a backup** —
+(next to **+**) holds immersion, your level, and **Save a backup** —
 do that now and then: iOS can clear a web app's storage and nothing else holds a
 copy. Restoring maps through the Persian text, so it works on a new device.
 
