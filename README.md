@@ -30,6 +30,13 @@ because there is nowhere else to be.
 3. **غلط (wrong)** or **درست (right)**. Wrong comes back later in the same round.
    Right shows how many days until you see it again. **برگرد** undoes a mis-tap.
 
+**Don't know a word?** Hover over any Persian word — a prompt, an answer, an
+example on the reference screen — or tap it on a phone, and its English shows
+in a small tip. Nothing English is on screen until you ask. The meaning comes
+from the sentence's own word map, then the word maps of the whole deck, then the
+knowledge base, so conjugated forms (*رفتیم* → *we went*) and phrases (*یه کم*)
+are covered too.
+
 On a keyboard: <kbd>Enter</kbd> checks, <kbd>1</kbd> wrong, <kbd>2</kbd> right,
 <kbd>U</kbd> undo.
 

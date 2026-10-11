@@ -24,11 +24,14 @@ const ref = {
   stack: [],
   onPractise: null,
   onClose: null,
+  glossed: null,
 };
 
-export function bind({ onPractise, onClose }) {
+export function bind({ onPractise, onClose, glossed }) {
   ref.onPractise = onPractise;
   ref.onClose = onClose;
+  // Example sentences get the same hover glosses as a card.
+  ref.glossed = glossed;
   $('btn-kb-back').addEventListener('click', back);
   $('kb-q').addEventListener('input', () => render());
   $('kb-body').addEventListener('click', (event) => {
@@ -275,7 +278,7 @@ function formTable(forms) {
 function exampleList(sentences) {
   const body = sentences.length
     ? sentences.map((s) => `<div class="kb-example">
-        <p class="rtl kb-ex-fa">${esc(s.farsiText)}</p>
+        <p class="rtl kb-ex-fa">${ref.glossed ? ref.glossed(s.farsiText) : esc(s.farsiText)}</p>
         <p class="kb-sub">${esc(s.englishText)}</p>
       </div>`).join('')
     : `<p class="hint">${esc(text('kb.noExamples'))}</p>`;

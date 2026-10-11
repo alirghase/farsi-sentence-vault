@@ -179,7 +179,7 @@ export function search(kb, query, limit = 40) {
 
 // Endings a word can carry in a sentence: possessives, the copula, plurals,
 // the object marker. Peeled off to find the word a chip or a token is.
-const ENDINGS = ['شون', 'تون', 'مون', 'هام', 'هات', 'هاش', 'ها', 'ام', 'ات', 'اش', 'ست',
+export const ENDINGS = ['شون', 'تون', 'مون', 'هام', 'هات', 'هاش', 'ها', 'ام', 'ات', 'اش', 'ست',
   'رو', 'م', 'ت', 'ش', 'ه', 'ی', 'ا', 'و', 'ن'];
 
 /**

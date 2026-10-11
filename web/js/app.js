@@ -7,7 +7,8 @@ import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as levels from './levels.js';
 import * as reference from './reference.js';
-import { lookup } from './kb.js';
+import { lookup, fold } from './kb.js';
+import { buildGlossary, segment } from './gloss.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
 import { posTitle, instruction, stemHint } from './taxonomy.js';
 
@@ -36,6 +37,10 @@ const state = {
   // A round of cards picked on the reference screen. When it runs out the
   // ordinary round takes over, rather than topping up with unrelated cards.
   focused: false,
+  // Persian word -> English, for the hover gloss; and each deck sentence's
+  // word map by its text. Built once, on the first card.
+  glossary: null,
+  unitsByText: null,
 };
 
 // --- boot ------------------------------------------------------------------
@@ -57,7 +62,8 @@ async function boot() {
   bindPractice();
   bindKeys();
   bindSettings();
-  reference.bind({ onPractise: practiseFromReference, onClose: hideReference });
+  reference.bind({ onPractise: practiseFromReference, onClose: hideReference, glossed });
+  bindGlossTip();
   // In the background: the word map's links need the index, the first card
   // does not.
   reference.ready();
@@ -358,6 +364,7 @@ async function renderCard() {
   state.revealed = false;
   state.shownAt = performance.now();
 
+  hideGlossTip();
   $('card-view').hidden = false;
   $('card-view').classList.remove('is-revealed');
   $('done-view').hidden = true;
@@ -375,8 +382,11 @@ async function renderCard() {
   $('card-badge').classList.toggle('is-instruction', drill);
 
   const prompt = $('card-prompt');
-  prompt.textContent = session.promptFor(card.sentence, card.direction);
-  prompt.classList.toggle('rtl', drill || card.direction === 'faToEn');
+  const persianPrompt = drill || card.direction === 'faToEn';
+  await loadGlossary();
+  setPersian(prompt, session.promptFor(card.sentence, card.direction), persianPrompt,
+    formUnits(card.sentence));
+  prompt.classList.toggle('rtl', persianPrompt);
 
   // What the stem means, so a drill is the grammar and not a vocabulary test —
   // behind a tap when immersive, so the Persian is what you work from.
@@ -411,7 +421,7 @@ function reveal() {
   state.msToReveal = Math.round(performance.now() - state.shownAt);
 
   const answer = $('answer-text');
-  answer.textContent = session.answerFor(card.sentence, card.direction);
+  setPersian(answer, session.answerFor(card.sentence, card.direction), card.direction !== 'faToEn');
   answer.classList.toggle('rtl', card.direction !== 'faToEn');
 
   renderTypedEcho(card);
@@ -430,6 +440,86 @@ function reveal() {
 
   renderRatings(card);
 }
+
+// --- hover glosses -----------------------------------------------------------
+
+/** Build the glossary once: the deck's word maps, then the knowledge base. */
+async function loadGlossary() {
+  if (state.glossary) return;
+  const [sentences, kb] = await Promise.all([db.getAll(db.STORE.sentences), deck.loadKb()]);
+  state.glossary = buildGlossary(sentences, kb);
+  state.unitsByText = new Map(sentences.filter((s) => s.breakdown?.length)
+    .map((s) => [fold(s.farsiText), s.breakdown]));
+}
+
+/**
+ * Persian text as words that show their English when pointed at or tapped.
+ * Nothing English is on screen until you ask for it.
+ */
+function glossed(text, units = null) {
+  if (!state.glossary) return escapeHtml(text);
+  units ??= state.unitsByText.get(fold(text));
+  return segment(text, state.glossary, units).map((piece) => (piece.en
+    ? `<span class="w" data-en="${escapeHtml(piece.en)}">${escapeHtml(piece.text)}</span>`
+    : escapeHtml(piece.text))).join('');
+}
+
+function setPersian(element, text, persian, units = null) {
+  if (persian) element.innerHTML = glossed(text, units);
+  else element.textContent = text;
+}
+
+/** A form card's prompt glossed exactly: اون is "he/she" here, not "that". */
+function formUnits(sentence) {
+  if (sentence.kind !== 'form' || sentence.person === undefined) return null;
+  const form = sentence.forms.find((f) => f.p === sentence.person);
+  const who = { fa: form?.who ?? '', en: form?.whoEn ?? '' };
+  const lemma = { fa: sentence.lemma, en: sentence.lemmaEn };
+  return sentence.family === 'verb' ? [who, lemma] : [lemma, who];
+}
+
+/**
+ * One tip for every glossed word on every screen. A mouse shows it while
+ * hovering; a tap shows it until the next tap anywhere else.
+ */
+function bindGlossTip() {
+  const tip = $('gloss-tip');
+  let shownFor = null;
+  const show = (word) => {
+    shownFor = word;
+    tip.textContent = word.dataset.en;
+    tip.hidden = false;
+    const box = word.getBoundingClientRect();
+    const width = tip.offsetWidth;
+    const left = Math.min(Math.max(8, box.left + box.width / 2 - width / 2),
+      window.innerWidth - width - 8);
+    const above = box.top - tip.offsetHeight - 6;
+    tip.style.left = `${left}px`;
+    tip.style.top = `${above > 8 ? above : box.bottom + 6}px`;
+    word.classList.add('is-glossed');
+  };
+  const hide = () => {
+    shownFor?.classList.remove('is-glossed');
+    shownFor = null;
+    tip.hidden = true;
+  };
+  if (matchMedia('(hover: hover)').matches) {
+    document.addEventListener('mouseover', (event) => {
+      const word = event.target.closest?.('.w[data-en]');
+      if (word) show(word);
+      else if (shownFor) hide();
+    });
+  }
+  document.addEventListener('click', (event) => {
+    const word = event.target.closest?.('.w[data-en]');
+    if (word && word !== shownFor) show(word);
+    else if (!word) hide();
+  });
+  document.addEventListener('scroll', hide, true);
+  hideGlossTip = hide;
+}
+
+let hideGlossTip = () => {};
 
 /**
  * Put `full` in `element`, or — when immersive — a small label that turns into

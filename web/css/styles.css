@@ -476,3 +476,16 @@ kbd {
 
 /* From a word on a card to its page. */
 .map-kb { font-size: 12px; color: var(--ink); border-bottom: 1px solid var(--ink-faint); direction: rtl; }
+
+/* --- hover glosses --- */
+/* A Persian word whose English is one hover or tap away. Unmarked until you
+   reach for it, so the screen reads as Persian. */
+.w { cursor: help; }
+@media (hover: hover) { .w:hover { background: var(--rule); } }
+.w.is-glossed { background: var(--rule); }
+.gloss-tip {
+  position: fixed; z-index: 70; max-width: min(280px, calc(100vw - 16px));
+  background: var(--ink); color: var(--paper);
+  padding: 5px 9px; font-family: var(--sans); font-size: 13px; line-height: 1.35;
+  direction: ltr; pointer-events: none;
+}

@@ -18,6 +18,7 @@ const SHELL = [
   './js/backup.js',
   './js/db.js',
   './js/deck.js',
+  './js/gloss.js',
   './js/kb.js',
   './js/levels.js',
   './js/reference.js',

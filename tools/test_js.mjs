@@ -17,6 +17,7 @@ import { select, matchesAnswer, introducedSince, eligibleAsNew, unseenSentences,
          DEFAULT_WEIGHTS } from '../web/js/session.js';
 import { cardsFromKb, dealForm, formAlternatives, search, buildIndex, lookup,
          examples } from '../web/js/kb.js';
+import { buildGlossary, segment } from '../web/js/gloss.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -440,4 +441,41 @@ test('the reference search finds a verb from any of its forms', () => {
   ];
   assert.equal(examples(deck, { word: { fa: 'کتاب' } }).length, 1);
   assert.equal(examples(deck, { verb: kbData.verbs.find((v) => v.inf === 'رفتن') }).length, 1);
+});
+
+// --- hover glosses ---
+
+test('a sentence on screen is glossed by its own word map first', () => {
+  const units = [
+    { fa: 'فردا', en: 'tomorrow' }, { fa: 'می‌رم', en: 'I go' }, { fa: 'خونه', en: 'home' },
+  ];
+  const pieces = segment('فردا می‌رم خونه.', new Map(), units);
+  assert.equal(pieces.map((p) => p.text).join(''), 'فردا می‌رم خونه.');
+  assert.deepEqual(pieces.filter((p) => p.en).map((p) => p.en), ['tomorrow', 'I go', 'home']);
+  // A map of a different sentence is not used.
+  assert.ok(segment('فردا نمی‌رم خونه.', new Map(), units).every((p) => !p.en || p.text !== 'می‌رم'));
+});
+
+test('any other Persian is glossed from the deck and the knowledge base', () => {
+  const deck = [
+    { breakdown: [{ fa: 'یه کم', en: 'a little' }, { fa: 'خسته‌م', en: "I'm tired" }] },
+    { breakdown: [{ fa: 'یه کم', en: 'a little' }] },
+    { breakdown: [{ fa: 'یه کم', en: 'a bit' }] },
+  ];
+  const glossary = buildGlossary(deck, kbData);
+  const pieces = segment('امروز یه کم خسته‌م، ولی فردا رفتیم.', glossary);
+  const en = Object.fromEntries(pieces.filter((p) => p.en).map((p) => [p.text, p.en]));
+  assert.equal(en['یه کم'], 'a little', 'a phrase as one unit, the commonest gloss');
+  assert.equal(en['رفتیم'], 'we went', 'a conjugated form from the knowledge base');
+  assert.ok(en['امروز'], 'a knowledge-base word');
+  assert.equal(pieces.map((p) => p.text).join(''), 'امروز یه کم خسته‌م، ولی فردا رفتیم.');
+  assert.ok(segment('کتابام', glossary)[0].en, 'a word with an ending');
+});
+
+test('a form card prompt is cut at its separator', () => {
+  const pieces = segment('اون · رفتن', new Map(), [{ fa: 'اون', en: 'he/she' }, { fa: 'رفتن', en: 'to go' }]);
+  assert.deepEqual(pieces.filter((p) => p.en).map((p) => p.en), ['he/she', 'to go']);
+  assert.equal(pieces.map((p) => p.text).join(''), 'اون · رفتن');
+  const table = segment('کتاب + شما', new Map(), [{ fa: 'کتاب', en: 'book' }, { fa: 'شما', en: 'you (pl.)' }]);
+  assert.deepEqual(table.filter((p) => p.en).map((p) => p.en), ['book', 'you (pl.)']);
 });
