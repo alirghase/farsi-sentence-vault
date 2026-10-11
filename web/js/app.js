@@ -172,7 +172,7 @@ function toast(message, ms = 2600) {
 }
 
 const todayCounts = () => session.counts(
-  Date.now(), session.NEW_PER_DAY, state.settings.currentLevel,
+  Date.now(), session.NEW_PER_DAY, state.settings.currentLevel, state.settings.focus,
 );
 
 /** Move up a level when the gate is cleared — between rounds, saying so once. */
@@ -252,6 +252,7 @@ async function startSession() {
     maxNew: counts.allowance,
     weights: session.DEFAULT_WEIGHTS,
     level: state.settings.currentLevel,
+    focus: state.settings.focus,
   });
 
   Object.assign(state, { queue, index: 0, completed: 0, passes: 0, last: null, busy: false });
@@ -277,13 +278,14 @@ const EXTRA_BATCH = 20;
  */
 async function topUp() {
   const dealt = new Set(state.queue.map(session.cardId));
-  let more = await session.extraCards(EXTRA_BATCH, { exclude: dealt });
+  const focus = state.settings.focus;
+  let more = await session.extraCards(EXTRA_BATCH, { exclude: dealt, focus });
   if (!more.length && dealt.size) {
     // Everything known has been dealt once this round. Go round again.
     state.queue = state.queue.slice(state.index);
     state.index = 0;
     more = await session.extraCards(EXTRA_BATCH, {
-      exclude: new Set(state.queue.map(session.cardId)),
+      exclude: new Set(state.queue.map(session.cardId)), focus,
     });
   }
   if (more.length) state.queue.push(...more);
@@ -615,6 +617,11 @@ function bindSettings() {
     state.stale = true;
   });
 
+  $('set-focus').addEventListener('change', async (e) => {
+    state.settings = await db.saveSettings({ focus: e.target.value });
+    state.stale = true;
+  });
+
   $('set-level').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ currentLevel: e.target.value });
     state.stale = true;
@@ -716,6 +723,9 @@ async function renderOwnSentences() {
 async function renderSettings() {
   const s = state.settings;
   $('set-immersive').checked = s.immersive;
+  $('set-focus').innerHTML = Object.keys(session.FOCUS)
+    .map((f) => `<option value="${f}"${f === s.focus ? ' selected' : ''}>${escapeHtml(text(`focus.${f}`))}</option>`)
+    .join('');
   $('set-level').innerHTML = levels.LEVELS
     .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
     .join('');

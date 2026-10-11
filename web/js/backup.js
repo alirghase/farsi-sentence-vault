@@ -22,14 +22,20 @@ export async function exportData() {
     db.getSettings(),
   ]);
   const textById = new Map(sentences.map((s) => [s.id, s.farsiText]));
+  const kindById = new Map(sentences.map((s) => [s.id, s.kind ?? 'sentence']));
 
   return {
     format: FORMAT,
     version: VERSION,
     exportedAt: new Date().toISOString(),
     settings,
-    reviews: reviews.map((r) => ({ ...r, farsiText: textById.get(r.sentenceId) })),
-    attempts: attempts.map((a) => ({ ...a, farsiText: textById.get(a.sentenceId) })),
+    // kind with the text: a word card and a sentence can share their Persian.
+    reviews: reviews.map((r) => ({
+      ...r, farsiText: textById.get(r.sentenceId), kind: kindById.get(r.sentenceId),
+    })),
+    attempts: attempts.map((a) => ({
+      ...a, farsiText: textById.get(a.sentenceId), kind: kindById.get(a.sentenceId),
+    })),
     // Anything not from the bundled deck would be lost otherwise. Today that
     // is nothing, but a restore must not depend on that staying true.
     customSentences: sentences.filter((s) => s.source !== 'seed'),
@@ -52,20 +58,32 @@ export async function importData(backup) {
     await db.putMany(db.STORE.sentences, backup.customSentences);
   }
   const sentences = await db.getAll(db.STORE.sentences);
-  const ids = new Set(sentences.map((s) => s.id));
+  const byId = new Map(sentences.map((s) => [s.id, s]));
   const idByText = new Map(sentences.map((s) => [s.farsiText, s.id]));
-  const resolve = (row) => idByText.get(row.farsiText) ?? (ids.has(row.sentenceId) ? row.sentenceId : null);
+  const idByKindText = new Map(sentences.map((s) => [`${s.kind ?? 'sentence'}::${s.farsiText}`, s.id]));
+  // A backup that records the kind resolves within it; an older one, by text.
+  const byText = (row) => (row.kind
+    ? idByKindText.get(`${row.kind}::${row.farsiText}`)
+    : idByText.get(row.farsiText));
+  // The id first when it names the same text here: two words can share a
+  // spelling (نه, no and nine), and the text alone would put both histories
+  // on one of them.
+  const resolve = (row) => {
+    const same = byId.get(row.sentenceId);
+    if (same && same.farsiText === row.farsiText) return row.sentenceId;
+    return byText(row) ?? (same ? row.sentenceId : null);
+  };
 
   let skipped = 0;
   const reviews = [];
-  for (const { farsiText, ...row } of backup.reviews ?? []) {
-    const sentenceId = resolve({ farsiText, ...row });
+  for (const { farsiText, kind, ...row } of backup.reviews ?? []) {
+    const sentenceId = resolve({ farsiText, kind, ...row });
     if (!sentenceId) { skipped += 1; continue; }
     reviews.push({ ...row, sentenceId, key: `${sentenceId}::${row.direction}` });
   }
   const attempts = [];
-  for (const { farsiText, ...row } of backup.attempts ?? []) {
-    const sentenceId = resolve({ farsiText, ...row });
+  for (const { farsiText, kind, ...row } of backup.attempts ?? []) {
+    const sentenceId = resolve({ farsiText, kind, ...row });
     if (!sentenceId) continue;
     attempts.push({ ...row, sentenceId });
   }

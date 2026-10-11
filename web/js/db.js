@@ -218,6 +218,8 @@ const SETTING_DEFAULTS = {
   levelsPassed: [],
   // English and pronunciation stay hidden until you tap for them.
   immersive: true,
+  // What a round deals: all, sentences, words or forms. See FOCUS in session.js.
+  focus: 'all',
 };
 
 export async function getSettings() {

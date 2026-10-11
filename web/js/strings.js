@@ -19,6 +19,7 @@ export const STRINGS = {
   'card.undone': 'لغو شد',
   'dir.enToFa': 'انگلیسی ← فارسی',
   'dir.faToEn': 'فارسی ← انگلیسی',
+  'dir.word': 'کلمه',
 
   // End of a round
   'card.done': 'تموم شد',
@@ -40,6 +41,13 @@ export const STRINGS = {
   // Settings
   'tab.settings': 'تنظیمات',
   'settings.level': 'سطح',
+  'settings.focus': 'تمرین',
+  'settings.focusLabel': 'چی تمرین کنم',
+  'settings.focusHint': 'همه، یا فقط یه چیز: جمله‌ها، کلمه‌ها، یا صرف فعل و ضمیرها. مرور کارت‌های دیگه سر جاش می‌مونه تا برگردی.',
+  'focus.all': 'همه',
+  'focus.sentences': 'جمله‌ها',
+  'focus.words': 'کلمه‌ها',
+  'focus.forms': 'فعل و ضمیر',
   'settings.currentLevel': 'سطح فعلی',
   'settings.immersion': 'غوطه‌وری',
   'settings.immersive': 'انگلیسی و تلفظ پنهون باشه',
