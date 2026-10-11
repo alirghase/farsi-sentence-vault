@@ -6,6 +6,8 @@ import * as backup from './backup.js';
 import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as levels from './levels.js';
+import * as reference from './reference.js';
+import { lookup } from './kb.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
 import { posTitle, instruction, stemHint } from './taxonomy.js';
 
@@ -31,6 +33,9 @@ const state = {
   // Settings changed what the round was built from — the level, immersion, or
   // the whole history on a restore — so leaving Settings deals a fresh one.
   stale: false,
+  // A round of cards picked on the reference screen. When it runs out the
+  // ordinary round takes over, rather than topping up with unrelated cards.
+  focused: false,
 };
 
 // --- boot ------------------------------------------------------------------
@@ -52,6 +57,10 @@ async function boot() {
   bindPractice();
   bindKeys();
   bindSettings();
+  reference.bind({ onPractise: practiseFromReference, onClose: hideReference });
+  // In the background: the word map's links need the index, the first card
+  // does not.
+  reference.ready();
 
   // An installed app is resumed, not reopened, so the end-of-round panel
   // recounts when you come back — the only place a stale count would show.
@@ -77,6 +86,7 @@ function bootFailed(error) {
     ?? 'boot.failed';
   $('screen-settings').hidden = true;
   $('screen-compose').hidden = true;
+  $('screen-kb').hidden = true;
   $('practice').hidden = false;
   $('card-view').hidden = true;
   $('done-view').hidden = false;
@@ -90,6 +100,7 @@ function bootFailed(error) {
   $('rating-row').hidden = true;
   $('done-row').hidden = false;
   $('btn-settings').hidden = true;
+  $('btn-kb').hidden = true;
 
   // Every one of these causes is something that can stop being true a moment
   // later — the other copy gets closed, the upgrade finishes. Leaving the only
@@ -142,6 +153,37 @@ async function hideSettings() {
   // rating one would write the old schedule back over it.
   if (state.stale) await startSession();
   else if (state.resumeTo === 'done') await renderDone();
+}
+
+/**
+ * The reference screen, from the header or from a word on a card. A detour
+ * like Settings: closing it puts you back on the card you left, revealed or
+ * not.
+ */
+async function showReference(target = null) {
+  state.resumeTo = $('done-view').hidden ? 'card' : 'done';
+  $('practice').hidden = true;
+  await reference.open(target);
+}
+
+async function hideReference() {
+  $('practice').hidden = false;
+  if (state.resumeTo === 'done') await renderDone();
+}
+
+/** A round of just the cards a reference page holds. */
+async function practiseFromReference(ids) {
+  const queue = await session.focusedCards(ids);
+  if (!queue.length) {
+    toast(text('kb.nothingToDrill'));
+    return;
+  }
+  reference.close();
+  Object.assign(state, {
+    queue, index: 0, completed: 0, passes: 0, last: null, busy: false, focused: true,
+  });
+  $('practice').hidden = false;
+  await renderCard();
 }
 
 /** Writing a sentence down, from wherever you are: the thought arrives mid-round. */
@@ -197,6 +239,7 @@ function bindPractice() {
   $('btn-settings-back').addEventListener('click', hideSettings);
   $('btn-compose').addEventListener('click', showCompose);
   $('btn-compose-close').addEventListener('click', hideCompose);
+  $('btn-kb').addEventListener('click', () => showReference());
   $('rating-row').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-r]');
     if (button) rate(button.dataset.r);
@@ -255,10 +298,13 @@ async function startSession() {
     focus: state.settings.focus,
   });
 
-  Object.assign(state, { queue, index: 0, completed: 0, passes: 0, last: null, busy: false });
+  Object.assign(state, {
+    queue, index: 0, completed: 0, passes: 0, last: null, busy: false, focused: false,
+  });
   $('practice').hidden = false;
   $('screen-settings').hidden = true;
   $('screen-compose').hidden = true;
+  reference.close();
   // An empty queue is not the end: renderCard tops it up with cards you already
   // know. The done panel is only for a device with nothing on it at all.
   await renderCard();
@@ -294,6 +340,12 @@ async function topUp() {
 
 async function renderCard() {
   $('btn-undo').hidden = !state.last;
+  if (state.index >= state.queue.length && state.focused) {
+    // The cards you picked are done, misses included; back to the round the
+    // schedule would deal.
+    toast(text('kb.focusDone'));
+    return startSession();
+  }
   if (state.index >= state.queue.length) {
     // Finishing the plan is the moment a cleared level takes effect: it is the
     // only point in an endless round where nothing is half-answered.
@@ -466,11 +518,16 @@ function renderBreakdown(sentence) {
       for (const pair of all) pair.classList.toggle('on', pair.dataset.u === String(index));
       const u = units[index];
       const multi = u.fa.trim().split(/\s+/).length > 1;
+      // The word's page on the reference screen, when there is one: the whole
+      // verb behind a form, the table behind an ending.
+      const entry = reference.index() ? lookup(reference.index(), u.fa.trim()) : null;
       detail.innerHTML =
         `<span class="map-translit">${escapeHtml(u.translit)}</span>` +
         `<span class="map-means">${escapeHtml(u.en)}</span>` +
         `<span class="map-pos">${escapeHtml(posTitle(u.pos))}</span>` +
+        (entry ? `<button class="map-kb">${escapeHtml(text('kb.lookup'))}</button>` : '') +
         (multi ? `<span class="map-note">${escapeHtml(text('card.unit'))}</span>` : '');
+      detail.querySelector('.map-kb')?.addEventListener('click', () => showReference(entry));
     };
 
     const hoverable = matchMedia('(hover: hover)').matches;
@@ -542,7 +599,8 @@ async function rate(rating) {
     if (requeued) {
       // Missing the last card in the queue would bring it straight back, a
       // test of what you read a moment ago. Top up first so others come between.
-      if (state.index === state.queue.length - 1) await topUp();
+      // A focused round has nothing else to put between, and should not.
+      if (state.index === state.queue.length - 1 && !state.focused) await topUp();
       state.queue.push(card);
     }
 

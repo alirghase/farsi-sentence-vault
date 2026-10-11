@@ -73,6 +73,27 @@ export const STRINGS = {
   'settings.confirmRestore': 'پیشرفت این دستگاه با پشتیبانِ این تاریخ جایگزین بشه؟',
   'settings.goneFromDeck': 'دیگه توی بسته نیستن',
 
+  // The reference screen
+  'tab.kb': 'مرجع',
+  'kb.search': 'جستجو — فارسی، انگلیسی یا فینگلیش',
+  'kb.words': 'کلمه‌ها',
+  'kb.verbs': 'فعل‌ها',
+  'kb.pronouns': 'ضمیر و پسوند',
+  'kb.notes': 'دستور زبان',
+  'kb.practise': 'تمرینش کن',
+  'kb.examples': 'توی جمله‌ها',
+  'kb.noExamples': 'هنوز جمله‌ای با این توی بسته نیست.',
+  'kb.nothing': 'چیزی پیدا نشد.',
+  'kb.notLoaded': 'مرجع بالا نیومد — یه بار با اینترنت باز کن.',
+  'kb.core': 'پرکاربرد',
+  'kb.alsoSaid': 'این‌جوری هم می‌گن',
+  'kb.compound': 'فعل مرکب',
+  'kb.pastStem': 'بن ماضی',
+  'kb.presStem': 'بن مضارع',
+  'kb.lookup': 'مرجع ←',
+  'kb.focusDone': 'اینا تموم شد — برگشتی سر تمرین همیشگی.',
+  'kb.nothingToDrill': 'این کارت‌ها هنوز روی این دستگاه نیستن.',
+
   // Your own sentences
   'bank.title': 'جمله‌های خودم',
   'bank.english': 'انگلیسی',
@@ -117,5 +138,9 @@ export function applyStrings(root = document) {
   for (const element of root.querySelectorAll('[data-t]')) {
     const value = STRINGS[element.dataset.t];
     if (value) element.textContent = value;
+  }
+  for (const element of root.querySelectorAll('[data-t-placeholder]')) {
+    const value = STRINGS[element.dataset.tPlaceholder];
+    if (value) element.placeholder = value;
   }
 }

@@ -20,6 +20,7 @@ const SHELL = [
   './js/deck.js',
   './js/kb.js',
   './js/levels.js',
+  './js/reference.js',
   './js/strings.js',
   './js/session.js',
   './js/sm2.js',
