@@ -9,61 +9,15 @@ from __future__ import annotations
 import functools
 import re
 
-# --- Core verbs -----------------------------------------------------------
-# The highest-frequency Persian verbs. Persian leans heavily on compound verbs
-# (noun + light verb), so those are listed as their own entries: a learner who
-# knows کردن but not "زنگ زدن" still cannot make a phone call.
+from core import kb
 
-CORE_VERBS = [
-    ("بودن", "to be"),
-    ("داشتن", "to have"),
-    ("رفتن", "to go"),
-    ("اومدن", "to come"),
-    ("کردن", "to do / make"),
-    ("شدن", "to become"),
-    ("گفتن", "to say"),
-    ("دیدن", "to see"),
-    ("دادن", "to give"),
-    ("گرفتن", "to take / get"),
-    ("خوردن", "to eat"),
-    ("خواستن", "to want"),
-    ("تونستن", "to be able"),
-    ("دونستن", "to know (a fact)"),
-    ("شناختن", "to know (a person)"),
-    ("آوردن", "to bring"),
-    ("بردن", "to take away / win"),
-    ("گذاشتن", "to put / let"),
-    ("برداشتن", "to pick up"),
-    ("زدن", "to hit / strike"),
-    ("خریدن", "to buy"),
-    ("فروختن", "to sell"),
-    ("نوشتن", "to write"),
-    ("خوندن", "to read / sing"),
-    ("موندن", "to stay"),
-    ("رسیدن", "to arrive"),
-    ("فهمیدن", "to understand"),
-    ("پرسیدن", "to ask"),
-    ("گشتن", "to look for / wander"),
-    ("نشستن", "to sit"),
-    ("خوابیدن", "to sleep"),
-    ("بلند شدن", "to get up"),
-    ("کار کردن", "to work"),
-    ("صحبت کردن", "to talk"),
-    ("زنگ زدن", "to phone"),
-    ("قدم زدن", "to walk / stroll"),
-    ("دوست داشتن", "to like / love"),
-    ("لازم داشتن", "to need"),
-    ("یاد گرفتن", "to learn"),
-    ("فکر کردن", "to think"),
-    ("منتظر موندن", "to wait"),
-    ("کمک کردن", "to help"),
-    ("درست کردن", "to make / fix"),
-    ("پیدا کردن", "to find"),
-    ("باز کردن", "to open"),
-    ("بستن", "to close"),
-    ("شروع کردن", "to start"),
-    ("تموم کردن", "to finish"),
-]
+# --- Core verbs -----------------------------------------------------------
+# The highest-frequency Persian verbs, flagged "core" in kb/verbs.json. Persian
+# leans heavily on compound verbs (noun + light verb), so those are their own
+# entries: a learner who knows کردن but not "زنگ زدن" still cannot make a
+# phone call.
+
+CORE_VERBS = kb.core_verbs()
 
 # Present stems, which are irregular and cannot be derived from the infinitive:
 # رفتن -> می‌رم, اومدن -> میام. Without these the count sees only the past tense
@@ -157,64 +111,16 @@ def coverage(sentences: list[dict]) -> dict[str, int]:
 
 # --- Core words ---------------------------------------------------------------
 # The small words everyday speech is mostly made of — the ones worth meeting in
-# several sentences rather than once. Written from experience, not a corpus: no
-# frequency list ships with the repo. Verbs are in CORE_VERBS above.
+# several sentences rather than once — flagged "core" in kb/words.json, so the
+# knowledge base and this count work from one list. Written from experience,
+# not a corpus: no frequency list ships with the repo. Verbs are in CORE_VERBS
+# above.
 #
 # A word "counts" when a sentence contains it, bare or with a clitic or plural
 # ending (کتابم, کتابا, خونه‌ست). Close enough to show where the deck is thin.
 
-CORE_WORDS = """
-من I | تو you | اون he/she/that | ما we | شما you(formal) | اونا they | این this | اینا these
-خودم myself | همه everyone | هیچی nothing | هیچکس nobody | یکی someone | چیزی something | کسی anyone
-هر every | همین this-very | همون that-very | بعضی some | چند a-few
-از from | به to | با with | برای for | واسه for | تا until | که that | یا or | ولی but | اما but
-چون because | اگه if | وقتی when | پس so | هم also | بدون without | مثل like | پیش with/near
-کنار beside | جلوی in-front-of | پشت behind | روی on | زیر under | بین between | بعد after | قبل before
-کجا where | چی what | چرا why | کی who/when | چطوری how | چقدر how-much | کدوم which | چه what
-نه no | آره yeah | بله yes | فقط only | حتی even | دیگه anymore/else | هنوز still | الان now
-امروز today | دیروز yesterday | فردا tomorrow | امشب tonight | دیشب last-night | همیشه always
-هیچوقت never | گاهی sometimes | معمولا usually | زود early | دیر late | خیلی very | کم little | زیاد a-lot
-بیشتر more | کمتر less | اینجا here | اونجا there | بالا up | پایین down | بیرون out | دوباره again
-تنها alone | شاید maybe | حتما definitely | اصلا at-all | واقعا really | البته of-course | یعنی I-mean
-خب well | آخه but-come-on | مثلا for-example | تقریبا almost | باید must | سریع fast | آروم slowly
-یه a/one | دو two | سه three | چهار four | پنج five | ده ten | صد hundred | هزار thousand | نیم half
-آدم person | مرد man | زن woman | بچه child | پسر boy/son | دختر girl/daughter | دوست friend
-مامان mum | بابا dad | خواهر sister | برادر brother | خانواده family | شوهر husband | همسر spouse
-عمو uncle(paternal) | خاله aunt(maternal) | دایی uncle(maternal) | عمه aunt(paternal)
-مادربزرگ grandmother | پدربزرگ grandfather | همسایه neighbour | همکار colleague | مهمون guest | دکتر doctor
-روز day | شب night | صبح morning | ظهر noon | عصر afternoon | هفته week | ماه month | سال year
-ساعت hour/clock | دقیقه minute | وقت time | لحظه moment | اول first | آخر last
-خونه home | اتاق room | در door | کار work | مدرسه school | دانشگاه university | شهر city
-خیابون street | کوچه alley | مغازه shop | بازار market | رستوران restaurant | بیمارستان hospital
-بانک bank | ایستگاه station | اتوبوس bus | تاکسی taxi | ماشین car | راه way | جا place | پول money
-گوشی phone | کتاب book | آب water | غذا food | نون bread | چای tea | قهوه coffee | میوه fruit
-لباس clothes | کفش shoes | کیف bag | کلید key | پنجره window | میز table | صندلی chair | تخت bed
-چیز thing | اسم name | حرف word/talk | خبر news | سوال question | جواب answer | مشکل problem
-فکر thought | بار time(s) | دفعه time(s) | زبون language | فارسی Persian | عکس photo | فیلم film
-هوا weather/air | بارون rain
-سر head | دست hand | پا foot | چشم eye | گوش ear | دندون tooth | دل heart | شکم stomach | گلو throat
-کمر back | حال state/mood | درد pain | قرص pill
-خوب good | بد bad | بزرگ big | کوچیک small | جدید new | قدیمی old | گرم warm | سرد cold
-گرون expensive | ارزون cheap | آسون easy | سخت hard | راحت comfortable | خسته tired | گشنه hungry
-تشنه thirsty | خوشحال happy | ناراحت upset | مریض ill | قشنگ beautiful | زشت ugly | تمیز clean
-کثیف dirty | پر full | خالی empty | باز open | بسته closed | درست right | غلط wrong | مهم important
-لازم necessary | آماده ready | آزاد free | شلوغ busy/crowded | نزدیک near | دور far | بلند tall/loud
-کوتاه short | خوشمزه tasty | عالی great | سفید white | سیاه black | قرمز red | سبز green
-سلام hello | خداحافظ goodbye | مرسی thanks | ممنون thank-you | ببخشید sorry/excuse-me | لطفا please
-خواهش please/you're-welcome | بفرمایین here-you-are | باشه okay
-آقا Mr/sir | خانم Mrs/lady | رئیس boss | شرکت company | کمک help | دلیل reason | فرق difference
-قرار plan/appointment | قول promise | کلمه word | فرصت chance | تولد birthday | عروسی wedding | عید holiday
-برق electricity | چراغ light | بلیت ticket | پرواز flight | هتل hotel | دستشویی toilet | تلویزیون TV
-کامپیوتر computer | مرغ chicken | برنج rice | ماهی fish | نمک salt | شیر milk | گوشت meat
-جالب interesting | عجیب strange | عصبانی angry | نگران worried | خوشگل pretty | جوون young | پیر old
-سنگین heavy | تازه fresh/just | داغ hot | شیرین sweet | تلخ bitter | آبی blue | روشن on/bright
-تاریک dark | بیدار awake
-"""
 
-CORE_WORD_LIST = [
-    tuple(entry.split(" ", 1)) for line in CORE_WORDS.strip().splitlines()
-    for entry in (e.strip() for e in line.split("|")) if entry
-]
+CORE_WORD_LIST = kb.core_words()
 
 _WORD_ENDINGS = ("", "م", "ت", "ش", "مون", "تون", "شون", "ه", "ی", "ها", "ا", "رو", "و",
                  "ام", "ای", "ست", "یم", "ین", "ن", "اش", "هام", "هات", "هاش", "امون", "ات",

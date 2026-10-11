@@ -14,6 +14,7 @@ on:
       # check_deck.py imports core/ and reads the deck, so a change to either
       # must be able to trigger the job that runs it.
       - 'core/**'
+      - 'kb/**'
       - 'tools/*.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
@@ -42,6 +43,10 @@ jobs:
         run: node --test tools/test_js.mjs
       - name: Check the deck for card-level mistakes
         run: python3 tools/check_deck.py --quiet
+      - name: Check the conjugation rules still produce the pinned forms
+        run: python3 tools/test_kb.py
+      - name: Check web/data/kb.json was rebuilt from kb/
+        run: python3 tools/build_kb.py --check
       - name: Check the seed bank is present and parses
         run: |
           python3 -c "
