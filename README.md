@@ -7,6 +7,11 @@ Translation drilling for someone who knows the words but freezes when they have
 to produce a sentence. Prompt → type it → check → wrong or right. Hundreds of
 reps a week, offline, on a commute.
 
+Behind the cards is a knowledge base — 600 words and phrases by topic, 105
+verbs conjugated in every tense, the pronoun and ending tables, and grammar
+notes — that the app drills as word and form cards and shows as a searchable
+reference (**مرجع**).
+
 The problem is retrieval under pressure, not vocabulary — so the rating is one
 tap, a miss comes straight back, and the whole loop runs with no network.
 
@@ -28,16 +33,21 @@ because there is nowhere else to be.
 On a keyboard: <kbd>Enter</kbd> checks, <kbd>1</kbd> wrong, <kbd>2</kbd> right,
 <kbd>U</kbd> undo.
 
-### The four kinds of card
+### The six kinds of card
 
 | Kind | What you do |
 |---|---|
-| **Translation** (60% of a round) | English → Persian, or Persian → English. Each direction is scheduled separately |
+| **Translation** (40% of a round) | English → Persian, or Persian → English. Each direction is scheduled separately |
 | **Transformation** | Change a sentence you know by a rule: *منفی‌ش کن* (negate), *بذارش گذشته* (past), *به شما بگو*, *جمعش کن* (plural) |
 | **Swap** | Keep the frame, change one piece: *با «ما» بگو* turns *یه قهوه می‌خوام* into *یه قهوه می‌خوایم*. The piece is a pronoun (subject, possessive or object), a verb or modal, or a phrase (question word, time word, how a request opens) |
 | **Reply** | Something is said to you in Persian and you answer in Persian. Nothing on the front is English. Many replies are right, so a model answer and a few others are shown and the verdict is yours |
+| **Word** | One word or phrase from the knowledge base, English → Persian |
+| **Form** | One tense of one verb, or one pronoun table: *من · رفتن* under **گذشته** wants *رفتم*. A different person is dealt each time, but the card is scheduled as the tense, so the ending is what you learn |
 
-Transformations and swaps together are a quarter of a round, replies 15%. A
+Transformations and swaps together are 15% of a round, replies 10%, words 20%
+and forms 15%. **What to practise** in Settings narrows a round to sentences,
+words, or verbs and pronouns only; the other cards keep their schedule until
+you come back. A
 transformation is only dealt once you have met its sentence: it changes something
 you know, so on day one the drills are swaps.
 
@@ -72,8 +82,16 @@ come from every level. The gate runs unwatched between rounds and moves you up
 when three things hold: 60 distinct cards seen, 85% accuracy over the last 40
 reviews, and 30 cards past a 7-day interval.
 
+**مرجع** (in the header) is the knowledge base to read: words by topic, every
+verb's table in every tense with transliteration and English, the pronoun
+tables, and the grammar notes. Search takes Persian, English or
+transliteration, and any conjugated form finds its verb (*رفتم* → *رفتن*).
+Each page shows sentences from the deck that use it, and **تمرینش کن** starts a
+round of just that page's cards. Tapping a word in a card's word map links to
+its page.
+
 **+** on the card writes a sentence of your own, drillable at once. **تنظیمات**
-(next to **+**) holds immersion, your level, and **Save a backup** —
+(next to **+**) holds immersion, what to practise, your level, and **Save a backup** —
 do that now and then: iOS can clear a web app's storage and nothing else holds a
 copy. Restoring maps through the Persian text, so it works on a new device.
 
@@ -82,8 +100,11 @@ copy. Restoring maps through the Persian text, so it works on a new device.
 ```
 web/    the app: static PWA, ES modules, no build step, no node_modules
         data/  seed_sentences.json (the deck), transforms.json (transformation
-               and swap drills), replies.json
-core/   the checks a sentence must pass, and where the deck lives
+               and swap drills), replies.json, kb.json (generated from kb/)
+kb/     the knowledge base: words.json, verbs.json (two stems per verb),
+        pronouns.json, notes/*.md
+core/   the checks a sentence must pass, the conjugation engine (kb.py), and
+        where the deck lives
 tools/  adding content and checking it
         handwritten/          batches of sentences, each with a word map
         handwritten/drills/   the sources of the swaps and the replies
@@ -118,6 +139,24 @@ A frame is the versions of one sentence written out; the builder refuses one
 with a bookish form, a repeated version or a shared cue. In both files `~`
 stands for the half-space (ZWNJ), so they can be read and diffed.
 
+The knowledge base — add rows to `kb/words.json`, a verb's two stems to
+`kb/verbs.json` (irregular forms as overrides), a table to `kb/pronouns.json`
+or a note to `kb/notes/`, then:
+
+```bash
+python3 tools/build_kb.py --show رفتن   # read a verb's generated tables
+python3 tools/test_kb.py                # pinned forms still hold
+python3 tools/build_kb.py --write       # validate and regenerate web/data/kb.json
+```
+
+Every tense is generated from two stems, so one rule change moves ninety verbs;
+`tools/test_kb.py` pins hand-checked forms so that shows up as a failure.
+
+`python3 tools/coverage.py` is the worklist for growing the deck: it lists
+knowledge-base verbs with no example sentence and words met in fewer than three
+cards. The `expand` skill (`.claude/skills/expand/`) is the procedure for one
+reviewed batch, ending in a PR.
+
 Everything is hand-written and goes through `core/validate.py` — spoken Tehrani
 (*می‌رم*, not *می‌روم*), a closed set of tags and situations, a word map that
 rebuilds its sentence. The 238 transformation drills were machine-written and
@@ -130,7 +169,9 @@ node tools/check_js.mjs              # modules import, calls resolve, every $('i
 node --test tools/test_js.mjs        # scheduler, session selection, answer matching, every shipped drill
 python3 tools/check_deck.py          # card-level mistakes: word maps that do not rebuild their
                                      # sentence, two cards answering one prompt, colliding ids
-python3 tools/coverage.py            # core verbs and core words met in fewer than 3 cards
+python3 tools/test_kb.py             # pinned conjugations
+python3 tools/build_kb.py --check    # kb.json matches kb/
+python3 tools/coverage.py            # core and knowledge-base words and verbs in fewer than 3 cards
 python3 tools/tenses.py              # which tenses the deck actually contains
 python3 tools/vocabulary.py          # what is met once and never again
 ```
