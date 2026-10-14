@@ -6,7 +6,7 @@
 
 // Bump to purge every cached entry. Without a change here the cache name stays
 // constant, so a stale entry can win on cache-first forever.
-const VERSION = 'v33';
+const VERSION = 'v34';
 const SHELL_CACHE = `farsi-shell-${VERSION}`;
 
 const SHELL = [
@@ -18,7 +18,10 @@ const SHELL = [
   './js/backup.js',
   './js/db.js',
   './js/deck.js',
+  './js/gloss.js',
+  './js/kb.js',
   './js/levels.js',
+  './js/reference.js',
   './js/strings.js',
   './js/session.js',
   './js/sm2.js',
@@ -26,6 +29,7 @@ const SHELL = [
   './data/seed_sentences.json',
   './data/transforms.json',
   './data/replies.json',
+  './data/kb.json',
 ];
 
 self.addEventListener('install', (event) => {

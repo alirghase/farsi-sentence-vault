@@ -22,6 +22,7 @@
     <span class="head-left">
       <button id="btn-compose" aria-label="New sentence">+</button>
       <button id="btn-settings" data-t="tab.settings">Settings</button>
+      <button id="btn-kb" data-t="tab.kb">Reference</button>
     </span>
     <span class="head-right">
       <button id="btn-undo" hidden data-t="card.undo">Undo</button>
@@ -94,6 +95,21 @@
   </div>
 </section>
 
+<!-- The knowledge base to read: words by topic, every verb's tenses, the
+     pronoun tables, the grammar notes. Searchable in either language, and
+     every page with cards on it can be drilled on the spot. -->
+<section class="screen settings-screen" id="screen-kb" hidden>
+  <header class="screen-head">
+    <button id="btn-kb-back">&larr;</button>
+    <h1 id="kb-title" data-t="tab.kb">Reference</h1>
+  </header>
+  <div class="kb-search">
+    <input type="search" id="kb-q" class="rtl" autocomplete="off" autocapitalize="off"
+           spellcheck="false" data-t-placeholder="kb.search">
+  </div>
+  <div class="list kb" id="kb-body"></div>
+</section>
+
 <!-- Everything that is neither drilling nor writing. -->
 <section class="screen settings-screen" id="screen-settings" hidden>
   <header class="screen-head">
@@ -122,6 +138,15 @@
     </div>
 
     <div class="group">
+      <h2 data-t="settings.focus">Practice</h2>
+      <label class="row">
+        <span data-t="settings.focusLabel">What to practise</span>
+        <select id="set-focus"></select>
+      </label>
+      <p class="hint" data-t="settings.focusHint"></p>
+    </div>
+
+    <div class="group">
       <h2 data-t="settings.level">Level</h2>
       <label class="row">
         <span data-t="settings.currentLevel">Current level</span>
@@ -133,6 +158,8 @@
 </section>
 
 <div class="toast" id="toast" hidden></div>
+<!-- The English of one Persian word, while you point at it or after a tap. -->
+<div class="gloss-tip" id="gloss-tip" hidden></div>
 
 <script type="module" src="js/app.js"></script>
 </body>

@@ -33,6 +33,8 @@ export const TRANSFORM_TITLES = {
 /** The Persian line over a drill card. */
 export function instruction(sentence) {
   if (sentence.kind === 'reply') return 'جواب بده';
+  // A form card names the tense, or the pronoun table: that is what to make.
+  if (sentence.kind === 'form') return sentence.label;
   return sentence.cue
     ? `با «${sentence.cue}» بگو`
     : TRANSFORM_TITLES[sentence.transform] ?? sentence.transform;

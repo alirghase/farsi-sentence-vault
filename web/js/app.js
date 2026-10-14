@@ -6,6 +6,9 @@ import * as backup from './backup.js';
 import * as session from './session.js';
 import * as SM2 from './sm2.js';
 import * as levels from './levels.js';
+import * as reference from './reference.js';
+import { lookup, fold } from './kb.js';
+import { buildGlossary, segment } from './gloss.js';
 import { t as text, applyStrings, faDigits } from './strings.js';
 import { posTitle, instruction, stemHint } from './taxonomy.js';
 
@@ -31,6 +34,13 @@ const state = {
   // Settings changed what the round was built from — the level, immersion, or
   // the whole history on a restore — so leaving Settings deals a fresh one.
   stale: false,
+  // A round of cards picked on the reference screen. When it runs out the
+  // ordinary round takes over, rather than topping up with unrelated cards.
+  focused: false,
+  // Persian word -> English, for the hover gloss; and each deck sentence's
+  // word map by its text. Built once, on the first card.
+  glossary: null,
+  unitsByText: null,
 };
 
 // --- boot ------------------------------------------------------------------
@@ -52,6 +62,11 @@ async function boot() {
   bindPractice();
   bindKeys();
   bindSettings();
+  reference.bind({ onPractise: practiseFromReference, onClose: hideReference, glossed });
+  bindGlossTip();
+  // In the background: the word map's links need the index, the first card
+  // does not.
+  reference.ready();
 
   // An installed app is resumed, not reopened, so the end-of-round panel
   // recounts when you come back — the only place a stale count would show.
@@ -77,6 +92,7 @@ function bootFailed(error) {
     ?? 'boot.failed';
   $('screen-settings').hidden = true;
   $('screen-compose').hidden = true;
+  $('screen-kb').hidden = true;
   $('practice').hidden = false;
   $('card-view').hidden = true;
   $('done-view').hidden = false;
@@ -90,6 +106,7 @@ function bootFailed(error) {
   $('rating-row').hidden = true;
   $('done-row').hidden = false;
   $('btn-settings').hidden = true;
+  $('btn-kb').hidden = true;
 
   // Every one of these causes is something that can stop being true a moment
   // later — the other copy gets closed, the upgrade finishes. Leaving the only
@@ -144,6 +161,37 @@ async function hideSettings() {
   else if (state.resumeTo === 'done') await renderDone();
 }
 
+/**
+ * The reference screen, from the header or from a word on a card. A detour
+ * like Settings: closing it puts you back on the card you left, revealed or
+ * not.
+ */
+async function showReference(target = null) {
+  state.resumeTo = $('done-view').hidden ? 'card' : 'done';
+  $('practice').hidden = true;
+  await reference.open(target);
+}
+
+async function hideReference() {
+  $('practice').hidden = false;
+  if (state.resumeTo === 'done') await renderDone();
+}
+
+/** A round of just the cards a reference page holds. */
+async function practiseFromReference(ids) {
+  const queue = await session.focusedCards(ids);
+  if (!queue.length) {
+    toast(text('kb.nothingToDrill'));
+    return;
+  }
+  reference.close();
+  Object.assign(state, {
+    queue, index: 0, completed: 0, passes: 0, last: null, busy: false, focused: true,
+  });
+  $('practice').hidden = false;
+  await renderCard();
+}
+
 /** Writing a sentence down, from wherever you are: the thought arrives mid-round. */
 async function showCompose() {
   state.resumeTo = $('done-view').hidden ? 'card' : 'done';
@@ -172,7 +220,7 @@ function toast(message, ms = 2600) {
 }
 
 const todayCounts = () => session.counts(
-  Date.now(), session.NEW_PER_DAY, state.settings.currentLevel,
+  Date.now(), session.NEW_PER_DAY, state.settings.currentLevel, state.settings.focus,
 );
 
 /** Move up a level when the gate is cleared — between rounds, saying so once. */
@@ -197,6 +245,7 @@ function bindPractice() {
   $('btn-settings-back').addEventListener('click', hideSettings);
   $('btn-compose').addEventListener('click', showCompose);
   $('btn-compose-close').addEventListener('click', hideCompose);
+  $('btn-kb').addEventListener('click', () => showReference());
   $('rating-row').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-r]');
     if (button) rate(button.dataset.r);
@@ -252,12 +301,16 @@ async function startSession() {
     maxNew: counts.allowance,
     weights: session.DEFAULT_WEIGHTS,
     level: state.settings.currentLevel,
+    focus: state.settings.focus,
   });
 
-  Object.assign(state, { queue, index: 0, completed: 0, passes: 0, last: null, busy: false });
+  Object.assign(state, {
+    queue, index: 0, completed: 0, passes: 0, last: null, busy: false, focused: false,
+  });
   $('practice').hidden = false;
   $('screen-settings').hidden = true;
   $('screen-compose').hidden = true;
+  reference.close();
   // An empty queue is not the end: renderCard tops it up with cards you already
   // know. The done panel is only for a device with nothing on it at all.
   await renderCard();
@@ -277,13 +330,14 @@ const EXTRA_BATCH = 20;
  */
 async function topUp() {
   const dealt = new Set(state.queue.map(session.cardId));
-  let more = await session.extraCards(EXTRA_BATCH, { exclude: dealt });
+  const focus = state.settings.focus;
+  let more = await session.extraCards(EXTRA_BATCH, { exclude: dealt, focus });
   if (!more.length && dealt.size) {
     // Everything known has been dealt once this round. Go round again.
     state.queue = state.queue.slice(state.index);
     state.index = 0;
     more = await session.extraCards(EXTRA_BATCH, {
-      exclude: new Set(state.queue.map(session.cardId)),
+      exclude: new Set(state.queue.map(session.cardId)), focus,
     });
   }
   if (more.length) state.queue.push(...more);
@@ -292,6 +346,12 @@ async function topUp() {
 
 async function renderCard() {
   $('btn-undo').hidden = !state.last;
+  if (state.index >= state.queue.length && state.focused) {
+    // The cards you picked are done, misses included; back to the round the
+    // schedule would deal.
+    toast(text('kb.focusDone'));
+    return startSession();
+  }
   if (state.index >= state.queue.length) {
     // Finishing the plan is the moment a cleared level takes effect: it is the
     // only point in an endless round where nothing is half-answered.
@@ -304,6 +364,7 @@ async function renderCard() {
   state.revealed = false;
   state.shownAt = performance.now();
 
+  hideGlossTip();
   $('card-view').hidden = false;
   $('card-view').classList.remove('is-revealed');
   $('done-view').hidden = true;
@@ -321,8 +382,11 @@ async function renderCard() {
   $('card-badge').classList.toggle('is-instruction', drill);
 
   const prompt = $('card-prompt');
-  prompt.textContent = session.promptFor(card.sentence, card.direction);
-  prompt.classList.toggle('rtl', drill || card.direction === 'faToEn');
+  const persianPrompt = drill || card.direction === 'faToEn';
+  await loadGlossary();
+  setPersian(prompt, session.promptFor(card.sentence, card.direction), persianPrompt,
+    formUnits(card.sentence));
+  prompt.classList.toggle('rtl', persianPrompt);
 
   // What the stem means, so a drill is the grammar and not a vocabulary test —
   // behind a tap when immersive, so the Persian is what you work from.
@@ -357,7 +421,7 @@ function reveal() {
   state.msToReveal = Math.round(performance.now() - state.shownAt);
 
   const answer = $('answer-text');
-  answer.textContent = session.answerFor(card.sentence, card.direction);
+  setPersian(answer, session.answerFor(card.sentence, card.direction), card.direction !== 'faToEn');
   answer.classList.toggle('rtl', card.direction !== 'faToEn');
 
   renderTypedEcho(card);
@@ -376,6 +440,86 @@ function reveal() {
 
   renderRatings(card);
 }
+
+// --- hover glosses -----------------------------------------------------------
+
+/** Build the glossary once: the deck's word maps, then the knowledge base. */
+async function loadGlossary() {
+  if (state.glossary) return;
+  const [sentences, kb] = await Promise.all([db.getAll(db.STORE.sentences), deck.loadKb()]);
+  state.glossary = buildGlossary(sentences, kb);
+  state.unitsByText = new Map(sentences.filter((s) => s.breakdown?.length)
+    .map((s) => [fold(s.farsiText), s.breakdown]));
+}
+
+/**
+ * Persian text as words that show their English when pointed at or tapped.
+ * Nothing English is on screen until you ask for it.
+ */
+function glossed(text, units = null) {
+  if (!state.glossary) return escapeHtml(text);
+  units ??= state.unitsByText.get(fold(text));
+  return segment(text, state.glossary, units).map((piece) => (piece.en
+    ? `<span class="w" data-en="${escapeHtml(piece.en)}">${escapeHtml(piece.text)}</span>`
+    : escapeHtml(piece.text))).join('');
+}
+
+function setPersian(element, text, persian, units = null) {
+  if (persian) element.innerHTML = glossed(text, units);
+  else element.textContent = text;
+}
+
+/** A form card's prompt glossed exactly: اون is "he/she" here, not "that". */
+function formUnits(sentence) {
+  if (sentence.kind !== 'form' || sentence.person === undefined) return null;
+  const form = sentence.forms.find((f) => f.p === sentence.person);
+  const who = { fa: form?.who ?? '', en: form?.whoEn ?? '' };
+  const lemma = { fa: sentence.lemma, en: sentence.lemmaEn };
+  return sentence.family === 'verb' ? [who, lemma] : [lemma, who];
+}
+
+/**
+ * One tip for every glossed word on every screen. A mouse shows it while
+ * hovering; a tap shows it until the next tap anywhere else.
+ */
+function bindGlossTip() {
+  const tip = $('gloss-tip');
+  let shownFor = null;
+  const show = (word) => {
+    shownFor = word;
+    tip.textContent = word.dataset.en;
+    tip.hidden = false;
+    const box = word.getBoundingClientRect();
+    const width = tip.offsetWidth;
+    const left = Math.min(Math.max(8, box.left + box.width / 2 - width / 2),
+      window.innerWidth - width - 8);
+    const above = box.top - tip.offsetHeight - 6;
+    tip.style.left = `${left}px`;
+    tip.style.top = `${above > 8 ? above : box.bottom + 6}px`;
+    word.classList.add('is-glossed');
+  };
+  const hide = () => {
+    shownFor?.classList.remove('is-glossed');
+    shownFor = null;
+    tip.hidden = true;
+  };
+  if (matchMedia('(hover: hover)').matches) {
+    document.addEventListener('mouseover', (event) => {
+      const word = event.target.closest?.('.w[data-en]');
+      if (word) show(word);
+      else if (shownFor) hide();
+    });
+  }
+  document.addEventListener('click', (event) => {
+    const word = event.target.closest?.('.w[data-en]');
+    if (word && word !== shownFor) show(word);
+    else if (!word) hide();
+  });
+  document.addEventListener('scroll', hide, true);
+  hideGlossTip = hide;
+}
+
+let hideGlossTip = () => {};
 
 /**
  * Put `full` in `element`, or — when immersive — a small label that turns into
@@ -464,11 +608,16 @@ function renderBreakdown(sentence) {
       for (const pair of all) pair.classList.toggle('on', pair.dataset.u === String(index));
       const u = units[index];
       const multi = u.fa.trim().split(/\s+/).length > 1;
+      // The word's page on the reference screen, when there is one: the whole
+      // verb behind a form, the table behind an ending.
+      const entry = reference.index() ? lookup(reference.index(), u.fa.trim()) : null;
       detail.innerHTML =
         `<span class="map-translit">${escapeHtml(u.translit)}</span>` +
         `<span class="map-means">${escapeHtml(u.en)}</span>` +
         `<span class="map-pos">${escapeHtml(posTitle(u.pos))}</span>` +
+        (entry ? `<button class="map-kb">${escapeHtml(text('kb.lookup'))}</button>` : '') +
         (multi ? `<span class="map-note">${escapeHtml(text('card.unit'))}</span>` : '');
+      detail.querySelector('.map-kb')?.addEventListener('click', () => showReference(entry));
     };
 
     const hoverable = matchMedia('(hover: hover)').matches;
@@ -540,7 +689,8 @@ async function rate(rating) {
     if (requeued) {
       // Missing the last card in the queue would bring it straight back, a
       // test of what you read a moment ago. Top up first so others come between.
-      if (state.index === state.queue.length - 1) await topUp();
+      // A focused round has nothing else to put between, and should not.
+      if (state.index === state.queue.length - 1 && !state.focused) await topUp();
       state.queue.push(card);
     }
 
@@ -612,6 +762,11 @@ function bindSettings() {
 
   $('set-immersive').addEventListener('change', async (e) => {
     state.settings = await db.saveSettings({ immersive: e.target.checked });
+    state.stale = true;
+  });
+
+  $('set-focus').addEventListener('change', async (e) => {
+    state.settings = await db.saveSettings({ focus: e.target.value });
     state.stale = true;
   });
 
@@ -716,6 +871,9 @@ async function renderOwnSentences() {
 async function renderSettings() {
   const s = state.settings;
   $('set-immersive').checked = s.immersive;
+  $('set-focus').innerHTML = Object.keys(session.FOCUS)
+    .map((f) => `<option value="${f}"${f === s.focus ? ' selected' : ''}>${escapeHtml(text(`focus.${f}`))}</option>`)
+    .join('');
   $('set-level').innerHTML = levels.LEVELS
     .map((l) => `<option value="${l}"${l === s.currentLevel ? ' selected' : ''}>${l} — ${escapeHtml(levels.LEVEL_META[l].summary)}</option>`)
     .join('');

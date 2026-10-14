@@ -3,11 +3,16 @@
 import * as db from './db.js';
 import * as SM2 from './sm2.js';
 import { idsForLevel } from './levels.js';
+import { dealForm } from './kb.js';
 
 // enToFa is production — the skill that freezes. faToEn is reading.
 // A sentence schedules independently per direction, which ReviewState's
 // sentenceId::direction key already supports.
-export const DIRECTIONS = ['enToFa', 'faToEn', 'transform', 'reply'];
+//
+// word and form come from the knowledge base: a word card asks for one Persian
+// word or phrase from its English; a form card for one cell of a verb tense or
+// a pronoun table.
+export const DIRECTIONS = ['enToFa', 'faToEn', 'transform', 'reply', 'word', 'form'];
 
 /**
  * A translation card has two directions and they schedule separately, because
@@ -17,11 +22,14 @@ export const DIRECTIONS = ['enToFa', 'faToEn', 'transform', 'reply'];
 export function directionsFor(sentence) {
   if (sentence.kind === 'transform') return ['transform'];
   if (sentence.kind === 'reply') return ['reply'];
+  if (sentence.kind === 'word') return ['word'];
+  if (sentence.kind === 'form') return ['form'];
   return ['enToFa', 'faToEn'];
 }
 
 /** Cards whose prompt is a Persian sentence in `stem` rather than a translation. */
-export const isDrill = (direction) => direction === 'transform' || direction === 'reply';
+export const isDrill = (direction) =>
+  direction === 'transform' || direction === 'reply' || direction === 'form';
 
 /**
  * Share of new cards per direction. Weighted to production because producing
@@ -31,7 +39,35 @@ export const isDrill = (direction) => direction === 'transform' || direction ===
 // Persian, transforming it and replying to it are 80% of it. Reading Persian
 // back is the easier direction and is there to keep the mapping honest, not to
 // fill time.
-export const DEFAULT_WEIGHTS = { enToFa: 0.4, faToEn: 0.2, transform: 0.25, reply: 0.15 };
+//
+// Words and forms take a third of it: the sentence is still the unit that
+// freezes, but a sentence cannot be built from a word you cannot find or an
+// ending you have to think about.
+export const DEFAULT_WEIGHTS = {
+  enToFa: 0.3, faToEn: 0.1, transform: 0.15, reply: 0.1, word: 0.2, form: 0.15,
+};
+
+/**
+ * What a round may deal, by the focus chosen in Settings. Everything is the
+ * default; the others are for a sitting spent on one thing — words on a
+ * commute, the verbs before a conversation.
+ */
+export const FOCUS = {
+  all: DIRECTIONS,
+  sentences: ['enToFa', 'faToEn', 'transform', 'reply'],
+  words: ['word'],
+  forms: ['form'],
+};
+
+export const focusDirections = (focus) => FOCUS[focus] ?? FOCUS.all;
+
+/**
+ * The card in hand for a row. A form row picks its person here, each time it
+ * is dealt; everything else is shown as it is.
+ */
+export function deal(sentence, pick = Math.random) {
+  return sentence.kind === 'form' ? dealForm(sentence, pick) : sentence;
+}
 
 /**
  * How many NEW sentences may be introduced in a day.
@@ -100,12 +136,11 @@ export function reviewKey(sentenceId, direction) {
 
 export function promptFor(sentence, direction) {
   if (isDrill(direction)) return sentence.stem;
-  return direction === 'enToFa' ? sentence.englishText : sentence.farsiText;
+  return direction === 'faToEn' ? sentence.farsiText : sentence.englishText;
 }
 
 export function answerFor(sentence, direction) {
-  if (isDrill(direction)) return sentence.farsiText;
-  return direction === 'enToFa' ? sentence.farsiText : sentence.englishText;
+  return direction === 'faToEn' ? sentence.englishText : sentence.farsiText;
 }
 
 /**
@@ -115,7 +150,7 @@ export function answerFor(sentence, direction) {
  * cards — with a thousand sentences that count would sit pinned and never move
  * as you work.
  */
-export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = null) {
+export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = null, focus = 'all') {
   const [sentences, reviews, attempts] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
@@ -128,7 +163,8 @@ export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = 
   startOfDay.setHours(0, 0, 0, 0);
   const dayStart = startOfDay.getTime();
 
-  const due = reviews.filter((r) => r.dueDate <= now).length;
+  const allowed = new Set(focusDirections(focus));
+  const due = reviews.filter((r) => r.dueDate <= now && allowed.has(r.direction)).length;
 
   // Unseen counts only what is actually reachable at the current level.
   const scheduled = new Set(reviews.map((r) => r.key));
@@ -138,7 +174,7 @@ export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = 
   for (const s of sentences) {
     if (!eligibleAsNew(s, levelIds, unmet)) continue;
     for (const d of directionsFor(s)) {
-      if (scheduled.has(reviewKey(s.id, d))) continue;
+      if (!allowed.has(d) || scheduled.has(reviewKey(s.id, d))) continue;
       if (isOwn(s)) unseenOwn += 1; else unseenSeed += 1;
     }
   }
@@ -187,6 +223,7 @@ export async function build({
   maxNew = limit,
   weights = DEFAULT_WEIGHTS,
   level = null,
+  focus = 'all',
   now = Date.now(),
 }) {
   const [sentences, reviews] = await Promise.all([
@@ -200,12 +237,18 @@ export async function build({
   // earlier levels keep resurfacing on their own schedule.
   const levelIds = level ? idsForLevel(sentences, level) : null;
   const unseen = unseenSentences(sentences, reviews);
+  // Filtered here, before select(): its backfill takes from any direction in
+  // the pools it is given, so a words-only round handed the whole deck would
+  // fill up with sentences.
+  const allowed = focusDirections(focus);
 
   const due = [];
   const fresh = [];
 
-  for (const sentence of sentences) {
+  for (const row of sentences) {
+    const sentence = deal(row);
     for (const direction of directionsFor(sentence)) {
+      if (!allowed.includes(direction)) continue;
       const key = reviewKey(sentence.id, direction);
       const existing = byKey.get(key);
       if (existing) {
@@ -229,7 +272,7 @@ export async function build({
   shuffle(fresh);
   fresh.sort(newCardOrder);
 
-  const chosen = select(due, fresh, limit, weights, DIRECTIONS, maxNew);
+  const chosen = select(due, fresh, limit, weights, allowed, maxNew);
   // A session that front-loads every review and back-loads every new card feels
   // like two different activities.
   shuffle(chosen);
@@ -309,22 +352,23 @@ export function select(due, fresh, limit, weights, directions = DIRECTIONS, maxN
  * `exclude` is the set of cardIds already dealt this round, so a top-up works
  * through everything you know before coming round again.
  */
-export async function extraCards(limit, { exclude = new Set(), now = Date.now() } = {}) {
+export async function extraCards(limit, { exclude = new Set(), focus = 'all' } = {}) {
   const [sentences, reviews] = await Promise.all([
     db.getAll(db.STORE.sentences),
     db.getAll(db.STORE.reviews),
   ]);
   const byId = new Map(sentences.map((s) => [s.id, s]));
 
+  const allowed = new Set(focusDirections(focus));
   const pool = reviews
-    .filter((r) => byId.has(r.sentenceId))
+    .filter((r) => byId.has(r.sentenceId) && allowed.has(r.direction))
     .filter((r) => !exclude.has(`${r.sentenceId}::${r.direction}`))
     .sort(extraOrder);
 
   // Shuffled within the batch: the order cards were first met in is not one
   // worth replaying card for card.
   return shuffle(pool.slice(0, limit)).map((review) => ({
-    sentence: byId.get(review.sentenceId),
+    sentence: deal(byId.get(review.sentenceId)),
     direction: review.direction,
     review,
     isNew: false,
@@ -340,6 +384,43 @@ export async function extraCards(limit, { exclude = new Set(), now = Date.now() 
 export function extraOrder(a, b) {
   return ((a.easeFactor ?? 2.5) - (b.easeFactor ?? 2.5))
     || ((a.lastReviewed ?? 0) - (b.lastReviewed ?? 0));
+}
+
+/**
+ * A round of just these rows — a verb, a topic, a pronoun table — chosen from
+ * the reference screen.
+ *
+ * Each row is dealt the way the scheduler would treat it on its own: due
+ * reviews as reviews, rows never met as new cards (you asked for them, so the
+ * daily cap does not stop them), and rows known but not yet due as extra
+ * practice, which leaves their schedule alone for the reason given in
+ * recordAttempt.
+ */
+export async function focusedCards(ids, now = Date.now()) {
+  const wanted = new Set(ids);
+  const [sentences, reviews] = await Promise.all([
+    db.getAll(db.STORE.sentences),
+    db.getAll(db.STORE.reviews),
+  ]);
+  const byKey = new Map(reviews.map((r) => [r.key, r]));
+  const cards = [];
+  for (const row of sentences) {
+    if (!wanted.has(row.id) && !wanted.has(row.seedId)) continue;
+    const sentence = deal(row);
+    for (const direction of directionsFor(sentence)) {
+      const key = reviewKey(sentence.id, direction);
+      const review = byKey.get(key);
+      if (!review) {
+        cards.push({
+          sentence, direction, isNew: true,
+          review: { key, sentenceId: sentence.id, direction, ...SM2.newState(), dueDate: now },
+        });
+      } else {
+        cards.push({ sentence, direction, review, isNew: false, extra: review.dueDate > now });
+      }
+    }
+  }
+  return shuffle(cards);
 }
 
 export function cardId(card) {

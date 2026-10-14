@@ -1,6 +1,7 @@
 // Keeps the on-device deck in step with the one bundled in the app.
 
 import * as db from './db.js';
+import { cardsFromKb } from './kb.js';
 
 /**
  * Fields the bundle owns. When the deck is corrected — a fixed gloss, a
@@ -14,7 +15,16 @@ const CONTENT_FIELDS = [
   // A drill's own fields. Without them a corrected drill would reach the
   // device only if its Persian answer changed.
   'stem', 'stemEn', 'transform', 'cue', 'cueEn',
+  // A word or form card's: a corrected table must reach the device too.
+  'forms', 'family', 'lemma', 'lemmaEn', 'label', 'labelEn', 'pos', 'topic',
 ];
+
+/**
+ * The key a row is matched on when its id is not on the device. Scoped by
+ * kind: a word card خداحافظ and a sentence خداحافظ are different rows, and
+ * matching on the text alone would let one overwrite the other.
+ */
+const textKey = (row) => `${row.kind ?? 'sentence'}::${row.farsiText}`;
 
 /**
  * Merge the bundled deck into IndexedDB.
@@ -45,7 +55,7 @@ export async function syncBundled(incoming) {
     if (row.seedId) bySeedId.set(row.seedId, row);
     // Rows created before seedId existed use the bundle id as their own.
     if (!bySeedId.has(row.id)) bySeedId.set(row.id, row);
-    byText.set(row.farsiText, row);
+    byText.set(textKey(row), row);
   }
 
   const now = Date.now();
@@ -55,7 +65,7 @@ export async function syncBundled(incoming) {
   let updated = 0;
 
   for (const source of incoming) {
-    const row = (source.id && bySeedId.get(source.id)) ?? byText.get(source.farsiText);
+    const row = (source.id && bySeedId.get(source.id)) ?? byText.get(textKey(source));
 
     if (row && !matched.has(row.id)) {
       matched.add(row.id);
@@ -109,10 +119,11 @@ export async function loadBundled(
   repliesUrl = 'data/replies.json',
 ) {
   try {
-    const [sentences, transforms, replies] = await Promise.all([
+    const [sentences, transforms, replies, kb] = await Promise.all([
       fetchRows(url, 'sentences'),
       fetchRows(transformsUrl, 'transforms'),
       fetchRows(repliesUrl, 'replies'),
+      loadKb(),
     ]);
     if (!sentences.length) return null;
     return await syncBundled([
@@ -121,10 +132,27 @@ export async function loadBundled(
       // rather than in the file so an older bundle cannot arrive untagged.
       ...transforms.map((row) => ({ ...row, kind: 'transform' })),
       ...replies.map((row) => ({ ...row, kind: 'reply' })),
+      // Word and form cards. cardsFromKb sets their kind.
+      ...cardsFromKb(kb),
     ]);
   } catch {
     return null;
   }
+}
+
+let kbPromise = null;
+
+/**
+ * The knowledge base, fetched once and shared: the deck builds cards from it
+ * and the reference screen reads it. Null when offline with nothing cached.
+ */
+export function loadKb(url = 'data/kb.json') {
+  if (!kbPromise) {
+    kbPromise = fetch(url)
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null);
+  }
+  return kbPromise;
 }
 
 async function fetchRows(url, field) {

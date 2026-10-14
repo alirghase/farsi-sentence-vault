@@ -387,3 +387,105 @@ kbd {
 @media (hover: hover) {
   .pair:hover { border-color: var(--ink); }
 }
+
+/* --- the reference screen --- */
+/* The same ledger rows as Settings, over a search rule. Persian on the reading
+   edge with its English beneath; level or count opposite, as a figure. */
+#btn-kb { font-size: 13px; color: var(--ink-soft); }
+#btn-kb-back { font-size: 18px; color: var(--ink-soft); min-width: 32px; }
+#screen-kb .screen-head h1 { direction: rtl; }
+.kb-search { flex: none; padding: 6px var(--gutter) 0; border-bottom: 1px solid var(--rule); }
+.kb-search input {
+  width: 100%; border: 0; background: none; padding: 10px 0;
+  font-size: 16px; color: var(--ink);
+}
+.kb-search input:focus { outline: 0; }
+.kb-search input::placeholder { color: var(--ink-faint); }
+
+.kb-ledger { border-bottom: 1px solid var(--rule); }
+.kb-row { width: 100%; text-align: right; padding-top: 8px; padding-bottom: 8px; }
+.kb-row > span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.kb .ledger-row > span { color: var(--ink); }
+.kb-fa { font-family: var(--serif); font-size: 18px; color: var(--ink); }
+.kb-sub { font-size: 12px; color: var(--ink-faint); direction: ltr; text-align: right; }
+.kb-mono { font-family: var(--mono); }
+.kb-gloss {
+  font-style: normal; font-size: 13px; color: var(--ink-soft);
+  direction: ltr; text-align: left; max-width: 48%;
+}
+.ledger .kb-row > b { font-size: 13px; color: var(--ink-faint); font-weight: 500; }
+@media (hover: hover) { .kb-row:hover { background: rgba(23, 23, 26, .03); } }
+.kb-row:active { background: var(--ink); }
+.kb-row:active * { color: var(--paper) !important; }
+
+.kb-pad { padding: 16px var(--gutter) 0; }
+.kb-pad > p { margin: 0 0 6px; }
+.kb-big { font-family: var(--serif); font-size: 34px; line-height: 1.3; }
+.kb-tr { font-family: var(--mono); font-size: 14px; color: var(--ink-soft); }
+.kb-tr .kb-en { font-family: var(--sans); }
+.kb-en { font-size: 15px; color: var(--ink); }
+.kb-note { font-size: 13px; color: var(--ink-soft); }
+.kb .hint a { color: var(--ink); text-decoration: underline; cursor: pointer; }
+.kb .hint b { font-family: var(--serif); font-weight: 500; color: var(--ink); font-size: 15px; }
+
+/* The one action on the screen: an ink block, like a drill's instruction. */
+.kb-practise {
+  display: inline-block; margin: 12px 0 4px; padding: 8px 14px;
+  background: var(--ink); color: var(--paper); font-size: 14px; font-weight: 600;
+}
+.kb-practise:active { background: var(--ink-soft); }
+
+.kb-section {
+  direction: rtl; text-align: right; margin: 22px 0 8px;
+  padding: 0 var(--gutter); font-size: 12px; font-weight: 600; color: var(--ink-faint);
+}
+.kb-pad .kb-section { padding: 0; }
+.kb-examples { padding-bottom: 4px; }
+.kb-example { padding: 8px 0; border-top: 1px solid var(--rule); }
+.kb-example p { margin: 0; }
+.kb-ex-fa { font-family: var(--serif); font-size: 18px; }
+
+.kb-h {
+  direction: rtl; text-align: right; margin: 22px 0 6px;
+  font-size: 14px; font-weight: 600;
+}
+.kb-h small { font-weight: 400; color: var(--ink-faint); font-size: 12px; margin-right: 6px; }
+.kb-table { width: 100%; border-collapse: collapse; direction: rtl; }
+.kb-table td { border-top: 1px solid var(--rule); padding: 7px 0; vertical-align: baseline; }
+.kb-table tr:last-child td { border-bottom: 1px solid var(--rule); }
+.kb-who { width: 3.2em; color: var(--ink-faint); font-size: 13px; }
+.kb-form { font-family: var(--serif); font-size: 18px; padding-left: 10px !important; }
+/* Stacked by its spans: display:flex on the cell itself would take it out of
+   the table. */
+.kb-cell-en { direction: ltr; text-align: left; font-size: 12px; color: var(--ink-soft); }
+.kb-cell-en > span { display: block; }
+.kb-cell-en .kb-mono { color: var(--ink-faint); font-size: 11px; }
+
+/* Grammar notes: prose, a few tables, examples set in the serif. */
+.kb-prose { font-size: 15px; padding-bottom: 24px; }
+.kb-prose p { margin: 0 0 12px; }
+.kb-prose h3 { margin: 22px 0 8px; font-size: 14px; font-weight: 600; }
+.kb-prose ul { margin: 0 0 12px; padding-left: 18px; }
+.kb-prose ul[dir="rtl"], .kb-prose li[dir="rtl"] { padding-right: 0; }
+.kb-prose b { font-family: var(--serif); font-weight: 500; font-size: 17px; }
+.kb-prose code { font-family: var(--mono); font-size: 13px; color: var(--ink-soft); }
+.kb-prose table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 14px; }
+.kb-prose th, .kb-prose td { border-top: 1px solid var(--rule); padding: 6px 8px 6px 0; text-align: left; }
+.kb-prose th { font-size: 12px; color: var(--ink-faint); font-weight: 600; }
+.kb-prose [dir="rtl"] { text-align: right; }
+
+/* From a word on a card to its page. */
+.map-kb { font-size: 12px; color: var(--ink); border-bottom: 1px solid var(--ink-faint); direction: rtl; }
+
+/* --- hover glosses --- */
+/* A Persian word whose English is one hover or tap away. Unmarked until you
+   reach for it, so the screen reads as Persian. */
+.w { cursor: help; }
+@media (hover: hover) { .w:hover { background: var(--rule); } }
+.w.is-glossed { background: var(--rule); }
+.gloss-tip {
+  position: fixed; z-index: 70; max-width: min(280px, calc(100vw - 16px));
+  background: var(--ink); color: var(--paper);
+  padding: 5px 9px; font-family: var(--sans); font-size: 13px; line-height: 1.35;
+  direction: ltr; pointer-events: none;
+}

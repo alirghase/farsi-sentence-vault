@@ -13,7 +13,11 @@ import * as SM2 from '../web/js/sm2.js';
 import { instruction, stemHint } from '../web/js/taxonomy.js';
 import { select, matchesAnswer, introducedSince, eligibleAsNew, unseenSentences, isOwn, NEW_PER_DAY,
          directionsFor, promptFor, answerFor, expectsFarsi, isDrill, targetMs,
-         newCardOrder, extraOrder } from '../web/js/session.js';
+         newCardOrder, extraOrder, deal, focusDirections, cardId,
+         DEFAULT_WEIGHTS } from '../web/js/session.js';
+import { cardsFromKb, dealForm, formAlternatives, search, buildIndex, lookup,
+         examples } from '../web/js/kb.js';
+import { buildGlossary, segment } from '../web/js/gloss.js';
 
 const pass = (s) => SM2.next(s, SM2.RATING_QUALITY.pass);
 const fail = (s) => SM2.next(s, SM2.RATING_QUALITY.fail);
@@ -330,4 +334,148 @@ test('the answer check accepts what a phone or a speaker varies, and nothing mor
   assert.ok(ok('یکم خسته‌م', 'یه کم خسته‌م.'), 'یکم / یه کم');
   assert.ok(!ok('یه قهوه نمی‌خوام', 'یه قهوه می‌خوام.'), 'a negation is a different answer');
   assert.ok(!ok('ما یه قهوه می‌خوام', 'یه قهوه می‌خوایم.'), 'the verb ending still has to agree');
+});
+
+// --- the knowledge base: word and form cards ---
+
+const kbData = JSON.parse(readFileSync(new URL('../web/data/kb.json', import.meta.url), 'utf8'));
+const kbCards = cardsFromKb(kbData);
+const pastOfRaftan = kbCards.find((c) => c.kind === 'form' && c.lemma === 'رفتن' && c.label === kbData.tenses.find((t) => t.key === 'past').fa);
+
+test('a form card deals a person each time and keeps one schedule', () => {
+  assert.ok(pastOfRaftan, 'the past of رفتن is a card');
+  const dealt = [0, 0.2, 0.4, 0.6, 0.8, 0.99].map((x) => dealForm(pastOfRaftan, () => x));
+  assert.deepEqual(dealt.map((c) => c.person), [0, 1, 2, 3, 4, 5]);
+  assert.deepEqual(dealt.map((c) => c.farsiText), ['رفتم', 'رفتی', 'رفت', 'رفتیم', 'رفتین', 'رفتن']);
+  for (const card of dealt) {
+    assert.equal(card.id, pastOfRaftan.id, 'the id is the tense, not the person');
+    assert.equal(cardId({ sentence: card, direction: 'form' }), cardId({ sentence: pastOfRaftan, direction: 'form' }));
+    assert.ok(card.stem.includes('رفتن') && card.stem.includes(card.forms[card.person].who));
+    assert.equal(promptFor(card, 'form'), card.stem);
+    assert.equal(answerFor(card, 'form'), card.farsiText);
+  }
+  assert.equal(deal(pastOfRaftan, () => 0).farsiText, 'رفتم');
+  const word = kbCards.find((c) => c.kind === 'word');
+  assert.equal(deal(word), word, 'only form rows are dealt');
+});
+
+test('a form accepts the subject pronoun and the polite ـید', () => {
+  const shoma = dealForm(pastOfRaftan, () => 0.7);
+  assert.equal(shoma.farsiText, 'رفتین');
+  assert.ok(matchesAnswer('رفتین', shoma, 'form'));
+  assert.ok(matchesAnswer('رفتید', shoma, 'form'));
+  assert.ok(matchesAnswer('شما رفتید', shoma, 'form'));
+  const oo = dealForm(pastOfRaftan, () => 0.4);
+  assert.ok(matchesAnswer('اون رفت', oo, 'form'));
+  assert.ok(!matchesAnswer('رفتم', oo, 'form'), 'the ending still has to agree');
+  assert.deepEqual(formAlternatives({ p: 0, fa: 'رفتم', who: 'من' }), ['من رفتم']);
+});
+
+test('a word card asks for the Persian from the English', () => {
+  const word = kbCards.find((c) => c.kind === 'word' && c.farsiText === 'کتاب');
+  assert.ok(word, 'کتاب is a word card');
+  assert.deepEqual(directionsFor(word), ['word']);
+  assert.ok(!isDrill('word') && isDrill('form'));
+  assert.ok(expectsFarsi('word') && expectsFarsi('form'));
+  assert.equal(promptFor(word, 'word'), word.englishText);
+  assert.equal(answerFor(word, 'word'), 'کتاب');
+  assert.ok(matchesAnswer('كتاب', word, 'word'), 'Arabic kaf');
+});
+
+test('focus narrows a round to its directions', () => {
+  assert.deepEqual(focusDirections('words'), ['word']);
+  assert.deepEqual(focusDirections('forms'), ['form']);
+  assert.ok(!focusDirections('sentences').includes('word'));
+  assert.deepEqual(focusDirections('nonsense'), focusDirections('all'));
+  // select() is handed only the focused directions, so nothing backfills.
+  const card = (id, direction) => ({ sentence: { id }, direction, isNew: true, review: { key: `${id}::${direction}` } });
+  const fresh = [card('w1', 'word'), card('w2', 'word')];
+  const chosen = select([], fresh, 10, DEFAULT_WEIGHTS, focusDirections('words'));
+  assert.deepEqual(chosen.map((c) => c.direction), ['word', 'word']);
+});
+
+test('every shipped knowledge-base card can be asked and answered', () => {
+  const ids = new Set();
+  const keys = new Set();
+  assert.ok(kbCards.filter((c) => c.kind === 'word').length > 500);
+  assert.ok(kbCards.filter((c) => c.kind === 'form').length > 500);
+  for (const row of kbCards) {
+    assert.ok(!ids.has(row.id), `duplicate id ${row.id}`);
+    ids.add(row.id);
+    // Words may share a spelling (نه, no and nine): their ids differ, and
+    // sync and backup match by id first. A form row's text is its label, and
+    // must be unique.
+    const key = `${row.kind}::${row.farsiText}`;
+    assert.ok(row.kind === 'word' || !keys.has(key), `duplicate text key ${key}`);
+    keys.add(key);
+    assert.ok(row.difficulty >= 1 && row.difficulty <= 5, row.id);
+    const [direction] = directionsFor(row);
+    if (row.kind === 'form') {
+      assert.ok(row.forms.length >= 2, `${row.farsiText}: too few forms`); // an imperative has two
+      assert.ok(instruction(row), row.farsiText);
+      for (let i = 0; i < row.forms.length; i++) {
+        const card = dealForm(row, () => (i + 0.5) / row.forms.length);
+        assert.ok(card.stem && card.farsiText && card.englishText, `${row.farsiText} ${i}`);
+        assert.ok(matchesAnswer(card.farsiText, card, direction), `${row.farsiText} ${i}`);
+        assert.ok(!matchesAnswer(card.stem, card, direction), `${row.farsiText}: the stem is the answer`);
+      }
+    } else {
+      assert.ok(row.englishText && row.farsiText, row.id);
+      assert.ok(matchesAnswer(row.farsiText, row, direction), row.id);
+    }
+  }
+});
+
+test('the reference search finds a verb from any of its forms', () => {
+  assert.ok(search(kbData, 'رفتم').verbs.some((v) => v.inf === 'رفتن'));
+  assert.ok(search(kbData, 'to go').verbs.some((v) => v.inf === 'رفتن'));
+  assert.equal(search(kbData, 'book').words[0].fa, 'کتاب');
+  const index = buildIndex(kbData);
+  assert.deepEqual(lookup(index, 'می‌رم'), { type: 'verb', id: 'رفتن' });
+  assert.deepEqual(lookup(index, 'کتابم؟')?.type, 'pronoun', 'the possessive table uses کتاب');
+  assert.equal(lookup(index, 'ماشینا')?.type, 'word', 'a word with an ending');
+  const deck = [
+    { kind: 'sentence', farsiText: 'کتابم کجاست؟' },
+    { kind: 'sentence', farsiText: 'دیروز رفتم خونه.' },
+    { kind: 'word', farsiText: 'کتاب' },
+  ];
+  assert.equal(examples(deck, { word: { fa: 'کتاب' } }).length, 1);
+  assert.equal(examples(deck, { verb: kbData.verbs.find((v) => v.inf === 'رفتن') }).length, 1);
+});
+
+// --- hover glosses ---
+
+test('a sentence on screen is glossed by its own word map first', () => {
+  const units = [
+    { fa: 'فردا', en: 'tomorrow' }, { fa: 'می‌رم', en: 'I go' }, { fa: 'خونه', en: 'home' },
+  ];
+  const pieces = segment('فردا می‌رم خونه.', new Map(), units);
+  assert.equal(pieces.map((p) => p.text).join(''), 'فردا می‌رم خونه.');
+  assert.deepEqual(pieces.filter((p) => p.en).map((p) => p.en), ['tomorrow', 'I go', 'home']);
+  // A map of a different sentence is not used.
+  assert.ok(segment('فردا نمی‌رم خونه.', new Map(), units).every((p) => !p.en || p.text !== 'می‌رم'));
+});
+
+test('any other Persian is glossed from the deck and the knowledge base', () => {
+  const deck = [
+    { breakdown: [{ fa: 'یه کم', en: 'a little' }, { fa: 'خسته‌م', en: "I'm tired" }] },
+    { breakdown: [{ fa: 'یه کم', en: 'a little' }] },
+    { breakdown: [{ fa: 'یه کم', en: 'a bit' }] },
+  ];
+  const glossary = buildGlossary(deck, kbData);
+  const pieces = segment('امروز یه کم خسته‌م، ولی فردا رفتیم.', glossary);
+  const en = Object.fromEntries(pieces.filter((p) => p.en).map((p) => [p.text, p.en]));
+  assert.equal(en['یه کم'], 'a little', 'a phrase as one unit, the commonest gloss');
+  assert.equal(en['رفتیم'], 'we went', 'a conjugated form from the knowledge base');
+  assert.ok(en['امروز'], 'a knowledge-base word');
+  assert.equal(pieces.map((p) => p.text).join(''), 'امروز یه کم خسته‌م، ولی فردا رفتیم.');
+  assert.ok(segment('کتابام', glossary)[0].en, 'a word with an ending');
+});
+
+test('a form card prompt is cut at its separator', () => {
+  const pieces = segment('اون · رفتن', new Map(), [{ fa: 'اون', en: 'he/she' }, { fa: 'رفتن', en: 'to go' }]);
+  assert.deepEqual(pieces.filter((p) => p.en).map((p) => p.en), ['he/she', 'to go']);
+  assert.equal(pieces.map((p) => p.text).join(''), 'اون · رفتن');
+  const table = segment('کتاب + شما', new Map(), [{ fa: 'کتاب', en: 'book' }, { fa: 'شما', en: 'you (pl.)' }]);
+  assert.deepEqual(table.filter((p) => p.en).map((p) => p.en), ['book', 'you (pl.)']);
 });
