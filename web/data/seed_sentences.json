@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 1830,
+  "count": 1848,
   "sentences": [
     {
       "englishText": "I want a cold coffee.",
@@ -75686,6 +75686,736 @@
       "source": "handwritten",
       "core": 0.75,
       "first": true
+    },
+    {
+      "id": "0ddfd224-f3b4-4fd8-9cdf-707a715fec1b",
+      "englishText": "I listen to music every night.",
+      "farsiText": "هر شب به موسیقی گوش می‌دم.",
+      "finglish": "har shab be musiqi gush midam.",
+      "literalGloss": "every night to music I listen",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "compound-verb",
+        "preposition"
+      ],
+      "breakdown": [
+        {
+          "fa": "هر شب",
+          "translit": "har shab",
+          "en": "every night",
+          "pos": "adverb"
+        },
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "موسیقی",
+          "translit": "musiqi",
+          "en": "music",
+          "pos": "noun"
+        },
+        {
+          "fa": "گوش می‌دم",
+          "translit": "gush midam",
+          "en": "I listen",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "76f24aa4-4079-442c-88c1-ba36ded5e412",
+      "englishText": "Listen to this song!",
+      "farsiText": "به این آهنگ گوش بده!",
+      "finglish": "be in âhang gush bede!",
+      "literalGloss": "to this song listen",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "compound-verb",
+        "preposition"
+      ],
+      "breakdown": [
+        {
+          "fa": "به",
+          "translit": "be",
+          "en": "to",
+          "pos": "preposition"
+        },
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "آهنگ",
+          "translit": "âhang",
+          "en": "song",
+          "pos": "noun"
+        },
+        {
+          "fa": "گوش بده",
+          "translit": "gush bede",
+          "en": "listen",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "ecb4b5d5-1264-4398-83f6-564537ecd104",
+      "englishText": "I'll do this job tomorrow.",
+      "farsiText": "این کار رو فردا انجام می‌دم.",
+      "finglish": "in kâr ro fardâ anjâm midam.",
+      "literalGloss": "this job (object marker) tomorrow I'll do",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "compound-verb",
+        "ra-marker"
+      ],
+      "breakdown": [
+        {
+          "fa": "این",
+          "translit": "in",
+          "en": "this",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "کار",
+          "translit": "kâr",
+          "en": "job",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "(object marker)",
+          "pos": "particle"
+        },
+        {
+          "fa": "فردا",
+          "translit": "fardâ",
+          "en": "tomorrow",
+          "pos": "adverb"
+        },
+        {
+          "fa": "انجام می‌دم",
+          "translit": "anjâm midam",
+          "en": "I'll do",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "aeffa5f5-e2f9-4f26-bc76-8919f8734c0c",
+      "englishText": "Did you do your homework?",
+      "farsiText": "تکلیفت رو انجام دادی؟",
+      "finglish": "taklifet ro anjâm dâdi?",
+      "literalGloss": "your homework (object marker) did you do",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "compound-verb",
+        "ra-marker",
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "تکلیفت",
+          "translit": "taklifet",
+          "en": "your homework",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "(object marker)",
+          "pos": "particle"
+        },
+        {
+          "fa": "انجام دادی",
+          "translit": "anjâm dâdi",
+          "en": "did you do",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "7b4cc16d-2e82-4fd5-8f7b-fb2c9d24bce0",
+      "englishText": "Mom taught me how to cook.",
+      "farsiText": "مامان بهم آشپزی یاد داد.",
+      "finglish": "mâmân behem âshpazi yâd dâd.",
+      "literalGloss": "Mom to me cooking taught",
+      "difficulty": 2,
+      "situation": "phone call with family",
+      "grammarTags": [
+        "compound-verb",
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "مامان",
+          "translit": "mâmân",
+          "en": "Mom",
+          "pos": "noun"
+        },
+        {
+          "fa": "بهم",
+          "translit": "behem",
+          "en": "to me",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "آشپزی",
+          "translit": "âshpazi",
+          "en": "cooking",
+          "pos": "noun"
+        },
+        {
+          "fa": "یاد داد",
+          "translit": "yâd dâd",
+          "en": "taught",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "d4e553aa-a8fd-4f37-903d-7c8d2d50ad15",
+      "englishText": "Can you teach me this?",
+      "farsiText": "می‌تونی اینو بهم یاد بدی؟",
+      "finglish": "mituni ino behem yâd bedi?",
+      "literalGloss": "can you this (object) to me teach",
+      "difficulty": 2,
+      "situation": "negotiating or asking for a favour",
+      "grammarTags": [
+        "compound-verb",
+        "subjunctive",
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "می‌تونی",
+          "translit": "mituni",
+          "en": "can you",
+          "pos": "verb"
+        },
+        {
+          "fa": "اینو",
+          "translit": "ino",
+          "en": "this (object)",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "بهم",
+          "translit": "behem",
+          "en": "to me",
+          "pos": "attached pronoun"
+        },
+        {
+          "fa": "یاد بدی",
+          "translit": "yâd bedi",
+          "en": "teach",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [
+        "می‌تونی این رو بهم یاد بدی؟"
+      ],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "5a4145fe-f478-4f06-9339-d25b5935d2ac",
+      "englishText": "I'll take a shower after the game.",
+      "farsiText": "بعد از بازی دوش می‌گیرم.",
+      "finglish": "ba'd az bâzi dush migiram.",
+      "literalGloss": "after game I'll take a shower",
+      "difficulty": 2,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "بعد از",
+          "translit": "ba'd az",
+          "en": "after",
+          "pos": "preposition"
+        },
+        {
+          "fa": "بازی",
+          "translit": "bâzi",
+          "en": "game",
+          "pos": "noun"
+        },
+        {
+          "fa": "دوش می‌گیرم",
+          "translit": "dush migiram",
+          "en": "I'll take a shower",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "af2f638a-c835-4e90-a031-d40586f9d3d0",
+      "englishText": "I showered late last night.",
+      "farsiText": "دیشب دیر دوش گرفتم.",
+      "finglish": "dishab dir dush gereftam.",
+      "literalGloss": "last night late I showered",
+      "difficulty": 2,
+      "situation": "describing how you feel",
+      "grammarTags": [
+        "compound-verb",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "دیشب",
+          "translit": "dishab",
+          "en": "last night",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دیر",
+          "translit": "dir",
+          "en": "late",
+          "pos": "adverb"
+        },
+        {
+          "fa": "دوش گرفتم",
+          "translit": "dush gereftam",
+          "en": "I showered",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 1.0
+    },
+    {
+      "id": "9422db36-1a44-4f72-ac86-3d7d100ddea1",
+      "englishText": "I was watching the street from the window.",
+      "farsiText": "از پنجره خیابون رو تماشا می‌کردم.",
+      "finglish": "az panjere khiâbun ro tamâshâ mikardam.",
+      "literalGloss": "from window street (object marker) I was watching",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "compound-verb",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "پنجره",
+          "translit": "panjere",
+          "en": "window",
+          "pos": "noun"
+        },
+        {
+          "fa": "خیابون",
+          "translit": "khiâbun",
+          "en": "street",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "(object marker)",
+          "pos": "particle"
+        },
+        {
+          "fa": "تماشا می‌کردم",
+          "translit": "tamâshâ mikardam",
+          "en": "I was watching",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "721fb2ab-8176-4bce-9369-197c334afffe",
+      "englishText": "The kids are watching cartoons.",
+      "farsiText": "بچه‌ها دارن کارتون تماشا می‌کنن.",
+      "finglish": "bachche-hâ dâran kârtun tamâshâ mikonan.",
+      "literalGloss": "the kids are cartoons watching",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "compound-verb",
+        "plural",
+        "verb-tense"
+      ],
+      "breakdown": [
+        {
+          "fa": "بچه‌ها",
+          "translit": "bachche-hâ",
+          "en": "the kids",
+          "pos": "noun"
+        },
+        {
+          "fa": "دارن",
+          "translit": "dâran",
+          "en": "are",
+          "pos": "verb"
+        },
+        {
+          "fa": "کارتون",
+          "translit": "kârtun",
+          "en": "cartoons",
+          "pos": "noun"
+        },
+        {
+          "fa": "تماشا می‌کنن",
+          "translit": "tamâshâ mikonan",
+          "en": "watching",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "c1f7a3b3-a29b-490c-8ec1-b2eee7ca70a1",
+      "englishText": "Where do you get on?",
+      "farsiText": "کجا سوار می‌شی؟",
+      "finglish": "kojâ savâr mishi?",
+      "literalGloss": "where do you get on",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "compound-verb",
+        "word-order"
+      ],
+      "breakdown": [
+        {
+          "fa": "کجا",
+          "translit": "kojâ",
+          "en": "where",
+          "pos": "question word"
+        },
+        {
+          "fa": "سوار می‌شی",
+          "translit": "savâr mishi",
+          "en": "do you get on",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "90d4a9d6-a382-4403-a901-a3694224d812",
+      "englishText": "Get on quickly, it's getting late!",
+      "farsiText": "زود سوار شو، دیر شد!",
+      "finglish": "zud savâr sho, dir shod!",
+      "literalGloss": "quickly get on it got late",
+      "difficulty": 2,
+      "situation": "taxi, metro, and travel",
+      "grammarTags": [
+        "compound-verb"
+      ],
+      "breakdown": [
+        {
+          "fa": "زود",
+          "translit": "zud",
+          "en": "quickly",
+          "pos": "adverb"
+        },
+        {
+          "fa": "سوار شو",
+          "translit": "savâr sho",
+          "en": "get on",
+          "pos": "compound verb"
+        },
+        {
+          "fa": "دیر شد",
+          "translit": "dir shod",
+          "en": "it got late",
+          "pos": "expression"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
+    },
+    {
+      "id": "2e490a24-e7e8-44bb-8af7-da9f7219488e",
+      "englishText": "I met Ali at university.",
+      "farsiText": "با علی تو دانشگاه آشنا شدم.",
+      "finglish": "bâ Ali tu dâneshgâh âshnâ shodam.",
+      "literalGloss": "with Ali in university I met",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "compound-verb",
+        "preposition"
+      ],
+      "breakdown": [
+        {
+          "fa": "با",
+          "translit": "bâ",
+          "en": "with",
+          "pos": "preposition"
+        },
+        {
+          "fa": "علی",
+          "translit": "Ali",
+          "en": "Ali",
+          "pos": "noun"
+        },
+        {
+          "fa": "تو",
+          "translit": "tu",
+          "en": "in",
+          "pos": "preposition"
+        },
+        {
+          "fa": "دانشگاه",
+          "translit": "dâneshgâh",
+          "en": "university",
+          "pos": "noun"
+        },
+        {
+          "fa": "آشنا شدم",
+          "translit": "âshnâ shodam",
+          "en": "I met",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "2c74f1d2-4f60-47e8-8d16-38c836180ca7",
+      "englishText": "Where did you two meet?",
+      "farsiText": "کجا با هم آشنا شدین؟",
+      "finglish": "kojâ bâ ham âshnâ shodin?",
+      "literalGloss": "where together did you meet",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "compound-verb",
+        "word-order"
+      ],
+      "breakdown": [
+        {
+          "fa": "کجا",
+          "translit": "kojâ",
+          "en": "where",
+          "pos": "question word"
+        },
+        {
+          "fa": "با هم",
+          "translit": "bâ ham",
+          "en": "together",
+          "pos": "adverb"
+        },
+        {
+          "fa": "آشنا شدین",
+          "translit": "âshnâ shodin",
+          "en": "did you meet",
+          "pos": "compound verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "51d99064-efb2-479f-aa30-205e08769622",
+      "englishText": "The cat jumped off the wall.",
+      "farsiText": "گربه از دیوار پرید.",
+      "finglish": "gorbe az divâr parid.",
+      "literalGloss": "cat from wall jumped",
+      "difficulty": 2,
+      "situation": "expressing an opinion",
+      "grammarTags": [
+        "verb-tense",
+        "preposition"
+      ],
+      "breakdown": [
+        {
+          "fa": "گربه",
+          "translit": "gorbe",
+          "en": "cat",
+          "pos": "noun"
+        },
+        {
+          "fa": "از",
+          "translit": "az",
+          "en": "from",
+          "pos": "preposition"
+        },
+        {
+          "fa": "دیوار",
+          "translit": "divâr",
+          "en": "wall",
+          "pos": "noun"
+        },
+        {
+          "fa": "پرید",
+          "translit": "parid",
+          "en": "jumped",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "c41acc69-26ea-4ac4-8cb7-15686868bf46",
+      "englishText": "The kids are jumping on the bed.",
+      "farsiText": "بچه‌ها روی تخت می‌پرن.",
+      "finglish": "bachche-hâ ru-ye takht miparan.",
+      "literalGloss": "the kids on bed are jumping",
+      "difficulty": 2,
+      "situation": "hosting or visiting someone's home",
+      "grammarTags": [
+        "plural",
+        "preposition"
+      ],
+      "breakdown": [
+        {
+          "fa": "بچه‌ها",
+          "translit": "bachche-hâ",
+          "en": "the kids",
+          "pos": "noun"
+        },
+        {
+          "fa": "روی",
+          "translit": "ru-ye",
+          "en": "on",
+          "pos": "preposition"
+        },
+        {
+          "fa": "تخت",
+          "translit": "takht",
+          "en": "bed",
+          "pos": "noun"
+        },
+        {
+          "fa": "می‌پرن",
+          "translit": "miparan",
+          "en": "are jumping",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.75
+    },
+    {
+      "id": "033b6fc0-384f-4457-ae48-e6e27526ff0a",
+      "englishText": "Our team lost last night.",
+      "farsiText": "دیشب تیممون باخت.",
+      "finglish": "dishab timemun bâkht.",
+      "literalGloss": "last night our team lost",
+      "difficulty": 2,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "verb-tense",
+        "pronoun-clitic"
+      ],
+      "breakdown": [
+        {
+          "fa": "دیشب",
+          "translit": "dishab",
+          "en": "last night",
+          "pos": "adverb"
+        },
+        {
+          "fa": "تیممون",
+          "translit": "timemun",
+          "en": "our team",
+          "pos": "noun"
+        },
+        {
+          "fa": "باخت",
+          "translit": "bâkht",
+          "en": "lost",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.25
+    },
+    {
+      "id": "86fedbb9-4d7b-494c-ae14-92c47a42520d",
+      "englishText": "We lost the game.",
+      "farsiText": "ما بازی رو باختیم.",
+      "finglish": "mâ bâzi ro bâkhtim.",
+      "literalGloss": "we the game (object marker) we lost",
+      "difficulty": 2,
+      "situation": "small talk about weather or traffic",
+      "grammarTags": [
+        "verb-tense",
+        "ra-marker"
+      ],
+      "breakdown": [
+        {
+          "fa": "ما",
+          "translit": "mâ",
+          "en": "we",
+          "pos": "pronoun"
+        },
+        {
+          "fa": "بازی",
+          "translit": "bâzi",
+          "en": "the game",
+          "pos": "noun"
+        },
+        {
+          "fa": "رو",
+          "translit": "ro",
+          "en": "(object marker)",
+          "pos": "particle"
+        },
+        {
+          "fa": "باختیم",
+          "translit": "bâkhtim",
+          "en": "we lost",
+          "pos": "verb"
+        }
+      ],
+      "alternatives": [],
+      "source": "handwritten",
+      "core": 0.5
     }
   ]
 }
