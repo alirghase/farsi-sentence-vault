@@ -1,0 +1,664 @@
+{
+  "note": "Example sentences for the nine verbs that had none: listening, doing, teaching, showering, watching, getting on, meeting, jumping, losing. Spoken Tehrani register.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "v": "گوش دادن",
+      "en": "I listen to music every night.",
+      "fa": "هر شب به موسیقی گوش می‌دم.",
+      "tr": "har shab be musiqi gush midam.",
+      "sit": "talking about habits",
+      "tags": [
+        "compound-verb",
+        "preposition"
+      ],
+      "bd": [
+        [
+          "هر شب",
+          "har shab",
+          "every night",
+          "adverb"
+        ],
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "موسیقی",
+          "musiqi",
+          "music",
+          "noun"
+        ],
+        [
+          "گوش می‌دم",
+          "gush midam",
+          "I listen",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "گوش دادن",
+      "en": "Listen to this song!",
+      "fa": "به این آهنگ گوش بده!",
+      "tr": "be in âhang gush bede!",
+      "sit": "sharing a song with a friend",
+      "tags": [
+        "compound-verb",
+        "preposition"
+      ],
+      "bd": [
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "آهنگ",
+          "âhang",
+          "song",
+          "noun"
+        ],
+        [
+          "گوش بده",
+          "gush bede",
+          "listen",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "انجام دادن",
+      "en": "I'll do this job tomorrow.",
+      "fa": "این کار رو فردا انجام می‌دم.",
+      "tr": "in kâr ro fardâ anjâm midam.",
+      "sit": "promising to get something done",
+      "tags": [
+        "compound-verb",
+        "ra-marker"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "کار",
+          "kâr",
+          "job",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "(object marker)",
+          "particle"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "انجام می‌دم",
+          "anjâm midam",
+          "I'll do",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "انجام دادن",
+      "en": "Did you do your homework?",
+      "fa": "تکلیفت رو انجام دادی؟",
+      "tr": "taklifet ro anjâm dâdi?",
+      "sit": "a parent asking a child",
+      "tags": [
+        "compound-verb",
+        "ra-marker",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "تکلیفت",
+          "taklifet",
+          "your homework",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "(object marker)",
+          "particle"
+        ],
+        [
+          "انجام دادی",
+          "anjâm dâdi",
+          "did you do",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "یاد دادن",
+      "en": "Mom taught me how to cook.",
+      "fa": "مامان بهم آشپزی یاد داد.",
+      "tr": "mâmân behem âshpazi yâd dâd.",
+      "sit": "talking about family",
+      "tags": [
+        "compound-verb",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "مامان",
+          "mâmân",
+          "Mom",
+          "noun"
+        ],
+        [
+          "بهم",
+          "behem",
+          "to me",
+          "attached pronoun"
+        ],
+        [
+          "آشپزی",
+          "âshpazi",
+          "cooking",
+          "noun"
+        ],
+        [
+          "یاد داد",
+          "yâd dâd",
+          "taught",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "یاد دادن",
+      "en": "Can you teach me this?",
+      "fa": "می‌تونی اینو بهم یاد بدی؟",
+      "tr": "mituni ino behem yâd bedi?",
+      "sit": "asking a friend for help",
+      "tags": [
+        "compound-verb",
+        "subjunctive",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "می‌تونی",
+          "mituni",
+          "can you",
+          "verb"
+        ],
+        [
+          "اینو",
+          "ino",
+          "this (object)",
+          "pronoun"
+        ],
+        [
+          "بهم",
+          "behem",
+          "to me",
+          "attached pronoun"
+        ],
+        [
+          "یاد بدی",
+          "yâd bedi",
+          "teach",
+          "compound verb"
+        ]
+      ],
+      "alt": [
+        "می‌تونی این رو بهم یاد بدی؟"
+      ]
+    },
+    {
+      "v": "دوش گرفتن",
+      "en": "I'll take a shower after the game.",
+      "fa": "بعد از بازی دوش می‌گیرم.",
+      "tr": "ba'd az bâzi dush migiram.",
+      "sit": "after sports",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "بعد از",
+          "ba'd az",
+          "after",
+          "preposition"
+        ],
+        [
+          "بازی",
+          "bâzi",
+          "game",
+          "noun"
+        ],
+        [
+          "دوش می‌گیرم",
+          "dush migiram",
+          "I'll take a shower",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "دوش گرفتن",
+      "en": "I showered late last night.",
+      "fa": "دیشب دیر دوش گرفتم.",
+      "tr": "dishab dir dush gereftam.",
+      "sit": "explaining being tired",
+      "tags": [
+        "compound-verb",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "دیشب",
+          "dishab",
+          "last night",
+          "adverb"
+        ],
+        [
+          "دیر",
+          "dir",
+          "late",
+          "adverb"
+        ],
+        [
+          "دوش گرفتم",
+          "dush gereftam",
+          "I showered",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "تماشا کردن",
+      "en": "I was watching the street from the window.",
+      "fa": "از پنجره خیابون رو تماشا می‌کردم.",
+      "tr": "az panjere khiâbun ro tamâshâ mikardam.",
+      "sit": "describing a quiet moment",
+      "tags": [
+        "compound-verb",
+        "ra-marker",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "پنجره",
+          "panjere",
+          "window",
+          "noun"
+        ],
+        [
+          "خیابون",
+          "khiâbun",
+          "street",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "(object marker)",
+          "particle"
+        ],
+        [
+          "تماشا می‌کردم",
+          "tamâshâ mikardam",
+          "I was watching",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "تماشا کردن",
+      "en": "The kids are watching cartoons.",
+      "fa": "بچه‌ها دارن کارتون تماشا می‌کنن.",
+      "tr": "bachche-hâ dâran kârtun tamâshâ mikonan.",
+      "sit": "at home with children",
+      "tags": [
+        "compound-verb",
+        "plural",
+        "verb-tense"
+      ],
+      "bd": [
+        [
+          "بچه‌ها",
+          "bachche-hâ",
+          "the kids",
+          "noun"
+        ],
+        [
+          "دارن",
+          "dâran",
+          "are",
+          "verb"
+        ],
+        [
+          "کارتون",
+          "kârtun",
+          "cartoons",
+          "noun"
+        ],
+        [
+          "تماشا می‌کنن",
+          "tamâshâ mikonan",
+          "watching",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "سوار شدن",
+      "en": "Where do you get on?",
+      "fa": "کجا سوار می‌شی؟",
+      "tr": "kojâ savâr mishi?",
+      "sit": "asking where to board",
+      "tags": [
+        "compound-verb",
+        "word-order"
+      ],
+      "bd": [
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "سوار می‌شی",
+          "savâr mishi",
+          "do you get on",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "سوار شدن",
+      "en": "Get on quickly, it's getting late!",
+      "fa": "زود سوار شو، دیر شد!",
+      "tr": "zud savâr sho, dir shod!",
+      "sit": "rushing someone onto a bus",
+      "tags": [
+        "compound-verb"
+      ],
+      "bd": [
+        [
+          "زود",
+          "zud",
+          "quickly",
+          "adverb"
+        ],
+        [
+          "سوار شو",
+          "savâr sho",
+          "get on",
+          "compound verb"
+        ],
+        [
+          "دیر شد",
+          "dir shod",
+          "it got late",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "آشنا شدن",
+      "en": "I met Ali at university.",
+      "fa": "با علی تو دانشگاه آشنا شدم.",
+      "tr": "bâ Ali tu dâneshgâh âshnâ shodam.",
+      "sit": "talking about a friend",
+      "tags": [
+        "compound-verb",
+        "preposition"
+      ],
+      "bd": [
+        [
+          "با",
+          "bâ",
+          "with",
+          "preposition"
+        ],
+        [
+          "علی",
+          "Ali",
+          "Ali",
+          "noun"
+        ],
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "دانشگاه",
+          "dâneshgâh",
+          "university",
+          "noun"
+        ],
+        [
+          "آشنا شدم",
+          "âshnâ shodam",
+          "I met",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "آشنا شدن",
+      "en": "Where did you two meet?",
+      "fa": "کجا با هم آشنا شدین؟",
+      "tr": "kojâ bâ ham âshnâ shodin?",
+      "sit": "asking a couple how they met",
+      "tags": [
+        "compound-verb",
+        "word-order"
+      ],
+      "bd": [
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "با هم",
+          "bâ ham",
+          "together",
+          "adverb"
+        ],
+        [
+          "آشنا شدین",
+          "âshnâ shodin",
+          "did you meet",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "پریدن",
+      "en": "The cat jumped off the wall.",
+      "fa": "گربه از دیوار پرید.",
+      "tr": "gorbe az divâr parid.",
+      "sit": "telling a story",
+      "tags": [
+        "verb-tense",
+        "preposition"
+      ],
+      "bd": [
+        [
+          "گربه",
+          "gorbe",
+          "cat",
+          "noun"
+        ],
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "دیوار",
+          "divâr",
+          "wall",
+          "noun"
+        ],
+        [
+          "پرید",
+          "parid",
+          "jumped",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "پریدن",
+      "en": "The kids are jumping on the bed.",
+      "fa": "بچه‌ها روی تخت می‌پرن.",
+      "tr": "bachche-hâ ru-ye takht miparan.",
+      "sit": "at home with children",
+      "tags": [
+        "plural",
+        "preposition"
+      ],
+      "bd": [
+        [
+          "بچه‌ها",
+          "bachche-hâ",
+          "the kids",
+          "noun"
+        ],
+        [
+          "روی",
+          "ru-ye",
+          "on",
+          "preposition"
+        ],
+        [
+          "تخت",
+          "takht",
+          "bed",
+          "noun"
+        ],
+        [
+          "می‌پرن",
+          "miparan",
+          "are jumping",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "باختن",
+      "en": "Our team lost last night.",
+      "fa": "دیشب تیممون باخت.",
+      "tr": "dishab timemun bâkht.",
+      "sit": "talking about a match",
+      "tags": [
+        "verb-tense",
+        "pronoun-clitic"
+      ],
+      "bd": [
+        [
+          "دیشب",
+          "dishab",
+          "last night",
+          "adverb"
+        ],
+        [
+          "تیممون",
+          "timemun",
+          "our team",
+          "noun"
+        ],
+        [
+          "باخت",
+          "bâkht",
+          "lost",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "v": "باختن",
+      "en": "We lost the game.",
+      "fa": "ما بازی رو باختیم.",
+      "tr": "mâ bâzi ro bâkhtim.",
+      "sit": "after a match",
+      "tags": [
+        "verb-tense",
+        "ra-marker"
+      ],
+      "bd": [
+        [
+          "ما",
+          "mâ",
+          "we",
+          "pronoun"
+        ],
+        [
+          "بازی",
+          "bâzi",
+          "the game",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "(object marker)",
+          "particle"
+        ],
+        [
+          "باختیم",
+          "bâkhtim",
+          "we lost",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}
