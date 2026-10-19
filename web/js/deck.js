@@ -225,5 +225,5 @@ export async function addCustom({ english, farsi, finglish = '', difficulty = 1 
 export async function removeCustom(id) {
   const reviews = await db.getAll(db.STORE.reviews);
   await db.removeMany(db.STORE.reviews, reviews.filter((r) => r.sentenceId === id).map((r) => r.key));
-  await db.remove(db.STORE.sentences, id);
+  await db.remove(db.STORE.sentences, id, { online: true });
 }

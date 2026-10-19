@@ -4,6 +4,7 @@ import * as db from './db.js';
 import * as deck from './deck.js';
 import * as backup from './backup.js';
 import * as session from './session.js';
+import * as sync from './sync.js';
 import * as SM2 from './sm2.js';
 import * as levels from './levels.js';
 import * as reference from './reference.js';
@@ -41,6 +42,8 @@ const state = {
   // word map by its text. Built once, on the first card.
   glossary: null,
   unitsByText: null,
+  // The first round is on screen. Until then a sync must not deal one.
+  ready: false,
 };
 
 // --- boot ------------------------------------------------------------------
@@ -51,6 +54,8 @@ async function boot() {
   applyStrings();
 
   state.settings = await db.getSettings();
+  // Before the first card, so nothing is rated before changes are being noted.
+  await sync.start(synced);
 
   // Ask the browser to keep our data. iOS can evict storage for web apps, and
   // an installed PWA with granted persistence is far less likely to lose it.
@@ -76,7 +81,27 @@ async function boot() {
 
   // Straight onto a card. There is no home screen to pass through.
   await startSession();
+  state.ready = true;
+  sync.sync();
   registerServiceWorker();
+}
+
+/**
+ * A sync finished. If it brought another device's changes down, the settings
+ * here are stale, and so is a round dealt before it: it would re-ask cards
+ * already rated over there. A round not yet touched is dealt again; one in
+ * progress is left alone, and the next round reads the new schedule.
+ */
+async function synced({ pulled }) {
+  if (pulled) {
+    state.settings = await db.getSettings();
+    const untouched = state.ready && !$('practice').hidden && !$('card-view').hidden
+      && !state.completed && !state.revealed && !state.focused && !$('card-typed').value;
+    if (untouched) await startSession();
+    else if (!$('practice').hidden && !$('done-view').hidden) await renderDone();
+    if (!$('screen-settings').hidden) state.stale = true;
+  }
+  if (!$('screen-settings').hidden) await renderSettings();
 }
 
 /**
@@ -788,6 +813,24 @@ function bindSettings() {
     await renderSettings();
   });
 
+  $('account-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    signInWith({ create: false });
+  });
+  $('btn-sign-up').addEventListener('click', () => signInWith({ create: true }));
+  $('btn-sign-out').addEventListener('click', async () => {
+    accountBusy(true);
+    await sync.signOut();
+    accountBusy(false);
+    await renderSettings();
+    $('account-report').textContent = text('account.signedOut');
+  });
+  $('btn-sync-now').addEventListener('click', async () => {
+    const running = sync.sync();
+    await renderAccount();
+    await running;
+  });
+
   $('btn-import').addEventListener('click', () => $('import-file').click());
   $('import-file').addEventListener('change', async (e) => {
     const file = e.target.files?.[0];
@@ -812,6 +855,70 @@ function bindSettings() {
       toast(error.message || text('settings.backupFailed'), 4000);
     }
   });
+}
+
+/**
+ * Sign in or create the account, then sync: this device's progress goes up and
+ * the account's comes down. Leaving Settings deals a fresh round from the
+ * merged schedule.
+ */
+async function signInWith({ create }) {
+  const email = $('account-email').value.trim();
+  const password = $('account-password').value;
+  const report = $('account-report');
+  if (!/^\S+@\S+\.\S+$/.test(email) || password.length < 8) {
+    report.textContent = text('account.errInput');
+    return;
+  }
+  accountBusy(true);
+  report.textContent = text('account.working');
+  try {
+    await sync.signIn(email, password, { create });
+  } catch (error) {
+    accountBusy(false);
+    const reasons = {
+      invalid: 'account.errInvalid',
+      exists: 'account.errExists',
+      tooMany: 'account.errTooMany',
+      weak: 'account.errWeak',
+    };
+    report.textContent = text(reasons[error.message] ?? 'account.errOffline');
+    return;
+  }
+  accountBusy(false);
+  $('account-password').value = '';
+  state.settings = await db.getSettings();
+  state.stale = true;
+  if (!sync.current().error) toast(text('account.welcome'));
+  await renderSettings();
+}
+
+function accountBusy(busy) {
+  for (const id of ['btn-sign-in', 'btn-sign-up', 'btn-sign-out', 'btn-sync-now']) $(id).disabled = busy;
+}
+
+/** Who is signed in and when it last synced, or the form. */
+async function renderAccount() {
+  const now = sync.current();
+  const signedIn = Boolean(now.email);
+  $('account-form').hidden = signedIn;
+  $('account-signed-in').hidden = !signedIn;
+  const report = $('account-report');
+  if (!signedIn) {
+    report.textContent = now.error === sync.SIGNED_OUT ? text('account.expired') : text('account.hint');
+    return;
+  }
+  $('account-who').textContent = now.email;
+  const parts = [];
+  if (now.syncing) parts.push(text('account.syncing'));
+  else if (now.lastSyncedAt) {
+    parts.push(`${text('account.synced')} ${faDigits(new Date(now.lastSyncedAt)
+      .toLocaleString('fa-IR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' }))}`);
+  } else parts.push(text('account.notYet'));
+  const waiting = await sync.waiting();
+  if (waiting) parts.push(`${faDigits(waiting)} ${text('account.waiting')}`);
+  if (now.error === sync.OFFLINE) parts.push(text('account.offline'));
+  report.textContent = parts.join(' · ');
 }
 
 /**
@@ -882,7 +989,8 @@ async function renderSettings() {
     ? `${text('settings.lastBackup')} ${faDigits(new Date(s.lastBackupAt)
         .toLocaleDateString('fa-IR', { day: 'numeric', month: 'long', year: 'numeric' }))}`
       + ` — ${text('settings.backupReplace')}`
-    : text('settings.backupHint');
+    : text(sync.current().email ? 'account.backupHint' : 'settings.backupHint');
+  await renderAccount();
 }
 
 function escapeHtml(value) {

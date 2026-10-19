@@ -143,9 +143,12 @@ export async function get(store, key) {
 
 export async function put(store, value) {
   const db = await open();
-  const { transaction, done } = tx(db, [store], 'readwrite');
+  const noting = tracking && synced(store, value);
+  const { transaction, done } = tx(db, noting ? [store, STORE.meta] : [store], 'readwrite');
   transaction.objectStore(store).put(value);
+  if (noting) note(transaction, store, value[KEY_PATH[store]]);
   await done;
+  if (noting) changed();
   return value;
 }
 
@@ -153,28 +156,36 @@ export async function put(store, value) {
 export async function putMany(store, values) {
   if (!values.length) return 0;
   const db = await open();
-  const { transaction, done } = tx(db, [store], 'readwrite');
+  const noted = tracking ? values.filter((value) => synced(store, value)) : [];
+  const { transaction, done } = tx(db, noted.length ? [store, STORE.meta] : [store], 'readwrite');
   const objectStore = transaction.objectStore(store);
   for (const value of values) objectStore.put(value);
+  for (const value of noted) note(transaction, store, value[KEY_PATH[store]]);
   await done;
+  if (noted.length) changed();
   return values.length;
 }
 
-export async function remove(store, key) {
-  const db = await open();
-  const { transaction, done } = tx(db, [store], 'readwrite');
-  transaction.objectStore(store).delete(key);
-  await done;
+/**
+ * `online: true` tells the online copy about a deletion in a store where most
+ * deletions are none of its business: the deck pruning bundled sentences
+ * never reached it, a sentence you wrote and then deleted did.
+ */
+export async function remove(store, key, { online = false } = {}) {
+  return removeMany(store, [key], { online });
 }
 
 /** Delete many keys in one transaction. */
-export async function removeMany(store, keys) {
+export async function removeMany(store, keys, { online = false } = {}) {
   if (!keys.length) return 0;
   const db = await open();
-  const { transaction, done } = tx(db, [store], 'readwrite');
+  const noting = tracking && (online || SYNCED_DELETES.has(store));
+  const { transaction, done } = tx(db, noting ? [store, STORE.meta] : [store], 'readwrite');
   const objectStore = transaction.objectStore(store);
   for (const key of keys) objectStore.delete(key);
+  if (noting) for (const key of keys) note(transaction, store, key);
   await done;
+  if (noting) changed();
   return keys.length;
 }
 
@@ -186,13 +197,23 @@ export async function removeMany(store, keys) {
  */
 export async function replaceAll(entries) {
   const stores = entries.map(([store]) => store);
+  // Signed in, the online copy has to lose what the restore cleared as well as
+  // gain what it wrote. Read before the write, outside it: a note only says a
+  // key changed, so noting one that turns out not to have is harmless.
+  const cleared = tracking
+    ? await Promise.all(entries.map(([store]) => keysOf(store)))
+    : [];
   const db = await open();
-  const { transaction, done } = tx(db, stores, 'readwrite');
+  const { transaction, done } = tx(db, tracking ? [...stores, STORE.meta] : stores, 'readwrite');
   try {
-    for (const [store, rows] of entries) {
+    for (const [index, [store, rows]] of entries.entries()) {
       const objectStore = transaction.objectStore(store);
       objectStore.clear();
       for (const row of rows) objectStore.put(row);
+      if (!tracking) continue;
+      const keys = new Set(cleared[index]);
+      for (const row of rows) if (synced(store, row)) keys.add(row[KEY_PATH[store]]);
+      for (const key of keys) note(transaction, store, key);
     }
   } catch (error) {
     // A put() that throws synchronously — a value structured clone cannot
@@ -207,6 +228,174 @@ export async function replaceAll(entries) {
     throw error;
   }
   await done;
+  if (tracking) changed();
+}
+
+async function keysOf(store) {
+  const db = await open();
+  const { transaction } = tx(db, [store], 'readonly');
+  return wrap(transaction.objectStore(store).getAllKeys());
+}
+
+// --- what the online copy has not heard yet ---------------------------------
+//
+// Signed in, every write to something the account keeps also leaves a note in
+// meta, `outbox::<store>::<key>`, in the same transaction. A note says only
+// that the key changed: sync.js reads the row as it stands when it pushes, and
+// a row that is gone is pushed as a deletion. So a write and its note land
+// together or not at all, a phone killed mid-round loses nothing, and ten
+// writes to one card while offline are one push.
+//
+// Signed out, nothing is noted. Signing in notes everything once (noteAll).
+
+const KEY_PATH = { sentences: 'id', reviews: 'key', attempts: 'id', meta: 'key' };
+const OUTBOX = 'outbox::';
+const OUTBOX_RANGE = () => IDBKeyRange.bound(OUTBOX, `${OUTBOX}\uffff`);
+// Deletions the account always hears about. Sentences only on request; see remove().
+const SYNCED_DELETES = new Set([STORE.reviews, STORE.attempts]);
+
+/** What the account keeps: every schedule and attempt, your own sentences, your settings. */
+function synced(store, value) {
+  if (store === STORE.reviews || store === STORE.attempts) return true;
+  if (store === STORE.sentences) return value.source !== 'seed';
+  if (store === STORE.meta) return value.key === 'settings';
+  return false;
+}
+
+let tracking = false;
+let listener = null;
+
+/** Start or stop noting changes. sync.js turns it on for a signed-in account. */
+export function track(on, onChange = null) {
+  tracking = on;
+  listener = on ? onChange : null;
+}
+
+function changed() {
+  listener?.();
+}
+
+function note(transaction, store, key, savedAt = Date.now()) {
+  transaction.objectStore(STORE.meta).put({ key: `${OUTBOX}${store}::${key}`, store, rowKey: key, savedAt });
+}
+
+/**
+ * Note every row the account keeps, dated by when it last really changed — a
+ * review by its last rating, an attempt by when it happened — so that signing
+ * in on a second device merges the two histories card by card, the newer
+ * rating winning, instead of one device's history flattening the other's.
+ * Settings are dated 0: an account that already has some keeps them.
+ */
+export async function noteAll() {
+  const [sentences, reviews, attempts] = await Promise.all([
+    getAll(STORE.sentences), getAll(STORE.reviews), getAll(STORE.attempts),
+  ]);
+  const db = await open();
+  const { transaction, done } = tx(db, [STORE.meta], 'readwrite');
+  for (const row of sentences) {
+    if (synced(STORE.sentences, row)) note(transaction, STORE.sentences, row.id, row.addedAt ?? 0);
+  }
+  for (const row of reviews) note(transaction, STORE.reviews, row.key, row.lastReviewed ?? 0);
+  for (const row of attempts) note(transaction, STORE.attempts, row.id, row.createdAt ?? 0);
+  note(transaction, STORE.meta, 'settings', 0);
+  await done;
+  return sentences.length + reviews.length + attempts.length;
+}
+
+/** The notes waiting to be pushed, each with its row as it stands now (null: deleted). */
+export async function pending() {
+  const db = await open();
+  const stores = [STORE.meta, STORE.sentences, STORE.reviews, STORE.attempts];
+  const { transaction, done } = tx(db, stores, 'readonly');
+  const out = [];
+  const request = transaction.objectStore(STORE.meta).getAll(OUTBOX_RANGE());
+  request.onsuccess = () => {
+    for (const n of request.result) {
+      const entry = { ...n, row: null };
+      out.push(entry);
+      const get = transaction.objectStore(n.store).get(n.rowKey);
+      get.onsuccess = () => { entry.row = get.result ?? null; };
+    }
+  };
+  await done;
+  return out;
+}
+
+/**
+ * Drop the notes a push delivered. A note written again since it was read —
+ * the card was rated again mid-push — has a new savedAt and stays for next
+ * time.
+ */
+export async function settle(notes) {
+  if (!notes.length) return;
+  const db = await open();
+  const { transaction, done } = tx(db, [STORE.meta], 'readwrite');
+  const meta = transaction.objectStore(STORE.meta);
+  for (const n of notes) {
+    const get = meta.get(n.key);
+    get.onsuccess = () => { if (get.result?.savedAt === n.savedAt) meta.delete(n.key); };
+  }
+  await done;
+}
+
+/**
+ * Write what another device changed, with no notes: it came from the account,
+ * so telling the account would only echo it. A row with a note waiting is
+ * skipped — this device changed it since its last push, and that change goes
+ * up next rather than being overwritten by an older one coming down.
+ * Each change is { store, key, value }; value null deletes. Returns how many
+ * were applied.
+ */
+export async function applyRemote(changes) {
+  if (!changes.length) return 0;
+  const db = await open();
+  const stores = [...new Set([STORE.meta, ...changes.map((c) => c.store)])];
+  const { transaction, done } = tx(db, stores, 'readwrite');
+  const meta = transaction.objectStore(STORE.meta);
+  let applied = 0;
+  for (const change of changes) {
+    const waiting = meta.getKey(`${OUTBOX}${change.store}::${change.key}`);
+    waiting.onsuccess = () => {
+      if (waiting.result !== undefined) return;
+      const objectStore = transaction.objectStore(change.store);
+      // A pull re-reads its last few minutes, this device's own pushes
+      // included. Those are not changes, and counting them would re-deal the
+      // card on screen every time the app comes back to the front.
+      const existing = objectStore.get(change.key);
+      existing.onsuccess = () => {
+        if (same(existing.result ?? null, change.value ?? null)) return;
+        if (change.value) objectStore.put(change.value);
+        else objectStore.delete(change.key);
+        applied += 1;
+      };
+    };
+  }
+  await done;
+  return applied;
+}
+
+/** Deep equality that ignores key order: jsonb hands objects back with its own. */
+function same(a, b) {
+  if (a === b) return true;
+  if (!a || !b || typeof a !== 'object' || typeof b !== 'object') return false;
+  if (Array.isArray(a) !== Array.isArray(b)) return false;
+  const keys = Object.keys(a).filter((k) => a[k] !== undefined);
+  if (keys.length !== Object.keys(b).filter((k) => b[k] !== undefined).length) return false;
+  return keys.every((k) => same(a[k], b[k]));
+}
+
+/** Forget every note: signing out, the account stops hearing about this device. */
+export async function clearNotes() {
+  const db = await open();
+  const { transaction, done } = tx(db, [STORE.meta], 'readwrite');
+  transaction.objectStore(STORE.meta).delete(OUTBOX_RANGE());
+  await done;
+}
+
+export async function countNotes() {
+  const db = await open();
+  const { transaction } = tx(db, [STORE.meta], 'readonly');
+  return wrap(transaction.objectStore(STORE.meta).count(OUTBOX_RANGE()));
 }
 
 // --- meta / settings -------------------------------------------------------

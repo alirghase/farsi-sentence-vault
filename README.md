@@ -98,9 +98,20 @@ round of just that page's cards. Tapping a word in a card's word map links to
 its page.
 
 **+** on the card writes a sentence of your own, drillable at once. **تنظیمات**
-(next to **+**) holds immersion, what to practise, your level, and **Save a backup** —
-do that now and then: iOS can clear a web app's storage and nothing else holds a
-copy. Restoring maps through the Persian text, so it works on a new device.
+(next to **+**) holds your online account, immersion, what to practise, your
+level, and **Save a backup**.
+
+**حساب آنلاین (online account).** Sign in with an email and a password (or
+**ساختن حساب** to create one) and your schedule, every attempt, the sentences
+you wrote and your settings are kept online as well, and on any device you sign
+in on. The app still runs offline: the device is the working copy, and changes
+go up a few seconds after you rate a card, or when you next have signal. Signing
+in on a second device merges the two card by card, the newer rating winning.
+Signing out leaves this device's progress where it is.
+
+Signed out, nothing leaves the device, and iOS can clear a web app's storage —
+so either sign in or save a backup now and then. Restoring maps through the
+Persian text, so it works on a new device.
 
 ## Repository
 
@@ -115,9 +126,32 @@ core/   the checks a sentence must pass, the conjugation engine (kb.py), and
 tools/  adding content and checking it
         handwritten/          batches of sentences, each with a word map
         handwritten/drills/   the sources of the swaps and the replies
+supabase/  the online account: config.toml (auth) and migrations/ (one table)
 ```
 
 Run it locally: `python3 -m http.server 8000 --directory web`.
+
+### The online account
+
+Supabase project `farsi-vault` (London, free tier). One table, `vault_rows`:
+one row per schedule, attempt, own sentence or settings, keyed by the
+account, with row rules so each account reads and writes only its own. A
+deletion is a row with `data` null, so other devices hear about it. Each change
+carries the time the device made it; a trigger drops one older than what is
+there, and one dated 0 (settings on a second device's first sign-in) only fills
+a gap.
+
+`web/js/db.js` notes every change to something the account keeps in the same
+IndexedDB transaction as the write; `web/js/sync.js` pushes the notes, then
+pulls what changed since its last look. It talks to Supabase over `fetch` — no
+supabase-js — so an offline boot never waits on a CDN. Bundled cards are keyed
+online by the bundle's id, and mapped to each device's own row id on the way in
+and out.
+
+Schema changes: add a file to `supabase/migrations/`, then
+`supabase db push` (the database password is in the macOS keychain as
+"Supabase farsi-vault db password"). Auth settings: edit `supabase/config.toml`,
+then `supabase config push`.
 
 ### Adding content
 
@@ -195,7 +229,10 @@ checks and publishes `web/`.
   نمی‌دونیم` parses, validates, and is not something anyone says. Nothing here can
   see that; a native speaker can.
 - **iOS can evict web-app storage.** Install to the Home Screen rather than
-  leaving it a tab, and save a backup from Settings now and then.
+  leaving it a tab, and sign in (or save a backup) so it is not the only copy.
+- **A free Supabase project pauses after a week with no requests.** Daily use
+  keeps it awake; after a long break, restore it from the Supabase dashboard.
+  The app keeps working offline meanwhile, and catches up once it is back.
 - **Deleting a function by matching braces has eaten its neighbour three times.**
   `check_js.mjs` resolves every cross-module call so it fails in CI, not on a
   button press.

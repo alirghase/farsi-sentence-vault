@@ -130,12 +130,17 @@ input, textarea { font: inherit; color: inherit; }
   font-variant-numeric: tabular-nums; font-weight: 600;
 }
 .settings input:focus { outline: 0; }
-.settings input[type="text"] {
+.settings input[type="text"],
+.settings input[type="email"],
+.settings input[type="password"] {
   display: block; width: 100%; margin-top: 6px; padding: 8px 0;
   border: 0; border-bottom: 1px solid var(--rule); background: none;
   font-size: 15px; color: var(--ink);
 }
 .settings input[type="text"].rtl { direction: rtl; text-align: right; }
+.settings input[type="email"], .settings input[type="password"] { direction: ltr; text-align: left; }
+.account-email { margin: 0 0 14px; font-size: 15px; color: var(--ink); overflow-wrap: anywhere; }
+#account-form .button-row { margin-top: 4px; }
 /* The list of your own sentences: the Persian reads right-to-left, the remove
    control sits at the opposite edge like every other figure in a ledger. */
 .bank-row { display: flex; align-items: center; gap: 12px; }
