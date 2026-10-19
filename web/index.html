@@ -118,6 +118,32 @@
   </header>
   <div class="list settings">
 
+    <!-- Signed out: a form. Signed in: who, when it last synced, sign out.
+         sync.js keeps the account; this only shows it. -->
+    <div class="group">
+      <h2 data-t="account.title">Online account</h2>
+      <form id="account-form" novalidate>
+        <label><span data-t="account.email">Email</span>
+          <input type="email" id="account-email" autocomplete="username" autocapitalize="off" spellcheck="false">
+        </label>
+        <label><span data-t="account.password">Password</span>
+          <input type="password" id="account-password" autocomplete="current-password">
+        </label>
+        <div class="button-row">
+          <button type="submit" id="btn-sign-in" data-t="account.signIn">Sign in</button>
+          <button type="button" id="btn-sign-up" data-t="account.signUp">Create account</button>
+        </div>
+      </form>
+      <div id="account-signed-in" hidden>
+        <p class="account-email" id="account-who"></p>
+        <div class="button-row">
+          <button type="button" id="btn-sync-now" data-t="account.syncNow">Sync now</button>
+          <button type="button" id="btn-sign-out" data-t="account.signOut">Sign out</button>
+        </div>
+      </div>
+      <p class="hint" id="account-report" data-t="account.hint"></p>
+    </div>
+
     <div class="group">
       <h2 data-t="settings.backup">Backup</h2>
       <div class="button-row">
