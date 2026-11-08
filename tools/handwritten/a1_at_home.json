@@ -1,0 +1,522 @@
+{
+  "note": "Talk at home with family: I'm home, dinner's ready, come and eat, I'm going out, I'll be back late, did you sleep well, I miss you.",
+  "difficulty": 1,
+  "sentences": [
+    {
+      "en": "I'm home!",
+      "fa": "اومدم خونه!",
+      "tr": "umadam khune!",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اومدم",
+          "umadam",
+          "I've come",
+          "verb"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Good morning.",
+      "fa": "صبح بخیر.",
+      "tr": "sobh bekheyr.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "صبح",
+          "sobh",
+          "morning",
+          "noun"
+        ],
+        [
+          "بخیر",
+          "bekheyr",
+          "good",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you sleep well?",
+      "fa": "خوب خوابیدی؟",
+      "tr": "khub khâbidi?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خوب",
+          "khub",
+          "well",
+          "adverb"
+        ],
+        [
+          "خوابیدی",
+          "khâbidi",
+          "did you sleep",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Wake up, it's late.",
+      "fa": "پاشو، دیر شد.",
+      "tr": "pâsho, dir shod.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پاشو",
+          "pâsho",
+          "get up",
+          "verb"
+        ],
+        [
+          "دیر شد",
+          "dir shod",
+          "it's got late",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm going to bed.",
+      "fa": "می‌رم بخوابم.",
+      "tr": "miram bekhâbam.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌رم",
+          "miram",
+          "I'm going",
+          "verb"
+        ],
+        [
+          "بخوابم",
+          "bekhâbam",
+          "to sleep",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Dinner's ready.",
+      "fa": "شام حاضره.",
+      "tr": "shâm hâzere.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "حاضره",
+          "hâzere",
+          "is ready",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Come and eat.",
+      "fa": "بیا غذا بخور.",
+      "tr": "biyâ ghazâ bokhor.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بیا",
+          "biyâ",
+          "come",
+          "verb"
+        ],
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "بخور",
+          "bokhor",
+          "eat",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Mum, what's for dinner?",
+      "fa": "مامان، شام چی داریم؟",
+      "tr": "mâmân, shâm chi dârim?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مامان",
+          "mâmân",
+          "mum",
+          "noun"
+        ],
+        [
+          "شام",
+          "shâm",
+          "dinner",
+          "noun"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "داریم",
+          "dârim",
+          "do we have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm going out.",
+      "fa": "دارم می‌رم بیرون.",
+      "tr": "dâram miram birun.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دارم",
+          "dâram",
+          "I am",
+          "verb"
+        ],
+        [
+          "می‌رم",
+          "miram",
+          "going",
+          "verb"
+        ],
+        [
+          "بیرون",
+          "birun",
+          "out",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Wash your hands.",
+      "fa": "دستات رو بشور.",
+      "tr": "dastât ro beshur.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دستات",
+          "dastât",
+          "your hands",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "بشور",
+          "beshur",
+          "wash",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Open the window.",
+      "fa": "پنجره رو باز کن.",
+      "tr": "panjere ro bâz kon.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پنجره",
+          "panjere",
+          "window",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "باز کن",
+          "bâz kon",
+          "open",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Close the window.",
+      "fa": "پنجره رو ببند.",
+      "tr": "panjere ro beband.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "پنجره",
+          "panjere",
+          "window",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "ببند",
+          "beband",
+          "close",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Do you want anything?",
+      "fa": "چیزی نمی‌خوای؟",
+      "tr": "chizi nemikhây?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چیزی",
+          "chizi",
+          "anything",
+          "pronoun"
+        ],
+        [
+          "نمی‌خوای",
+          "nemikhây",
+          "don't you want",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Who is it?",
+      "fa": "کیه؟",
+      "tr": "kie?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کیه",
+          "kie",
+          "who is it",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I love you.",
+      "fa": "دوستت دارم.",
+      "tr": "dustet dâram.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دوستت",
+          "dustet",
+          "you",
+          "noun"
+        ],
+        [
+          "دارم",
+          "dâram",
+          "I love",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I miss you.",
+      "fa": "دلم برات تنگ شده.",
+      "tr": "delam barât tang shode.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دلم",
+          "delam",
+          "my heart",
+          "noun"
+        ],
+        [
+          "برات",
+          "barât",
+          "for you",
+          "preposition"
+        ],
+        [
+          "تنگ شده",
+          "tang shode",
+          "has become tight",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Hurry up, we're late.",
+      "fa": "زود باش، دیرمون شد.",
+      "tr": "zud bâsh, diremun shod.",
+      "sit": "apologising or explaining lateness",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "زود",
+          "zud",
+          "quickly",
+          "adverb"
+        ],
+        [
+          "باش",
+          "bâsh",
+          "be",
+          "verb"
+        ],
+        [
+          "دیرمون شد",
+          "diremun shod",
+          "we're late",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Turn the light off when you go.",
+      "fa": "رفتی چراغ رو خاموش کن.",
+      "tr": "rafti cherâgh ro khâmush kon.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "رفتی",
+          "rafti",
+          "you went",
+          "verb"
+        ],
+        [
+          "چراغ",
+          "cherâgh",
+          "light",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "خاموش کن",
+          "khâmush kon",
+          "turn off",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Sleep well.",
+      "fa": "خوب بخوابی.",
+      "tr": "khub bekhâbi.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خوب",
+          "khub",
+          "well",
+          "adverb"
+        ],
+        [
+          "بخوابی",
+          "bekhâbi",
+          "may you sleep",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

@@ -1,0 +1,3126 @@
+{
+  "note": "Fillers and the small phrases everyone leans on. The deck had almost none: خب, آخه, راستی, عه, دمت گرم, آفرین, خدا رو شکر, ان‌شاءالله, ماشاءالله, خدا نکنه, مبارک and قابل نداره were all at zero. Short on purpose — these are chunks to have ready, not sentences to build.",
+  "difficulty": 1,
+  "sentences": [
+    {
+      "en": "Well, let's go.",
+      "fa": "خب، بریم.",
+      "tr": "khob, berim.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خب",
+          "khob",
+          "well",
+          "particle"
+        ],
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Well, what now?",
+      "fa": "خب، حالا چی؟",
+      "tr": "khob, hâlâ chi?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خب",
+          "khob",
+          "well",
+          "particle"
+        ],
+        [
+          "حالا",
+          "hâlâ",
+          "now",
+          "adverb"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "By the way, where were you?",
+      "fa": "راستی، کجا بودی؟",
+      "tr": "râsti, kojâ budi?",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "راستی",
+          "râsti",
+          "by the way",
+          "expression"
+        ],
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "بودی",
+          "budi",
+          "you were",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "So you mean you're not coming?",
+      "fa": "یعنی نمیای؟",
+      "tr": "yani nemiyây?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یعنی",
+          "yani",
+          "so, you mean",
+          "particle"
+        ],
+        [
+          "نمیای",
+          "nemiyây",
+          "you're not coming",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "But why?",
+      "fa": "آخه چرا؟",
+      "tr": "âkhe cherâ?",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آخه",
+          "âkhe",
+          "but, come on",
+          "particle"
+        ],
+        [
+          "چرا",
+          "cherâ",
+          "why",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Oh, it's you!",
+      "fa": "عه، تویی!",
+      "tr": "ae, tui!",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عه",
+          "ae",
+          "oh",
+          "expression"
+        ],
+        [
+          "تویی",
+          "tui",
+          "it's you",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Oh no!",
+      "fa": "وای نه!",
+      "tr": "vây na!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "وای",
+          "vây",
+          "oh",
+          "expression"
+        ],
+        [
+          "نه",
+          "na",
+          "no",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Oh no, I'm late!",
+      "fa": "وای، دیرم شد!",
+      "tr": "vây, diram shod!",
+      "sit": "apologising or explaining lateness",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "وای",
+          "vây",
+          "oh",
+          "expression"
+        ],
+        [
+          "دیرم شد",
+          "diram shod",
+          "I'm late",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Listen.",
+      "fa": "ببین.",
+      "tr": "bebin.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ببین",
+          "bebin",
+          "look, listen",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Look, I don't know.",
+      "fa": "ببین، من نمی‌دونم.",
+      "tr": "bebin, man nemidunam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ببین",
+          "bebin",
+          "look",
+          "verb"
+        ],
+        [
+          "من",
+          "man",
+          "I",
+          "pronoun"
+        ],
+        [
+          "نمی‌دونم",
+          "nemidunam",
+          "I don't know",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "For example, tomorrow.",
+      "fa": "مثلا فردا.",
+      "tr": "masalan fardâ.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مثلا",
+          "masalan",
+          "for example",
+          "adverb"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Finally, it's over.",
+      "fa": "بالاخره تموم شد.",
+      "tr": "bâlâkhare tamum shod.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بالاخره",
+          "bâlâkhare",
+          "finally",
+          "adverb"
+        ],
+        [
+          "تموم شد",
+          "tamum shod",
+          "it finished",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Sort of.",
+      "fa": "یه جورایی.",
+      "tr": "ye jurâyi.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه جورایی",
+          "ye jurâyi",
+          "sort of",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm kind of tired.",
+      "fa": "یه جورایی خسته‌م.",
+      "tr": "ye jurâyi khastam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه جورایی",
+          "ye jurâyi",
+          "kind of",
+          "expression"
+        ],
+        [
+          "خسته‌م",
+          "khastam",
+          "I'm tired",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's almost finished.",
+      "fa": "تقریبا تمومه.",
+      "tr": "taghriban tamume.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تقریبا",
+          "taghriban",
+          "almost",
+          "adverb"
+        ],
+        [
+          "تمومه",
+          "tamume",
+          "it's finished",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Probably tomorrow.",
+      "fa": "احتمالا فردا.",
+      "tr": "ehtemâlan fardâ.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "احتمالا",
+          "ehtemâlan",
+          "probably",
+          "adverb"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Honestly, I don't know.",
+      "fa": "راستش، نمی‌دونم.",
+      "tr": "râstesh, nemidunam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "راستش",
+          "râstesh",
+          "honestly",
+          "adverb"
+        ],
+        [
+          "نمی‌دونم",
+          "nemidunam",
+          "I don't know",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "To be honest, I didn't like it.",
+      "fa": "راستش، خوشم نیومد.",
+      "tr": "râstesh, khosham nayumad.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "راستش",
+          "râstesh",
+          "honestly",
+          "adverb"
+        ],
+        [
+          "خوشم نیومد",
+          "khosham nayumad",
+          "I didn't like it",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Actually, no.",
+      "fa": "اتفاقا، نه.",
+      "tr": "ettefâghan, na.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اتفاقا",
+          "ettefâghan",
+          "actually",
+          "adverb"
+        ],
+        [
+          "نه",
+          "na",
+          "no",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Anyway.",
+      "fa": "به هر حال.",
+      "tr": "be har hâl.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "به هر حال",
+          "be har hâl",
+          "anyway",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "In short, it's fine.",
+      "fa": "خلاصه، خوبه.",
+      "tr": "kholâse, khube.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خلاصه",
+          "kholâse",
+          "in short",
+          "adverb"
+        ],
+        [
+          "خوبه",
+          "khube",
+          "it's fine",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Whatever you say.",
+      "fa": "هر چی تو بگی.",
+      "tr": "har chi to begi.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هر چی",
+          "har chi",
+          "whatever",
+          "pronoun"
+        ],
+        [
+          "تو",
+          "to",
+          "you",
+          "pronoun"
+        ],
+        [
+          "بگی",
+          "begi",
+          "you say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Yes, of course.",
+      "fa": "بله، حتما.",
+      "tr": "bale, hatman.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بله",
+          "bale",
+          "yes",
+          "expression"
+        ],
+        [
+          "حتما",
+          "hatman",
+          "of course",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Okay, agreed.",
+      "fa": "باشه، قبول.",
+      "tr": "bâshe, ghabul.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باشه",
+          "bâshe",
+          "okay",
+          "expression"
+        ],
+        [
+          "قبول",
+          "ghabul",
+          "agreed",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Sure, no problem.",
+      "fa": "حتما، مشکلی نیست.",
+      "tr": "hatman, moshkeli nist.",
+      "sit": "negotiating or asking for a favour",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "حتما",
+          "hatman",
+          "sure",
+          "adverb"
+        ],
+        [
+          "مشکلی نیست",
+          "moshkeli nist",
+          "no problem",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "No way!",
+      "fa": "نه بابا!",
+      "tr": "na bâbâ!",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نه",
+          "na",
+          "no",
+          "particle"
+        ],
+        [
+          "بابا",
+          "bâbâ",
+          "come on",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is that really so?",
+      "fa": "واقعا؟",
+      "tr": "vâghe'an?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "واقعا",
+          "vâghe'an",
+          "really",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you serious?",
+      "fa": "جدی می‌گی؟",
+      "tr": "jeddi migi?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "جدی",
+          "jeddi",
+          "serious",
+          "adjective"
+        ],
+        [
+          "می‌گی",
+          "migi",
+          "you say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I was joking.",
+      "fa": "شوخی کردم.",
+      "tr": "shukhi kardam.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "شوخی کردم",
+          "shukhi kardam",
+          "I joked",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Are you kidding?",
+      "fa": "شوخی می‌کنی؟",
+      "tr": "shukhi mikoni?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "شوخی می‌کنی",
+          "shukhi mikoni",
+          "you're joking",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Right?",
+      "fa": "مگه نه؟",
+      "tr": "mage na?",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مگه",
+          "mage",
+          "isn't it",
+          "particle"
+        ],
+        [
+          "نه",
+          "na",
+          "not",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Exactly!",
+      "fa": "دقیقا!",
+      "tr": "daghighan!",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دقیقا",
+          "daghighan",
+          "exactly",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You're right.",
+      "fa": "راست می‌گی.",
+      "tr": "râst migi.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "راست",
+          "râst",
+          "right",
+          "adjective"
+        ],
+        [
+          "می‌گی",
+          "migi",
+          "you say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "You're right about that.",
+      "fa": "حق با توئه.",
+      "tr": "hagh bâ tue.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "حق",
+          "hagh",
+          "right",
+          "noun"
+        ],
+        [
+          "با",
+          "bâ",
+          "with",
+          "preposition"
+        ],
+        [
+          "توئه",
+          "tue",
+          "is you",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I agree.",
+      "fa": "موافقم.",
+      "tr": "movâfegham.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "موافقم",
+          "movâfegham",
+          "I agree",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I disagree.",
+      "fa": "مخالفم.",
+      "tr": "mokhâlefam.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مخالفم",
+          "mokhâlefam",
+          "I disagree",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Absolutely.",
+      "fa": "کاملا.",
+      "tr": "kâmelan.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کاملا",
+          "kâmelan",
+          "completely",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Not really.",
+      "fa": "نه چندان.",
+      "tr": "na chandân.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نه",
+          "na",
+          "no",
+          "particle"
+        ],
+        [
+          "چندان",
+          "chandân",
+          "much",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "A little.",
+      "fa": "یه کم.",
+      "tr": "ye kam.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "کم",
+          "kam",
+          "bit",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Just a little.",
+      "fa": "فقط یه ذره.",
+      "tr": "faghat ye zarre.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فقط",
+          "faghat",
+          "only",
+          "adverb"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "ذره",
+          "zarre",
+          "bit",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Very much.",
+      "fa": "خیلی زیاد.",
+      "tr": "kheyli ziyâd.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "زیاد",
+          "ziyâd",
+          "much",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's not true at all.",
+      "fa": "اصلا این‌طور نیست.",
+      "tr": "aslan in~tor nist.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اصلا",
+          "aslan",
+          "at all",
+          "adverb"
+        ],
+        [
+          "این‌طور",
+          "in~tor",
+          "this way",
+          "adverb"
+        ],
+        [
+          "نیست",
+          "nist",
+          "it isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I don't care.",
+      "fa": "برام مهم نیست.",
+      "tr": "barâm mohem nist.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "برام",
+          "barâm",
+          "for me",
+          "preposition"
+        ],
+        [
+          "مهم",
+          "mohem",
+          "important",
+          "adjective"
+        ],
+        [
+          "نیست",
+          "nist",
+          "it isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It doesn't make a difference.",
+      "fa": "فرقی نمی‌کنه.",
+      "tr": "farghi nemikone.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فرقی",
+          "farghi",
+          "a difference",
+          "noun"
+        ],
+        [
+          "نمی‌کنه",
+          "nemikone",
+          "it doesn't make",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's fine, it's no trouble.",
+      "fa": "اشکالی نداره.",
+      "tr": "eshkâli nadâre.",
+      "sit": "negotiating or asking for a favour",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اشکالی",
+          "eshkâli",
+          "a problem",
+          "noun"
+        ],
+        [
+          "نداره",
+          "nadâre",
+          "there isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's okay, never mind.",
+      "fa": "عیبی نداره.",
+      "tr": "eybi nadâre.",
+      "sit": "apologising or explaining lateness",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عیبی",
+          "eybi",
+          "a fault",
+          "noun"
+        ],
+        [
+          "نداره",
+          "nadâre",
+          "it doesn't have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't worry.",
+      "fa": "نگران نباش.",
+      "tr": "negarân nabâsh.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "نگران",
+          "negarân",
+          "worried",
+          "adjective"
+        ],
+        [
+          "نباش",
+          "nabâsh",
+          "don't be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Be careful.",
+      "fa": "مواظب باش.",
+      "tr": "movâzeb bâsh.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مواظب",
+          "movâzeb",
+          "careful",
+          "adjective"
+        ],
+        [
+          "باش",
+          "bâsh",
+          "be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Hurry up.",
+      "fa": "زود باش.",
+      "tr": "zud bâsh.",
+      "sit": "apologising or explaining lateness",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "زود",
+          "zud",
+          "quickly",
+          "adverb"
+        ],
+        [
+          "باش",
+          "bâsh",
+          "be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Wait a moment.",
+      "fa": "یه لحظه صبر کن.",
+      "tr": "ye lahze sabr kon.",
+      "sit": "negotiating or asking for a favour",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "لحظه",
+          "lahze",
+          "moment",
+          "noun"
+        ],
+        [
+          "صبر کن",
+          "sabr kon",
+          "wait",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let me think.",
+      "fa": "بذار فکر کنم.",
+      "tr": "bezâr fekr konam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بذار",
+          "bezâr",
+          "let",
+          "verb"
+        ],
+        [
+          "فکر کنم",
+          "fekr konam",
+          "I think",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let me see.",
+      "fa": "بذار ببینم.",
+      "tr": "bezâr bebinam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بذار",
+          "bezâr",
+          "let",
+          "verb"
+        ],
+        [
+          "ببینم",
+          "bebinam",
+          "I see",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What should I say?",
+      "fa": "چی بگم؟",
+      "tr": "chi begam?",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "بگم",
+          "begam",
+          "should I say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I don't think so.",
+      "fa": "فکر نکنم.",
+      "tr": "fekr nakonam.",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فکر نکنم",
+          "fekr nakonam",
+          "I don't think",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I think so.",
+      "fa": "فکر کنم.",
+      "tr": "fekr konam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فکر کنم",
+          "fekr konam",
+          "I think",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm not sure.",
+      "fa": "مطمئن نیستم.",
+      "tr": "motma'en nistam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مطمئن",
+          "motma'en",
+          "sure",
+          "adjective"
+        ],
+        [
+          "نیستم",
+          "nistam",
+          "I'm not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm sure.",
+      "fa": "مطمئنم.",
+      "tr": "motma'enam.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مطمئنم",
+          "motma'enam",
+          "I'm sure",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I can't believe it!",
+      "fa": "باورم نمی‌شه!",
+      "tr": "bâvaram nemishe!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باورم نمی‌شه",
+          "bâvaram nemishe",
+          "I can't believe it",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I had no idea.",
+      "fa": "اصلا نمی‌دونستم.",
+      "tr": "aslan nemidunestam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اصلا",
+          "aslan",
+          "at all",
+          "adverb"
+        ],
+        [
+          "نمی‌دونستم",
+          "nemidunestam",
+          "I didn't know",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Whatever happens, happens.",
+      "fa": "هر چی بشه، بشه.",
+      "tr": "har chi beshe, beshe.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هر چی",
+          "har chi",
+          "whatever",
+          "pronoun"
+        ],
+        [
+          "بشه",
+          "beshe",
+          "happens",
+          "verb"
+        ],
+        [
+          "بشه",
+          "beshe",
+          "let it",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How great!",
+      "fa": "چه عالی!",
+      "tr": "che âli!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "how",
+          "question word"
+        ],
+        [
+          "عالی",
+          "âli",
+          "great",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How lovely!",
+      "fa": "چه قشنگ!",
+      "tr": "che ghashang!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "how",
+          "question word"
+        ],
+        [
+          "قشنگ",
+          "ghashang",
+          "lovely",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What a pity!",
+      "fa": "چه حیف!",
+      "tr": "che heyf!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "what",
+          "question word"
+        ],
+        [
+          "حیف",
+          "heyf",
+          "a pity",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How awful!",
+      "fa": "چه بد!",
+      "tr": "che bad!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "how",
+          "question word"
+        ],
+        [
+          "بد",
+          "bad",
+          "bad",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How nice!",
+      "fa": "چه خوب!",
+      "tr": "che khub!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "how",
+          "question word"
+        ],
+        [
+          "خوب",
+          "khub",
+          "nice",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's cool.",
+      "fa": "باحاله.",
+      "tr": "bâhâle.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "باحاله",
+          "bâhâle",
+          "it's cool",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's fantastic.",
+      "fa": "فوق‌العاده‌ست.",
+      "tr": "fogholâdast.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فوق‌العاده‌ست",
+          "fogholâdast",
+          "it's fantastic",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Not bad.",
+      "fa": "بد نیست.",
+      "tr": "bad nist.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بد",
+          "bad",
+          "bad",
+          "adjective"
+        ],
+        [
+          "نیست",
+          "nist",
+          "it isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Wow, how fast!",
+      "fa": "اوه، چه سریع!",
+      "tr": "ow, che sari'!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اوه",
+          "ow",
+          "wow",
+          "expression"
+        ],
+        [
+          "چه",
+          "che",
+          "how",
+          "question word"
+        ],
+        [
+          "سریع",
+          "sari'",
+          "fast",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Oh dear!",
+      "fa": "ای وای!",
+      "tr": "ây vây!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ای وای",
+          "ây vây",
+          "oh dear",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Oh, for goodness' sake, I forgot!",
+      "fa": "ای بابا، یادم رفت!",
+      "tr": "ây bâbâ, yâdam raft!",
+      "sit": "apologising or explaining lateness",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ای بابا",
+          "ây bâbâ",
+          "oh for goodness' sake",
+          "expression"
+        ],
+        [
+          "یادم رفت",
+          "yâdam raft",
+          "I forgot",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm fed up.",
+      "fa": "کلافه‌م.",
+      "tr": "kalâfam.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کلافه‌م",
+          "kalâfam",
+          "I'm fed up",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm bored.",
+      "fa": "حوصله‌م سر رفته.",
+      "tr": "hoselam sar rafte.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "حوصله‌م سر رفته",
+          "hoselam sar rafte",
+          "I'm bored",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I don't feel like it.",
+      "fa": "حوصله‌ش رو ندارم.",
+      "tr": "hoselash ro nadâram.",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "حوصله‌ش",
+          "hoselash",
+          "the patience for it",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "ندارم",
+          "nadâram",
+          "I don't have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's enough!",
+      "fa": "بسه!",
+      "tr": "base!",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بسه",
+          "base",
+          "enough",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Come on!",
+      "fa": "بیا دیگه!",
+      "tr": "biyâ dige!",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بیا",
+          "biyâ",
+          "come",
+          "verb"
+        ],
+        [
+          "دیگه",
+          "dige",
+          "come on",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Let's go, then!",
+      "fa": "بریم دیگه!",
+      "tr": "berim dige!",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بریم",
+          "berim",
+          "let's go",
+          "verb"
+        ],
+        [
+          "دیگه",
+          "dige",
+          "then",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "So what?",
+      "fa": "که چی؟",
+      "tr": "ke chi?",
+      "sit": "disagreeing politely",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "که",
+          "ke",
+          "that",
+          "conjunction"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How come?",
+      "fa": "چطور مگه؟",
+      "tr": "chetor mage?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چطور",
+          "chetor",
+          "how",
+          "question word"
+        ],
+        [
+          "مگه",
+          "mage",
+          "come on",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Why not?",
+      "fa": "چرا که نه؟",
+      "tr": "cherâ ke na?",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چرا",
+          "cherâ",
+          "why",
+          "question word"
+        ],
+        [
+          "که",
+          "ke",
+          "that",
+          "conjunction"
+        ],
+        [
+          "نه",
+          "na",
+          "not",
+          "particle"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What happened?",
+      "fa": "چی شد؟",
+      "tr": "chi shod?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "شد",
+          "shod",
+          "happened",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What's going on?",
+      "fa": "چه خبر شده؟",
+      "tr": "che khabar shode?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه",
+          "che",
+          "what",
+          "question word"
+        ],
+        [
+          "خبر",
+          "khabar",
+          "news",
+          "noun"
+        ],
+        [
+          "شده",
+          "shode",
+          "has become",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What did you say?",
+      "fa": "چی گفتی؟",
+      "tr": "chi gofti?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ],
+        [
+          "گفتی",
+          "gofti",
+          "you said",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Say that again.",
+      "fa": "دوباره بگو.",
+      "tr": "dobâre begu.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دوباره",
+          "dobâre",
+          "again",
+          "adverb"
+        ],
+        [
+          "بگو",
+          "begu",
+          "say",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What does this mean?",
+      "fa": "این یعنی چی؟",
+      "tr": "in yani chi?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "یعنی",
+          "yani",
+          "means",
+          "expression"
+        ],
+        [
+          "چی",
+          "chi",
+          "what",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What's the problem?",
+      "fa": "مشکل چیه؟",
+      "tr": "moshkel chie?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مشکل",
+          "moshkel",
+          "problem",
+          "noun"
+        ],
+        [
+          "چیه",
+          "chie",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Thank God!",
+      "fa": "خدا رو شکر!",
+      "tr": "khodâ ro shokr!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خدا",
+          "khodâ",
+          "God",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "شکر",
+          "shokr",
+          "thanks",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "God willing.",
+      "fa": "ان‌شاءالله.",
+      "tr": "inshâllâh.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ان‌شاءالله",
+          "inshâllâh",
+          "God willing",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "God willing, it'll be fine.",
+      "fa": "ان‌شاءالله که خوب می‌شه.",
+      "tr": "inshâllâh ke khub mishe.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ان‌شاءالله",
+          "inshâllâh",
+          "God willing",
+          "expression"
+        ],
+        [
+          "که",
+          "ke",
+          "that",
+          "conjunction"
+        ],
+        [
+          "خوب می‌شه",
+          "khub mishe",
+          "it'll be fine",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Wow, how big you've grown!",
+      "fa": "ماشاءالله، چقدر بزرگ شدی!",
+      "tr": "mâshâllâh, cheghadr bozorg shodi!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ماشاءالله",
+          "mâshâllâh",
+          "wow, bless him",
+          "expression"
+        ],
+        [
+          "چقدر",
+          "cheghadr",
+          "how much",
+          "question word"
+        ],
+        [
+          "بزرگ شدی",
+          "bozorg shodi",
+          "you've grown",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "God forbid!",
+      "fa": "خدا نکنه!",
+      "tr": "khodâ nakone!",
+      "sit": "describing how you feel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خدا",
+          "khodâ",
+          "God",
+          "noun"
+        ],
+        [
+          "نکنه",
+          "nakone",
+          "may he not",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Congratulations!",
+      "fa": "مبارک باشه!",
+      "tr": "mobârak bâshe!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مبارک",
+          "mobârak",
+          "blessed",
+          "adjective"
+        ],
+        [
+          "باشه",
+          "bâshe",
+          "may it be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Congratulations on your new job!",
+      "fa": "شغل جدیدت مبارک!",
+      "tr": "shoghle jadidet mobârak!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "شغل",
+          "shoghl",
+          "job",
+          "noun"
+        ],
+        [
+          "جدیدت",
+          "jadidet",
+          "your new",
+          "adjective"
+        ],
+        [
+          "مبارک",
+          "mobârak",
+          "blessed",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Well done!",
+      "fa": "دمت گرم!",
+      "tr": "damet garm!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دمت گرم",
+          "damet garm",
+          "well done",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Bravo!",
+      "fa": "آفرین!",
+      "tr": "âfarin!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آفرین",
+          "âfarin",
+          "bravo",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Bless you, dear!",
+      "fa": "قربونت برم!",
+      "tr": "ghorbunet beram!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "قربونت",
+          "ghorbunet",
+          "your sacrifice",
+          "noun"
+        ],
+        [
+          "برم",
+          "beram",
+          "may I go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Oh, darling!",
+      "fa": "ای جان!",
+      "tr": "ây jân!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ای جان",
+          "ây jân",
+          "oh darling",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It was nothing.",
+      "fa": "قابل نداره.",
+      "tr": "ghâbel nadâre.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "قابل",
+          "ghâbel",
+          "worthy",
+          "adjective"
+        ],
+        [
+          "نداره",
+          "nadâre",
+          "it isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Don't mention it.",
+      "fa": "این چه حرفیه.",
+      "tr": "in che harfie.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "چه",
+          "che",
+          "what",
+          "question word"
+        ],
+        [
+          "حرفیه",
+          "harfie",
+          "a thing to say",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "That's kind of you.",
+      "fa": "لطف داری.",
+      "tr": "lotf dâri.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "لطف",
+          "lotf",
+          "kindness",
+          "noun"
+        ],
+        [
+          "داری",
+          "dâri",
+          "you have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Welcome!",
+      "fa": "خوش اومدی!",
+      "tr": "khosh umadi!",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خوش",
+          "khosh",
+          "well",
+          "adjective"
+        ],
+        [
+          "اومدی",
+          "umadi",
+          "you came",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Did you have a good time?",
+      "fa": "خوش گذشت؟",
+      "tr": "khosh gozasht?",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خوش",
+          "khosh",
+          "well",
+          "adjective"
+        ],
+        [
+          "گذشت",
+          "gozasht",
+          "it passed",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Look after yourself.",
+      "fa": "مراقب خودت باش.",
+      "tr": "morâghebe khodet bâsh.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مراقب",
+          "morâgheb",
+          "careful",
+          "adjective"
+        ],
+        [
+          "خودت",
+          "khodet",
+          "yourself",
+          "pronoun"
+        ],
+        [
+          "باش",
+          "bâsh",
+          "be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Get well soon.",
+      "fa": "ان‌شاءالله زود خوب شی.",
+      "tr": "inshâllâh zud khub shi.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ان‌شاءالله",
+          "inshâllâh",
+          "God willing",
+          "expression"
+        ],
+        [
+          "زود",
+          "zud",
+          "soon",
+          "adverb"
+        ],
+        [
+          "خوب شی",
+          "khub shi",
+          "you get well",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "After you.",
+      "fa": "اول شما.",
+      "tr": "avval shomâ.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اول",
+          "avval",
+          "first",
+          "adverb"
+        ],
+        [
+          "شما",
+          "shomâ",
+          "you",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Here you go.",
+      "fa": "بفرمایین.",
+      "tr": "befarmâyin.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بفرمایین",
+          "befarmâyin",
+          "here you go",
+          "expression"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Excuse me, I had a question.",
+      "fa": "ببخشید، یه سوال داشتم.",
+      "tr": "bebakhshid, ye soâl dâshtam.",
+      "sit": "negotiating or asking for a favour",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ببخشید",
+          "bebakhshid",
+          "excuse me",
+          "expression"
+        ],
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "سوال",
+          "soâl",
+          "question",
+          "noun"
+        ],
+        [
+          "داشتم",
+          "dâshtam",
+          "I had",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "May I come in?",
+      "fa": "اجازه هست؟",
+      "tr": "ejâze hast?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اجازه",
+          "ejâze",
+          "permission",
+          "noun"
+        ],
+        [
+          "هست",
+          "hast",
+          "is there",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Come in!",
+      "fa": "بیا تو!",
+      "tr": "biyâ tu!",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بیا",
+          "biyâ",
+          "come",
+          "verb"
+        ],
+        [
+          "تو",
+          "tu",
+          "in",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Make yourself at home.",
+      "fa": "راحت باش.",
+      "tr": "râhat bâsh.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "راحت",
+          "râhat",
+          "comfortable",
+          "adjective"
+        ],
+        [
+          "باش",
+          "bâsh",
+          "be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Long time no see!",
+      "fa": "چه عجب از این طرفا!",
+      "tr": "che ajab az in tarafâ!",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چه عجب",
+          "che ajab",
+          "what a surprise",
+          "expression"
+        ],
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "این",
+          "in",
+          "these",
+          "pronoun"
+        ],
+        [
+          "طرفا",
+          "tarafâ",
+          "parts",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Where have you been hiding?",
+      "fa": "کم پیدایی!",
+      "tr": "kam peydâyi!",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کم",
+          "kam",
+          "rarely",
+          "adverb"
+        ],
+        [
+          "پیدایی",
+          "peydâyi",
+          "you appear",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Good luck!",
+      "fa": "موفق باشی!",
+      "tr": "movafagh bâshi!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "موفق",
+          "movafagh",
+          "successful",
+          "adjective"
+        ],
+        [
+          "باشی",
+          "bâshi",
+          "may you be",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Have a good trip!",
+      "fa": "سفر خوش!",
+      "tr": "safar khosh!",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "سفر",
+          "safar",
+          "trip",
+          "noun"
+        ],
+        [
+          "خوش",
+          "khosh",
+          "pleasant",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll be right there.",
+      "fa": "الان میام.",
+      "tr": "alân miyam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "الان",
+          "alân",
+          "now",
+          "adverb"
+        ],
+        [
+          "میام",
+          "miyam",
+          "I'm coming",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm on the road now.",
+      "fa": "تو راهم.",
+      "tr": "tu râham.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "راهم",
+          "râham",
+          "my way",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm almost there.",
+      "fa": "دارم می‌رسم.",
+      "tr": "dâram miresam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دارم می‌رسم",
+          "dâram miresam",
+          "I'm arriving",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm here.",
+      "fa": "رسیدم.",
+      "tr": "residam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "رسیدم",
+          "residam",
+          "I've arrived",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Call me.",
+      "fa": "بهم زنگ بزن.",
+      "tr": "behem zang bezan.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بهم",
+          "behem",
+          "to me",
+          "preposition"
+        ],
+        [
+          "زنگ بزن",
+          "zang bezan",
+          "call",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Text me.",
+      "fa": "بهم پیام بده.",
+      "tr": "behem payâm bede.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بهم",
+          "behem",
+          "to me",
+          "preposition"
+        ],
+        [
+          "پیام بده",
+          "payâm bede",
+          "send a message",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll tell you later.",
+      "fa": "بعدا بهت می‌گم.",
+      "tr": "ba'dan behet migam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بعدا",
+          "ba'dan",
+          "later",
+          "adverb"
+        ],
+        [
+          "بهت",
+          "behet",
+          "to you",
+          "preposition"
+        ],
+        [
+          "می‌گم",
+          "migam",
+          "I'll tell",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll let you know.",
+      "fa": "بهت خبر می‌دم.",
+      "tr": "behet khabar midam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بهت",
+          "behet",
+          "to you",
+          "preposition"
+        ],
+        [
+          "خبر می‌دم",
+          "khabar midam",
+          "I'll let know",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll see you later on.",
+      "fa": "بعدا می‌بینمت.",
+      "tr": "ba'dan mibinamet.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بعدا",
+          "ba'dan",
+          "later",
+          "adverb"
+        ],
+        [
+          "می‌بینمت",
+          "mibinamet",
+          "I'll see you",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Take your time.",
+      "fa": "عجله نکن.",
+      "tr": "ajale nakon.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عجله",
+          "ajale",
+          "hurry",
+          "noun"
+        ],
+        [
+          "نکن",
+          "nakon",
+          "don't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "There's no rush.",
+      "fa": "عجله‌ای نیست.",
+      "tr": "ajale'i nist.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عجله‌ای",
+          "ajale'i",
+          "a rush",
+          "noun"
+        ],
+        [
+          "نیست",
+          "nist",
+          "there isn't",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Drive carefully.",
+      "fa": "آروم برو.",
+      "tr": "ârum boro.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آروم",
+          "ârum",
+          "gently",
+          "adverb"
+        ],
+        [
+          "برو",
+          "boro",
+          "go",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Give my regards.",
+      "fa": "سلام برسون.",
+      "tr": "salâm beresun.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "سلام",
+          "salâm",
+          "regards",
+          "noun"
+        ],
+        [
+          "برسون",
+          "beresun",
+          "pass on",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Same to you.",
+      "fa": "تو هم همین‌طور.",
+      "tr": "to ham hamin~tor.",
+      "sit": "compliments and thanking (taarof)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "to",
+          "you",
+          "pronoun"
+        ],
+        [
+          "هم",
+          "ham",
+          "also",
+          "particle"
+        ],
+        [
+          "همین‌طور",
+          "hamin~tor",
+          "the same",
+          "adverb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Me too.",
+      "fa": "منم.",
+      "tr": "manam.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "منم",
+          "manam",
+          "me too",
+          "pronoun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Me neither.",
+      "fa": "منم نه.",
+      "tr": "manam na.",
+      "sit": "small talk about weather or traffic",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "منم",
+          "manam",
+          "me too",
+          "pronoun"
+        ],
+        [
+          "نه",
+          "na",
+          "not",
+          "particle"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

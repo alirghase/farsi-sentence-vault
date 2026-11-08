@@ -1,0 +1,27 @@
+{
+  "note": "Reacting: someone tells you something and you answer the way people do — oh really, poor thing, lucky you, go on, never mind. These are what keep a conversation going. Same format as replies.json.",
+  "replies": [
+    ["قبول شدم!", "I passed!", "ایول! تبریک می~گم!", "eyval! tabrik migam!", "Brilliant! Congratulations!", ["آفرین! خیلی خوشحال شدم."], 1, "compliments and thanking (taarof)"],
+    ["دارم می~رم ایران.", "I'm going to Iran.", "خوش به حالت! کی برمی~گردی؟", "khosh be hâlet! key barmigardi?", "Lucky you! When are you coming back?", ["چه خوب! چند وقت می~مونی؟"], 2, "talking about future plans"],
+    ["ماشینم خراب شد.", "My car broke down.", "ای بابا! حالا چی کار می~کنی؟", "ây bâbâ! hâlâ chi kâr mikoni?", "Oh no! What will you do now?", ["ای وای! کجا خراب شد؟"], 2, "complaining about something not working"],
+    ["سرما خوردم.", "I've caught a cold.", "طفلکی! الان بهتری؟", "tefleki! alân behtari?", "Poor thing! Are you better now?", ["ای وای، زود خوب شی."], 1, "at the doctor or pharmacy"],
+    ["دیروز علی رو دیدم.", "I saw Ali yesterday.", "جدی؟ چطور بود؟", "jeddi? chetor bud?", "Really? How was he?", ["چه خوب! چی گفت؟"], 1, "phone call with family"],
+    ["اون از تهران اومده.", "He's come from Tehran.", "آهان، که این~طور.", "âhân, ke intor.", "Ah, I see.", ["جدی؟ کی اومده؟"], 1, "small talk about weather or traffic"],
+    ["خیلی خسته~م.", "I'm really tired.", "منم همین~طور.", "manam hamintor.", "Me too.", ["برو یه کم استراحت کن."], 1, "describing how you feel"],
+    ["یه چیزی بگم؟", "Can I tell you something?", "آره، بگو.", "âre, begu.", "Yes, go on.", ["چی شده؟"], 1, "asking someone to repeat or clarify"],
+    ["بعد رفتیم رستوران.", "Then we went to a restaurant.", "خب، بعدش چی شد؟", "khob, ba'desh chi shod?", "So, what happened next?", ["خوش گذشت؟"], 2, "talking about the past (what you did)"],
+    ["نتونستم بلیت بگیرم.", "I couldn't get a ticket.", "بی~خیال، فردا می~گیریم.", "bikhiyâl, fardâ migirim.", "Never mind, we'll get one tomorrow.", ["حیف شد!"], 2, "taxi, metro, and travel"],
+    ["همه چی گرون شده.", "Everything's got expensive.", "آره دیگه، چی کار می~شه کرد.", "âre dige, chi kâr mishe kard.", "Yeah, what can you do.", ["آره واقعا."], 2, "shopping and asking prices"],
+    ["یادت باشه فردا زنگ بزنی.", "Remember to call tomorrow.", "باشه، حتما.", "bâshe, hatman.", "Okay, definitely.", ["یادم می~مونه."], 2, "phone call with family"],
+    ["امروز تولدمه!", "It's my birthday today!", "وای، تولدت مبارک!", "vây, tavallodet mobârak!", "Oh, happy birthday!", ["جدی؟ تولدت مبارک!"], 1, "compliments and thanking (taarof)"],
+    ["گوشیم گم شده.", "I've lost my phone.", "ای وای! آخرین بار کجا دیدیش؟", "ây vây! âkharin bâr kojâ didish?", "Oh no! Where did you last see it?", ["بیا بهش زنگ بزنیم."], 2, "complaining about something not working"],
+    ["باورت نمی~شه چی شد!", "You won't believe what happened!", "چی شده؟ بگو!", "chi shode? begu!", "What's happened? Tell me!", ["جدی؟ چی شد؟"], 1, "phone call with family"],
+    ["بیا بریم بیرون.", "Let's go out.", "باشه پس، بریم.", "bâshe pas, berim.", "Okay then, let's go.", ["الان نه، خسته~م."], 1, "making plans with a friend"],
+    ["هوا خیلی سرده.", "It's very cold.", "آره واقعا.", "âre vâghe'an.", "Yes, really.", ["آره، کاپشن بپوش."], 1, "small talk about weather or traffic"],
+    ["می~دونستی علی ازدواج کرده؟", "Did you know Ali got married?", "نه بابا! جدی؟", "na bâbâ! jeddi?", "No way! Really?", ["آره، شنیدم."], 2, "phone call with family"],
+    ["ولش کن، مهم نیست.", "Forget it, it doesn't matter.", "باشه، هر جور راحتی.", "bâshe, har jur râhati.", "Okay, whatever suits you.", ["مطمئنی؟"], 2, "disagreeing politely"],
+    ["ببخشید، کیفت رو جا گذاشتم.", "Sorry, I left your bag behind.", "اشکال نداره، بعدا می~گیرمش.", "eshkâl nadâre, ba'dan migiramesh.", "No problem, I'll get it later.", ["عیبی نداره."], 2, "apologising or explaining lateness"],
+    ["این غذا رو خودم درست کردم.", "I made this food myself.", "دستت درد نکنه، خیلی خوشمزه~ست!", "dastet dard nakone, kheyli khoshmazast!", "Thank you, it's delicious!", ["وای، چه خوشمزه!"], 1, "hosting or visiting someone's home"],
+    ["فکر کنم بارون بیاد.", "I think it's going to rain.", "شاید، چتر بیار.", "shâyad, chatr biyâr.", "Maybe, bring an umbrella.", ["امیدوارم نیاد."], 2, "small talk about weather or traffic"]
+  ]
+}

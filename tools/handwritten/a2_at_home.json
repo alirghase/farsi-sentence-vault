@@ -1,0 +1,234 @@
+{
+  "note": "The same, at A2.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "I'll be back late tonight.",
+      "fa": "امشب دیر میام خونه.",
+      "tr": "emshab dir miyâm khune.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "امشب",
+          "emshab",
+          "tonight",
+          "adverb"
+        ],
+        [
+          "دیر",
+          "dir",
+          "late",
+          "adverb"
+        ],
+        [
+          "میام",
+          "miyâm",
+          "I'll come",
+          "verb"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'll call you when I get there.",
+      "fa": "رسیدم بهت زنگ می‌زنم.",
+      "tr": "residam behet zang mizanam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "رسیدم",
+          "residam",
+          "I arrived",
+          "verb"
+        ],
+        [
+          "بهت",
+          "behet",
+          "to you",
+          "preposition"
+        ],
+        [
+          "زنگ می‌زنم",
+          "zang mizanam",
+          "I'll call",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Have you eaten anything?",
+      "fa": "چیزی خوردی؟",
+      "tr": "chizi khordi?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چیزی",
+          "chizi",
+          "anything",
+          "pronoun"
+        ],
+        [
+          "خوردی",
+          "khordi",
+          "have you eaten",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Shall I make you some tea?",
+      "fa": "برات چای بریزم؟",
+      "tr": "barât châi berizam?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "برات",
+          "barât",
+          "for you",
+          "preposition"
+        ],
+        [
+          "چای",
+          "châi",
+          "tea",
+          "noun"
+        ],
+        [
+          "بریزم",
+          "berizam",
+          "shall I pour",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Where did you put my keys?",
+      "fa": "کلیدام رو کجا گذاشتی؟",
+      "tr": "kelidâm ro kojâ gozâshti?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کلیدام",
+          "kelidâm",
+          "my keys",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "کجا",
+          "kojâ",
+          "where",
+          "question word"
+        ],
+        [
+          "گذاشتی",
+          "gozâshti",
+          "did you put",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm cooking, come and help.",
+      "fa": "دارم غذا درست می‌کنم، بیا کمک.",
+      "tr": "dâram ghazâ dorost mikonam, biyâ komak.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دارم",
+          "dâram",
+          "I am",
+          "verb"
+        ],
+        [
+          "غذا",
+          "ghazâ",
+          "food",
+          "noun"
+        ],
+        [
+          "درست می‌کنم",
+          "dorost mikonam",
+          "making",
+          "compound verb"
+        ],
+        [
+          "بیا",
+          "biyâ",
+          "come",
+          "verb"
+        ],
+        [
+          "کمک",
+          "komak",
+          "help",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Has anyone seen my phone?",
+      "fa": "کسی گوشیمو ندیده؟",
+      "tr": "kasi gushimo nadide?",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "کسی",
+          "kasi",
+          "anyone",
+          "pronoun"
+        ],
+        [
+          "گوشیمو",
+          "gushimo",
+          "my phone",
+          "noun"
+        ],
+        [
+          "ندیده",
+          "nadide",
+          "hasn't seen",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

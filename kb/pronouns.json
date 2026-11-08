@@ -1,0 +1,140 @@
+{
+  "note": "Pronoun tables: the endings and short forms spoken Persian attaches to nouns, prepositions and verbs, and the copula that attaches to adjectives. Each table is one card in the app, dealt with a different person each time, and one table on the reference screen. A row is [person, Persian, transliteration, English], with an optional fifth element listing other spellings that are just as right. A table may have fewer than six rows. '~' stands for the half-space (ZWNJ).",
+
+  "tables": [
+    {"id": "poss-consonant", "group": "possessive", "label": "ضمیر ملکی", "labelEn": "my, your, his… (after a consonant)", "lemma": "کتاب", "lemmaEn": "book", "level": 1,
+     "rows": [
+       ["من", "کتابم", "ketâbam", "my book"],
+       ["تو", "کتابت", "ketâbet", "your book"],
+       ["اون", "کتابش", "ketâbesh", "his / her book"],
+       ["ما", "کتابمون", "ketâbemun", "our book"],
+       ["شما", "کتابتون", "ketâbetun", "your book (pl.)"],
+       ["اونا", "کتابشون", "ketâbeshun", "their book"]
+     ]},
+    {"id": "poss-e", "group": "possessive", "label": "ضمیر ملکی", "labelEn": "my, your, his… (after ـه)", "lemma": "خونه", "lemmaEn": "house", "level": 1,
+     "rows": [
+       ["من", "خونه~م", "khunam", "my house", ["خونه~ام"]],
+       ["تو", "خونه~ت", "khunat", "your house", ["خونه~ات"]],
+       ["اون", "خونه~ش", "khunash", "his / her house", ["خونه~اش"]],
+       ["ما", "خونه~مون", "khunemun", "our house"],
+       ["شما", "خونه~تون", "khunetun", "your house (pl.)"],
+       ["اونا", "خونه~شون", "khuneshun", "their house"]
+     ]},
+    {"id": "poss-a", "group": "possessive", "label": "ضمیر ملکی", "labelEn": "my, your, his… (after ـا)", "lemma": "بابا", "lemmaEn": "dad", "level": 1,
+     "rows": [
+       ["من", "بابام", "bâbâm", "my dad"],
+       ["تو", "بابات", "bâbât", "your dad"],
+       ["اون", "باباش", "bâbâsh", "his / her dad"],
+       ["ما", "بابامون", "bâbâmun", "our dad"],
+       ["شما", "باباتون", "bâbâtun", "your dad (pl.)"],
+       ["اونا", "باباشون", "bâbâshun", "their dad"]
+     ]},
+    {"id": "poss-i", "group": "possessive", "label": "ضمیر ملکی", "labelEn": "my, your, his… (after ـی)", "lemma": "گوشی", "lemmaEn": "phone", "level": 2,
+     "rows": [
+       ["من", "گوشیم", "gushim", "my phone"],
+       ["تو", "گوشیت", "gushit", "your phone"],
+       ["اون", "گوشیش", "gushish", "his / her phone"],
+       ["ما", "گوشیمون", "gushimun", "our phone"],
+       ["شما", "گوشیتون", "gushitun", "your phone (pl.)"],
+       ["اونا", "گوشیشون", "gushishun", "their phone"]
+     ]},
+    {"id": "mal", "group": "possessive", "label": "مال کیه؟", "labelEn": "it's mine, yours…", "lemma": "مال", "lemmaEn": "belonging to", "level": 1,
+     "rows": [
+       ["من", "مال منه", "mâle mane", "it's mine"],
+       ["تو", "مال توئه", "mâle to'e", "it's yours"],
+       ["اون", "مال اونه", "mâle une", "it's his / hers"],
+       ["ما", "مال ماست", "mâle mâst", "it's ours"],
+       ["شما", "مال شماست", "mâle shomâst", "it's yours (pl.)"],
+       ["اونا", "مال اوناست", "mâle unâst", "it's theirs"]
+     ]},
+
+    {"id": "prep-be", "group": "preposition", "label": "حرف اضافه + ضمیر", "labelEn": "to me, to you…", "lemma": "به", "lemmaEn": "to", "level": 1,
+     "rows": [
+       ["من", "بهم", "behem", "to me"],
+       ["تو", "بهت", "behet", "to you"],
+       ["اون", "بهش", "behesh", "to him / her"],
+       ["ما", "بهمون", "behemun", "to us"],
+       ["شما", "بهتون", "behetun", "to you (pl.)"],
+       ["اونا", "بهشون", "beheshun", "to them"]
+     ]},
+    {"id": "prep-az", "group": "preposition", "label": "حرف اضافه + ضمیر", "labelEn": "from me, from you…", "lemma": "از", "lemmaEn": "from", "level": 1,
+     "rows": [
+       ["من", "ازم", "azam", "from me"],
+       ["تو", "ازت", "azat", "from you"],
+       ["اون", "ازش", "azash", "from him / her"],
+       ["ما", "ازمون", "azemun", "from us"],
+       ["شما", "ازتون", "azetun", "from you (pl.)"],
+       ["اونا", "ازشون", "azeshun", "from them"]
+     ]},
+    {"id": "prep-ba", "group": "preposition", "label": "حرف اضافه + ضمیر", "labelEn": "with me, with you…", "lemma": "با", "lemmaEn": "with", "level": 1,
+     "rows": [
+       ["من", "باهام", "bâhâm", "with me"],
+       ["تو", "باهات", "bâhât", "with you"],
+       ["اون", "باهاش", "bâhâsh", "with him / her"],
+       ["ما", "باهامون", "bâhâmun", "with us"],
+       ["شما", "باهاتون", "bâhâtun", "with you (pl.)"],
+       ["اونا", "باهاشون", "bâhâshun", "with them"]
+     ]},
+    {"id": "prep-baraye", "group": "preposition", "label": "حرف اضافه + ضمیر", "labelEn": "for me, for you…", "lemma": "برای", "lemmaEn": "for", "level": 1,
+     "rows": [
+       ["من", "برام", "barâm", "for me"],
+       ["تو", "برات", "barât", "for you"],
+       ["اون", "براش", "barâsh", "for him / her"],
+       ["ما", "برامون", "barâmun", "for us"],
+       ["شما", "براتون", "barâtun", "for you (pl.)"],
+       ["اونا", "براشون", "barâshun", "for them"]
+     ]},
+    {"id": "prep-vase", "group": "preposition", "label": "حرف اضافه + ضمیر", "labelEn": "for me, for you… (casual)", "lemma": "واسه", "lemmaEn": "for", "level": 2,
+     "rows": [
+       ["من", "واسم", "vâsam", "for me", ["واسه~م"]],
+       ["تو", "واست", "vâset", "for you", ["واسه~ت"]],
+       ["اون", "واسش", "vâsesh", "for him / her", ["واسه~ش"]],
+       ["ما", "واسمون", "vâsemun", "for us", ["واسه~مون"]],
+       ["شما", "واستون", "vâsetun", "for you (pl.)", ["واسه~تون"]],
+       ["اونا", "واسشون", "vâseshun", "for them", ["واسه~شون"]]
+     ]},
+
+    {"id": "obj-like", "group": "object", "label": "ضمیر مفعولی", "labelEn": "I like you, him…", "lemma": "دوست دارم", "lemmaEn": "I like / love", "level": 1,
+     "rows": [
+       ["تو", "دوستت دارم", "dustet dâram", "I love you"],
+       ["اون", "دوستش دارم", "dustesh dâram", "I like / love him, her, it"],
+       ["شما", "دوستتون دارم", "dustetun dâram", "I love you (pl.)"],
+       ["اونا", "دوستشون دارم", "dusteshun dâram", "I like / love them"]
+     ]},
+    {"id": "obj-saw", "group": "object", "label": "ضمیر مفعولی", "labelEn": "I saw you, him…", "lemma": "دیدم", "lemmaEn": "I saw", "level": 2,
+     "rows": [
+       ["تو", "دیدمت", "didamet", "I saw you"],
+       ["اون", "دیدمش", "didamesh", "I saw him / her / it"],
+       ["شما", "دیدمتون", "didametun", "I saw you (pl.)"],
+       ["اونا", "دیدمشون", "didameshun", "I saw them"]
+     ]},
+
+    {"id": "cop-consonant", "group": "copula", "label": "بودن: ـم، ـی، ـه", "labelEn": "I'm…, you're… (after a consonant)", "lemma": "خوب", "lemmaEn": "good / well", "level": 1,
+     "rows": [
+       ["من", "خوبم", "khubam", "I'm well"],
+       ["تو", "خوبی", "khubi", "you're well"],
+       ["اون", "خوبه", "khube", "he / she is well"],
+       ["ما", "خوبیم", "khubim", "we're well"],
+       ["شما", "خوبین", "khubin", "you're well (pl.)", ["خوبید"]],
+       ["اونا", "خوبن", "khuban", "they're well"]
+     ]},
+    {"id": "cop-e", "group": "copula", "label": "بودن: ـم، ـی، ـه", "labelEn": "I'm…, you're… (after ـه)", "lemma": "خسته", "lemmaEn": "tired", "level": 1,
+     "rows": [
+       ["من", "خسته~م", "khastam", "I'm tired", ["خسته~ام"]],
+       ["تو", "خسته~ای", "khaste'i", "you're tired"],
+       ["اون", "خسته~ست", "khastast", "he / she is tired"],
+       ["ما", "خسته~ایم", "khaste'im", "we're tired"],
+       ["شما", "خسته~این", "khaste'in", "you're tired (pl.)", ["خسته~اید"]],
+       ["اونا", "خسته~ن", "khastan", "they're tired", ["خسته~اند"]]
+     ]},
+    {"id": "cop-a", "group": "copula", "label": "بودن: ـم، ـی، ـه", "labelEn": "I'm…, you're… (after ـا)", "lemma": "اینجا", "lemmaEn": "here", "level": 1,
+     "rows": [
+       ["من", "اینجام", "injâm", "I'm here"],
+       ["تو", "اینجایی", "injâyi", "you're here"],
+       ["اون", "اینجاست", "injâst", "he / she is here"],
+       ["ما", "اینجاییم", "injâyim", "we're here"],
+       ["شما", "اینجایین", "injâyin", "you're here (pl.)", ["اینجایید"]],
+       ["اونا", "اینجان", "injân", "they're here"]
+     ]}
+  ]
+}

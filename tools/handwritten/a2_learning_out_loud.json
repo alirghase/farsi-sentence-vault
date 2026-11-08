@@ -1,0 +1,414 @@
+{
+  "note": "The same, at A2.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "Correct me if I get it wrong.",
+      "fa": "اگه اشتباه گفتم، درستش کن.",
+      "tr": "age eshtebâh goftam, dorostesh kon.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اگه",
+          "age",
+          "if",
+          "conjunction"
+        ],
+        [
+          "اشتباه",
+          "eshtebâh",
+          "wrong",
+          "adverb"
+        ],
+        [
+          "گفتم",
+          "goftam",
+          "I said",
+          "verb"
+        ],
+        [
+          "درستش کن",
+          "dorostesh kon",
+          "correct it",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "How is it pronounced?",
+      "fa": "تلفظش چطوریه؟",
+      "tr": "talaffozesh chetorie?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تلفظش",
+          "talaffozesh",
+          "its pronunciation",
+          "noun"
+        ],
+        [
+          "چطوریه",
+          "chetorie",
+          "how is it",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What I mean is, I'm coming tomorrow.",
+      "fa": "منظورم اینه که فردا میام.",
+      "tr": "manzuram ine ke fardâ miyâm.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "منظورم",
+          "manzuram",
+          "my meaning",
+          "noun"
+        ],
+        [
+          "اینه",
+          "ine",
+          "is this",
+          "pronoun"
+        ],
+        [
+          "که",
+          "ke",
+          "that",
+          "conjunction"
+        ],
+        [
+          "فردا",
+          "fardâ",
+          "tomorrow",
+          "adverb"
+        ],
+        [
+          "میام",
+          "miyâm",
+          "I'm coming",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm learning Persian for my family.",
+      "fa": "دارم برای خانواده‌م فارسی یاد می‌گیرم.",
+      "tr": "dâram barâye khânevâdam fârsi yâd migiram.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دارم",
+          "dâram",
+          "I am",
+          "verb"
+        ],
+        [
+          "برای",
+          "barâye",
+          "for",
+          "preposition"
+        ],
+        [
+          "خانواده‌م",
+          "khânevâdam",
+          "my family",
+          "noun"
+        ],
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "یاد می‌گیرم",
+          "yâd migiram",
+          "learning",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I can read, but I can't speak well.",
+      "fa": "می‌تونم بخونم، ولی خوب نمی‌تونم حرف بزنم.",
+      "tr": "mitunam bekhunam, vali khub nemitunam harf bezanam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌تونم",
+          "mitunam",
+          "I can",
+          "verb"
+        ],
+        [
+          "بخونم",
+          "bekhunam",
+          "read",
+          "verb"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "خوب",
+          "khub",
+          "well",
+          "adverb"
+        ],
+        [
+          "نمی‌تونم",
+          "nemitunam",
+          "I can't",
+          "verb"
+        ],
+        [
+          "حرف بزنم",
+          "harf bezanam",
+          "speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I understand, but I can't answer.",
+      "fa": "می‌فهمم، ولی نمی‌تونم جواب بدم.",
+      "tr": "mifahmam, vali nemitunam javâb bedam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌فهمم",
+          "mifahmam",
+          "I understand",
+          "verb"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "نمی‌تونم",
+          "nemitunam",
+          "I can't",
+          "verb"
+        ],
+        [
+          "جواب بدم",
+          "javâb bedam",
+          "answer",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is this word formal?",
+      "fa": "این کلمه رسمیه؟",
+      "tr": "in kalame rasmiye?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "کلمه",
+          "kalame",
+          "word",
+          "noun"
+        ],
+        [
+          "رسمیه",
+          "rasmiye",
+          "is formal",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "What's the difference between these two?",
+      "fa": "فرق این دو تا چیه؟",
+      "tr": "farghe in do tâ chie?",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فرق",
+          "farghe",
+          "difference",
+          "noun"
+        ],
+        [
+          "این",
+          "in",
+          "this",
+          "pronoun"
+        ],
+        [
+          "دو تا",
+          "do tâ",
+          "two",
+          "number"
+        ],
+        [
+          "چیه",
+          "chie",
+          "what is",
+          "question word"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to practise my Persian.",
+      "fa": "می‌خوام فارسیم رو تمرین کنم.",
+      "tr": "mikhâm fârsim ro tamrin konam.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "فارسیم",
+          "fârsim",
+          "my Persian",
+          "noun"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "تمرین کنم",
+          "tamrin konam",
+          "to practise",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I understand everything my mum says.",
+      "fa": "هر چی مامانم می‌گه رو می‌فهمم.",
+      "tr": "har chi mâmânam mige ro mifahmam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هر چی",
+          "har chi",
+          "whatever",
+          "pronoun"
+        ],
+        [
+          "مامانم",
+          "mâmânam",
+          "my mum",
+          "noun"
+        ],
+        [
+          "می‌گه",
+          "mige",
+          "says",
+          "verb"
+        ],
+        [
+          "رو",
+          "ro",
+          "object marker",
+          "particle"
+        ],
+        [
+          "می‌فهمم",
+          "mifahmam",
+          "I understand",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to speak with my grandmother.",
+      "fa": "می‌خوام با مادربزرگم حرف بزنم.",
+      "tr": "mikhâm bâ mâdarbozorgam harf bezanam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "با",
+          "bâ",
+          "with",
+          "preposition"
+        ],
+        [
+          "مادربزرگم",
+          "mâdarbozorgam",
+          "my grandmother",
+          "noun"
+        ],
+        [
+          "حرف بزنم",
+          "harf bezanam",
+          "to speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

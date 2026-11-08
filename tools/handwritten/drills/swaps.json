@@ -1,0 +1,603 @@
+{
+  "note": "Swap drills. One frame, several versions of it, and a card asks you to get from one version to another: 'now say it with ما', 'now say it with لازم داشتن'. Hand-written rather than model-written because the whole point is that the versions are minimal pairs; one wrong ending in a paradigm is wrong Farsi drilled six ways. '~' stands for the half-space (ZWNJ) so the source can be read and diffed; tools/build_swaps.py turns it back.",
+
+  "presets": {
+    "pronoun": {
+      "cues": ["من", "تو", "اون", "ما", "شما", "اونا"],
+      "cueEn": ["I", "you (informal)", "he / she", "we", "you (formal)", "they"]
+    }
+  },
+
+  "frames": [
+    {
+      "id": "coffee-want", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "ordering food or coffee", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["یه قهوه می~خوام.", "ye ghahve mikhâm.", "I want a coffee."],
+        ["یه قهوه می~خوای.", "ye ghahve mikhây.", "You want a coffee."],
+        ["یه قهوه می~خواد.", "ye ghahve mikhâd.", "She wants a coffee."],
+        ["یه قهوه می~خوایم.", "ye ghahve mikhâym.", "We want a coffee."],
+        ["یه قهوه می~خواین.", "ye ghahve mikhâyn.", "You want a coffee."],
+        ["یه قهوه می~خوان.", "ye ghahve mikhân.", "They want a coffee."]
+      ]
+    },
+    {
+      "id": "going-home-tonight", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "making plans with a friend", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["امشب می~رم خونه.", "emshab miram khune.", "I'm going home tonight."],
+        ["امشب می~ری خونه.", "emshab miri khune.", "You're going home tonight."],
+        ["امشب می~ره خونه.", "emshab mire khune.", "He's going home tonight."],
+        ["امشب می~ریم خونه.", "emshab mirim khune.", "We're going home tonight."],
+        ["امشب می~رین خونه.", "emshab mirin khune.", "You're going home tonight."],
+        ["امشب می~رن خونه.", "emshab miran khune.", "They're going home tonight."]
+      ]
+    },
+    {
+      "id": "arrived-late", "kind": "pronoun", "subject": true, "d": 2,
+      "sit": "apologising or explaining lateness", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["دیروز دیر رسیدم.", "dirooz dir residam.", "I arrived late yesterday."],
+        ["دیروز دیر رسیدی.", "dirooz dir residi.", "You arrived late yesterday."],
+        ["دیروز دیر رسید.", "dirooz dir resid.", "She arrived late yesterday."],
+        ["دیروز دیر رسیدیم.", "dirooz dir residim.", "We arrived late yesterday."],
+        ["دیروز دیر رسیدین.", "dirooz dir residin.", "You arrived late yesterday."],
+        ["دیروز دیر رسیدن.", "dirooz dir residan.", "They arrived late yesterday."]
+      ]
+    },
+    {
+      "id": "have-a-car", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "taxi, metro, and travel", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["ماشین دارم.", "mâshin dâram.", "I have a car."],
+        ["ماشین داری.", "mâshin dâri.", "You have a car."],
+        ["ماشین داره.", "mâshin dâre.", "He has a car."],
+        ["ماشین داریم.", "mâshin dârim.", "We have a car."],
+        ["ماشین دارین.", "mâshin dârin.", "You have a car."],
+        ["ماشین دارن.", "mâshin dâran.", "They have a car."]
+      ]
+    },
+    {
+      "id": "know-persian", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "talking about work or study", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["فارسی بلدم.", "fârsi baladam.", "I know Persian."],
+        ["فارسی بلدی.", "fârsi baladi.", "You know Persian."],
+        ["فارسی بلده.", "fârsi balade.", "She knows Persian."],
+        ["فارسی بلدیم.", "fârsi baladim.", "We know Persian."],
+        ["فارسی بلدین.", "fârsi baladin.", "You know Persian."],
+        ["فارسی بلدن.", "fârsi baladan.", "They know Persian."]
+      ]
+    },
+    {
+      "id": "very-tired", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "describing how you feel", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["خیلی خسته~م.", "kheyli khastam.", "I'm very tired."],
+        ["خیلی خسته~ای.", "kheyli khaste'i.", "You're very tired."],
+        ["خیلی خسته~ست.", "kheyli khastast.", "He's very tired."],
+        ["خیلی خسته~ایم.", "kheyli khasteim.", "We're very tired."],
+        ["خیلی خسته~این.", "kheyli khasteyn.", "You're very tired."],
+        ["خیلی خسته~ن.", "kheyli khasten.", "They're very tired."]
+      ]
+    },
+    {
+      "id": "waiting-here", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "making plans with a friend", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["اینجا منتظرم.", "injâ montazeram.", "I'm waiting here."],
+        ["اینجا منتظری.", "injâ montazeri.", "You're waiting here."],
+        ["اینجا منتظره.", "injâ montazere.", "She's waiting here."],
+        ["اینجا منتظریم.", "injâ montazerim.", "We're waiting here."],
+        ["اینجا منتظرین.", "injâ montazerin.", "You're waiting here."],
+        ["اینجا منتظرن.", "injâ montazeran.", "They're waiting here."]
+      ]
+    },
+    {
+      "id": "was-home-last-night", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "talking about the past (what you did)", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["دیشب خونه بودم.", "dishab khune budam.", "I was home last night."],
+        ["دیشب خونه بودی.", "dishab khune budi.", "You were home last night."],
+        ["دیشب خونه بود.", "dishab khune bud.", "He was home last night."],
+        ["دیشب خونه بودیم.", "dishab khune budim.", "We were home last night."],
+        ["دیشب خونه بودین.", "dishab khune budin.", "You were home last night."],
+        ["دیشب خونه بودن.", "dishab khune budan.", "They were home last night."]
+      ]
+    },
+    {
+      "id": "went-to-doctor", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "at the doctor or pharmacy", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["دیروز رفتم دکتر.", "dirooz raftam doktor.", "I went to the doctor yesterday."],
+        ["دیروز رفتی دکتر.", "dirooz rafti doktor.", "You went to the doctor yesterday."],
+        ["دیروز رفت دکتر.", "dirooz raft doktor.", "She went to the doctor yesterday."],
+        ["دیروز رفتیم دکتر.", "dirooz raftim doktor.", "We went to the doctor yesterday."],
+        ["دیروز رفتین دکتر.", "dirooz raftin doktor.", "You went to the doctor yesterday."],
+        ["دیروز رفتن دکتر.", "dirooz raftan doktor.", "They went to the doctor yesterday."]
+      ]
+    },
+    {
+      "id": "not-ready-yet", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "making plans with a friend", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["هنوز آماده نیستم.", "hanuz âmâde nistam.", "I'm not ready yet."],
+        ["هنوز آماده نیستی.", "hanuz âmâde nisti.", "You're not ready yet."],
+        ["هنوز آماده نیست.", "hanuz âmâde nist.", "He's not ready yet."],
+        ["هنوز آماده نیستیم.", "hanuz âmâde nistim.", "We're not ready yet."],
+        ["هنوز آماده نیستین.", "hanuz âmâde nistin.", "You're not ready yet."],
+        ["هنوز آماده نیستن.", "hanuz âmâde nistan.", "They're not ready yet."]
+      ]
+    },
+    {
+      "id": "i-know-this", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "expressing an opinion", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["اینو می~دونم.", "ino midunam.", "I know this."],
+        ["اینو می~دونی.", "ino miduni.", "You know this."],
+        ["اینو می~دونه.", "ino midune.", "She knows this."],
+        ["اینو می~دونیم.", "ino midunim.", "We know this."],
+        ["اینو می~دونین.", "ino midunin.", "You know this."],
+        ["اینو می~دونن.", "ino midunan.", "They know this."]
+      ]
+    },
+    {
+      "id": "like-this", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "expressing an opinion", "tags": ["colloquial", "verb-agreement", "compound-verb"],
+      "forms": [
+        ["اینو دوست دارم.", "ino dust dâram.", "I like this."],
+        ["اینو دوست داری.", "ino dust dâri.", "You like this."],
+        ["اینو دوست داره.", "ino dust dâre.", "He likes this."],
+        ["اینو دوست داریم.", "ino dust dârim.", "We like this."],
+        ["اینو دوست دارین.", "ino dust dârin.", "You like this."],
+        ["اینو دوست دارن.", "ino dust dâran.", "They like this."]
+      ]
+    },
+    {
+      "id": "call-later", "kind": "pronoun", "subject": true, "d": 1,
+      "sit": "phone call with family", "tags": ["colloquial", "verb-agreement", "compound-verb"],
+      "forms": [
+        ["بعدا زنگ می~زنم.", "ba'dan zang mizanam.", "I'll call later."],
+        ["بعدا زنگ می~زنی.", "ba'dan zang mizani.", "You'll call later."],
+        ["بعدا زنگ می~زنه.", "ba'dan zang mizane.", "She'll call later."],
+        ["بعدا زنگ می~زنیم.", "ba'dan zang mizanim.", "We'll call later."],
+        ["بعدا زنگ می~زنین.", "ba'dan zang mizanin.", "You'll call later."],
+        ["بعدا زنگ می~زنن.", "ba'dan zang mizanan.", "They'll call later."]
+      ]
+    },
+    {
+      "id": "get-up-at-seven", "kind": "pronoun", "subject": true, "d": 2,
+      "sit": "talking about work or study", "tags": ["colloquial", "verb-agreement", "compound-verb"],
+      "forms": [
+        ["هر روز ساعت هفت پا می~شم.", "har ruz sâ'at haft pâ misham.", "I get up at seven every day."],
+        ["هر روز ساعت هفت پا می~شی.", "har ruz sâ'at haft pâ mishi.", "You get up at seven every day."],
+        ["هر روز ساعت هفت پا می~شه.", "har ruz sâ'at haft pâ mishe.", "She gets up at seven every day."],
+        ["هر روز ساعت هفت پا می~شیم.", "har ruz sâ'at haft pâ mishim.", "We get up at seven every day."],
+        ["هر روز ساعت هفت پا می~شین.", "har ruz sâ'at haft pâ mishin.", "You get up at seven every day."],
+        ["هر روز ساعت هفت پا می~شن.", "har ruz sâ'at haft pâ mishan.", "They get up at seven every day."]
+      ]
+    },
+    {
+      "id": "woke-up-late", "kind": "pronoun", "subject": true, "d": 2,
+      "sit": "apologising or explaining lateness", "tags": ["colloquial", "verb-agreement", "compound-verb"],
+      "forms": [
+        ["امروز دیر بیدار شدم.", "emruz dir bidâr shodam.", "I woke up late today."],
+        ["امروز دیر بیدار شدی.", "emruz dir bidâr shodi.", "You woke up late today."],
+        ["امروز دیر بیدار شد.", "emruz dir bidâr shod.", "He woke up late today."],
+        ["امروز دیر بیدار شدیم.", "emruz dir bidâr shodim.", "We woke up late today."],
+        ["امروز دیر بیدار شدین.", "emruz dir bidâr shodin.", "You woke up late today."],
+        ["امروز دیر بیدار شدن.", "emruz dir bidâr shodan.", "They woke up late today."]
+      ]
+    },
+    {
+      "id": "didnt-sleep-well", "kind": "pronoun", "subject": true, "d": 2,
+      "sit": "describing how you feel", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["دیشب خوب نخوابیدم.", "dishab khub nakhâbidam.", "I didn't sleep well last night."],
+        ["دیشب خوب نخوابیدی.", "dishab khub nakhâbidi.", "You didn't sleep well last night."],
+        ["دیشب خوب نخوابید.", "dishab khub nakhâbid.", "She didn't sleep well last night."],
+        ["دیشب خوب نخوابیدیم.", "dishab khub nakhâbidim.", "We didn't sleep well last night."],
+        ["دیشب خوب نخوابیدین.", "dishab khub nakhâbidin.", "You didn't sleep well last night."],
+        ["دیشب خوب نخوابیدن.", "dishab khub nakhâbidan.", "They didn't sleep well last night."]
+      ]
+    },
+    {
+      "id": "ate-nothing", "kind": "pronoun", "subject": true, "d": 2,
+      "sit": "describing how you feel", "tags": ["colloquial", "verb-agreement"],
+      "forms": [
+        ["امروز هیچی نخوردم.", "emruz hichi nakhordam.", "I haven't eaten anything today."],
+        ["امروز هیچی نخوردی.", "emruz hichi nakhordi.", "You haven't eaten anything today."],
+        ["امروز هیچی نخورد.", "emruz hichi nakhord.", "He hasn't eaten anything today."],
+        ["امروز هیچی نخوردیم.", "emruz hichi nakhordim.", "We haven't eaten anything today."],
+        ["امروز هیچی نخوردین.", "emruz hichi nakhordin.", "You haven't eaten anything today."],
+        ["امروز هیچی نخوردن.", "emruz hichi nakhordan.", "They haven't eaten anything today."]
+      ]
+    },
+    {
+      "id": "cant-come-tonight", "kind": "pronoun", "subject": true, "d": 2,
+      "sit": "making plans with a friend", "tags": ["colloquial", "subjunctive", "verb-agreement"],
+      "forms": [
+        ["امشب نمی~تونم بیام.", "emshab nemitunam biyâm.", "I can't come tonight."],
+        ["امشب نمی~تونی بیای.", "emshab nemituni biyây.", "You can't come tonight."],
+        ["امشب نمی~تونه بیاد.", "emshab nemitune biyâd.", "She can't come tonight."],
+        ["امشب نمی~تونیم بیایم.", "emshab nemitunim biyâym.", "We can't come tonight."],
+        ["امشب نمی~تونین بیاین.", "emshab nemitunin biyâyn.", "You can't come tonight."],
+        ["امشب نمی~تونن بیان.", "emshab nemitunan biyân.", "They can't come tonight."]
+      ]
+    },
+    {
+      "id": "have-to-leave-early", "kind": "pronoun", "subject": true, "d": 2,
+      "sit": "apologising or explaining lateness", "tags": ["colloquial", "subjunctive", "verb-agreement"],
+      "forms": [
+        ["باید زود برم.", "bâyad zud beram.", "I have to leave early."],
+        ["باید زود بری.", "bâyad zud beri.", "You have to leave early."],
+        ["باید زود بره.", "bâyad zud bere.", "He has to leave early."],
+        ["باید زود بریم.", "bâyad zud berim.", "We have to leave early."],
+        ["باید زود برین.", "bâyad zud berin.", "You have to leave early."],
+        ["باید زود برن.", "bâyad zud beran.", "They have to leave early."]
+      ]
+    },
+    {
+      "id": "cooking-now", "kind": "pronoun", "subject": true, "d": 2,
+      "sit": "hosting or visiting someone's home", "tags": ["colloquial", "verb-tense", "verb-agreement"],
+      "forms": [
+        ["دارم غذا درست می~کنم.", "dâram ghazâ dorost mikonam.", "I'm making food."],
+        ["داری غذا درست می~کنی.", "dâri ghazâ dorost mikoni.", "You're making food."],
+        ["داره غذا درست می~کنه.", "dâre ghazâ dorost mikone.", "She's making food."],
+        ["داریم غذا درست می~کنیم.", "dârim ghazâ dorost mikonim.", "We're making food."],
+        ["دارین غذا درست می~کنین.", "dârin ghazâ dorost mikonin.", "You're making food."],
+        ["دارن غذا درست می~کنن.", "dâran ghazâ dorost mikonan.", "They're making food."]
+      ]
+    },
+    {
+      "id": "lost-my-book", "kind": "pronoun", "d": 2,
+      "sit": "complaining about something not working", "tags": ["colloquial", "pronoun-clitic", "verb-agreement"],
+      "forms": [
+        ["کتابم رو گم کردم.", "ketâbam ro gom kardam.", "I lost my book."],
+        ["کتابت رو گم کردی.", "ketâbet ro gom kardi.", "You lost your book."],
+        ["کتابش رو گم کرد.", "ketâbesh ro gom kard.", "He lost his book."],
+        ["کتابمون رو گم کردیم.", "ketâbemun ro gom kardim.", "We lost our book."],
+        ["کتابتون رو گم کردین.", "ketâbetun ro gom kardin.", "You lost your book."],
+        ["کتابشون رو گم کردن.", "ketâbeshun ro gom kardan.", "They lost their book."]
+      ]
+    },
+    {
+      "id": "talked-to-my-friend", "kind": "pronoun", "d": 2,
+      "sit": "talking about the past (what you did)", "tags": ["colloquial", "pronoun-clitic", "verb-agreement"],
+      "forms": [
+        ["با دوستم حرف زدم.", "bâ dustam harf zadam.", "I talked to my friend."],
+        ["با دوستت حرف زدی.", "bâ dustet harf zadi.", "You talked to your friend."],
+        ["با دوستش حرف زد.", "bâ dustesh harf zad.", "He talked to his friend."],
+        ["با دوستمون حرف زدیم.", "bâ dustemun harf zadim.", "We talked to our friend."],
+        ["با دوستتون حرف زدین.", "bâ dustetun harf zadin.", "You talked to your friend."],
+        ["با دوستشون حرف زدن.", "bâ dusteshun harf zadan.", "They talked to their friend."]
+      ]
+    },
+    {
+      "id": "my-mum-is-home", "kind": "pronoun", "d": 1,
+      "sit": "phone call with family", "tags": ["colloquial", "pronoun-clitic"],
+      "cueEn": ["my", "your", "his / her", "our", "your (formal)", "their"],
+      "forms": [
+        ["مامانم خونه~ست.", "mâmânam khunast.", "My mum is at home."],
+        ["مامانت خونه~ست.", "mâmânet khunast.", "Your mum is at home."],
+        ["مامانش خونه~ست.", "mâmânesh khunast.", "His mum is at home."],
+        ["مامانمون خونه~ست.", "mâmânemun khunast.", "Our mum is at home."],
+        ["مامانتون خونه~ست.", "mâmânetun khunast.", "Your mum is at home."],
+        ["مامانشون خونه~ست.", "mâmâneshun khunast.", "Their mum is at home."]
+      ]
+    },
+    {
+      "id": "where-is-my-phone", "kind": "pronoun", "d": 1,
+      "sit": "complaining about something not working", "tags": ["colloquial", "pronoun-clitic"],
+      "cueEn": ["my", "your", "his / her", "our", "your (formal)", "their"],
+      "forms": [
+        ["گوشیم کجاست؟", "gushim kojâst?", "Where's my phone?"],
+        ["گوشیت کجاست؟", "gushit kojâst?", "Where's your phone?"],
+        ["گوشیش کجاست؟", "gushish kojâst?", "Where's his phone?"],
+        ["گوشیمون کجاست؟", "gushimun kojâst?", "Where's our phone?"],
+        ["گوشیتون کجاست؟", "gushitun kojâst?", "Where's your phone?"],
+        ["گوشیشون کجاست؟", "gushishun kojâst?", "Where's their phone?"]
+      ]
+    },
+    {
+      "id": "headache", "kind": "pronoun", "d": 1,
+      "sit": "at the doctor or pharmacy", "tags": ["colloquial", "pronoun-clitic"],
+      "forms": [
+        ["سرم درد می~کنه.", "saram dard mikone.", "I have a headache."],
+        ["سرت درد می~کنه.", "saret dard mikone.", "You have a headache."],
+        ["سرش درد می~کنه.", "saresh dard mikone.", "He has a headache."],
+        ["سرمون درد می~کنه.", "saremun dard mikone.", "We have a headache."],
+        ["سرتون درد می~کنه.", "saretun dard mikone.", "You have a headache."],
+        ["سرشون درد می~کنه.", "sareshun dard mikone.", "They have a headache."]
+      ]
+    },
+    {
+      "id": "i-forgot", "kind": "pronoun", "d": 2,
+      "sit": "apologising or explaining lateness", "tags": ["colloquial", "pronoun-clitic"],
+      "forms": [
+        ["یادم رفت.", "yâdam raft.", "I forgot."],
+        ["یادت رفت.", "yâdet raft.", "You forgot."],
+        ["یادش رفت.", "yâdesh raft.", "He forgot."],
+        ["یادمون رفت.", "yâdemun raft.", "We forgot."],
+        ["یادتون رفت.", "yâdetun raft.", "You forgot."],
+        ["یادشون رفت.", "yâdeshun raft.", "They forgot."]
+      ]
+    },
+    {
+      "id": "i-liked-it", "kind": "pronoun", "d": 2,
+      "sit": "expressing an opinion", "tags": ["colloquial", "pronoun-clitic"],
+      "forms": [
+        ["خوشم اومد.", "khosham umad.", "I liked it."],
+        ["خوشت اومد.", "khoshet umad.", "You liked it."],
+        ["خوشش اومد.", "khoshesh umad.", "He liked it."],
+        ["خوشمون اومد.", "khoshemun umad.", "We liked it."],
+        ["خوشتون اومد.", "khoshetun umad.", "You liked it."],
+        ["خوششون اومد.", "khosheshun umad.", "They liked it."]
+      ]
+    },
+    {
+      "id": "cold", "kind": "pronoun", "d": 1,
+      "sit": "describing how you feel", "tags": ["colloquial", "pronoun-clitic"],
+      "forms": [
+        ["سردمه.", "sardame.", "I'm cold."],
+        ["سردته.", "sardate.", "You're cold."],
+        ["سردشه.", "sardashe.", "He's cold."],
+        ["سردمونه.", "sardamune.", "We're cold."],
+        ["سردتونه.", "sardatune.", "You're cold."],
+        ["سردشونه.", "sardashune.", "They're cold."]
+      ]
+    },
+    {
+      "id": "hungry", "kind": "pronoun", "d": 1,
+      "sit": "describing how you feel", "tags": ["colloquial", "pronoun-clitic"],
+      "forms": [
+        ["گشنمه.", "goshname.", "I'm hungry."],
+        ["گشنته.", "goshnate.", "You're hungry."],
+        ["گشنشه.", "goshnashe.", "He's hungry."],
+        ["گشنمونه.", "goshnamune.", "We're hungry."],
+        ["گشنتونه.", "goshnatune.", "You're hungry."],
+        ["گشنشونه.", "goshnashune.", "They're hungry."]
+      ]
+    },
+    {
+      "id": "mum-called", "kind": "pronoun", "d": 1,
+      "sit": "phone call with family", "tags": ["colloquial", "pronoun-clitic", "preposition"],
+      "cueEn": ["me", "you", "him / her", "us", "you (formal)", "them"],
+      "forms": [
+        ["مامان بهم زنگ زد.", "mâmân behem zang zad.", "Mum called me."],
+        ["مامان بهت زنگ زد.", "mâmân behet zang zad.", "Mum called you."],
+        ["مامان بهش زنگ زد.", "mâmân behesh zang zad.", "Mum called him."],
+        ["مامان بهمون زنگ زد.", "mâmân behemun zang zad.", "Mum called us."],
+        ["مامان بهتون زنگ زد.", "mâmân behetun zang zad.", "Mum called you."],
+        ["مامان بهشون زنگ زد.", "mâmân beheshun zang zad.", "Mum called them."]
+      ]
+    },
+    {
+      "id": "ali-saw", "kind": "pronoun", "d": 2,
+      "sit": "talking about the past (what you did)", "tags": ["colloquial", "ra-marker", "pronoun-clitic"],
+      "cueEn": ["me", "you", "him / her", "us", "you (formal)", "them"],
+      "forms": [
+        ["علی دیروز منو دید.", "ali dirooz mano did.", "Ali saw me yesterday."],
+        ["علی دیروز تو رو دید.", "ali dirooz to ro did.", "Ali saw you yesterday."],
+        ["علی دیروز اونو دید.", "ali dirooz uno did.", "Ali saw her yesterday."],
+        ["علی دیروز ما رو دید.", "ali dirooz mâ ro did.", "Ali saw us yesterday."],
+        ["علی دیروز شما رو دید.", "ali dirooz shomâ ro did.", "Ali saw you yesterday."],
+        ["علی دیروز اونا رو دید.", "ali dirooz unâ ro did.", "Ali saw them yesterday."]
+      ]
+    },
+    {
+      "id": "come-with", "kind": "pronoun", "d": 2,
+      "sit": "making plans with a friend", "tags": ["colloquial", "pronoun-clitic", "preposition"],
+      "cueEn": ["me", "you", "him / her", "us", "you (formal)", "them"],
+      "forms": [
+        ["امشب باهام بیا.", "emshab bâhâm biyâ.", "Come with me tonight."],
+        null,
+        ["امشب باهاش بیا.", "emshab bâhâsh biyâ.", "Come with him tonight."],
+        ["امشب باهامون بیا.", "emshab bâhâmun biyâ.", "Come with us tonight."],
+        null,
+        ["امشب باهاشون بیا.", "emshab bâhâshun biyâ.", "Come with them tonight."]
+      ]
+    },
+    {
+      "id": "gift-is-for", "kind": "pronoun", "d": 2,
+      "sit": "hosting or visiting someone's home", "tags": ["colloquial", "pronoun-clitic", "ezafe"],
+      "cueEn": ["mine", "yours", "his / hers", "ours", "yours (formal)", "theirs"],
+      "forms": [
+        ["این کادو مال منه.", "in kâdo mâle mane.", "This gift is mine."],
+        ["این کادو مال توئه.", "in kâdo mâle tue.", "This gift is yours."],
+        ["این کادو مال اونه.", "in kâdo mâle une.", "This gift is his."],
+        ["این کادو مال ماست.", "in kâdo mâle mâst.", "This gift is ours."],
+        ["این کادو مال شماست.", "in kâdo mâle shomâst.", "This gift is yours."],
+        ["این کادو مال اوناست.", "in kâdo mâle unâst.", "This gift is theirs."]
+      ]
+    },
+
+    {
+      "id": "coffee-verb", "kind": "verb", "d": 1,
+      "sit": "ordering food or coffee", "tags": ["colloquial", "vocab-wrong"],
+      "forms": [
+        ["خواستن", "to want", "یه قهوه می~خوام.", "ye ghahve mikhâm.", "I want a coffee."],
+        ["لازم داشتن", "to need", "یه قهوه لازم دارم.", "ye ghahve lâzem dâram.", "I need a coffee."],
+        ["خریدن", "to buy", "یه قهوه می~خرم.", "ye ghahve mikharam.", "I'm buying a coffee."],
+        ["سفارش دادن", "to order", "یه قهوه سفارش می~دم.", "ye ghahve sefâresh midam.", "I'm ordering a coffee."],
+        ["خوردن", "to have (drink)", "یه قهوه می~خورم.", "ye ghahve mikhoram.", "I'm having a coffee."]
+      ]
+    },
+    {
+      "id": "go-home-modal", "kind": "verb", "d": 2,
+      "sit": "making plans with a friend", "tags": ["colloquial", "subjunctive"],
+      "forms": [
+        ["خواستن", "to want", "می~خوام برم خونه.", "mikhâm beram khune.", "I want to go home."],
+        ["باید", "must", "باید برم خونه.", "bâyad beram khune.", "I have to go home."],
+        ["تونستن", "can", "می~تونم برم خونه.", "mitunam beram khune.", "I can go home."],
+        ["بهتره", "had better", "بهتره برم خونه.", "behtare beram khune.", "I'd better go home."],
+        ["مجبور بودن", "to be forced to", "مجبورم برم خونه.", "majburam beram khune.", "I'm forced to go home."],
+        ["دوست داشتن", "to like to", "دوست دارم برم خونه.", "dust dâram beram khune.", "I'd like to go home."]
+      ]
+    },
+    {
+      "id": "come-tonight-modal", "kind": "verb", "d": 2,
+      "sit": "making plans with a friend", "tags": ["colloquial", "subjunctive"],
+      "forms": [
+        ["خواستن", "to want", "می~خوام امشب بیام.", "mikhâm emshab biyâm.", "I want to come tonight."],
+        ["نخواستن", "to not want", "نمی~خوام امشب بیام.", "nemikhâm emshab biyâm.", "I don't want to come tonight."],
+        ["تونستن", "can", "می~تونم امشب بیام.", "mitunam emshab biyâm.", "I can come tonight."],
+        ["نتونستن", "can't", "نمی~تونم امشب بیام.", "nemitunam emshab biyâm.", "I can't come tonight."],
+        ["باید", "must", "باید امشب بیام.", "bâyad emshab biyâm.", "I have to come tonight."],
+        ["نباید", "must not", "نباید امشب بیام.", "nabâyad emshab biyâm.", "I shouldn't come tonight."]
+      ]
+    },
+    {
+      "id": "tehran-motion", "kind": "verb", "d": 2,
+      "sit": "taxi, metro, and travel", "tags": ["colloquial", "vocab-wrong"],
+      "forms": [
+        ["رفتن", "to go", "فردا می~رم تهران.", "fardâ miram tehrân.", "I'm going to Tehran tomorrow."],
+        ["اومدن", "to come", "فردا میام تهران.", "fardâ miyam tehrân.", "I'm coming to Tehran tomorrow."],
+        ["برگشتن", "to go back", "فردا برمی~گردم تهران.", "fardâ barmigardam tehrân.", "I'm going back to Tehran tomorrow."],
+        ["رسیدن", "to arrive", "فردا می~رسم تهران.", "fardâ miresam tehrân.", "I'm getting to Tehran tomorrow."],
+        ["موندن", "to stay", "فردا می~مونم تهران.", "fardâ mimunam tehrân.", "I'm staying in Tehran tomorrow."]
+      ]
+    },
+    {
+      "id": "book-yesterday", "kind": "verb", "d": 2,
+      "sit": "talking about the past (what you did)", "tags": ["colloquial", "vocab-wrong"],
+      "forms": [
+        ["خریدن", "to buy", "دیروز یه کتاب خریدم.", "dirooz ye ketâb kharidam.", "I bought a book yesterday."],
+        ["خوندن", "to read", "دیروز یه کتاب خوندم.", "dirooz ye ketâb khundam.", "I read a book yesterday."],
+        ["پیدا کردن", "to find", "دیروز یه کتاب پیدا کردم.", "dirooz ye ketâb peydâ kardam.", "I found a book yesterday."],
+        ["گم کردن", "to lose", "دیروز یه کتاب گم کردم.", "dirooz ye ketâb gom kardam.", "I lost a book yesterday."],
+        ["فروختن", "to sell", "دیروز یه کتاب فروختم.", "dirooz ye ketâb forukhtam.", "I sold a book yesterday."],
+        ["گرفتن", "to get", "دیروز یه کتاب گرفتم.", "dirooz ye ketâb gereftam.", "I got a book yesterday."]
+      ]
+    },
+    {
+      "id": "every-day", "kind": "verb", "d": 2,
+      "sit": "talking about work or study", "tags": ["colloquial", "compound-verb"],
+      "forms": [
+        ["ورزش کردن", "to exercise", "هر روز ورزش می~کنم.", "har ruz varzesh mikonam.", "I exercise every day."],
+        ["فارسی خوندن", "to read Persian", "هر روز فارسی می~خونم.", "har ruz fârsi mikhunam.", "I read Persian every day."],
+        ["پیاده~روی کردن", "to go for a walk", "هر روز پیاده~روی می~کنم.", "har ruz piyâderavi mikonam.", "I go for a walk every day."],
+        ["فیلم دیدن", "to watch a film", "هر روز فیلم می~بینم.", "har ruz film mibinam.", "I watch a film every day."],
+        ["قهوه خوردن", "to drink coffee", "هر روز قهوه می~خورم.", "har ruz ghahve mikhoram.", "I drink coffee every day."],
+        ["با مامانم حرف زدن", "to talk to my mum", "هر روز با مامانم حرف می~زنم.", "har ruz bâ mâmânam harf mizanam.", "I talk to my mum every day."]
+      ]
+    },
+    {
+      "id": "think-its-right", "kind": "verb", "d": 3,
+      "sit": "expressing an opinion", "tags": ["colloquial", "vocab-wrong"],
+      "forms": [
+        ["فکر کردن", "to think", "فکر می~کنم درسته.", "fekr mikonam dorooste.", "I think it's right."],
+        ["به نظرم", "in my opinion", "به نظرم درسته.", "be nazaram dorooste.", "In my opinion it's right."],
+        ["مطمئن بودن", "to be sure", "مطمئنم درسته.", "motma'enam dorooste.", "I'm sure it's right."],
+        ["دونستن", "to know", "می~دونم درسته.", "midunam dorooste.", "I know it's right."],
+        ["حدس زدن", "to guess", "حدس می~زنم درسته.", "hads mizanam dorooste.", "I guess it's right."],
+        ["امیدوار بودن", "to hope", "امیدوارم درست باشه.", "omidvaram dorost bâshe.", "I hope it's right."]
+      ]
+    },
+    {
+      "id": "this-to-me", "kind": "verb", "d": 2,
+      "sit": "negotiating or asking for a favour", "tags": ["colloquial", "preposition", "vocab-wrong"],
+      "forms": [
+        ["دادن", "to give", "اینو بهم بده.", "ino behem bede.", "Give me this."],
+        ["نشون دادن", "to show", "اینو بهم نشون بده.", "ino behem neshun bede.", "Show me this."],
+        ["گفتن", "to tell", "اینو بهم بگو.", "ino behem begu.", "Tell me this."],
+        ["آوردن", "to bring", "اینو برام بیار.", "ino barâm biyâr.", "Bring me this."],
+        ["فرستادن", "to send", "اینو برام بفرست.", "ino barâm befrest.", "Send me this."],
+        ["خریدن", "to buy", "اینو برام بخر.", "ino barâm bekhar.", "Buy me this."]
+      ]
+    },
+
+    {
+      "id": "library-when", "kind": "phrase", "d": 2,
+      "sit": "talking about the past (what you did)", "tags": ["colloquial", "verb-tense"],
+      "forms": [
+        ["دیروز", "yesterday", "دیروز رفتم کتابخونه.", "dirooz raftam ketâbkhune.", "I went to the library yesterday."],
+        ["فردا", "tomorrow", "فردا می~رم کتابخونه.", "fardâ miram ketâbkhune.", "I'm going to the library tomorrow."],
+        ["همیشه", "always", "همیشه می~رم کتابخونه.", "hamishe miram ketâbkhune.", "I always go to the library."],
+        ["الان", "right now", "الان دارم می~رم کتابخونه.", "alân dâram miram ketâbkhune.", "I'm going to the library right now."],
+        ["قبلا هر روز", "back then, every day", "قبلا هر روز می~رفتم کتابخونه.", "ghablan har ruz miraftam ketâbkhune.", "I used to go to the library every day."],
+        ["تا حالا", "so far (not yet)", "تا حالا نرفتم کتابخونه.", "tâ hâlâ naraftam ketâbkhune.", "I haven't been to the library yet."]
+      ]
+    },
+    {
+      "id": "glass-of-water", "kind": "phrase", "d": 2,
+      "sit": "ordering food or coffee", "tags": ["colloquial", "formality"],
+      "forms": [
+        ["می~شه", "could you", "می~شه یه لیوان آب بدین؟", "mishe ye livân âb bedin?", "Could you give me a glass of water?"],
+        ["لطفا", "please", "لطفا یه لیوان آب بدین.", "lotfan ye livân âb bedin.", "Please give me a glass of water."],
+        ["ببخشید", "excuse me", "ببخشید، یه لیوان آب دارین؟", "bebakhshid, ye livân âb dârin?", "Excuse me, do you have a glass of water?"],
+        ["می~تونم", "can I", "می~تونم یه لیوان آب بگیرم؟", "mitunam ye livân âb begiram?", "Can I get a glass of water?"],
+        ["ممکنه", "is it possible", "ممکنه یه لیوان آب بدین؟", "momkene ye livân âb bedin?", "Is it possible to have a glass of water?"],
+        ["می~خوام", "I want", "یه لیوان آب می~خوام.", "ye livân âb mikhâm.", "I want a glass of water."]
+      ]
+    },
+    {
+      "id": "lets-go-cinema", "kind": "phrase", "d": 2,
+      "sit": "making plans with a friend", "tags": ["colloquial", "subjunctive"],
+      "forms": [
+        ["بیا", "come on", "بیا بریم سینما.", "biyâ berim sinemâ.", "Come on, let's go to the cinema."],
+        ["می~خوای", "do you want to", "می~خوای بریم سینما؟", "mikhây berim sinemâ?", "Do you want to go to the cinema?"],
+        ["نظرت چیه", "what do you think", "نظرت چیه بریم سینما؟", "nazaret chie berim sinemâ?", "What do you think about going to the cinema?"],
+        ["چطوره", "how about", "چطوره بریم سینما؟", "chetore berim sinemâ?", "How about going to the cinema?"],
+        ["حال داری", "are you up for it", "حال داری بریم سینما؟", "hâl dâri berim sinemâ?", "Are you up for going to the cinema?"],
+        ["شاید", "maybe", "شاید بریم سینما.", "shâyad berim sinemâ.", "Maybe we'll go to the cinema."]
+      ]
+    },
+    {
+      "id": "sorry-im-late", "kind": "phrase", "d": 2,
+      "sit": "apologising or explaining lateness", "tags": ["colloquial", "formality"],
+      "forms": [
+        ["ببخشید که", "sorry that", "ببخشید که دیر کردم.", "bebakhshid ke dir kardam.", "Sorry I'm late."],
+        ["معذرت می~خوام که", "I apologise that", "معذرت می~خوام که دیر کردم.", "ma'zerat mikhâm ke dir kardam.", "I apologise for being late."],
+        ["شرمنده", "(I'm) ashamed", "شرمنده، دیر کردم.", "sharmande, dir kardam.", "Sorry, I'm late."],
+        ["متاسفم که", "I'm sorry that", "متاسفم که دیر کردم.", "mota'assefam ke dir kardam.", "I'm sorry I'm late."],
+        ["ترافیک بود", "there was traffic", "ترافیک بود، دیر کردم.", "terâfik bud, dir kardam.", "There was traffic, so I'm late."],
+        ["ببخشید دیر شد", "sorry, it got late", "ببخشید، دیر شد.", "bebakhshid, dir shod.", "Sorry, it got late."]
+      ]
+    },
+    {
+      "id": "when-are-you-going", "kind": "phrase", "d": 1,
+      "sit": "making plans with a friend", "tags": ["colloquial", "word-order"],
+      "forms": [
+        ["کی", "when", "کی می~ری؟", "ki miri?", "When are you going?"],
+        ["کجا", "where", "کجا می~ری؟", "kojâ miri?", "Where are you going?"],
+        ["با کی", "with whom", "با کی می~ری؟", "bâ ki miri?", "Who are you going with?"],
+        ["چرا", "why", "چرا می~ری؟", "cherâ miri?", "Why are you going?"],
+        ["چطوری", "how", "چطوری می~ری؟", "chetori miri?", "How are you going?"],
+        ["ساعت چند", "what time", "ساعت چند می~ری؟", "sâ'at chand miri?", "What time are you going?"]
+      ]
+    },
+    {
+      "id": "when-did-you-buy", "kind": "phrase", "d": 2,
+      "sit": "shopping and asking prices", "tags": ["colloquial", "word-order"],
+      "forms": [
+        ["کی", "when", "اینو کی خریدی؟", "ino ki kharidi?", "When did you buy this?"],
+        ["کجا", "where", "اینو کجا خریدی؟", "ino kojâ kharidi?", "Where did you buy this?"],
+        ["چند", "how much", "اینو چند خریدی؟", "ino chand kharidi?", "How much did you pay for this?"],
+        ["چرا", "why", "اینو چرا خریدی؟", "ino cherâ kharidi?", "Why did you buy this?"],
+        ["از کی", "from whom", "اینو از کی خریدی؟", "ino az ki kharidi?", "Who did you buy this from?"],
+        ["واسه کی", "for whom", "اینو واسه کی خریدی؟", "ino vâse ki kharidi?", "Who did you buy this for?"]
+      ]
+    },
+    {
+      "id": "how-often-coffee", "kind": "phrase", "d": 2,
+      "sit": "small talk about weather or traffic", "tags": ["colloquial", "vocab-wrong"],
+      "forms": [
+        ["همیشه", "always", "همیشه قهوه می~خورم.", "hamishe ghahve mikhoram.", "I always drink coffee."],
+        ["معمولا", "usually", "معمولا قهوه می~خورم.", "ma'mulan ghahve mikhoram.", "I usually drink coffee."],
+        ["بعضی وقتا", "sometimes", "بعضی وقتا قهوه می~خورم.", "ba'zi vaghtâ ghahve mikhoram.", "Sometimes I drink coffee."],
+        ["خیلی کم", "very rarely", "خیلی کم قهوه می~خورم.", "kheyli kam ghahve mikhoram.", "I very rarely drink coffee."],
+        ["هیچ~وقت", "never", "هیچ~وقت قهوه نمی~خورم.", "hichvaght ghahve nemikhoram.", "I never drink coffee."]
+      ]
+    },
+    {
+      "id": "tired-didnt-come", "kind": "phrase", "d": 3,
+      "sit": "disagreeing politely", "tags": ["colloquial", "word-order"],
+      "forms": [
+        ["چون", "because", "نیومدم چون خسته بودم.", "nayumadam chon khaste budam.", "I didn't come because I was tired."],
+        ["برای همین", "so / that's why", "خسته بودم، برای همین نیومدم.", "khaste budam, barâye hamin nayumadam.", "I was tired, so I didn't come."],
+        ["ولی", "but", "خسته بودم ولی اومدم.", "khaste budam vali umadam.", "I was tired but I came."]
+      ]
+    }
+  ]
+}

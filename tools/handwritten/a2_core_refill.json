@@ -1,0 +1,246 @@
+{
+  "note": "The same, at A2.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "He got up and left.",
+      "fa": "بلند شد و رفت.",
+      "tr": "boland shod o raft.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بلند شد",
+          "boland shod",
+          "he got up",
+          "compound verb"
+        ],
+        [
+          "و",
+          "o",
+          "and",
+          "conjunction"
+        ],
+        [
+          "رفت",
+          "raft",
+          "left",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The music is too loud.",
+      "fa": "صدای موسیقی خیلی بلنده.",
+      "tr": "sedâye musighi kheyli bolande.",
+      "sit": "complaining about something not working",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "صدای",
+          "sedâye",
+          "the sound of",
+          "noun"
+        ],
+        [
+          "موسیقی",
+          "musighi",
+          "music",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "too",
+          "adverb"
+        ],
+        [
+          "بلنده",
+          "bolande",
+          "is loud",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Fruit is cheap at the market.",
+      "fa": "میوه تو بازار ارزونه.",
+      "tr": "mive tu bâzâr arzune.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "میوه",
+          "mive",
+          "fruit",
+          "noun"
+        ],
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "بازار",
+          "bâzâr",
+          "market",
+          "noun"
+        ],
+        [
+          "ارزونه",
+          "arzune",
+          "is cheap",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I've got something in my eye.",
+      "fa": "یه چیزی رفته تو چشمم.",
+      "tr": "ye chizi rafte tu cheshmam.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یه",
+          "ye",
+          "a",
+          "number"
+        ],
+        [
+          "چیزی",
+          "chizi",
+          "something",
+          "pronoun"
+        ],
+        [
+          "رفته",
+          "rafte",
+          "has gone",
+          "verb"
+        ],
+        [
+          "تو",
+          "tu",
+          "into",
+          "preposition"
+        ],
+        [
+          "چشمم",
+          "cheshmam",
+          "my eye",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Her husband is very kind.",
+      "fa": "شوهرش خیلی مهربونه.",
+      "tr": "shoharesh kheyli mehrabune.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "شوهرش",
+          "shoharesh",
+          "her husband",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "مهربونه",
+          "mehrabune",
+          "is kind",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The wedding was very good.",
+      "fa": "عروسی خیلی خوب بود.",
+      "tr": "arusi kheyli khub bud.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "عروسی",
+          "arusi",
+          "the wedding",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "خوب",
+          "khub",
+          "good",
+          "adjective"
+        ],
+        [
+          "بود",
+          "bud",
+          "was",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "The hotel is very expensive.",
+      "fa": "هتل خیلی گرونه.",
+      "tr": "hotel kheyli gerune.",
+      "sit": "taxi, metro, and travel",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هتل",
+          "hotel",
+          "hotel",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "گرونه",
+          "gerune",
+          "is expensive",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "note": "The same, at A2.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "I grew up in England.",
+      "fa": "تو انگلیس بزرگ شدم.",
+      "tr": "tu engelis bozorg shodam.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "انگلیس",
+          "engelis",
+          "England",
+          "noun"
+        ],
+        [
+          "بزرگ شدم",
+          "bozorg shodam",
+          "I grew up",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My mum is English and my dad is Iranian.",
+      "fa": "مامانم انگلیسیه و بابام ایرانیه.",
+      "tr": "mâmânam engelisie o bâbâm irânie.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "مامانم",
+          "mâmânam",
+          "my mum",
+          "noun"
+        ],
+        [
+          "انگلیسیه",
+          "engelisie",
+          "is English",
+          "adjective"
+        ],
+        [
+          "و",
+          "o",
+          "and",
+          "conjunction"
+        ],
+        [
+          "بابام",
+          "bâbâm",
+          "my dad",
+          "noun"
+        ],
+        [
+          "ایرانیه",
+          "irânie",
+          "is Iranian",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I work in an office.",
+      "fa": "تو یه دفتر کار می‌کنم.",
+      "tr": "tu ye daftar kâr mikonam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "یه",
+          "ye",
+          "an",
+          "number"
+        ],
+        [
+          "دفتر",
+          "daftar",
+          "office",
+          "noun"
+        ],
+        [
+          "کار می‌کنم",
+          "kâr mikonam",
+          "I work",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I work from home.",
+      "fa": "از خونه کار می‌کنم.",
+      "tr": "az khune kâr mikonam.",
+      "sit": "talking about work or study",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "از",
+          "az",
+          "from",
+          "preposition"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ],
+        [
+          "کار می‌کنم",
+          "kâr mikonam",
+          "I work",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I've been to Iran twice.",
+      "fa": "دو بار رفتم ایران.",
+      "tr": "do bâr raftam irân.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "دو",
+          "do",
+          "two",
+          "number"
+        ],
+        [
+          "بار",
+          "bâr",
+          "times",
+          "noun"
+        ],
+        [
+          "رفتم",
+          "raftam",
+          "I went",
+          "verb"
+        ],
+        [
+          "ایران",
+          "irân",
+          "Iran",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I haven't been to Iran yet.",
+      "fa": "هنوز ایران نرفتم.",
+      "tr": "hanuz irân naraftam.",
+      "sit": "talking about the past (what you did)",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "هنوز",
+          "hanuz",
+          "yet",
+          "adverb"
+        ],
+        [
+          "ایران",
+          "irân",
+          "Iran",
+          "noun"
+        ],
+        [
+          "نرفتم",
+          "naraftam",
+          "I haven't gone",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I want to go to Iran next year.",
+      "fa": "سال دیگه می‌خوام برم ایران.",
+      "tr": "sâle dige mikhâm beram irân.",
+      "sit": "talking about future plans",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "سال دیگه",
+          "sâle dige",
+          "next year",
+          "expression"
+        ],
+        [
+          "می‌خوام",
+          "mikhâm",
+          "I want",
+          "verb"
+        ],
+        [
+          "برم",
+          "beram",
+          "to go",
+          "verb"
+        ],
+        [
+          "ایران",
+          "irân",
+          "Iran",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I understand Persian, but at home I speak English.",
+      "fa": "فارسی می‌فهمم، ولی تو خونه انگلیسی حرف می‌زنم.",
+      "tr": "fârsi mifahmam, vali tu khune engelisi harf mizanam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "فارسی",
+          "fârsi",
+          "Persian",
+          "noun"
+        ],
+        [
+          "می‌فهمم",
+          "mifahmam",
+          "I understand",
+          "verb"
+        ],
+        [
+          "ولی",
+          "vali",
+          "but",
+          "conjunction"
+        ],
+        [
+          "تو",
+          "tu",
+          "at",
+          "preposition"
+        ],
+        [
+          "خونه",
+          "khune",
+          "home",
+          "noun"
+        ],
+        [
+          "انگلیسی",
+          "engelisi",
+          "English",
+          "noun"
+        ],
+        [
+          "حرف می‌زنم",
+          "harf mizanam",
+          "I speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "In my free time I play football.",
+      "fa": "تو وقت آزادم فوتبال بازی می‌کنم.",
+      "tr": "tu vaghte âzâdam futbâl bâzi mikonam.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "تو",
+          "tu",
+          "in",
+          "preposition"
+        ],
+        [
+          "وقت آزادم",
+          "vaghte âzâdam",
+          "my free time",
+          "noun"
+        ],
+        [
+          "فوتبال",
+          "futbâl",
+          "football",
+          "noun"
+        ],
+        [
+          "بازی می‌کنم",
+          "bâzi mikonam",
+          "I play",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I have a big family.",
+      "fa": "خانواده‌ی بزرگی دارم.",
+      "tr": "khânevâdeye bozorgi dâram.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "خانواده‌ی",
+          "khânevâdeye",
+          "family",
+          "noun"
+        ],
+        [
+          "بزرگی",
+          "bozorgi",
+          "a big",
+          "adjective"
+        ],
+        [
+          "دارم",
+          "dâram",
+          "I have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "All my family are in Iran.",
+      "fa": "همه‌ی خانواده‌م ایرانن.",
+      "tr": "hameye khânevâdam irânan.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "همه‌ی",
+          "hameye",
+          "all of",
+          "pronoun"
+        ],
+        [
+          "خانواده‌م",
+          "khânevâdam",
+          "my family",
+          "noun"
+        ],
+        [
+          "ایرانن",
+          "irânan",
+          "are in Iran",
+          "noun"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "I'm the eldest in my family.",
+      "fa": "بچه‌ی بزرگ خانواده‌م.",
+      "tr": "bacheye bozorge khânevâdam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بچه‌ی",
+          "bacheye",
+          "child",
+          "noun"
+        ],
+        [
+          "بزرگ",
+          "bozorge",
+          "eldest",
+          "adjective"
+        ],
+        [
+          "خانواده‌م",
+          "khânevâdam",
+          "of my family",
+          "noun"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

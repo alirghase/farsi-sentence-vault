@@ -1,0 +1,90 @@
+{
+  "note": "The same, at A2.",
+  "difficulty": 2,
+  "sentences": [
+    {
+      "en": "Remind me to call my mum.",
+      "fa": "یادم بنداز به مامانم زنگ بزنم.",
+      "tr": "yâdam bendâz be mâmânam zang bezanam.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "یادم",
+          "yâdam",
+          "my memory",
+          "noun"
+        ],
+        [
+          "بنداز",
+          "bendâz",
+          "throw",
+          "verb"
+        ],
+        [
+          "به",
+          "be",
+          "to",
+          "preposition"
+        ],
+        [
+          "مامانم",
+          "mâmânam",
+          "my mum",
+          "noun"
+        ],
+        [
+          "زنگ بزنم",
+          "zang bezanam",
+          "I call",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Yeah, what can you do.",
+      "fa": "آره دیگه، چی کار می‌شه کرد.",
+      "tr": "âre dige, chi kâr mishe kard.",
+      "sit": "expressing an opinion",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "آره",
+          "âre",
+          "yeah",
+          "expression"
+        ],
+        [
+          "دیگه",
+          "dige",
+          "well",
+          "particle"
+        ],
+        [
+          "چی کار",
+          "chi kâr",
+          "what",
+          "question word"
+        ],
+        [
+          "می‌شه",
+          "mishe",
+          "can be",
+          "verb"
+        ],
+        [
+          "کرد",
+          "kard",
+          "done",
+          "verb"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

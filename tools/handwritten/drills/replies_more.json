@@ -1,0 +1,606 @@
+{
+ "note": "More replies — shopping, the phone, family, the doctor, travel, plans, work, things going wrong, and more taarof. Same format as replies.json; kept in its own file so the first file's cards never move.",
+ "replies": [
+  [
+   "پنجاه هزار تومنه.",
+   "It's fifty thousand tomans.",
+   "یه کم گرونه، تخفیف نمی~دین؟",
+   "ye kam gerune, takhfif nemidin?",
+   "It's a bit expensive, won't you give a discount?",
+   [
+    "کمتر نمی~شه؟",
+    "باشه، می~خرم."
+   ],
+   2,
+   "shopping and asking prices"
+  ],
+  [
+   "کارت قبول نمی~کنیم، فقط نقد.",
+   "We don't take cards, only cash.",
+   "باشه، نقد می~دم.",
+   "bâshe, naghd midam.",
+   "Okay, I'll pay cash.",
+   [
+    "اینجا دستگاه خودپرداز هست؟"
+   ],
+   2,
+   "shopping and asking prices"
+  ],
+  [
+   "بسته~بندی کنم؟",
+   "Shall I wrap it?",
+   "بله لطفا، برای هدیه~ست.",
+   "bale lotfan, barâye hadiyeast.",
+   "Yes please, it's a gift.",
+   [
+    "نه، لازم نیست."
+   ],
+   2,
+   "shopping and asking prices"
+  ],
+  [
+   "این مدل تموم شده.",
+   "This model has sold out.",
+   "پس چه مدل دیگه~ای دارین؟",
+   "pas che model-e dige'i dârin?",
+   "Then what other models do you have?",
+   [
+    "کی می~رسه؟"
+   ],
+   2,
+   "shopping and asking prices"
+  ],
+  [
+   "بیست درصد تخفیف داریم.",
+   "We have twenty percent off.",
+   "عالیه، همین رو می~گیرم.",
+   "âliye, hamin ro migiram.",
+   "Great, I'll take this one.",
+   [
+    "پس این یکی رو می~خوام."
+   ],
+   2,
+   "shopping and asking prices"
+  ],
+  [
+   "گوشیت رو شارژ کردی؟",
+   "Have you charged your phone?",
+   "نه، یادم رفت.",
+   "na, yâdam raft.",
+   "No, I forgot.",
+   [
+    "آره، صد در صد شارژه."
+   ],
+   1,
+   "phone call with family"
+  ],
+  [
+   "وای~فای وصل شد؟",
+   "Did the Wi-Fi connect?",
+   "نه، رمز رو اشتباه زدم.",
+   "na, ramz ro eshtebâh zadam.",
+   "No, I typed the password wrong.",
+   [
+    "آره، وصل شد."
+   ],
+   2,
+   "phone call with family"
+  ],
+  [
+   "پیامم رو دیدی؟",
+   "Did you see my message?",
+   "ببخشید، هنوز ندیدم.",
+   "bebakhshid, hanuz nadidam.",
+   "Sorry, I haven't seen it yet.",
+   [
+    "آره، الان جواب می~دم."
+   ],
+   1,
+   "phone call with family"
+  ],
+  [
+   "صدات قطع و وصل می~شه.",
+   "Your voice keeps cutting out.",
+   "الان بهتر شد؟",
+   "alân behtar shod?",
+   "Is it better now?",
+   [
+    "دوباره زنگ می~زنم."
+   ],
+   2,
+   "phone call with family"
+  ],
+  [
+   "بچه~ها چطورن؟",
+   "How are the kids?",
+   "خوبن، مدرسه~ن.",
+   "khuban, madresan.",
+   "They're fine, they're at school.",
+   [
+    "همه خوبن، سلام می~رسونن."
+   ],
+   1,
+   "phone call with family"
+  ],
+  [
+   "پدربزرگت چطوره؟",
+   "How's your grandfather?",
+   "بهتره، مرسی که پرسیدی.",
+   "behtare, mersi ke porsidi.",
+   "He's better, thanks for asking.",
+   [
+    "خوبه، سلامتی."
+   ],
+   2,
+   "phone call with family"
+  ],
+  [
+   "عروسی کیه؟",
+   "When's the wedding?",
+   "ماه دیگه، حتما بیا.",
+   "mâhe dige, hatman biyâ.",
+   "Next month, you must come.",
+   [
+    "هنوز معلوم نیست."
+   ],
+   2,
+   "phone call with family"
+  ],
+  [
+   "دلت برای خونه تنگ نشده؟",
+   "Don't you miss home?",
+   "چرا، خیلی.",
+   "cherâ, kheyli.",
+   "I do, a lot.",
+   [
+    "یه کم."
+   ],
+   2,
+   "phone call with family"
+  ],
+  [
+   "رنگت پریده، حالت خوبه؟",
+   "You look pale, are you okay?",
+   "یه کم سرم گیج می~ره.",
+   "ye kam saram gij mire.",
+   "I'm a bit dizzy.",
+   [
+    "خوبم، فقط خسته~م."
+   ],
+   2,
+   "at the doctor or pharmacy"
+  ],
+  [
+   "دردت کجاست؟",
+   "Where does it hurt?",
+   "شکمم درد می~کنه.",
+   "shekamam dard mikone.",
+   "My stomach hurts.",
+   [
+    "پشتم درد می~کنه."
+   ],
+   1,
+   "at the doctor or pharmacy"
+  ],
+  [
+   "تب داری؟",
+   "Do you have a fever?",
+   "آره، دیشب سی و هشت بود.",
+   "âre, dishab si o hasht bud.",
+   "Yes, it was thirty-eight last night.",
+   [
+    "نه، تب ندارم."
+   ],
+   2,
+   "at the doctor or pharmacy"
+  ],
+  [
+   "چند وقته سرفه می~کنی؟",
+   "How long have you been coughing?",
+   "از دیروز.",
+   "az dirooz.",
+   "Since yesterday.",
+   [
+    "یه هفته~ست."
+   ],
+   2,
+   "at the doctor or pharmacy"
+  ],
+  [
+   "ببخشید، این اتوبوس به میدون می~ره؟",
+   "Excuse me, does this bus go to the square?",
+   "نه، باید یه ایستگاه برگردین.",
+   "na, bâyad ye istgâh bargardin.",
+   "No, you need to go back one stop.",
+   [
+    "بله، سوار شین."
+   ],
+   2,
+   "taxi, metro, and travel"
+  ],
+  [
+   "بلیت می~خواین؟",
+   "Do you want a ticket?",
+   "بله، دو تا لطفا.",
+   "bale, do tâ lotfan.",
+   "Yes, two please.",
+   [
+    "نه، دارم."
+   ],
+   1,
+   "taxi, metro, and travel"
+  ],
+  [
+   "پروازتون کی هست؟",
+   "When is your flight?",
+   "ساعت هشت شبه.",
+   "sâ'ate hashte shabe.",
+   "It's at eight in the evening.",
+   [
+    "فردا صبحه."
+   ],
+   2,
+   "taxi, metro, and travel"
+  ],
+  [
+   "چمدون دارین؟",
+   "Do you have any luggage?",
+   "فقط یه کیف دستی.",
+   "faghat ye kife dasti.",
+   "Just one hand bag.",
+   [
+    "بله، یه چمدون."
+   ],
+   2,
+   "taxi, metro, and travel"
+  ],
+  [
+   "آخر هفته فیلم خوبی دیدی؟",
+   "Did you see a good film at the weekend?",
+   "آره، یه فیلم ایرانی دیدم.",
+   "âre, ye filme irâni didam.",
+   "Yes, I saw an Iranian film.",
+   [
+    "نه، وقت نکردم."
+   ],
+   2,
+   "talking about the past (what you did)"
+  ],
+  [
+   "ورزش می~کنی؟",
+   "Do you exercise?",
+   "آره، هفته~ای سه بار می~رم باشگاه.",
+   "âre, hafte'i se bâr miram bâshgâh.",
+   "Yes, I go to the gym three times a week.",
+   [
+    "نه، متاسفانه وقت ندارم."
+   ],
+   2,
+   "making plans with a friend"
+  ],
+  [
+   "تابستون کجا می~ری؟",
+   "Where are you going in the summer?",
+   "هنوز نمی~دونم، شاید شمال.",
+   "hanuz nemidunam, shâyad shomâl.",
+   "I don't know yet, maybe the north.",
+   [
+    "می~رم پیش خانواده."
+   ],
+   2,
+   "talking about future plans"
+  ],
+  [
+   "برنامه~ت برای فردا چیه؟",
+   "What's your plan for tomorrow?",
+   "صبح کار دارم، عصر آزادم.",
+   "sobh kâr dâram, asr âzâdam.",
+   "I have work in the morning, I'm free in the evening.",
+   [
+    "هیچ برنامه~ای ندارم."
+   ],
+   2,
+   "talking about future plans"
+  ],
+  [
+   "می~خوای شنبه بریم کوه؟",
+   "Do you want to go hiking on Saturday?",
+   "آره، چه ساعتی؟",
+   "âre, che sâ'ati?",
+   "Yes, what time?",
+   [
+    "نه، شنبه کار دارم."
+   ],
+   1,
+   "making plans with a friend"
+  ],
+  [
+   "نظرت چیه شام بیرون بخوریم؟",
+   "How about we eat out tonight?",
+   "فکر خوبیه، کجا بریم؟",
+   "fekre khubie, kojâ berim?",
+   "Good idea, where shall we go?",
+   [
+    "من که حال ندارم."
+   ],
+   2,
+   "making plans with a friend"
+  ],
+  [
+   "امتحانت چطور بود؟",
+   "How was your exam?",
+   "بد نبود، ولی سخت بود.",
+   "bad nabud, vali sakht bud.",
+   "It wasn't bad, but it was hard.",
+   [
+    "خوب بود، فکر کنم قبول می~شم."
+   ],
+   2,
+   "talking about work or study"
+  ],
+  [
+   "چقدر کار داری؟",
+   "How much work do you have?",
+   "خیلی، تا شب مشغولم.",
+   "kheyli, tâ shab mashghulam.",
+   "A lot, I'm busy until night.",
+   [
+    "زیاد نیست."
+   ],
+   2,
+   "talking about work or study"
+  ],
+  [
+   "جلسه ساعت چنده؟",
+   "What time is the meeting?",
+   "ساعت ده، اتاق دو.",
+   "sâ'ate dah, otâghe do.",
+   "At ten, room two.",
+   [
+    "هنوز نمی~دونم."
+   ],
+   1,
+   "talking about work or study"
+  ],
+  [
+   "می~شه فایل رو برام بفرستی؟",
+   "Could you send me the file?",
+   "حتما، همین الان می~فرستم.",
+   "hatman, hamin alân mifrestam.",
+   "Sure, I'll send it right now.",
+   [
+    "بعدا می~فرستم."
+   ],
+   2,
+   "negotiating or asking for a favour"
+  ],
+  [
+   "کارت تموم شد؟",
+   "Have you finished your work?",
+   "تقریبا، نیم ساعت دیگه.",
+   "taghriban, nim sâ'at dige.",
+   "Almost, half an hour more.",
+   [
+    "آره، تموم شد."
+   ],
+   2,
+   "talking about work or study"
+  ],
+  [
+   "چرا اینقدر دیر کردی؟",
+   "Why were you so late?",
+   "ببخشید، اتوبوس نیومد.",
+   "bebakhshid, otobus nayumad.",
+   "Sorry, the bus didn't come.",
+   [
+    "ببخشید، ترافیک بود."
+   ],
+   2,
+   "apologising or explaining lateness"
+  ],
+  [
+   "اینجا چرا اینقدر شلوغه؟",
+   "Why is it so crowded here?",
+   "امروز تعطیلیه، همه اومدن.",
+   "emruz ta'tilie, hame umadan.",
+   "It's a holiday today, everyone has come.",
+   [
+    "نمی~دونم."
+   ],
+   2,
+   "small talk about weather or traffic"
+  ],
+  [
+   "چرا غذا سرد شده؟",
+   "Why has the food gone cold?",
+   "ببخشید، الان گرمش می~کنم.",
+   "bebakhshid, alân garmesh mikonam.",
+   "Sorry, I'll warm it up now.",
+   [
+    "الان یکی دیگه میارم."
+   ],
+   2,
+   "complaining about something not working"
+  ],
+  [
+   "کولر کار نمی~کنه.",
+   "The air conditioner isn't working.",
+   "الان یه نفر رو می~فرستم.",
+   "alân ye nafar ro miferestam.",
+   "I'll send someone right now.",
+   [
+    "ببخشید، الان درستش می~کنیم."
+   ],
+   2,
+   "complaining about something not working"
+  ],
+  [
+   "اشتباه حساب کردین.",
+   "You've added it up wrong.",
+   "ببخشید، الان درستش می~کنم.",
+   "bebakhshid, alân dorostesh mikonam.",
+   "Sorry, I'll fix it now.",
+   [
+    "بذارین دوباره حساب کنم."
+   ],
+   2,
+   "complaining about something not working"
+  ],
+  [
+   "بفرمایین میوه.",
+   "Please, have some fruit.",
+   "ممنون، سیرم.",
+   "mamnun, sirram.",
+   "Thank you, I'm full.",
+   [
+    "یه دونه می~خورم، ممنون."
+   ],
+   1,
+   "hosting or visiting someone's home"
+  ],
+  [
+   "شب اینجا بمونین.",
+   "Stay here tonight.",
+   "مزاحم نمی~شم، ممنون.",
+   "mozâhem nemisham, mamnun.",
+   "I won't impose, thank you.",
+   [
+    "لطف دارین، ولی باید برم."
+   ],
+   2,
+   "hosting or visiting someone's home"
+  ],
+  [
+   "این هدیه برای شماست.",
+   "This gift is for you.",
+   "وای، لطف کردین، نباید زحمت می~کشیدین.",
+   "vây, lotf kardin, nabâyad zahmat mikeshidin.",
+   "Oh, how kind, you shouldn't have gone to the trouble.",
+   [
+    "مرسی، خیلی قشنگه."
+   ],
+   2,
+   "compliments and thanking (taarof)"
+  ],
+  [
+   "خیلی خوش اومدین.",
+   "You're very welcome here.",
+   "ممنون، خیلی لطف دارین.",
+   "mamnun, kheyli lotf dârin.",
+   "Thank you, you're very kind.",
+   [
+    "مرسی، خوشحالم که اینجام."
+   ],
+   1,
+   "hosting or visiting someone's home"
+  ],
+  [
+   "ببخشید، پذیرایی خوبی نبود.",
+   "Sorry, the hospitality wasn't up to much.",
+   "این چه حرفیه، عالی بود.",
+   "in che harfie, âli bud.",
+   "What are you saying, it was wonderful.",
+   [
+    "اصلا، خیلی خوش گذشت."
+   ],
+   2,
+   "compliments and thanking (taarof)"
+  ],
+  [
+   "دست پختتون عالی بود.",
+   "Your cooking was excellent.",
+   "نوش جان، قابل نداشت.",
+   "nushe jân, ghâbel nadâsht.",
+   "Enjoy, it was nothing.",
+   [
+    "ممنون، لطف دارین."
+   ],
+   2,
+   "compliments and thanking (taarof)"
+  ],
+  [
+   "مبارکه! شنیدم قبول شدی.",
+   "Congratulations! I heard you passed.",
+   "ممنون، خیلی خوشحالم.",
+   "mamnun, kheyli khoshhâlam.",
+   "Thank you, I'm very happy.",
+   [
+    "مرسی، هنوز باورم نمی~شه."
+   ],
+   1,
+   "compliments and thanking (taarof)"
+  ],
+  [
+   "ناراحت نباش، درست می~شه.",
+   "Don't be upset, it'll be sorted.",
+   "ممنون، امیدوارم.",
+   "mamnun, omidvaram.",
+   "Thanks, I hope so.",
+   [
+    "آره، می~دونم."
+   ],
+   1,
+   "describing how you feel"
+  ],
+  [
+   "از چی ناراحتی؟",
+   "What are you upset about?",
+   "از کارم، خیلی استرس دارم.",
+   "az kâram, kheyli estres dâram.",
+   "About my work, I'm very stressed.",
+   [
+    "هیچی، حوصله~م سر رفته."
+   ],
+   2,
+   "describing how you feel"
+  ],
+  [
+   "مواظب خودت باش.",
+   "Look after yourself.",
+   "تو هم همین~طور.",
+   "to ham hamintor.",
+   "You too.",
+   [
+    "چشم، ممنون."
+   ],
+   1,
+   "compliments and thanking (taarof)"
+  ],
+  [
+   "به سلامتی!",
+   "Cheers!",
+   "به سلامتی، نوش.",
+   "be salâmati, nush.",
+   "Cheers, drink up.",
+   [
+    "به سلامتی همه."
+   ],
+   1,
+   "compliments and thanking (taarof)"
+  ],
+  [
+   "موفق باشی!",
+   "Good luck!",
+   "ممنون، ان~شاءالله.",
+   "mamnun, inshâllâh.",
+   "Thanks, God willing.",
+   [
+    "مرسی، لازم دارم."
+   ],
+   1,
+   "compliments and thanking (taarof)"
+  ],
+  [
+   "ببخشید، شما؟",
+   "Sorry, who are you?",
+   "من دوست علیم.",
+   "man duste alim.",
+   "I'm Ali's friend.",
+   [
+    "من همسایه~تونم."
+   ],
+   2,
+   "asking someone to repeat or clarify"
+  ]
+ ]
+}

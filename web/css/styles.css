@@ -1,0 +1,496 @@
+/* Ledger.
+ *
+ * Structure comes from horizontal rules and alignment — no cards, no shadows,
+ * no rounded containers. Numbers are tabular so columns line up like a balance
+ * sheet, which suits an app whose whole point is honest self-assessment.
+ */
+
+:root {
+  --paper: #fbfaf8;
+  --ink: #17171a;
+  --ink-soft: #5d5b57;
+  --ink-faint: #9c988f;
+  --rule: #e4e0d8;
+  --rule-strong: #17171a;
+  /* One ink, one alarm. Earlier drafts had blue, amber and green doing
+     decorative work; a ledger gets its hierarchy from weight and rules. */
+  --alarm: #9b2f26;
+
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+  --serif: ui-serif, Iowan Old Style, Palatino, Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+
+  --gutter: 22px;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+/* Any `display` rule on a class beats the UA's [hidden] rule on specificity
+   ties, so hidden elements keep rendering. This makes `hidden` actually mean
+   hidden, everywhere. */
+[hidden] { display: none !important; }
+
+/* The chrome is Persian, so no text here is letter-spaced or set in --mono:
+   both put gaps in a cursive script's joins (Safari spaces the letters apart,
+   a monospace font stretches each into a fixed-width cell). Tracked small
+   capitals are a Latin idiom; --mono is for figures and transliteration. */
+
+html, body {
+  margin: 0; height: 100%;
+  background: var(--paper); color: var(--ink);
+  font: 16px/1.55 var(--sans);
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rtl { direction: rtl; text-align: right; }
+
+button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; padding: 0; }
+/* Safari rounds buttons and inputs by default, which is why these controls
+   read as pills in a design that forbids rounded containers. */
+button, input, textarea, select { border-radius: 0; -webkit-appearance: none; appearance: none; }
+input, textarea { font: inherit; color: inherit; }
+
+/* --- the settings detour --- */
+.settings-screen {
+  position: fixed; inset: 0; z-index: 50; background: var(--paper);
+  display: flex; flex-direction: column; height: 100%; min-height: 0;
+}
+
+.screen-head {
+  padding: calc(env(safe-area-inset-top, 0px) + 20px) var(--gutter) 11px;
+  border-bottom: 1px solid var(--rule-strong);
+  flex: none;
+  display: flex; align-items: baseline; gap: 14px;
+}
+.screen-head h1 {
+  margin: 0; font-size: 15px; font-weight: 600;
+}
+#btn-settings-back { font-size: 18px; color: var(--ink-soft); min-width: 32px; }
+
+/* The single row geometry in the product: label left, tabular figure right,
+   hairline beneath, full-bleed rule, content inset by the gutter. Today, Weak
+   spots and Storage all use it, so the tables read as one system. */
+/* A Persian ledger reads right to left: labels on the right, figures on the
+   left, sharing a left edge. The app's chrome is Persian, so the tables follow
+   rather than keeping an English reading order with Persian words in it. */
+.ledger { border-bottom: 1px solid var(--rule); direction: rtl; }
+.ledger .ledger-row > span { text-align: right; }
+.ledger .ledger-row > b { text-align: left; }
+.ledger-row {
+  display: flex; align-items: baseline; gap: 14px;
+  /* Fixed pitch: a bigger figure must not make its row taller, or the ruled
+     rhythm wobbles and reads as a list with lines drawn on it. */
+  min-height: 46px; padding: 0 var(--gutter);
+  border-top: 1px solid var(--rule);
+}
+.ledger-row > * { align-self: center; }
+.ledger-row:first-child { border-top: 0; }
+.ledger-row > span { flex: 1; color: var(--ink-soft); font-size: 14px; }
+.ledger-row > b {
+  font-family: var(--mono); font-variant-numeric: tabular-nums;
+  font-weight: 600; font-size: 15px; text-align: right;
+}
+/* The one ledger left is the list of sentences you added yourself. */
+
+/* The primary idiom: full width, the action on the reading edge. */
+#btn-reveal {
+  display: block; width: 100%; text-align: right;
+  font-size: 19px; font-weight: 600;
+  padding: 15px var(--gutter);
+}
+
+
+/* --- ledger lists --- */
+.list {
+  flex: 1; min-height: 0; overflow-y: auto;
+  padding: 0 0 44px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.note { color: var(--ink-soft); font-size: 13px; margin: 0; }
+.note-faint { color: var(--ink-faint); font-size: 12px; margin: 6px 0 0; }
+/* --- settings --- */
+.settings .group { padding: 18px var(--gutter); border-bottom: 1px solid var(--rule); }
+/* A ledger inside a padded group would inherit the gutter twice and end with a
+   rule directly above the group's own rule. */
+.settings .group > .ledger { margin: 0 calc(-1 * var(--gutter)) -18px; border-bottom: 0; }
+.settings .group:last-child { border-bottom: 0; }
+.settings h2 {
+  direction: rtl; text-align: right;
+  margin: 0 0 14px; font-size: 12px;
+  color: var(--ink-faint); font-weight: 600;
+}
+.settings label { display: block; margin-bottom: 16px; font-size: 13px; color: var(--ink-soft); direction: rtl; text-align: right; }
+.settings label.row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0; }
+.settings label b {
+  /* The label reads right-to-left, so the figure belongs at the far (left)
+     edge. float:right would put it on top of the first word. */
+  float: left; color: var(--ink); font-family: var(--mono);
+  font-variant-numeric: tabular-nums; font-weight: 600;
+}
+.settings input:focus { outline: 0; }
+.settings input[type="text"],
+.settings input[type="email"],
+.settings input[type="password"] {
+  display: block; width: 100%; margin-top: 6px; padding: 8px 0;
+  border: 0; border-bottom: 1px solid var(--rule); background: none;
+  font-size: 15px; color: var(--ink);
+}
+.settings input[type="text"].rtl { direction: rtl; text-align: right; }
+.settings input[type="email"], .settings input[type="password"] { direction: ltr; text-align: left; }
+.account-email { margin: 0 0 14px; font-size: 15px; color: var(--ink); overflow-wrap: anywhere; }
+#account-form .button-row { margin-top: 4px; }
+/* The list of your own sentences: the Persian reads right-to-left, the remove
+   control sits at the opposite edge like every other figure in a ledger. */
+.bank-row { display: flex; align-items: center; gap: 12px; }
+.bank-row > span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bank-remove {
+  flex: none; width: 28px; height: 28px; font-size: 18px; line-height: 1;
+  color: var(--ink-faint);
+}
+.bank-remove:active { color: var(--alarm); }
+#btn-bank-add { margin-top: 14px; }
+/* The default range and checkbox are rounded pills and a system tick — the two
+   most prominent controls in Settings contradicting a design that forbids
+   rounded containers. Rebuilt square, from rules. */
+.settings input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  width: 100%; margin-top: 14px; height: 18px; background: transparent;
+}
+.settings input[type="range"]::-webkit-slider-runnable-track {
+  height: 1px; background: var(--rule);
+}
+.settings input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 3px; height: 18px; background: var(--ink);
+  border: 0; border-radius: 0; margin-top: -8px;
+}
+.settings input[type="range"]::-moz-range-track { height: 1px; background: var(--rule); }
+.settings input[type="range"]::-moz-range-thumb {
+  width: 3px; height: 18px; background: var(--ink); border: 0; border-radius: 0;
+}
+
+.settings input[type="checkbox"] {
+  -webkit-appearance: none; appearance: none;
+  width: 17px; height: 17px; border: 1px solid var(--ink); border-radius: 0;
+  background: var(--paper); position: relative; flex: none;
+}
+.settings input[type="checkbox"]:checked { background: var(--ink); }
+.settings input[type="checkbox"]:checked::after {
+  content: ''; position: absolute; inset: 4px;
+  background: var(--paper);
+}
+.button-row { display: flex; gap: 10px; }
+.button-row button {
+  flex: 1; font-size: 13px;
+  color: var(--ink); padding: 10px 0; border: 1px solid var(--rule);
+}
+.button-row button:active { background: var(--ink); color: var(--paper); }
+kbd {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-soft);
+  border: 1px solid var(--rule); padding: 0 4px;
+}
+.hint {
+  color: var(--ink-faint); font-size: 12px; margin: 8px 0 0;
+  /* Persian prose in an LTR block throws trailing punctuation to the far end
+     of the line — the full stop lands before the first word. */
+  direction: rtl; text-align: right;
+}
+.settings .hint + label { margin-top: 22px; }
+.settings .button-row + input + .hint { margin-top: 12px; }
+
+/* --- practice --- */
+.practice { position: fixed; inset: 0; z-index: 40; background: var(--paper);
+  display: flex; flex-direction: column; }
+
+.practice-head {
+  flex: none; display: flex; align-items: center; justify-content: space-between;
+  padding: calc(env(safe-area-inset-top, 0px) + 14px) var(--gutter) 12px;
+  border-bottom: 1px solid var(--rule-strong);
+}
+#btn-undo { font-size: 13px; color: var(--ink-soft); min-width: 44px; text-align: right; }
+#btn-settings { font-size: 13px; color: var(--ink-soft); }
+/* Write a sentence and Settings on one side, the round counter and Undo on
+   the other. The plus is the only thing in the app that creates something, so
+   it gets the corner your thumb reaches without moving. Settings lives up here
+   because the round never ends: a button at its end would never be seen. */
+.practice-head { justify-content: space-between; gap: 14px; }
+.head-left, .head-right { display: flex; align-items: center; gap: 14px; }
+#btn-compose {
+  font-size: 22px; line-height: 1; color: var(--ink-soft);
+  min-width: 44px; text-align: left; margin-top: -2px;
+}
+#btn-compose:active { color: var(--ink); }
+.progress {
+  font-family: var(--mono); font-variant-numeric: tabular-nums;
+  font-size: 12px; color: var(--ink-faint);
+}
+
+.card-scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 22px var(--gutter) 24px; }
+
+.badge {
+  margin: 0 0 18px; font-size: 12px; color: var(--ink-faint);
+}
+.prompt {
+  margin: 0; font-family: var(--serif); font-size: 31px; line-height: 1.3;
+}
+/* Before the reveal there is nothing else on the card, so the prompt sits in
+   the upper third rather than jammed under the header. */
+#card-view:not(.is-revealed) .prompt { margin-top: 6vh; }
+
+/* A transformation card's badge is an instruction, not a label: it is the
+   question, so it is set in ink rather than the faint grey of a direction. */
+.badge.is-instruction {
+  color: var(--paper); background: var(--ink);
+  display: inline-block; padding: 4px 9px;
+  font-weight: 600; direction: rtl;
+}
+/* What the stem means, under it, small. Present so the drill tests grammar
+   and not whether you remember the sentence. */
+.stem-en { margin: 10px 0 0; color: var(--ink-faint); font-size: 13px; }
+
+/* English and pronunciation when immersive: a small label that opens on a tap.
+   Underlined so it reads as something to press, not as a caption. */
+.is-peek {
+  display: inline-block; cursor: pointer; direction: rtl;
+  border-bottom: 1px dashed var(--ink-faint); padding-bottom: 1px;
+  font-family: inherit; font-size: 12px;
+}
+
+.typed {
+  width: 100%; margin-top: 22px; background: transparent;
+  border: 0; border-bottom: 1px solid var(--ink); border-radius: 0;
+  padding: 8px 0; font-size: 20px; font-family: var(--serif); resize: none;
+}
+.typed:focus { outline: 0; }
+
+.answer { border-left: 2px solid var(--ink); padding: 4px 0 4px 14px; margin-top: 26px; }
+.typed-echo {
+  margin: 0 0 12px; font-family: var(--serif); font-size: 18px;
+  color: var(--ink-faint); text-decoration: line-through;
+  text-decoration-color: var(--rule);
+}
+.typed-echo.is-match { color: var(--ink-soft); text-decoration: none; }
+/* A reply has many right answers; a miss is not a mistake to strike out. */
+.typed-echo.is-open { text-decoration: none; }
+.answer-text { margin: 0; font-family: var(--serif); font-size: 30px; line-height: 1.38; }
+.finglish { margin: 12px 0 0; color: var(--ink-soft); font-size: 14px; font-family: var(--mono); }
+/* Folded away it is the Persian word تلفظ, not a transliteration. */
+.finglish.is-peek { font-family: var(--sans); }
+.gloss { margin: 9px 0 0; color: var(--ink-faint); font-size: 13px; }
+
+/* Fixed height so revealing does not reflow the footer under the thumb that is
+   about to tap it. */
+.controls {
+  flex: none; min-height: 116px;
+  padding: 12px var(--gutter) calc(12px + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid var(--rule-strong);
+  display: flex; flex-direction: column; justify-content: center; gap: 10px;
+}
+
+/* --- verdict buttons --- */
+/* No colour and no gloss: these are two more cells in the ledger, distinguished
+   by position rather than decoration — destructive on the left, as everywhere
+   else in the app. Pressing inverts to ink, which is the only feedback needed
+   and matches how every other control here behaves. */
+.rating-row {
+  display: grid; grid-template-columns: 1fr 1fr;
+  margin: 0 calc(-1 * var(--gutter)) calc(-12px - env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid var(--rule-strong);
+}
+
+.verdict {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; padding: 18px 0 calc(16px + env(safe-area-inset-bottom, 0px));
+  color: var(--ink); background: var(--paper);
+  transition: background .1s, color .1s;
+}
+.verdict + .verdict { border-left: 1px solid var(--rule); }
+
+.verdict-word {
+  font-size: 24px; line-height: 1; font-weight: 500;
+  direction: rtl;
+}
+.verdict small {
+  font-size: 12px; font-variant-numeric: tabular-nums;
+  color: var(--ink-faint); direction: rtl;
+}
+
+.verdict:active { background: var(--ink); color: var(--paper); }
+.verdict:active small { color: rgba(251, 250, 248, .7); }
+
+.done-panel { padding: 48px 0; direction: rtl; }
+.done-panel .note { font-size: 15px; }
+.done-panel .note-faint { margin-top: 10px; }
+.done-row { display: flex; justify-content: flex-end; align-items: center; }
+.done-row button { font-size: 17px; padding: 8px 0; }
+#btn-again { font-size: 19px; font-weight: 600; }
+.done-panel h2 { margin: 0 0 6px; font-family: var(--serif); font-size: 24px; font-weight: 500; }
+
+/* --- toast --- */
+.toast {
+  position: fixed; left: var(--gutter); right: var(--gutter);
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 60;
+  background: var(--ink); color: var(--paper);
+  padding: 11px 14px; font-size: 13px; line-height: 1.4;
+}
+
+.settings select {
+  background: transparent; border: 0; border-bottom: 1px solid var(--rule);
+  padding: 6px 0; font-size: 14px; color: var(--ink); max-width: 58%;
+  text-align: right; text-align-last: right;
+}
+.settings select:focus { outline: 0; border-bottom-color: var(--ink); }
+
+/* Values that mix a Latin number with a Persian word need explicit direction:
+   in an LTR box the bidi algorithm puts "1 روز" on screen as "روز 1". */
+/* Inside an rtl ledger this no longer needs its own direction. */
+
+
+/* --- word map --- */
+.breakdown { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--rule); }
+/* Interlinear: one column per unit, Persian over its gloss, columns flowing
+   right to left with the sentence. */
+.map-row {
+  display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px;
+  direction: rtl;
+}
+.pair {
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  border: 1px solid var(--rule); padding: 6px 9px 5px;
+  line-height: 1.2; color: var(--ink);
+  transition: background .12s, border-color .12s, color .12s;
+}
+.pair-fa { font-size: 17px; direction: rtl; }
+.pair-en { font-size: 12px; color: var(--ink-soft); direction: ltr; }
+.pair.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.pair.on .pair-en { color: rgba(251, 250, 248, .75); }
+
+.map-detail {
+  margin: 6px 0 0; min-height: 30px;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+  font-size: 13px; color: var(--ink-faint);
+}
+.map-translit { font-family: var(--mono); font-size: 12px; color: var(--ink-soft); }
+.map-means { color: var(--ink); font-size: 14px; }
+.map-pos {
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+.map-note { font-size: 11px; font-style: italic; color: var(--ink-faint); width: 100%; }
+
+/* --- other acceptable answers --- */
+.alts { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--rule); }
+.alts-head {
+  margin: 0 0 8px; font-size: 11px;
+  color: var(--ink-faint); font-weight: 600;
+}
+.alt { margin: 0 0 6px; font-family: var(--serif); font-size: 19px; }
+
+/* Hover only where there is a real pointer; on touch it fires with the tap. */
+@media (hover: hover) {
+  .pair:hover { border-color: var(--ink); }
+}
+
+/* --- the reference screen --- */
+/* The same ledger rows as Settings, over a search rule. Persian on the reading
+   edge with its English beneath; level or count opposite, as a figure. */
+#btn-kb { font-size: 13px; color: var(--ink-soft); }
+#btn-kb-back { font-size: 18px; color: var(--ink-soft); min-width: 32px; }
+#screen-kb .screen-head h1 { direction: rtl; }
+.kb-search { flex: none; padding: 6px var(--gutter) 0; border-bottom: 1px solid var(--rule); }
+.kb-search input {
+  width: 100%; border: 0; background: none; padding: 10px 0;
+  font-size: 16px; color: var(--ink);
+}
+.kb-search input:focus { outline: 0; }
+.kb-search input::placeholder { color: var(--ink-faint); }
+
+.kb-ledger { border-bottom: 1px solid var(--rule); }
+.kb-row { width: 100%; text-align: right; padding-top: 8px; padding-bottom: 8px; }
+.kb-row > span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.kb .ledger-row > span { color: var(--ink); }
+.kb-fa { font-family: var(--serif); font-size: 18px; color: var(--ink); }
+.kb-sub { font-size: 12px; color: var(--ink-faint); direction: ltr; text-align: right; }
+.kb-mono { font-family: var(--mono); }
+.kb-gloss {
+  font-style: normal; font-size: 13px; color: var(--ink-soft);
+  direction: ltr; text-align: left; max-width: 48%;
+}
+.ledger .kb-row > b { font-size: 13px; color: var(--ink-faint); font-weight: 500; }
+@media (hover: hover) { .kb-row:hover { background: rgba(23, 23, 26, .03); } }
+.kb-row:active { background: var(--ink); }
+.kb-row:active * { color: var(--paper) !important; }
+
+.kb-pad { padding: 16px var(--gutter) 0; }
+.kb-pad > p { margin: 0 0 6px; }
+.kb-big { font-family: var(--serif); font-size: 34px; line-height: 1.3; }
+.kb-tr { font-family: var(--mono); font-size: 14px; color: var(--ink-soft); }
+.kb-tr .kb-en { font-family: var(--sans); }
+.kb-en { font-size: 15px; color: var(--ink); }
+.kb-note { font-size: 13px; color: var(--ink-soft); }
+.kb .hint a { color: var(--ink); text-decoration: underline; cursor: pointer; }
+.kb .hint b { font-family: var(--serif); font-weight: 500; color: var(--ink); font-size: 15px; }
+
+/* The one action on the screen: an ink block, like a drill's instruction. */
+.kb-practise {
+  display: inline-block; margin: 12px 0 4px; padding: 8px 14px;
+  background: var(--ink); color: var(--paper); font-size: 14px; font-weight: 600;
+}
+.kb-practise:active { background: var(--ink-soft); }
+
+.kb-section {
+  direction: rtl; text-align: right; margin: 22px 0 8px;
+  padding: 0 var(--gutter); font-size: 12px; font-weight: 600; color: var(--ink-faint);
+}
+.kb-pad .kb-section { padding: 0; }
+.kb-examples { padding-bottom: 4px; }
+.kb-example { padding: 8px 0; border-top: 1px solid var(--rule); }
+.kb-example p { margin: 0; }
+.kb-ex-fa { font-family: var(--serif); font-size: 18px; }
+
+.kb-h {
+  direction: rtl; text-align: right; margin: 22px 0 6px;
+  font-size: 14px; font-weight: 600;
+}
+.kb-h small { font-weight: 400; color: var(--ink-faint); font-size: 12px; margin-right: 6px; }
+.kb-table { width: 100%; border-collapse: collapse; direction: rtl; }
+.kb-table td { border-top: 1px solid var(--rule); padding: 7px 0; vertical-align: baseline; }
+.kb-table tr:last-child td { border-bottom: 1px solid var(--rule); }
+.kb-who { width: 3.2em; color: var(--ink-faint); font-size: 13px; }
+.kb-form { font-family: var(--serif); font-size: 18px; padding-left: 10px !important; }
+/* Stacked by its spans: display:flex on the cell itself would take it out of
+   the table. */
+.kb-cell-en { direction: ltr; text-align: left; font-size: 12px; color: var(--ink-soft); }
+.kb-cell-en > span { display: block; }
+.kb-cell-en .kb-mono { color: var(--ink-faint); font-size: 11px; }
+
+/* Grammar notes: prose, a few tables, examples set in the serif. */
+.kb-prose { font-size: 15px; padding-bottom: 24px; }
+.kb-prose p { margin: 0 0 12px; }
+.kb-prose h3 { margin: 22px 0 8px; font-size: 14px; font-weight: 600; }
+.kb-prose ul { margin: 0 0 12px; padding-left: 18px; }
+.kb-prose ul[dir="rtl"], .kb-prose li[dir="rtl"] { padding-right: 0; }
+.kb-prose b { font-family: var(--serif); font-weight: 500; font-size: 17px; }
+.kb-prose code { font-family: var(--mono); font-size: 13px; color: var(--ink-soft); }
+.kb-prose table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 14px; }
+.kb-prose th, .kb-prose td { border-top: 1px solid var(--rule); padding: 6px 8px 6px 0; text-align: left; }
+.kb-prose th { font-size: 12px; color: var(--ink-faint); font-weight: 600; }
+.kb-prose [dir="rtl"] { text-align: right; }
+
+/* From a word on a card to its page. */
+.map-kb { font-size: 12px; color: var(--ink); border-bottom: 1px solid var(--ink-faint); direction: rtl; }
+
+/* --- hover glosses --- */
+/* A Persian word whose English is one hover or tap away. Unmarked until you
+   reach for it, so the screen reads as Persian. */
+.w { cursor: help; }
+@media (hover: hover) { .w:hover { background: var(--rule); } }
+.w.is-glossed { background: var(--rule); }
+.gloss-tip {
+  position: fixed; z-index: 70; max-width: min(280px, calc(100vw - 16px));
+  background: var(--ink); color: var(--paper);
+  padding: 5px 9px; font-family: var(--sans); font-size: 13px; line-height: 1.35;
+  direction: ltr; pointer-events: none;
+}

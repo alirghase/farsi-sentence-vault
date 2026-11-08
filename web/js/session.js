@@ -1,0 +1,564 @@
+// Assembles a practice session from due reviews plus unseen sentences.
+
+import * as db from './db.js';
+import * as SM2 from './sm2.js';
+import { idsForLevel } from './levels.js';
+import { dealForm } from './kb.js';
+
+// enToFa is production — the skill that freezes. faToEn is reading.
+// A sentence schedules independently per direction, which ReviewState's
+// sentenceId::direction key already supports.
+//
+// word and form come from the knowledge base: a word card asks for one Persian
+// word or phrase from its English; a form card for one cell of a verb tense or
+// a pronoun table.
+export const DIRECTIONS = ['enToFa', 'faToEn', 'transform', 'reply', 'word', 'form'];
+
+/**
+ * A translation card has two directions and they schedule separately, because
+ * producing Persian and reading it are different skills. A transformation or a
+ * reply has one: you are always producing Persian, from Persian.
+ */
+export function directionsFor(sentence) {
+  if (sentence.kind === 'transform') return ['transform'];
+  if (sentence.kind === 'reply') return ['reply'];
+  if (sentence.kind === 'word') return ['word'];
+  if (sentence.kind === 'form') return ['form'];
+  return ['enToFa', 'faToEn'];
+}
+
+/** Cards whose prompt is a Persian sentence in `stem` rather than a translation. */
+export const isDrill = (direction) =>
+  direction === 'transform' || direction === 'reply' || direction === 'form';
+
+/**
+ * Share of new cards per direction. Weighted to production because producing
+ * Farsi is the skill that freezes; reading is easier.
+ */
+// Producing Persian is the gap, so it gets most of the round: translating into
+// Persian, transforming it and replying to it are 80% of it. Reading Persian
+// back is the easier direction and is there to keep the mapping honest, not to
+// fill time.
+//
+// Words and forms take a third of it: the sentence is still the unit that
+// freezes, but a sentence cannot be built from a word you cannot find or an
+// ending you have to think about.
+export const DEFAULT_WEIGHTS = {
+  enToFa: 0.3, faToEn: 0.1, transform: 0.15, reply: 0.1, word: 0.2, form: 0.15,
+};
+
+/**
+ * What a round may deal, by the focus chosen in Settings. Everything is the
+ * default; the others are for a sitting spent on one thing — words on a
+ * commute, the verbs before a conversation.
+ */
+export const FOCUS = {
+  all: DIRECTIONS,
+  sentences: ['enToFa', 'faToEn', 'transform', 'reply'],
+  words: ['word'],
+  forms: ['form'],
+};
+
+export const focusDirections = (focus) => FOCUS[focus] ?? FOCUS.all;
+
+/**
+ * The card in hand for a row. A form row picks its person here, each time it
+ * is dealt; everything else is shown as it is.
+ */
+export function deal(sentence, pick = Math.random) {
+  return sentence.kind === 'form' ? dealForm(sentence, pick) : sentence;
+}
+
+/**
+ * How many NEW sentences may be introduced in a day.
+ *
+ * Not a limit on practice — the round is endless, see extraCards. This is the
+ * rate at which unseen material enters, and it is capped because every new card
+ * becomes several reviews over the following fortnight. Take three hundred
+ * tonight and next week is unplayable; the cap is what keeps tomorrow finite.
+ *
+ * A number in the source rather than a setting: there is no screen to put a
+ * slider on, and one number that is the same on every device is easier to
+ * reason about than a stored one that silently differs from the default.
+ */
+export const NEW_PER_DAY = 40;
+
+/**
+ * A sentence you wrote yourself.
+ *
+ * These are exempt from the daily new-card cap. The cap exists so you cannot
+ * bury yourself under unfamiliar material; a sentence you just typed in is
+ * neither unfamiliar nor accidental, and telling someone who added one to come
+ * back tomorrow is the opposite of why the bank exists.
+ */
+export const isOwn = (sentence) => sentence.source === 'custom';
+
+/**
+ * Whether an unseen sentence may be introduced as a new card.
+ *
+ * One rule, used by both counts() and build(): they each had their own copy once
+ * and the copies drifted, so the end-of-round count promised new cards a
+ * session then refused to serve.
+ *
+ * A transformation works on a sentence you already know, so it waits until its
+ * stem has been seen. `unseen` is the set of deck sentences you have not met.
+ * A sentence marked `first` is one you want to be able to say now, whatever
+ * its level.
+ */
+export function eligibleAsNew(sentence, levelIds, unseen = new Set()) {
+  if (sentence.kind === 'transform' && unseen.has(sentence.stemId)) return false;
+  return !levelIds || levelIds.has(sentence.id) || Boolean(sentence.first);
+}
+
+/** Bundle ids of the sentences with no review yet, in either direction. */
+export function unseenSentences(sentences, reviews) {
+  const met = new Set(reviews.map((r) => r.sentenceId));
+  return new Set(sentences.filter((s) => !met.has(s.id)).map((s) => s.seedId ?? s.id));
+}
+
+/**
+ * The order new cards are introduced in; a stable sort, so ties stay shuffled.
+ *
+ * Your own sentences first: you wrote one down because you wanted it now. Then
+ * any batch marked `first` (the things you most want to be able to say), then
+ * the sentences most made of core words (`core`, set by core/bank.py), so the
+ * words everyday speech is mostly made of come before the ones it rarely needs.
+ */
+export function newCardOrder(a, b) {
+  return (isOwn(b.sentence) - isOwn(a.sentence))
+    || (Boolean(b.sentence.first) - Boolean(a.sentence.first))
+    || ((b.sentence.core ?? 0) - (a.sentence.core ?? 0));
+}
+
+export function reviewKey(sentenceId, direction) {
+  return `${sentenceId}::${direction}`;
+}
+
+export function promptFor(sentence, direction) {
+  if (isDrill(direction)) return sentence.stem;
+  return direction === 'faToEn' ? sentence.farsiText : sentence.englishText;
+}
+
+export function answerFor(sentence, direction) {
+  return direction === 'faToEn' ? sentence.englishText : sentence.farsiText;
+}
+
+/**
+ * What is waiting: reviews due, and new cards that may still be introduced.
+ *
+ * `new` is bounded by the day's remaining allowance, not the raw count of unseen
+ * cards — with a thousand sentences that count would sit pinned and never move
+ * as you work.
+ */
+export async function counts(now = Date.now(), newPerDay = NEW_PER_DAY, level = null, focus = 'all') {
+  const [sentences, reviews, attempts] = await Promise.all([
+    db.getAll(db.STORE.sentences),
+    db.getAll(db.STORE.reviews),
+    db.getAll(db.STORE.attempts),
+  ]);
+  const sentenceCount = sentences.length;
+  const levelIds = level ? idsForLevel(sentences, level) : null;
+
+  const startOfDay = new Date(now);
+  startOfDay.setHours(0, 0, 0, 0);
+  const dayStart = startOfDay.getTime();
+
+  const allowed = new Set(focusDirections(focus));
+  const due = reviews.filter((r) => r.dueDate <= now && allowed.has(r.direction)).length;
+
+  // Unseen counts only what is actually reachable at the current level.
+  const scheduled = new Set(reviews.map((r) => r.key));
+  const unmet = unseenSentences(sentences, reviews);
+  let unseenSeed = 0;
+  let unseenOwn = 0;
+  for (const s of sentences) {
+    if (!eligibleAsNew(s, levelIds, unmet)) continue;
+    for (const d of directionsFor(s)) {
+      if (!allowed.has(d) || scheduled.has(reviewKey(s.id, d))) continue;
+      if (isOwn(s)) unseenOwn += 1; else unseenSeed += 1;
+    }
+  }
+  const unseen = unseenSeed + unseenOwn;
+
+  const newToday = introducedSince(reviews, dayStart);
+  const reviewedToday = attempts.filter((a) => a.createdAt >= dayStart).length;
+
+  // The cap governs bundled cards only; your own are always available.
+  const allowance = Math.max(0, newPerDay - newToday);
+  const introducible = unseenOwn + Math.min(unseenSeed, allowance);
+  return {
+    due,
+    new: introducible,
+    unseen,
+    newToday,
+    allowance,
+    reviewedToday,
+    sentenceCount,
+    total: due + introducible,
+  };
+}
+
+/**
+ * Cards first seen since `since`.
+ *
+ * Reviews carry `introducedAt` from the first rating on. Rows written before
+ * that field existed fall back to "reached its first repetition since", which
+ * miscounts a relearned card as new and a failed new card as not — close
+ * enough for old rows, and it stops mattering after a day.
+ */
+export function introducedSince(reviews, since) {
+  return reviews.filter((r) => (r.introducedAt
+    ?? (r.repetitions === 1 ? r.lastReviewed ?? 0 : 0)) >= since).length;
+}
+
+/**
+ * Build a session.
+ *
+ * Review states are created lazily: materialising two rows for every sentence
+ * up front would mean 800 rows for a 400-sentence bank the learner has not
+ * touched yet.
+ */
+export async function build({
+  limit,
+  maxNew = limit,
+  weights = DEFAULT_WEIGHTS,
+  level = null,
+  focus = 'all',
+  now = Date.now(),
+}) {
+  const [sentences, reviews] = await Promise.all([
+    db.getAll(db.STORE.sentences),
+    db.getAll(db.STORE.reviews),
+  ]);
+  if (!sentences.length) return [];
+
+  const byKey = new Map(reviews.map((r) => [r.key, r]));
+  // New cards are restricted to the current level; due reviews are not, so
+  // earlier levels keep resurfacing on their own schedule.
+  const levelIds = level ? idsForLevel(sentences, level) : null;
+  const unseen = unseenSentences(sentences, reviews);
+  // Filtered here, before select(): its backfill takes from any direction in
+  // the pools it is given, so a words-only round handed the whole deck would
+  // fill up with sentences.
+  const allowed = focusDirections(focus);
+
+  const due = [];
+  const fresh = [];
+
+  for (const row of sentences) {
+    const sentence = deal(row);
+    for (const direction of directionsFor(sentence)) {
+      if (!allowed.includes(direction)) continue;
+      const key = reviewKey(sentence.id, direction);
+      const existing = byKey.get(key);
+      if (existing) {
+        if (existing.dueDate <= now) {
+          due.push({ sentence, direction, review: existing, isNew: false });
+        }
+      } else if (eligibleAsNew(sentence, levelIds, unseen)) {
+        // New cards are gated to the current level. Due reviews above are not,
+        // so levels already passed keep resurfacing on their own schedule.
+        fresh.push({
+          sentence,
+          direction,
+          review: { key, sentenceId: sentence.id, direction, ...SM2.newState(), dueDate: now },
+          isNew: true,
+        });
+      }
+    }
+  }
+
+  due.sort((a, b) => a.review.dueDate - b.review.dueDate);
+  shuffle(fresh);
+  fresh.sort(newCardOrder);
+
+  const chosen = select(due, fresh, limit, weights, allowed, maxNew);
+  // A session that front-loads every review and back-loads every new card feels
+  // like two different activities.
+  shuffle(chosen);
+  return chosen;
+}
+
+/**
+ * Fill the session honouring the direction weights, preferring due cards.
+ *
+ * Weights are normalised over the directions given, so a zeroed direction
+ * redistributes its share rather than leaving the session short.
+ *
+ * Two hard limits hold through the backfill as well as the main pass:
+ * - at most `maxNew` unseen cards, so the day's new-card allowance is real
+ *   rather than something a lopsided due pile can leak past;
+ * - one card per sentence. The two directions of a sentence are each other's
+ *   answer, so meeting both in one sitting turns the second into reading back
+ *   what you saw a minute ago.
+ */
+export function select(due, fresh, limit, weights, directions = DIRECTIONS, maxNew = limit) {
+  const total = directions.reduce((sum, d) => sum + (weights[d] ?? 0), 0) || 1;
+
+  const remaining = {};
+  let allocated = 0;
+  directions.forEach((d, i) => {
+    const share = i === directions.length - 1
+      ? limit - allocated                       // last one absorbs the rounding
+      : Math.round((limit * (weights[d] ?? 0)) / total);
+    remaining[d] = Math.max(0, share);
+    allocated += remaining[d];
+  });
+
+  const chosen = [];
+  const sentences = new Set();
+  let newTaken = 0;
+
+  const take = (card) => {
+    if (sentences.has(card.sentence.id)) return false;
+    // maxNew is the day's budget for bundled cards. Your own sentences are
+    // spent from nobody's budget — see isOwn.
+    const budgeted = card.isNew && !isOwn(card.sentence);
+    if (budgeted && newTaken >= maxNew) return false;
+    chosen.push(card);
+    sentences.add(card.sentence.id);
+    if (budgeted) newTaken += 1;
+    return true;
+  };
+
+  for (const pool of [due, fresh]) {
+    for (const card of pool) {
+      if (chosen.length >= limit) break;
+      if ((remaining[card.direction] ?? 0) <= 0) continue;
+      if (take(card)) remaining[card.direction] -= 1;
+    }
+  }
+
+  // If one direction ran dry, backfill rather than returning a short session.
+  // Both pools are already level- and kind-filtered, so this cannot reintroduce
+  // off-level material.
+  for (const pool of [due, fresh]) {
+    for (const card of pool) {
+      if (chosen.length >= limit) break;
+      take(card);
+    }
+  }
+  return chosen;
+}
+
+/**
+ * Cards for drilling past the day's plan.
+ *
+ * The scheduled queue is finite on purpose: due reviews plus a capped number of
+ * new sentences. Practice is not. Once the plan runs out the round keeps going
+ * with cards you have already met, hardest first.
+ *
+ * These deliberately do NOT touch the schedule — see `extra` in recordAttempt.
+ * `exclude` is the set of cardIds already dealt this round, so a top-up works
+ * through everything you know before coming round again.
+ */
+export async function extraCards(limit, { exclude = new Set(), focus = 'all' } = {}) {
+  const [sentences, reviews] = await Promise.all([
+    db.getAll(db.STORE.sentences),
+    db.getAll(db.STORE.reviews),
+  ]);
+  const byId = new Map(sentences.map((s) => [s.id, s]));
+
+  const allowed = new Set(focusDirections(focus));
+  const pool = reviews
+    .filter((r) => byId.has(r.sentenceId) && allowed.has(r.direction))
+    .filter((r) => !exclude.has(`${r.sentenceId}::${r.direction}`))
+    .sort(extraOrder);
+
+  // Shuffled within the batch: the order cards were first met in is not one
+  // worth replaying card for card.
+  return shuffle(pool.slice(0, limit)).map((review) => ({
+    sentence: deal(byId.get(review.sentenceId)),
+    direction: review.direction,
+    review,
+    isNew: false,
+    // The flag the rest of the app reads to leave the schedule alone.
+    extra: true,
+  }));
+}
+
+/**
+ * Which known cards extra practice reaches for first: the ones you find hardest
+ * (lowest ease, which every miss lowers), then the ones you met longest ago.
+ */
+export function extraOrder(a, b) {
+  return ((a.easeFactor ?? 2.5) - (b.easeFactor ?? 2.5))
+    || ((a.lastReviewed ?? 0) - (b.lastReviewed ?? 0));
+}
+
+/**
+ * A round of just these rows — a verb, a topic, a pronoun table — chosen from
+ * the reference screen.
+ *
+ * Each row is dealt the way the scheduler would treat it on its own: due
+ * reviews as reviews, rows never met as new cards (you asked for them, so the
+ * daily cap does not stop them), and rows known but not yet due as extra
+ * practice, which leaves their schedule alone for the reason given in
+ * recordAttempt.
+ */
+export async function focusedCards(ids, now = Date.now()) {
+  const wanted = new Set(ids);
+  const [sentences, reviews] = await Promise.all([
+    db.getAll(db.STORE.sentences),
+    db.getAll(db.STORE.reviews),
+  ]);
+  const byKey = new Map(reviews.map((r) => [r.key, r]));
+  const cards = [];
+  for (const row of sentences) {
+    if (!wanted.has(row.id) && !wanted.has(row.seedId)) continue;
+    const sentence = deal(row);
+    for (const direction of directionsFor(sentence)) {
+      const key = reviewKey(sentence.id, direction);
+      const review = byKey.get(key);
+      if (!review) {
+        cards.push({
+          sentence, direction, isNew: true,
+          review: { key, sentenceId: sentence.id, direction, ...SM2.newState(), dueDate: now },
+        });
+      } else {
+        cards.push({ sentence, direction, review, isNew: false, extra: review.dueDate > now });
+      }
+    }
+  }
+  return shuffle(cards);
+}
+
+export function cardId(card) {
+  return reviewKey(card.sentence.id, card.direction);
+}
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+/**
+ * How long an answer should take, in ms.
+ *
+ * Scales with length and level: "fast" for a nine-word B1 sentence is not fast
+ * for a three-word A1 one, and a fixed target would punish the harder material
+ * for being harder.
+ */
+export function targetMs(sentence, direction) {
+  const words = (sentence.farsiText ?? '').trim().split(/\s+/).length;
+  const base = 4000 + words * 500;
+  // Producing Farsi is slower than reading it, and transforming is slower
+  // still — you have to parse the stem before you can change it. Replying
+  // means finding a sentence of your own, which is slower again.
+  const multiplier = { enToFa: 1.15, transform: 1.3, reply: 1.5 }[direction] ?? 1;
+  return Math.round(base * multiplier);
+}
+
+/**
+ * Record one review: persist the attempt and advance the schedule.
+ *
+ * Returns what `undoAttempt` needs to put everything back: the review as it was
+ * before (null for a card never rated until now) and the attempt written.
+ */
+export async function recordAttempt({ card, rating, typedAnswer = null, msToReveal = null }) {
+  const now = Date.now();
+  const quality = SM2.RATING_QUALITY[rating];
+  const advanced = SM2.next(card.review, quality);
+  const previous = await db.get(db.STORE.reviews, card.review.key);
+
+  const review = {
+    ...card.review,
+    ...advanced,
+    introducedAt: card.review.introducedAt ?? previous?.introducedAt ?? now,
+    lastReviewed: now,
+    dueDate: SM2.dueDate(advanced, now),
+  };
+
+  const attempt = {
+    id: crypto.randomUUID(),
+    sentenceId: card.sentence.id,
+    direction: card.direction,
+    mode: typedAnswer ? 'typed' : 'speakSelfRate',
+    selfRating: rating,
+    typedAnswer: typedAnswer || null,
+    // Answer speed, recorded but not yet used by anything.
+    msToReveal,
+    targetMs: targetMs(card.sentence, card.direction),
+    createdAt: now,
+  };
+
+  // Extra practice records that it happened and nothing else.
+  //
+  // Massed repetition carries no information about how long you will remember
+  // something — you saw it a minute ago — so letting it move a due date would
+  // feed the scheduler the one input it must not have. The card you drilled
+  // five times tonight is still due when it was due.
+  const writes = [db.put(db.STORE.attempts, attempt)];
+  if (!card.extra) writes.push(db.put(db.STORE.reviews, review));
+  await Promise.all(writes);
+
+  return { attempt, review: card.extra ? card.review : review, previous: previous ?? null };
+}
+
+/**
+ * Reverse a `recordAttempt`: restore the schedule and drop the attempt. A
+ * mis-tap on a one-tap binary rating is common on a phone, and without this
+ * it silently resets a card that was fine.
+ */
+export async function undoAttempt({ card, attempt, previous }) {
+  const writes = [db.remove(db.STORE.attempts, attempt.id)];
+  // An extra-practice attempt never wrote a review, so there is none to put
+  // back — and removing one here would delete a real schedule.
+  if (!card.extra) {
+    writes.push(previous
+      ? db.put(db.STORE.reviews, previous)
+      : db.remove(db.STORE.reviews, card.review.key));
+  }
+  await Promise.all(writes);
+}
+
+
+/**
+ * Does a typed answer match the reference, or one of the listed alternatives?
+ *
+ * Deliberately forgiving about what a phone keyboard varies and strict about
+ * everything else. Arabic ي/ك for Persian ی/ک, short-vowel marks, punctuation,
+ * and whether می‌ was joined with a half-space, a space or nothing are all
+ * noise. A different word is not. The verdict is still yours to give: this
+ * only says whether what you wrote is one of the answers on the card.
+ */
+export function matchesAnswer(typed, sentence, direction) {
+  const candidates = expectsFarsi(direction)
+    ? [sentence.farsiText, ...(sentence.alternatives ?? [])]
+    : [sentence.englishText];
+  const mine = normaliseAnswer(typed, direction);
+  if (!mine) return false;
+  return candidates.some((c) => normaliseAnswer(c, direction) === mine);
+}
+
+/**
+ * Which script the answer is in. Every direction but reading Persian back wants
+ * Persian, so the test is the one that does not.
+ */
+export const expectsFarsi = (direction) => direction !== 'faToEn';
+
+export function normaliseAnswer(value, direction) {
+  let s = String(value ?? '').toLowerCase();
+  if (expectsFarsi(direction)) {
+    s = s
+      .replace(/ي/g, 'ی').replace(/ى/g, 'ی').replace(/ك/g, 'ک')
+      .replace(/[\u064B-\u0652\u0670]/g, '')       // harakat
+      // Spoken Persian drops the subject; من یه قهوه می‌خوام is not wrong.
+      .trim().replace(/^(من|ما|شما)\s+(?=\S)/, '')
+      .replace(/(^|\s)را(?=\s|$)/g, '$1رو')          // the written object marker
+      .replace(/[\u200C\u200D\s]+/g, '')            // ZWNJ, ZWJ, spaces
+      // Contractions and twins that are the same answer: این رو / اینو,
+      // چایی / چای, یه کم / یکم.
+      .replace(/(این|اون|من)رو/g, '$1و')
+      .replace(/چایی/g, 'چای')
+      .replace(/یهکم/g, 'یکم');
+  } else {
+    // Apostrophes go entirely: "dont" and "don't" are the same answer typed
+    // on a phone.
+    s = s.replace(/['’‘]/g, '').replace(/\s+/g, ' ');
+  }
+  return s.replace(/[.,!?؟،؛:;«»"“”()\-–—]/g, '').trim();
+}

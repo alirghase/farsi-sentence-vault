@@ -1,0 +1,192 @@
+{
+  "note": "Natural sentences for core words left short when 33 odd generated sentences were removed from the first-seen tier.",
+  "difficulty": 1,
+  "sentences": [
+    {
+      "en": "Get up, it's eight o'clock.",
+      "fa": "بلند شو، ساعت هشته.",
+      "tr": "boland sho, sâ'at hashte.",
+      "sit": "hosting or visiting someone's home",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "بلند شو",
+          "boland sho",
+          "get up",
+          "compound verb"
+        ],
+        [
+          "ساعت",
+          "sâ'at",
+          "o'clock",
+          "noun"
+        ],
+        [
+          "هشته",
+          "hashte",
+          "is eight",
+          "number"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Speak louder, please.",
+      "fa": "لطفا بلندتر حرف بزن.",
+      "tr": "lotfan bolandtar harf bezan.",
+      "sit": "asking someone to repeat or clarify",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "لطفا",
+          "lotfan",
+          "please",
+          "adverb"
+        ],
+        [
+          "بلندتر",
+          "bolandtar",
+          "louder",
+          "adverb"
+        ],
+        [
+          "حرف بزن",
+          "harf bezan",
+          "speak",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My brother is very tall.",
+      "fa": "برادرم خیلی قدبلنده.",
+      "tr": "barâdaram kheyli ghadbolande.",
+      "sit": "phone call with family",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "برادرم",
+          "barâdaram",
+          "my brother",
+          "noun"
+        ],
+        [
+          "خیلی",
+          "kheyli",
+          "very",
+          "adverb"
+        ],
+        [
+          "قدبلنده",
+          "ghadbolande",
+          "is tall",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Is there anything cheaper?",
+      "fa": "ارزون‌تر ندارین؟",
+      "tr": "arzuntar nadârin?",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "ارزون‌تر",
+          "arzuntar",
+          "cheaper",
+          "adjective"
+        ],
+        [
+          "ندارین",
+          "nadârin",
+          "don't you have",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "My eyes hurt.",
+      "fa": "چشمام درد می‌کنه.",
+      "tr": "cheshmâm dard mikone.",
+      "sit": "at the doctor or pharmacy",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "چشمام",
+          "cheshmâm",
+          "my eyes",
+          "noun"
+        ],
+        [
+          "درد می‌کنه",
+          "dard mikone",
+          "hurt",
+          "compound verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "Come quickly.",
+      "fa": "سریع بیا.",
+      "tr": "sari' biyâ.",
+      "sit": "making plans with a friend",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "سریع",
+          "sari'",
+          "quickly",
+          "adverb"
+        ],
+        [
+          "بیا",
+          "biyâ",
+          "come",
+          "verb"
+        ]
+      ],
+      "alt": []
+    },
+    {
+      "en": "It's cheap here.",
+      "fa": "اینجا ارزونه.",
+      "tr": "injâ arzune.",
+      "sit": "shopping and asking prices",
+      "tags": [
+        "colloquial"
+      ],
+      "bd": [
+        [
+          "اینجا",
+          "injâ",
+          "here",
+          "adverb"
+        ],
+        [
+          "ارزونه",
+          "arzune",
+          "it's cheap",
+          "adjective"
+        ]
+      ],
+      "alt": []
+    }
+  ]
+}

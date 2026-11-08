@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#fbfaf8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Farsi Vault">
+<title>Farsi Vault</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- The app is one screen: a sentence, a box to type it into, and a verdict.
+     There is no home screen and no tab bar, because there is nowhere else to
+     be. Opening the app puts you on a card. -->
+<div class="practice" id="practice">
+  <header class="practice-head">
+    <span class="head-left">
+      <button id="btn-compose" aria-label="New sentence">+</button>
+      <button id="btn-settings" data-t="tab.settings">Settings</button>
+      <button id="btn-kb" data-t="tab.kb">Reference</button>
+    </span>
+    <span class="head-right">
+      <button id="btn-undo" hidden data-t="card.undo">Undo</button>
+      <span class="progress" id="practice-progress"></span>
+    </span>
+  </header>
+
+  <div class="card-scroll">
+   <div id="card-view">
+    <p class="badge" id="card-badge"></p>
+    <p class="prompt" id="card-prompt"></p>
+    <!-- Only on a transformation card: what the Persian stem above means, so
+         the exercise is grammar rather than a comprehension test. -->
+    <p class="stem-en" id="card-stem-en" hidden></p>
+
+    <textarea id="card-typed" class="typed" rows="2"
+              autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
+
+    <div id="card-answer" class="answer" hidden>
+      <p class="typed-echo" id="typed-echo" hidden></p>
+      <p class="answer-text" id="answer-text"></p>
+      <p class="finglish" id="answer-finglish"></p>
+      <p class="gloss" id="answer-gloss"></p>
+      <div class="breakdown" id="answer-breakdown" hidden></div>
+      <div class="alts" id="answer-alts" hidden></div>
+    </div>
+   </div>
+
+    <div class="done-panel" id="done-view" hidden>
+      <h2 data-t="card.done">Done</h2>
+      <p class="note" id="done-summary"></p>
+      <p class="note-faint" id="done-next"></p>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="btn-reveal"><span data-t="card.reveal">Reveal</span> &rarr;</button>
+    <div id="rating-row" class="rating-row" hidden></div>
+    <div id="done-row" class="done-row" hidden>
+      <button id="btn-again"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Your own sentences. Reached with + from the card you are on, because
+     writing one down is the point of the app rather than a preference. -->
+<section class="screen settings-screen" id="screen-compose" hidden>
+  <header class="screen-head">
+    <button id="btn-compose-close">&larr;</button>
+    <h1 data-t="bank.title">My sentences</h1>
+  </header>
+  <div class="list settings">
+    <div class="group">
+      <label><span data-t="bank.english">English</span>
+        <input type="text" id="bank-en" autocomplete="off">
+      </label>
+      <label><span data-t="bank.farsi">Farsi</span>
+        <input type="text" id="bank-fa" class="rtl" autocomplete="off"
+               autocapitalize="off" spellcheck="false">
+      </label>
+      <label><span data-t="bank.finglish">Pronunciation</span>
+        <input type="text" id="bank-tr" autocomplete="off"
+               autocapitalize="off" spellcheck="false">
+      </label>
+      <button id="btn-bank-add" data-t="bank.add">Add</button>
+      <p class="hint" id="bank-status"></p>
+      <div id="bank-list"></div>
+      <p class="hint" data-t="bank.straightIn"></p>
+    </div>
+  </div>
+</section>
+
+<!-- The knowledge base to read: words by topic, every verb's tenses, the
+     pronoun tables, the grammar notes. Searchable in either language, and
+     every page with cards on it can be drilled on the spot. -->
+<section class="screen settings-screen" id="screen-kb" hidden>
+  <header class="screen-head">
+    <button id="btn-kb-back">&larr;</button>
+    <h1 id="kb-title" data-t="tab.kb">Reference</h1>
+  </header>
+  <div class="kb-search">
+    <input type="search" id="kb-q" class="rtl" autocomplete="off" autocapitalize="off"
+           spellcheck="false" data-t-placeholder="kb.search">
+  </div>
+  <div class="list kb" id="kb-body"></div>
+</section>
+
+<!-- Everything that is neither drilling nor writing. -->
+<section class="screen settings-screen" id="screen-settings" hidden>
+  <header class="screen-head">
+    <button id="btn-settings-back">&larr;</button>
+    <h1 data-t="tab.settings">Settings</h1>
+  </header>
+  <div class="list settings">
+
+    <!-- Signed out: a form. Signed in: who, when it last synced, sign out.
+         sync.js keeps the account; this only shows it. -->
+    <div class="group">
+      <h2 data-t="account.title">Online account</h2>
+      <form id="account-form" novalidate>
+        <label><span data-t="account.email">Email</span>
+          <input type="email" id="account-email" autocomplete="username" autocapitalize="off" spellcheck="false">
+        </label>
+        <label><span data-t="account.password">Password</span>
+          <input type="password" id="account-password" autocomplete="current-password">
+        </label>
+        <div class="button-row">
+          <button type="submit" id="btn-sign-in" data-t="account.signIn">Sign in</button>
+          <button type="button" id="btn-sign-up" data-t="account.signUp">Create account</button>
+        </div>
+      </form>
+      <div id="account-signed-in" hidden>
+        <p class="account-email" id="account-who"></p>
+        <div class="button-row">
+          <button type="button" id="btn-sync-now" data-t="account.syncNow">Sync now</button>
+          <button type="button" id="btn-sign-out" data-t="account.signOut">Sign out</button>
+        </div>
+      </div>
+      <p class="hint" id="account-report" data-t="account.hint"></p>
+    </div>
+
+    <div class="group">
+      <h2 data-t="settings.backup">Backup</h2>
+      <div class="button-row">
+        <button id="btn-export" data-t="settings.exportBackup">Save a backup</button>
+        <button id="btn-import" data-t="settings.importBackup">Restore</button>
+      </div>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+      <p class="hint" id="backup-report" data-t="settings.backupHint"></p>
+    </div>
+
+    <div class="group">
+      <h2 data-t="settings.immersion">Immersion</h2>
+      <label class="row">
+        <span data-t="settings.immersive">Hide English and pronunciation</span>
+        <input type="checkbox" id="set-immersive">
+      </label>
+      <p class="hint" data-t="settings.immersiveHint"></p>
+    </div>
+
+    <div class="group">
+      <h2 data-t="settings.focus">Practice</h2>
+      <label class="row">
+        <span data-t="settings.focusLabel">What to practise</span>
+        <select id="set-focus"></select>
+      </label>
+      <p class="hint" data-t="settings.focusHint"></p>
+    </div>
+
+    <div class="group">
+      <h2 data-t="settings.level">Level</h2>
+      <label class="row">
+        <span data-t="settings.currentLevel">Current level</span>
+        <select id="set-level"></select>
+      </label>
+    </div>
+
+  </div>
+</section>
+
+<div class="toast" id="toast" hidden></div>
+<!-- The English of one Persian word, while you point at it or after a tap. -->
+<div class="gloss-tip" id="gloss-tip" hidden></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
